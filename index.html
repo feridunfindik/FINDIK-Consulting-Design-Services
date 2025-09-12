@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 duration-300">
+        <div class="p-4 bg-gray-100 flex justify-end">
+            <select id="language-selector" class="rounded-md border border-gray-300 px-3 py-1 text-sm text-gray-700">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </div>
+        <div class="p-8 md:p-12 text-center">
+            <!-- Catchphrase -->
+            <h1 id="catchphrase" class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                You Dream, We Make!
+            </h1>
+            <p id="tagline" class="text-lg md:text-xl text-gray-600 mb-8">
+                Bringing your creative visions to life with our expert design services.
+            </p>
+
+            <!-- Call to Action Button -->
+            <a href="mailto:feridunfindik@gmail.com" id="cta-button" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1">
+                Email Us for a Quote
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            'en': {
+                catchphrase: 'You Dream, We Make!',
+                tagline: 'Bringing your creative visions to life with our expert design services.',
+                cta: 'Email Us for a Quote'
+            },
+            'ja': {
+                catchphrase: '夢を、カタチに。',
+                tagline: '専門的なデザインサービスで、あなたの創造的なビジョンを実現します。',
+                cta: '見積もりを依頼する'
+            },
+            'zh': {
+                catchphrase: '你梦想，我们实现！',
+                tagline: '通过我们专业的设计服务，将您的创意愿景变为现实。',
+                cta: '发送邮件获取报价'
+            },
+            'tr': {
+                catchphrase: 'Hayal Edin, Biz Yapalım!',
+                tagline: 'Uzman tasarım hizmetlerimizle yaratıcı vizyonlarınızı hayata geçiriyoruz.',
+                cta: 'Teklif İçin E-posta Gönderin'
+            }
+        };
+
+        const languageSelector = document.getElementById('language-selector');
+        const catchphrase = document.getElementById('catchphrase');
+        const tagline = document.getElementById('tagline');
+        const ctaButton = document.getElementById('cta-button');
+
+        function updateContent(lang) {
+            catchphrase.textContent = translations[lang].catchphrase;
+            tagline.textContent = translations[lang].tagline;
+            ctaButton.textContent = translations[lang].cta;
+        }
+
+        languageSelector.addEventListener('change', (event) => {
+            updateContent(event.target.value);
+        });
+
+        // Initialize content on page load
+        updateContent(languageSelector.value);
+    </script>
+
+</body>
+</html>
