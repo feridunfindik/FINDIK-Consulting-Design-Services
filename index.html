@@ -16,16 +16,23 @@
 <body class="flex items-center justify-center min-h-screen p-4">
 
     <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 duration-300">
-        
-        <!-- Image Section -->
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABo9bOIAAAABlBMVEX///8AAABVwtSCAAAAAXRSTlMAQObYZgAAAIpJREFUeNrtwQEBAAAAgqD+X2mOAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg1B2j+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/4M3jAA9mU5+AAAAAElFTkSuQmCC" alt="A modern, minimalist design representing a design agency in Tokyo." class="w-full h-auto object-cover rounded-t-xl">
-      
+        <!-- Image Section (Embedded SVG) -->
+        <div class="w-full bg-gray-200">
+            <svg class="w-full h-auto" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="0" width="200" height="150" fill="#B91C1C" />
+                <circle cx="150" cy="50" r="35" fill="#FFFFFF" />
+                <polygon points="50,120 100,20 150,120" fill="#FFFFFF" />
+                <rect x="20" y="80" width="80" height="10" fill="#FFFFFF" />
+                <rect x="20" y="95" width="60" height="10" fill="#FFFFFF" />
+            </svg>
+        </div>
+
         <div class="p-4 bg-gray-100 flex justify-end">
             <select id="language-selector" class="rounded-md border border-gray-300 px-3 py-1 text-sm text-gray-700">
-                <option value="tr">Türkçe</option>
                 <option value="en">English</option>
                 <option value="ja">日本語</option>
                 <option value="zh">中文</option>
+                <option value="tr" selected>Türkçe</option>
             </select>
         </div>
         <div class="p-8 md:p-12 text-center">
@@ -46,11 +53,6 @@
 
     <script>
         const translations = {
-            'tr': {
-                catchphrase: 'Hayal Edin, Biz Yapalım!',
-                tagline: 'Uzman tasarım hizmetlerimizle yaratıcı vizyonlarınızı hayata geçiriyoruz.',
-                cta: 'Teklif İçin E-posta Gönderin'
-            },
             'en': {
                 catchphrase: 'You Dream, We Make!',
                 tagline: 'Bringing your creative visions to life with our expert design services.',
@@ -65,6 +67,11 @@
                 catchphrase: '你梦想，我们实现！',
                 tagline: '通过我们专业的设计服务，将您的创意愿景变为现实。',
                 cta: '发送邮件获取报价'
+            },
+            'tr': {
+                catchphrase: 'Hayal Edin, Biz Yapalım!',
+                tagline: 'Uzman tasarım hizmetlerimizle yaratıcı vizyonlarınızı hayata geçiriyoruz.',
+                cta: 'Teklif İçin E-posta Gönderin'
             }
         };
 
