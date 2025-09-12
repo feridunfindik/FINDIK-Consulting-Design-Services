@@ -56,22 +56,26 @@
             'en': {
                 catchphrase: 'You Dream, We Make!',
                 tagline: 'Bringing your creative visions to life with our expert design services.',
-                cta: 'Email Us for a Quote'
+                cta: 'Email Us for a Quote',
+                subject: 'Quote Request'
             },
             'ja': {
                 catchphrase: '夢を、カタチに。',
                 tagline: '専門的なデザインサービスで、あなたの創造的なビジョンを実現します。',
-                cta: '見積もりを依頼する'
+                cta: '見積もりを依頼する',
+                subject: '見積もりのご依頼'
             },
             'zh': {
                 catchphrase: '你梦想，我们实现！',
                 tagline: '通过我们专业的设计服务，将您的创意愿景变为现实。',
-                cta: '发送邮件获取报价'
+                cta: '发送邮件获取报价',
+                subject: '报价请求'
             },
             'tr': {
                 catchphrase: 'Hayal Edin, Biz Yapalım!',
                 tagline: 'Uzman tasarım hizmetlerimizle yaratıcı vizyonlarınızı hayata geçiriyoruz.',
-                cta: 'Teklif İçin E-posta Gönderin'
+                cta: 'Teklif İçin E-posta Gönderin',
+                subject: 'Teklif Talebi'
             }
         };
 
@@ -81,9 +85,13 @@
         const ctaButton = document.getElementById('cta-button');
 
         function updateContent(lang) {
-            catchphrase.textContent = translations[lang].catchphrase;
-            tagline.textContent = translations[lang].tagline;
-            ctaButton.textContent = translations[lang].cta;
+            const currentTranslation = translations[lang];
+            catchphrase.textContent = currentTranslation.catchphrase;
+            tagline.textContent = currentTranslation.tagline;
+            ctaButton.textContent = currentTranslation.cta;
+            
+            const subject = encodeURIComponent(currentTranslation.subject);
+            ctaButton.href = `mailto:feridunfindik@gmail.com?subject=${subject}`;
         }
 
         languageSelector.addEventListener('change', (event) => {
