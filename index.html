@@ -130,24 +130,28 @@
             }
         }
 
+        // Determine the initial language on page load
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+        const browserLang = navigator.language.split('-')[0];
+
+        let initialLang = 'en'; // Default language
+
+        if (langFromUrl && translations[langFromUrl]) {
+            initialLang = langFromUrl;
+        } else if (translations[browserLang]) {
+            initialLang = browserLang;
+        }
+
+        // Set the selector and update content with the determined initial language
+        languageSelector.value = initialLang;
+        updateContent(initialLang);
+
+        // Add event listener for manual selection change
         languageSelector.addEventListener('change', (event) => {
             updateContent(event.target.value);
         });
-
-        // Get language from URL and update content on page load
-        const urlParams = new URLSearchParams(window.location.search);
-        const langFromUrl = urlParams.get('lang');
-
-        // Check if the language from the URL is supported and update the selector
-        if (langFromUrl && translations[langFromUrl]) {
-            languageSelector.value = langFromUrl;
-        }
-
-        // Initialize content based on the selected language (either from URL or default)
-        updateContent(languageSelector.value);
-
     </script>
 
 </body>
 </html>
-
