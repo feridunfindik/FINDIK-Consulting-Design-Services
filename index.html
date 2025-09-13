@@ -15,7 +15,7 @@
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 duration-300">
+    <div class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 duration-300 md:max-w-xl lg:max-w-2xl">
         <!-- Image Section (Embedded SVG) -->
         <div class="w-full bg-gray-200">
             <svg class="w-full h-auto" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +48,20 @@
             <a href="mailto:feridunfindik@gmail.com" id="cta-button" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1">
                 Email Us for a Quote
             </a>
+
+            <!-- Gemini API Feature: Design Idea Generator -->
+            <div class="mt-8 border-t border-gray-300 pt-8 text-left">
+                <h2 id="generator-title" class="text-2xl font-bold text-gray-800 mb-4">
+                    Get ✨ Design Ideas
+                </h2>
+                <div class="space-y-4">
+                    <textarea id="design-input" rows="3" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200" placeholder="Describe the design you need, e.g., 'a retro-style logo for a coffee shop'"></textarea>
+                    <button id="generate-button" class="w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+                        Generate Ideas
+                    </button>
+                    <div id="ideas-output" class="p-4 bg-gray-50 rounded-md whitespace-pre-line text-gray-700 leading-relaxed text-sm"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -57,25 +71,45 @@
                 catchphrase: 'You Dream, We Make!',
                 tagline: 'Bringing your creative visions to life with our expert design services.',
                 cta: 'Email Us for a Quote',
-                subject: 'Quote Request'
+                subject: 'Quote Request',
+                generatorTitle: 'Get ✨ Design Ideas',
+                inputPlaceholder: 'Describe the design you need, e.g., \'a retro-style logo for a coffee shop\'',
+                generateButton: 'Generate Ideas',
+                loadingMessage: 'Generating ideas...',
+                errorMessage: 'Something went wrong. Please try again later.'
             },
             'ja': {
                 catchphrase: '夢を、カタチに。',
                 tagline: '専門的なデザインサービスで、あなたの創造的なビジョンを実現します。',
                 cta: '見積もりを依頼する',
-                subject: '見積もりのご依頼'
+                subject: '見積もりのご依頼',
+                generatorTitle: '✨ デザインアイデアを取得',
+                inputPlaceholder: '必要なデザインを説明してください（例：「レトロ風のコーヒーショップのロゴ」）',
+                generateButton: 'アイデアを生成',
+                loadingMessage: 'アイデアを生成中...',
+                errorMessage: '問題が発生しました。後でもう一度お試しください。'
             },
             'zh': {
                 catchphrase: '你梦想，我们实现！',
                 tagline: '通过我们专业的设计服务，将您的创意愿景变为现实。',
                 cta: '发送邮件获取报价',
-                subject: '报价请求'
+                subject: '报价请求',
+                generatorTitle: '获取 ✨ 设计理念',
+                inputPlaceholder: '描述您需要的设计，例如：“一家咖啡店的复古风格标志”',
+                generateButton: '生成理念',
+                loadingMessage: '正在生成理念...',
+                errorMessage: '出错了。请稍后再试。'
             },
             'tr': {
                 catchphrase: 'Hayal Edin, Biz Yapalım!',
                 tagline: 'Uzman tasarım hizmetlerimizle yaratıcı vizyonlarınızı hayata geçiriyoruz.',
                 cta: 'Teklif İçin E-posta Gönderin',
-                subject: 'Teklif Talebi'
+                subject: 'Teklif Talebi',
+                generatorTitle: '✨ Tasarım Fikirleri Alın',
+                inputPlaceholder: 'İhtiyacınız olan tasarımı açıklayın, örneğin, \'bir kahve dükkanı için retro tarzı logo\'',
+                generateButton: 'Fikirleri Oluştur',
+                loadingMessage: 'Fikirler oluşturuluyor...',
+                errorMessage: 'Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin.'
             }
         };
 
@@ -83,12 +117,19 @@
         const catchphrase = document.getElementById('catchphrase');
         const tagline = document.getElementById('tagline');
         const ctaButton = document.getElementById('cta-button');
+        const generatorTitle = document.getElementById('generator-title');
+        const designInput = document.getElementById('design-input');
+        const generateButton = document.getElementById('generate-button');
+        const ideasOutput = document.getElementById('ideas-output');
 
         function updateContent(lang) {
             const currentTranslation = translations[lang];
             catchphrase.textContent = currentTranslation.catchphrase;
             tagline.textContent = currentTranslation.tagline;
             ctaButton.textContent = currentTranslation.cta;
+            generatorTitle.textContent = currentTranslation.generatorTitle;
+            designInput.placeholder = currentTranslation.inputPlaceholder;
+            generateButton.textContent = currentTranslation.generateButton;
             
             const subject = encodeURIComponent(currentTranslation.subject);
             ctaButton.href = `mailto:feridunfindik@gmail.com?subject=${subject}`;
@@ -100,8 +141,83 @@
 
         // Initialize content on page load
         updateContent(languageSelector.value);
+
+        generateButton.addEventListener('click', async () => {
+            const userPrompt = designInput.value.trim();
+            if (!userPrompt) {
+                ideasOutput.textContent = 'Please enter a description to generate ideas.';
+                return;
+            }
+
+            const currentLang = languageSelector.value;
+            const loadingText = translations[currentLang].loadingMessage;
+            const errorMessage = translations[currentLang].errorMessage;
+
+            ideasOutput.textContent = loadingText;
+            generateButton.disabled = true;
+
+            const systemPrompt = `You are a professional design creative. Generate three distinct, one-paragraph creative concepts for a design project based on the following description. Be creative, professional, and concise.`;
+            const userQuery = `Description: ${userPrompt}`;
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            const maxRetries = 5;
+            let retries = 0;
+            let success = false;
+            let response;
+            
+            while (retries < maxRetries && !success) {
+                try {
+                    response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.ok) {
+                        success = true;
+                    } else if (response.status === 429) {
+                        retries++;
+                        const delay = Math.pow(2, retries) * 1000 + Math.random() * 1000;
+                        await new Promise(res => setTimeout(res, delay));
+                    } else {
+                        ideasOutput.textContent = errorMessage;
+                        generateButton.disabled = false;
+                        return;
+                    }
+                } catch (error) {
+                    console.error('API call failed:', error);
+                    ideasOutput.textContent = errorMessage;
+                    generateButton.disabled = false;
+                    return;
+                }
+            }
+            
+            if (!success) {
+                ideasOutput.textContent = errorMessage;
+                generateButton.disabled = false;
+                return;
+            }
+
+            const result = await response.json();
+            const candidate = result.candidates?.[0];
+
+            if (candidate && candidate.content?.parts?.[0]?.text) {
+                ideasOutput.textContent = candidate.content.parts[0].text;
+            } else {
+                ideasOutput.textContent = 'Could not generate ideas. Please try a different prompt.';
+            }
+
+            generateButton.disabled = false;
+        });
     </script>
 
 </body>
 </html>
-
