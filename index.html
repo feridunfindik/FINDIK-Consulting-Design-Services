@@ -63,7 +63,7 @@
                 catchphrase: '夢を、カタチに。',
                 tagline: '専門的なデザインサービスで、あなたの創造的なビジョンを実現します。',
                 cta: '見積もりを依頼する',
-                subject: '見積もりのご依頼'
+                subject: '見積もりの依頼'
             },
             'zh': {
                 catchphrase: '你梦想，我们实现！',
@@ -86,21 +86,33 @@
 
         function updateContent(lang) {
             const currentTranslation = translations[lang];
-            catchphrase.textContent = currentTranslation.catchphrase;
-            tagline.textContent = currentTranslation.tagline;
-            ctaButton.textContent = currentTranslation.cta;
-            
-            const subject = encodeURIComponent(currentTranslation.subject);
-            ctaButton.href = `mailto:feridunfindik@gmail.com?subject=${subject}`;
+            if (currentTranslation) {
+                catchphrase.textContent = currentTranslation.catchphrase;
+                tagline.textContent = currentTranslation.tagline;
+                ctaButton.textContent = currentTranslation.cta;
+                const subject = encodeURIComponent(currentTranslation.subject);
+                ctaButton.href = `mailto:feridunfindik@gmail.com?subject=${subject}`;
+            }
         }
 
         languageSelector.addEventListener('change', (event) => {
             updateContent(event.target.value);
         });
 
-        // Initialize content on page load
+        // Get language from URL and update content on page load
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
+
+        // Check if the language from the URL is supported and update the selector
+        if (langFromUrl && translations[langFromUrl]) {
+            languageSelector.value = langFromUrl;
+        }
+
+        // Initialize content based on the selected language (either from URL or default)
         updateContent(languageSelector.value);
+
     </script>
 
 </body>
 </html>
+
