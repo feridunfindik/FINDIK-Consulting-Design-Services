@@ -33,7 +33,7 @@ def generate_quiz_questions(today_str):
     if provider == "groq":
         client = OpenAI(
             api_key=os.environ["GROQ_API_KEY"],
-            base_url="[https://api.groq.com/openai/v1](https://api.groq.com/openai/v1)"
+            base_url="https://api.groq.com/openai/v1"
         )
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -46,7 +46,7 @@ def generate_quiz_questions(today_str):
     elif provider == "zai":
         client = OpenAI(
             api_key=os.environ["ZAI_API_KEY"],
-            base_url="[https://open.bigmodel.cn/api/paas/v4/](https://open.bigmodel.cn/api/paas/v4/)"
+            base_url="https://open.bigmodel.cn/api/paas/v4/"
         )
         response = client.chat.completions.create(
             model="glm-4-flash",
