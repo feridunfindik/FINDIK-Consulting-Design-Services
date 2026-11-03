@@ -24,7 +24,7 @@ jobs:
 
       - name: Run generation script
         env:
-          AI_PROVIDER: "groq" # <-- Change this to "zai" or "gemini" whenever you want to switch!
+          AI_PROVIDER: "gemini" # <-- Change this to "zai" or "gemini" whenever you want to switch!
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
