@@ -59,7 +59,7 @@ def generate_quiz_questions(today_str):
     # --- 3. GEMINI PROVIDER ---
     elif provider == "gemini":
         genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-        model = genai.GenerativeModel('gemini-2.5-flash')
+        model = genai.GenerativeModel('gemini-3.8-flash')
         response = model.generate_content(prompt)
         raw_text = response.text.strip()
 
