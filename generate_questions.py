@@ -35,7 +35,7 @@ def generate_daily_quiz():
     """
 
     response = client.chat.completions.create(
-        model="glm-4", # Or whichever GLM model version you prefer (e.g., glm-4-flash, glm-4-plus)
+        model="glm-4-flash", # Or whichever GLM model version you prefer (e.g., glm-4-flash, glm-4-plus)
         messages=[
             {"role": "user", "content": prompt}
         ],
