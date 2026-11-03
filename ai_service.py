@@ -63,7 +63,7 @@ def generate_quiz_questions(today_str):
         import urllib.request
         import urllib.error
 
-        api_key = [redacted]
+        api_key = os.environ["GEMINI_API_KEY"]
         url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
