@@ -1,6 +1,5 @@
 import os
 from openai import OpenAI
-import google.generativeai as genai
 
 def generate_quiz_questions(today_str):
     # Read which provider to use from environment variables (defaults to 'groq')
@@ -56,12 +55,35 @@ def generate_quiz_questions(today_str):
         )
         raw_text = response.choices[0].message.content.strip()
 
-    # --- 3. GEMINI PROVIDER ---
+    # --- 3. GEMINI PROVIDER (direct REST API) ---
+    # The google.generativeai library is deprecated and hangs with newer
+    # models, so call the Gemini API directly over HTTPS instead.
     elif provider == "gemini":
-        genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-        model = genai.GenerativeModel('gemini-3.8-flash')
-        response = model.generate_content(prompt)
-        raw_text = response.text.strip()
+        import json
+        import urllib.request
+        import urllib.error
+
+        api_key = [redacted]
+        url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+        payload = {
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.7}
+        }
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "x-goog-api-key": api_key
+            },
+            method="POST"
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                result = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"Gemini API error {e.code}: {e.read().decode('utf-8', 'replace')}")
+        raw_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
 
     else:
         raise ValueError(f"Unknown AI_PROVIDER: {provider}")
