@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>NewsQuest（ニュースクエスト）— プロトタイプ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F1E9; --bg2:#ECE7DA; --surface:#FFFFFF; --surface2:#FBF9F4; --ink:#13213E; --ink2:#2B3A5C;
+  --muted:#65708A; --line:#E2DCCB; --line2:#D6CFC0;
+  --coral:#E4572E; --coral-d:#C7431F; --teal:#0E7C6B; --teal-bg:#E0F0EC; --gold:#D9930D; --gold-bg:#FDF0D3;
+  --navy:#13213E; --navy2:#1C2F55; --paper:#FFFDF7; --red:#C0392B; --green:#1A7A4C; --green-bg:#E2F2E7;
+  --shadow:0 8px 30px rgba(19,33,62,.08); --shadow-sm:0 2px 10px rgba(19,33,62,.07);
+  --r:18px; --r-sm:12px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0D1424; --bg2:#0A101D; --surface:#16213A; --surface2:#1A2745; --ink:#EEF1F8; --ink2:#C9D2E6;
+    --muted:#93A0BE; --line:#28365A; --line2:#33436E;
+    --teal-bg:#123B35; --gold-bg:#3A2E0E; --green-bg:#123526; --paper:#16213A;
+    --shadow:0 8px 30px rgba(0,0,0,.35); --shadow-sm:0 2px 10px rgba(0,0,0,.3);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans JP","Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer} a{color:var(--teal)}
+.serif{font-family:"Newsreader","Hiragino Mincho ProN","Yu Mincho",Georgia,serif}
+.jp{font-family:"Noto Sans JP",sans-serif}
+
+/* LAYOUT */
+.app{display:grid;grid-template-columns:248px 1fr;min-height:100vh}
+.sidebar{background:var(--navy);color:#DCE3F2;padding:22px 16px;display:flex;flex-direction:column;gap:6px;position:sticky;top:0;height:100vh}
+@media(prefers-color-scheme:dark){.sidebar{background:#0A101F;border-right:1px solid var(--line)}}
+.logo{display:flex;align-items:center;gap:11px;padding:4px 8px 18px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:14px}
+.logo-mark{width:42px;height:42px;border-radius:11px;background:var(--coral);display:grid;place-items:center;font-family:"Newsreader",serif;font-weight:800;font-size:24px;color:#fff;flex:none}
+.logo b{font-family:"Newsreader",serif;font-size:23px;color:#fff;letter-spacing:.2px;display:block;line-height:1}
+.logo span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9FB0D4;font-weight:700}
+.navbtn{display:flex;align-items:center;gap:11px;width:100%;text-align:left;background:none;border:0;color:#C4CFE6;padding:11px 12px;border-radius:11px;font-weight:600;font-size:15px}
+.navbtn:hover{background:rgba(255,255,255,.07);color:#fff}
+.navbtn.active{background:#fff;color:var(--navy)}
+.navbtn .ic{width:22px;text-align:center;font-size:17px;flex:none}
+.navbtn .pill{margin-left:auto;background:var(--coral);color:#fff;font-size:11px;font-weight:800;padding:2px 7px;border-radius:99px}
+.side-user{margin-top:auto;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:13px}
+.side-user .row{display:flex;gap:10px;align-items:center}
+.avatar{width:38px;height:38px;border-radius:50%;background:var(--gold);color:#231a00;display:grid;place-items:center;font-weight:800;flex:none}
+.side-user b{color:#fff;font-size:14px;display:block}.side-user small{color:#9FB0D4;font-size:12px}
+.xpbar{height:7px;background:rgba(255,255,255,.15);border-radius:99px;margin-top:11px;overflow:hidden}
+.xpbar i{display:block;height:100%;background:var(--gold);border-radius:99px}
+.side-user .xpmeta{display:flex;justify-content:space-between;font-size:11px;color:#B9C6E2;margin-top:6px;font-weight:600}
+
+.main{padding:26px 30px 90px;max-width:1120px;width:100%;margin:0 auto}
+.view{display:none}.view.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.view.active{animation:none}}
+
+/* HEADER */
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--coral)}
+h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1.02;margin:6px 0 8px;font-weight:800}
+.sub{color:var(--muted);font-size:16px;line-height:1.55;max-width:640px;margin:0}
+.stat-chips{display:flex;gap:9px;flex-wrap:wrap}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:8px 13px;font-weight:700;font-size:13.5px;display:flex;gap:7px;align-items:center;box-shadow:var(--shadow-sm)}
+.chip b{font-size:15px}
+.proto-note{margin:16px 0 20px;background:var(--gold-bg);border:1px solid #E8CE8A;color:#6B5203;border-radius:var(--r-sm);padding:11px 14px;font-size:13.5px;line-height:1.5}
+@media(prefers-color-scheme:dark){.proto-note{color:#F2D98C;border-color:#5A4A17}}
+
+/* CARDS / GRIDS */
+.grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow-sm)}
+.card h3{margin:0 0 6px;font-size:17px}.card p{color:var(--muted);line-height:1.55;margin:0;font-size:14.5px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin:30px 0 14px;flex-wrap:wrap}
+.section-head h2{font-family:"Newsreader",serif;font-size:26px;margin:0;font-weight:800}
+.section-head p{margin:3px 0 0;color:var(--muted);font-size:14px}
+.btn{background:var(--coral);color:#fff;border:0;border-radius:12px;padding:12px 18px;font-weight:800;font-size:15px;box-shadow:0 4px 14px rgba(228,87,46,.3)}
+.btn:hover{background:var(--coral-d)} .btn.secondary{background:var(--surface);color:var(--ink);border:1.5px solid var(--line2);box-shadow:none}
+.btn.teal{background:var(--teal);box-shadow:0 4px 14px rgba(14,124,107,.28)} .btn.navy{background:var(--navy);color:#fff;box-shadow:none}
+.btn:disabled{opacity:.45;cursor:not-allowed}.btn.small{padding:8px 13px;font-size:13.5px;border-radius:10px}
+
+/* QUEST HERO */
+.quest{background:var(--navy);color:#E8EDF8;border-radius:22px;padding:26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;position:relative;overflow:hidden}
+.quest::after{content:"?";position:absolute;right:110px;top:-38px;font-family:"Newsreader",serif;font-size:190px;font-weight:800;color:rgba(255,255,255,.05);pointer-events:none}
+.quest h2{font-family:"Newsreader",serif;font-size:29px;margin:6px 0 8px;color:#fff;line-height:1.1}
+.quest p{color:#B9C6E2;margin:0;line-height:1.55;font-size:15px;max-width:520px}
+.quest .tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.quest-meta{display:flex;gap:16px;margin-top:16px;flex-wrap:wrap;font-size:13.5px;font-weight:600;color:#DCE3F2}
+.ring{width:104px;height:104px;flex:none;position:relative;z-index:1}
+.ring svg{transform:rotate(-90deg)} .ring .c{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring b{font-size:22px;color:#fff;display:block;line-height:1}.ring small{font-size:11px;color:#9FB0D4;font-weight:700}
+
+/* BRIEF */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.fbtn{background:var(--surface);border:1.5px solid var(--line2);color:var(--ink2);border-radius:99px;padding:8px 15px;font-weight:700;font-size:13.5px}
+.fbtn.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.brief-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:19px 20px;margin-bottom:12px;box-shadow:var(--shadow-sm)}
+.brief-card .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.tagcat{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:var(--teal-bg);color:var(--teal)}
+.tagcat.pol{background:#E4E9F7;color:#33509E}.tagcat.eco{background:var(--gold-bg);color:#8A5F02}.tagcat.sci{background:#F3E2EE;color:#8E2A6E}.tagcat.wld{background:#E2EEF7;color:#1F5E8A}
+@media(prefers-color-scheme:dark){.tagcat.pol{background:#1E2C52;color:#A9BDF2}.tagcat.sci{background:#3D1E34;color:#E8A9D4}.tagcat.wld{background:#16324A;color:#9CCBEE}}
+.brief-card h3{font-family:"Newsreader",serif;font-size:21px;line-height:1.2;margin:0 0 7px;font-weight:700}
+.brief-card p{color:var(--muted);line-height:1.6;margin:0;font-size:15px}
+.brief-card .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px;flex-wrap:wrap}
+.source{font-size:12.5px;color:var(--muted);font-weight:600}
+.why{display:none;margin-top:13px;background:var(--surface2);border:1px dashed var(--line2);border-radius:var(--r-sm);padding:13px 15px;font-size:14px;line-height:1.6}
+.why.open{display:block}.why b{color:var(--teal)}
+.linkbtn{background:none;border:0;color:var(--coral);font-weight:800;font-size:13.5px;padding:0}
+
+/* QUIZ */
+.quiz-shell{max-width:760px;margin:0 auto}
+.q-progress{height:9px;background:var(--bg2);border-radius:99px;overflow:hidden;margin:14px 0 6px}
+.q-progress i{display:block;height:100%;background:var(--teal);border-radius:99px;transition:width .3s}
+.q-meta{display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:var(--muted)}
+.diffrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.diff{border:2px solid var(--line);background:var(--surface);border-radius:14px;padding:15px;text-align:left}
+.diff.active{border-color:var(--teal);background:var(--teal-bg)}
+.diff b{display:block;font-size:15px}.diff span{font-size:13px;color:var(--muted);line-height:1.4;display:block;margin-top:3px}
+.opt{display:flex;gap:12px;width:100%;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:10px;font-size:15.5px;font-weight:600;color:var(--ink);align-items:flex-start;line-height:1.45}
+.opt .letter{width:28px;height:28px;border-radius:8px;background:var(--bg2);display:grid;place-items:center;font-weight:800;font-size:13px;flex:none}
+.opt:hover{border-color:var(--teal)} .opt.correct{border-color:var(--green);background:var(--green-bg)} .opt.wrong{border-color:var(--red);background:#FBE9E6}
+@media(prefers-color-scheme:dark){.opt.wrong{background:#3D1712}}
+.opt:disabled{cursor:default;opacity:1}
+.explain{display:none;border-radius:14px;padding:15px 17px;font-size:14.5px;line-height:1.6;margin:4px 0 14px}
+.explain.show{display:block}.explain.good{background:var(--green-bg);border:1px solid var(--green)}.explain.bad{background:#FBE9E6;border:1px solid var(--red)}
+@media(prefers-color-scheme:dark){.explain.bad{background:#3D1712}}
+.score-hero{text-align:center;padding:12px 0 4px}
+.score-big{font-family:"Newsreader",serif;font-size:64px;font-weight:800;line-height:1}
+.xp-toast{display:inline-block;background:var(--gold-bg);border:1px solid #E8CE8A;color:#7A5A02;font-weight:800;padding:8px 16px;border-radius:99px;margin-top:12px}
+@media(prefers-color-scheme:dark){.xp-toast{color:#F2D98C}}
+
+/* GAMES */
+.game-card{position:relative;overflow:hidden}
+.game-card .emoji-art{font-size:34px;margin-bottom:10px}
+.blitz-q{font-family:"Newsreader",serif;font-size:24px;line-height:1.3;text-align:center;padding:20px 8px;font-weight:700}
+.blitz-btns{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.blitz-btns button{padding:16px;border-radius:14px;border:0;font-weight:800;font-size:17px;color:#fff}
+.match-item{background:var(--surface2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:9px;font-weight:600;font-size:14.5px;line-height:1.45;cursor:pointer;text-align:left;width:100%;color:var(--ink)}
+.match-item.sel{border-color:var(--coral);background:#FDEEE8}
+@media(prefers-color-scheme:dark){.match-item.sel{background:#3A1E13}}
+.match-item.done{border-color:var(--green);background:var(--green-bg);cursor:default}
+
+/* PROGRESS */
+.mastery-row{margin-bottom:15px}.mastery-row .top{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:6px}
+.mastery-row .top span{color:var(--muted);font-weight:600}
+.mbar{height:10px;background:var(--bg2);border-radius:99px;overflow:hidden}.mbar i{display:block;height:100%;border-radius:99px}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.badge{border:1.5px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;background:var(--surface)}
+.badge .b-ic{font-size:27px;display:block;margin-bottom:6px}.badge b{font-size:12.5px;display:block;line-height:1.3}.badge small{font-size:11px;color:var(--muted)}
+.badge.locked{opacity:.45;filter:grayscale(.8)}
+.badge.earned{border-color:var(--gold);background:var(--gold-bg)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}
+.cal div{aspect-ratio:1;border-radius:9px;background:var(--bg2);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--muted)}
+.cal div.on{background:var(--coral);color:#fff}.cal div.today{outline:2.5px solid var(--teal);outline-offset:1px;background:var(--teal);color:#fff}
+.chal{display:flex;gap:13px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.chal:last-child{border-bottom:0}.chal .ci{width:42px;height:42px;border-radius:11px;background:var(--bg2);display:grid;place-items:center;font-size:20px;flex:none}
+.chal b{font-size:14.5px;display:block}.chal small{color:var(--muted);font-size:12.5px}
+
+/* LEADERBOARD */
+.lb-row{display:flex;align-items:center;gap:13px;padding:13px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:9px}
+.lb-row.me{border:2px solid var(--coral);background:#FDF1EB}
+@media(prefers-color-scheme:dark){.lb-row.me{background:#33190F}}
+.rank{width:34px;height:34px;border-radius:50%;background:var(--bg2);display:grid;place-items:center;font-weight:800;flex:none}
+.rank.r1{background:#F5C542;color:#3A2A00}.rank.r2{background:#D9DEE8;color:#333}.rank.r3{background:#E8A87C;color:#4A2400}
+.lb-row .who{flex:1;min-width:0}.lb-row .who b{display:block;font-size:15px}.lb-row .who small{color:var(--muted);font-size:12.5px}
+.lb-xp{text-align:right}.lb-xp b{display:block}.lb-xp small{color:var(--muted);font-size:12px}
+
+/* PRICING */
+.price-card{display:flex;flex-direction:column}
+.price-card.pop{border:2.5px solid var(--coral);position:relative}
+.pop-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:99px;letter-spacing:.05em;white-space:nowrap}
+.price{font-family:"Newsreader",serif;font-size:38px;font-weight:800;margin:8px 0 2px}.price small{font-size:15px;font-family:"Plus Jakarta Sans";font-weight:600;color:var(--muted)}
+.feat{list-style:none;padding:0;margin:14px 0 18px;flex:1}
+.feat li{padding:6px 0 6px 26px;position:relative;font-size:14px;line-height:1.45;color:var(--ink2)}
+.feat li::before{content:"✓";position:absolute;left:2px;color:var(--teal);font-weight:800}
+.feat li.no{color:var(--muted)}.feat li.no::before{content:"—";color:var(--muted)}
+table.cmp{width:100%;border-collapse:collapse;font-size:14px}
+table.cmp th,table.cmp td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.cmp th{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.mono-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mono-strip .card{text-align:left}.mono-strip .n{font-family:"Newsreader",serif;font-size:26px;font-weight:800;color:var(--coral)}
+
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:13px;line-height:1.6}
+
+/* MOBILE NAV */
+.mobilenav{display:none}
+@media(max-width:860px){
+  .app{grid-template-columns:1fr}
+  .sidebar{display:none}
+  .main{padding:20px 16px 96px}
+  .grid2,.grid3,.mono-strip{grid-template-columns:1fr}
+  .quest{grid-template-columns:1fr}.ring{margin:0 auto}
+  .badges{grid-template-columns:repeat(3,1fr)}
+  .diffrow{grid-template-columns:1fr}
+  .mobilenav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--line);z-index:50;padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .mobilenav button{flex:1;background:none;border:0;color:var(--muted);font-size:10.5px;font-weight:700;padding:6px 2px;border-radius:9px}
+  .mobilenav button span{display:block;font-size:19px;margin-bottom:2px}
+  .mobilenav button.active{color:var(--coral)}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo"><div class="logo-mark">N</div><div><b>NewsQuest</b><span>プロトタイプ</span></div></div>
+    <button class="navbtn active" data-view="today"><span class="ic">📰</span>今日のブリーフ</button>
+    <button class="navbtn" data-view="quiz"><span class="ic">🎯</span>デイリークイズ<span class="pill">+150 XP</span></button>
+    <button class="navbtn" data-view="play"><span class="ic">🕹️</span>アーケード</button>
+    <button class="navbtn" data-view="progress"><span class="ic">🏆</span>マイプログレス</button>
+    <button class="navbtn" data-view="board"><span class="ic">📊</span>ランキング</button>
+    <button class="navbtn" data-view="pro"><span class="ic">⭐</span>Proプラン</button>
+    <div class="side-user">
+      <div class="row"><div class="avatar">D</div><div><b>デモ学習者</b><small>レベル5・ニュース探検家</small></div></div>
+      <div class="xpbar"><i id="sideXpBar" style="width:62%"></i></div>
+      <div class="xpmeta"><span id="sideXpText">1,240 XP</span><span>レベル6まであと760</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+  <!-- ============ TODAY ============ -->
+  <section class="view active" id="view-today">
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">火曜日・11月3日・あなた専用のデイリーブリーフ</div>
+        <h1>おはようございます。5分で読める<br>今日の世界。</h1>
+        <p class="sub">今日のニュースから作る、あなた専用のブリーフ。中学校の<span class="jp">社会</span>に合わせて、しっかり身につくクイズに変えます。</p>
+      </div>
+      <div class="stat-chips">
+        <div class="chip">🔥 <b id="streakNum">12</b>日連続記録</div>
+        <div class="chip">⭐ <b id="xpNum">1,240</b> XP</div>
+        <div class="chip">🎯 目標 <b>3 / 5</b> 完了</div>
+      </div>
+    </div>
+
+    <div class="proto-note"><b>インタラクティブ・プロトタイプ：</b>すべてのボタンが動作します — クイズに挑戦し、ミニゲームで遊び、ブリーフを絞り込めます。以下の記事はデモ用のサンプルです。東京で家族プロジェクトとして始まった実際の配信のスタイルで書かれています。</div>
+
+    <div class="quest">
+      <div>
+        <span class="tag">今日のクエスト</span>
+        <h2>デイリークイズの準備ができました — 今日のブリーフから8問</h2>
+        <p>ブリーフを読んで、力試し。6問以上正解で連続記録シールドを守り、「鋭い目」バッジを解放しましょう。</p>
+        <div class="quest-meta"><span>⏱ 約5分</span><span>⭐ +150 XP</span><span>🛡️ 連続記録シールドがかかっています</span></div>
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1">
+          <button class="btn" data-goto="quiz">デイリークイズを始める →</button>
+          <button class="btn secondary" onclick="document.getElementById('briefAnchor').scrollIntoView({behavior:'smooth'})">先にブリーフを読む</button>
+        </div>
+      </div>
+      <div class="ring">
+        <svg width="104" height="104"><circle cx="52" cy="52" r="44" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="10"/><circle cx="52" cy="52" r="44" fill="none" stroke="#E9A426" stroke-width="10" stroke-linecap="round" stroke-dasharray="276" stroke-dashoffset="110"/></svg>
+        <div class="c"><div><b>60%</b><small>1日の目標</small></div></div>
+      </div>
+    </div>
+
+    <div class="section-head" id="briefAnchor">
+      <div><h2>あなた専用ブリーフ — 興味に合わせて調整</h2><p>トピックをタップしてカスタマイズ。「なぜ大事？」で各記事と学校の学習内容をつなげます。</p></div>
+    </div>
+    <div class="filters" id="filters">
+      <button class="fbtn active" data-f="all">すべての記事</button>
+      <button class="fbtn" data-f="japan">🇯🇵 日本</button>
+      <button class="fbtn" data-f="world">🌏 世界</button>
+      <button class="fbtn" data-f="economy">💹 経済</button>
+      <button class="fbtn" data-f="science">🔬 科学・テクノロジー</button>
+      <button class="fbtn" data-f="climate">🌦️ 気候・地理</button>
+    </div>
+    <div id="briefList"></div>
+
+    <div class="grid2" style="margin-top:8px">
+      <div class="card">
+        <h3>⚡ 今日のチャレンジ</h3>
+        <p><b style="color:var(--ink)">地理スプリント：</b>○×ブリッツで午前0時までに5問以上正解すると、ボーナス+40 XPを獲得し、「世界旅行者」バッジに近づきます。</p>
+        <div style="margin-top:14px"><button class="btn teal small" data-goto="play">ブリッツで遊ぶ →</button></div>
+      </div>
+      <div class="card">
+        <h3>🏫 教室でも使える設計</h3>
+        <p>先生には同じブリーフを、印刷できるワークシート、クラスランキング、単元別の習熟レポートとして提供します。学校プランはProページでご覧ください。</p>
+        <div style="margin-top:14px"><button class="btn navy small" data-goto="pro">プランを見る →</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="view" id="view-quiz">
+    <div class="eyebrow">デイリークイズ・今日のブリーフから</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">読んだ内容を試そう。</h1>
+
+    <div class="quiz-shell">
+      <!-- setup -->
+      <div id="quizSetup">
+        <p class="sub" style="max-width:none">8問、すぐに解説、正解ごとにXP、さらにスピードボーナス。まずレベルを選んでください。本製品ではレベルに合わせて問題が変わります。</p>
+        <div class="diffrow">
+          <button class="diff active" data-diff="中学生"><b>🎒 中学生</b><span><span class="jp">社会</span>対応 — 公民・地理・歴史の基礎。</span></button>
+          <button class="diff" data-diff="高校生"><b>🎓 高校生</b><span>より深い背景、資料問題、データ分析。</span></button>
+          <button class="diff" data-diff="大人・一般"><b>🧭 大人・一般</b><span>同じニュースを、より広い世界の知識と経済で。</span></button>
+        </div>
+        <div class="card" style="text-align:center;padding:28px">
+          <div style="font-size:38px">🎯</div>
+          <h3 style="font-size:20px;margin-top:8px">準備ができたらスタート</h3>
+          <p>これまでの最高は6問連続正解。記録を破ると+25 XPの「絶好調」ボーナス。</p>
+          <div style="margin-top:16px"><button class="btn" id="startQuizBtn">クイズを始める — <span id="diffLabel">中学生</span></button></div>
+        </div>
+      </div>
+
+      <!-- playing -->
+      <div id="quizPlay" style="display:none">
+        <div class="q-meta"><span id="qCount">質問 1 / 8</span><span id="qScore">スコア：0 · ⭐ 0 XP</span></div>
+        <div class="q-progress"><i id="qBar" style="width:12.5%"></i></div>
+        <div class="card" style="padding:24px">
+          <span class="tagcat" id="qTopic">公民</span>
+          <h3 class="serif" id="qText" style="font-size:23px;line-height:1.3;margin:12px 0 18px"></h3>
+          <div id="qOpts"></div>
+          <div class="explain" id="qExplain"></div>
+          <div style="display:flex;justify-content:flex-end"><button class="btn" id="qNext" style="display:none">次へ →</button></div>
+        </div>
+      </div>
+
+      <!-- result -->
+      <div id="quizResult" style="display:none">
+        <div class="card score-hero">
+          <div style="font-size:40px" id="resEmoji">🏆</div>
+          <div class="score-big" id="resScore">6 / 8</div>
+          <p id="resMsg" style="margin-top:8px"></p>
+          <div class="xp-toast" id="resXp">+130 XP獲得</div>
+          <div class="grid3" style="margin-top:22px;text-align:left">
+            <div class="card" style="box-shadow:none"><h3>正答率</h3><p style="font-size:22px;color:var(--ink);font-weight:800" id="resAcc">75%</p></div>
+            <div class="card" style="box-shadow:none"><h3>連続記録</h3><p style="font-size:22px;color:var(--ink);font-weight:800">🔥 12日</p></div>
+            <div class="card" style="box-shadow:none"><h3>バッジの進捗</h3><p id="resBadge">鋭い目 — 6問以上の正解で解放</p></div>
+          </div>
+          <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
+            <button class="btn secondary" id="retryBtn">↻ もう一度挑戦</button>
+            <button class="btn teal" data-goto="progress">進捗を見る →</button>
+            <button class="btn navy" data-goto="play">ミニゲームで遊ぶ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAY / ARCADE ============ -->
+  <section class="view" id="view-play">
+    <div class="eyebrow">アーケード・60秒ゲーム</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">短いゲームで、長く覚える。</h1>
+    <p class="sub">ミニゲームは今週のブリーフの内容を間隔反復で復習します — 「忘れない」ための科学です。</p>
+
+    <div class="grid2" style="margin-top:20px">
+      <div class="card game-card">
+        <div class="emoji-art">⚡</div>
+        <h3>○×ブリッツ</h3>
+        <p>8つの文を時間内に判定。正解ごとに+5 XP。</p>
+        <div id="blitzArea">
+          <div style="text-align:center;padding:22px 0 6px"><button class="btn" id="blitzStart">ブリッツ開始</button></div>
+        </div>
+      </div>
+
+      <div class="card game-card">
+        <div class="emoji-art">🗂️</div>
+        <h3>見出しマッチ</h3>
+        <p>見出しをタップし、次に分野をタップ。4つすべて仕分けできると+30 XP。</p>
+        <div id="matchArea" style="margin-top:14px"></div>
+        <div class="filters" id="matchCats" style="margin-top:6px">
+          <button class="fbtn" data-cat="政治">🏛️ 政治</button>
+          <button class="fbtn" data-cat="経済">💹 経済</button>
+          <button class="fbtn" data-cat="科学">🔬 科学</button>
+          <button class="fbtn" data-cat="スポーツ">⚽ スポーツ</button>
+        </div>
+        <p id="matchMsg" style="font-weight:700;font-size:14px"></p>
+      </div>
+    </div>
+
+    <div class="grid3" style="margin-top:16px">
+      <div class="card game-card"><div class="emoji-art">🗓️</div><h3>年表ソート</h3><p>歴史の出来事を順番に並べよう。今日のセット：近代日本、1868年→現代。</p><p style="margin-top:10px"><span class="tagcat pol">Proプレビュー</span></p></div>
+      <div class="card game-card"><div class="emoji-art">🗺️</div><h3>地図ピンドロップ</h3><p>白地図に都道府県、首都、貿易港を時間内にピン留め。</p><p style="margin-top:10px"><span class="tagcat">無料・毎日</span></p></div>
+      <div class="card game-card"><div class="emoji-art">👥</div><h3>フレンド対決</h3><p>同じ5問で1対1対決。勝者は相手が賭けたXP（最大50）を獲得。</p><p style="margin-top:10px"><span class="tagcat eco">Proプレビュー</span></p></div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRESS ============ -->
+  <section class="view" id="view-progress">
+    <div class="eyebrow">マイプログレス・ゲーミフィケーション</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">レベル5 — ニュース探検家</h1>
+    <p class="sub">学習者が毎日戻ってくる仕掛けのすべて：XP、連続記録、習熟度、バッジ — すべて実際の読書から獲得します。</p>
+
+    <div class="grid2" style="margin-top:20px">
+      <div class="card">
+        <h3>⭐ XPとレベル</h3>
+        <div style="display:flex;justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--muted);margin:12px 0 6px"><span id="progXpText">1,240 XP</span><span>レベル6は2,000 XP</span></div>
+        <div class="mbar" style="height:13px"><i id="progXpBar" style="width:62%;background:var(--gold)"></i></div>
+        <h3 style="margin-top:22px">📈 XP — 過去7日間</h3>
+        <svg viewBox="0 0 340 130" width="100%" role="img" aria-label="過去1週間の日別XP獲得量の棒グラフ" style="margin-top:8px">
+          <line x1="28" y1="108" x2="330" y2="108" stroke="var(--line2)" stroke-width="1.5"/>
+          <g font-family="Plus Jakarta Sans" font-size="10.5" fill="var(--muted)" text-anchor="middle">
+            <rect x="42" y="68" width="26" height="40" rx="5" fill="#B9C6E2"/><text x="55" y="122">水</text><text x="55" y="60">80</text>
+            <rect x="84" y="48" width="26" height="60" rx="5" fill="#B9C6E2"/><text x="97" y="122">木</text><text x="97" y="40">120</text>
+            <rect x="126" y="78" width="26" height="30" rx="5" fill="#B9C6E2"/><text x="139" y="122">金</text><text x="139" y="70">60</text>
+            <rect x="168" y="38" width="26" height="70" rx="5" fill="#B9C6E2"/><text x="181" y="122">土</text><text x="181" y="30">140</text>
+            <rect x="210" y="28" width="26" height="80" rx="5" fill="#0E7C6B"/><text x="223" y="122">日</text><text x="223" y="20">160</text>
+            <rect x="252" y="58" width="26" height="50" rx="5" fill="#B9C6E2"/><text x="265" y="122">月</text><text x="265" y="50">100</text>
+            <rect x="294" y="43" width="26" height="65" rx="5" fill="#E4572E"/><text x="307" y="122">今日</text><text x="307" y="35">130</text>
+          </g>
+        </svg>
+        <p style="font-size:12.5px">週末のクエストとフレンド対決が日曜のピークを作ります — Proの分析ではこの傾向を保護者と先生に提示します。</p>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>🔥 連続記録 — 12日</h3>
+          <p style="margin-bottom:12px">1日1クイズで記録が続きます。連続記録シールドは予備が2枚あります。</p>
+          <div class="cal" id="calGrid"></div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:7px;font-weight:600"><span>14日前</span><span>今日</span></div>
+        </div>
+        <div class="card">
+          <h3>🎯 進行中のチャレンジ</h3>
+          <div class="chal"><div class="ci">🌏</div><div style="flex:1"><b>世界旅行者</b><small>今週、世界の質問に10問答える</small><div class="mbar" style="margin-top:6px"><i style="width:70%;background:var(--teal)"></i></div></div><b>7/10</b></div>
+          <div class="chal"><div class="ci">🏛️</div><div style="flex:1"><b>公民チャンピオン</b><small>政治トピックをマスター（90%達成）</small><div class="mbar" style="margin-top:6px"><i style="width:82%;background:#33509E"></i></div></div><b>82%</b></div>
+          <div class="chal"><div class="ci">📚</div><div style="flex:1"><b>パーフェクトウィーク</b><small>デイリークイズを7日連続で完了</small><div class="mbar" style="margin-top:6px"><i style="width:100%;background:var(--gold)"></i></div></div><b>✓ 達成</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head"><div><h2>トピック別習熟度</h2><p>先生が教室ダッシュボードで見るのと同じマップ — 学習単元別。</p></div></div>
+    <div class="card">
+      <div class="mastery-row"><div class="top">🏛️ 政治・公民 <span class="jp">政治</span><span>82%・上級</span></div><div class="mbar"><i style="width:82%;background:#33509E"></i></div></div>
+      <div class="mastery-row"><div class="top">🗾 地理分野 <span class="jp">地理</span><span>74%・習熟</span></div><div class="mbar"><i style="width:74%;background:var(--teal)"></i></div></div>
+      <div class="mastery-row"><div class="top">💹 経済分野 <span class="jp">経済</span><span>61%・発展中</span></div><div class="mbar"><i style="width:61%;background:var(--gold)"></i></div></div>
+      <div class="mastery-row"><div class="top">📜 歴史分野 <span class="jp">歴史</span><span>55%・発展中</span></div><div class="mbar"><i style="width:55%;background:#8E2A6E"></i></div></div>
+      <div class="mastery-row" style="margin-bottom:2px"><div class="top">🌦️ 気候・環境<span>43%・要重点 — ブリッツを用意済み</span></div><div class="mbar"><i style="width:43%;background:var(--coral)"></i></div></div>
+    </div>
+
+    <div class="section-head"><div><h2>バッジ</h2><p id="badgeCount">12個中7個獲得</p></div></div>
+    <div class="badges" id="badgeGrid"></div>
+  </section>
+
+  <!-- ============ LEADERBOARD ============ -->
+  <section class="view" id="view-board">
+    <div class="eyebrow">ランキング・今週</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">楽しいライバル関係、本物の学び。</h1>
+    <p class="sub">ランキングは参加制で公平にグループ分け — 友だち、クラス、または同じレベルの世界の学習者。課金で勝つことはできません：XPは回答でのみ得られます。</p>
+    <div class="filters" style="margin-top:18px" id="lbTabs">
+      <button class="fbtn active" data-lb="friends">👥 友だち</button>
+      <button class="fbtn" data-lb="class">🏫 マイクラス・2年B組</button>
+      <button class="fbtn" data-lb="global">🌏 レベル5・世界</button>
+    </div>
+    <div id="lbList"></div>
+    <div class="card" style="margin-top:16px">
+      <h3>🏫 学校向け：クラスビューこそが製品</h3>
+      <p>先生がクラスコードを作成し、生徒はメール不要で参加できます。ランキングは毎週リセットされ、誰もがトップを狙えます。個人順位は初期設定ではクラス外に公開されません。</p>
+    </div>
+  </section>
+
+  <!-- ============ PRO ============ -->
+  <section class="view" id="view-pro">
+    <div class="eyebrow">プラン・マネタイズ</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">毎日無料。夢中になったらPro。</h1>
+    <p class="sub">ピッチ資料のモデルを、実際に動く料金ページとして：フリーミアムを核に、家族・学校プラン、フリーには控えめな広告とスポンサー — 課金で勝つ仕組みはありません。</p>
+
+    <div class="grid3" style="margin-top:24px">
+      <div class="card price-card">
+        <h3>フリー</h3><div class="price">¥0<small> ずっと</small></div>
+        <p>習慣づくりのお試しに。</p>
+        <ul class="feat">
+          <li>毎日のブリーフ（5記事）＋8問クイズ</li>
+          <li>連続記録、XP、レベル、バッジ</li>
+          <li>友だちランキング</li>
+          <li>ミニゲームは1日1回</li>
+          <li class="no">過去クイズの無制限アーカイブ</li>
+          <li class="no">保護者・先生向けレポート</li>
+        </ul>
+        <button class="btn secondary">現在のプラン</button>
+      </div>
+      <div class="card price-card pop">
+        <span class="pop-tag">人気No.1</span>
+        <h3>Pro</h3><div class="price">¥680<small> / 月</small></div>
+        <p>本気の学習と受験対策に。</p>
+        <ul class="feat">
+          <li>フリーの全機能＋ミニゲーム無制限</li>
+          <li>全アーカイブ＋「好きなトピックでクイズ」</li>
+          <li>受験モード：<span class="jp">高校入試</span>形式のセットと時間計測</li>
+          <li>フレンド対決とカスタムチャレンジ</li>
+          <li>毎月の保護者向け進捗レポート</li>
+          <li>広告は一切なし</li>
+        </ul>
+        <button class="btn" id="proBtn">7日間無料トライアルを開始</button>
+        <p id="proMsg" style="text-align:center;margin-top:10px;font-weight:700"></p>
+      </div>
+      <div class="card price-card">
+        <h3>学校・クラス</h3><div class="price">¥300<small> / 生徒1人 / 月</small></div>
+        <p>学校と<span class="jp">塾</span>向けの法人ライセンス。</p>
+        <ul class="feat">
+          <li>クラス全員にProの全機能</li>
+          <li>先生用ダッシュボードと習熟レポート</li>
+          <li>印刷できる毎日のワークシート</li>
+          <li>クラスランキングとクラス対抗リーグ</li>
+          <li>カリキュラム対応（<span class="jp">学習指導要領</span>）</li>
+          <li>請求書発行と管理機能</li>
+        </ul>
+        <button class="btn navy">学校向けデモを予約</button>
+      </div>
+    </div>
+
+    <div class="section-head"><div><h2>NewsQuestの収益モデル</h2><p>収益源は4つ。開始する順番に紹介します。</p></div></div>
+    <div class="mono-strip">
+      <div class="card"><div class="n">01</div><h3>フリーミアム → Pro</h3><p>ヘビーユーザーと受験期の家族からのサブスクリプション。核となる習慣は無料のままです。</p></div>
+      <div class="card"><div class="n">02</div><h3>教育機関向け（B2B）</h3><p>生徒1人あたりのライセンスを学校と<span class="jp">塾</span>向けに。先生用ダッシュボードと印刷ワークシートが決め手です。</p></div>
+      <div class="card"><div class="n">03</div><h3>リワード広告（フリー）</h3><p>任意：短い広告を見るとボーナスゲームや連続記録シールドを解放。クイズの途中には出さず、子どものクラスには表示しません。</p></div>
+      <div class="card"><div class="n">04</div><h3>スポンサークエスト</h3><p>博物館、出版社、試験機関が、明示ラベル付きのトピッククエストを協賛 — 例：科学館の「宇宙週間」。</p></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>家族プラン</h3>
+      <p><b style="color:var(--ink)">月額¥980</b>で保護者1人＋子ども最大3人までProを利用でき、週次レポートは1つにまとめて届きます — NewsQuestの始まり方（親1人、生徒1人、毎日のクイズ1回）からの自然なアップセルです。</p>
+    </div>
+  </section>
+
+  <footer>
+    <b style="color:var(--ink)">NewsQuest — インタラクティブ・プロトタイプ。</b>東京で中学生のために親が作った自動デイリーニュースクイズから誕生しました。このデモでは一般公開版のビジョンを示します：パーソナライズされたブリーフ、AI生成クイズ、読むことを後押しするゲーミフィケーション。記事とスコアはデモ用のサンプルです。<br>
+    ピッチで参照した競合環境： Briefed · CaffQuiz · <span class="jp">テストに出るニュース</span> · PrepWise AI · PBS/KET News Quiz.
+  </footer>
+  </main>
+</div>
+
+<!-- MOBILE NAV -->
+<nav class="mobilenav">
+  <button class="active" data-view="today"><span>📰</span>今日</button>
+  <button data-view="quiz"><span>🎯</span>クイズ</button>
+  <button data-view="play"><span>🕹️</span>アーケード</button>
+  <button data-view="progress"><span>🏆</span>進捗</button>
+  <button data-view="board"><span>📊</span>順位</button>
+  <button data-view="pro"><span>⭐</span>Pro</button>
+</nav>
+
+<script>
+/* ---------- STATE (in-memory demo) ---------- */
+var XP = 1240;
+function addXP(n){
+  XP += n;
+  document.getElementById('xpNum').textContent = XP.toLocaleString();
+  document.getElementById('sideXpText').textContent = XP.toLocaleString() + ' XP';
+  var pct = Math.min(100, Math.round(XP/2000*100));
+  document.getElementById('sideXpBar').style.width = pct + '%';
+  var pb = document.getElementById('progXpBar'); if(pb) pb.style.width = pct + '%';
+  var pt = document.getElementById('progXpText'); if(pt) pt.textContent = XP.toLocaleString() + ' XP';
+}
+
+/* ---------- NAVIGATION ---------- */
+function goTo(view){
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  document.getElementById('view-' + view).classList.add('active');
+  document.querySelectorAll('.navbtn, .mobilenav button').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-view') === view);
+  });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('[data-view]').forEach(function(b){
+  b.addEventListener('click', function(){ goTo(b.getAttribute('data-view')); });
+});
+document.querySelectorAll('[data-goto]').forEach(function(b){
+  b.addEventListener('click', function(){ goTo(b.getAttribute('data-goto')); });
+});
+
+/* ---------- BRIEF ---------- */
+var BRIEFS = [
+  {cat:'japan', tag:'日本・政治', cls:'pol', title:'地方議会が若返っている — 初当選の候補者が増えている', body:'最近の地方選挙では40歳未満の候補者が増え、子育て支援、空き家の活用、デジタル行政を訴えました。注目されているのは若い有権者の投票率です。', mins:'3分で読める', src:'サンプル通信 · 07:10 JST', why:'<b>なぜ大事？ — 公民（<span class="jp">公民</span>）：</b>都道府県や市区町村の議会は、学校、ごみ、地方税など、日常生活に最も近いルールを決めます。中学3年の社会で学ぶ「地方自治」の単元に直結します。'},
+  {cat:'economy', tag:'経済', cls:'eco', title:'金利が変わると円が動くのはなぜ？ — 2分でわかる解説', body:'他国の中央銀行が日本より高い金利を保つと、投資家はより多く稼げる場所へお金を移し、円は弱くなる傾向があります。円安は燃料や食料など輸入品を高くしますが、日本の輸出企業には追い風になります。', mins:'2分で読める', src:'サンプル解説 · 06:45 JST', why:'<b>なぜ大事？ — 経済：</b>為替レートは中央銀行の決定と昼食の値段をつなげます。貿易、物価、日本銀行の役割に関する問題でよく出題されます。'},
+  {cat:'climate', tag:'気候・地理', cls:'', title:'川、雨、そしてまちづくり：激しい豪雨に備える日本のまち', body:'短時間の激しい雨が増えています。都市では排水能力の強化、ハザードマップ、避難訓練、そして「グリーンインフラ」— 安全に浸水するよう設計された公園 — を組み合わせ、ダムだけに頼らない備えが進んでいます。', mins:'4分で読める', src:'サンプル記事 · 昨日 18:20 JST', why:'<b>なぜ大事？ — 地理（<span class="jp">地理</span>）：</b>日本の急な川と雨季のため、防災は核心的なテーマです。天気だけでなく、ハザードマップと土地利用が問われます。'},
+  {cat:'science', tag:'科学・テクノロジー', cls:'sci', title:'AI学習アシスタントを教室で試験導入 — すべての回答を先生が確認', body:'答えだけを出すのではなく、宿題の解き方を説明するAIツールを試す学校が増えています。先生が出力を確認し、生徒は大切な内容を教科書や資料で確かめるよう指導されます。', mins:'3分で読める', src:'サンプル記事 · 08:05 JST', why:'<b>なぜ大事？ — まさにこの話：</b>NewsQuest自体がAIコンテンツの実験です。求められる力は、AIを使って速く学びつつ、必ず自分で確かめること — 今日のクイズが評価する力そのものです。'},
+  {cat:'world', tag:'世界', cls:'wld', title:'島国と、すべてが依存する海上交通路', body:'島国にとって貿易は抽象的な話ではありません。エネルギー、食料、部品が、限られた忙しい航路を通って船で届きます。そのどこかで滞れば、すぐに国内の価格や品不足に表れます。', mins:'3分で読める', src:'サンプル通信 · 05:30 JST', why:'<b>なぜ大事？ — 地理と歴史：</b>日本はエネルギーの大半と食料の多くを輸入しています。海上交通路は地図の力と日常の経済をつなげます — 試験で好まれる組み合わせです。'},
+  {cat:'japan', tag:'日本・社会', cls:'pol', title:'学校全体で担うようになった、20年続く神社のお祭り', body:'地域の高齢化が進む中、学校が引き継ぐことで続く祭りがあります。生徒が神輿を担ぎ、屋台を出し、お年寄りに聞き取りをする — 伝統が生きた郷土史の授業になります。', mins:'2分で読める', src:'サンプル特集 · 昨日 16:00 JST', why:'<b>なぜ大事？ — 歴史と公民：</b>地域の祭りは一次資料です。何を祝うかで地域が大切にするものがわかり、誰が支えているかで地域の変化が見えます。'}
+];
+var briefList = document.getElementById('briefList');
+function renderBriefs(f){
+  briefList.innerHTML = '';
+  BRIEFS.filter(function(b){ return f==='all' || b.cat===f; }).forEach(function(b, i){
+    var d = document.createElement('article'); d.className = 'brief-card';
+    d.innerHTML = '<div class="meta"><span class="tagcat ' + b.cls + '">' + b.tag + '</span><span class="source">⏱ ' + b.mins + '</span></div>' +
+      '<h3>' + b.title + '</h3><p>' + b.body + '</p>' +
+      '<div class="why">' + b.why + '</div>' +
+      '<div class="foot"><span class="source">' + b.src + '</span><span><button class="linkbtn why-btn">なぜ大事？ ▾</button> &nbsp;·&nbsp; <button class="linkbtn quiz-btn">クイズで出して →</button></span></div>';
+    d.querySelector('.why-btn').addEventListener('click', function(){
+      var w = d.querySelector('.why'); var open = w.classList.toggle('open');
+      this.textContent = open ? '閉じる ▴' : 'なぜ大事？ ▾';
+    });
+    d.querySelector('.quiz-btn').addEventListener('click', function(){ goTo('quiz'); });
+    briefList.appendChild(d);
+  });
+  if(!briefList.children.length) briefList.innerHTML = '<div class="card"><p>今日はこのトピックのサンプル記事がありません — 本製品では、あなたの配信内容が夜の間に自動で調整されます。</p></div>';
+}
+renderBriefs('all');
+document.getElementById('filters').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  this.querySelectorAll('.fbtn').forEach(function(x){ x.classList.remove('active'); });
+  b.classList.add('active'); renderBriefs(b.getAttribute('data-f'));
+});
+
+/* ---------- QUIZ ---------- */
+var QUIZ = [
+  {topic:'公民・地方自治', q:'日本の都道府県を率いるのは誰ですか（州知事に相当）？', opts:['市長','知事','内閣総理大臣','都道府県警察本部長'], a:1, ex:'正解：都道府県を率いるのは<b>知事</b>で、住民の直接選挙で選ばれます。市長はその中にある市・町・村を率います。'},
+  {topic:'公民・国会', q:'日本の国会は、どの二つの議院から構成されていますか？', opts:['元老院と庶民院','衆議院と参議院','国会と都道府県議会','内閣と最高裁判所'], a:1, ex:'国会は<b>衆議院</b>と<b>参議院</b>の二院制です。法律は原則として両院の通過が必要です。'},
+  {topic:'公民・憲法', q:'日本国憲法のもとで、主権（最終的な政治の力）は誰にありますか？', opts:['天皇','内閣','国民','最高裁判所'], a:2, ex:'<b>国民主権</b>：主権は国民にあります。天皇は日本国と日本国民統合の象徴と定められています。'},
+  {topic:'経済・為替', q:'円安が進むと（例：1ドル150円→160円）、日本の輸入品は通常どうなりますか？', opts:['安くなる','高くなる','価格は決して変わらない','輸出が完全に止まる'], a:1, ex:'円安では1ドルに必要な円が増えるため、<b>燃料や食料などの輸入品は高くなります</b>。一方、日本の輸出品は海外の買い手にとって割安になります。'},
+  {topic:'地理・防災', q:'ダムや堤防のほかに、現代の日本の都市の水害対策で重要なものはどれですか？', opts:['ハザードマップと避難訓練','川沿いにだけ建物を建てる','すべての公園をなくす','国のテレビ速報だけを待つ'], a:0, ex:'<b>ハザードマップ＋避難訓練＋土地利用の計画</b>（安全に浸水するよう設計された公園を含む）が、コンクリートのインフラと並ぶ備えになっています。'},
+  {topic:'地理・貿易', q:'海上輸送ルートが、特に日本にとって重要なのはなぜですか？', opts:['日本には港がないから','日本は島国で、エネルギーの大半と食料の多くを船で輸入しているから','船は観光にしか使われないから','日本は何も輸出していないから'], a:1, ex:'<b>島国</b>の日本は、エネルギーの大部分と食料の大きな割合を海運で輸入しています。ルートの混乱はすぐに店頭に届きます。'},
+  {topic:'科学・AIの上手な使い方', q:'AI学習アシスタントを試す学校が、生徒に何より教えている習慣はどれですか？', opts:['答えを素早く書き写す','二度と教科書を使わない','大切な主張は教科書や信頼できる資料で確かめる','AIの使用を先生に隠す'], a:2, ex:'<b>鵜呑みにせず、確かめること。</b>AIは解き方を上手に説明できても、間違うことがあります。信頼できる資料で確かめることが核心の力です（このクイズ自体もそうやって事実確認されています）。'},
+  {topic:'公民・地方選挙', q:'今日のブリーフによれば、地方議会が「日常生活に最も近い」とされるのはなぜですか？', opts:['戦争を宣言するから','学校、ごみ収集、地方税のルールを決めるから','お金を印刷するから','内閣総理大臣を任命するから'], a:1, ex:'地方自治体は、毎日触れるサービス — <b>学校、ごみ、水道、地方税、介護サービス</b> — を担います。だから国のニュースが大きくても、地方選挙は重要なのです。'}
+];
+var qi = 0, qScore = 0, qXP = 0, qAnswered = false, qStreak = 0, qBestStreak = 0;
+document.querySelectorAll('.diff').forEach(function(d){
+  d.addEventListener('click', function(){
+    document.querySelectorAll('.diff').forEach(function(x){ x.classList.remove('active'); });
+    d.classList.add('active');
+    document.getElementById('diffLabel').textContent = d.getAttribute('data-diff');
+  });
+});
+function showQ(){
+  qAnswered = false;
+  var item = QUIZ[qi];
+  document.getElementById('qCount').textContent = '質問 ' + (qi+1) + ' / ' + QUIZ.length;
+  document.getElementById('qScore').textContent = 'スコア：' + qScore + ' · ⭐ ' + qXP + ' XP';
+  document.getElementById('qBar').style.width = ((qi)/QUIZ.length*100) + '%';
+  document.getElementById('qTopic').textContent = item.topic;
+  document.getElementById('qText').textContent = item.q;
+  document.getElementById('qExplain').className = 'explain';
+  document.getElementById('qExplain').innerHTML = '';
+  document.getElementById('qNext').style.display = 'none';
+  var box = document.getElementById('qOpts'); box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var btn = document.createElement('button'); btn.className = 'opt';
+    btn.innerHTML = '<span class="letter">' + letters[idx] + '</span><span>' + opt + '</span>';
+    btn.addEventListener('click', function(){ answer(idx, btn); });
+    box.appendChild(btn);
+  });
+}
+function answer(idx, btn){
+  if(qAnswered) return; qAnswered = true;
+  var item = QUIZ[qi];
+  var opts = document.querySelectorAll('#qOpts .opt');
+  opts.forEach(function(o){ o.disabled = true; });
+  opts[item.a].classList.add('correct');
+  var ex = document.getElementById('qExplain');
+  if(idx === item.a){
+    qScore++; qStreak++; qBestStreak = Math.max(qBestStreak, qStreak);
+    var gain = 15 + (qStreak >= 3 ? 5 : 0);
+    qXP += gain;
+    ex.className = 'explain show good';
+    ex.innerHTML = '✅ <b>+' + gain + ' XP' + (qStreak>=3 ? '（絶好調ボーナス）' : '') + '</b> — ' + item.ex;
+  } else {
+    qStreak = 0;
+    btn.classList.add('wrong');
+    ex.className = 'explain show bad';
+    ex.innerHTML = '❌ 残念 — 正解はハイライトされています。' + item.ex;
+  }
+  document.getElementById('qScore').textContent = 'スコア：' + qScore + ' · ⭐ ' + qXP + ' XP';
+  document.getElementById('qBar').style.width = ((qi+1)/QUIZ.length*100) + '%';
+  var next = document.getElementById('qNext');
+  next.textContent = qi === QUIZ.length-1 ? '結果を見る →' : '次へ →';
+  next.style.display = 'inline-block';
+}
+document.getElementById('qNext').addEventListener('click', function(){
+  if(qi < QUIZ.length-1){ qi++; showQ(); } else { finishQuiz(); }
+});
+function finishQuiz(){
+  document.getElementById('quizPlay').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'block';
+  var total = qXP + (qScore >= 6 ? 30 : 0) + (qBestStreak >= 6 ? 25 : 0);
+  document.getElementById('resScore').textContent = qScore + ' / ' + QUIZ.length;
+  document.getElementById('resEmoji').textContent = qScore >= 7 ? '🏆' : qScore >= 5 ? '🎉' : '💪';
+  document.getElementById('resMsg').textContent =
+    qScore >= 7 ? '素晴らしい — ブリーフを本当によく読めました。「鋭い目」バッジはあなたのものです。' :
+    qScore >= 5 ? 'よくできました。ブリーフを読み直して、満点を目指してもう一度挑戦しましょう。' :
+    'よく頑張りました — 学びは上の解説にあります。ブリーフは「今日」タブにまだあります。';
+  document.getElementById('resXp').textContent = '+' + total + ' XP獲得（内訳：' + (qScore>=6 ? '完了ボーナス30' : 'ボーナス0') + (qBestStreak>=6 ? ' + 連続正解ボーナス25' : '') + '）';
+  document.getElementById('resAcc').textContent = Math.round(qScore/QUIZ.length*100) + '%';
+  document.getElementById('resBadge').textContent = qScore >= 6 ? '👁️ 鋭い目 — 解放されました！' : '鋭い目 — 解放には6問以上の正解が必要（現在 ' + qScore + '/6）';
+  addXP(total);
+  if(qScore >= 6) unlockBadge('sharp');
+}
+function startQuiz(){
+  qi = 0; qScore = 0; qXP = 0; qStreak = 0; qBestStreak = 0;
+  document.getElementById('quizSetup').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizPlay').style.display = 'block';
+  showQ();
+}
+document.getElementById('startQuizBtn').addEventListener('click', startQuiz);
+document.getElementById('retryBtn').addEventListener('click', startQuiz);
+
+/* ---------- BLITZ ---------- */
+var BLITZ = [
+  {s:'知事は都道府県の住民の直接選挙で選ばれる。', t:true},
+  {s:'円安になると、日本の輸入燃料は安くなる。', t:false},
+  {s:'日本の国会は二つの議院からなる。', t:true},
+  {s:'ハザードマップは水害への備えの一つである。', t:true},
+  {s:'憲法のもとで、日本の法律を作るのは天皇である。', t:false},
+  {s:'日本はエネルギーの大半を船で輸入している。', t:true},
+  {s:'AIの答えは、確認せずに常に従うべきである。', t:false},
+  {s:'地方自治体はごみ収集や公立学校を担っている。', t:true}
+];
+var bi = 0, bScore = 0, bTimer = null, bTime = 30;
+var blitzArea = document.getElementById('blitzArea');
+function blitzRender(){
+  if(bi >= BLITZ.length){ blitzEnd(); return; }
+  blitzArea.innerHTML =
+    '<div style="display:flex;justify-content:space-between;font-weight:800;font-size:13.5px;color:var(--muted)"><span>⏱ <span id="bTime">' + bTime + '</span>秒</span><span>第' + (bi+1) + '問 / ' + BLITZ.length + ' ・ スコア ' + bScore + '</span></div>' +
+    '<div class="blitz-q">“' + BLITZ[bi].s + '”</div>' +
+    '<div class="blitz-btns"><button style="background:var(--teal)" id="bTrue">✓ ○ 正しい</button><button style="background:var(--coral)" id="bFalse">✕ × 誤り</button></div>' +
+    '<p id="bMsg" style="text-align:center;font-weight:700;min-height:22px;margin:12px 0 0"></p>';
+  document.getElementById('bTrue').addEventListener('click', function(){ blitzAnswer(true); });
+  document.getElementById('bFalse').addEventListener('click', function(){ blitzAnswer(false); });
+}
+function blitzAnswer(v){
+  var correct = (v === BLITZ[bi].t);
+  var msg = document.getElementById('bMsg');
+  if(correct){ bScore++; addXP(5); msg.textContent = '✅ 正解！ +5 XP'; msg.style.color = 'var(--green)'; }
+  else { msg.textContent = '❌ 正解は ' + (BLITZ[bi].t ? '○' : '×') + ' でした。'; msg.style.color = 'var(--red)'; }
+  bi++;
+  setTimeout(blitzRender, 650);
+}
+function blitzEnd(){
+  clearInterval(bTimer);
+  blitzArea.innerHTML = '<div style="text-align:center;padding:18px 0 4px"><div style="font-size:36px">' + (bScore>=5?'⚡🏆':'⚡') + '</div><h3 style="font-size:21px;margin:8px 0 4px">' + bScore + ' / ' + BLITZ.length + '</h3><p>' + (bScore>=5 ? 'チャレンジ達成！ボーナス+40 XPを追加しました。' : '5問以上正解で今日の地理スプリント・チャレンジ達成です。') + '</p><div style="margin-top:14px"><button class="btn secondary" id="blitzAgain">↻ もう一度遊ぶ</button></div></div>';
+  if(bScore >= 5) addXP(40);
+  document.getElementById('blitzAgain').addEventListener('click', startBlitz);
+}
+function startBlitz(){
+  bi = 0; bScore = 0; bTime = 30;
+  clearInterval(bTimer);
+  bTimer = setInterval(function(){
+    bTime--;
+    var el = document.getElementById('bTime'); if(el) el.textContent = bTime;
+    if(bTime <= 0) blitzEnd();
+  }, 1000);
+  blitzRender();
+}
+document.getElementById('blitzStart').addEventListener('click', startBlitz);
+
+/* ---------- HEADLINE MATCH ---------- */
+var MATCH = [
+  {h:'「日本銀行、金利を据え置き — 物価の行方を注視」', c:'経済'},
+  {h:'「新しいセンサーでロボットが人間の皮膚のように質感を“感じる”」', c:'科学'},
+  {h:'「内閣、新しい子育て支援法案を閣議決定」', c:'政治'},
+  {h:'「伏兵チーム、延長戦の末に全国高校野球決勝で優勝」', c:'スポーツ'}
+];
+var matchSel = null, matchDone = 0, matchXPgiven = false;
+var matchArea = document.getElementById('matchArea');
+MATCH.forEach(function(m, i){
+  var b = document.createElement('button'); b.className = 'match-item'; b.textContent = m.h;
+  b.setAttribute('data-i', i);
+  b.addEventListener('click', function(){
+    if(b.classList.contains('done')) return;
+    matchArea.querySelectorAll('.match-item').forEach(function(x){ x.classList.remove('sel'); });
+    b.classList.add('sel'); matchSel = i;
+  });
+  matchArea.appendChild(b);
+});
+document.getElementById('matchCats').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  var msg = document.getElementById('matchMsg');
+  if(matchSel === null){ msg.textContent = 'まず見出しを選んでください ↑'; msg.style.color = 'var(--muted)'; return; }
+  var item = matchArea.querySelector('[data-i="' + matchSel + '"]');
+  if(MATCH[matchSel].c === b.getAttribute('data-cat')){
+    item.classList.remove('sel'); item.classList.add('done');
+    item.textContent = '✓ ' + MATCH[matchSel].h + ' — ' + MATCH[matchSel].c;
+    matchSel = null; matchDone++;
+    if(matchDone === MATCH.length){
+      msg.textContent = '🎉 完璧な仕分け！ +30 XP'; msg.style.color = 'var(--green)';
+      if(!matchXPgiven){ addXP(30); matchXPgiven = true; }
+    } else { msg.textContent = '✓ 正解 — 4つ中 ' + matchDone + 'つ仕分け済み。'; msg.style.color = 'var(--green)'; }
+  } else { msg.textContent = '✕ その分野ではありません — もう一度どうぞ。'; msg.style.color = 'var(--red)'; }
+});
+
+/* ---------- PROGRESS: calendar, badges ---------- */
+var cal = document.getElementById('calGrid');
+for(var d = 0; d < 14; d++){
+  var cell = document.createElement('div');
+  cell.textContent = d + 1;
+  if(d < 11 || d === 12) cell.className = 'on';
+  if(d === 12) cell.className = 'on';
+  if(d === 13){ cell.className = 'today'; cell.textContent = '★'; }
+  if(d === 11) cell.textContent = '🛡';
+  cal.appendChild(cell);
+}
+var BADGES = [
+  {ic:'🌱', n:'はじめの一歩', s:'最初のクイズ完了', e:true},
+  {ic:'🔥', n:'7日連続', s:'丸1週間続けた', e:true},
+  {ic:'📚', n:'パーフェクトウィーク', s:'クイズ7日連続完了', e:true},
+  {ic:'👁️', n:'鋭い目', s:'デイリークイズで6問以上正解', e:false, id:'sharp'},
+  {ic:'🗾', n:'地理プロ', s:'習熟度74%', e:true},
+  {ic:'🏛️', n:'公民スター', s:'政治で80%以上', e:true},
+  {ic:'🌏', n:'世界旅行者', s:'今週 世界の問題10問回答', e:false},
+  {ic:'⚡', n:'ブリッツマスター', s:'ブリッツで8/8', e:false},
+  {ic:'💹', n:'マーケット通', s:'経済で90%', e:false},
+  {ic:'📜', n:'タイムトラベラー', s:'年表ソート完了', e:false},
+  {ic:'👥', n:'デュエリスト', s:'フレンド対決で3勝', e:false},
+  {ic:'👑', n:'ニュース王族', s:'レベル10到達', e:false}
+];
+var badgeGrid = document.getElementById('badgeGrid');
+function renderBadges(){
+  badgeGrid.innerHTML = '';
+  var earned = 0;
+  BADGES.forEach(function(b){
+    if(b.e) earned++;
+    var d = document.createElement('div');
+    d.className = 'badge ' + (b.e ? 'earned' : 'locked');
+    d.innerHTML = '<span class="b-ic">' + (b.e ? b.ic : '🔒') + '</span><b>' + b.n + '</b><small>' + b.s + '</small>';
+    badgeGrid.appendChild(d);
+  });
+  document.getElementById('badgeCount').textContent = earned + ' of ' + BADGES.length + ' earned';
+}
+function unlockBadge(id){
+  BADGES.forEach(function(b){ if(b.id === id) b.e = true; });
+  renderBadges();
+}
+renderBadges();
+
+/* ---------- LEADERBOARD ---------- */
+var BOARDS = {
+  friends: [
+    {n:'ゆな', s:'レベル6・🔥18日連続', xp:1580},
+    {n:'はると', s:'レベル5・🔥9日連続', xp:1395},
+    {n:'あなた（デモ学習者）', s:'レベル5・🔥12日連続', xp:1240, me:true, id:'lbYou'},
+    {n:'めい', s:'レベル4・🔥6日連続', xp:980},
+    {n:'れお', s:'レベル4・🔥4日連続', xp:870}
+  ],
+  class: [
+    {n:'さくら・2年B組', s:'政治の習熟度91%', xp:1710},
+    {n:'れん・2年B組', s:'地理の習熟度88%', xp:1605},
+    {n:'あなた（デモ学習者）', s:'政治の習熟度82%', xp:1240, me:true, id:'lbYou2'},
+    {n:'あおい・2年B組', s:'歴史の習熟度79%', xp:1180},
+    {n:'かいと・2年B組', s:'経済の習熟度77%', xp:1095},
+    {n:'ひな・2年B組', s:'気候の習熟度75%', xp:1010}
+  ],
+  global: [
+    {n:'QuizFox_07', s:'レベル5・大阪', xp:1920},
+    {n:'DailyReader', s:'レベル5・ソウル', xp:1755},
+    {n:'MapMaster', s:'レベル5・トロント', xp:1490},
+    {n:'あなた（デモ学習者）', s:'レベル5・東京', xp:1240, me:true, id:'lbYou3'},
+    {n:'HeadlineHero', s:'レベル5・ロンドン', xp:1130}
+  ]
+};
+function renderBoard(key){
+  var list = document.getElementById('lbList'); list.innerHTML = '';
+  BOARDS[key].slice().sort(function(a,b){ return b.xp - a.xp; }).forEach(function(p, i){
+    var row = document.createElement('div'); row.className = 'lb-row' + (p.me ? ' me' : '');
+    row.innerHTML = '<div class="rank ' + (i===0?'r1':i===1?'r2':i===2?'r3':'') + '">' + (i+1) + '</div>' +
+      '<div class="who"><b>' + p.n + (p.me ? ' ⭐' : '') + '</b><small>' + p.s + '</small></div>' +
+      '<div class="lb-xp"><b>' + (p.me ? XP.toLocaleString() : p.xp.toLocaleString()) + ' XP</b><small>今週</small></div>';
+    list.appendChild(row);
+  });
+}
+renderBoard('friends');
+document.getElementById('lbTabs').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  this.querySelectorAll('.fbtn').forEach(function(x){ x.classList.remove('active'); });
+  b.classList.add('active'); renderBoard(b.getAttribute('data-lb'));
+});
+
+/* ---------- PRO ---------- */
+document.getElementById('proBtn').addEventListener('click', function(){
+  this.textContent = '✓ トライアル開始（デモ）';
+  this.disabled = true;
+  document.getElementById('proMsg').textContent = '本製品では、カード不要で7日間のProトライアルが始まります。';
+});
+</script>
+</body>
+</html>
