@@ -53,9 +53,11 @@
         .explanation-box.show { display: block; }
         .next-btn { width: 100%; background: var(--primary); color: white; border: none; padding: 14px; border-radius: 10px; font-size: 1rem; font-weight: bold; cursor: pointer; display: none; }
         .results-screen { text-align: center; display: none; }
-        .score-display { font-size: 2.5rem; font-weight: bold; color: var(--primary); margin: 15px 0; }
-        .review-list { text-align: left; max-height: 300px; overflow-y: auto; margin: 20px 0; padding-right: 5px; }
-        .review-item { background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; margin-bottom: 10px; font-size: 0.85rem; }
+        .score-display { font-size: 2.5rem; font-weight: bold; color: var(--primary); margin: 10px 0; }
+        .stats-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 10px; margin: 15px 0; display: flex; justify-content: space-around; font-size: 0.9rem; }
+        .stat-item span { font-weight: bold; color: var(--primary); display: block; font-size: 1.2rem; }
+        .review-list { text-align: left; max-height: 200px; overflow-y: auto; margin: 15px 0; padding-right: 5px; }
+        .review-item { background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; margin-bottom: 8px; font-size: 0.85rem; }
     </style>
 </head>
 <body>
@@ -90,6 +92,13 @@
         <h2>本日のチャレンジ終了！</h2>
         <div class="score-display" id="final-score">0 / 10</div>
         <p id="score-message"></p>
+
+        <!-- Stats & Average Score Box -->
+        <div class="stats-box">
+            <div class="stat-item">挑戦回数 <span id="stat-total">0回</span></div>
+            <div class="stat-item">これまでの平均 <span id="stat-average">0.0点</span></div>
+        </div>
+
         <h3>回答の振り返り</h3>
         <div class="review-list" id="review-list"></div>
         <button class="next-btn" style="display: block;" onclick="loadDailyQuiz()">もう一度挑戦する</button>
@@ -101,16 +110,17 @@
     let currentIndex = 0;
     let score = 0;
     let userAnswers = [];
+    let quizDate = "";
 
     async function loadDailyQuiz() {
         try {
-            // Fetch today's generated json file from the repository
             const response = await fetch('questions-latest.json?t=' + new Date().getTime());
             if (!response.ok) throw new Error("Failed to load questions");
             const data = await response.json();
             
             currentQuestions = data.questions;
-            document.getElementById("date-badge").innerText = `📅 更新日: ${data.date}`;
+            quizDate = data.date;
+            document.getElementById("date-badge").innerText = `📅 更新日: ${quizDate}`;
             resetQuizState();
         } catch (error) {
             document.getElementById("question-text").innerText = "本日の問題データの読み込みに失敗しました。後ほど再度お試しください。";
@@ -175,11 +185,34 @@
         else showResults();
     }
 
+    function saveAndCalculateStats(currentScore) {
+        // Retrieve existing history from localStorage
+        let history = JSON.parse(localStorage.getItem("quiz_history") || "[]");
+        
+        // Push current score
+        history.push({ date: quizDate || new Date().toISOString().slice(0, 10), score: currentScore });
+        
+        // Save back to localStorage
+        localStorage.setItem("quiz_history", JSON.stringify(history));
+
+        // Calculate statistics
+        const totalQuizzes = history.length;
+        const totalScoreSum = history.reduce((sum, item) => sum + item.score, 0);
+        const averageScore = (totalScoreSum / totalQuizzes).toFixed(1);
+
+        return { totalQuizzes, averageScore };
+    }
+
     function showResults() {
         document.getElementById("quiz-screen").style.display = "none";
         document.getElementById("results-screen").style.display = "block";
         document.getElementById("final-score").innerText = `${score} / ${currentQuestions.length}`;
         document.getElementById("score-message").innerText = score === 10 ? "パーフェクト！素晴らしい時事・社会科の知識です！" : "お疲れ様でした！毎日の積み重ねで社会科の力をつけましょう！";
+
+        // Save score & get stats
+        const stats = saveAndCalculateStats(score);
+        document.getElementById("stat-total").innerText = `${stats.totalQuizzes}回`;
+        document.getElementById("stat-average").innerText = `${stats.averageScore}点`;
 
         const reviewList = document.getElementById("review-list");
         reviewList.innerHTML = "";
