@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>NewsQuest — Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F1E9; --bg2:#ECE7DA; --surface:#FFFFFF; --surface2:#FBF9F4; --ink:#13213E; --ink2:#2B3A5C;
+  --muted:#65708A; --line:#E2DCCB; --line2:#D6CFC0;
+  --coral:#E4572E; --coral-d:#C7431F; --teal:#0E7C6B; --teal-bg:#E0F0EC; --gold:#D9930D; --gold-bg:#FDF0D3;
+  --navy:#13213E; --navy2:#1C2F55; --paper:#FFFDF7; --red:#C0392B; --green:#1A7A4C; --green-bg:#E2F2E7;
+  --shadow:0 8px 30px rgba(19,33,62,.08); --shadow-sm:0 2px 10px rgba(19,33,62,.07);
+  --r:18px; --r-sm:12px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0D1424; --bg2:#0A101D; --surface:#16213A; --surface2:#1A2745; --ink:#EEF1F8; --ink2:#C9D2E6;
+    --muted:#93A0BE; --line:#28365A; --line2:#33436E;
+    --teal-bg:#123B35; --gold-bg:#3A2E0E; --green-bg:#123526; --paper:#16213A;
+    --shadow:0 8px 30px rgba(0,0,0,.35); --shadow-sm:0 2px 10px rgba(0,0,0,.3);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer} a{color:var(--teal)}
+.serif{font-family:"Newsreader",Georgia,serif}
+.jp{font-family:"Noto Sans JP",sans-serif}
+
+/* LAYOUT */
+.app{display:grid;grid-template-columns:248px 1fr;min-height:100vh}
+.sidebar{background:var(--navy);color:#DCE3F2;padding:22px 16px;display:flex;flex-direction:column;gap:6px;position:sticky;top:0;height:100vh}
+@media(prefers-color-scheme:dark){.sidebar{background:#0A101F;border-right:1px solid var(--line)}}
+.logo{display:flex;align-items:center;gap:11px;padding:4px 8px 18px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:14px}
+.logo-mark{width:42px;height:42px;border-radius:11px;background:var(--coral);display:grid;place-items:center;font-family:"Newsreader",serif;font-weight:800;font-size:24px;color:#fff;flex:none}
+.logo b{font-family:"Newsreader",serif;font-size:23px;color:#fff;letter-spacing:.2px;display:block;line-height:1}
+.logo span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9FB0D4;font-weight:700}
+.navbtn{display:flex;align-items:center;gap:11px;width:100%;text-align:left;background:none;border:0;color:#C4CFE6;padding:11px 12px;border-radius:11px;font-weight:600;font-size:15px}
+.navbtn:hover{background:rgba(255,255,255,.07);color:#fff}
+.navbtn.active{background:#fff;color:var(--navy)}
+.navbtn .ic{width:22px;text-align:center;font-size:17px;flex:none}
+.navbtn .pill{margin-left:auto;background:var(--coral);color:#fff;font-size:11px;font-weight:800;padding:2px 7px;border-radius:99px}
+.side-user{margin-top:auto;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:13px}
+.side-user .row{display:flex;gap:10px;align-items:center}
+.avatar{width:38px;height:38px;border-radius:50%;background:var(--gold);color:#231a00;display:grid;place-items:center;font-weight:800;flex:none}
+.side-user b{color:#fff;font-size:14px;display:block}.side-user small{color:#9FB0D4;font-size:12px}
+.xpbar{height:7px;background:rgba(255,255,255,.15);border-radius:99px;margin-top:11px;overflow:hidden}
+.xpbar i{display:block;height:100%;background:var(--gold);border-radius:99px}
+.side-user .xpmeta{display:flex;justify-content:space-between;font-size:11px;color:#B9C6E2;margin-top:6px;font-weight:600}
+
+.main{padding:26px 30px 90px;max-width:1120px;width:100%;margin:0 auto}
+.view{display:none}.view.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.view.active{animation:none}}
+
+/* HEADER */
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--coral)}
+h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1.02;margin:6px 0 8px;font-weight:800}
+.sub{color:var(--muted);font-size:16px;line-height:1.55;max-width:640px;margin:0}
+.stat-chips{display:flex;gap:9px;flex-wrap:wrap}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:8px 13px;font-weight:700;font-size:13.5px;display:flex;gap:7px;align-items:center;box-shadow:var(--shadow-sm)}
+.chip b{font-size:15px}
+.proto-note{margin:16px 0 20px;background:var(--gold-bg);border:1px solid #E8CE8A;color:#6B5203;border-radius:var(--r-sm);padding:11px 14px;font-size:13.5px;line-height:1.5}
+@media(prefers-color-scheme:dark){.proto-note{color:#F2D98C;border-color:#5A4A17}}
+
+/* CARDS / GRIDS */
+.grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow-sm)}
+.card h3{margin:0 0 6px;font-size:17px}.card p{color:var(--muted);line-height:1.55;margin:0;font-size:14.5px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin:30px 0 14px;flex-wrap:wrap}
+.section-head h2{font-family:"Newsreader",serif;font-size:26px;margin:0;font-weight:800}
+.section-head p{margin:3px 0 0;color:var(--muted);font-size:14px}
+.btn{background:var(--coral);color:#fff;border:0;border-radius:12px;padding:12px 18px;font-weight:800;font-size:15px;box-shadow:0 4px 14px rgba(228,87,46,.3)}
+.btn:hover{background:var(--coral-d)} .btn.secondary{background:var(--surface);color:var(--ink);border:1.5px solid var(--line2);box-shadow:none}
+.btn.teal{background:var(--teal);box-shadow:0 4px 14px rgba(14,124,107,.28)} .btn.navy{background:var(--navy);color:#fff;box-shadow:none}
+.btn:disabled{opacity:.45;cursor:not-allowed}.btn.small{padding:8px 13px;font-size:13.5px;border-radius:10px}
+
+/* QUEST HERO */
+.quest{background:var(--navy);color:#E8EDF8;border-radius:22px;padding:26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;position:relative;overflow:hidden}
+.quest::after{content:"?";position:absolute;right:110px;top:-38px;font-family:"Newsreader",serif;font-size:190px;font-weight:800;color:rgba(255,255,255,.05);pointer-events:none}
+.quest h2{font-family:"Newsreader",serif;font-size:29px;margin:6px 0 8px;color:#fff;line-height:1.1}
+.quest p{color:#B9C6E2;margin:0;line-height:1.55;font-size:15px;max-width:520px}
+.quest .tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.quest-meta{display:flex;gap:16px;margin-top:16px;flex-wrap:wrap;font-size:13.5px;font-weight:600;color:#DCE3F2}
+.ring{width:104px;height:104px;flex:none;position:relative;z-index:1}
+.ring svg{transform:rotate(-90deg)} .ring .c{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring b{font-size:22px;color:#fff;display:block;line-height:1}.ring small{font-size:11px;color:#9FB0D4;font-weight:700}
+
+/* BRIEF */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.fbtn{background:var(--surface);border:1.5px solid var(--line2);color:var(--ink2);border-radius:99px;padding:8px 15px;font-weight:700;font-size:13.5px}
+.fbtn.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.brief-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:19px 20px;margin-bottom:12px;box-shadow:var(--shadow-sm)}
+.brief-card .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.tagcat{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:var(--teal-bg);color:var(--teal)}
+.tagcat.pol{background:#E4E9F7;color:#33509E}.tagcat.eco{background:var(--gold-bg);color:#8A5F02}.tagcat.sci{background:#F3E2EE;color:#8E2A6E}.tagcat.wld{background:#E2EEF7;color:#1F5E8A}
+@media(prefers-color-scheme:dark){.tagcat.pol{background:#1E2C52;color:#A9BDF2}.tagcat.sci{background:#3D1E34;color:#E8A9D4}.tagcat.wld{background:#16324A;color:#9CCBEE}}
+.brief-card h3{font-family:"Newsreader",serif;font-size:21px;line-height:1.2;margin:0 0 7px;font-weight:700}
+.brief-card p{color:var(--muted);line-height:1.6;margin:0;font-size:15px}
+.brief-card .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px;flex-wrap:wrap}
+.source{font-size:12.5px;color:var(--muted);font-weight:600}
+.why{display:none;margin-top:13px;background:var(--surface2);border:1px dashed var(--line2);border-radius:var(--r-sm);padding:13px 15px;font-size:14px;line-height:1.6}
+.why.open{display:block}.why b{color:var(--teal)}
+.linkbtn{background:none;border:0;color:var(--coral);font-weight:800;font-size:13.5px;padding:0}
+
+/* QUIZ */
+.quiz-shell{max-width:760px;margin:0 auto}
+.q-progress{height:9px;background:var(--bg2);border-radius:99px;overflow:hidden;margin:14px 0 6px}
+.q-progress i{display:block;height:100%;background:var(--teal);border-radius:99px;transition:width .3s}
+.q-meta{display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:var(--muted)}
+.diffrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.diff{border:2px solid var(--line);background:var(--surface);border-radius:14px;padding:15px;text-align:left}
+.diff.active{border-color:var(--teal);background:var(--teal-bg)}
+.diff b{display:block;font-size:15px}.diff span{font-size:13px;color:var(--muted);line-height:1.4;display:block;margin-top:3px}
+.opt{display:flex;gap:12px;width:100%;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:10px;font-size:15.5px;font-weight:600;color:var(--ink);align-items:flex-start;line-height:1.45}
+.opt .letter{width:28px;height:28px;border-radius:8px;background:var(--bg2);display:grid;place-items:center;font-weight:800;font-size:13px;flex:none}
+.opt:hover{border-color:var(--teal)} .opt.correct{border-color:var(--green);background:var(--green-bg)} .opt.wrong{border-color:var(--red);background:#FBE9E6}
+@media(prefers-color-scheme:dark){.opt.wrong{background:#3D1712}}
+.opt:disabled{cursor:default;opacity:1}
+.explain{display:none;border-radius:14px;padding:15px 17px;font-size:14.5px;line-height:1.6;margin:4px 0 14px}
+.explain.show{display:block}.explain.good{background:var(--green-bg);border:1px solid var(--green)}.explain.bad{background:#FBE9E6;border:1px solid var(--red)}
+@media(prefers-color-scheme:dark){.explain.bad{background:#3D1712}}
+.score-hero{text-align:center;padding:12px 0 4px}
+.score-big{font-family:"Newsreader",serif;font-size:64px;font-weight:800;line-height:1}
+.xp-toast{display:inline-block;background:var(--gold-bg);border:1px solid #E8CE8A;color:#7A5A02;font-weight:800;padding:8px 16px;border-radius:99px;margin-top:12px}
+@media(prefers-color-scheme:dark){.xp-toast{color:#F2D98C}}
+
+/* GAMES */
+.game-card{position:relative;overflow:hidden}
+.game-card .emoji-art{font-size:34px;margin-bottom:10px}
+.blitz-q{font-family:"Newsreader",serif;font-size:24px;line-height:1.3;text-align:center;padding:20px 8px;font-weight:700}
+.blitz-btns{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.blitz-btns button{padding:16px;border-radius:14px;border:0;font-weight:800;font-size:17px;color:#fff}
+.match-item{background:var(--surface2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:9px;font-weight:600;font-size:14.5px;line-height:1.45;cursor:pointer;text-align:left;width:100%;color:var(--ink)}
+.match-item.sel{border-color:var(--coral);background:#FDEEE8}
+@media(prefers-color-scheme:dark){.match-item.sel{background:#3A1E13}}
+.match-item.done{border-color:var(--green);background:var(--green-bg);cursor:default}
+
+/* PROGRESS */
+.mastery-row{margin-bottom:15px}.mastery-row .top{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:6px}
+.mastery-row .top span{color:var(--muted);font-weight:600}
+.mbar{height:10px;background:var(--bg2);border-radius:99px;overflow:hidden}.mbar i{display:block;height:100%;border-radius:99px}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.badge{border:1.5px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;background:var(--surface)}
+.badge .b-ic{font-size:27px;display:block;margin-bottom:6px}.badge b{font-size:12.5px;display:block;line-height:1.3}.badge small{font-size:11px;color:var(--muted)}
+.badge.locked{opacity:.45;filter:grayscale(.8)}
+.badge.earned{border-color:var(--gold);background:var(--gold-bg)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}
+.cal div{aspect-ratio:1;border-radius:9px;background:var(--bg2);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--muted)}
+.cal div.on{background:var(--coral);color:#fff}.cal div.today{outline:2.5px solid var(--teal);outline-offset:1px;background:var(--teal);color:#fff}
+.chal{display:flex;gap:13px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.chal:last-child{border-bottom:0}.chal .ci{width:42px;height:42px;border-radius:11px;background:var(--bg2);display:grid;place-items:center;font-size:20px;flex:none}
+.chal b{font-size:14.5px;display:block}.chal small{color:var(--muted);font-size:12.5px}
+
+/* LEADERBOARD */
+.lb-row{display:flex;align-items:center;gap:13px;padding:13px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:9px}
+.lb-row.me{border:2px solid var(--coral);background:#FDF1EB}
+@media(prefers-color-scheme:dark){.lb-row.me{background:#33190F}}
+.rank{width:34px;height:34px;border-radius:50%;background:var(--bg2);display:grid;place-items:center;font-weight:800;flex:none}
+.rank.r1{background:#F5C542;color:#3A2A00}.rank.r2{background:#D9DEE8;color:#333}.rank.r3{background:#E8A87C;color:#4A2400}
+.lb-row .who{flex:1;min-width:0}.lb-row .who b{display:block;font-size:15px}.lb-row .who small{color:var(--muted);font-size:12.5px}
+.lb-xp{text-align:right}.lb-xp b{display:block}.lb-xp small{color:var(--muted);font-size:12px}
+
+/* PRICING */
+.price-card{display:flex;flex-direction:column}
+.price-card.pop{border:2.5px solid var(--coral);position:relative}
+.pop-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:11.5px;font-weight:800;padding:4px 12px;border-radius:99px;letter-spacing:.05em;white-space:nowrap}
+.price{font-family:"Newsreader",serif;font-size:38px;font-weight:800;margin:8px 0 2px}.price small{font-size:15px;font-family:"Plus Jakarta Sans";font-weight:600;color:var(--muted)}
+.feat{list-style:none;padding:0;margin:14px 0 18px;flex:1}
+.feat li{padding:6px 0 6px 26px;position:relative;font-size:14px;line-height:1.45;color:var(--ink2)}
+.feat li::before{content:"✓";position:absolute;left:2px;color:var(--teal);font-weight:800}
+.feat li.no{color:var(--muted)}.feat li.no::before{content:"—";color:var(--muted)}
+table.cmp{width:100%;border-collapse:collapse;font-size:14px}
+table.cmp th,table.cmp td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.cmp th{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.mono-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mono-strip .card{text-align:left}.mono-strip .n{font-family:"Newsreader",serif;font-size:26px;font-weight:800;color:var(--coral)}
+
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:13px;line-height:1.6}
+
+/* MOBILE NAV */
+.mobilenav{display:none}
+@media(max-width:860px){
+  .app{grid-template-columns:1fr}
+  .sidebar{display:none}
+  .main{padding:20px 16px 96px}
+  .grid2,.grid3,.mono-strip{grid-template-columns:1fr}
+  .quest{grid-template-columns:1fr}.ring{margin:0 auto}
+  .badges{grid-template-columns:repeat(3,1fr)}
+  .diffrow{grid-template-columns:1fr}
+  .mobilenav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--line);z-index:50;padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .mobilenav button{flex:1;background:none;border:0;color:var(--muted);font-size:10.5px;font-weight:700;padding:6px 2px;border-radius:9px}
+  .mobilenav button span{display:block;font-size:19px;margin-bottom:2px}
+  .mobilenav button.active{color:var(--coral)}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo"><div class="logo-mark">N</div><div><b>NewsQuest</b><span>Prototype</span></div></div>
+    <button class="navbtn active" data-view="today"><span class="ic">📰</span>Today's Brief</button>
+    <button class="navbtn" data-view="quiz"><span class="ic">🎯</span>Daily Quiz<span class="pill">+150 XP</span></button>
+    <button class="navbtn" data-view="play"><span class="ic">🕹️</span>Arcade</button>
+    <button class="navbtn" data-view="progress"><span class="ic">🏆</span>My Progress</button>
+    <button class="navbtn" data-view="board"><span class="ic">📊</span>Leaderboard</button>
+    <button class="navbtn" data-view="pro"><span class="ic">⭐</span>Go Pro</button>
+    <div class="side-user">
+      <div class="row"><div class="avatar">D</div><div><b>Demo Learner</b><small>Level 5 · News Explorer</small></div></div>
+      <div class="xpbar"><i id="sideXpBar" style="width:62%"></i></div>
+      <div class="xpmeta"><span id="sideXpText">1,240 XP</span><span>760 to Level 6</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+  <!-- ============ TODAY ============ -->
+  <section class="view active" id="view-today">
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">Tuesday · 3 November · Your Daily Brief</div>
+        <h1>Good morning. Here's the world<br>in 5 minutes.</h1>
+        <p class="sub">A personalised brief built from today's news, matched to middle-school social studies (<span class="jp">社会</span>) — then turned into a quiz that actually sticks.</p>
+      </div>
+      <div class="stat-chips">
+        <div class="chip">🔥 <b id="streakNum">12</b> day streak</div>
+        <div class="chip">⭐ <b id="xpNum">1,240</b> XP</div>
+        <div class="chip">🎯 Goal <b>3 / 5</b> done</div>
+      </div>
+    </div>
+
+    <div class="proto-note"><b>Interactive prototype:</b> every button works — take the quiz, play the mini-games, filter the brief. Stories below are sample content for the demo, written in the style of the real daily pipeline that began as a family project in Tokyo.</div>
+
+    <div class="quest">
+      <div>
+        <span class="tag">Today's Quest</span>
+        <h2>The Daily Quiz is ready — 8 questions from today's brief</h2>
+        <p>Read the brief, then prove it. Finish with 6+ correct to keep your streak shield and unlock the “Sharp Eye” badge.</p>
+        <div class="quest-meta"><span>⏱ ~5 minutes</span><span>⭐ +150 XP</span><span>🛡️ Streak shield on the line</span></div>
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1">
+          <button class="btn" data-goto="quiz">Start Daily Quiz →</button>
+          <button class="btn secondary" onclick="document.getElementById('briefAnchor').scrollIntoView({behavior:'smooth'})">Read the brief first</button>
+        </div>
+      </div>
+      <div class="ring">
+        <svg width="104" height="104"><circle cx="52" cy="52" r="44" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="10"/><circle cx="52" cy="52" r="44" fill="none" stroke="#E9A426" stroke-width="10" stroke-linecap="round" stroke-dasharray="276" stroke-dashoffset="110"/></svg>
+        <div class="c"><div><b>60%</b><small>DAILY GOAL</small></div></div>
+      </div>
+    </div>
+
+    <div class="section-head" id="briefAnchor">
+      <div><h2>Your brief — tuned to your interests</h2><p>Tap a topic to personalise. “Why it matters” links each story to the school curriculum.</p></div>
+    </div>
+    <div class="filters" id="filters">
+      <button class="fbtn active" data-f="all">All stories</button>
+      <button class="fbtn" data-f="japan">🇯🇵 Japan</button>
+      <button class="fbtn" data-f="world">🌏 World</button>
+      <button class="fbtn" data-f="economy">💹 Economy</button>
+      <button class="fbtn" data-f="science">🔬 Science &amp; Tech</button>
+      <button class="fbtn" data-f="climate">🌦️ Climate &amp; Geography</button>
+    </div>
+    <div id="briefList"></div>
+
+    <div class="grid2" style="margin-top:8px">
+      <div class="card">
+        <h3>⚡ Challenge of the Day</h3>
+        <p><b style="color:var(--ink)">Geography Sprint:</b> score 5+ in True-or-False Blitz before midnight to earn a bonus +40 XP and progress the “Globe Trotter” badge.</p>
+        <div style="margin-top:14px"><button class="btn teal small" data-goto="play">Play Blitz →</button></div>
+      </div>
+      <div class="card">
+        <h3>🏫 Built for classrooms, too</h3>
+        <p>Teachers get the same daily brief as a printable worksheet, a class leaderboard, and per-topic mastery reports. See the School plan on the Pro page.</p>
+        <div style="margin-top:14px"><button class="btn navy small" data-goto="pro">See plans →</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="view" id="view-quiz">
+    <div class="eyebrow">Daily Quiz · From Today's Brief</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">Prove what you read.</h1>
+
+    <div class="quiz-shell">
+      <!-- setup -->
+      <div id="quizSetup">
+        <p class="sub" style="max-width:none">8 questions, instant explanations, XP for every correct answer — plus a speed bonus. Pick your level first; questions adapt to it in the full product.</p>
+        <div class="diffrow">
+          <button class="diff active" data-diff="Middle School"><b>🎒 Middle School</b><span>Aligned to <span class="jp">社会</span> — civics, geography, history basics.</span></button>
+          <button class="diff" data-diff="High School"><b>🎓 High School</b><span>Deeper context, data questions, source analysis.</span></button>
+          <button class="diff" data-diff="Adult / General"><b>🧭 Adult / General</b><span>Same news, broader world knowledge and economy.</span></button>
+        </div>
+        <div class="card" style="text-align:center;padding:28px">
+          <div style="font-size:38px">🎯</div>
+          <h3 style="font-size:20px;margin-top:8px">Ready when you are</h3>
+          <p>Best streak so far: 6 in a row. Beat it for a +25 XP “On Fire” bonus.</p>
+          <div style="margin-top:16px"><button class="btn" id="startQuizBtn">Start Quiz — <span id="diffLabel">Middle School</span></button></div>
+        </div>
+      </div>
+
+      <!-- playing -->
+      <div id="quizPlay" style="display:none">
+        <div class="q-meta"><span id="qCount">Question 1 of 8</span><span id="qScore">Score: 0 · ⭐ 0 XP</span></div>
+        <div class="q-progress"><i id="qBar" style="width:12.5%"></i></div>
+        <div class="card" style="padding:24px">
+          <span class="tagcat" id="qTopic">Civics</span>
+          <h3 class="serif" id="qText" style="font-size:23px;line-height:1.3;margin:12px 0 18px"></h3>
+          <div id="qOpts"></div>
+          <div class="explain" id="qExplain"></div>
+          <div style="display:flex;justify-content:flex-end"><button class="btn" id="qNext" style="display:none">Next →</button></div>
+        </div>
+      </div>
+
+      <!-- result -->
+      <div id="quizResult" style="display:none">
+        <div class="card score-hero">
+          <div style="font-size:40px" id="resEmoji">🏆</div>
+          <div class="score-big" id="resScore">6 / 8</div>
+          <p id="resMsg" style="margin-top:8px"></p>
+          <div class="xp-toast" id="resXp">+130 XP earned</div>
+          <div class="grid3" style="margin-top:22px;text-align:left">
+            <div class="card" style="box-shadow:none"><h3>Accuracy</h3><p style="font-size:22px;color:var(--ink);font-weight:800" id="resAcc">75%</p></div>
+            <div class="card" style="box-shadow:none"><h3>Streak</h3><p style="font-size:22px;color:var(--ink);font-weight:800">🔥 12 days</p></div>
+            <div class="card" style="box-shadow:none"><h3>Badge progress</h3><p id="resBadge">Sharp Eye — unlocked at 6+ correct</p></div>
+          </div>
+          <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
+            <button class="btn secondary" id="retryBtn">↻ Retake quiz</button>
+            <button class="btn teal" data-goto="progress">See my progress →</button>
+            <button class="btn navy" data-goto="play">Play a mini-game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAY / ARCADE ============ -->
+  <section class="view" id="view-play">
+    <div class="eyebrow">Arcade · 60-Second Games</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">Short games, long memory.</h1>
+    <p class="sub">Mini-games recycle facts from this week's briefs using spaced repetition — the science of not forgetting.</p>
+
+    <div class="grid2" style="margin-top:20px">
+      <div class="card game-card">
+        <div class="emoji-art">⚡</div>
+        <h3>True-or-False Blitz</h3>
+        <p>8 statements, beat the clock. +5 XP per correct answer.</p>
+        <div id="blitzArea">
+          <div style="text-align:center;padding:22px 0 6px"><button class="btn" id="blitzStart">Start Blitz</button></div>
+        </div>
+      </div>
+
+      <div class="card game-card">
+        <div class="emoji-art">🗂️</div>
+        <h3>Headline Match</h3>
+        <p>Tap a headline, then tap its category. Sort all 4 to win +30 XP.</p>
+        <div id="matchArea" style="margin-top:14px"></div>
+        <div class="filters" id="matchCats" style="margin-top:6px">
+          <button class="fbtn" data-cat="Politics">🏛️ Politics</button>
+          <button class="fbtn" data-cat="Economy">💹 Economy</button>
+          <button class="fbtn" data-cat="Science">🔬 Science</button>
+          <button class="fbtn" data-cat="Sport">⚽ Sport</button>
+        </div>
+        <p id="matchMsg" style="font-weight:700;font-size:14px"></p>
+      </div>
+    </div>
+
+    <div class="grid3" style="margin-top:16px">
+      <div class="card game-card"><div class="emoji-art">🗓️</div><h3>Timeline Sort</h3><p>Drag historical events into order. Today's set: modern Japan, 1868 → today.</p><p style="margin-top:10px"><span class="tagcat pol">Pro preview</span></p></div>
+      <div class="card game-card"><div class="emoji-art">🗺️</div><h3>Map Pin Drop</h3><p>Pin prefectures, capitals and trade ports on a blank map against the clock.</p><p style="margin-top:10px"><span class="tagcat">Free · Daily</span></p></div>
+      <div class="card game-card"><div class="emoji-art">👥</div><h3>Friend Duel</h3><p>Same 5 questions, head-to-head. Winner takes the loser's wagered XP (up to 50).</p><p style="margin-top:10px"><span class="tagcat eco">Pro preview</span></p></div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRESS ============ -->
+  <section class="view" id="view-progress">
+    <div class="eyebrow">My Progress · Gamification</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">Level 5 — News Explorer</h1>
+    <p class="sub">Everything that keeps learners coming back: XP, streaks, mastery and badges — all earned from real reading.</p>
+
+    <div class="grid2" style="margin-top:20px">
+      <div class="card">
+        <h3>⭐ XP &amp; Level</h3>
+        <div style="display:flex;justify-content:space-between;font-size:13.5px;font-weight:700;color:var(--muted);margin:12px 0 6px"><span id="progXpText">1,240 XP</span><span>Level 6 at 2,000 XP</span></div>
+        <div class="mbar" style="height:13px"><i id="progXpBar" style="width:62%;background:var(--gold)"></i></div>
+        <h3 style="margin-top:22px">📈 XP — last 7 days</h3>
+        <svg viewBox="0 0 340 130" width="100%" role="img" aria-label="Bar chart of XP earned per day over the last week" style="margin-top:8px">
+          <line x1="28" y1="108" x2="330" y2="108" stroke="var(--line2)" stroke-width="1.5"/>
+          <g font-family="Plus Jakarta Sans" font-size="10.5" fill="var(--muted)" text-anchor="middle">
+            <rect x="42" y="68" width="26" height="40" rx="5" fill="#B9C6E2"/><text x="55" y="122">Wed</text><text x="55" y="60">80</text>
+            <rect x="84" y="48" width="26" height="60" rx="5" fill="#B9C6E2"/><text x="97" y="122">Thu</text><text x="97" y="40">120</text>
+            <rect x="126" y="78" width="26" height="30" rx="5" fill="#B9C6E2"/><text x="139" y="122">Fri</text><text x="139" y="70">60</text>
+            <rect x="168" y="38" width="26" height="70" rx="5" fill="#B9C6E2"/><text x="181" y="122">Sat</text><text x="181" y="30">140</text>
+            <rect x="210" y="28" width="26" height="80" rx="5" fill="#0E7C6B"/><text x="223" y="122">Sun</text><text x="223" y="20">160</text>
+            <rect x="252" y="58" width="26" height="50" rx="5" fill="#B9C6E2"/><text x="265" y="122">Mon</text><text x="265" y="50">100</text>
+            <rect x="294" y="43" width="26" height="65" rx="5" fill="#E4572E"/><text x="307" y="122">Today</text><text x="307" y="35">130</text>
+          </g>
+        </svg>
+        <p style="font-size:12.5px">Weekend quests and Friend Duels drive the Sunday peak — a pattern Pro analytics surfaces for parents and teachers.</p>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>🔥 Streak — 12 days</h3>
+          <p style="margin-bottom:12px">One quiz a day keeps the streak alive. 2 streak shields in reserve.</p>
+          <div class="cal" id="calGrid"></div>
+          <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:7px;font-weight:600"><span>14 days ago</span><span>Today</span></div>
+        </div>
+        <div class="card">
+          <h3>🎯 Active challenges</h3>
+          <div class="chal"><div class="ci">🌏</div><div style="flex:1"><b>Globe Trotter</b><small>Answer 10 World questions this week</small><div class="mbar" style="margin-top:6px"><i style="width:70%;background:var(--teal)"></i></div></div><b>7/10</b></div>
+          <div class="chal"><div class="ci">🏛️</div><div style="flex:1"><b>Civics Champion</b><small>Master the Politics topic (reach 90%)</small><div class="mbar" style="margin-top:6px"><i style="width:82%;background:#33509E"></i></div></div><b>82%</b></div>
+          <div class="chal"><div class="ci">📚</div><div style="flex:1"><b>Perfect Week</b><small>Complete the daily quiz 7 days in a row</small><div class="mbar" style="margin-top:6px"><i style="width:100%;background:var(--gold)"></i></div></div><b>✓ Done</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head"><div><h2>Mastery by topic</h2><p>The same map teachers see in the classroom dashboard — per curriculum unit.</p></div></div>
+    <div class="card">
+      <div class="mastery-row"><div class="top">🏛️ Politics &amp; Civics <span class="jp">政治</span><span>82% · Advanced</span></div><div class="mbar"><i style="width:82%;background:#33509E"></i></div></div>
+      <div class="mastery-row"><div class="top">🗾 Geography <span class="jp">地理</span><span>74% · Proficient</span></div><div class="mbar"><i style="width:74%;background:var(--teal)"></i></div></div>
+      <div class="mastery-row"><div class="top">💹 Economy <span class="jp">経済</span><span>61% · Developing</span></div><div class="mbar"><i style="width:61%;background:var(--gold)"></i></div></div>
+      <div class="mastery-row"><div class="top">📜 History <span class="jp">歴史</span><span>55% · Developing</span></div><div class="mbar"><i style="width:55%;background:#8E2A6E"></i></div></div>
+      <div class="mastery-row" style="margin-bottom:2px"><div class="top">🌦️ Climate &amp; Environment<span>43% · Needs focus — Blitz games queued</span></div><div class="mbar"><i style="width:43%;background:var(--coral)"></i></div></div>
+    </div>
+
+    <div class="section-head"><div><h2>Badges</h2><p id="badgeCount">7 of 12 earned</p></div></div>
+    <div class="badges" id="badgeGrid"></div>
+  </section>
+
+  <!-- ============ LEADERBOARD ============ -->
+  <section class="view" id="view-board">
+    <div class="eyebrow">Leaderboard · This Week</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">Friendly rivalry, real learning.</h1>
+    <p class="sub">Boards are opt-in and grouped fairly — friends, your class, or learners at your level worldwide. No pay-to-win: XP only comes from answering.</p>
+    <div class="filters" style="margin-top:18px" id="lbTabs">
+      <button class="fbtn active" data-lb="friends">👥 Friends</button>
+      <button class="fbtn" data-lb="class">🏫 My Class · 2-B</button>
+      <button class="fbtn" data-lb="global">🌏 Level 5 Global</button>
+    </div>
+    <div id="lbList"></div>
+    <div class="card" style="margin-top:16px">
+      <h3>🏫 For schools: the class view is the product</h3>
+      <p>Teachers create a class code, students join with no email needed, and the board resets weekly so everyone gets a fresh shot at the top. Individual rankings stay private outside the class by default.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRO ============ -->
+  <section class="view" id="view-pro">
+    <div class="eyebrow">Plans · Monetisation</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">Free every day. Pro when you're hooked.</h1>
+    <p class="sub">The model from the pitch deck, as a working pricing page: freemium core, family and school tiers, plus tasteful ads and sponsorships on Free — never pay-to-win.</p>
+
+    <div class="grid3" style="margin-top:24px">
+      <div class="card price-card">
+        <h3>Free</h3><div class="price">¥0<small> forever</small></div>
+        <p>For trying the habit.</p>
+        <ul class="feat">
+          <li>Daily brief (5 stories) + 8-question quiz</li>
+          <li>Streaks, XP, levels &amp; badges</li>
+          <li>Friends leaderboard</li>
+          <li>1 mini-game per day</li>
+          <li class="no">Unlimited archive &amp; past quizzes</li>
+          <li class="no">Parent / teacher reports</li>
+        </ul>
+        <button class="btn secondary">Current plan</button>
+      </div>
+      <div class="card price-card pop">
+        <span class="pop-tag">MOST POPULAR</span>
+        <h3>Pro</h3><div class="price">¥680<small> / month</small></div>
+        <p>For serious learners &amp; exam prep.</p>
+        <ul class="feat">
+          <li>Everything in Free, unlimited mini-games</li>
+          <li>Full archive + “quiz me on any topic”</li>
+          <li>Exam mode: <span class="jp">高校入試</span>-style sets &amp; timing</li>
+          <li>Friend Duels &amp; custom challenges</li>
+          <li>Monthly parent progress report</li>
+          <li>No ads, ever</li>
+        </ul>
+        <button class="btn" id="proBtn">Start 7-day free trial</button>
+        <p id="proMsg" style="text-align:center;margin-top:10px;font-weight:700"></p>
+      </div>
+      <div class="card price-card">
+        <h3>School &amp; Class</h3><div class="price">¥300<small> / student / mo</small></div>
+        <p>B2B licence for schools &amp; cram schools (<span class="jp">塾</span>).</p>
+        <ul class="feat">
+          <li>Everything in Pro for the whole class</li>
+          <li>Teacher dashboard &amp; mastery reports</li>
+          <li>Printable daily worksheets</li>
+          <li>Class leaderboard &amp; class-vs-class leagues</li>
+          <li>Curriculum mapping (<span class="jp">学習指導要領</span>)</li>
+          <li>Invoicing &amp; admin controls</li>
+        </ul>
+        <button class="btn navy">Book a school demo</button>
+      </div>
+    </div>
+
+    <div class="section-head"><div><h2>How NewsQuest makes money</h2><p>Four revenue lines, in the order they switch on.</p></div></div>
+    <div class="mono-strip">
+      <div class="card"><div class="n">01</div><h3>Freemium → Pro</h3><p>Subscriptions from power users and exam-season families. The core habit stays free.</p></div>
+      <div class="card"><div class="n">02</div><h3>B2B Education</h3><p>Per-student licences for schools and <span class="jp">塾</span>, sold on the teacher dashboard and printable worksheets.</p></div>
+      <div class="card"><div class="n">03</div><h3>Rewarded ads (Free)</h3><p>Optional: watch a short ad to unlock a bonus game or a streak shield. Never mid-quiz, never for kids' classes.</p></div>
+      <div class="card"><div class="n">04</div><h3>Sponsored quests</h3><p>Museums, publishers and exam boards sponsor clearly-labelled topic quests — e.g. a science-museum “Space Week”.</p></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Family plan</h3>
+      <p><b style="color:var(--ink)">¥980/month</b> covers 1 parent + up to 3 children on Pro, with one combined weekly report — the natural upsell from how NewsQuest started: one parent, one student, one daily quiz.</p>
+    </div>
+  </section>
+
+  <footer>
+    <b style="color:var(--ink)">NewsQuest — interactive prototype.</b> Born as a parent's automated daily news quiz for a middle-schooler in Tokyo; this demo shows the public product vision: personalised briefs, AI-generated quizzes, and gamification that rewards reading. Sample stories and scores are illustrative demo content.<br>
+    Competitor landscape referenced in the pitch: Briefed · CaffQuiz · <span class="jp">テストに出るニュース</span> · PrepWise AI · PBS/KET News Quiz.
+  </footer>
+  </main>
+</div>
+
+<!-- MOBILE NAV -->
+<nav class="mobilenav">
+  <button class="active" data-view="today"><span>📰</span>Today</button>
+  <button data-view="quiz"><span>🎯</span>Quiz</button>
+  <button data-view="play"><span>🕹️</span>Arcade</button>
+  <button data-view="progress"><span>🏆</span>Progress</button>
+  <button data-view="board"><span>📊</span>Ranks</button>
+  <button data-view="pro"><span>⭐</span>Pro</button>
+</nav>
+
+<script>
+/* ---------- STATE (in-memory demo) ---------- */
+var XP = 1240;
+function addXP(n){
+  XP += n;
+  document.getElementById('xpNum').textContent = XP.toLocaleString();
+  document.getElementById('sideXpText').textContent = XP.toLocaleString() + ' XP';
+  var pct = Math.min(100, Math.round(XP/2000*100));
+  document.getElementById('sideXpBar').style.width = pct + '%';
+  var pb = document.getElementById('progXpBar'); if(pb) pb.style.width = pct + '%';
+  var pt = document.getElementById('progXpText'); if(pt) pt.textContent = XP.toLocaleString() + ' XP';
+}
+
+/* ---------- NAVIGATION ---------- */
+function goTo(view){
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  document.getElementById('view-' + view).classList.add('active');
+  document.querySelectorAll('.navbtn, .mobilenav button').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-view') === view);
+  });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('[data-view]').forEach(function(b){
+  b.addEventListener('click', function(){ goTo(b.getAttribute('data-view')); });
+});
+document.querySelectorAll('[data-goto]').forEach(function(b){
+  b.addEventListener('click', function(){ goTo(b.getAttribute('data-goto')); });
+});
+
+/* ---------- BRIEF ---------- */
+var BRIEFS = [
+  {cat:'japan', tag:'Japan · Politics', cls:'pol', title:'Local assemblies are getting younger — and first-time candidates are winning', body:'More candidates under 40 stood in recent local elections, campaigning on childcare, empty-house reuse and digital services. Turnout among younger voters is the number everyone is watching.', mins:'3 min read', src:'Sample wire · 07:10 JST', why:'<b>Why it matters — Civics (<span class="jp">公民</span>):</b> prefectural and municipal assemblies make the rules closest to daily life — schools, waste, local taxes. This maps to the “local self-government” unit in 3rd-year social studies.'},
+  {cat:'economy', tag:'Economy', cls:'eco', title:'Why the yen moves when interest rates change — a 2-minute explainer', body:'When another major central bank holds rates higher than Japan\'s, investors move money to earn more there — and the yen tends to weaken. A weaker yen makes imports like fuel and food pricier, but helps Japanese exporters.', mins:'2 min read', src:'Sample explainer · 06:45 JST', why:'<b>Why it matters — Economy:</b> exchange rates connect central-bank decisions to the price of lunch. Expect this in questions about trade, prices and the Bank of Japan\'s role.'},
+  {cat:'climate', tag:'Climate & Geography', cls:'', title:'Rivers, rain and city planning: how Japanese towns prepare for heavier downpours', body:'Short, intense rainfall is becoming more common. Cities are combining bigger drainage, hazard maps, evacuation drills and “green infrastructure” — parks designed to flood safely — instead of relying on dams alone.', mins:'4 min read', src:'Sample report · Yesterday 18:20 JST', why:'<b>Why it matters — Geography (<span class="jp">地理</span>):</b> Japan\'s steep rivers and rainy season make disaster prevention a core topic: hazard maps and land use, not just weather.'},
+  {cat:'science', tag:'Science & Tech', cls:'sci', title:'Classrooms pilot AI study helpers — with a teacher checking every answer', body:'Several schools are testing AI tools that explain homework steps instead of just giving answers. Teachers review outputs, and students are taught to verify anything important against a textbook or source.', mins:'3 min read', src:'Sample report · 08:05 JST', why:'<b>Why it matters — the meta-story:</b> NewsQuest itself is an AI content experiment. The skill being tested everywhere: use AI to learn faster, but always check it — exactly what today\'s quiz rewards.'},
+  {cat:'world', tag:'World', cls:'wld', title:'Island nations and the sea lanes everything depends on', body:'For an island country, trade is not abstract: energy, food and parts arrive by ship through a handful of busy sea routes. Disruption anywhere along them shows up quickly in prices and shortages at home.', mins:'3 min read', src:'Sample wire · 05:30 JST', why:'<b>Why it matters — Geography &amp; History:</b> Japan imports most of its energy and much of its food. Sea lanes link map skills to everyday economics — a favourite exam combination.'},
+  {cat:'japan', tag:'Japan · Society', cls:'pol', title:'The 20-year-old shrine festival that a whole school now helps run', body:'As neighbourhoods age, some local festivals survive because schools adopt them: students carry the mikoshi, run stalls and interview elders — turning a tradition into a living local-history lesson.', mins:'2 min read', src:'Sample feature · Yesterday 16:00 JST', why:'<b>Why it matters — History &amp; Civics:</b> local festivals are primary sources: what a community celebrates tells you what it values, and who keeps it alive tells you how communities change.'}
+];
+var briefList = document.getElementById('briefList');
+function renderBriefs(f){
+  briefList.innerHTML = '';
+  BRIEFS.filter(function(b){ return f==='all' || b.cat===f; }).forEach(function(b, i){
+    var d = document.createElement('article'); d.className = 'brief-card';
+    d.innerHTML = '<div class="meta"><span class="tagcat ' + b.cls + '">' + b.tag + '</span><span class="source">⏱ ' + b.mins + '</span></div>' +
+      '<h3>' + b.title + '</h3><p>' + b.body + '</p>' +
+      '<div class="why">' + b.why + '</div>' +
+      '<div class="foot"><span class="source">' + b.src + '</span><span><button class="linkbtn why-btn">Why it matters ▾</button> &nbsp;·&nbsp; <button class="linkbtn quiz-btn">Quiz me →</button></span></div>';
+    d.querySelector('.why-btn').addEventListener('click', function(){
+      var w = d.querySelector('.why'); var open = w.classList.toggle('open');
+      this.textContent = open ? 'Hide ▴' : 'Why it matters ▾';
+    });
+    d.querySelector('.quiz-btn').addEventListener('click', function(){ goTo('quiz'); });
+    briefList.appendChild(d);
+  });
+  if(!briefList.children.length) briefList.innerHTML = '<div class="card"><p>No sample stories in this topic today — in the live product, your mix rebalances overnight.</p></div>';
+}
+renderBriefs('all');
+document.getElementById('filters').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  this.querySelectorAll('.fbtn').forEach(function(x){ x.classList.remove('active'); });
+  b.classList.add('active'); renderBriefs(b.getAttribute('data-f'));
+});
+
+/* ---------- QUIZ ---------- */
+var QUIZ = [
+  {topic:'Civics · Local Government', q:'Who leads a Japanese prefecture — the equivalent of a state governor?', opts:['The mayor (市長)','The governor (知事)','The prime minister','The prefectural police chief'], a:1, ex:'Correct: the <b>governor (知事)</b> leads a prefecture and is elected directly by its residents. Mayors lead cities, towns and villages within it.'},
+  {topic:'Civics · The Diet', q:'Japan\'s national parliament, the Diet, is made of which two houses?', opts:['Senate and House of Commons','House of Representatives and House of Councillors','National Assembly and Prefectural Council','Cabinet and Supreme Court'], a:1, ex:'The Diet has two houses: the <b>House of Representatives</b> and the <b>House of Councillors</b>. Laws generally need both to pass.'},
+  {topic:'Civics · Constitution', q:'Under Japan\'s Constitution, where does sovereignty (ultimate political power) rest?', opts:['With the Emperor','With the Cabinet','With the people','With the Supreme Court'], a:2, ex:'<b>Popular sovereignty</b>: power rests with the people. The Emperor is defined as a symbol of the state and of the unity of the people.'},
+  {topic:'Economy · Exchange Rates', q:'If the yen weakens (e.g. ¥150 → ¥160 per dollar), what usually happens to imported goods in Japan?', opts:['They get cheaper','They get more expensive','Prices never change','Exports stop completely'], a:1, ex:'A weaker yen means each dollar costs more yen, so <b>imports like fuel and food get pricier</b> — while Japanese exports become cheaper for buyers abroad.'},
+  {topic:'Geography · Disaster Prevention', q:'Besides dams and levees, which is a key part of modern flood preparation in Japanese cities?', opts:['Hazard maps and evacuation drills','Building only on riverbanks','Removing all parks','Waiting for national TV alerts only'], a:0, ex:'<b>Hazard maps + drills + land-use planning</b> (including parks designed to flood safely) now sit alongside concrete infrastructure.'},
+  {topic:'Geography · Trade', q:'Why do sea shipping routes matter so much to Japan in particular?', opts:['Japan has no ports','Japan is an island nation importing most energy and much food by ship','Ships are only used for tourism','Japan exports nothing'], a:1, ex:'As an <b>island nation</b>, Japan imports the great majority of its energy and a large share of its food by sea — route disruptions quickly reach shop shelves.'},
+  {topic:'Science · Using AI Well', q:'Schools piloting AI study helpers teach students which habit above all?', opts:['Copy answers quickly','Never use textbooks again','Verify important claims against a textbook or trusted source','Hide AI use from teachers'], a:2, ex:'<b>Verify, don\'t just trust.</b> AI can explain steps well and still be wrong — checking against reliable sources is the core skill (and how this quiz itself is fact-checked).'},
+  {topic:'Civics · Local Elections', q:'According to today\'s brief, why are local assemblies described as “closest to daily life”?', opts:['They declare war','They set rules for schools, waste collection and local taxes','They print money','They appoint the prime minister'], a:1, ex:'Local governments handle the services you touch every day — <b>schools, waste, water, local taxes and care services</b> — which is why local elections matter even when national news is louder.'}
+];
+var qi = 0, qScore = 0, qXP = 0, qAnswered = false, qStreak = 0, qBestStreak = 0;
+document.querySelectorAll('.diff').forEach(function(d){
+  d.addEventListener('click', function(){
+    document.querySelectorAll('.diff').forEach(function(x){ x.classList.remove('active'); });
+    d.classList.add('active');
+    document.getElementById('diffLabel').textContent = d.getAttribute('data-diff');
+  });
+});
+function showQ(){
+  qAnswered = false;
+  var item = QUIZ[qi];
+  document.getElementById('qCount').textContent = 'Question ' + (qi+1) + ' of ' + QUIZ.length;
+  document.getElementById('qScore').textContent = 'Score: ' + qScore + ' · ⭐ ' + qXP + ' XP';
+  document.getElementById('qBar').style.width = ((qi)/QUIZ.length*100) + '%';
+  document.getElementById('qTopic').textContent = item.topic;
+  document.getElementById('qText').textContent = item.q;
+  document.getElementById('qExplain').className = 'explain';
+  document.getElementById('qExplain').innerHTML = '';
+  document.getElementById('qNext').style.display = 'none';
+  var box = document.getElementById('qOpts'); box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var btn = document.createElement('button'); btn.className = 'opt';
+    btn.innerHTML = '<span class="letter">' + letters[idx] + '</span><span>' + opt + '</span>';
+    btn.addEventListener('click', function(){ answer(idx, btn); });
+    box.appendChild(btn);
+  });
+}
+function answer(idx, btn){
+  if(qAnswered) return; qAnswered = true;
+  var item = QUIZ[qi];
+  var opts = document.querySelectorAll('#qOpts .opt');
+  opts.forEach(function(o){ o.disabled = true; });
+  opts[item.a].classList.add('correct');
+  var ex = document.getElementById('qExplain');
+  if(idx === item.a){
+    qScore++; qStreak++; qBestStreak = Math.max(qBestStreak, qStreak);
+    var gain = 15 + (qStreak >= 3 ? 5 : 0);
+    qXP += gain;
+    ex.className = 'explain show good';
+    ex.innerHTML = '✅ <b>+' + gain + ' XP' + (qStreak>=3 ? ' (on-fire bonus)' : '') + '</b> — ' + item.ex;
+  } else {
+    qStreak = 0;
+    btn.classList.add('wrong');
+    ex.className = 'explain show bad';
+    ex.innerHTML = '❌ Not quite — the correct answer is highlighted. ' + item.ex;
+  }
+  document.getElementById('qScore').textContent = 'Score: ' + qScore + ' · ⭐ ' + qXP + ' XP';
+  document.getElementById('qBar').style.width = ((qi+1)/QUIZ.length*100) + '%';
+  var next = document.getElementById('qNext');
+  next.textContent = qi === QUIZ.length-1 ? 'See results →' : 'Next →';
+  next.style.display = 'inline-block';
+}
+document.getElementById('qNext').addEventListener('click', function(){
+  if(qi < QUIZ.length-1){ qi++; showQ(); } else { finishQuiz(); }
+});
+function finishQuiz(){
+  document.getElementById('quizPlay').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'block';
+  var total = qXP + (qScore >= 6 ? 30 : 0) + (qBestStreak >= 6 ? 25 : 0);
+  document.getElementById('resScore').textContent = qScore + ' / ' + QUIZ.length;
+  document.getElementById('resEmoji').textContent = qScore >= 7 ? '🏆' : qScore >= 5 ? '🎉' : '💪';
+  document.getElementById('resMsg').textContent =
+    qScore >= 7 ? 'Outstanding — you really read that brief. The “Sharp Eye” badge is yours.' :
+    qScore >= 5 ? 'Strong work. Re-read the brief and retake to chase a perfect score.' :
+    'Good effort — the explanations above are where the learning happens. The brief is still on the Today tab.';
+  document.getElementById('resXp').textContent = '+' + total + ' XP earned (incl. ' + (qScore>=6 ? '30 completion bonus' : '0 bonus') + (qBestStreak>=6 ? ' + 25 streak bonus' : '') + ')';
+  document.getElementById('resAcc').textContent = Math.round(qScore/QUIZ.length*100) + '%';
+  document.getElementById('resBadge').textContent = qScore >= 6 ? '👁️ Sharp Eye — UNLOCKED' : 'Sharp Eye — need 6+ correct (' + qScore + '/6)';
+  addXP(total);
+  if(qScore >= 6) unlockBadge('sharp');
+}
+function startQuiz(){
+  qi = 0; qScore = 0; qXP = 0; qStreak = 0; qBestStreak = 0;
+  document.getElementById('quizSetup').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizPlay').style.display = 'block';
+  showQ();
+}
+document.getElementById('startQuizBtn').addEventListener('click', startQuiz);
+document.getElementById('retryBtn').addEventListener('click', startQuiz);
+
+/* ---------- BLITZ ---------- */
+var BLITZ = [
+  {s:'The governor (知事) is elected directly by prefecture residents.', t:true},
+  {s:'A weaker yen makes imported fuel cheaper in Japan.', t:false},
+  {s:'Japan\'s Diet has two houses.', t:true},
+  {s:'Hazard maps are part of flood preparation.', t:true},
+  {s:'The Emperor makes Japan\'s laws under the Constitution.', t:false},
+  {s:'Japan imports most of its energy by ship.', t:true},
+  {s:'AI answers should always be trusted without checking.', t:false},
+  {s:'Local governments handle waste collection and public schools.', t:true}
+];
+var bi = 0, bScore = 0, bTimer = null, bTime = 30;
+var blitzArea = document.getElementById('blitzArea');
+function blitzRender(){
+  if(bi >= BLITZ.length){ blitzEnd(); return; }
+  blitzArea.innerHTML =
+    '<div style="display:flex;justify-content:space-between;font-weight:800;font-size:13.5px;color:var(--muted)"><span>⏱ <span id="bTime">' + bTime + '</span>s</span><span>Q ' + (bi+1) + '/' + BLITZ.length + ' · Score ' + bScore + '</span></div>' +
+    '<div class="blitz-q">“' + BLITZ[bi].s + '”</div>' +
+    '<div class="blitz-btns"><button style="background:var(--teal)" id="bTrue">✓ TRUE</button><button style="background:var(--coral)" id="bFalse">✕ FALSE</button></div>' +
+    '<p id="bMsg" style="text-align:center;font-weight:700;min-height:22px;margin:12px 0 0"></p>';
+  document.getElementById('bTrue').addEventListener('click', function(){ blitzAnswer(true); });
+  document.getElementById('bFalse').addEventListener('click', function(){ blitzAnswer(false); });
+}
+function blitzAnswer(v){
+  var correct = (v === BLITZ[bi].t);
+  var msg = document.getElementById('bMsg');
+  if(correct){ bScore++; addXP(5); msg.textContent = '✅ Correct! +5 XP'; msg.style.color = 'var(--green)'; }
+  else { msg.textContent = '❌ It was ' + (BLITZ[bi].t ? 'TRUE' : 'FALSE') + '.'; msg.style.color = 'var(--red)'; }
+  bi++;
+  setTimeout(blitzRender, 650);
+}
+function blitzEnd(){
+  clearInterval(bTimer);
+  blitzArea.innerHTML = '<div style="text-align:center;padding:18px 0 4px"><div style="font-size:36px">' + (bScore>=5?'⚡🏆':'⚡') + '</div><h3 style="font-size:21px;margin:8px 0 4px">' + bScore + ' / ' + BLITZ.length + '</h3><p>' + (bScore>=5 ? 'Challenge complete! Bonus +40 XP added.' : 'Score 5+ to complete today\'s Geography Sprint challenge.') + '</p><div style="margin-top:14px"><button class="btn secondary" id="blitzAgain">↻ Play again</button></div></div>';
+  if(bScore >= 5) addXP(40);
+  document.getElementById('blitzAgain').addEventListener('click', startBlitz);
+}
+function startBlitz(){
+  bi = 0; bScore = 0; bTime = 30;
+  clearInterval(bTimer);
+  bTimer = setInterval(function(){
+    bTime--;
+    var el = document.getElementById('bTime'); if(el) el.textContent = bTime;
+    if(bTime <= 0) blitzEnd();
+  }, 1000);
+  blitzRender();
+}
+document.getElementById('blitzStart').addEventListener('click', startBlitz);
+
+/* ---------- HEADLINE MATCH ---------- */
+var MATCH = [
+  {h:'“Bank of Japan holds rates steady as prices are watched closely”', c:'Economy'},
+  {h:'“New sensor lets robots “feel” texture like human skin”', c:'Science'},
+  {h:'“Cabinet approves new childcare support bill”', c:'Politics'},
+  {h:'“Underdogs win national high-school baseball final in extra innings”', c:'Sport'}
+];
+var matchSel = null, matchDone = 0, matchXPgiven = false;
+var matchArea = document.getElementById('matchArea');
+MATCH.forEach(function(m, i){
+  var b = document.createElement('button'); b.className = 'match-item'; b.textContent = m.h;
+  b.setAttribute('data-i', i);
+  b.addEventListener('click', function(){
+    if(b.classList.contains('done')) return;
+    matchArea.querySelectorAll('.match-item').forEach(function(x){ x.classList.remove('sel'); });
+    b.classList.add('sel'); matchSel = i;
+  });
+  matchArea.appendChild(b);
+});
+document.getElementById('matchCats').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  var msg = document.getElementById('matchMsg');
+  if(matchSel === null){ msg.textContent = 'Pick a headline first ↑'; msg.style.color = 'var(--muted)'; return; }
+  var item = matchArea.querySelector('[data-i="' + matchSel + '"]');
+  if(MATCH[matchSel].c === b.getAttribute('data-cat')){
+    item.classList.remove('sel'); item.classList.add('done');
+    item.textContent = '✓ ' + MATCH[matchSel].h + ' — ' + MATCH[matchSel].c;
+    matchSel = null; matchDone++;
+    if(matchDone === MATCH.length){
+      msg.textContent = '🎉 Perfect sort! +30 XP'; msg.style.color = 'var(--green)';
+      if(!matchXPgiven){ addXP(30); matchXPgiven = true; }
+    } else { msg.textContent = '✓ Correct — ' + matchDone + ' of 4 sorted.'; msg.style.color = 'var(--green)'; }
+  } else { msg.textContent = '✕ Not that category — try again.'; msg.style.color = 'var(--red)'; }
+});
+
+/* ---------- PROGRESS: calendar, badges ---------- */
+var cal = document.getElementById('calGrid');
+for(var d = 0; d < 14; d++){
+  var cell = document.createElement('div');
+  cell.textContent = d + 1;
+  if(d < 11 || d === 12) cell.className = 'on';
+  if(d === 12) cell.className = 'on';
+  if(d === 13){ cell.className = 'today'; cell.textContent = '★'; }
+  if(d === 11) cell.textContent = '🛡';
+  cal.appendChild(cell);
+}
+var BADGES = [
+  {ic:'🌱', n:'First Steps', s:'First quiz done', e:true},
+  {ic:'🔥', n:'7-Day Streak', s:'A full week', e:true},
+  {ic:'📚', n:'Perfect Week', s:'7 quizzes in a row', e:true},
+  {ic:'👁️', n:'Sharp Eye', s:'Score 6+ on a daily quiz', e:false, id:'sharp'},
+  {ic:'🗾', n:'Geography Pro', s:'74% mastery', e:true},
+  {ic:'🏛️', n:'Civics Star', s:'80%+ in Politics', e:true},
+  {ic:'🌏', n:'Globe Trotter', s:'10 World answers / week', e:false},
+  {ic:'⚡', n:'Blitz Master', s:'8/8 in Blitz', e:false},
+  {ic:'💹', n:'Market Mind', s:'90% in Economy', e:false},
+  {ic:'📜', n:'Time Traveller', s:'Finish Timeline Sort', e:false},
+  {ic:'👥', n:'Duelist', s:'Win 3 Friend Duels', e:false},
+  {ic:'👑', n:'News Royalty', s:'Reach Level 10', e:false}
+];
+var badgeGrid = document.getElementById('badgeGrid');
+function renderBadges(){
+  badgeGrid.innerHTML = '';
+  var earned = 0;
+  BADGES.forEach(function(b){
+    if(b.e) earned++;
+    var d = document.createElement('div');
+    d.className = 'badge ' + (b.e ? 'earned' : 'locked');
+    d.innerHTML = '<span class="b-ic">' + (b.e ? b.ic : '🔒') + '</span><b>' + b.n + '</b><small>' + b.s + '</small>';
+    badgeGrid.appendChild(d);
+  });
+  document.getElementById('badgeCount').textContent = earned + ' of ' + BADGES.length + ' earned';
+}
+function unlockBadge(id){
+  BADGES.forEach(function(b){ if(b.id === id) b.e = true; });
+  renderBadges();
+}
+renderBadges();
+
+/* ---------- LEADERBOARD ---------- */
+var BOARDS = {
+  friends: [
+    {n:'Yuna', s:'Level 6 · 🔥 18-day streak', xp:1580},
+    {n:'Haruto', s:'Level 5 · 🔥 9-day streak', xp:1395},
+    {n:'You — Demo Learner', s:'Level 5 · 🔥 12-day streak', xp:1240, me:true, id:'lbYou'},
+    {n:'Mei', s:'Level 4 · 🔥 6-day streak', xp:980},
+    {n:'Leo', s:'Level 4 · 🔥 4-day streak', xp:870}
+  ],
+  class: [
+    {n:'Sakura · 2-B', s:'Politics mastery 91%', xp:1710},
+    {n:'Ren · 2-B', s:'Geography mastery 88%', xp:1605},
+    {n:'You — Demo Learner', s:'Politics mastery 82%', xp:1240, me:true, id:'lbYou2'},
+    {n:'Aoi · 2-B', s:'History mastery 79%', xp:1180},
+    {n:'Kaito · 2-B', s:'Economy mastery 77%', xp:1095},
+    {n:'Hina · 2-B', s:'Climate mastery 75%', xp:1010}
+  ],
+  global: [
+    {n:'QuizFox_07', s:'Level 5 · Osaka', xp:1920},
+    {n:'DailyReader', s:'Level 5 · Seoul', xp:1755},
+    {n:'MapMaster', s:'Level 5 · Toronto', xp:1490},
+    {n:'You — Demo Learner', s:'Level 5 · Tokyo', xp:1240, me:true, id:'lbYou3'},
+    {n:'HeadlineHero', s:'Level 5 · London', xp:1130}
+  ]
+};
+function renderBoard(key){
+  var list = document.getElementById('lbList'); list.innerHTML = '';
+  BOARDS[key].slice().sort(function(a,b){ return b.xp - a.xp; }).forEach(function(p, i){
+    var row = document.createElement('div'); row.className = 'lb-row' + (p.me ? ' me' : '');
+    row.innerHTML = '<div class="rank ' + (i===0?'r1':i===1?'r2':i===2?'r3':'') + '">' + (i+1) + '</div>' +
+      '<div class="who"><b>' + p.n + (p.me ? ' ⭐' : '') + '</b><small>' + p.s + '</small></div>' +
+      '<div class="lb-xp"><b>' + (p.me ? XP.toLocaleString() : p.xp.toLocaleString()) + ' XP</b><small>this week</small></div>';
+    list.appendChild(row);
+  });
+}
+renderBoard('friends');
+document.getElementById('lbTabs').addEventListener('click', function(e){
+  var b = e.target.closest('.fbtn'); if(!b) return;
+  this.querySelectorAll('.fbtn').forEach(function(x){ x.classList.remove('active'); });
+  b.classList.add('active'); renderBoard(b.getAttribute('data-lb'));
+});
+
+/* ---------- PRO ---------- */
+document.getElementById('proBtn').addEventListener('click', function(){
+  this.textContent = '✓ Trial activated (demo)';
+  this.disabled = true;
+  document.getElementById('proMsg').textContent = 'In the live product this starts a 7-day Pro trial — no card required.';
+});
+</script>
+</body>
+</html>
