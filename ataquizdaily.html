@@ -56,6 +56,8 @@
         .score-display { font-size: 2.5rem; font-weight: bold; color: var(--primary); margin: 10px 0; }
         .stats-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 10px; margin: 15px 0; display: flex; justify-content: space-around; font-size: 0.9rem; }
         .stat-item span { font-weight: bold; color: var(--primary); display: block; font-size: 1.2rem; }
+        .global-counter { background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 0.85rem; color: #1e40af; }
+        .global-counter span { font-weight: bold; font-size: 1rem; }
         .review-list { text-align: left; max-height: 200px; overflow-y: auto; margin: 15px 0; padding-right: 5px; }
         .review-item { background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; margin-bottom: 8px; font-size: 0.85rem; }
     </style>
@@ -93,10 +95,15 @@
         <div class="score-display" id="final-score">0 / 10</div>
         <p id="score-message"></p>
 
+        <!-- Global Unique Visitor Counter -->
+        <div class="global-counter">
+            🌍 これまでに挑戦した延べ人数: <span id="global-count-display">読み込み中...</span> 人
+        </div>
+
         <!-- Stats & Average Score Box -->
         <div class="stats-box">
-            <div class="stat-item">挑戦回数 <span id="stat-total">0回</span></div>
-            <div class="stat-item">これまでの平均 <span id="stat-average">0.0点</span></div>
+            <div class="stat-item">あなたの挑戦回数 <span id="stat-total">0回</span></div>
+            <div class="stat-item">あなたの平均点 <span id="stat-average">0.0点</span></div>
         </div>
 
         <h3>回答の振り返り</h3>
@@ -186,21 +193,39 @@
     }
 
     function saveAndCalculateStats(currentScore) {
-        // Retrieve existing history from localStorage
         let history = JSON.parse(localStorage.getItem("quiz_history") || "[]");
-        
-        // Push current score
         history.push({ date: quizDate || new Date().toISOString().slice(0, 10), score: currentScore });
-        
-        // Save back to localStorage
         localStorage.setItem("quiz_history", JSON.stringify(history));
 
-        // Calculate statistics
         const totalQuizzes = history.length;
         const totalScoreSum = history.reduce((sum, item) => sum + item.score, 0);
         const averageScore = (totalScoreSum / totalQuizzes).toFixed(1);
 
         return { totalQuizzes, averageScore };
+    }
+
+    async function updateGlobalParticipantCount() {
+        try {
+            // Using a reliable public counter API namespace for your site
+            // We check if this device already counted this session to prevent spamming count on refresh
+            const hasCounted = sessionStorage.getItem("quiz_counted");
+            let url = "https://api.counterapi.dev/v1/feridun-quiz/participants/";
+            
+            if (!hasCounted) {
+                // Increment counter only once per browser session
+                url += "up";
+                sessionStorage.setItem("quiz_counted", "true");
+            } else {
+                // Just get current count without incrementing
+                url = "https://api.counterapi.dev/v1/feridun-quiz/participants";
+            }
+
+            const res = await fetch(url);
+            const data = await res.json();
+            document.getElementById("global-count-display").innerText = data.count || data.value || "-";
+        } catch (e) {
+            document.getElementById("global-count-display").innerText = "集計中";
+        }
     }
 
     function showResults() {
@@ -209,10 +234,13 @@
         document.getElementById("final-score").innerText = `${score} / ${currentQuestions.length}`;
         document.getElementById("score-message").innerText = score === 10 ? "パーフェクト！素晴らしい時事・社会科の知識です！" : "お疲れ様でした！毎日の積み重ねで社会科の力をつけましょう！";
 
-        // Save score & get stats
+        // Save local stats & show
         const stats = saveAndCalculateStats(score);
         document.getElementById("stat-total").innerText = `${stats.totalQuizzes}回`;
         document.getElementById("stat-average").innerText = `${stats.averageScore}点`;
+
+        // Fetch and display global participant counter
+        updateGlobalParticipantCount();
 
         const reviewList = document.getElementById("review-list");
         reviewList.innerHTML = "";
@@ -229,3 +257,4 @@
 </script>
 </body>
 </html>
+
