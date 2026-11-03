@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaya's Kanji Master | 九・十月の漢字のたしかめ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Rounded Mplus for friendly UI & Klee One (Textbook-style handwritten Kanji font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #f0f7ff;
+            background-image: radial-gradient(#dbeafe 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+        /* Textbook-style font for accurate Kanji stroke representation */
+        .kanji-font {
+            font-family: 'Klee One', 'Yu Kyokasho', 'UD Digi Kyokasho N-R', 'Noto Serif JP', serif;
+            font-weight: 600;
+        }
+        /* Kanji practice grid (Genkouyoushi style crosshairs) */
+        .kanji-grid-bg {
+            background-color: #ffffff;
+            background-image: 
+                linear-gradient(to right, rgba(96, 165, 250, 0.35) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(96, 165, 250, 0.35) 1px, transparent 1px);
+            background-size: 50% 50%;
+        }
+        /* Red Check Sheet (Aka-sheet) effect */
+        .red-sheet-hidden {
+            background-color: #ef4444 !important;
+            color: #ef4444 !important;
+            border-color: #dc2626 !important;
+            user-select: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .red-sheet-hidden:hover {
+            opacity: 0.9;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        canvas {
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Top Header & Progress Bar -->
+    <header class="bg-white border-b border-blue-100 shadow-sm sticky top-0 z-30">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-200 font-extrabold text-2xl kanji-font">
+                    漢
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-lg sm:text-xl font-extrabold text-slate-800 tracking-tight">Kaya's Kanji Master</h1>
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-0.5 rounded-full border border-amber-200">5年生</span>
+                    </div>
+                    <p class="text-xs text-slate-500 font-medium">九・十月の漢字のたしかめ (全50問)</p>
+                </div>
+            </div>
+
+            <!-- Stats Pills -->
+            <div class="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-center sm:justify-end">
+                <div class="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-xl">
+                    <i class="ph-fill ph-check-circle text-emerald-500 text-lg"></i>
+                    <div>
+                        <div class="text-[10px] uppercase tracking-wider font-bold text-emerald-600 leading-none">Mastered</div>
+                        <div class="text-sm font-extrabold text-emerald-800"><span id="stat-mastered">0</span><span class="text-xs font-normal text-emerald-600">/50</span></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-1.5 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-xl">
+                    <i class="ph-fill ph-star text-amber-500 text-lg"></i>
+                    <div>
+                        <div class="text-[10px] uppercase tracking-wider font-bold text-amber-600 leading-none">Starred</div>
+                        <div class="text-sm font-extrabold text-amber-800" id="stat-starred">0</div>
+                    </div>
+                </div>
+
+                <button onclick="openResetModal()" title="Reset Progress" class="p-2 text-slate-400 hover:text-rose-500 hover:bg-rose-50 rounded-xl transition-colors">
+                    <i class="ph ph-arrow-counter-clockwise text-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Master Progress Bar -->
+        <div class="w-full bg-slate-100 h-1.5">
+            <div id="master-progress-bar" class="bg-gradient-to-r from-blue-500 to-emerald-500 h-1.5 transition-all duration-500" style="width: 0%"></div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl w-full mx-auto px-4 py-6 flex-1 flex flex-col gap-5">
+
+        <!-- Category Filter & Mode Switcher -->
+        <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-sm border border-blue-100 flex flex-col gap-3">
+            <!-- Row 1: Mode Tabs -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <button onclick="setMode('flashcard')" id="tab-flashcard" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-blue-600 text-white shadow-sm shadow-blue-200">
+                    <i class="ph-bold ph-pencil-line text-lg"></i>
+                    <span>Write & Study</span>
+                </button>
+                <button onclick="setMode('quiz')" id="tab-quiz" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <i class="ph-bold ph-game-controller text-lg"></i>
+                    <span>4-Choice Quiz</span>
+                </button>
+                <button onclick="setMode('type')" id="tab-type" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <i class="ph-bold ph-keyboard text-lg"></i>
+                    <span>Type & Recall</span>
+                </button>
+                <button onclick="setMode('list')" id="tab-list" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <i class="ph-bold ph-list-numbers text-lg"></i>
+                    <span>All 50 Sheet</span>
+                </button>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-slate-100"></div>
+
+            <!-- Row 2: Section Filter Pills -->
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex flex-wrap items-center gap-1.5">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Filter:</span>
+                    <button onclick="setFilter('all')" id="filter-all" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-indigo-100 text-indigo-800 border border-indigo-200">
+                        All (1-50)
+                    </button>
+                    <button onclick="setFilter('single')" id="filter-single" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        1 Kanji (1-13)
+                    </button>
+                    <button onclick="setFilter('compound')" id="filter-compound" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        2+ Kanji (14-39)
+                    </button>
+                    <button onclick="setFilter('okurigana')" id="filter-okurigana" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        Okurigana (40-50)
+                    </button>
+                    <button onclick="setFilter('starred')" id="filter-starred" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-amber-700 hover:bg-amber-50 border border-transparent flex items-center gap-1">
+                        <i class="ph-fill ph-star text-amber-500"></i> Starred Only
+                    </button>
+                    <button onclick="setFilter('unmastered')" id="filter-unmastered" class="filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-rose-700 hover:bg-rose-50 border border-transparent flex items-center gap-1">
+                        <i class="ph-bold ph-target text-rose-500"></i> Needs Practice
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2 ml-auto">
+                    <button onclick="shuffleFiltered()" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center gap-1 transition-colors" title="Shuffle Order">
+                        <i class="ph-bold ph-shuffle"></i> Shuffle
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- MODE 1: FLASHCARD & HANDWRITING PRACTICE   -->
+        <!-- ========================================== -->
+        <section id="view-flashcard" class="flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-md border border-blue-100 p-4 sm:p-6 flex flex-col lg:flex-row gap-6 items-stretch">
+                
+                <!-- Left Column: Question Prompt & Answer Reveal -->
+                <div class="flex-1 flex flex-col justify-between bg-slate-50 rounded-2xl p-5 border border-slate-200/80 relative">
+                    <!-- Top Card Meta -->
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <div class="flex items-center gap-2">
+                            <span id="fc-number" class="bg-blue-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-lg shadow-sm">#1</span>
+                            <span id="fc-category" class="text-xs font-bold text-slate-500 bg-white px-2.5 py-1 rounded-lg border border-slate-200">Single Kanji</span>
+                            <span id="fc-mastered-badge" class="hidden bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded-md border border-emerald-200 items-center gap-1">
+                                <i class="ph-fill ph-check-circle"></i> Mastered
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <button onclick="speakCurrentItem()" class="p-2 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 transition-colors" title="Listen to Japanese pronunciation">
+                                <i class="ph-fill ph-speaker-high text-lg"></i>
+                            </button>
+                            <button onclick="toggleStarCurrent()" id="fc-star-btn" class="p-2 rounded-xl bg-white hover:bg-amber-50 text-slate-400 border border-slate-200 transition-colors" title="Bookmark tricky question">
+                                <i class="ph-fill ph-star text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Center Question Display -->
+                    <div class="my-auto py-4 text-center">
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Write the Kanji for the highlighted part:</div>
+                        <div id="fc-prompt" class="text-2xl sm:text-4xl font-extrabold text-slate-800 leading-relaxed tracking-wide">
+                            <!-- Populated via JS -->
+                        </div>
+                        <div id="fc-meaning" class="mt-3 inline-flex items-center gap-1.5 bg-blue-50 text-blue-800 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full border border-blue-100">
+                            <i class="ph-fill ph-translate text-blue-500"></i>
+                            <span>Meaning</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer Box (Hidden or Revealed) -->
+                    <div class="mt-4">
+                        <div id="fc-answer-hidden" onclick="revealFlashcardAnswer()" class="cursor-pointer group bg-white hover:bg-blue-50/60 border-2 border-dashed border-blue-300 rounded-2xl p-5 text-center transition-all">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
+                                <i class="ph-bold ph-eye text-xl"></i>
+                            </div>
+                            <p class="font-bold text-blue-700 text-sm">Tap to Reveal Correct Kanji</p>
+                            <p class="text-xs text-slate-400 mt-0.5">Practice writing on the pad first, then check your strokes!</p>
+                        </div>
+
+                        <div id="fc-answer-revealed" class="hidden bg-white border-2 border-emerald-300 rounded-2xl p-4 text-center shadow-sm">
+                            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 mb-1">Correct Answer (お手本)</div>
+                            <div id="fc-target-kanji" class="kanji-font text-6xl sm:text-7xl text-slate-900 my-2 select-all tracking-widest">
+                                得
+                            </div>
+                            <div id="fc-full-sentence" class="text-sm font-bold text-slate-600 bg-slate-100 inline-block px-3 py-1 rounded-lg mb-4">
+                                得をする。
+                            </div>
+
+                            <!-- Self-Grading Buttons -->
+                            <div class="grid grid-cols-2 gap-2.5 pt-2 border-t border-slate-100">
+                                <button onclick="markCurrentMastery(false)" class="flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm bg-amber-100 hover:bg-amber-200 text-amber-900 transition-colors">
+                                    <i class="ph-bold ph-arrow-clockwise text-base"></i>
+                                    <span>Needs Practice</span>
+                                </button>
+                                <button onclick="markCurrentMastery(true)" class="flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm bg-emerald-500 hover:bg-emerald-600 text-white shadow-sm shadow-emerald-200 transition-colors">
+                                    <i class="ph-bold ph-check-fat text-base"></i>
+                                    <span>I Got It!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Kanji Drawing Pad -->
+                <div class="flex-1 flex flex-col justify-between bg-slate-50 rounded-2xl p-5 border border-slate-200/80">
+                    <div class="flex items-center justify-between mb-3">
+                        <div>
+                            <h3 class="font-extrabold text-sm text-slate-700 flex items-center gap-1.5">
+                                <i class="ph-fill ph-pen-nib text-blue-600 text-base"></i>
+                                <span>Handwriting Pad (手書き練習)</span>
+                            </h3>
+                            <p class="text-xs text-slate-500">Use your finger, stylus, or mouse to write the Kanji</p>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="toggleTraceGuide()" id="trace-btn" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-indigo-50 text-slate-600 border border-slate-200 flex items-center gap-1 transition-colors" title="Show faint Kanji guide to trace over">
+                                <i class="ph-bold ph-magic-wand"></i> Trace Guide
+                            </button>
+                            <button onclick="clearCanvas()" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-rose-50 text-rose-600 border border-slate-200 flex items-center gap-1 transition-colors">
+                                <i class="ph-bold ph-eraser"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Canvas Wrapper -->
+                    <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] bg-white rounded-2xl border-2 border-blue-300 shadow-inner overflow-hidden kanji-grid-bg flex items-center justify-center">
+                        <!-- Faint Watermark for Tracing (Toggled by user) -->
+                        <div id="canvas-trace-guide" class="hidden pointer-events-none select-none kanji-font text-7xl sm:text-8xl text-slate-200 tracking-widest">
+                            得
+                        </div>
+                        <canvas id="drawing-canvas" class="absolute inset-0 w-full h-full cursor-crosshair"></canvas>
+                    </div>
+
+                    <!-- Navigation Bar below Canvas -->
+                    <div class="flex items-center justify-between gap-3 mt-4 pt-2">
+                        <button onclick="prevCard()" class="flex items-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-sm bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-sm transition-all">
+                            <i class="ph-bold ph-caret-left"></i> Prev
+                        </button>
+                        <div class="text-xs font-extrabold text-slate-500">
+                            Card <span id="fc-index-display" class="text-slate-800">1</span> of <span id="fc-total-display">50</span>
+                        </div>
+                        <button onclick="nextCard()" class="flex items-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-sm bg-blue-600 hover:bg-blue-700 text-white shadow-sm shadow-blue-200 transition-all">
+                            Next <i class="ph-bold ph-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- MODE 2: 4-CHOICE QUIZ MODE                 -->
+        <!-- ========================================== -->
+        <section id="view-quiz" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-md border border-blue-100 p-5 sm:p-8 max-w-3xl w-full mx-auto">
+                <!-- Quiz Header Score & Streak -->
+                <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span id="qz-number" class="bg-indigo-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-lg">#1</span>
+                        <span class="text-xs font-bold text-slate-400">Question <span id="qz-progress-text" class="text-slate-700">1 / 50</span></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-xs font-extrabold border border-orange-200">
+                            <i class="ph-fill ph-fire text-orange-500 text-sm"></i>
+                            <span>Streak: <span id="qz-streak">0</span></span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-extrabold border border-blue-200">
+                            <i class="ph-fill ph-trophy text-blue-500 text-sm"></i>
+                            <span>Score: <span id="qz-score">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Prompt -->
+                <div class="text-center py-6 bg-slate-50 rounded-2xl border border-slate-200/80 px-4 mb-6">
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Choose the correct Kanji for the highlighted reading:</div>
+                    <div id="qz-prompt" class="text-2xl sm:text-4xl font-extrabold text-slate-800 leading-relaxed mb-3">
+                        <!-- Populated via JS -->
+                    </div>
+                    <div id="qz-meaning" class="inline-flex items-center gap-1.5 bg-white text-slate-600 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full border border-slate-200">
+                        <!-- Meaning -->
+                    </div>
+                </div>
+
+                <!-- 4 Choices Grid -->
+                <div id="qz-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
+                    <!-- Dynamically populated buttons -->
+                </div>
+
+                <!-- Feedback & Next Button -->
+                <div id="qz-feedback" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div class="flex items-center gap-3 text-center sm:text-left">
+                        <div id="qz-feedback-icon" class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0"></div>
+                        <div>
+                            <div id="qz-feedback-title" class="font-extrabold text-sm sm:text-base"></div>
+                            <div id="qz-feedback-sub" class="text-xs text-slate-600"></div>
+                        </div>
+                    </div>
+                    <button onclick="nextQuizQuestion()" class="w-full sm:w-auto py-2.5 px-6 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5">
+                        <span>Next Question</span>
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- MODE 3: TYPE / INPUT RECALL MODE           -->
+        <!-- ========================================== -->
+        <section id="view-type" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-md border border-blue-100 p-5 sm:p-8 max-w-2xl w-full mx-auto">
+                <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span id="ty-number" class="bg-blue-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-lg">#1</span>
+                        <span class="text-xs font-bold text-slate-500">Type the exact Kanji (and okurigana if bracketed)</span>
+                    </div>
+                    <span class="text-xs font-extrabold text-slate-400" id="ty-index-display">1 / 50</span>
+                </div>
+
+                <div class="text-center py-6 bg-slate-50 rounded-2xl border border-slate-200/80 px-4 mb-6">
+                    <div id="ty-prompt" class="text-2xl sm:text-4xl font-extrabold text-slate-800 leading-relaxed mb-3"></div>
+                    <div id="ty-meaning" class="inline-flex items-center gap-1.5 bg-white text-slate-600 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full border border-slate-200"></div>
+                </div>
+
+                <form onsubmit="checkTypedAnswer(event)" class="flex flex-col sm:flex-row gap-3 mb-4">
+                    <input type="text" id="ty-input" placeholder="ここに漢字を入力..." autocomplete="off"
+                        class="flex-1 kanji-font text-2xl text-center sm:text-left px-4 py-3 rounded-2xl border-2 border-slate-200 focus:border-blue-500 focus:outline-none bg-white">
+                    <button type="submit" id="ty-submit-btn" class="py-3 px-6 rounded-2xl font-bold text-sm bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-colors">
+                        Check Answer
+                    </button>
+                </form>
+
+                <!-- Hint / Reveal Option -->
+                <div class="flex items-center justify-between text-xs text-slate-500 mb-4">
+                    <span>Tip: Use Japanese IME to convert reading to Kanji.</span>
+                    <button type="button" onclick="showTypeHint()" class="text-blue-600 hover:underline font-bold">Show Answer</button>
+                </div>
+
+                <!-- Feedback Box -->
+                <div id="ty-feedback" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div>
+                        <div id="ty-feedback-title" class="font-extrabold text-base"></div>
+                        <div id="ty-feedback-sub" class="text-sm mt-0.5"></div>
+                    </div>
+                    <button type="button" onclick="nextTypeQuestion()" class="py-2.5 px-5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm rounded-xl">
+                        Next <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- MODE 4: FULL 50 WORKSHEET VIEW (RED SHEET) -->
+        <!-- ========================================== -->
+        <section id="view-list" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-md border border-blue-100 p-4 sm:p-6">
+                <!-- Controls Bar -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-100">
+                    <div class="relative flex-1">
+                        <i class="ph ph-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="list-search" oninput="renderListView()" placeholder="Search by Japanese, reading, or English meaning..."
+                            class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-200 text-sm focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="toggleRedSheet()" id="red-sheet-btn" class="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-rose-500 hover:bg-rose-600 text-white shadow-sm shadow-rose-200 transition-all">
+                            <i class="ph-fill ph-eye-slash"></i>
+                            <span id="red-sheet-label">Red Sheet: OFF (Tap to Hide Answers)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Worksheet Grid -->
+                <div id="worksheet-container" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Reset Confirmation Modal -->
+    <div id="reset-modal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-xl border border-slate-100 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto mb-3 text-2xl">
+                <i class="ph-bold ph-warning"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-800">Reset Study Progress?</h3>
+            <p class="text-xs text-slate-500 mt-1 mb-5">This will clear your "Mastered" checkmarks and starred items so you can start fresh.</p>
+            <div class="grid grid-cols-2 gap-2.5">
+                <button onclick="closeResetModal()" class="py-2.5 px-4 rounded-xl font-bold text-xs bg-slate-100 hover:bg-slate-200 text-slate-700">Cancel</button>
+                <button onclick="confirmResetProgress()" class="py-2.5 px-4 rounded-xl font-bold text-xs bg-rose-600 hover:bg-rose-700 text-white">Yes, Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================================
+        // COMPLETE 50-QUESTION DATASET FROM KAYA'S WORKSHEET (九・十月の漢字のたしかめ)
+        // ============================================================================
+        const KANJI_DATA = [
+            // Part 1: Single Kanji (1-13)
+            { id: 1, category: 'single', prompt: '[とく]をする。', target: '得', reading: 'とく', full: '得をする。', meaning: 'To make a profit / benefit' },
+            { id: 2, category: 'single', prompt: 'テントを[は]る。', target: '張', reading: 'は', full: 'テントを張る。', meaning: 'To pitch a tent' },
+            { id: 3, category: 'single', prompt: '会議の[あ]り方。', target: '在', reading: 'あ', full: '会議の在り方。', meaning: 'How a meeting should be' },
+            { id: 4, category: 'single', prompt: '[けん]査する。', target: '検', reading: 'けん', full: '検査する。', meaning: 'To inspect / examine' },
+            { id: 5, category: 'single', prompt: 'そばに[よ]る。', target: '寄', reading: 'よ', full: 'そばに寄る。', meaning: 'To come close / approach' },
+            { id: 6, category: 'single', prompt: '[ほとけ]の教え。', target: '仏', reading: 'ほとけ', full: '仏の教え。', meaning: 'Teachings of Buddha' },
+            { id: 7, category: 'single', prompt: '本を[か]す。', target: '貸', reading: 'か', full: '本を貸す。', meaning: 'To lend a book' },
+            { id: 8, category: 'single', prompt: '薬が[き]く。', target: '効', reading: 'き', full: '薬が効く。', meaning: 'Medicine is effective' },
+            { id: 9, category: 'single', prompt: '[つま]と出かける。', target: '妻', reading: 'つま', full: '妻と出かける。', meaning: "Go out with one's wife" },
+            { id: 10, category: 'single', prompt: '店内が[こ]む。', target: '混', reading: 'こ', full: '店内が混む。', meaning: 'Inside of the store gets crowded' },
+            { id: 11, category: 'single', prompt: '[ぞう]きんでふく。', target: '雑', reading: 'ぞう', full: '雑きんでふく。', meaning: 'Wipe with a cleaning cloth (zoukin)' },
+            { id: 12, category: 'single', prompt: '会議で決を[と]る。', target: '採', reading: 'と', full: '会議で決を採る。', meaning: 'Take a vote in a meeting' },
+            { id: 13, category: 'single', prompt: '[なま]たまご。', target: '生', reading: 'なま', full: '生たまご。', meaning: 'Raw egg' },
+
+            // Part 2: Compound Kanji (14-39)
+            { id: 14, category: 'compound', prompt: '数を[たいひ]する。', target: '対比', reading: 'たいひ', full: '数を対比する。', meaning: 'Contrast / compare numbers' },
+            { id: 15, category: 'compound', prompt: '[せいじ]を行う。', target: '政治', reading: 'せいじ', full: '政治を行う。', meaning: 'Conduct politics / govern' },
+            { id: 16, category: 'compound', prompt: '[きょうみ]深い話。', target: '興味', reading: 'きょうみ', full: '興味深い話。', meaning: 'Interesting story' },
+            { id: 17, category: 'compound', prompt: '意思[ひょうじ]。', target: '表示', reading: 'ひょうじ', full: '意思表示。', meaning: 'Expression of intention' },
+            { id: 18, category: 'compound', prompt: '[しゅちょう]する。', target: '主張', reading: 'しゅちょう', full: '主張する。', meaning: 'To insist / assert' },
+            { id: 19, category: 'compound', prompt: '[こじん]的な意見。', target: '個人', reading: 'こじん', full: '個人的な意見。', meaning: 'Personal opinion' },
+            { id: 20, category: 'compound', prompt: '[げんざい]の住所。', target: '現在', reading: 'げんざい', full: '現在の住所。', meaning: 'Current address' },
+            { id: 21, category: 'compound', prompt: '[どくじ]の考え。', target: '独自', reading: 'どくじ', full: '独自の考え。', meaning: 'Original / unique idea' },
+            { id: 22, category: 'compound', prompt: '[べんとう]を食べる。', target: '弁当', reading: 'べんとう', full: '弁当を食べる。', meaning: 'Eat a bento (boxed lunch)' },
+            { id: 23, category: 'compound', prompt: '[ていあん]する。', target: '提案', reading: 'ていあん', full: '提案する。', meaning: 'To propose / suggest' },
+            { id: 24, category: 'compound', prompt: '[よけい]なこと。', target: '余計', reading: 'よけい', full: '余計なこと。', meaning: 'Unnecessary thing' },
+            { id: 25, category: 'compound', prompt: '[ねんぶつ]を唱える。', target: '念仏', reading: 'ねんぶつ', full: '念仏を唱える。', meaning: 'Chant a Buddhist prayer' },
+            { id: 26, category: 'compound', prompt: '実験の[けっか]。', target: '結果', reading: 'けっか', full: '実験の結果。', meaning: 'Result of the experiment' },
+            { id: 27, category: 'compound', prompt: '植物の[かんさつ]。', target: '観察', reading: 'かんさつ', full: '植物の観察。', meaning: 'Observation of plants' },
+            { id: 28, category: 'compound', prompt: '[ゆうこう]な情報。', target: '有効', reading: 'ゆうこう', full: '有効な情報。', meaning: 'Valid / effective information' },
+            { id: 29, category: 'compound', prompt: '[じょうけん]が合う。', target: '条件', reading: 'じょうけん', full: '条件が合う。', meaning: 'Conditions match' },
+            { id: 30, category: 'compound', prompt: 'かぎの[ほかん]。', target: '保管', reading: 'ほかん', full: 'かぎの保管。', meaning: 'Safekeeping / storage of keys' },
+            { id: 31, category: 'compound', prompt: '高い[ひょうか]。', target: '評価', reading: 'ひょうか', full: '高い評価。', meaning: 'High evaluation / rating' },
+            { id: 32, category: 'compound', prompt: '[さんせい]の意見。', target: '賛成', reading: 'さんせい', full: '賛成の意見。', meaning: 'Opinion in favor / agreement' },
+            { id: 33, category: 'compound', prompt: '社長[ふさい]。', target: '夫妻', reading: 'ふさい', full: '社長夫妻。', meaning: 'The company president and his wife' },
+            { id: 34, category: 'compound', prompt: '[ふくざつ]な形。', target: '複雑', reading: 'ふくざつ', full: '複雑な形。', meaning: 'Complicated / complex shape' },
+            { id: 35, category: 'compound', prompt: '文を[しょうりゃく]する。', target: '省略', reading: 'しょうりゃく', full: '文を省略する。', meaning: 'Omit / abbreviate a sentence' },
+            { id: 36, category: 'compound', prompt: 'こん虫[さいしゅう]。', target: '採集', reading: 'さいしゅう', full: 'こん虫採集。', meaning: 'Insect collecting' },
+            { id: 37, category: 'compound', prompt: '立ち入り[きんし]。', target: '禁止', reading: 'きんし', full: '立ち入り禁止。', meaning: 'No trespassing / Off-limits' },
+            { id: 38, category: 'compound', prompt: '[しょうじょ]の絵。', target: '少女', reading: 'しょうじょ', full: '少女の絵。', meaning: 'Picture of a young girl' },
+            { id: 39, category: 'compound', prompt: '[かのうせい]。', target: '可能性', reading: 'かのうせい', full: '可能性。', meaning: 'Possibility / potential' },
+
+            // Part 3: Kanji with Okurigana (40-50)
+            { id: 40, category: 'okurigana', prompt: '長さを[くらべる]。', target: '比べる', reading: 'くらべる', full: '長さを比べる。', meaning: 'Compare lengths' },
+            { id: 41, category: 'okurigana', prompt: '図で[しめす]。', target: '示す', reading: 'しめす', full: '図で示す。', meaning: 'Show / indicate with a diagram' },
+            { id: 42, category: 'okurigana', prompt: 'ぼうで[ささえる]。', target: '支える', reading: 'ささえる', full: 'ぼうで支える。', meaning: 'Support / prop up with a stick' },
+            { id: 43, category: 'okurigana', prompt: '[はじめて]会う。', target: '初めて', reading: 'はじめて', full: '初めて会う。', meaning: 'Meet for the first time' },
+            { id: 44, category: 'okurigana', prompt: '道に[まよう]。', target: '迷う', reading: 'まよう', full: '道に迷う。', meaning: 'Get lost on the way' },
+            { id: 45, category: 'okurigana', prompt: '[ひとり]言を言う。', target: '独り', reading: 'ひとり', full: '独り言を言う。', meaning: 'Talk to oneself (monologue)' },
+            { id: 46, category: 'okurigana', prompt: '車をはしに[よせる]。', target: '寄せる', reading: 'よせる', full: '車をはしに寄せる。', meaning: 'Pull the car over to the side' },
+            { id: 47, category: 'okurigana', prompt: '力が[あまる]。', target: '余る', reading: 'あまる', full: '力が余る。', meaning: 'Have excess energy / power to spare' },
+            { id: 48, category: 'okurigana', prompt: '名前を[おぼえる]。', target: '覚える', reading: 'おぼえる', full: '名前を覚える。', meaning: 'Remember / memorize a name' },
+            { id: 49, category: 'okurigana', prompt: '健康を[たもつ]。', target: '保つ', reading: 'たもつ', full: '健康を保つ。', meaning: 'Maintain health' },
+            { id: 50, category: 'okurigana', prompt: '絵の具が[まじる]。', target: '混じる', reading: 'まじる', full: '絵の具が混じる。', meaning: 'Paints mix together' }
+        ];
+
+        // ============================================================================
+        // STATE & LOCAL STORAGE
+        // ============================================================================
+        const STORAGE_KEY = 'kaya_kanji_sep_oct_v1';
+        let userState = {
+            mastered: [], // array of question IDs
+            starred: []   // array of question IDs
+        };
+
+        let currentMode = 'flashcard'; // 'flashcard' | 'quiz' | 'type' | 'list'
+        let currentFilter = 'all';     // 'all' | 'single' | 'compound' | 'okurigana' | 'starred' | 'unmastered'
+        let activeList = [...KANJI_DATA];
+        let currentIndex = 0;
+
+        // Flashcard Trace State
+        let showTraceWatermark = false;
+
+        // Quiz State
+        let quizScore = 0;
+        let quizStreak = 0;
+        let quizAnswered = false;
+
+        // Red Sheet State (List Mode)
+        let redSheetActive = false;
+
+        function loadState() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    userState = JSON.parse(saved);
+                }
+            } catch (e) {
+                console.warn('Could not load saved state:', e);
+            }
+            updateHeaderStats();
+        }
+
+        function saveState() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+            } catch (e) {
+                console.warn('Could not save state:', e);
+            }
+            updateHeaderStats();
+        }
+
+        function updateHeaderStats() {
+            const masteredCount = userState.mastered.length;
+            const starredCount = userState.starred.length;
+            document.getElementById('stat-mastered').textContent = masteredCount;
+            document.getElementById('stat-starred').textContent = starredCount;
+            const pct = Math.round((masteredCount / KANJI_DATA.length) * 100);
+            document.getElementById('master-progress-bar').style.width = `${pct}%`;
+        }
+
+        // ============================================================================
+        // HELPER: FORMAT SENTENCE WITH HIGHLIGHTED BRACKET PROMPT
+        // ============================================================================
+        function formatPromptHTML(promptStr) {
+            return promptStr.replace(/\[(.+?)\]/g, `<span class="inline-block bg-amber-100 text-amber-900 border-b-4 border-amber-400 px-2.5 py-0.5 mx-1 rounded-xl font-extrabold">$1</span>`);
+        }
+
+        function getCategoryLabel(cat) {
+            if (cat === 'single') return 'Part 1: 1 Kanji (1-13)';
+            if (cat === 'compound') return 'Part 2: Compound Kanji (14-39)';
+            return 'Part 3: Okurigana (40-50)';
+        }
+
+        // ============================================================================
+        // FILTER & MODE NAVIGATION
+        // ============================================================================
+        function setFilter(filterName) {
+            currentFilter = filterName;
+            document.querySelectorAll('.filter-pill').forEach(btn => {
+                btn.className = 'filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent';
+            });
+            const activeBtn = document.getElementById(`filter-${filterName}`);
+            if (activeBtn) {
+                activeBtn.className = 'filter-pill px-3 py-1 rounded-lg text-xs font-bold transition-all bg-indigo-100 text-indigo-800 border border-indigo-300 shadow-2xs';
+            }
+
+            rebuildActiveList();
+        }
+
+        function rebuildActiveList() {
+            if (currentFilter === 'all') {
+                activeList = [...KANJI_DATA];
+            } else if (currentFilter === 'starred') {
+                activeList = KANJI_DATA.filter(item => userState.starred.includes(item.id));
+            } else if (currentFilter === 'unmastered') {
+                activeList = KANJI_DATA.filter(item => !userState.mastered.includes(item.id));
+            } else {
+                activeList = KANJI_DATA.filter(item => item.category === currentFilter);
+            }
+
+            if (activeList.length === 0) {
+                // Fallback to all if empty filter
+                activeList = [...KANJI_DATA];
+            }
+
+            currentIndex = 0;
+            refreshCurrentModeView();
+        }
+
+        function shuffleFiltered() {
+            for (let i = activeList.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [activeList[i], activeList[j]] = [activeList[j], activeList[i]];
+            }
+            currentIndex = 0;
+            refreshCurrentModeView();
+        }
+
+        function setMode(modeName) {
+            currentMode = modeName;
+            ['flashcard', 'quiz', 'type', 'list'].forEach(m => {
+                const tab = document.getElementById(`tab-${m}`);
+                const view = document.getElementById(`view-${m}`);
+                if (m === modeName) {
+                    tab.className = 'mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-blue-600 text-white shadow-sm shadow-blue-200';
+                    view.classList.remove('hidden');
+                } else {
+                    tab.className = 'mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200';
+                    view.classList.add('hidden');
+                }
+            });
+
+            refreshCurrentModeView();
+        }
+
+        function refreshCurrentModeView() {
+            if (currentMode === 'flashcard') {
+                renderFlashcard();
+                setTimeout(resizeCanvas, 50);
+            } else if (currentMode === 'quiz') {
+                renderQuizQuestion();
+            } else if (currentMode === 'type') {
+                renderTypeQuestion();
+            } else if (currentMode === 'list') {
+                renderListView();
+            }
+        }
+
+        // ============================================================================
+        // MODE 1: FLASHCARD & HANDWRITING LOGIC
+        // ============================================================================
+        function renderFlashcard() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            document.getElementById('fc-number').textContent = `#${item.id}`;
+            document.getElementById('fc-category').textContent = getCategoryLabel(item.category);
+            document.getElementById('fc-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('fc-meaning').innerHTML = `<i class="ph-fill ph-translate text-blue-500"></i> <span>${item.meaning}</span>`;
+            document.getElementById('fc-target-kanji').textContent = item.target;
+            document.getElementById('fc-full-sentence').textContent = item.full;
+            document.getElementById('canvas-trace-guide').textContent = item.target;
+
+            document.getElementById('fc-index-display').textContent = currentIndex + 1;
+            document.getElementById('fc-total-display').textContent = activeList.length;
+
+            // Mastered badge
+            const masteredBadge = document.getElementById('fc-mastered-badge');
+            if (userState.mastered.includes(item.id)) {
+                masteredBadge.classList.remove('hidden');
+                masteredBadge.classList.add('inline-flex');
+            } else {
+                masteredBadge.classList.add('hidden');
+                masteredBadge.classList.remove('inline-flex');
+            }
+
+            // Star button state
+            const starBtn = document.getElementById('fc-star-btn');
+            if (userState.starred.includes(item.id)) {
+                starBtn.className = 'p-2 rounded-xl bg-amber-50 text-amber-500 border border-amber-200 transition-colors';
+            } else {
+                starBtn.className = 'p-2 rounded-xl bg-white hover:bg-amber-50 text-slate-300 border border-slate-200 transition-colors';
+            }
+
+            // Hide answer initially
+            document.getElementById('fc-answer-hidden').classList.remove('hidden');
+            document.getElementById('fc-answer-revealed').classList.add('hidden');
+
+            clearCanvas();
+        }
+
+        function revealFlashcardAnswer() {
+            document.getElementById('fc-answer-hidden').classList.add('hidden');
+            document.getElementById('fc-answer-revealed').classList.remove('hidden');
+        }
+
+        function markCurrentMastery(isMastered) {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            if (isMastered) {
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                }
+            } else {
+                userState.mastered = userState.mastered.filter(id => id !== item.id);
+                if (!userState.starred.includes(item.id)) {
+                    userState.starred.push(item.id);
+                }
+            }
+            saveState();
+            nextCard();
+        }
+
+        function toggleStarCurrent() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            toggleStarById(item.id);
+            renderFlashcard();
+        }
+
+        function toggleStarById(id) {
+            if (userState.starred.includes(id)) {
+                userState.starred = userState.starred.filter(item => item !== id);
+            } else {
+                userState.starred.push(id);
+            }
+            saveState();
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + activeList.length) % activeList.length;
+            renderFlashcard();
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderFlashcard();
+        }
+
+        function speakCurrentItem() {
+            const item = activeList[currentIndex];
+            if (!item || !('speechSynthesis' in window)) return;
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(item.full);
+            utter.lang = 'ja-JP';
+            utter.rate = 0.9;
+            window.speechSynthesis.speak(utter);
+        }
+
+        // ============================================================================
+        // INTERACTIVE HTML5 CANVAS FOR KANJI WRITING
+        // ============================================================================
+        const canvas = document.getElementById('drawing-canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        function resizeCanvas() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            if (rect.width === 0 || rect.height === 0) return;
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+            ctx.scale(dpr, dpr);
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            ctx.lineWidth = 6;
+            ctx.strokeStyle = '#1e293b';
+        }
+
+        function getPointerPos(e) {
+            const rect = canvas.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDraw(e) {
+            e.preventDefault();
+            isDrawing = true;
+            const pos = getPointerPos(e);
+            lastX = pos.x;
+            lastY = pos.y;
+        }
+
+        function moveDraw(e) {
+            if (!isDrawing) return;
+            e.preventDefault();
+            const pos = getPointerPos(e);
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+            lastX = pos.x;
+            lastY = pos.y;
+        }
+
+        function endDraw(e) {
+            if (!isDrawing) return;
+            e.preventDefault();
+            isDrawing = false;
+        }
+
+        function clearCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            ctx.clearRect(0, 0, rect.width || canvas.width, rect.height || canvas.height);
+        }
+
+        function toggleTraceGuide() {
+            showTraceWatermark = !showTraceWatermark;
+            const guide = document.getElementById('canvas-trace-guide');
+            const btn = document.getElementById('trace-btn');
+            if (showTraceWatermark) {
+                guide.classList.remove('hidden');
+                btn.className = 'px-2.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white border border-indigo-600 flex items-center gap-1 transition-colors';
+            } else {
+                guide.classList.add('hidden');
+                btn.className = 'px-2.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-indigo-50 text-slate-600 border border-slate-200 flex items-center gap-1 transition-colors';
+            }
+        }
+
+        canvas.addEventListener('mousedown', startDraw);
+        canvas.addEventListener('mousemove', moveDraw);
+        window.addEventListener('mouseup', endDraw);
+
+        canvas.addEventListener('touchstart', startDraw, { passive: false });
+        canvas.addEventListener('touchmove', moveDraw, { passive: false });
+        canvas.addEventListener('touchend', endDraw, { passive: false });
+        window.addEventListener('resize', resizeCanvas);
+
+        // ============================================================================
+        // MODE 2: MULTIPLE CHOICE QUIZ
+        // ============================================================================
+        function renderQuizQuestion() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            quizAnswered = false;
+
+            document.getElementById('qz-number').textContent = `#${item.id}`;
+            document.getElementById('qz-progress-text').textContent = `${currentIndex + 1} / ${activeList.length}`;
+            document.getElementById('qz-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('qz-meaning').innerHTML = `<i class="ph-fill ph-translate text-indigo-500"></i> <span>${item.meaning}</span>`;
+            document.getElementById('qz-feedback').classList.add('hidden');
+
+            // Pick 3 distractors from the same category for realistic challenge
+            const sameCategoryPool = KANJI_DATA.filter(x => x.category === item.category && x.id !== item.id);
+            const shuffledPool = [...sameCategoryPool].sort(() => Math.random() - 0.5);
+            const distractors = shuffledPool.slice(0, 3);
+            const choices = [item, ...distractors].sort(() => Math.random() - 0.5);
+
+            const container = document.getElementById('qz-options');
+            container.innerHTML = '';
+
+            choices.forEach(choice => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-choice-btn group py-4 px-5 rounded-2xl border-2 border-slate-200 hover:border-blue-400 bg-white hover:bg-blue-50/40 transition-all flex items-center justify-center text-3xl sm:text-4xl kanji-font text-slate-800 shadow-2xs';
+                btn.textContent = choice.target;
+                btn.onclick = () => selectQuizAnswer(btn, choice.id === item.id, item);
+                container.appendChild(btn);
+            });
+        }
+
+        function selectQuizAnswer(selectedBtn, isCorrect, item) {
+            if (quizAnswered) return;
+            quizAnswered = true;
+
+            const allButtons = document.querySelectorAll('.quiz-choice-btn');
+            allButtons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === item.target) {
+                    btn.className = 'quiz-choice-btn py-4 px-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-3xl sm:text-4xl kanji-font text-emerald-900 font-bold shadow-sm';
+                }
+            });
+
+            const fbBox = document.getElementById('qz-feedback');
+            const fbIcon = document.getElementById('qz-feedback-icon');
+            const fbTitle = document.getElementById('qz-feedback-title');
+            const fbSub = document.getElementById('qz-feedback-sub');
+
+            fbBox.classList.remove('hidden');
+
+            if (isCorrect) {
+                quizScore += 10;
+                quizStreak += 1;
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200';
+                fbIcon.className = 'w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 bg-emerald-500 text-white';
+                fbIcon.innerHTML = '<i class="ph-bold ph-check"></i>';
+                fbTitle.className = 'font-extrabold text-sm sm:text-base text-emerald-900';
+                fbTitle.textContent = '大正解！ Awesome job, Kaya!';
+                fbSub.textContent = `${item.full} (${item.reading})`;
+            } else {
+                quizStreak = 0;
+                selectedBtn.className = 'quiz-choice-btn py-4 px-5 rounded-2xl border-2 border-rose-400 bg-rose-50 text-3xl sm:text-4xl kanji-font text-rose-800';
+                if (!userState.starred.includes(item.id)) {
+                    userState.starred.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-rose-50 border border-rose-200';
+                fbIcon.className = 'w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 bg-rose-500 text-white';
+                fbIcon.innerHTML = '<i class="ph-bold ph-x"></i>';
+                fbTitle.className = 'font-extrabold text-sm sm:text-base text-rose-900';
+                fbTitle.textContent = `Almost! Correct answer: ${item.target}`;
+                fbSub.textContent = `Added #${item.id} to Starred list for review.`;
+            }
+
+            document.getElementById('qz-score').textContent = quizScore;
+            document.getElementById('qz-streak').textContent = quizStreak;
+        }
+
+        function nextQuizQuestion() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderQuizQuestion();
+        }
+
+        // ============================================================================
+        // MODE 3: TYPE & RECALL MODE
+        // ============================================================================
+        function renderTypeQuestion() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            document.getElementById('ty-number').textContent = `#${item.id}`;
+            document.getElementById('ty-index-display').textContent = `${currentIndex + 1} / ${activeList.length}`;
+            document.getElementById('ty-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('ty-meaning').innerHTML = `<i class="ph-fill ph-translate text-blue-500"></i> <span>${item.meaning}</span>`;
+
+            const input = document.getElementById('ty-input');
+            input.value = '';
+            input.disabled = false;
+            input.focus();
+
+            document.getElementById('ty-feedback').classList.add('hidden');
+        }
+
+        function checkTypedAnswer(e) {
+            e.preventDefault();
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            const userVal = document.getElementById('ty-input').value.trim();
+            if (!userVal) return;
+
+            const isCorrect = (userVal === item.target || userVal === item.full);
+            const fbBox = document.getElementById('ty-feedback');
+            const fbTitle = document.getElementById('ty-feedback-title');
+            const fbSub = document.getElementById('ty-feedback-sub');
+
+            fbBox.classList.remove('hidden');
+
+            if (isCorrect) {
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200 text-emerald-900';
+                fbTitle.textContent = `正解！ Correct: ${item.target}`;
+                fbSub.textContent = item.full;
+            } else {
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-amber-50 border border-amber-200 text-amber-900';
+                fbTitle.textContent = `Correct Kanji: ${item.target}`;
+                fbSub.textContent = `Full sentence: ${item.full}`;
+            }
+        }
+
+        function showTypeHint() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            document.getElementById('ty-input').value = item.target;
+        }
+
+        function nextTypeQuestion() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderTypeQuestion();
+        }
+
+        // ============================================================================
+        // MODE 4: ALL 50 WORKSHEET LIST VIEW (WITH RED CHECK SHEET)
+        // ============================================================================
+        function toggleRedSheet() {
+            redSheetActive = !redSheetActive;
+            const btn = document.getElementById('red-sheet-btn');
+            const label = document.getElementById('red-sheet-label');
+            if (redSheetActive) {
+                btn.className = 'flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-slate-900 hover:bg-slate-800 text-white shadow-sm transition-all';
+                label.textContent = 'Red Sheet: ON (Tap Red Box to Peek)';
+            } else {
+                btn.className = 'flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-rose-500 hover:bg-rose-600 text-white shadow-sm shadow-rose-200 transition-all';
+                label.textContent = 'Red Sheet: OFF (Tap to Hide Answers)';
+            }
+            renderListView();
+        }
+
+        function renderListView() {
+            const query = (document.getElementById('list-search').value || '').toLowerCase().trim();
+            const container = document.getElementById('worksheet-container');
+            container.innerHTML = '';
+
+            const filtered = activeList.filter(item => {
+                if (!query) return true;
+                return (
+                    item.prompt.toLowerCase().includes(query) ||
+                    item.target.toLowerCase().includes(query) ||
+                    item.reading.toLowerCase().includes(query) ||
+                    item.meaning.toLowerCase().includes(query) ||
+                    String(item.id) === query
+                );
+            });
+
+            filtered.forEach(item => {
+                const isMastered = userState.mastered.includes(item.id);
+                const isStarred = userState.starred.includes(item.id);
+
+                const row = document.createElement('div');
+                row.className = 'p-3.5 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-white transition-all flex items-center justify-between gap-3';
+
+                const left = document.createElement('div');
+                left.className = 'flex items-center gap-3 min-w-0';
+                left.innerHTML = `
+                    <span class="w-8 h-8 rounded-xl ${isMastered ? 'bg-emerald-500 text-white' : 'bg-slate-200 text-slate-700'} font-extrabold text-xs flex items-center justify-center shrink-0">
+                        ${item.id}
+                    </span>
+                    <div class="min-w-0">
+                        <div class="font-bold text-slate-800 text-base truncate">${formatPromptHTML(item.prompt)}</div>
+                        <div class="text-xs text-slate-500 truncate">${item.meaning}</div>
+                    </div>
+                `;
+
+                const right = document.createElement('div');
+                right.className = 'flex items-center gap-2 shrink-0';
+
+                // Answer Pill (supports Red Sheet hiding)
+                const ansPill = document.createElement('div');
+                ansPill.className = `kanji-font text-2xl font-bold px-3.5 py-1.5 rounded-xl border border-blue-200 bg-white text-slate-900 min-w-[4.5rem] text-center ${redSheetActive ? 'red-sheet-hidden' : ''}`;
+                ansPill.textContent = item.target;
+                ansPill.title = redSheetActive ? 'Tap to peek' : 'Target Kanji';
+                ansPill.onclick = () => {
+                    if (redSheetActive) {
+                        ansPill.classList.toggle('red-sheet-hidden');
+                    } else {
+                        // Jump to this card in Flashcard mode
+                        const idx = activeList.findIndex(x => x.id === item.id);
+                        if (idx !== -1) {
+                            currentIndex = idx;
+                            setMode('flashcard');
+                        }
+                    }
+                };
+
+                // Star toggle button
+                const starBtn = document.createElement('button');
+                starBtn.className = `p-2 rounded-xl border ${isStarred ? 'bg-amber-50 border-amber-200 text-amber-500' : 'bg-white border-slate-200 text-slate-300 hover:text-amber-400'}`;
+                starBtn.innerHTML = '<i class="ph-fill ph-star"></i>';
+                starBtn.onclick = () => {
+                    toggleStarById(item.id);
+                    renderListView();
+                };
+
+                right.appendChild(ansPill);
+                right.appendChild(starBtn);
+
+                row.appendChild(left);
+                row.appendChild(right);
+                container.appendChild(row);
+            });
+        }
+
+        // ============================================================================
+        // MODAL & INITIALIZATION
+        // ============================================================================
+        function openResetModal() {
+            const modal = document.getElementById('reset-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeResetModal() {
+            const modal = document.getElementById('reset-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function confirmResetProgress() {
+            userState = { mastered: [], starred: [] };
+            saveState();
+            closeResetModal();
+            refreshCurrentModeView();
+        }
+
+        window.onload = function () {
+            loadState();
+            renderFlashcard();
+            setTimeout(resizeCanvas, 100);
+        };
+    </script>
+</body>
+</html>
