@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可弥（カヤ）の漢字マスター｜九・十月の漢字のたしかめ（5年）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: 教科書体に近い Klee One と 親しみやすい丸ゴシック Zen Maru Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+            font-family: 'Zen Maru Gothic', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: #f0f7ff;
+            background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+            background-size: 24px 24px;
+        }
+        /* 小学校の漢字ドリル・教科書体フォント指定（とめ・はね・はらいがわかりやすい） */
+        .kanji-font {
+            font-family: 'UD Digi Kyokasho N-R', 'UD Digi Kyokasho NK-R', 'Yu Kyokasho', 'Klee One', serif;
+            font-weight: 600;
+        }
+        /* 赤シート（暗記シート）機能 */
+        .red-sheet-covered {
+            background-color: #ef4444 !important;
+            color: transparent !important;
+            border-color: #dc2626 !important;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.18s ease;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        .red-sheet-covered::after {
+            content: 'タップで表示';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            font-family: 'Zen Maru Gothic', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        .red-sheet-covered:hover {
+            background-color: #f87171 !important;
+        }
+        /* カスタムスクロールバー */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        canvas {
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="text-slate-800 min-h-screen flex flex-col">
+
+    <!-- ヘッダー＆進捗バー -->
+    <header class="bg-white border-b border-blue-100 shadow-xs sticky top-0 z-30">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-200 font-black text-2xl kanji-font shrink-0">
+                    漢
+                </div>
+                <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <h1 class="text-lg sm:text-xl font-black text-slate-800 tracking-tight">可弥（カヤ）の漢字マスター</h1>
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-0.5 rounded-full border border-amber-300">小学5年生</span>
+                    </div>
+                    <p class="text-xs text-slate-500 font-bold mt-0.5">九・十月の漢字のたしかめ（全50問）</p>
+                </div>
+            </div>
+
+            <!-- 学習ステータス表示 -->
+            <div class="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-center sm:justify-end">
+                <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-xl">
+                    <i class="ph-fill ph-check-circle text-emerald-500 text-xl"></i>
+                    <div>
+                        <div class="text-[10px] font-bold text-emerald-700 leading-none">マスター済み</div>
+                        <div class="text-sm font-black text-emerald-900"><span id="stat-mastered">0</span><span class="text-xs font-bold text-emerald-600"> / 50問</span></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-xl">
+                    <i class="ph-fill ph-star text-amber-500 text-xl"></i>
+                    <div>
+                        <div class="text-[10px] font-bold text-amber-700 leading-none">苦手・復習リスト</div>
+                        <div class="text-sm font-black text-amber-900"><span id="stat-starred">0</span><span class="text-xs font-bold text-amber-600"> 問</span></div>
+                    </div>
+                </div>
+
+                <button onclick="openResetModal()" title="記録をリセット" class="flex items-center gap-1 px-2.5 py-2 text-xs font-bold text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-xl border border-slate-200 transition-colors">
+                    <i class="ph-bold ph-arrow-counter-clockwise text-base"></i>
+                    <span class="hidden md:inline">記録をリセット</span>
+                </button>
+            </div>
+        </div>
+        <!-- 全体進捗プログレスバー -->
+        <div class="w-full bg-slate-100 h-2 relative overflow-hidden">
+            <div id="master-progress-bar" class="bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 h-2 transition-all duration-500" style="width: 0%"></div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-5xl w-full mx-auto px-4 py-5 flex-1 flex flex-col gap-5">
+
+        <!-- モード切り替えタブ ＆ 出題範囲フィルター -->
+        <div class="bg-white p-3.5 sm:p-4 rounded-2xl shadow-xs border border-blue-100 flex flex-col gap-3">
+            <!-- 4つの学習モードタブ -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                <button onclick="setMode('flashcard')" id="tab-flashcard" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-blue-600 text-white shadow-sm shadow-blue-200">
+                    <span>✏️ 書いて練習</span>
+                </button>
+                <button onclick="setMode('quiz')" id="tab-quiz" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <span>🎯 4択クイズ</span>
+                </button>
+                <button onclick="setMode('type')" id="tab-type" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <span>⌨️ 入力テスト</span>
+                </button>
+                <button onclick="setMode('list')" id="tab-list" class="mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">
+                    <span>🟥 一覧＆赤シート</span>
+                </button>
+            </div>
+
+            <div class="border-t border-slate-100"></div>
+
+            <!-- 問題フィルター＆シャッフル -->
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex flex-wrap items-center gap-1.5">
+                    <span class="text-xs font-bold text-slate-500 mr-1">出題範囲：</span>
+                    <button onclick="setFilter('all')" id="filter-all" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-indigo-100 text-indigo-800 border border-indigo-300">
+                        全50問
+                    </button>
+                    <button onclick="setFilter('single')" id="filter-single" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        ①〜⑬（1文字）
+                    </button>
+                    <button onclick="setFilter('compound')" id="filter-compound" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        ⑭〜㊳（熟語）
+                    </button>
+                    <button onclick="setFilter('okurigana')" id="filter-okurigana" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent">
+                        ㊴〜㊿（送り仮名つき）
+                    </button>
+                    <button onclick="setFilter('starred')" id="filter-starred" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-amber-800 hover:bg-amber-50 border border-transparent flex items-center gap-1">
+                        <span>⭐ 苦手・復習リスト</span>
+                    </button>
+                    <button onclick="setFilter('unmastered')" id="filter-unmastered" class="filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-rose-700 hover:bg-rose-50 border border-transparent flex items-center gap-1">
+                        <span>🔥 未クリアのみ</span>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2 ml-auto">
+                    <button onclick="shuffleFiltered()" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 flex items-center gap-1 transition-colors">
+                        <span>🔀 シャッフル出題</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- フィルター結果が0件のときの案内バナー -->
+            <div id="empty-filter-notice" class="hidden bg-amber-50 border border-amber-200 text-amber-900 rounded-xl px-4 py-2.5 text-xs font-bold flex items-center justify-between">
+                <span id="empty-filter-message">選んだ範囲に問題がありません。全50問を表示しています。</span>
+                <button onclick="setFilter('all')" class="underline text-indigo-700 ml-2">全50問にもどる</button>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- モード1：✏️ 書いて練習（手書きモード）     -->
+        <!-- ========================================== -->
+        <section id="view-flashcard" class="flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-sm border border-blue-100 p-4 sm:p-6 flex flex-col lg:flex-row gap-6 items-stretch">
+                
+                <!-- 左カラム：問題文・ヒント・お手本表示 -->
+                <div class="flex-1 flex flex-col justify-between bg-slate-50 rounded-2xl p-5 border border-slate-200/90">
+                    <!-- 問題番号・カテゴリー・音声・復習スター -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span id="fc-number" class="bg-blue-600 text-white font-black text-sm px-3 py-1 rounded-xl shadow-xs">①</span>
+                            <span id="fc-category" class="text-xs font-bold text-slate-600 bg-white px-2.5 py-1 rounded-xl border border-slate-200">①〜⑬（1文字）</span>
+                            <span id="fc-mastered-badge" class="hidden bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-xl border border-emerald-300 items-center gap-1">
+                                <i class="ph-fill ph-check-circle text-emerald-600"></i> マスター済み
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="speakCurrentItem()" class="px-2.5 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-colors" title="問題を読み上げる">
+                                <i class="ph-fill ph-speaker-high text-base"></i>
+                                <span>よみあげ</span>
+                            </button>
+                            <button onclick="toggleStarCurrent()" id="fc-star-btn" class="px-2.5 py-1.5 rounded-xl bg-white hover:bg-amber-50 text-slate-500 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-colors">
+                                <i class="ph-fill ph-star text-base"></i>
+                                <span id="fc-star-label">復習リストに追加</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 中央：問題文＆ヒント -->
+                    <div class="my-auto py-5 text-center">
+                        <div id="fc-instruction" class="text-xs font-bold text-slate-500 mb-3">
+                            太字の【　】のことばを漢字に直して練習マスに書こう！
+                        </div>
+                        <div id="fc-prompt" class="text-2xl sm:text-4xl font-black text-slate-800 leading-relaxed tracking-wide">
+                            <!-- JSで描画 -->
+                        </div>
+
+                        <!-- 送り仮名注意バッジ（40〜50番のみ表示） -->
+                        <div id="fc-okurigana-alert" class="hidden mt-3">
+                            <span class="inline-flex items-center gap-1 bg-rose-50 text-rose-700 border border-rose-200 text-xs font-bold px-3 py-1 rounded-full">
+                                <i class="ph-fill ph-warning-circle"></i>
+                                <span id="fc-okurigana-text">※送り仮名まで正確に書く問題です</span>
+                            </span>
+                        </div>
+
+                        <!-- ヒント表示ボタン＆ボックス -->
+                        <div class="mt-4 flex flex-col items-center">
+                            <button onclick="toggleFcHint()" id="fc-hint-btn" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 bg-amber-100 hover:bg-amber-200/80 border border-amber-300 px-3.5 py-1.5 rounded-full transition-colors">
+                                <span>💡 ヒントを見る</span>
+                            </button>
+                            <div id="fc-hint-box" class="hidden mt-2.5 bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-sm font-bold px-4 py-2 rounded-xl">
+                                <!-- JSで意味・ヒントを挿入 -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 下部：答えを見る・自己採点エリア -->
+                    <div class="mt-3">
+                        <div id="fc-answer-hidden" onclick="revealFlashcardAnswer()" class="cursor-pointer group bg-white hover:bg-blue-50/70 border-2 border-dashed border-blue-300 rounded-2xl p-5 text-center transition-all">
+                            <div class="w-11 h-11 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
+                                <i class="ph-bold ph-eye text-2xl"></i>
+                            </div>
+                            <p class="font-black text-blue-700 text-sm sm:text-base">答えを見る・採点する</p>
+                            <p class="text-xs text-slate-500 mt-1">右の練習マスに書いてからタップして答え合わせしよう！</p>
+                        </div>
+
+                        <div id="fc-answer-revealed" class="hidden bg-white border-2 border-emerald-400 rounded-2xl p-4 text-center shadow-xs">
+                            <div class="flex items-center justify-between text-xs font-bold text-emerald-700 mb-1 px-1">
+                                <span>正しい答え（お手本）</span>
+                                <span class="text-slate-400">とめ・はね・はらいを確認！</span>
+                            </div>
+                            <div id="fc-target-kanji" class="kanji-font text-5xl sm:text-6xl text-slate-900 my-2 select-all tracking-widest">
+                                得
+                            </div>
+                            <div id="fc-full-sentence" class="text-xs sm:text-sm font-bold text-slate-700 bg-slate-100 inline-block px-3.5 py-1 rounded-lg mb-4">
+                                得をする。
+                            </div>
+
+                            <!-- 自己採点ボタン -->
+                            <div class="grid grid-cols-2 gap-3 pt-3 border-t border-slate-100">
+                                <button onclick="markCurrentMastery(false)" class="flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl font-black text-xs sm:text-sm bg-rose-100 hover:bg-rose-200 text-rose-900 transition-colors">
+                                    <span>❌ もう一回（復習へ）</span>
+                                </button>
+                                <button onclick="markCurrentMastery(true)" class="flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl font-black text-xs sm:text-sm bg-emerald-500 hover:bg-emerald-600 text-white shadow-sm shadow-emerald-200 transition-colors">
+                                    <span>⭕ 書けた！（クリア）</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右カラム：十字リーダー付き手書き練習マス -->
+                <div class="flex-1 flex flex-col justify-between bg-slate-50 rounded-2xl p-5 border border-slate-200/90">
+                    <!-- ツールバー上部 -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div>
+                            <h3 class="font-black text-sm text-slate-800 flex items-center gap-1.5">
+                                <i class="ph-fill ph-pen-nib text-blue-600 text-lg"></i>
+                                <span>手書き練習マス（十字リーダーつき）</span>
+                            </h3>
+                            <p id="canvas-box-guide-label" class="text-xs text-slate-500 font-bold">指やタッチペン、マウスで大きく練習しよう</p>
+                        </div>
+
+                        <button onclick="toggleTraceGuide()" id="trace-btn" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-indigo-50 text-slate-700 border border-slate-200 flex items-center gap-1.5 transition-colors shadow-2xs">
+                            <i class="ph-bold ph-magic-wand text-indigo-600"></i>
+                            <span id="trace-btn-text">なぞり書きガイド：OFF</span>
+                        </button>
+                    </div>
+
+                    <!-- ペンの太さ・消しゴム・1画もどる・全部消す -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3 bg-white p-2 rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-1">
+                            <span class="text-[11px] font-bold text-slate-500 px-1.5">太さ:</span>
+                            <button onclick="setPenTool('pen', 4)" id="pen-thin" class="pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">細</button>
+                            <button onclick="setPenTool('pen', 7)" id="pen-medium" class="pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-600 text-white">中</button>
+                            <button onclick="setPenTool('pen', 11)" id="pen-thick" class="pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">太</button>
+                            <button onclick="setPenTool('eraser', 22)" id="pen-eraser" class="pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 ml-1">
+                                <i class="ph-bold ph-eraser"></i> 消しゴム
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="undoCanvasStroke()" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center gap-1 transition-colors">
+                                <i class="ph-bold ph-arrow-arc-left"></i> 1画もどる
+                            </button>
+                            <button onclick="clearCanvas()" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 flex items-center gap-1 transition-colors">
+                                <i class="ph-bold ph-trash"></i> 全部消す
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- キャンバス本体（文字数に応じた十字リーダー背景＋なぞり書きガイド） -->
+                    <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] bg-white rounded-2xl border-2 border-blue-400 shadow-inner overflow-hidden flex items-center justify-center">
+                        <!-- 十字リーダー背景レイヤー（文字数に合わせて1〜3マスを動的生成） -->
+                        <div id="kanji-grid-layer" class="absolute inset-0 pointer-events-none grid"></div>
+
+                        <!-- なぞり書きガイド（薄いグレーの教科書体） -->
+                        <div id="canvas-trace-guide" class="hidden absolute inset-0 pointer-events-none select-none kanji-font text-slate-200 items-center justify-around px-2">
+                            <!-- JSで各文字をマス中央に配置 -->
+                        </div>
+
+                        <!-- 手書き用HTML5 Canvas -->
+                        <canvas id="drawing-canvas" class="absolute inset-0 w-full h-full cursor-crosshair z-10"></canvas>
+                    </div>
+
+                    <!-- 前後の問題へ移動バー -->
+                    <div class="flex items-center justify-between gap-3 mt-4 pt-2">
+                        <button onclick="prevCard()" class="flex items-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-sm bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-2xs transition-all">
+                            <i class="ph-bold ph-caret-left"></i> 前の問題
+                        </button>
+                        <div class="text-xs font-black text-slate-600">
+                            <span id="fc-index-display" class="text-blue-700 text-sm">1</span> / <span id="fc-total-display">50</span> 問目
+                        </div>
+                        <button onclick="nextCard()" class="flex items-center gap-1.5 py-2.5 px-4 rounded-xl font-bold text-sm bg-blue-600 hover:bg-blue-700 text-white shadow-sm shadow-blue-200 transition-all">
+                            次の問題 <i class="ph-bold ph-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- モード2：🎯 4択クイズ（スピードテスト）    -->
+        <!-- ========================================== -->
+        <section id="view-quiz" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-sm border border-blue-100 p-5 sm:p-8 max-w-3xl w-full mx-auto">
+                <!-- クイズヘッダー：問題番号・連続コンボ・正解スコア -->
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-6 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span id="qz-number" class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-xl">①</span>
+                        <span id="qz-category" class="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg">①〜⑬（1文字）</span>
+                        <span class="text-xs font-bold text-slate-400 ml-1">（<span id="qz-progress-text" class="text-slate-700">1 / 50</span>）</span>
+                    </div>
+                    <div class="flex items-center gap-2.5">
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-800 px-3 py-1 rounded-full text-xs font-black border border-orange-200">
+                            <i class="ph-fill ph-fire text-orange-500 text-base"></i>
+                            <span>連続コンボ: <span id="qz-streak">0</span></span>
+                        </div>
+                        <div class="flex items-center gap-1 bg-blue-50 text-blue-800 px-3 py-1 rounded-full text-xs font-black border border-blue-200">
+                            <i class="ph-fill ph-trophy text-blue-500 text-base"></i>
+                            <span>正解数: <span id="qz-score">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- クイズ問題文 -->
+                <div class="text-center py-6 bg-slate-50 rounded-2xl border border-slate-200/80 px-4 mb-6">
+                    <div class="text-xs font-bold text-slate-500 mb-2">【　】にあてはまる正しい漢字を4つの中から選ぼう！</div>
+                    <div id="qz-prompt" class="text-2xl sm:text-4xl font-black text-slate-800 leading-relaxed mb-3">
+                        <!-- JSで挿入 -->
+                    </div>
+                    <div id="qz-meaning" class="inline-flex items-center gap-1.5 bg-white text-slate-700 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full border border-slate-200">
+                        <!-- 意味・ヒント -->
+                    </div>
+                </div>
+
+                <!-- 4択ボタン -->
+                <div id="qz-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
+                    <!-- JSで生成 -->
+                </div>
+
+                <!-- 判定メッセージ＆次へボタン -->
+                <div id="qz-feedback" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div class="flex items-center gap-3 text-center sm:text-left">
+                        <div id="qz-feedback-icon" class="w-11 h-11 rounded-full flex items-center justify-center text-2xl shrink-0"></div>
+                        <div>
+                            <div id="qz-feedback-title" class="font-black text-base"></div>
+                            <div id="qz-feedback-sub" class="text-xs sm:text-sm font-bold text-slate-700 mt-0.5"></div>
+                        </div>
+                    </div>
+                    <button onclick="nextQuizQuestion()" class="w-full sm:w-auto py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-black text-sm rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5 shrink-0">
+                        <span>次の問題へ</span>
+                        <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- モード3：⌨️ 入力テスト（タイピング確認）   -->
+        <!-- ========================================== -->
+        <section id="view-type" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-sm border border-blue-100 p-5 sm:p-8 max-w-2xl w-full mx-auto">
+                <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
+                    <div class="flex items-center gap-2">
+                        <span id="ty-number" class="bg-blue-600 text-white font-black text-sm px-3 py-1 rounded-xl">①</span>
+                        <span class="text-xs font-bold text-slate-600">【　】の漢字（送り仮名つきは送り仮名まで）を入力しよう</span>
+                    </div>
+                    <span class="text-xs font-black text-slate-500" id="ty-index-display">1 / 50 問目</span>
+                </div>
+
+                <div class="text-center py-6 bg-slate-50 rounded-2xl border border-slate-200/80 px-4 mb-6">
+                    <div id="ty-prompt" class="text-2xl sm:text-4xl font-black text-slate-800 leading-relaxed mb-3"></div>
+                    <div id="ty-meaning" class="inline-flex items-center gap-1.5 bg-white text-slate-700 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full border border-slate-200"></div>
+                </div>
+
+                <form onsubmit="checkTypedAnswer(event)" class="flex flex-col sm:flex-row gap-3 mb-4">
+                    <input type="text" id="ty-input" placeholder="ここに答えの漢字を入力..." autocomplete="off"
+                        class="flex-1 kanji-font text-2xl text-center sm:text-left px-4 py-3 rounded-2xl border-2 border-slate-200 focus:border-blue-500 focus:outline-none bg-white">
+                    <button type="submit" class="py-3 px-6 rounded-2xl font-black text-sm bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-colors">
+                        答え合わせ
+                    </button>
+                </form>
+
+                <div class="flex items-center justify-between text-xs font-bold text-slate-500 mb-4 px-1">
+                    <span>※キーボードの変換機能を使って漢字を入力してね。</span>
+                    <button type="button" onclick="showTypeHint()" class="text-blue-600 hover:underline font-black">答えを入力欄に表示する</button>
+                </div>
+
+                <!-- 判定結果ボックス -->
+                <div id="ty-feedback" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div>
+                        <div id="ty-feedback-title" class="font-black text-base"></div>
+                        <div id="ty-feedback-sub" class="text-xs sm:text-sm font-bold mt-0.5"></div>
+                    </div>
+                    <button type="button" onclick="nextTypeQuestion()" class="py-2.5 px-5 bg-slate-900 hover:bg-slate-800 text-white font-black text-xs sm:text-sm rounded-xl shrink-0">
+                        次の問題へ <i class="ph-bold ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- モード4：🟥 一覧＆赤シート（全50問プリント）-->
+        <!-- ========================================== -->
+        <section id="view-list" class="hidden flex-1 flex flex-col gap-4">
+            <div class="bg-white rounded-3xl shadow-sm border border-blue-100 p-4 sm:p-6">
+                <!-- 検索＆赤シート切り替えバー -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-100">
+                    <div class="relative flex-1">
+                        <i class="ph-bold ph-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="list-search" oninput="renderListView()" placeholder="問題文・よみがな・漢字・意味で検索..."
+                            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm font-bold focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="toggleRedSheet()" id="red-sheet-btn" class="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-rose-500 hover:bg-rose-600 text-white shadow-sm shadow-rose-200 transition-all">
+                            <i class="ph-fill ph-cards text-lg"></i>
+                            <span id="red-sheet-label">🟥 赤シート：OFF（タップで答えを隠す）</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-xs font-bold text-slate-500 mb-3 flex flex-wrap items-center justify-between gap-2 px-1">
+                    <span>💡 赤シートがONのとき、赤いマスをタップすると1問ずつ答えをチラ見できます。OFFのときに漢字をタップすると手書き練習へジャンプします。</span>
+                </div>
+
+                <!-- 50問一覧グリッド -->
+                <div id="worksheet-container" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <!-- JSで生成 -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 記録リセット確認モーダル（完全日本語） -->
+    <div id="reset-modal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-xl border border-slate-100 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto mb-3 text-2xl">
+                <i class="ph-bold ph-warning"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-800">学習記録をリセットしますか？</h3>
+            <p class="text-xs font-bold text-slate-500 mt-1.5 mb-5 leading-relaxed">「マスター済み」の記録と「⭐ 苦手・復習リスト」をすべて消去して、最初から練習し直します。</p>
+            <div class="grid grid-cols-2 gap-2.5">
+                <button onclick="closeResetModal()" class="py-2.5 px-4 rounded-xl font-bold text-xs bg-slate-100 hover:bg-slate-200 text-slate-700">やめる</button>
+                <button onclick="confirmResetProgress()" class="py-2.5 px-4 rounded-xl font-black text-xs bg-rose-600 hover:bg-rose-700 text-white">リセットする</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================================
+        // 丸数字変換ヘルパー（①〜㊿）
+        // ============================================================================
+        const CIRCLED_NUMBERS = [
+            '', '①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩',
+            '⑪','⑫','⑬','⑭','⑮','⑯','⑰','⑱','⑲','⑳',
+            '㉑','㉒','㉓','㉔','㉕','㉖','㉗','㉘','㉙','㉚',
+            '㉛','㉜','㉝','㉞','㉟','㊱','㊲','㊳','㊴','㊵',
+            '㊶','㊷','㊸','㊹','㊺','㊻','㊼','㊽','㊾','㊿'
+        ];
+        function getCircledNum(n) {
+            return CIRCLED_NUMBERS[n] || `(${n})`;
+        }
+
+        // ============================================================================
+        // 九・十月の漢字のたしかめ（5年）全50問データセット（完全日本語解説＆ダミー選択肢つき）
+        // ============================================================================
+        const KANJI_DATA = [
+            // パート1：1文字の漢字（①〜⑬）
+            { id: 1, category: 'single', prompt: '[とく]をする。', target: '得', reading: 'とく', full: '得をする。', meaning: '利益やプラスになること', distractors: ['徳', '特', '解'] },
+            { id: 2, category: 'single', prompt: 'テントを[は]る。', target: '張', reading: 'は', full: 'テントを張る。', meaning: '広げてピンと伸ばす', distractors: ['貼', '春', '晴'] },
+            { id: 3, category: 'single', prompt: '会議の[あ]り方。', target: '在', reading: 'あ', full: '会議の在り方。', meaning: '存在する・本来の姿', distractors: ['有', '存', '合'] },
+            { id: 4, category: 'single', prompt: '[けん]査する。', target: '検', reading: 'けん', full: '検査する。', meaning: '詳しく調べること', distractors: ['険', '験', '研'] },
+            { id: 5, category: 'single', prompt: 'そばに[よ]る。', target: '寄', reading: 'よ', full: 'そばに寄る。', meaning: '近づくこと', distractors: ['依', '因', '集'] },
+            { id: 6, category: 'single', prompt: '[ほとけ]の教え。', target: '仏', reading: 'ほとけ', full: '仏の教え。', meaning: '仏教・お釈迦様', distractors: ['払', '私', '神'] },
+            { id: 7, category: 'single', prompt: '本を[か]す。', target: '貸', reading: 'か', full: '本を貸す。', meaning: '人に一時的に使わせる', distractors: ['借', '貨', '代'] },
+            { id: 8, category: 'single', prompt: '薬が[き]く。', target: '効', reading: 'き', full: '薬が効く。', meaning: '効果があらわれる', distractors: ['利', '聞', '聴'] },
+            { id: 9, category: 'single', prompt: '[つま]と出かける。', target: '妻', reading: 'つま', full: '妻と出かける。', meaning: '結婚した相手の女性', distractors: ['夫', '婦', '姉'] },
+            { id: 10, category: 'single', prompt: '店内が[こ]む。', target: '混', reading: 'こ', full: '店内が混む。', meaning: '人がたくさん集まっていっぱいになる', distractors: ['込', '交', '昆'] },
+            { id: 11, category: 'single', prompt: '[ぞう]きんでふく。', target: '雑', reading: 'ぞう', full: '雑きんでふく。', meaning: '掃除に使う布', distractors: ['造', '像', '増'] },
+            { id: 12, category: 'single', prompt: '会議で決を[と]る。', target: '採', reading: 'と', full: '会議で決を採る。', meaning: '賛成か反対かを決める', distractors: ['取', '撮', '捕'] },
+            { id: 13, category: 'single', prompt: '[なま]たまご。', target: '生', reading: 'なま', full: '生たまご。', meaning: '火を通していない状態', distractors: ['玉', '鮮', '青'] },
+
+            // パート2：2文字・3文字の熟語（⑭〜㊳）
+            { id: 14, category: 'compound', prompt: '数を[たいひ]する。', target: '対比', reading: 'たいひ', full: '数を対比する。', meaning: '二つのものをくらべること', distractors: ['対批', '待避', '対非'] },
+            { id: 15, category: 'compound', prompt: '[せいじ]を行う。', target: '政治', reading: 'せいじ', full: '政治を行う。', meaning: '国や社会を治める働き', distractors: ['正治', '政事', '整治'] },
+            { id: 16, category: 'compound', prompt: '[きょうみ]深い話。', target: '興味', reading: 'きょうみ', full: '興味深い話。', meaning: 'おもしろいと感じる気持ち', distractors: ['強味', '教味', '共味'] },
+            { id: 17, category: 'compound', prompt: '意志[ひょうじ]。', target: '表示', reading: 'ひょうじ', full: '意志表示。', meaning: 'はっきりと表して示すこと', distractors: ['標示', '評示', '表字'] },
+            { id: 18, category: 'compound', prompt: '[しゅちょう]する。', target: '主張', reading: 'しゅちょう', full: '主張する。', meaning: '自分の意見を強く言うこと', distractors: ['首長', '主長', '手張'] },
+            { id: 19, category: 'compound', prompt: '[こじん]的な意見。', target: '個人', reading: 'こじん', full: '個人的な意見。', meaning: '一人ひとりの人', distractors: ['古人', '固人', '小人'] },
+            { id: 20, category: 'compound', prompt: '[げんざい]の住所。', target: '現在', reading: 'げんざい', full: '現在の住所。', meaning: '今この時', distractors: ['原在', '限在', '現存'] },
+            { id: 21, category: 'compound', prompt: '[どくじ]の考え。', target: '独自', reading: 'どくじ', full: '独自の考え。', meaning: 'その人だけにあるオリジナルのもの', distractors: ['読字', '独字', '特自'] },
+            { id: 22, category: 'compound', prompt: '[べんとう]を食べる。', target: '弁当', reading: 'べんとう', full: '弁当を食べる。', meaning: '持ち運べるように箱に入れた食事', distractors: ['便当', '勉当', '弁答'] },
+            { id: 23, category: 'compound', prompt: '[ていあん]する。', target: '提案', reading: 'ていあん', full: '提案する。', meaning: '考えや案を出すこと', distractors: ['定案', '底案', '低案'] },
+            { id: 24, category: 'compound', prompt: '[よけい]なこと。', target: '余計', reading: 'よけい', full: '余計なこと。', meaning: '必要以上に多いこと・むだなこと', distractors: ['予計', '余形', '預計'] },
+            { id: 25, category: 'compound', prompt: '[ねんぶつ]を唱える。', target: '念仏', reading: 'ねんぶつ', full: '念仏を唱える。', meaning: '仏の名を唱えて祈ること', distractors: ['年仏', '念物', '燃仏'] },
+            { id: 26, category: 'compound', prompt: '実験の[けっか]。', target: '結果', reading: 'けっか', full: '実験の結果。', meaning: '物事の終わりにどうなったか', distractors: ['結課', '欠果', '決果'] },
+            { id: 27, category: 'compound', prompt: '植物の[かんさつ]。', target: '観察', reading: 'かんさつ', full: '植物の観察。', meaning: '様子を注意深く見ること', distractors: ['鑑察', '感察', '観札'] },
+            { id: 28, category: 'compound', prompt: '[ゆうこう]な情報。', target: '有効', reading: 'ゆうこう', full: '有効な情報。', meaning: '役に立つこと・ききめがあること', distractors: ['友好', '有功', '優効'] },
+            { id: 29, category: 'compound', prompt: '[じょうけん]が合う。', target: '条件', reading: 'じょうけん', full: '条件が合う。', meaning: '物事を決めるための約束や決まり', distractors: ['常件', '情件', '状件'] },
+            { id: 30, category: 'compound', prompt: 'かぎの[ほかん]。', target: '保管', reading: 'ほかん', full: 'かぎの保管。', meaning: '大切にしまっておくこと', distractors: ['補管', '保官', '保館'] },
+            { id: 31, category: 'compound', prompt: '高い[ひょうか]。', target: '評価', reading: 'ひょうか', full: '高い評価。', meaning: '価値や良さを認めること', distractors: ['表価', '標価', '評課'] },
+            { id: 32, category: 'compound', prompt: '[さんせい]の意見。', target: '賛成', reading: 'さんせい', full: '賛成の意見。', meaning: '他の人の意見に同意すること', distractors: ['参成', '賛正', '産成'] },
+            { id: 33, category: 'compound', prompt: '社長[ふさい]。', target: '夫妻', reading: 'ふさい', full: '社長夫妻。', meaning: '夫と妻（敬った言い方）', distractors: ['負債', '婦妻', '夫才'] },
+            { id: 34, category: 'compound', prompt: '[ふくざつ]な形。', target: '複雑', reading: 'ふくざつ', full: '複雑な形。', meaning: '入り組んでいて分かりにくい様子', distractors: ['復雑', '副雑', '腹雑'] },
+            { id: 35, category: 'compound', prompt: '文を[しょうりゃく]する。', target: '省略', reading: 'しょうりゃく', full: '文を省略する。', meaning: '一部をはぶいて簡単にすること', distractors: ['少略', '商略', '小略'] },
+            { id: 36, category: 'compound', prompt: 'こん虫[さいしゅう]。', target: '採集', reading: 'さいしゅう', full: 'こん虫採集。', meaning: '探して集めること', distractors: ['最終', '収集', '再集'] },
+            { id: 37, category: 'compound', prompt: '立ち入り[きんし]。', target: '禁止', reading: 'きんし', full: '立ち入り禁止。', meaning: 'してはいけないと止めること', distractors: ['近止', '金止', '均止'] },
+            { id: 38, category: 'compound', prompt: '[しょうじょ]の絵。', target: '少女', reading: 'しょうじょ', full: '少女の絵。', meaning: '年の若い女の子', distractors: ['小女', '生女', '正女'] },
+            { id: 39, category: 'compound', prompt: '[かのうせい]。', target: '可能性', reading: 'かのうせい', full: '可能性。', meaning: '実現できる見込み', distractors: ['可脳性', '加能性', '可能生'] },
+
+            // パート3：漢字と送り仮名（㊴〜㊿）※送り仮名まで正確に書く問題
+            { id: 40, category: 'okurigana', prompt: '長さを[くらべる]。', target: '比べる', reading: 'くらべる', full: '長さを比べる。', meaning: '二つのものを照らし合わせる（送り仮名「べる」まで書く）', okuriganaNote: '送り仮名「べる」まで書く', distractors: ['比る', '較べる', '並べる'] },
+            { id: 41, category: 'okurigana', prompt: '図で[しめす]。', target: '示す', reading: 'しめす', full: '図で示す。', meaning: '相手に見えるように出す（送り仮名「す」まで書く）', okuriganaNote: '送り仮名「す」まで書く', distractors: ['示めす', '表す', '指す'] },
+            { id: 42, category: 'okurigana', prompt: 'ぼうで[ささえる]。', target: '支える', reading: 'ささえる', full: 'ぼうで支える。', meaning: '倒れないように保つ（送り仮名「える」まで書く）', okuriganaNote: '送り仮名「える」まで書く', distractors: ['支さえる', '支る', '防える'] },
+            { id: 43, category: 'okurigana', prompt: '[はじめて]会う。', target: '初めて', reading: 'はじめて', full: '初めて会う。', meaning: '一番さいしょに（送り仮名「めて」まで書く）', okuriganaNote: '送り仮名「めて」まで書く', distractors: ['始めて', '初て', '創めて'] },
+            { id: 44, category: 'okurigana', prompt: '道に[まよう]。', target: '迷う', reading: 'まよう', full: '道に迷う。', meaning: 'どちらへ行けばよいか分からなくなる（送り仮名「う」まで書く）', okuriganaNote: '送り仮名「う」まで書く', distractors: ['迷よう', '困う', '惑う'] },
+            { id: 45, category: 'okurigana', prompt: '[ひとり]言を言う。', target: '独り', reading: 'ひとり', full: '独り言を言う。', meaning: '相手がいなくて自分だけ（送り仮名「り」まで書く）', okuriganaNote: '送り仮名「り」まで書く', distractors: ['一人', '独り言', '単り'] },
+            { id: 46, category: 'okurigana', prompt: '車をはしに[よせる]。', target: '寄せる', reading: 'よせる', full: '車をはしに寄せる。', meaning: '近くへ動かす（送り仮名「せる」まで書く）', okuriganaNote: '送り仮名「せる」まで書く', distractors: ['寄る', '集せる', '近せる'] },
+            { id: 47, category: 'okurigana', prompt: '力が[あまる]。', target: '余る', reading: 'あまる', full: '力が余る。', meaning: '使いきれずに残る（送り仮名「る」まで書く）', okuriganaNote: '送り仮名「る」まで書く', distractors: ['余まる', '残る', '過る'] },
+            { id: 48, category: 'okurigana', prompt: '名前を[おぼえる]。', target: '覚える', reading: 'おぼえる', full: '名前を覚える。', meaning: '記憶する・身につける（送り仮名「える」まで書く）', okuriganaNote: '送り仮名「える」まで書く', distractors: ['覚ぼえる', '記える', '習える'] },
+            { id: 49, category: 'okurigana', prompt: '健康を[たもつ]。', target: '保つ', reading: 'たもつ', full: '健康を保つ。', meaning: '良い状態をそのまま維持する（送り仮名「つ」まで書く）', okuriganaNote: '送り仮名「つ」まで書く', distractors: ['保もつ', '持つ', '守つ'] },
+            { id: 50, category: 'okurigana', prompt: '絵の具が[まじる]。', target: '混じる', reading: 'まじる', full: '絵の具が混じる。', meaning: 'ちがうものが入りまざる（送り仮名「じる」まで書く）', okuriganaNote: '送り仮名「じる」まで書く', distractors: ['交じる', '混ざる', '混る'] }
+        ];
+
+        // ============================================================================
+        // 状態管理＆ローカルストレージ保存
+        // ============================================================================
+        const STORAGE_KEY = 'kaya_kanji_jp_5nen_v2';
+        let userState = {
+            mastered: [], // クリアした問題ID
+            starred: []   // 復習リストに入れた問題ID
+        };
+
+        let currentMode = 'flashcard'; // 'flashcard' | 'quiz' | 'type' | 'list'
+        let currentFilter = 'all';     // 'all' | 'single' | 'compound' | 'okurigana' | 'starred' | 'unmastered'
+        let activeList = [...KANJI_DATA];
+        let currentIndex = 0;
+
+        // 手書きモード用状態
+        let showTraceWatermark = false;
+        let showHint = false;
+        let penTool = 'pen'; // 'pen' | 'eraser'
+        let penSize = 7;
+        let strokeHistory = []; // Undo用の履歴配列
+
+        // クイズ用状態
+        let quizScore = 0;
+        let quizStreak = 0;
+        let quizAnswered = false;
+
+        // 赤シート状態
+        let redSheetActive = false;
+
+        function loadState() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    userState = JSON.parse(saved);
+                }
+            } catch (e) {
+                console.warn('状態の読み込みに失敗しました:', e);
+            }
+            updateHeaderStats();
+        }
+
+        function saveState() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+            } catch (e) {
+                console.warn('状態の保存に失敗しました:', e);
+            }
+            updateHeaderStats();
+        }
+
+        function updateHeaderStats() {
+            const masteredCount = userState.mastered.length;
+            const starredCount = userState.starred.length;
+            document.getElementById('stat-mastered').textContent = masteredCount;
+            document.getElementById('stat-starred').textContent = starredCount;
+            const pct = Math.round((masteredCount / KANJI_DATA.length) * 100);
+            document.getElementById('master-progress-bar').style.width = `${pct}%`;
+        }
+
+        // ============================================================================
+        // 表示用フォーマット補助関数
+        // ============================================================================
+        function formatPromptHTML(promptStr) {
+            return promptStr.replace(/\[(.+?)\]/g, `<span class="inline-block bg-amber-100 text-amber-950 border-b-4 border-amber-400 px-2.5 py-0.5 mx-1 rounded-xl font-black">【 $1 】</span>`);
+        }
+
+        function getCategoryLabel(cat) {
+            if (cat === 'single') return 'パート1：1文字の漢字（①〜⑬）';
+            if (cat === 'compound') return 'パート2：熟語（⑭〜㊳）';
+            return 'パート3：送り仮名つき（㊴〜㊿）';
+        }
+
+        // ============================================================================
+        // フィルター＆モード切り替え
+        // ============================================================================
+        function setFilter(filterName) {
+            currentFilter = filterName;
+            document.querySelectorAll('.filter-pill').forEach(btn => {
+                btn.className = 'filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 border border-transparent';
+            });
+            const activeBtn = document.getElementById(`filter-${filterName}`);
+            if (activeBtn) {
+                activeBtn.className = 'filter-pill px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-indigo-100 text-indigo-800 border border-indigo-300 shadow-2xs';
+            }
+
+            rebuildActiveList();
+        }
+
+        function rebuildActiveList() {
+            const notice = document.getElementById('empty-filter-notice');
+            const noticeMsg = document.getElementById('empty-filter-message');
+            notice.classList.add('hidden');
+
+            if (currentFilter === 'all') {
+                activeList = [...KANJI_DATA];
+            } else if (currentFilter === 'starred') {
+                activeList = KANJI_DATA.filter(item => userState.starred.includes(item.id));
+            } else if (currentFilter === 'unmastered') {
+                activeList = KANJI_DATA.filter(item => !userState.mastered.includes(item.id));
+            } else {
+                activeList = KANJI_DATA.filter(item => item.category === currentFilter);
+            }
+
+            if (activeList.length === 0) {
+                notice.classList.remove('hidden');
+                if (currentFilter === 'starred') {
+                    noticeMsg.textContent = '「⭐ 苦手・復習リスト」に登録されている問題はまだありません。全50問を表示します。';
+                } else if (currentFilter === 'unmastered') {
+                    noticeMsg.textContent = 'おめでとう！すべての問題をマスターしました！全50問を表示します。';
+                } else {
+                    noticeMsg.textContent = '該当する問題がありません。全50問を表示します。';
+                }
+                activeList = [...KANJI_DATA];
+            }
+
+            currentIndex = 0;
+            refreshCurrentModeView();
+        }
+
+        function shuffleFiltered() {
+            for (let i = activeList.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [activeList[i], activeList[j]] = [activeList[j], activeList[i]];
+            }
+            currentIndex = 0;
+            refreshCurrentModeView();
+        }
+
+        function setMode(modeName) {
+            currentMode = modeName;
+            ['flashcard', 'quiz', 'type', 'list'].forEach(m => {
+                const tab = document.getElementById(`tab-${m}`);
+                const view = document.getElementById(`view-${m}`);
+                if (m === modeName) {
+                    tab.className = 'mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-blue-600 text-white shadow-sm shadow-blue-200';
+                    view.classList.remove('hidden');
+                } else {
+                    tab.className = 'mode-tab flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200';
+                    view.classList.add('hidden');
+                }
+            });
+
+            refreshCurrentModeView();
+        }
+
+        function refreshCurrentModeView() {
+            if (currentMode === 'flashcard') {
+                renderFlashcard();
+                setTimeout(resizeCanvas, 50);
+            } else if (currentMode === 'quiz') {
+                renderQuizQuestion();
+            } else if (currentMode === 'type') {
+                renderTypeQuestion();
+            } else if (currentMode === 'list') {
+                renderListView();
+            }
+        }
+
+        // ============================================================================
+        // モード1：✏️ 書いて練習（手書き＆十字リーダーマス）
+        // ============================================================================
+        function renderKanjiPracticeGrid(targetText) {
+            const chars = Array.from(targetText);
+            const count = chars.length; // 1, 2, または 3文字
+            const gridLayer = document.getElementById('kanji-grid-layer');
+            const traceGuide = document.getElementById('canvas-trace-guide');
+            const guideLabel = document.getElementById('canvas-box-guide-label');
+
+            gridLayer.style.gridTemplateColumns = `repeat(${count}, minmax(0, 1fr))`;
+            gridLayer.innerHTML = '';
+            traceGuide.innerHTML = '';
+
+            guideLabel.textContent = `${count}文字の練習マス（とめ・はね・はらいを意識して書こう）`;
+
+            chars.forEach((ch, idx) => {
+                // 十字リーダーつきセル
+                const cell = document.createElement('div');
+                cell.className = `relative h-full ${idx < count - 1 ? 'border-r-2 border-blue-300' : ''}`;
+                cell.innerHTML = `
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-full border-t border-dashed border-blue-300/80"></div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="h-full border-l border-dashed border-blue-300/80"></div>
+                    </div>
+                `;
+                gridLayer.appendChild(cell);
+
+                // なぞり書きガイド文字
+                const traceChar = document.createElement('div');
+                const sizeClass = count === 1 ? 'text-8xl sm:text-9xl' : (count === 2 ? 'text-7xl sm:text-8xl' : 'text-6xl sm:text-7xl');
+                traceChar.className = `${sizeClass} flex-1 text-center leading-none`;
+                traceChar.textContent = ch;
+                traceGuide.appendChild(traceChar);
+            });
+        }
+
+        function renderFlashcard() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            document.getElementById('fc-number').textContent = getCircledNum(item.id);
+            document.getElementById('fc-category').textContent = getCategoryLabel(item.category);
+            document.getElementById('fc-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('fc-target-kanji').textContent = item.target;
+            document.getElementById('fc-full-sentence').textContent = `全文：${item.full}`;
+
+            // 送り仮名注意表示（40〜50番）
+            const okuriAlert = document.getElementById('fc-okurigana-alert');
+            const okuriText = document.getElementById('fc-okurigana-text');
+            if (item.category === 'okurigana') {
+                okuriAlert.classList.remove('hidden');
+                okuriText.textContent = `※注意：${item.okuriganaNote}問題です`;
+                document.getElementById('fc-instruction').textContent = '太字の【　】のことばを、送り仮名まで正確に漢字に直して書こう！';
+            } else {
+                okuriAlert.classList.add('hidden');
+                document.getElementById('fc-instruction').textContent = '太字の【　】のことばを漢字に直して練習マスに書こう！';
+            }
+
+            // ヒント表示リセット
+            showHint = false;
+            document.getElementById('fc-hint-box').classList.add('hidden');
+            document.getElementById('fc-hint-box').textContent = `意味・ヒント：${item.meaning}`;
+            document.getElementById('fc-hint-btn').innerHTML = '<span>💡 ヒントを見る</span>';
+
+            document.getElementById('fc-index-display').textContent = currentIndex + 1;
+            document.getElementById('fc-total-display').textContent = activeList.length;
+
+            // マスター済みバッジ
+            const masteredBadge = document.getElementById('fc-mastered-badge');
+            if (userState.mastered.includes(item.id)) {
+                masteredBadge.classList.remove('hidden');
+                masteredBadge.classList.add('inline-flex');
+            } else {
+                masteredBadge.classList.add('hidden');
+                masteredBadge.classList.remove('inline-flex');
+            }
+
+            // 復習スターボタン
+            const starBtn = document.getElementById('fc-star-btn');
+            const starLabel = document.getElementById('fc-star-label');
+            if (userState.starred.includes(item.id)) {
+                starBtn.className = 'px-2.5 py-1.5 rounded-xl bg-amber-100 text-amber-800 border border-amber-300 text-xs font-bold flex items-center gap-1 transition-colors';
+                starLabel.textContent = '復習リスト登録中';
+            } else {
+                starBtn.className = 'px-2.5 py-1.5 rounded-xl bg-white hover:bg-amber-50 text-slate-500 border border-slate-200 text-xs font-bold flex items-center gap-1 transition-colors';
+                starLabel.textContent = '復習リストに追加';
+            }
+
+            // 答えを隠す状態に戻す
+            document.getElementById('fc-answer-hidden').classList.remove('hidden');
+            document.getElementById('fc-answer-revealed').classList.add('hidden');
+
+            // 十字リーダーマス生成＆キャンバスクリア
+            renderKanjiPracticeGrid(item.target);
+            clearCanvas();
+        }
+
+        function toggleFcHint() {
+            showHint = !showHint;
+            const box = document.getElementById('fc-hint-box');
+            const btn = document.getElementById('fc-hint-btn');
+            if (showHint) {
+                box.classList.remove('hidden');
+                btn.innerHTML = '<span>💡 ヒントを閉じる</span>';
+            } else {
+                box.classList.add('hidden');
+                btn.innerHTML = '<span>💡 ヒントを見る</span>';
+            }
+        }
+
+        function revealFlashcardAnswer() {
+            document.getElementById('fc-answer-hidden').classList.add('hidden');
+            document.getElementById('fc-answer-revealed').classList.remove('hidden');
+        }
+
+        function markCurrentMastery(isMastered) {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            if (isMastered) {
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                }
+            } else {
+                userState.mastered = userState.mastered.filter(id => id !== item.id);
+                if (!userState.starred.includes(item.id)) {
+                    userState.starred.push(item.id);
+                }
+            }
+            saveState();
+            nextCard();
+        }
+
+        function toggleStarCurrent() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            toggleStarById(item.id);
+            renderFlashcard();
+        }
+
+        function toggleStarById(id) {
+            if (userState.starred.includes(id)) {
+                userState.starred = userState.starred.filter(item => item !== id);
+            } else {
+                userState.starred.push(id);
+            }
+            saveState();
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + activeList.length) % activeList.length;
+            renderFlashcard();
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderFlashcard();
+        }
+
+        function speakCurrentItem() {
+            const item = activeList[currentIndex];
+            if (!item || !('speechSynthesis' in window)) return;
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(item.full);
+            utter.lang = 'ja-JP';
+            utter.rate = 0.9;
+            window.speechSynthesis.speak(utter);
+        }
+
+        // ============================================================================
+        // 手書きキャンバス処理（太さ変更・消しゴム・1画もどる対応）
+        // ============================================================================
+        const canvas = document.getElementById('drawing-canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let currentStroke = [];
+
+        function resizeCanvas() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            if (rect.width === 0 || rect.height === 0) return;
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.scale(dpr, dpr);
+            redrawAllStrokes();
+        }
+
+        function setPenTool(tool, size) {
+            penTool = tool;
+            penSize = size;
+            document.querySelectorAll('.pen-btn').forEach(btn => {
+                btn.className = 'pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1';
+            });
+            let activeId = 'pen-medium';
+            if (tool === 'eraser') activeId = 'pen-eraser';
+            else if (size === 4) activeId = 'pen-thin';
+            else if (size === 11) activeId = 'pen-thick';
+
+            const activeBtn = document.getElementById(activeId);
+            if (activeBtn) {
+                activeBtn.className = 'pen-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-600 text-white flex items-center gap-1';
+            }
+        }
+
+        function getPointerPos(e) {
+            const rect = canvas.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDraw(e) {
+            e.preventDefault();
+            isDrawing = true;
+            const pos = getPointerPos(e);
+            currentStroke = {
+                tool: penTool,
+                size: penSize,
+                points: [pos]
+            };
+        }
+
+        function moveDraw(e) {
+            if (!isDrawing) return;
+            e.preventDefault();
+            const pos = getPointerPos(e);
+            currentStroke.points.push(pos);
+            redrawAllStrokes();
+            drawSingleStroke(currentStroke);
+        }
+
+        function endDraw(e) {
+            if (!isDrawing) return;
+            e.preventDefault();
+            isDrawing = false;
+            if (currentStroke && currentStroke.points.length > 0) {
+                strokeHistory.push(currentStroke);
+            }
+            currentStroke = null;
+            redrawAllStrokes();
+        }
+
+        function drawSingleStroke(stroke) {
+            if (!stroke || stroke.points.length === 0) return;
+            ctx.save();
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            ctx.lineWidth = stroke.size;
+            if (stroke.tool === 'eraser') {
+                ctx.globalCompositeOperation = 'destination-out';
+                ctx.strokeStyle = 'rgba(0,0,0,1)';
+            } else {
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.strokeStyle = '#1e293b';
+            }
+
+            ctx.beginPath();
+            const pts = stroke.points;
+            ctx.moveTo(pts[0].x, pts[0].y);
+            for (let i = 1; i < pts.length; i++) {
+                ctx.lineTo(pts[i].x, pts[i].y);
+            }
+            if (pts.length === 1) {
+                ctx.lineTo(pts[0].x + 0.1, pts[0].y + 0.1);
+            }
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        function redrawAllStrokes() {
+            const rect = canvas.getBoundingClientRect();
+            ctx.clearRect(0, 0, rect.width || canvas.width, rect.height || canvas.height);
+            strokeHistory.forEach(s => drawSingleStroke(s));
+        }
+
+        function undoCanvasStroke() {
+            if (strokeHistory.length > 0) {
+                strokeHistory.pop();
+                redrawAllStrokes();
+            }
+        }
+
+        function clearCanvas() {
+            strokeHistory = [];
+            redrawAllStrokes();
+        }
+
+        function toggleTraceGuide() {
+            showTraceWatermark = !showTraceWatermark;
+            const guide = document.getElementById('canvas-trace-guide');
+            const btn = document.getElementById('trace-btn');
+            const btnText = document.getElementById('trace-btn-text');
+            if (showTraceWatermark) {
+                guide.classList.remove('hidden');
+                guide.classList.add('flex');
+                btn.className = 'px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white border border-indigo-600 flex items-center gap-1.5 transition-colors shadow-2xs';
+                btnText.textContent = 'なぞり書きガイド：ON';
+            } else {
+                guide.classList.add('hidden');
+                guide.classList.remove('flex');
+                btn.className = 'px-3 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-indigo-50 text-slate-700 border border-slate-200 flex items-center gap-1.5 transition-colors shadow-2xs';
+                btnText.textContent = 'なぞり書きガイド：OFF';
+            }
+        }
+
+        canvas.addEventListener('mousedown', startDraw);
+        canvas.addEventListener('mousemove', moveDraw);
+        window.addEventListener('mouseup', endDraw);
+
+        canvas.addEventListener('touchstart', startDraw, { passive: false });
+        canvas.addEventListener('touchmove', moveDraw, { passive: false });
+        canvas.addEventListener('touchend', endDraw, { passive: false });
+        window.addEventListener('resize', resizeCanvas);
+
+        // ============================================================================
+        // モード2：🎯 4択クイズ
+        // ============================================================================
+        function renderQuizQuestion() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            quizAnswered = false;
+
+            document.getElementById('qz-number').textContent = getCircledNum(item.id);
+            document.getElementById('qz-category').textContent = getCategoryLabel(item.category);
+            document.getElementById('qz-progress-text').textContent = `${currentIndex + 1} / ${activeList.length} 問目`;
+            document.getElementById('qz-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('qz-meaning').innerHTML = `<span>💡 ヒント：${item.meaning}</span>`;
+            document.getElementById('qz-feedback').classList.add('hidden');
+
+            // 紛らわしい選択肢（同音異義語・似た漢字）＋正解をシャッフル
+            const choiceStrings = [item.target, ...(item.distractors || [])];
+            const shuffledChoices = [...choiceStrings].sort(() => Math.random() - 0.5);
+
+            const container = document.getElementById('qz-options');
+            container.innerHTML = '';
+
+            shuffledChoices.forEach(choiceStr => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-choice-btn py-4 px-5 rounded-2xl border-2 border-slate-200 hover:border-blue-400 bg-white hover:bg-blue-50/40 transition-all flex items-center justify-center text-3xl sm:text-4xl kanji-font text-slate-800 shadow-2xs';
+                btn.textContent = choiceStr;
+                btn.onclick = () => selectQuizAnswer(btn, choiceStr === item.target, item);
+                container.appendChild(btn);
+            });
+        }
+
+        function selectQuizAnswer(selectedBtn, isCorrect, item) {
+            if (quizAnswered) return;
+            quizAnswered = true;
+
+            const allButtons = document.querySelectorAll('.quiz-choice-btn');
+            allButtons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === item.target) {
+                    btn.className = 'quiz-choice-btn py-4 px-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-3xl sm:text-4xl kanji-font text-emerald-950 font-bold shadow-xs';
+                }
+            });
+
+            const fbBox = document.getElementById('qz-feedback');
+            const fbIcon = document.getElementById('qz-feedback-icon');
+            const fbTitle = document.getElementById('qz-feedback-title');
+            const fbSub = document.getElementById('qz-feedback-sub');
+
+            fbBox.classList.remove('hidden');
+
+            if (isCorrect) {
+                quizScore += 1;
+                quizStreak += 1;
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200';
+                fbIcon.className = 'w-11 h-11 rounded-full flex items-center justify-center text-2xl shrink-0 bg-emerald-500 text-white';
+                fbIcon.innerHTML = '<i class="ph-bold ph-check"></i>';
+                fbTitle.className = 'font-black text-base text-emerald-900';
+                fbTitle.textContent = '⭕ 大正解！すごいぞ、可弥！';
+                fbSub.textContent = `正解：${item.full}（よみ：${item.reading}）`;
+            } else {
+                quizStreak = 0;
+                selectedBtn.className = 'quiz-choice-btn py-4 px-5 rounded-2xl border-2 border-rose-400 bg-rose-50 text-3xl sm:text-4xl kanji-font text-rose-800';
+                if (!userState.starred.includes(item.id)) {
+                    userState.starred.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-rose-50 border border-rose-200';
+                fbIcon.className = 'w-11 h-11 rounded-full flex items-center justify-center text-2xl shrink-0 bg-rose-500 text-white';
+                fbIcon.innerHTML = '<i class="ph-bold ph-x"></i>';
+                fbTitle.className = 'font-black text-base text-rose-900';
+                fbTitle.textContent = `❌ おしい！正解は「${item.target}」だよ`;
+                fbSub.textContent = `${getCircledNum(item.id)} を「⭐ 苦手・復習リスト」に追加しました。あとで書いて練習しよう！`;
+            }
+
+            document.getElementById('qz-score').textContent = quizScore;
+            document.getElementById('qz-streak').textContent = quizStreak;
+        }
+
+        function nextQuizQuestion() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderQuizQuestion();
+        }
+
+        // ============================================================================
+        // モード3：⌨️ 入力テスト
+        // ============================================================================
+        function renderTypeQuestion() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            document.getElementById('ty-number').textContent = getCircledNum(item.id);
+            document.getElementById('ty-index-display').textContent = `${currentIndex + 1} / ${activeList.length} 問目`;
+            document.getElementById('ty-prompt').innerHTML = formatPromptHTML(item.prompt);
+            document.getElementById('ty-meaning').innerHTML = `<span>💡 ヒント：${item.meaning}</span>`;
+
+            const input = document.getElementById('ty-input');
+            input.value = '';
+            input.disabled = false;
+            input.focus();
+
+            document.getElementById('ty-feedback').classList.add('hidden');
+        }
+
+        function checkTypedAnswer(e) {
+            e.preventDefault();
+            const item = activeList[currentIndex];
+            if (!item) return;
+
+            const userVal = document.getElementById('ty-input').value.trim();
+            if (!userVal) return;
+
+            const isCorrect = (userVal === item.target || userVal === item.full);
+            const fbBox = document.getElementById('ty-feedback');
+            const fbTitle = document.getElementById('ty-feedback-title');
+            const fbSub = document.getElementById('ty-feedback-sub');
+
+            fbBox.classList.remove('hidden');
+
+            if (isCorrect) {
+                if (!userState.mastered.includes(item.id)) {
+                    userState.mastered.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200 text-emerald-950';
+                fbTitle.textContent = `⭕ 大正解！「${item.target}」`;
+                fbSub.textContent = `全文：${item.full}`;
+            } else {
+                if (!userState.starred.includes(item.id)) {
+                    userState.starred.push(item.id);
+                    saveState();
+                }
+                fbBox.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-amber-50 border border-amber-200 text-amber-950';
+                fbTitle.textContent = `❌ おしい！正しい答えは「${item.target}」`;
+                fbSub.textContent = `全文：${item.full}（復習リストに追加しました）`;
+            }
+        }
+
+        function showTypeHint() {
+            const item = activeList[currentIndex];
+            if (!item) return;
+            document.getElementById('ty-input').value = item.target;
+        }
+
+        function nextTypeQuestion() {
+            currentIndex = (currentIndex + 1) % activeList.length;
+            renderTypeQuestion();
+        }
+
+        // ============================================================================
+        // モード4：🟥 一覧＆赤シート（全50問プリント表示）
+        // ============================================================================
+        function toggleRedSheet() {
+            redSheetActive = !redSheetActive;
+            const btn = document.getElementById('red-sheet-btn');
+            const label = document.getElementById('red-sheet-label');
+            if (redSheetActive) {
+                btn.className = 'flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-slate-900 hover:bg-slate-800 text-white shadow-sm transition-all';
+                label.textContent = '🟥 赤シート：ON（赤い枠をタップすると答えが見えます）';
+            } else {
+                btn.className = 'flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-rose-500 hover:bg-rose-600 text-white shadow-sm shadow-rose-200 transition-all';
+                label.textContent = '🟥 赤シート：OFF（タップで答えを隠す）';
+            }
+            renderListView();
+        }
+
+        function renderListView() {
+            const query = (document.getElementById('list-search').value || '').toLowerCase().trim();
+            const container = document.getElementById('worksheet-container');
+            container.innerHTML = '';
+
+            const filtered = activeList.filter(item => {
+                if (!query) return true;
+                return (
+                    item.prompt.toLowerCase().includes(query) ||
+                    item.target.toLowerCase().includes(query) ||
+                    item.reading.toLowerCase().includes(query) ||
+                    item.meaning.toLowerCase().includes(query) ||
+                    String(item.id) === query
+                );
+            });
+
+            filtered.forEach(item => {
+                const isMastered = userState.mastered.includes(item.id);
+                const isStarred = userState.starred.includes(item.id);
+
+                const row = document.createElement('div');
+                row.className = 'p-3.5 rounded-2xl border border-slate-200 bg-slate-50/80 hover:bg-white transition-all flex items-center justify-between gap-3';
+
+                const left = document.createElement('div');
+                left.className = 'flex items-center gap-3 min-w-0';
+                left.innerHTML = `
+                    <span class="w-9 h-9 rounded-xl ${isMastered ? 'bg-emerald-500 text-white' : 'bg-blue-100 text-blue-900'} font-black text-sm flex items-center justify-center shrink-0">
+                        ${getCircledNum(item.id)}
+                    </span>
+                    <div class="min-w-0">
+                        <div class="font-bold text-slate-800 text-base truncate">${formatPromptHTML(item.prompt)}</div>
+                        <div class="text-xs font-bold text-slate-500 truncate mt-0.5">${item.meaning}</div>
+                    </div>
+                `;
+
+                const right = document.createElement('div');
+                right.className = 'flex items-center gap-2 shrink-0';
+
+                // 答え表示ボックス（赤シート対応）
+                const ansPill = document.createElement('div');
+                ansPill.className = `kanji-font text-2xl font-bold px-3.5 py-1.5 rounded-xl border border-blue-200 bg-white text-slate-900 min-w-[5rem] text-center cursor-pointer ${redSheetActive ? 'red-sheet-covered' : 'hover:bg-blue-50'}`;
+                ansPill.textContent = item.target;
+                ansPill.title = redSheetActive ? 'タップで答えを表示・隠す' : 'タップしてこの問題を手書き練習する';
+                ansPill.onclick = () => {
+                    if (redSheetActive) {
+                        ansPill.classList.toggle('red-sheet-covered');
+                    } else {
+                        const idx = activeList.findIndex(x => x.id === item.id);
+                        if (idx !== -1) {
+                            currentIndex = idx;
+                            setMode('flashcard');
+                        }
+                    }
+                };
+
+                // 復習スター切り替えボタン
+                const starBtn = document.createElement('button');
+                starBtn.title = '苦手・復習リストに追加 / 解除';
+                starBtn.className = `p-2 rounded-xl border transition-colors ${isStarred ? 'bg-amber-100 border-amber-300 text-amber-500' : 'bg-white border-slate-200 text-slate-300 hover:text-amber-400'}`;
+                starBtn.innerHTML = '<i class="ph-fill ph-star text-lg"></i>';
+                starBtn.onclick = () => {
+                    toggleStarById(item.id);
+                    renderListView();
+                };
+
+                right.appendChild(ansPill);
+                right.appendChild(starBtn);
+
+                row.appendChild(left);
+                row.appendChild(right);
+                container.appendChild(row);
+            });
+        }
+
+        // ============================================================================
+        // リセット確認モーダル＆初期起動
+        // ============================================================================
+        function openResetModal() {
+            const modal = document.getElementById('reset-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeResetModal() {
+            const modal = document.getElementById('reset-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function confirmResetProgress() {
+            userState = { mastered: [], starred: [] };
+            saveState();
+            closeResetModal();
+            refreshCurrentModeView();
+        }
+
+        window.onload = function () {
+            loadState();
+            renderFlashcard();
+            setTimeout(resizeCanvas, 100);
+        };
+    </script>
+</body>
+</html>
