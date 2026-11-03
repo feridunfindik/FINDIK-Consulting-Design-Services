@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:,">
-<title>NewsQuest（ニュースクエスト）— プロトタイプ</title>
+<title>ニュースクエスト（NewsQuest）― 体験版</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:"Noto Sans JP","Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+body{line-height:1.75;letter-spacing:.02em;margin:0;font-family:"Noto Sans JP","Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
 button{font:inherit;cursor:pointer} a{color:var(--teal)}
 .serif{font-family:"Newsreader","Hiragino Mincho ProN","Yu Mincho",Georgia,serif}
 .jp{font-family:"Noto Sans JP",sans-serif}
@@ -63,7 +63,7 @@ button{font:inherit;cursor:pointer} a{color:var(--teal)}
 .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--coral)}
 h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1.02;margin:6px 0 8px;font-weight:800}
-.sub{color:var(--muted);font-size:16px;line-height:1.55;max-width:640px;margin:0}
+.sub{color:var(--muted);font-size:16px;line-height:1.9;max-width:640px;margin:0}
 .stat-chips{display:flex;gap:9px;flex-wrap:wrap}
 .chip{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:8px 13px;font-weight:700;font-size:13.5px;display:flex;gap:7px;align-items:center;box-shadow:var(--shadow-sm)}
 .chip b{font-size:15px}
@@ -74,7 +74,7 @@ h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1
 .grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:18px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--shadow-sm)}
-.card h3{margin:0 0 6px;font-size:17px}.card p{color:var(--muted);line-height:1.55;margin:0;font-size:14.5px}
+.card h3{margin:0 0 6px;font-size:17px}.card p{color:var(--muted);line-height:1.85;margin:0;font-size:14.5px}
 .section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin:30px 0 14px;flex-wrap:wrap}
 .section-head h2{font-family:"Newsreader",serif;font-size:26px;margin:0;font-weight:800}
 .section-head p{margin:3px 0 0;color:var(--muted);font-size:14px}
@@ -104,11 +104,11 @@ h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1
 .tagcat.pol{background:#E4E9F7;color:#33509E}.tagcat.eco{background:var(--gold-bg);color:#8A5F02}.tagcat.sci{background:#F3E2EE;color:#8E2A6E}.tagcat.wld{background:#E2EEF7;color:#1F5E8A}
 @media(prefers-color-scheme:dark){.tagcat.pol{background:#1E2C52;color:#A9BDF2}.tagcat.sci{background:#3D1E34;color:#E8A9D4}.tagcat.wld{background:#16324A;color:#9CCBEE}}
 .brief-card h3{font-family:"Newsreader",serif;font-size:21px;line-height:1.2;margin:0 0 7px;font-weight:700}
-.brief-card p{color:var(--muted);line-height:1.6;margin:0;font-size:15px}
+.brief-card p{color:var(--muted);line-height:1.9;margin:0;font-size:15px}
 .brief-card .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px;flex-wrap:wrap}
 .source{font-size:12.5px;color:var(--muted);font-weight:600}
 .why{display:none;margin-top:13px;background:var(--surface2);border:1px dashed var(--line2);border-radius:var(--r-sm);padding:13px 15px;font-size:14px;line-height:1.6}
-.why.open{display:block}.why b{color:var(--teal)}
+.why.open{display:block;line-height:1.9}.why b{color:var(--teal)}
 .linkbtn{background:none;border:0;color:var(--coral);font-weight:800;font-size:13.5px;padding:0}
 
 /* QUIZ */
@@ -125,7 +125,7 @@ h1{font-family:"Newsreader",serif;font-size:clamp(30px,4.5vw,44px);line-height:1
 .opt:hover{border-color:var(--teal)} .opt.correct{border-color:var(--green);background:var(--green-bg)} .opt.wrong{border-color:var(--red);background:#FBE9E6}
 @media(prefers-color-scheme:dark){.opt.wrong{background:#3D1712}}
 .opt:disabled{cursor:default;opacity:1}
-.explain{display:none;border-radius:14px;padding:15px 17px;font-size:14.5px;line-height:1.6;margin:4px 0 14px}
+.explain{display:none;border-radius:14px;padding:15px 17px;font-size:14.5px;line-height:1.9;margin:4px 0 14px}
 .explain.show{display:block}.explain.good{background:var(--green-bg);border:1px solid var(--green)}.explain.bad{background:#FBE9E6;border:1px solid var(--red)}
 @media(prefers-color-scheme:dark){.explain.bad{background:#3D1712}}
 .score-hero{text-align:center;padding:12px 0 4px}
@@ -208,11 +208,11 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <div class="logo"><div class="logo-mark">N</div><div><b>NewsQuest</b><span>プロトタイプ</span></div></div>
-    <button class="navbtn active" data-view="today"><span class="ic">📰</span>今日のブリーフ</button>
-    <button class="navbtn" data-view="quiz"><span class="ic">🎯</span>デイリークイズ<span class="pill">+150 XP</span></button>
-    <button class="navbtn" data-view="play"><span class="ic">🕹️</span>アーケード</button>
-    <button class="navbtn" data-view="progress"><span class="ic">🏆</span>マイプログレス</button>
+    <div class="logo"><div class="logo-mark">N</div><div><b>NewsQuest</b><span>体験版</span></div></div>
+    <button class="navbtn active" data-view="today"><span class="ic">📰</span>今日のニュースまとめ</button>
+    <button class="navbtn" data-view="quiz"><span class="ic">🎯</span>今日のクイズ<span class="pill">+150 XP</span></button>
+    <button class="navbtn" data-view="play"><span class="ic">🕹️</span>ミニゲーム</button>
+    <button class="navbtn" data-view="progress"><span class="ic">🏆</span>学習の記録</button>
     <button class="navbtn" data-view="board"><span class="ic">📊</span>ランキング</button>
     <button class="navbtn" data-view="pro"><span class="ic">⭐</span>Proプラン</button>
     <div class="side-user">
@@ -228,9 +228,9 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
   <section class="view active" id="view-today">
     <div class="topbar">
       <div>
-        <div class="eyebrow">火曜日・11月3日・あなた専用のデイリーブリーフ</div>
-        <h1>おはようございます。5分で読める<br>今日の世界。</h1>
-        <p class="sub">今日のニュースから作る、あなた専用のブリーフ。中学校の<span class="jp">社会</span>に合わせて、しっかり身につくクイズに変えます。</p>
+        <div class="eyebrow">11月3日（火）・あなたのための今日のニュース</div>
+        <h1>おはよう。今日のニュースを<br>5分でチェックしよう。</h1>
+        <p class="sub">毎朝とどく、あなたに合わせたニュースのまとめです。中学校の<span class="jp">社会</span>の学習に合わせて、読んだあとはクイズでしっかり確認できます。</p>
       </div>
       <div class="stat-chips">
         <div class="chip">🔥 <b id="streakNum">12</b>日連続記録</div>
@@ -239,17 +239,17 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
       </div>
     </div>
 
-    <div class="proto-note"><b>インタラクティブ・プロトタイプ：</b>すべてのボタンが動作します — クイズに挑戦し、ミニゲームで遊び、ブリーフを絞り込めます。以下の記事はデモ用のサンプルです。東京で家族プロジェクトとして始まった実際の配信のスタイルで書かれています。</div>
+    <div class="proto-note"><b>体験版です：</b>すべてのボタンが使えます。クイズに答えたり、ミニゲームで遊んだり、ニュースのテーマを選んだりしてみてください。記事はデモ用のサンプルです。もとになったのは、東京で家族のために作った毎日のクイズです。</div>
 
     <div class="quest">
       <div>
         <span class="tag">今日のクエスト</span>
-        <h2>デイリークイズの準備ができました — 今日のブリーフから8問</h2>
-        <p>ブリーフを読んで、力試し。6問以上正解で連続記録シールドを守り、「鋭い目」バッジを解放しましょう。</p>
-        <div class="quest-meta"><span>⏱ 約5分</span><span>⭐ +150 XP</span><span>🛡️ 連続記録シールドがかかっています</span></div>
+        <h2>今日のクイズの準備ができました — 今日のニュースまとめから8問</h2>
+        <p>ニュースを読んだら、クイズで力だめし。6問以上正解すると連続記録が守れて、「よく読めたね」バッジがもらえます。</p>
+        <div class="quest-meta"><span>⏱ 約5分</span><span>⭐ +150 XP</span><span>🛡️ 連続記録がかかっています</span></div>
         <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1">
-          <button class="btn" data-goto="quiz">デイリークイズを始める →</button>
-          <button class="btn secondary" onclick="document.getElementById('briefAnchor').scrollIntoView({behavior:'smooth'})">先にブリーフを読む</button>
+          <button class="btn" data-goto="quiz">今日のクイズを始める →</button>
+          <button class="btn secondary" onclick="document.getElementById('briefAnchor').scrollIntoView({behavior:'smooth'})">先にニュースを読む</button>
         </div>
       </div>
       <div class="ring">
@@ -259,14 +259,14 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
     </div>
 
     <div class="section-head" id="briefAnchor">
-      <div><h2>あなた専用ブリーフ — 興味に合わせて調整</h2><p>トピックをタップしてカスタマイズ。「なぜ大事？」で各記事と学校の学習内容をつなげます。</p></div>
+      <div><h2>あなたのニュース — 好きなテーマで選べます</h2><p>気になるテーマをタップして選んでください。「教科書とのつながり」では、記事が学校の勉強とどう関係するかを説明しています。</p></div>
     </div>
     <div class="filters" id="filters">
       <button class="fbtn active" data-f="all">すべての記事</button>
       <button class="fbtn" data-f="japan">🇯🇵 日本</button>
       <button class="fbtn" data-f="world">🌏 世界</button>
       <button class="fbtn" data-f="economy">💹 経済</button>
-      <button class="fbtn" data-f="science">🔬 科学・テクノロジー</button>
+      <button class="fbtn" data-f="science">🔬 科学・技術</button>
       <button class="fbtn" data-f="climate">🌦️ 気候・地理</button>
     </div>
     <div id="briefList"></div>
@@ -274,12 +274,12 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
     <div class="grid2" style="margin-top:8px">
       <div class="card">
         <h3>⚡ 今日のチャレンジ</h3>
-        <p><b style="color:var(--ink)">地理スプリント：</b>○×ブリッツで午前0時までに5問以上正解すると、ボーナス+40 XPを獲得し、「世界旅行者」バッジに近づきます。</p>
-        <div style="margin-top:14px"><button class="btn teal small" data-goto="play">ブリッツで遊ぶ →</button></div>
+        <p><b style="color:var(--ink)">地理スプリント：</b>○×ゲームで、夜12時までに5問以上正解するとボーナス+40 XP。「世界旅行者」バッジに一歩近づきます。</p>
+        <div style="margin-top:14px"><button class="btn teal small" data-goto="play">○×ゲームで遊ぶ →</button></div>
       </div>
       <div class="card">
-        <h3>🏫 教室でも使える設計</h3>
-        <p>先生には同じブリーフを、印刷できるワークシート、クラスランキング、単元別の習熟レポートとして提供します。学校プランはProページでご覧ください。</p>
+        <h3>🏫 教室でも使えます</h3>
+        <p>先生向けには、同じニュースを印刷できるプリント教材として配ったり、クラスの順位や単元ごとの理解度をレポートで確認したりできます。学校プランはProのページをご覧ください。</p>
         <div style="margin-top:14px"><button class="btn navy small" data-goto="pro">プランを見る →</button></div>
       </div>
     </div>
@@ -287,29 +287,29 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
 
   <!-- ============ QUIZ ============ -->
   <section class="view" id="view-quiz">
-    <div class="eyebrow">デイリークイズ・今日のブリーフから</div>
-    <h1 style="font-size:clamp(28px,4vw,38px)">読んだ内容を試そう。</h1>
+    <div class="eyebrow">今日のクイズ・今日のニュースから</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">読んだことを、覚えているかな？</h1>
 
     <div class="quiz-shell">
       <!-- setup -->
       <div id="quizSetup">
-        <p class="sub" style="max-width:none">8問、すぐに解説、正解ごとにXP、さらにスピードボーナス。まずレベルを選んでください。本製品ではレベルに合わせて問題が変わります。</p>
+        <p class="sub" style="max-width:none">全部で8問。答えるたびに解説が出て、正解するとXPがもらえます。はやく答えるとボーナスも。まずはレベルを選んでください。本番では、レベルに合わせて問題のむずかしさが変わります。</p>
         <div class="diffrow">
-          <button class="diff active" data-diff="中学生"><b>🎒 中学生</b><span><span class="jp">社会</span>対応 — 公民・地理・歴史の基礎。</span></button>
-          <button class="diff" data-diff="高校生"><b>🎓 高校生</b><span>より深い背景、資料問題、データ分析。</span></button>
-          <button class="diff" data-diff="大人・一般"><b>🧭 大人・一般</b><span>同じニュースを、より広い世界の知識と経済で。</span></button>
+          <button class="diff active" data-diff="中学生"><b>🎒 中学生</b><span><span class="jp">社会</span>の公民・地理・歴史の基礎から出題します。</span></button>
+          <button class="diff" data-diff="高校生"><b>🎓 高校生</b><span>背景を深く読み取る問題や、資料・データの問題に挑戦します。</span></button>
+          <button class="diff" data-diff="大人・一般"><b>🧭 大人・一般</b><span>同じニュースを、世界の知識や経済の視点から広く出題します。</span></button>
         </div>
         <div class="card" style="text-align:center;padding:28px">
           <div style="font-size:38px">🎯</div>
-          <h3 style="font-size:20px;margin-top:8px">準備ができたらスタート</h3>
-          <p>これまでの最高は6問連続正解。記録を破ると+25 XPの「絶好調」ボーナス。</p>
+          <h3 style="font-size:20px;margin-top:8px">準備はいいですか？</h3>
+          <p>これまでの最高記録は6問連続正解。記録を更新すると、+25 XPのボーナスがもらえます。</p>
           <div style="margin-top:16px"><button class="btn" id="startQuizBtn">クイズを始める — <span id="diffLabel">中学生</span></button></div>
         </div>
       </div>
 
       <!-- playing -->
       <div id="quizPlay" style="display:none">
-        <div class="q-meta"><span id="qCount">質問 1 / 8</span><span id="qScore">スコア：0 · ⭐ 0 XP</span></div>
+        <div class="q-meta"><span id="qCount">問題 1 / 8</span><span id="qScore">スコア：0 · ⭐ 0 XP</span></div>
         <div class="q-progress"><i id="qBar" style="width:12.5%"></i></div>
         <div class="card" style="padding:24px">
           <span class="tagcat" id="qTopic">公民</span>
@@ -330,7 +330,7 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
           <div class="grid3" style="margin-top:22px;text-align:left">
             <div class="card" style="box-shadow:none"><h3>正答率</h3><p style="font-size:22px;color:var(--ink);font-weight:800" id="resAcc">75%</p></div>
             <div class="card" style="box-shadow:none"><h3>連続記録</h3><p style="font-size:22px;color:var(--ink);font-weight:800">🔥 12日</p></div>
-            <div class="card" style="box-shadow:none"><h3>バッジの進捗</h3><p id="resBadge">鋭い目 — 6問以上の正解で解放</p></div>
+            <div class="card" style="box-shadow:none"><h3>バッジの進捗</h3><p id="resBadge">よく読めたね — 6問以上正解でもらえます</p></div>
           </div>
           <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
             <button class="btn secondary" id="retryBtn">↻ もう一度挑戦</button>
@@ -344,24 +344,24 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
 
   <!-- ============ PLAY / ARCADE ============ -->
   <section class="view" id="view-play">
-    <div class="eyebrow">アーケード・60秒ゲーム</div>
-    <h1 style="font-size:clamp(28px,4vw,38px)">短いゲームで、長く覚える。</h1>
-    <p class="sub">ミニゲームは今週のブリーフの内容を間隔反復で復習します — 「忘れない」ための科学です。</p>
+    <div class="eyebrow">ミニゲーム・60秒チャレンジ</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">短いゲームで、しっかり覚えよう。</h1>
+    <p class="sub">ミニゲームでは、今週読んだニュースの内容を、少し時間をおいてくり返し出題します。間をおいて復習すると、忘れにくくなるからです。</p>
 
     <div class="grid2" style="margin-top:20px">
       <div class="card game-card">
         <div class="emoji-art">⚡</div>
-        <h3>○×ブリッツ</h3>
-        <p>8つの文を時間内に判定。正解ごとに+5 XP。</p>
+        <h3>○×ゲーム</h3>
+        <p>8つの文が○か×か、時間内に答えてください。正解ごとに+5 XPです。</p>
         <div id="blitzArea">
-          <div style="text-align:center;padding:22px 0 6px"><button class="btn" id="blitzStart">ブリッツ開始</button></div>
+          <div style="text-align:center;padding:22px 0 6px"><button class="btn" id="blitzStart">ゲームスタート</button></div>
         </div>
       </div>
 
       <div class="card game-card">
         <div class="emoji-art">🗂️</div>
         <h3>見出しマッチ</h3>
-        <p>見出しをタップし、次に分野をタップ。4つすべて仕分けできると+30 XP。</p>
+        <p>ニュースの見出しをタップして、次に分野をタップしてください。4つ全部合うと+30 XPです。</p>
         <div id="matchArea" style="margin-top:14px"></div>
         <div class="filters" id="matchCats" style="margin-top:6px">
           <button class="fbtn" data-cat="政治">🏛️ 政治</button>
@@ -374,17 +374,17 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
     </div>
 
     <div class="grid3" style="margin-top:16px">
-      <div class="card game-card"><div class="emoji-art">🗓️</div><h3>年表ソート</h3><p>歴史の出来事を順番に並べよう。今日のセット：近代日本、1868年→現代。</p><p style="margin-top:10px"><span class="tagcat pol">Proプレビュー</span></p></div>
-      <div class="card game-card"><div class="emoji-art">🗺️</div><h3>地図ピンドロップ</h3><p>白地図に都道府県、首都、貿易港を時間内にピン留め。</p><p style="margin-top:10px"><span class="tagcat">無料・毎日</span></p></div>
-      <div class="card game-card"><div class="emoji-art">👥</div><h3>フレンド対決</h3><p>同じ5問で1対1対決。勝者は相手が賭けたXP（最大50）を獲得。</p><p style="margin-top:10px"><span class="tagcat eco">Proプレビュー</span></p></div>
+      <div class="card game-card"><div class="emoji-art">🗓️</div><h3>年表ソート</h3><p>歴史の出来事を、起きた順番に並べてください。今日のテーマは近代の日本（1868年から現代まで）です。</p><p style="margin-top:10px"><span class="tagcat pol">Proプレビュー</span></p></div>
+      <div class="card game-card"><div class="emoji-art">🗺️</div><h3>地図ピンドロップ</h3><p>何も書かれていない地図に、都道府県や首都、貿易の港を時間内に当てはめてください。</p><p style="margin-top:10px"><span class="tagcat">無料・毎日</span></p></div>
+      <div class="card game-card"><div class="emoji-art">👥</div><h3>フレンド対決</h3><p>同じ5問で友達と1対1の対決です。勝った人は、負けた人がかけたXP（最大50）をもらえます。</p><p style="margin-top:10px"><span class="tagcat eco">Proプレビュー</span></p></div>
     </div>
   </section>
 
   <!-- ============ PROGRESS ============ -->
   <section class="view" id="view-progress">
-    <div class="eyebrow">マイプログレス・ゲーミフィケーション</div>
+    <div class="eyebrow">学習の記録</div>
     <h1 style="font-size:clamp(28px,4vw,38px)">レベル5 — ニュース探検家</h1>
-    <p class="sub">学習者が毎日戻ってくる仕掛けのすべて：XP、連続記録、習熟度、バッジ — すべて実際の読書から獲得します。</p>
+    <p class="sub">毎日続けたくなる仕組みをまとめました。XPも連続記録もバッジも、ぜんぶ「読むこと」から生まれます。</p>
 
     <div class="grid2" style="margin-top:20px">
       <div class="card">
@@ -404,32 +404,32 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
             <rect x="294" y="43" width="26" height="65" rx="5" fill="#E4572E"/><text x="307" y="122">今日</text><text x="307" y="35">130</text>
           </g>
         </svg>
-        <p style="font-size:12.5px">週末のクエストとフレンド対決が日曜のピークを作ります — Proの分析ではこの傾向を保護者と先生に提示します。</p>
+        <p style="font-size:12.5px">週末はクエストや友達との対決で、日曜日にいちばんXPが増えています。Proでは、こうした様子を保護者や先生向けのレポートでお知らせします。</p>
       </div>
 
       <div>
         <div class="card" style="margin-bottom:16px">
           <h3>🔥 連続記録 — 12日</h3>
-          <p style="margin-bottom:12px">1日1クイズで記録が続きます。連続記録シールドは予備が2枚あります。</p>
+          <p style="margin-bottom:12px">1日1回クイズをすると、記録が続きます。お休みしても記録が守れる「フリーズ」を2つ持っています。</p>
           <div class="cal" id="calGrid"></div>
           <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:7px;font-weight:600"><span>14日前</span><span>今日</span></div>
         </div>
         <div class="card">
           <h3>🎯 進行中のチャレンジ</h3>
-          <div class="chal"><div class="ci">🌏</div><div style="flex:1"><b>世界旅行者</b><small>今週、世界の質問に10問答える</small><div class="mbar" style="margin-top:6px"><i style="width:70%;background:var(--teal)"></i></div></div><b>7/10</b></div>
-          <div class="chal"><div class="ci">🏛️</div><div style="flex:1"><b>公民チャンピオン</b><small>政治トピックをマスター（90%達成）</small><div class="mbar" style="margin-top:6px"><i style="width:82%;background:#33509E"></i></div></div><b>82%</b></div>
-          <div class="chal"><div class="ci">📚</div><div style="flex:1"><b>パーフェクトウィーク</b><small>デイリークイズを7日連続で完了</small><div class="mbar" style="margin-top:6px"><i style="width:100%;background:var(--gold)"></i></div></div><b>✓ 達成</b></div>
+          <div class="chal"><div class="ci">🌏</div><div style="flex:1"><b>世界旅行者</b><small>今週、世界についてのクイズに10問答えよう</small><div class="mbar" style="margin-top:6px"><i style="width:70%;background:var(--teal)"></i></div></div><b>7/10</b></div>
+          <div class="chal"><div class="ci">🏛️</div><div style="flex:1"><b>公民チャンピオン</b><small>政治の理解度を90%にしよう</small><div class="mbar" style="margin-top:6px"><i style="width:82%;background:#33509E"></i></div></div><b>82%</b></div>
+          <div class="chal"><div class="ci">📚</div><div style="flex:1"><b>パーフェクトウィーク</b><small>今日のクイズを7日連続で完了</small><div class="mbar" style="margin-top:6px"><i style="width:100%;background:var(--gold)"></i></div></div><b>✓ 達成</b></div>
         </div>
       </div>
     </div>
 
-    <div class="section-head"><div><h2>トピック別習熟度</h2><p>先生が教室ダッシュボードで見るのと同じマップ — 学習単元別。</p></div></div>
+    <div class="section-head"><div><h2>分野ごとの理解度</h2><p>先生が見る画面と同じ内容です。単元ごとに、どれくらい分かっているかが分かります。</p></div></div>
     <div class="card">
-      <div class="mastery-row"><div class="top">🏛️ 政治・公民 <span class="jp">政治</span><span>82%・上級</span></div><div class="mbar"><i style="width:82%;background:#33509E"></i></div></div>
-      <div class="mastery-row"><div class="top">🗾 地理分野 <span class="jp">地理</span><span>74%・習熟</span></div><div class="mbar"><i style="width:74%;background:var(--teal)"></i></div></div>
-      <div class="mastery-row"><div class="top">💹 経済分野 <span class="jp">経済</span><span>61%・発展中</span></div><div class="mbar"><i style="width:61%;background:var(--gold)"></i></div></div>
-      <div class="mastery-row"><div class="top">📜 歴史分野 <span class="jp">歴史</span><span>55%・発展中</span></div><div class="mbar"><i style="width:55%;background:#8E2A6E"></i></div></div>
-      <div class="mastery-row" style="margin-bottom:2px"><div class="top">🌦️ 気候・環境<span>43%・要重点 — ブリッツを用意済み</span></div><div class="mbar"><i style="width:43%;background:var(--coral)"></i></div></div>
+      <div class="mastery-row"><div class="top">🏛️ 政治・公民 <span class="jp">政治</span><span>82%・得意</span></div><div class="mbar"><i style="width:82%;background:#33509E"></i></div></div>
+      <div class="mastery-row"><div class="top">🗾 地理 <span class="jp">地理</span><span>74%・順調</span></div><div class="mbar"><i style="width:74%;background:var(--teal)"></i></div></div>
+      <div class="mastery-row"><div class="top">💹 経済 <span class="jp">経済</span><span>61%・練習中</span></div><div class="mbar"><i style="width:61%;background:var(--gold)"></i></div></div>
+      <div class="mastery-row"><div class="top">📜 歴史 <span class="jp">歴史</span><span>55%・練習中</span></div><div class="mbar"><i style="width:55%;background:#8E2A6E"></i></div></div>
+      <div class="mastery-row" style="margin-bottom:2px"><div class="top">🌦️ 気候・環境<span>43%・もう少し復習しよう — ○×ゲームを用意しています</span></div><div class="mbar"><i style="width:43%;background:var(--coral)"></i></div></div>
     </div>
 
     <div class="section-head"><div><h2>バッジ</h2><p id="badgeCount">12個中7個獲得</p></div></div>
@@ -439,8 +439,8 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
   <!-- ============ LEADERBOARD ============ -->
   <section class="view" id="view-board">
     <div class="eyebrow">ランキング・今週</div>
-    <h1 style="font-size:clamp(28px,4vw,38px)">楽しいライバル関係、本物の学び。</h1>
-    <p class="sub">ランキングは参加制で公平にグループ分け — 友だち、クラス、または同じレベルの世界の学習者。課金で勝つことはできません：XPは回答でのみ得られます。</p>
+    <h1 style="font-size:clamp(28px,4vw,38px)">友達と競って、楽しく学ぼう。</h1>
+    <p class="sub">ランキングは、自分で参加を選んだ人だけのものです。友達、クラス、同じくらいのレベルの世界の仲間と競えます。お金でXPは買えません。XPは、クイズに答えてだけ増えます。</p>
     <div class="filters" style="margin-top:18px" id="lbTabs">
       <button class="fbtn active" data-lb="friends">👥 友だち</button>
       <button class="fbtn" data-lb="class">🏫 マイクラス・2年B組</button>
@@ -448,23 +448,23 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
     </div>
     <div id="lbList"></div>
     <div class="card" style="margin-top:16px">
-      <h3>🏫 学校向け：クラスビューこそが製品</h3>
-      <p>先生がクラスコードを作成し、生徒はメール不要で参加できます。ランキングは毎週リセットされ、誰もがトップを狙えます。個人順位は初期設定ではクラス外に公開されません。</p>
+      <h3>🏫 学校向け：クラスの画面が中心です</h3>
+      <p>先生がクラス用のコードを作ると、生徒はメールアドレスなしで参加できます。順位は毎週リセットされるので、誰にでも1位のチャンスがあります。個人の順位は、はじめの設定ではクラスの外には出ません。</p>
     </div>
   </section>
 
   <!-- ============ PRO ============ -->
   <section class="view" id="view-pro">
-    <div class="eyebrow">プラン・マネタイズ</div>
-    <h1 style="font-size:clamp(28px,4vw,38px)">毎日無料。夢中になったらPro。</h1>
-    <p class="sub">ピッチ資料のモデルを、実際に動く料金ページとして：フリーミアムを核に、家族・学校プラン、フリーには控えめな広告とスポンサー — 課金で勝つ仕組みはありません。</p>
+    <div class="eyebrow">プラン・料金の仕組み</div>
+    <h1 style="font-size:clamp(28px,4vw,38px)">毎日無料で。もっと使いたくなったらPro。</h1>
+    <p class="sub">料金の考え方は、企画書の内容をそのままページにしました。基本は無料、家族向けプランと学校プランを用意し、無料プランには控えめな広告とスポンサーを入れます。お金を払った人が有利になる仕組みはありません。</p>
 
     <div class="grid3" style="margin-top:24px">
       <div class="card price-card">
         <h3>フリー</h3><div class="price">¥0<small> ずっと</small></div>
-        <p>習慣づくりのお試しに。</p>
+        <p>まずは毎日の習慣づくりに。</p>
         <ul class="feat">
-          <li>毎日のブリーフ（5記事）＋8問クイズ</li>
+          <li>毎日のニュースまとめ（5本）＋8問クイズ</li>
           <li>連続記録、XP、レベル、バッジ</li>
           <li>友だちランキング</li>
           <li>ミニゲームは1日1回</li>
@@ -476,11 +476,11 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
       <div class="card price-card pop">
         <span class="pop-tag">人気No.1</span>
         <h3>Pro</h3><div class="price">¥680<small> / 月</small></div>
-        <p>本気の学習と受験対策に。</p>
+        <p>しっかり勉強したい人、受験をがんばる人に。</p>
         <ul class="feat">
-          <li>フリーの全機能＋ミニゲーム無制限</li>
-          <li>全アーカイブ＋「好きなトピックでクイズ」</li>
-          <li>受験モード：<span class="jp">高校入試</span>形式のセットと時間計測</li>
+          <li>無料プランの全部＋ミニゲーム遊び放題</li>
+          <li>過去のニュースを全部読める＋好きなテーマでクイズ</li>
+          <li>受験モード：<span class="jp">高校入試</span>のような問題形式と、時間を計る練習</li>
           <li>フレンド対決とカスタムチャレンジ</li>
           <li>毎月の保護者向け進捗レポート</li>
           <li>広告は一切なし</li>
@@ -490,36 +490,36 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
       </div>
       <div class="card price-card">
         <h3>学校・クラス</h3><div class="price">¥300<small> / 生徒1人 / 月</small></div>
-        <p>学校と<span class="jp">塾</span>向けの法人ライセンス。</p>
+        <p>学校や<span class="jp">塾</span>向けのプランです。</p>
         <ul class="feat">
           <li>クラス全員にProの全機能</li>
-          <li>先生用ダッシュボードと習熟レポート</li>
-          <li>印刷できる毎日のワークシート</li>
+          <li>先生用の管理画面と理解度レポート</li>
+          <li>印刷して使える毎日のプリント教材</li>
           <li>クラスランキングとクラス対抗リーグ</li>
-          <li>カリキュラム対応（<span class="jp">学習指導要領</span>）</li>
-          <li>請求書発行と管理機能</li>
+          <li>学習指導要領に沿ったカリキュラム</li>
+          <li>請求書の発行や管理ができます</li>
         </ul>
         <button class="btn navy">学校向けデモを予約</button>
       </div>
     </div>
 
-    <div class="section-head"><div><h2>NewsQuestの収益モデル</h2><p>収益源は4つ。開始する順番に紹介します。</p></div></div>
+    <div class="section-head"><div><h2>NewsQuestの収益モデル</h2><p>収入のもとは4つ。始める順番に紹介します。</p></div></div>
     <div class="mono-strip">
-      <div class="card"><div class="n">01</div><h3>フリーミアム → Pro</h3><p>ヘビーユーザーと受験期の家族からのサブスクリプション。核となる習慣は無料のままです。</p></div>
-      <div class="card"><div class="n">02</div><h3>教育機関向け（B2B）</h3><p>生徒1人あたりのライセンスを学校と<span class="jp">塾</span>向けに。先生用ダッシュボードと印刷ワークシートが決め手です。</p></div>
-      <div class="card"><div class="n">03</div><h3>リワード広告（フリー）</h3><p>任意：短い広告を見るとボーナスゲームや連続記録シールドを解放。クイズの途中には出さず、子どものクラスには表示しません。</p></div>
-      <div class="card"><div class="n">04</div><h3>スポンサークエスト</h3><p>博物館、出版社、試験機関が、明示ラベル付きのトピッククエストを協賛 — 例：科学館の「宇宙週間」。</p></div>
+      <div class="card"><div class="n">01</div><h3>無料プラン → Pro</h3><p>よく使う人や、受験の時期の家族に向けた定期プランです。毎日の基本の使い方は、無料のまま変わりません。</p></div>
+      <div class="card"><div class="n">02</div><h3>学校・塾向けプラン</h3><p>生徒1人ごとの料金で、学校や<span class="jp">塾</span>に提供します。先生用の管理画面と、印刷できるプリント教材がポイントです。</p></div>
+      <div class="card"><div class="n">03</div><h3>ごほうび広告（無料プラン）</h3><p>見たい人だけ：短い広告を見ると、ボーナスゲームや記録を守る「フリーズ」がもらえます。クイズの途中には出しません。学校のクラス向けには広告を出しません。</p></div>
+      <div class="card"><div class="n">04</div><h3>スポンサークエスト</h3><p>博物館や出版社などが、「スポンサー」とはっきり表示したうえで特別なクエストを出します。たとえば科学館の「宇宙週間」などです。</p></div>
     </div>
 
     <div class="card" style="margin-top:16px">
-      <h3>家族プラン</h3>
-      <p><b style="color:var(--ink)">月額¥980</b>で保護者1人＋子ども最大3人までProを利用でき、週次レポートは1つにまとめて届きます — NewsQuestの始まり方（親1人、生徒1人、毎日のクイズ1回）からの自然なアップセルです。</p>
+      <h3>家族向けプラン</h3>
+      <p><b style="color:var(--ink)">月額¥980</b>で、保護者1人と子ども3人までProが使えます。1週間の様子は、まとめて1つのレポートで届きます。もともと「親1人、子ども1人、毎日のクイズ」から始まったサービスなので、家族で使う形が一番自然なのです。</p>
     </div>
   </section>
 
   <footer>
-    <b style="color:var(--ink)">NewsQuest — インタラクティブ・プロトタイプ。</b>東京で中学生のために親が作った自動デイリーニュースクイズから誕生しました。このデモでは一般公開版のビジョンを示します：パーソナライズされたブリーフ、AI生成クイズ、読むことを後押しするゲーミフィケーション。記事とスコアはデモ用のサンプルです。<br>
-    ピッチで参照した競合環境： Briefed · CaffQuiz · <span class="jp">テストに出るニュース</span> · PrepWise AI · PBS/KET News Quiz.
+    <b style="color:var(--ink)">ニュースクエスト — 体験版です。</b>東京で、親が中学生の子どものために作った「毎日のニュースクイズ」が始まりです。この体験版では、みんなに向けたサービスのかたちを紹介します。あなたに合ったニュース、AIが作るクイズ、そして読み続けたくなる工夫です。記事と点数はデモ用のサンプルです。<br>
+    企画で参考にしたサービス： Briefed · CaffQuiz · <span class="jp">テストに出るニュース</span> · PrepWise AI · PBS/KET News Quiz.
   </footer>
   </main>
 </div>
@@ -528,7 +528,7 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;color:v
 <nav class="mobilenav">
   <button class="active" data-view="today"><span>📰</span>今日</button>
   <button data-view="quiz"><span>🎯</span>クイズ</button>
-  <button data-view="play"><span>🕹️</span>アーケード</button>
+  <button data-view="play"><span>🕹️</span>ミニゲーム</button>
   <button data-view="progress"><span>🏆</span>進捗</button>
   <button data-view="board"><span>📊</span>順位</button>
   <button data-view="pro"><span>⭐</span>Pro</button>
@@ -565,12 +565,12 @@ document.querySelectorAll('[data-goto]').forEach(function(b){
 
 /* ---------- BRIEF ---------- */
 var BRIEFS = [
-  {cat:'japan', tag:'日本・政治', cls:'pol', title:'地方議会が若返っている — 初当選の候補者が増えている', body:'最近の地方選挙では40歳未満の候補者が増え、子育て支援、空き家の活用、デジタル行政を訴えました。注目されているのは若い有権者の投票率です。', mins:'3分で読める', src:'サンプル通信 · 07:10 JST', why:'<b>なぜ大事？ — 公民（<span class="jp">公民</span>）：</b>都道府県や市区町村の議会は、学校、ごみ、地方税など、日常生活に最も近いルールを決めます。中学3年の社会で学ぶ「地方自治」の単元に直結します。'},
-  {cat:'economy', tag:'経済', cls:'eco', title:'金利が変わると円が動くのはなぜ？ — 2分でわかる解説', body:'他国の中央銀行が日本より高い金利を保つと、投資家はより多く稼げる場所へお金を移し、円は弱くなる傾向があります。円安は燃料や食料など輸入品を高くしますが、日本の輸出企業には追い風になります。', mins:'2分で読める', src:'サンプル解説 · 06:45 JST', why:'<b>なぜ大事？ — 経済：</b>為替レートは中央銀行の決定と昼食の値段をつなげます。貿易、物価、日本銀行の役割に関する問題でよく出題されます。'},
-  {cat:'climate', tag:'気候・地理', cls:'', title:'川、雨、そしてまちづくり：激しい豪雨に備える日本のまち', body:'短時間の激しい雨が増えています。都市では排水能力の強化、ハザードマップ、避難訓練、そして「グリーンインフラ」— 安全に浸水するよう設計された公園 — を組み合わせ、ダムだけに頼らない備えが進んでいます。', mins:'4分で読める', src:'サンプル記事 · 昨日 18:20 JST', why:'<b>なぜ大事？ — 地理（<span class="jp">地理</span>）：</b>日本の急な川と雨季のため、防災は核心的なテーマです。天気だけでなく、ハザードマップと土地利用が問われます。'},
-  {cat:'science', tag:'科学・テクノロジー', cls:'sci', title:'AI学習アシスタントを教室で試験導入 — すべての回答を先生が確認', body:'答えだけを出すのではなく、宿題の解き方を説明するAIツールを試す学校が増えています。先生が出力を確認し、生徒は大切な内容を教科書や資料で確かめるよう指導されます。', mins:'3分で読める', src:'サンプル記事 · 08:05 JST', why:'<b>なぜ大事？ — まさにこの話：</b>NewsQuest自体がAIコンテンツの実験です。求められる力は、AIを使って速く学びつつ、必ず自分で確かめること — 今日のクイズが評価する力そのものです。'},
-  {cat:'world', tag:'世界', cls:'wld', title:'島国と、すべてが依存する海上交通路', body:'島国にとって貿易は抽象的な話ではありません。エネルギー、食料、部品が、限られた忙しい航路を通って船で届きます。そのどこかで滞れば、すぐに国内の価格や品不足に表れます。', mins:'3分で読める', src:'サンプル通信 · 05:30 JST', why:'<b>なぜ大事？ — 地理と歴史：</b>日本はエネルギーの大半と食料の多くを輸入しています。海上交通路は地図の力と日常の経済をつなげます — 試験で好まれる組み合わせです。'},
-  {cat:'japan', tag:'日本・社会', cls:'pol', title:'学校全体で担うようになった、20年続く神社のお祭り', body:'地域の高齢化が進む中、学校が引き継ぐことで続く祭りがあります。生徒が神輿を担ぎ、屋台を出し、お年寄りに聞き取りをする — 伝統が生きた郷土史の授業になります。', mins:'2分で読める', src:'サンプル特集 · 昨日 16:00 JST', why:'<b>なぜ大事？ — 歴史と公民：</b>地域の祭りは一次資料です。何を祝うかで地域が大切にするものがわかり、誰が支えているかで地域の変化が見えます。'}
+  {cat:'japan', tag:'日本・政治', cls:'pol', title:'地方議会に若い議員が増えている', body:'最近の地方選挙では、40歳より若い候補者が増えました。子育て支援や空き家の活用、役所の手続きをネットでできるようにすることなどを訴えています。みんなが注目しているのは、若い人の投票率です。', mins:'3分で読める', src:'サンプル記事 · 07:10 JST', why:'<b>教科書とのつながり｜公民：</b>都道府県や市区町村の議会は、学校やごみの出し方、税金など、毎日の暮らしに一番近いことを決める場所です。中学3年の社会で学ぶ「地方自治」の内容そのものです。'},
+  {cat:'economy', tag:'経済', cls:'eco', title:'金利が変わると、なぜ円の値段が動くの？', body:'ほかの国の中央銀行の金利が日本より高いと、お金を運用する人は「利子の多い国にお金を移そう」と考えます。すると円は売られて、円安になりやすくなります。円安になると、燃料や食料など外国から買う物は高くなりますが、日本の製品を外国に売る会社にはプラスになります。', mins:'2分で読める', src:'サンプル解説 · 06:45 JST', why:'<b>教科書とのつながり｜経済：</b>円の値段（為替レート）は、中央銀行の決めたことと、毎日の買い物の値段をつないでいます。貿易や物価、日本銀行の仕事の問題でよく出ます。'},
+  {cat:'climate', tag:'気候・地理', cls:'', title:'大雨に備えるまちづくり ― 川と雨と、私たちのまち', body:'短い時間に激しい雨が降ることが増えています。まちでは、水を流す力を強くしたり、危ない場所を示すハザードマップを作ったり、避難訓練をしたりしています。水を安全にためられるよう作られた公園もその一つで、ダムだけに頼らない備えが進んでいます。', mins:'4分で読める', src:'サンプル記事・昨日 18:20 JST', why:'<b>教科書とのつながり｜地理：</b>日本には急な川が多く、梅雨や台風の雨も多いので、防災は大切なテーマです。天気のことだけでなく、ハザードマップや土地の使い方まで聞かれることがあります。'},
+  {cat:'science', tag:'科学・テクノロジー', cls:'sci', title:'教室でAIの勉強アシスタントをお試し中 ― 答えは先生がチェック', body:'宿題の答えそのものではなく、解き方を説明してくれるAIを試す学校が増えています。AIの説明は先生が確認します。生徒には、大切なことは教科書や資料でも確かめるよう教えています。', mins:'3分で読める', src:'サンプル記事 · 08:05 JST', why:'<b>教科書とのつながり｜情報の使い方：</b>ニュースクエスト自体も、AIを使って作る実験です。AIを使って速く学ぶこと、そして必ず自分で確かめること。この二つが、これから大切な力になります。'},
+  {cat:'world', tag:'世界', cls:'wld', title:'島国・日本と、海の道の大切さ', body:'島国にとって、貿易は遠い話ではありません。エネルギーや食料、製品の部品は、決まった海の道を通って船で届きます。その道のどこかで船が止まると、日本でも物の値段が上がったり、品物が足りなくなったりします。', mins:'3分で読める', src:'サンプル記事 · 05:30 JST', why:'<b>教科書とのつながり｜地理・歴史：</b>日本はエネルギーのほとんどと、食料の多くを外国から買っています。海の道は、地図を読む力と毎日の経済をつなぐ、大切なテーマです。'},
+  {cat:'japan', tag:'日本・社会', cls:'pol', title:'学校みんなで守る、20年続く神社のお祭り', body:'地域のお年寄りが増える中、学校が引き受けることで続いている祭りがあります。生徒がみこしを担ぎ、屋台を出し、お年寄りから昔の話を聞くことで、伝統が「生きた郷土の歴史の授業」になっています。', mins:'2分で読める', src:'サンプル特集 · 昨日 16:00 JST', why:'<b>教科書とのつながり｜歴史・公民：</b>地域のお祭りは、歴史を知るための手がかり（一次資料）です。何を祝うのかを見ると、その地域が大切にしてきたことが分かります。誰が祭りを支えているかを見ると、地域の変化も見えてきます。'}
 ];
 var briefList = document.getElementById('briefList');
 function renderBriefs(f){
@@ -580,10 +580,10 @@ function renderBriefs(f){
     d.innerHTML = '<div class="meta"><span class="tagcat ' + b.cls + '">' + b.tag + '</span><span class="source">⏱ ' + b.mins + '</span></div>' +
       '<h3>' + b.title + '</h3><p>' + b.body + '</p>' +
       '<div class="why">' + b.why + '</div>' +
-      '<div class="foot"><span class="source">' + b.src + '</span><span><button class="linkbtn why-btn">なぜ大事？ ▾</button> &nbsp;·&nbsp; <button class="linkbtn quiz-btn">クイズで出して →</button></span></div>';
+      '<div class="foot"><span class="source">' + b.src + '</span><span><button class="linkbtn why-btn">教科書とのつながり ▾</button> &nbsp;·&nbsp; <button class="linkbtn quiz-btn">この内容でクイズ →</button></span></div>';
     d.querySelector('.why-btn').addEventListener('click', function(){
       var w = d.querySelector('.why'); var open = w.classList.toggle('open');
-      this.textContent = open ? '閉じる ▴' : 'なぜ大事？ ▾';
+      this.textContent = open ? '閉じる ▴' : '教科書とのつながり ▾';
     });
     d.querySelector('.quiz-btn').addEventListener('click', function(){ goTo('quiz'); });
     briefList.appendChild(d);
@@ -599,14 +599,14 @@ document.getElementById('filters').addEventListener('click', function(e){
 
 /* ---------- QUIZ ---------- */
 var QUIZ = [
-  {topic:'公民・地方自治', q:'日本の都道府県を率いるのは誰ですか（州知事に相当）？', opts:['市長','知事','内閣総理大臣','都道府県警察本部長'], a:1, ex:'正解：都道府県を率いるのは<b>知事</b>で、住民の直接選挙で選ばれます。市長はその中にある市・町・村を率います。'},
-  {topic:'公民・国会', q:'日本の国会は、どの二つの議院から構成されていますか？', opts:['元老院と庶民院','衆議院と参議院','国会と都道府県議会','内閣と最高裁判所'], a:1, ex:'国会は<b>衆議院</b>と<b>参議院</b>の二院制です。法律は原則として両院の通過が必要です。'},
-  {topic:'公民・憲法', q:'日本国憲法のもとで、主権（最終的な政治の力）は誰にありますか？', opts:['天皇','内閣','国民','最高裁判所'], a:2, ex:'<b>国民主権</b>：主権は国民にあります。天皇は日本国と日本国民統合の象徴と定められています。'},
-  {topic:'経済・為替', q:'円安が進むと（例：1ドル150円→160円）、日本の輸入品は通常どうなりますか？', opts:['安くなる','高くなる','価格は決して変わらない','輸出が完全に止まる'], a:1, ex:'円安では1ドルに必要な円が増えるため、<b>燃料や食料などの輸入品は高くなります</b>。一方、日本の輸出品は海外の買い手にとって割安になります。'},
-  {topic:'地理・防災', q:'ダムや堤防のほかに、現代の日本の都市の水害対策で重要なものはどれですか？', opts:['ハザードマップと避難訓練','川沿いにだけ建物を建てる','すべての公園をなくす','国のテレビ速報だけを待つ'], a:0, ex:'<b>ハザードマップ＋避難訓練＋土地利用の計画</b>（安全に浸水するよう設計された公園を含む）が、コンクリートのインフラと並ぶ備えになっています。'},
-  {topic:'地理・貿易', q:'海上輸送ルートが、特に日本にとって重要なのはなぜですか？', opts:['日本には港がないから','日本は島国で、エネルギーの大半と食料の多くを船で輸入しているから','船は観光にしか使われないから','日本は何も輸出していないから'], a:1, ex:'<b>島国</b>の日本は、エネルギーの大部分と食料の大きな割合を海運で輸入しています。ルートの混乱はすぐに店頭に届きます。'},
-  {topic:'科学・AIの上手な使い方', q:'AI学習アシスタントを試す学校が、生徒に何より教えている習慣はどれですか？', opts:['答えを素早く書き写す','二度と教科書を使わない','大切な主張は教科書や信頼できる資料で確かめる','AIの使用を先生に隠す'], a:2, ex:'<b>鵜呑みにせず、確かめること。</b>AIは解き方を上手に説明できても、間違うことがあります。信頼できる資料で確かめることが核心の力です（このクイズ自体もそうやって事実確認されています）。'},
-  {topic:'公民・地方選挙', q:'今日のブリーフによれば、地方議会が「日常生活に最も近い」とされるのはなぜですか？', opts:['戦争を宣言するから','学校、ごみ収集、地方税のルールを決めるから','お金を印刷するから','内閣総理大臣を任命するから'], a:1, ex:'地方自治体は、毎日触れるサービス — <b>学校、ごみ、水道、地方税、介護サービス</b> — を担います。だから国のニュースが大きくても、地方選挙は重要なのです。'}
+  {topic:'公民・地方自治', q:'都道府県の政治をまとめ、行政を行う人はだれですか。', opts:['市長','知事','内閣総理大臣','都道府県警察本部長'], a:1, ex:'正解は<b>知事</b>です。知事は、その都道府県に住む人々の投票で選ばれます。市長は、市・町・村のトップです。'},
+  {topic:'公民・国会', q:'日本の国会は、二つの議院からできています。その組み合わせとして正しいものはどれですか。', opts:['元老院と庶民院','衆議院と参議院','国会と都道府県議会','内閣と最高裁判所'], a:1, ex:'国会は<b>衆議院</b>と<b>参議院</b>の二つからできています（二院制）。法律を作るには、ふつう両方の議院で可決されることが必要です。'},
+  {topic:'公民・憲法', q:'日本国憲法では、国の政治を最終的に決める力（主権）は、だれにあるとされていますか。', opts:['天皇','内閣','国民','最高裁判所'], a:2, ex:'<b>国民主権</b>の考え方で、主権は国民にあります。天皇は「日本国と日本国民統合の象徴」と定められています。'},
+  {topic:'経済・為替', q:'円安が進んだとき（例：1ドル150円から160円）、外国から買う物の値段は、ふつうどうなりますか。', opts:['安くなる','高くなる','まったく変わらない','輸出が完全に止まる'], a:1, ex:'円安では、1ドルを買うのに必要な円が増えます。そのため、<b>燃料や食料など、外国から買う物は高くなります</b>。反対に、日本の製品は外国の人にとって買いやすい値段になります。'},
+  {topic:'地理・防災', q:'ダムや堤防のほかに、今の日本のまちの水害対策として大切なものはどれですか。', opts:['ハザードマップと避難訓練','川沿いにだけ建物を建てる','すべての公園をなくす','国のテレビ速報だけを待つ'], a:0, ex:'大切なのは<b>ハザードマップ、避難訓練、土地の使い方の計画</b>です。水を安全にためられる公園も含めて、建物や施設（インフラ）以外の備えが大切になっています。'},
+  {topic:'地理・貿易', q:'船で物を運ぶ海の道が、日本にとって特に大切なのはなぜですか。', opts:['日本には港がないから','日本は島国で、エネルギーのほとんどと食料の多くを船で運んでくるから','船は観光にしか使われないから','日本は何も輸出していないから'], a:1, ex:'<b>島国</b>の日本は、エネルギーのほとんどと、食料の多くを船で運んできます。海の道で問題が起きると、すぐにお店の品物や値段に影響します。'},
+  {topic:'科学・AIの上手な使い方', q:'AIの勉強アシスタントを試している学校で、生徒に一番大切だと教えていることはどれですか。', opts:['答えを素早く書き写す','二度と教科書を使わない','大切な主張は教科書や信頼できる資料で確かめる','AIの使用を先生に隠す'], a:2, ex:'大切なのは、<b>そのまま信じないで、自分で確かめること</b>です。AIは上手に説明できても、間違うことがあります。（実は、このクイズも出す前に事実を確かめています。）'},
+  {topic:'公民・地方選挙', q:'今日のニュースによると、地方の議会が「毎日の暮らしに一番近い」と言われるのはなぜですか。', opts:['戦争を始めるかどうかを決めるから','学校やごみの収集、税金などのルールを決めるから','お金を印刷するから','内閣総理大臣を選ぶから'], a:1, ex:'都道府県や市区町村は、毎日の暮らしに関わること — <b>学校、ごみ、水道、税金、介護</b>など — を担当しています。だから、国のニュースが大きく聞こえる日でも、地方の選挙は大切なのです。'}
 ];
 var qi = 0, qScore = 0, qXP = 0, qAnswered = false, qStreak = 0, qBestStreak = 0;
 document.querySelectorAll('.diff').forEach(function(d){
@@ -619,7 +619,7 @@ document.querySelectorAll('.diff').forEach(function(d){
 function showQ(){
   qAnswered = false;
   var item = QUIZ[qi];
-  document.getElementById('qCount').textContent = '質問 ' + (qi+1) + ' / ' + QUIZ.length;
+  document.getElementById('qCount').textContent = '問題 ' + (qi+1) + ' / ' + QUIZ.length;
   document.getElementById('qScore').textContent = 'スコア：' + qScore + ' · ⭐ ' + qXP + ' XP';
   document.getElementById('qBar').style.width = ((qi)/QUIZ.length*100) + '%';
   document.getElementById('qTopic').textContent = item.topic;
@@ -653,7 +653,7 @@ function answer(idx, btn){
     qStreak = 0;
     btn.classList.add('wrong');
     ex.className = 'explain show bad';
-    ex.innerHTML = '❌ 残念 — 正解はハイライトされています。' + item.ex;
+    ex.innerHTML = '❌ 残念。正しい答えに色がついています。' + item.ex;
   }
   document.getElementById('qScore').textContent = 'スコア：' + qScore + ' · ⭐ ' + qXP + ' XP';
   document.getElementById('qBar').style.width = ((qi+1)/QUIZ.length*100) + '%';
@@ -671,12 +671,12 @@ function finishQuiz(){
   document.getElementById('resScore').textContent = qScore + ' / ' + QUIZ.length;
   document.getElementById('resEmoji').textContent = qScore >= 7 ? '🏆' : qScore >= 5 ? '🎉' : '💪';
   document.getElementById('resMsg').textContent =
-    qScore >= 7 ? '素晴らしい — ブリーフを本当によく読めました。「鋭い目」バッジはあなたのものです。' :
-    qScore >= 5 ? 'よくできました。ブリーフを読み直して、満点を目指してもう一度挑戦しましょう。' :
-    'よく頑張りました — 学びは上の解説にあります。ブリーフは「今日」タブにまだあります。';
+    qScore >= 7 ? 'すごい！ニュースをよく読めていましたね。「よく読めたね」バッジをゲットです。' :
+    qScore >= 5 ? 'よくできました。ニュースをもう一度読んで、満点を目指して再チャレンジしてみましょう。' :
+    'おつかれさま。大切なことは解説にまとめてあります。ニュースは「今日」のタブからいつでも読み直せます。';
   document.getElementById('resXp').textContent = '+' + total + ' XP獲得（内訳：' + (qScore>=6 ? '完了ボーナス30' : 'ボーナス0') + (qBestStreak>=6 ? ' + 連続正解ボーナス25' : '') + '）';
   document.getElementById('resAcc').textContent = Math.round(qScore/QUIZ.length*100) + '%';
-  document.getElementById('resBadge').textContent = qScore >= 6 ? '👁️ 鋭い目 — 解放されました！' : '鋭い目 — 解放には6問以上の正解が必要（現在 ' + qScore + '/6）';
+  document.getElementById('resBadge').textContent = qScore >= 6 ? '👁️ 「よく読めたね」バッジをもらいました！' : '「よく読めたね」バッジまで、あと少し（6問正解でゲット、今は ' + qScore + ' 問）';
   addXP(total);
   if(qScore >= 6) unlockBadge('sharp');
 }
@@ -692,14 +692,14 @@ document.getElementById('retryBtn').addEventListener('click', startQuiz);
 
 /* ---------- BLITZ ---------- */
 var BLITZ = [
-  {s:'知事は都道府県の住民の直接選挙で選ばれる。', t:true},
-  {s:'円安になると、日本の輸入燃料は安くなる。', t:false},
-  {s:'日本の国会は二つの議院からなる。', t:true},
-  {s:'ハザードマップは水害への備えの一つである。', t:true},
-  {s:'憲法のもとで、日本の法律を作るのは天皇である。', t:false},
-  {s:'日本はエネルギーの大半を船で輸入している。', t:true},
-  {s:'AIの答えは、確認せずに常に従うべきである。', t:false},
-  {s:'地方自治体はごみ収集や公立学校を担っている。', t:true}
+  {s:'知事は、その都道府県に住む人々の投票で選ばれる。', t:true},
+  {s:'円安になると、外国から買う燃料は安くなる。', t:false},
+  {s:'日本の国会には、衆議院と参議院の二つがある。', t:true},
+  {s:'ハザードマップは、大雨や洪水への備えの一つである。', t:true},
+  {s:'憲法では、日本の法律を作るのは天皇だと決められている。', t:false},
+  {s:'日本は、エネルギーのほとんどを船で運んでくる。', t:true},
+  {s:'AIの答えは、確かめなくてもいつも正しい。', t:false},
+  {s:'ごみの収集や公立の学校は、都道府県や市区町村が担当している。', t:true}
 ];
 var bi = 0, bScore = 0, bTimer = null, bTime = 30;
 var blitzArea = document.getElementById('blitzArea');
@@ -723,7 +723,7 @@ function blitzAnswer(v){
 }
 function blitzEnd(){
   clearInterval(bTimer);
-  blitzArea.innerHTML = '<div style="text-align:center;padding:18px 0 4px"><div style="font-size:36px">' + (bScore>=5?'⚡🏆':'⚡') + '</div><h3 style="font-size:21px;margin:8px 0 4px">' + bScore + ' / ' + BLITZ.length + '</h3><p>' + (bScore>=5 ? 'チャレンジ達成！ボーナス+40 XPを追加しました。' : '5問以上正解で今日の地理スプリント・チャレンジ達成です。') + '</p><div style="margin-top:14px"><button class="btn secondary" id="blitzAgain">↻ もう一度遊ぶ</button></div></div>';
+  blitzArea.innerHTML = '<div style="text-align:center;padding:18px 0 4px"><div style="font-size:36px">' + (bScore>=5?'⚡🏆':'⚡') + '</div><h3 style="font-size:21px;margin:8px 0 4px">' + bScore + ' / ' + BLITZ.length + '</h3><p>' + (bScore>=5 ? 'チャレンジ達成！ボーナス+40 XPが増えました。' : '5問以上正解すると、今日の地理スプリント達成です。') + '</p><div style="margin-top:14px"><button class="btn secondary" id="blitzAgain">↻ もう一度遊ぶ</button></div></div>';
   if(bScore >= 5) addXP(40);
   document.getElementById('blitzAgain').addEventListener('click', startBlitz);
 }
@@ -741,10 +741,10 @@ document.getElementById('blitzStart').addEventListener('click', startBlitz);
 
 /* ---------- HEADLINE MATCH ---------- */
 var MATCH = [
-  {h:'「日本銀行、金利を据え置き — 物価の行方を注視」', c:'経済'},
-  {h:'「新しいセンサーでロボットが人間の皮膚のように質感を“感じる”」', c:'科学'},
-  {h:'「内閣、新しい子育て支援法案を閣議決定」', c:'政治'},
-  {h:'「伏兵チーム、延長戦の末に全国高校野球決勝で優勝」', c:'スポーツ'}
+  {h:'「日銀、金利をそのままに ― 物価の動きを見守る」', c:'経済'},
+  {h:'「人の皮膚のように“触った感じ”が分かるセンサーを開発」', c:'科学'},
+  {h:'「子育て支援の新しい法案、内閣が決定」', c:'政治'},
+  {h:'「高校野球の決勝、延長戦の末にノーシードのチームが優勝」', c:'スポーツ'}
 ];
 var matchSel = null, matchDone = 0, matchXPgiven = false;
 var matchArea = document.getElementById('matchArea');
@@ -761,7 +761,7 @@ MATCH.forEach(function(m, i){
 document.getElementById('matchCats').addEventListener('click', function(e){
   var b = e.target.closest('.fbtn'); if(!b) return;
   var msg = document.getElementById('matchMsg');
-  if(matchSel === null){ msg.textContent = 'まず見出しを選んでください ↑'; msg.style.color = 'var(--muted)'; return; }
+  if(matchSel === null){ msg.textContent = 'まず見出しを選んでね ↑'; msg.style.color = 'var(--muted)'; return; }
   var item = matchArea.querySelector('[data-i="' + matchSel + '"]');
   if(MATCH[matchSel].c === b.getAttribute('data-cat')){
     item.classList.remove('sel'); item.classList.add('done');
@@ -771,7 +771,7 @@ document.getElementById('matchCats').addEventListener('click', function(e){
       msg.textContent = '🎉 完璧な仕分け！ +30 XP'; msg.style.color = 'var(--green)';
       if(!matchXPgiven){ addXP(30); matchXPgiven = true; }
     } else { msg.textContent = '✓ 正解 — 4つ中 ' + matchDone + 'つ仕分け済み。'; msg.style.color = 'var(--green)'; }
-  } else { msg.textContent = '✕ その分野ではありません — もう一度どうぞ。'; msg.style.color = 'var(--red)'; }
+  } else { msg.textContent = '✕ その分野じゃないみたい。もう一度考えてみよう。'; msg.style.color = 'var(--red)'; }
 });
 
 /* ---------- PROGRESS: calendar, badges ---------- */
@@ -786,18 +786,18 @@ for(var d = 0; d < 14; d++){
   cal.appendChild(cell);
 }
 var BADGES = [
-  {ic:'🌱', n:'はじめの一歩', s:'最初のクイズ完了', e:true},
-  {ic:'🔥', n:'7日連続', s:'丸1週間続けた', e:true},
-  {ic:'📚', n:'パーフェクトウィーク', s:'クイズ7日連続完了', e:true},
-  {ic:'👁️', n:'鋭い目', s:'デイリークイズで6問以上正解', e:false, id:'sharp'},
-  {ic:'🗾', n:'地理プロ', s:'習熟度74%', e:true},
-  {ic:'🏛️', n:'公民スター', s:'政治で80%以上', e:true},
-  {ic:'🌏', n:'世界旅行者', s:'今週 世界の問題10問回答', e:false},
-  {ic:'⚡', n:'ブリッツマスター', s:'ブリッツで8/8', e:false},
-  {ic:'💹', n:'マーケット通', s:'経済で90%', e:false},
+  {ic:'🌱', n:'はじめの一歩', s:'初めてのクイズを終えた', e:true},
+  {ic:'🔥', n:'7日連続', s:'1週間がんばった', e:true},
+  {ic:'📚', n:'パーフェクトウィーク', s:'クイズを7日連続で終えた', e:true},
+  {ic:'👁️', n:'よく読めたね', s:'今日のクイズで6問以上正解', e:false, id:'sharp'},
+  {ic:'🗾', n:'地理が得意', s:'理解度74%', e:true},
+  {ic:'🏛️', n:'公民が得意', s:'政治で80%以上', e:true},
+  {ic:'🌏', n:'世界旅行者', s:'今週、世界のクイズ10問に回答', e:false},
+  {ic:'⚡', n:'○×名人', s:'○×ゲームで8問全部正解', e:false},
+  {ic:'💹', n:'経済つう', s:'経済で90%', e:false},
   {ic:'📜', n:'タイムトラベラー', s:'年表ソート完了', e:false},
-  {ic:'👥', n:'デュエリスト', s:'フレンド対決で3勝', e:false},
-  {ic:'👑', n:'ニュース王族', s:'レベル10到達', e:false}
+  {ic:'👥', n:'対決名人', s:'友達との対決で3勝', e:false},
+  {ic:'👑', n:'ニュースマスター', s:'レベル10到達', e:false}
 ];
 var badgeGrid = document.getElementById('badgeGrid');
 function renderBadges(){
@@ -828,12 +828,12 @@ var BOARDS = {
     {n:'れお', s:'レベル4・🔥4日連続', xp:870}
   ],
   class: [
-    {n:'さくら・2年B組', s:'政治の習熟度91%', xp:1710},
-    {n:'れん・2年B組', s:'地理の習熟度88%', xp:1605},
-    {n:'あなた（デモ学習者）', s:'政治の習熟度82%', xp:1240, me:true, id:'lbYou2'},
-    {n:'あおい・2年B組', s:'歴史の習熟度79%', xp:1180},
-    {n:'かいと・2年B組', s:'経済の習熟度77%', xp:1095},
-    {n:'ひな・2年B組', s:'気候の習熟度75%', xp:1010}
+    {n:'さくら・2年B組', s:'政治の理解度91%', xp:1710},
+    {n:'れん・2年B組', s:'地理の理解度88%', xp:1605},
+    {n:'あなた（デモ学習者）', s:'政治の理解度82%', xp:1240, me:true, id:'lbYou2'},
+    {n:'あおい・2年B組', s:'歴史の理解度79%', xp:1180},
+    {n:'かいと・2年B組', s:'経済の理解度77%', xp:1095},
+    {n:'ひな・2年B組', s:'気候の理解度75%', xp:1010}
   ],
   global: [
     {n:'QuizFox_07', s:'レベル5・大阪', xp:1920},
@@ -864,7 +864,7 @@ document.getElementById('lbTabs').addEventListener('click', function(e){
 document.getElementById('proBtn').addEventListener('click', function(){
   this.textContent = '✓ トライアル開始（デモ）';
   this.disabled = true;
-  document.getElementById('proMsg').textContent = '本製品では、カード不要で7日間のProトライアルが始まります。';
+  document.getElementById('proMsg').textContent = '本番では、カード登録なしで7日間Proを試せます。';
 });
 </script>
 </body>
