@@ -1,9 +1,9 @@
-name: Generate Daily Quiz with GLM
+name: Generate Daily Quiz (Multi-AI)
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at 00:00 UTC
-  workflow_dispatch: # Allows you to trigger it manually anytime from GitHub
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-quiz:
@@ -19,12 +19,15 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install OpenAI library
-        run: pip install openai
+      - name: Install dependencies
+        run: pip install openai google-generativeai
 
       - name: Run generation script
         env:
+          AI_PROVIDER: "groq" # <-- Change this to "zai" or "gemini" whenever you want to switch!
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate_questions.py
 
       - name: Commit and push new questions
@@ -32,5 +35,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add questions-latest.json
-          git commit -m "Auto-update daily quiz questions via GLM" || exit 0
+          git commit -m "Auto-update daily quiz questions" || exit 0
           git push
+          
