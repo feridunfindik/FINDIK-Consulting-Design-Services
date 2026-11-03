@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小5社会科クイズマスター！｜工業生産・水産業</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Zen Maru Gothic & Noto Sans JP for friendly elementary school textbook readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+      background: radial-gradient(circle at top left, #e0f2fe 0%, #f0fdf4 50%, #fef9c3 100%);
+      min-height: 100vh;
+      color: #1e293b;
+      overflow-x: hidden;
+    }
+
+    ruby rt {
+      font-size: 0.62em;
+      color: #475569;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    /* Custom Arcade / Game Button Styles */
+    .btn-game {
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.18);
+      transform: translateY(0);
+    }
+    .btn-game:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 rgba(0, 0, 0, 0.2);
+    }
+    .btn-game:active:not(:disabled) {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
+    }
+
+    /* Card bounce animation */
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92) translateY(10px); }
+      70% { transform: scale(1.02) translateY(-2px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-pop {
+      animation: popIn 0.32s ease-out forwards;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+    .combo-badge {
+      animation: pulseGlow 1.2s infinite ease-in-out;
+    }
+
+    /* Blank slot highlight */
+    .blank-slot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 130px;
+      padding: 2px 14px;
+      margin: 0 4px;
+      border-bottom: 3px dashed #3b82f6;
+      background-color: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 8px;
+      font-weight: 900;
+      transition: all 0.2s;
+    }
+    .blank-slot.filled {
+      border-bottom: 3px solid #2563eb;
+      background-color: #dbeafe;
+    }
+  </style>
+</head>
+<body class="pb-12">
+
+  <!-- Top Navigation / Header Bar -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b-2 border-sky-200 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="app.showHome()">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-white text-xl shadow-md">
+          <i class="fa-solid fa-earth-asia"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300">
+            <ruby>小学<rt>しょうがく</rt></ruby>5<ruby>年生<rt>ねんせい</rt></ruby>・2<ruby>学期<rt>がっき</rt></ruby>
+          </span>
+          <h1 class="text-lg sm:text-xl font-black text-slate-800 tracking-tight">
+            <ruby>社会科<rt>しゃかいか</rt></ruby>クイズマスター！
+          </h1>
+        </div>
+      </div>
+
+      <!-- Right Controls: Sound Toggle & Home Button -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button id="soundToggleBtn" onclick="app.toggleSound()" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm flex items-center gap-1.5 transition" title="効果音 ON/OFF">
+          <i id="soundIcon" class="fa-solid fa-volume-high text-sky-600"></i>
+          <span class="hidden sm:inline" id="soundLabel">音 ON</span>
+        </button>
+        <button onclick="app.showStudySheet()" class="p-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 font-bold text-sm flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-book-open"></i>
+          <span class="hidden sm:inline"><ruby>要点<rt>ようてん</rt></ruby>まとめ</span>
+        </button>
+        <button onclick="app.showHome()" class="p-2.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 border border-sky-200 font-bold text-sm flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-house"></i>
+          <span class="hidden sm:inline">トップ</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-4xl mx-auto px-4 pt-6">
+
+    <!-- ==================== VIEW 1: HOME / TOPIC SELECTION ==================== -->
+    <section id="homeView" class="animate-pop space-y-6">
+      <!-- Hero Banner for Kaya -->
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-600 via-sky-500 to-teal-400 text-white p-6 sm:p-8 shadow-xl">
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-2 max-w-xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs sm:text-sm font-bold">
+              <i class="fa-solid fa-bolt text-yellow-300"></i>
+              <span>10<ruby>月<rt>がつ</rt></ruby>〜11<ruby>月<rt>がつ</rt></ruby>のテスト<ruby>対策<rt>たいさく</rt></ruby>バッチリ！</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black leading-tight">
+              めざせ100<ruby>点<rt>てん</rt></ruby>！<ruby>日本<rt>にほん</rt></ruby>の<ruby>工業<rt>こうぎょう</rt></ruby>＆<ruby>水産業<rt>すいさんぎょう</rt></ruby>クイズ
+            </h2>
+            <p class="text-sky-50 text-sm sm:text-base font-medium leading-relaxed">
+              「<ruby>自動車<rt>じどうしゃ</rt></ruby>をつくる<ruby>工業<rt>こうぎょう</rt></ruby>」「<ruby>日本<rt>にほん</rt></ruby>の<ruby>工業地域<rt>こうぎょうちいき</rt></ruby>」「<ruby>水産業<rt>すいさんぎょう</rt></ruby>」の<ruby>重要<rt>じゅうよう</rt></ruby>ポイントをゲーム<ruby>感覚<rt>かんかく</rt></ruby>でマスターしよう！
+            </p>
+          </div>
+          <!-- Best Score / Status Card -->
+          <div class="bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl p-4 text-center min-w-[180px]">
+            <div class="text-xs text-sky-100 font-bold mb-1">これまでのベストスコア</div>
+            <div class="text-3xl font-black text-yellow-300 flex items-center justify-center gap-1">
+              <i class="fa-solid fa-crown text-xl"></i>
+              <span id="bestScoreDisplay">0</span><span class="text-base text-white"> / 15問</span>
+            </div>
+            <div id="masteryBadgeText" class="text-xs font-bold mt-1 text-white bg-black/20 rounded-full py-1 px-2">
+              まずはチャレンジしてみよう！
+            </div>
+          </div>
+        </div>
+        <!-- Decorative background icons -->
+        <i class="fa-solid fa-car-side absolute -bottom-6 -right-4 text-9xl text-white/10 pointer-events-none"></i>
+        <i class="fa-solid fa-fish-fins absolute top-4 right-48 text-6xl text-white/10 pointer-events-none"></i>
+      </div>
+
+      <!-- Mode Selection Cards -->
+      <div>
+        <h3 class="text-lg font-black text-slate-700 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-gamepad text-sky-500"></i>
+          <span>コースをえらんでスタート！</span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- All 15 Questions -->
+          <button onclick="app.startQuiz('all')" class="btn-game text-left group bg-gradient-to-br from-amber-400 to-orange-500 text-white p-5 rounded-3xl border-2 border-amber-300 flex items-center justify-between md:col-span-2">
+            <div class="space-y-1">
+              <span class="inline-block text-xs font-black uppercase tracking-wider bg-white/25 px-2.5 py-0.5 rounded-full">
+                スペシャルコース・全15問
+              </span>
+              <div class="text-xl sm:text-2xl font-black flex items-center gap-2">
+                <i class="fa-solid fa-trophy text-yellow-200"></i>
+                <span><ruby>全<rt>ぜん</rt></ruby>15<ruby>問<rt>もん</rt></ruby>まとめてチャレンジ！</span>
+              </div>
+              <p class="text-amber-50 text-xs sm:text-sm font-medium">
+                <ruby>自動車工業<rt>じどうしゃこうぎょう</rt></ruby>・<ruby>工業地帯<rt>こうぎょうちたい</rt></ruby>・<ruby>水産業<rt>すいさんぎょう</rt></ruby>のすべての<ruby>問題<rt>もんだい</rt></ruby>に<ruby>挑戦<rt>ちょうせん</rt></ruby>しよう！
+              </p>
+            </div>
+            <div class="w-12 h-12 rounded-2xl bg-white text-orange-500 flex items-center justify-center text-xl font-black shadow-md group-hover:scale-110 transition">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </button>
+
+          <!-- Part 1: Automobile Industry -->
+          <button onclick="app.startQuiz('part1')" class="btn-game text-left group bg-white hover:bg-sky-50/60 p-5 rounded-3xl border-2 border-sky-200 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-2xl shrink-0">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-sky-600 bg-sky-100 px-2 py-0.5 rounded-md">第1部（7問）</span>
+                <h4 class="text-lg font-black text-slate-800 mt-1">
+                  <ruby>自動車<rt>じどうしゃ</rt></ruby>をつくる<ruby>工業<rt>こうぎょう</rt></ruby>
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">
+                  <ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てライン、ジャストインタイム、<ruby>関連工場<rt>かんれんこうじょう</rt></ruby>など
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-sky-600 mt-4"></i>
+          </button>
+
+          <!-- Part 2: Industrial Regions -->
+          <button onclick="app.startQuiz('part2')" class="btn-game text-left group bg-white hover:bg-indigo-50/60 p-5 rounded-3xl border-2 border-indigo-200 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl shrink-0">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-indigo-600 bg-indigo-100 px-2 py-0.5 rounded-md">第2部（4問）</span>
+                <h4 class="text-lg font-black text-slate-800 mt-1">
+                  <ruby>日本<rt>にほん</rt></ruby>の<ruby>工業地域<rt>こうぎょうちいき</rt></ruby>・<ruby>工業地帯<rt>こうぎょうちたい</rt></ruby>
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">
+                  <ruby>中京工業地帯<rt>ちゅうきょうこうぎょうちたい</rt></ruby>、<ruby>太平洋<rt>たいへいよう</rt></ruby>ベルト、<ruby>中小工場<rt>ちゅうしょうこうじょう</rt></ruby>など
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-indigo-600 mt-4"></i>
+          </button>
+
+          <!-- Part 3: Fisheries Review -->
+          <button onclick="app.startQuiz('part3')" class="btn-game text-left group bg-white hover:bg-teal-50/60 p-5 rounded-3xl border-2 border-teal-200 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center text-2xl shrink-0">
+                <i class="fa-solid fa-fish"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-teal-600 bg-teal-100 px-2 py-0.5 rounded-md">第3部（4問）</span>
+                <h4 class="text-lg font-black text-slate-800 mt-1">
+                  <ruby>復習<rt>ふくしゅう</rt></ruby>！<ruby>水産業<rt>すいさんぎょう</rt></ruby>のさかんな<ruby>地域<rt>ちいき</rt></ruby>
+                </h4>
+                <p class="text-xs text-slate-500 mt-1">
+                  <ruby>潮目<rt>しおめ</rt></ruby>、<ruby>黒潮<rt>くろしお</rt></ruby>、<ruby>栽培漁業<rt>さいばいぎょぎょう</rt></ruby>、<ruby>排他的経済水域<rt>はいたてきけいざいすいいき</rt></ruby>
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-teal-600 mt-4"></i>
+          </button>
+
+          <!-- Bonus Descriptive Question Card -->
+          <button onclick="app.showBonusModal()" class="btn-game text-left group bg-gradient-to-br from-purple-50 to-fuchsia-50 hover:from-purple-100 hover:to-fuchsia-100 p-5 rounded-3xl border-2 border-purple-300 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl shrink-0 shadow">
+                <i class="fa-solid fa-pen-fancy"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-purple-700 bg-purple-200 px-2 py-0.5 rounded-md">おまけの1問！</span>
+                <h4 class="text-lg font-black text-purple-950 mt-1">
+                  テストに<ruby>出<rt>で</rt></ruby>る！<ruby>記述問題<rt>きじゅつもんだい</rt></ruby>チャレンジ
+                </h4>
+                <p class="text-xs text-purple-700 mt-1">
+                  「なぜ<ruby>関連工場<rt>かんれんこうじょう</rt></ruby>がまわりに<ruby>集<rt>あつ</rt></ruby>まっているの？」を<ruby>説明<rt>せつめい</rt></ruby>してみよう！
+                </p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-purple-400 group-hover:text-purple-700 mt-4"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: ACTIVE QUIZ ==================== -->
+    <section id="quizView" class="hidden space-y-5">
+      <!-- Top Status Bar: Progress, Score, Combo -->
+      <div class="bg-white rounded-2xl p-4 border-2 border-slate-200 shadow-sm space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <span id="quizPartBadge" class="text-xs font-black px-3 py-1 rounded-full bg-sky-100 text-sky-700">
+              第1部：自動車をつくる工業
+            </span>
+            <span class="text-sm font-black text-slate-600">
+              第 <span id="currentQNum" class="text-lg text-slate-900">1</span> / <span id="totalQNum">15</span> 問
+            </span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <!-- Combo Indicator -->
+            <div id="comboBadge" class="hidden combo-badge px-3 py-1 rounded-full bg-gradient-to-r from-orange-500 to-rose-500 text-white text-xs font-black flex items-center gap-1 shadow">
+              <i class="fa-solid fa-fire"></i>
+              <span id="comboCount">2</span> 連続正解！
+            </div>
+
+            <!-- Score Counter -->
+            <div class="px-3 py-1 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 font-black text-sm flex items-center gap-1.5">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>正解: <span id="scoreCount">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200">
+          <div id="progressBar" class="h-full bg-gradient-to-r from-sky-400 to-blue-600 rounded-full transition-all duration-300" style="width: 10%"></div>
+        </div>
+      </div>
+
+      <!-- Question Card -->
+      <div id="questionCard" class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-sky-200 shadow-lg space-y-6 animate-pop">
+        <!-- Question Type Badge & Input Toggle (for fill-in-the-blank) -->
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span id="qTypeBadge" class="inline-flex items-center gap-1.5 text-xs font-black px-3 py-1 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200">
+            <i class="fa-solid fa-list-check"></i> 3択クイズ
+          </span>
+
+          <!-- Toggle for Fill-in-the-blank questions: Word Bank vs Keyboard Input -->
+          <button id="inputModeToggleBtn" onclick="app.toggleInputMode()" class="hidden text-xs font-bold px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-keyboard text-sky-600"></i>
+            <span id="inputModeLabel">キーボードで直接入力する</span>
+          </button>
+        </div>
+
+        <!-- Question Text -->
+        <div id="questionText" class="text-lg sm:text-xl font-bold text-slate-800 leading-relaxed">
+          <!-- Dynamically populated with ruby furigana -->
+        </div>
+
+        <!-- Fill-in-the-blank Visual Prompt Box (if type === 'fill') -->
+        <div id="fillPromptBox" class="hidden p-4 rounded-2xl bg-sky-50/80 border-2 border-sky-200 text-center text-lg sm:text-xl font-black text-slate-800">
+          <!-- e.g. （ 産業用 ）ロボット -->
+        </div>
+
+        <!-- Answer Area: Multiple Choice OR Word Bank Buttons -->
+        <div id="choicesContainer" class="grid grid-cols-1 gap-3">
+          <!-- Dynamically populated options -->
+        </div>
+
+        <!-- Optional Direct Keyboard Input Area (for fill-in-the-blank when toggled) -->
+        <div id="keyboardInputContainer" class="hidden space-y-3">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input id="directTextInput" type="text" placeholder="ここに答えを入力しよう（ひらがな・漢字どちらでもOK）"
+              class="flex-1 px-4 py-3.5 rounded-2xl border-2 border-slate-300 focus:border-sky-500 focus:outline-none text-base font-bold"
+              onkeydown="if(event.key==='Enter') app.submitDirectInput()" />
+            <button onclick="app.submitDirectInput()" class="btn-game px-6 py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white font-black">
+              答え合わせ！
+            </button>
+          </div>
+          <p class="text-xs text-slate-500">
+            ※タッチで選びたいときは右上の「語群（ボタン）から選ぶ」をおしてね。
+          </p>
+        </div>
+
+        <!-- Feedback & Point Explanation Panel (Shown after answering) -->
+        <div id="feedbackPanel" class="hidden rounded-2xl p-5 border-2 space-y-3 transition-all">
+          <div class="flex items-center justify-between">
+            <div id="feedbackHeader" class="flex items-center gap-2.5 text-xl font-black">
+              <!-- 正解！ or おしい！ -->
+            </div>
+            <div id="correctAnswerBadge" class="text-sm font-black px-3 py-1 rounded-xl bg-white/80 border">
+              <!-- 正解：〇〇 -->
+            </div>
+          </div>
+          <div class="bg-white/90 rounded-xl p-4 border border-slate-200/80 text-sm sm:text-base text-slate-700 leading-relaxed">
+            <span class="font-black text-sky-700 mr-1"><i class="fa-solid fa-lightbulb text-amber-500"></i> ポイント解説：</span>
+            <span id="explanationText"></span>
+          </div>
+          <div class="pt-1 flex justify-end">
+            <button id="nextQuestionBtn" onclick="app.nextQuestion()" class="btn-game w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-black text-base flex items-center justify-center gap-2">
+              <span>つぎの問題へ</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: RESULTS SCREEN ==================== -->
+    <section id="resultsView" class="hidden animate-pop space-y-6">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-sky-200 shadow-xl text-center space-y-6">
+        <div id="resultIconBox" class="w-20 h-20 mx-auto rounded-3xl bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-4xl shadow-lg">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+
+        <div class="space-y-2">
+          <span id="resultRankBadge" class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 font-black text-sm border border-amber-300">
+            社会科マスター！
+          </span>
+          <h2 id="resultTitle" class="text-2xl sm:text-3xl font-black text-slate-800">
+            すばらしい！よくがんばったね！
+          </h2>
+        </div>
+
+        <!-- Score Circle / Summary -->
+        <div class="max-w-md mx-auto grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+          <div>
+            <div class="text-xs font-bold text-slate-500">今回のスコア</div>
+            <div class="text-3xl sm:text-4xl font-black text-sky-600 mt-1">
+              <span id="finalScoreNum">15</span>
+              <span class="text-lg text-slate-500">/ <span id="finalTotalNum">15</span>問</span>
+            </div>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-500">最大コンボ数</div>
+            <div class="text-3xl sm:text-4xl font-black text-orange-500 mt-1">
+              <span id="finalMaxCombo">15</span>
+              <span class="text-lg text-slate-500">連続</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Missed Questions List (if any) -->
+        <div id="missedSection" class="hidden text-left space-y-3 pt-2">
+          <h3 class="text-base font-black text-rose-600 flex items-center gap-2">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>まちがえた問題をチェックしよう！</span>
+          </h3>
+          <div id="missedList" class="space-y-2.5 max-h-80 overflow-y-auto pr-1">
+            <!-- Dynamically populated missed items -->
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+          <button id="retryMissedBtn" onclick="app.retryMissed()" class="hidden btn-game w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-rose-500 hover:bg-rose-600 text-white font-black flex items-center justify-center gap-2">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <span>まちがえた問題だけ復習する</span>
+          </button>
+          <button onclick="app.restartCurrentMode()" class="btn-game w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white font-black flex items-center justify-center gap-2">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>もう一度同じコースをやる</span>
+          </button>
+          <button onclick="app.showBonusModal()" class="btn-game w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black flex items-center justify-center gap-2">
+            <i class="fa-solid fa-pen-fancy"></i>
+            <span>記述問題にチャレンジ</span>
+          </button>
+          <button onclick="app.showHome()" class="btn-game w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-black flex items-center justify-center gap-2">
+            <i class="fa-solid fa-house"></i>
+            <span>コース選択へ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: STUDY REFERENCE SHEET (暗記シート) ==================== -->
+    <section id="studyView" class="hidden animate-pop space-y-6">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-emerald-200 shadow-lg space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4">
+          <div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+              テスト前の見直し用
+            </span>
+            <h2 class="text-2xl font-black text-slate-800 mt-1">
+              <ruby>全<rt>ぜん</rt></ruby>15<ruby>問<rt>もん</rt></ruby>＋<ruby>記述<rt>きじゅつ</rt></ruby>のポイント<ruby>一覧<rt>いちらん</rt></ruby>
+            </h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="app.toggleHideAnswers()" id="hideAnswersBtn" class="btn-game px-4 py-2.5 rounded-xl bg-amber-500 text-white font-black text-sm flex items-center gap-2">
+              <i class="fa-solid fa-eye-slash"></i>
+              <span>赤シートモード（答えをかくす）</span>
+            </button>
+            <button onclick="app.showHome()" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm">
+              とじる
+            </button>
+          </div>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-500">
+          💡 「赤シートモード」をおすと、答えがかくれてタップで1つずつ確認できるよ！
+        </p>
+
+        <div id="studyTableContainer" class="space-y-3">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL: BONUS DESCRIPTIVE QUESTION ==================== -->
+  <div id="bonusModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 border-4 border-purple-300 shadow-2xl space-y-5 animate-pop max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between">
+        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 font-black text-xs sm:text-sm flex items-center gap-1.5">
+          <i class="fa-solid fa-star text-amber-500"></i> カラーテストによく出る記述問題！
+        </span>
+        <button onclick="app.closeBonusModal()" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-4 sm:p-5 rounded-2xl bg-purple-50 border-2 border-purple-200 space-y-2">
+        <div class="text-xs font-black text-purple-600">【問題】声に出すか、下のメモらんに書いてみよう！</div>
+        <p class="text-lg sm:text-xl font-black text-slate-800 leading-relaxed">
+          「なぜ<ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て<ruby>工場<rt>こうじょう</rt></ruby>のまわりには、<ruby>関連工場<rt>かんれんこうじょう</rt></ruby>（<ruby>部品工場<rt>ぶひんこうじょう</rt></ruby>）がたくさん<ruby>集<rt>あつ</rt></ruby>まっているのですか？」
+        </p>
+      </div>
+
+      <!-- Optional Practice Textarea for Kaya -->
+      <div class="space-y-2">
+        <label class="text-xs font-bold text-slate-500 block">
+          ✏️ 自分の答えを書いてみよう（頭の中で考えてから下のボタンをおしてもOK！）：
+        </label>
+        <textarea id="bonusUserText" rows="2" placeholder="例：必要な部品を、短い時間で組み立て工場に届けるため。"
+          class="w-full p-3.5 rounded-2xl border-2 border-slate-200 focus:border-purple-500 focus:outline-none text-sm sm:text-base font-medium"></textarea>
+      </div>
+
+      <!-- Reveal Answer Button -->
+      <div id="bonusRevealBtnBox" class="text-center">
+        <button onclick="app.revealBonusAnswer()" class="btn-game w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-black text-base flex items-center justify-center gap-2 mx-auto">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>模範解答（もはんかいとう）と採点ポイントを見る！</span>
+        </button>
+      </div>
+
+      <!-- Revealed Answer & Checklist -->
+      <div id="bonusAnswerSection" class="hidden space-y-4 pt-2 border-t border-slate-200">
+        <div class="p-4 rounded-2xl bg-emerald-50 border-2 border-emerald-300 space-y-2">
+          <div class="text-xs font-black text-emerald-700 flex items-center gap-1">
+            <i class="fa-solid fa-circle-check"></i> 模範解答（れい）
+          </div>
+          <p class="text-base sm:text-lg font-black text-slate-800 leading-relaxed">
+            「<span class="text-rose-600 underline decoration-2">必要な部品を、必要な時に、必要な数だけ</span>、<span class="text-sky-700 underline decoration-2">短い時間（安い輸送費）で</span>組み立て工場に届けるため。」
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs font-black text-slate-600">
+            ✨ 次の3つのポイントのうち、2つ以上入っていればテストで花丸（◎）だよ！
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs sm:text-sm font-bold">
+            <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
+              <input type="checkbox" class="w-4 h-4 accent-purple-600">
+              <span>① 必要な時・必要な数だけ（ジャストインタイム）</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
+              <input type="checkbox" class="w-4 h-4 accent-purple-600">
+              <span>② 短い時間で（すぐに）届けるため</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
+              <input type="checkbox" class="w-4 h-4 accent-purple-600">
+              <span>③ 運ぶ費用（輸送費）をおさえるため</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <button onclick="app.closeBonusModal()" class="btn-game px-6 py-2.5 rounded-xl bg-purple-600 text-white font-black text-sm">
+            バッチリ！とじる
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script>
+    /**
+     * Complete dataset of all 15 5th-grade Social Studies questions
+     * Covering:
+     * - Part 1: 自動車をつくる工業 (Q1 - Q7)
+     * - Part 2: 日本の工業地域・工業地帯 (Q8 - Q11)
+     * - Part 3: 水産業のさかんな地域 (Q12 - Q15)
+     */
+    const QUIZ_DATA = [
+      // ==================== 第1部：自動車をつくる工業 ====================
+      {
+        id: 1,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'choice',
+        questionHtml: '自動車の工場で、ベルトコンベヤーの上を動く車体に、次々と部品を取り付けていく作業のしくみを何といいますか。',
+        choices: ['手工業ライン', '組み立てライン', '部品ライン'],
+        answer: '組み立てライン',
+        explanation: '流れ作業で効率よく車をつくります。1つのラインで違う車種を続けてつくる工夫もされています。'
+      },
+      {
+        id: 2,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'fill',
+        questionHtml: '車体の「<ruby>溶接<rt>ようせつ</rt></ruby>」や「<ruby>塗装<rt>とそう</rt></ruby>」の<ruby>工程<rt>こうてい</rt></ruby>で、正確で速く、危険な作業を人間の代わりに多く行っているものは何ですか。',
+        promptPrefix: '（',
+        promptSuffix: '）ロボット',
+        choices: ['産業用', '家庭用', '医療用', '農業用'],
+        answer: '産業用',
+        acceptableAnswers: ['産業用', 'さんぎょうよう', '産業用ロボット', 'さんぎょうようろぼっと'],
+        fullAnswerDisplay: '産業用ロボット',
+        explanation: '溶接や塗装など、火花が出たり塗料を扱ったりする作業で「産業用ロボット」がかつやくしています。'
+      },
+      {
+        id: 3,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'choice',
+        questionHtml: '日本の多くの自動車工場で行われている、むだをなくすために「必要な部品を、必要な時に、必要なだけ」工場に届けるしくみを何といいますか。',
+        choices: ['ジャストインタイム', 'タイムセール', 'フルタイム方式'],
+        answer: 'ジャストインタイム',
+        explanation: '倉庫にたくさんの部品をためておく「むだ」をなくす工夫です。'
+      },
+      {
+        id: 4,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'choice',
+        questionHtml: '1台の自動車は、およそ何個の部品からつくられていますか。',
+        choices: ['約300個', '約3,000個', '約3万個'],
+        answer: '約3万個',
+        explanation: 'エンジンやタイヤから小さなネジまで、約3万個の部品が使われています。'
+      },
+      {
+        id: 5,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'fill',
+        questionHtml: '自動車を組み立てる工場（親工場）のまわりには、部品をつくるたくさんの工場が集まっています。このような部品工場のことを何といいますか。',
+        promptPrefix: '（',
+        promptSuffix: '）工場',
+        choices: ['関連', '下町', '直営', '組立'],
+        answer: '関連',
+        acceptableAnswers: ['関連', 'かんれん', '関連工場', 'かんれんこうじょう'],
+        fullAnswerDisplay: '関連工場',
+        explanation: '多くの関連工場が協力して部品をつくり、組み立て工場へ届けています。'
+      },
+      {
+        id: 6,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'choice',
+        questionHtml: '地球温暖化や空気のよごれを防ぐために開発された、ガソリンエンジンと電気モーターの両方を使って走る自動車を何といいますか。',
+        choices: ['ハイブリッド車（HV）', '燃料電池車（FCV）', 'ディーゼル車'],
+        answer: 'ハイブリッド車（HV）',
+        explanation: '水素と酸素で電気をつくって走るのは「燃料電池車（FCV）」、電気だけで走るのは「電気自動車（EV）」です。'
+      },
+      {
+        id: 7,
+        part: 'part1',
+        partTitle: '第1部：自動車をつくる工業',
+        type: 'fill',
+        questionHtml: '日本でつくられた自動車を外国へ<ruby>輸出<rt>ゆしゅつ</rt></ruby>するとき、一度に数千台の自動車を積み込んで運ぶ専用の大きな船を何といいますか。',
+        promptPrefix: '（',
+        promptSuffix: '）船',
+        choices: ['自動車運搬', 'コンテナ', 'タンカー', 'フェリー'],
+        answer: '自動車運搬',
+        acceptableAnswers: ['自動車運搬', 'じどうしゃうんぱん', '自動車運搬船', 'じどうしゃうんぱんせん'],
+        fullAnswerDisplay: '自動車運搬船',
+        explanation: '船の中が立体駐車場のようになっていて、一度に5,000〜6,000台ほどの車を運べます。'
+      },
+
+      // ==================== 第2部：日本の工業地域・工業地帯 ====================
+      {
+        id: 8,
+        part: 'part2',
+        partTitle: '第2部：日本の工業地域・工業地帯',
+        type: 'choice',
+        questionHtml: '愛知県（豊田市など）を中心に広がり、日本でいちばん工業生産額が多い工業地帯はどこですか。',
+        choices: ['京浜工業地帯', '中京工業地帯', '阪神工業地帯'],
+        answer: '中京工業地帯',
+        explanation: '自動車などの「機械工業」の割合がとても高く、生産額は日本一です。'
+      },
+      {
+        id: 9,
+        part: 'part2',
+        partTitle: '第2部：日本の工業地域・工業地帯',
+        type: 'fill',
+        questionHtml: '日本の主な工業地帯や工業地域が、太平洋側（東京〜福岡にかけての海岸沿い）にベルトのように連なっている地域をまとめて何と呼びますか。',
+        promptPrefix: '（',
+        promptSuffix: '）ベルト',
+        choices: ['太平洋', '日本海', '瀬戸内', '関東'],
+        answer: '太平洋',
+        acceptableAnswers: ['太平洋', 'たいへいよう', '太平洋ベルト', 'たいへいようべると'],
+        fullAnswerDisplay: '太平洋ベルト',
+        explanation: '関東から九州北部まで、海沿いに工業地帯・地域が並んでいます。'
+      },
+      {
+        id: 10,
+        part: 'part2',
+        partTitle: '第2部：日本の工業地域・工業地帯',
+        type: 'choice',
+        questionHtml: '日本の工場の数のうち、働く人が300人未満の「中小工場」は全体のどのくらいの割合を占めていますか。',
+        choices: ['約30％', '約60％', '約99％'],
+        answer: '約99％',
+        explanation: '日本の工場のほとんど（約99％）は中小工場で、世界にほこる高い技術をもっています。'
+      },
+      {
+        id: 11,
+        part: 'part2',
+        partTitle: '第2部：日本の工業地域・工業地帯',
+        type: 'choice',
+        questionHtml: '日本の工業地域が「海沿い（<ruby>臨海部<rt>りんかいぶ</rt></ruby>）」に多くつくられた一番の理由として、正しいものはどれですか。',
+        choices: [
+          '海の景色がよくて働きやすいから',
+          '外国から原料を輸入し、できた製品を船で輸出しやすいから',
+          '台風や津波の被害を受けにくいから'
+        ],
+        answer: '外国から原料を輸入し、できた製品を船で輸出しやすいから',
+        explanation: '日本は鉄鉱石や石油などの原料を外国からの輸入にたよっているため、大型船が着く港の近くに工場が集まりました。'
+      },
+
+      // ==================== 第3部：水産業のさかんな地域 ====================
+      {
+        id: 12,
+        part: 'part3',
+        partTitle: '第3部：水産業のさかんな地域',
+        type: 'fill',
+        questionHtml: '日本のまわりには<ruby>暖流<rt>だんりゅう</rt></ruby>（あたたかい海流）と<ruby>寒流<rt>かんりゅう</rt></ruby>（つめたい海流）が流れています。暖流と寒流がぶつかる場所で、プランクトンが多く魚がたくさん集まる場所を何といいますか。',
+        promptPrefix: '（',
+        promptSuffix: '）',
+        choices: ['潮目（潮境）', '大陸棚', 'サンゴ礁', '黒潮'],
+        answer: '潮目（潮境）',
+        acceptableAnswers: ['潮目', 'しおめ', '潮境', 'しおざかい', '潮目（潮境）'],
+        fullAnswerDisplay: '潮目（しおめ） / 潮境（しおざかい）',
+        explanation: '「潮目」「潮境」どちらを書いても正解です。世界三大漁場の1つである三陸沖などが有名です。'
+      },
+      {
+        id: 13,
+        part: 'part3',
+        partTitle: '第3部：水産業のさかんな地域',
+        type: 'choice',
+        questionHtml: '日本の太平洋側を北から南へ流れる「寒流（<ruby>親潮<rt>おやしお</rt></ruby>）」とぶつかり、南から北へ流れる代表的な「暖流」の名前は何ですか。',
+        choices: ['黒潮（日本海流）', '対馬海流', 'リマン海流'],
+        answer: '黒潮（日本海流）',
+        explanation: '太平洋側を流れる暖流は「黒潮（日本海流）」です。日本海側を流れる暖流は「対馬海流」、寒流は「リマン海流」です。'
+      },
+      {
+        id: 14,
+        part: 'part3',
+        partTitle: '第3部：水産業のさかんな地域',
+        type: 'fill',
+        questionHtml: 'いけすの中で、<ruby>稚魚<rt>ちぎょ</rt></ruby>や稚貝にえさを与えて大きく育ててから出荷する漁業を「<ruby>養殖業<rt>ようしょくぎょう</rt></ruby>」といいます。では、卵から稚魚まで人工的に育てたあと、海に<ruby>放流<rt>ほうりゅう</rt></ruby>して自然の海で育ったものをとる漁業を何といいますか。',
+        promptPrefix: '（',
+        promptSuffix: '）漁業',
+        choices: ['栽培', '養殖', '遠洋', '沖合'],
+        answer: '栽培',
+        acceptableAnswers: ['栽培', 'さいばい', '栽培漁業', 'さいばいぎょぎょう'],
+        fullAnswerDisplay: '栽培漁業',
+        explanation: '「とる漁業」から「つくる漁業（養殖業・栽培漁業）」へと力を入れています。'
+      },
+      {
+        id: 15,
+        part: 'part3',
+        partTitle: '第3部：水産業のさかんな地域',
+        type: 'choice',
+        questionHtml: '日本の周りの海で、その国の漁船が優先して魚をとったり資源を管理したりできる、海岸から200<ruby>海里<rt>かいり</rt></ruby>（約370km）までの範囲を何といいますか。',
+        choices: ['排他的経済水域（EEZ）', '国際漁業エリア', '日本海保護区'],
+        answer: '排他的経済水域（EEZ）',
+        explanation: '日本は小さな島国ですが、この排他的経済水域（EEZ）の広さは世界で6番目に広いです。'
+      }
+    ];
+
+    /**
+     * Web Audio Synth for cheerful game sound effects without external audio files
+     */
+    class SoundEffects {
+      constructor() {
+        this.enabled = true;
+        this.ctx = null;
+      }
+
+      initContext() {
+        if (!this.ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx) this.ctx = new AudioCtx();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+
+      playTone(freq, type, duration, delay = 0, gainVal = 0.12) {
+        if (!this.enabled) return;
+        try {
+          this.initContext();
+          if (!this.ctx) return;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, this.ctx.currentTime + delay);
+          gain.gain.setValueAtTime(gainVal, this.ctx.currentTime + delay);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + delay + duration);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(this.ctx.currentTime + delay);
+          osc.stop(this.ctx.currentTime + delay + duration);
+        } catch (e) {
+          // Ignore audio errors
+        }
+      }
+
+      playCorrect() {
+        // Classic Japanese quiz "Pin-Pon!" chime
+        this.playTone(659.25, 'sine', 0.18, 0, 0.15);   // E5
+        this.playTone(523.25, 'sine', 0.35, 0.16, 0.15); // C5
+        this.playTone(1046.5, 'triangle', 0.35, 0.16, 0.08); // C6 harmonic
+      }
+
+      playWrong() {
+        // Gentle low "Bu-bu" tone
+        this.playTone(220, 'sawtooth', 0.16, 0, 0.08);
+        this.playTone(196, 'sawtooth', 0.25, 0.16, 0.08);
+      }
+
+      playFanfare() {
+        const notes = [523.25, 659.25, 783.99, 1046.5];
+        notes.forEach((n, idx) => {
+          this.playTone(n, 'triangle', 0.25, idx * 0.11, 0.14);
+        });
+      }
+    }
+
+    /**
+     * Main Quiz App Controller
+     */
+    class SocialStudiesApp {
+      constructor() {
+        this.sfx = new SoundEffects();
+        this.currentMode = 'all';
+        this.questions = [];
+        this.currentIndex = 0;
+        this.score = 0;
+        this.combo = 0;
+        this.maxCombo = 0;
+        this.missedQuestions = [];
+        this.answeredCurrent = false;
+        this.useDirectKeyboard = false;
+        this.bestScoreAll = 0;
+        this.redSheetActive = false;
+
+        this.renderStudySheet();
+      }
+
+      // Navigation helpers
+      hideAllViews() {
+        ['homeView', 'quizView', 'resultsView', 'studyView'].forEach(id => {
+          document.getElementById(id).classList.add('hidden');
+        });
+      }
+
+      showHome() {
+        this.hideAllViews();
+        document.getElementById('homeView').classList.remove('hidden');
+      }
+
+      showStudySheet() {
+        this.hideAllViews();
+        document.getElementById('studyView').classList.remove('hidden');
+      }
+
+      toggleSound() {
+        this.sfx.enabled = !this.sfx.enabled;
+        const icon = document.getElementById('soundIcon');
+        const label = document.getElementById('soundLabel');
+        if (this.sfx.enabled) {
+          icon.className = 'fa-solid fa-volume-high text-sky-600';
+          label.textContent = '音 ON';
+          this.sfx.playTone(660, 'sine', 0.1);
+        } else {
+          icon.className = 'fa-solid fa-volume-xmark text-slate-400';
+          label.textContent = '音 OFF';
+        }
+      }
+
+      startQuiz(mode, customQuestions = null) {
+        this.currentMode = mode;
+        if (customQuestions) {
+          this.questions = [...customQuestions];
+        } else if (mode === 'all') {
+          this.questions = [...QUIZ_DATA];
+        } else {
+          this.questions = QUIZ_DATA.filter(q => q.part === mode);
+        }
+
+        this.currentIndex = 0;
+        this.score = 0;
+        this.combo = 0;
+        this.maxCombo = 0;
+        this.missedQuestions = [];
+
+        this.hideAllViews();
+        document.getElementById('quizView').classList.remove('hidden');
+        this.renderQuestion();
+      }
+
+      restartCurrentMode() {
+        this.startQuiz(this.currentMode);
+      }
+
+      retryMissed() {
+        if (this.missedQuestions.length === 0) return;
+        this.startQuiz('missed', this.missedQuestions);
+      }
+
+      toggleInputMode() {
+        this.useDirectKeyboard = !this.useDirectKeyboard;
+        this.updateInputModeUI();
+      }
+
+      updateInputModeUI() {
+        const q = this.questions[this.currentIndex];
+        if (!q || q.type !== 'fill' || this.answeredCurrent) return;
+
+        const choicesContainer = document.getElementById('choicesContainer');
+        const keyboardContainer = document.getElementById('keyboardInputContainer');
+        const label = document.getElementById('inputModeLabel');
+
+        if (this.useDirectKeyboard) {
+          choicesContainer.classList.add('hidden');
+          keyboardContainer.classList.remove('hidden');
+          label.textContent = '語群（ボタン）から選ぶ';
+          setTimeout(() => document.getElementById('directTextInput').focus(), 50);
+        } else {
+          choicesContainer.classList.remove('hidden');
+          keyboardContainer.classList.add('hidden');
+          label.textContent = 'キーボードで直接入力する';
+        }
+      }
+
+      renderQuestion() {
+        this.answeredCurrent = false;
+        const q = this.questions[this.currentIndex];
+        const total = this.questions.length;
+
+        // Top Bar updates
+        document.getElementById('quizPartBadge').textContent = q.partTitle;
+        document.getElementById('currentQNum').textContent = this.currentIndex + 1;
+        document.getElementById('totalQNum').textContent = total;
+        document.getElementById('scoreCount').textContent = this.score;
+
+        const progressPercent = Math.round(((this.currentIndex) / total) * 100);
+        document.getElementById('progressBar').style.width = `${Math.max(8, progressPercent)}%`;
+
+        // Combo badge
+        const comboBadge = document.getElementById('comboBadge');
+        if (this.combo >= 2) {
+          comboBadge.classList.remove('hidden');
+          document.getElementById('comboCount').textContent = this.combo;
+        } else {
+          comboBadge.classList.add('hidden');
+        }
+
+        // Question Type Badge & Input Mode Button
+        const qTypeBadge = document.getElementById('qTypeBadge');
+        const inputToggleBtn = document.getElementById('inputModeToggleBtn');
+        const fillPromptBox = document.getElementById('fillPromptBox');
+
+        if (q.type === 'choice') {
+          qTypeBadge.innerHTML = '<i class="fa-solid fa-list-ul"></i> 3択クイズ';
+          qTypeBadge.className = 'inline-flex items-center gap-1.5 text-xs font-black px-3 py-1 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200';
+          inputToggleBtn.classList.add('hidden');
+          fillPromptBox.classList.add('hidden');
+        } else {
+          qTypeBadge.innerHTML = '<i class="fa-solid fa-puzzle-piece"></i> 穴埋めクイズ';
+          qTypeBadge.className = 'inline-flex items-center gap-1.5 text-xs font-black px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200';
+          inputToggleBtn.classList.remove('hidden');
+          fillPromptBox.classList.remove('hidden');
+          fillPromptBox.innerHTML = `${q.promptPrefix}<span id="blankSlotText" class="blank-slot">？</span>${q.promptSuffix}`;
+        }
+
+        // Question text
+        document.getElementById('questionText').innerHTML = q.questionHtml;
+
+        // Clear direct text input
+        const directInput = document.getElementById('directTextInput');
+        directInput.value = '';
+        directInput.disabled = false;
+
+        // Render option buttons
+        const choicesContainer = document.getElementById('choicesContainer');
+        choicesContainer.innerHTML = '';
+
+        const labels = ['ア', 'イ', 'ウ', 'エ'];
+        if (q.type === 'fill') {
+          choicesContainer.className = 'grid grid-cols-2 gap-3';
+        } else {
+          choicesContainer.className = 'grid grid-cols-1 gap-3';
+        }
+
+        q.choices.forEach((choiceText, idx) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'btn-game choice-btn text-left p-4 rounded-2xl border-2 border-slate-200 bg-white hover:border-sky-400 hover:bg-sky-50/50 font-black text-slate-800 text-base sm:text-lg flex items-center gap-3 transition';
+          btn.dataset.choice = choiceText;
+
+          const prefixBadge = q.type === 'choice'
+            ? `<span class="w-8 h-8 rounded-xl bg-sky-100 text-sky-700 font-black text-sm flex items-center justify-center shrink-0">${labels[idx]}</span>`
+            : `<span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 font-black text-xs flex items-center justify-center shrink-0"><i class="fa-solid fa-plus"></i></span>`;
+
+          btn.innerHTML = `${prefixBadge}<span>${choiceText}</span>`;
+          btn.onclick = () => this.checkAnswer(choiceText, btn);
+          choicesContainer.appendChild(btn);
+        });
+
+        // Hide feedback panel
+        document.getElementById('feedbackPanel').classList.add('hidden');
+
+        // Apply input mode preference for fill questions
+        if (q.type === 'fill') {
+          this.updateInputModeUI();
+        } else {
+          choicesContainer.classList.remove('hidden');
+          document.getElementById('keyboardInputContainer').classList.add('hidden');
+        }
+      }
+
+      submitDirectInput() {
+        if (this.answeredCurrent) return;
+        const inputEl = document.getElementById('directTextInput');
+        const val = inputEl.value.trim();
+        if (!val) return;
+        this.checkAnswer(val, null, true);
+      }
+
+      checkAnswer(userChoice, clickedBtn = null, isDirectText = false) {
+        if (this.answeredCurrent) return;
+        this.answeredCurrent = true;
+
+        const q = this.questions[this.currentIndex];
+        let isCorrect = false;
+
+        if (isDirectText && q.acceptableAnswers) {
+          const normalized = userChoice.replace(/\s+/g, '').toLowerCase();
+          isCorrect = q.acceptableAnswers.some(ans => ans.toLowerCase() === normalized);
+        } else {
+          isCorrect = (userChoice === q.answer);
+        }
+
+        // Update fill slot if applicable
+        if (q.type === 'fill') {
+          const slot = document.getElementById('blankSlotText');
+          if (slot) {
+            slot.textContent = q.answer;
+            slot.classList.add('filled');
+          }
+        }
+
+        // Disable all choice buttons and highlight correct/wrong
+        const allBtns = document.querySelectorAll('.choice-btn');
+        allBtns.forEach(btn => {
+          btn.disabled = true;
+          const c = btn.dataset.choice;
+          if (c === q.answer) {
+            btn.className = 'p-4 rounded-2xl border-2 border-emerald-500 bg-emerald-50 font-black text-emerald-900 text-base sm:text-lg flex items-center gap-3';
+          } else if (btn === clickedBtn && !isCorrect) {
+            btn.className = 'p-4 rounded-2xl border-2 border-rose-400 bg-rose-50 font-black text-rose-900 text-base sm:text-lg flex items-center gap-3 opacity-80';
+          } else {
+            btn.classList.add('opacity-50');
+          }
+        });
+
+        document.getElementById('directTextInput').disabled = true;
+
+        // Update score & combo
+        if (isCorrect) {
+          this.score++;
+          this.combo++;
+          if (this.combo > this.maxCombo) this.maxCombo = this.combo;
+          this.sfx.playCorrect();
+        } else {
+          this.combo = 0;
+          this.missedQuestions.push(q);
+          this.sfx.playWrong();
+        }
+
+        document.getElementById('scoreCount').textContent = this.score;
+        const comboBadge = document.getElementById('comboBadge');
+        if (this.combo >= 2) {
+          comboBadge.classList.remove('hidden');
+          document.getElementById('comboCount').textContent = this.combo;
+        } else {
+          comboBadge.classList.add('hidden');
+        }
+
+        // Show Feedback Panel
+        const panel = document.getElementById('feedbackPanel');
+        const header = document.getElementById('feedbackHeader');
+        const ansBadge = document.getElementById('correctAnswerBadge');
+        const expText = document.getElementById('explanationText');
+        const nextBtn = document.getElementById('nextQuestionBtn');
+
+        panel.classList.remove('hidden');
+        const displayAnswer = q.fullAnswerDisplay || q.answer;
+
+        if (isCorrect) {
+          panel.className = 'rounded-2xl p-5 border-2 border-emerald-300 bg-emerald-50/90 space-y-3 animate-pop';
+          header.innerHTML = '<i class="fa-solid fa-circle-check text-emerald-600 text-2xl"></i><span class="text-emerald-800">大正解！やったね！</span>';
+          ansBadge.className = 'text-sm font-black px-3 py-1 rounded-xl bg-white text-emerald-800 border border-emerald-300';
+          ansBadge.textContent = `答え：${displayAnswer}`;
+        } else {
+          panel.className = 'rounded-2xl p-5 border-2 border-rose-300 bg-rose-50/90 space-y-3 animate-pop';
+          header.innerHTML = '<i class="fa-solid fa-circle-exclamation text-rose-500 text-2xl"></i><span class="text-rose-800">おしい！ここで覚えよう！</span>';
+          ansBadge.className = 'text-sm font-black px-3 py-1 rounded-xl bg-white text-rose-700 border border-rose-300';
+          ansBadge.textContent = `正解：${displayAnswer}`;
+        }
+
+        expText.textContent = q.explanation;
+
+        if (this.currentIndex + 1 < this.questions.length) {
+          nextBtn.innerHTML = '<span>つぎの問題へ</span><i class="fa-solid fa-arrow-right"></i>';
+        } else {
+          nextBtn.innerHTML = '<span>けっかを見る！</span><i class="fa-solid fa-flag-checkered"></i>';
+        }
+      }
+
+      nextQuestion() {
+        this.currentIndex++;
+        if (this.currentIndex < this.questions.length) {
+          this.renderQuestion();
+        } else {
+          this.showResults();
+        }
+      }
+
+      showResults() {
+        this.hideAllViews();
+        document.getElementById('resultsView').classList.remove('hidden');
+        this.sfx.playFanfare();
+
+        const total = this.questions.length;
+        const ratio = this.score / total;
+
+        document.getElementById('finalScoreNum').textContent = this.score;
+        document.getElementById('finalTotalNum').textContent = total;
+        document.getElementById('finalMaxCombo').textContent = this.maxCombo;
+
+        // Update best score on home screen if playing all 15 or proportional
+        if (this.score > this.bestScoreAll) {
+          this.bestScoreAll = this.score;
+          document.getElementById('bestScoreDisplay').textContent = this.bestScoreAll;
+          document.getElementById('masteryBadgeText').textContent =
+            this.bestScoreAll === 15 ? '👑 全問制覇！社会科マスター！' : 'ナイスチャレンジ！記録更新中！';
+        }
+
+        const rankBadge = document.getElementById('resultRankBadge');
+        const resultTitle = document.getElementById('resultTitle');
+
+        if (ratio === 1) {
+          rankBadge.textContent = '👑 パーフェクト！社会科博士ランク';
+          resultTitle.textContent = '全問正解！テスト100点まちがいなし！';
+        } else if (ratio >= 0.8) {
+          rankBadge.textContent = '🌟 すばらしい！社会科マスターランク';
+          resultTitle.textContent = 'あと少しで満点！よくおぼえているね！';
+        } else if (ratio >= 0.5) {
+          rankBadge.textContent = '🔥 ナイスファイト！チャレンジャーランク';
+          resultTitle.textContent = 'いい調子！まちがえた問題を復習しよう！';
+        } else {
+          rankBadge.textContent = '🌱 のびしろたっぷり！スタートランク';
+          resultTitle.textContent = '解説を読んで、もう一度チャレンジしてみよう！';
+        }
+
+        // Missed questions section
+        const missedSection = document.getElementById('missedSection');
+        const missedList = document.getElementById('missedList');
+        const retryMissedBtn = document.getElementById('retryMissedBtn');
+
+        if (this.missedQuestions.length > 0) {
+          missedSection.classList.remove('hidden');
+          retryMissedBtn.classList.remove('hidden');
+          missedList.innerHTML = '';
+
+          this.missedQuestions.forEach(q => {
+            const card = document.createElement('div');
+            card.className = 'p-3.5 rounded-2xl bg-rose-50/70 border border-rose-200 text-sm space-y-1';
+            const displayAns = q.fullAnswerDisplay || q.answer;
+            card.innerHTML = `
+              <div class="font-bold text-slate-800">第${q.id}問：${q.questionHtml}</div>
+              <div class="text-rose-700 font-black">正解：${displayAns}</div>
+              <div class="text-xs text-slate-600">${q.explanation}</div>
+            `;
+            missedList.appendChild(card);
+          });
+        } else {
+          missedSection.classList.add('hidden');
+          retryMissedBtn.classList.add('hidden');
+        }
+      }
+
+      // Bonus Descriptive Question Modal
+      showBonusModal() {
+        document.getElementById('bonusModal').classList.remove('hidden');
+        document.getElementById('bonusAnswerSection').classList.add('hidden');
+        document.getElementById('bonusRevealBtnBox').classList.remove('hidden');
+      }
+
+      closeBonusModal() {
+        document.getElementById('bonusModal').classList.add('hidden');
+      }
+
+      revealBonusAnswer() {
+        this.sfx.playCorrect();
+        document.getElementById('bonusRevealBtnBox').classList.add('hidden');
+        document.getElementById('bonusAnswerSection').classList.remove('hidden');
+      }
+
+      // Study Sheet & Red Sheet Mode (赤シート機能)
+      renderStudySheet() {
+        const container = document.getElementById('studyTableContainer');
+        container.innerHTML = '';
+
+        QUIZ_DATA.forEach(q => {
+          const item = document.createElement('div');
+          item.className = 'p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3';
+          const displayAns = q.fullAnswerDisplay || q.answer;
+          item.innerHTML = `
+            <div class="space-y-1 flex-1">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black px-2 py-0.5 rounded bg-sky-100 text-sky-800">第${q.id}問</span>
+                <span class="text-xs font-bold text-slate-500">${q.partTitle}</span>
+              </div>
+              <div class="text-sm sm:text-base font-bold text-slate-800">${q.questionHtml}</div>
+              <div class="text-xs text-slate-500">${q.explanation}</div>
+            </div>
+            <div onclick="this.classList.toggle('revealed')" class="study-answer-box shrink-0 px-4 py-2.5 rounded-xl bg-emerald-100 border-2 border-emerald-300 text-emerald-900 font-black text-base text-center cursor-pointer select-none min-w-[160px] transition">
+              <span class="study-answer-text">${displayAns}</span>
+            </div>
+          `;
+          container.appendChild(item);
+        });
+      }
+
+      toggleHideAnswers() {
+        this.redSheetActive = !this.redSheetActive;
+        const btn = document.getElementById('hideAnswersBtn');
+        const boxes = document.querySelectorAll('.study-answer-box');
+
+        if (this.redSheetActive) {
+          btn.innerHTML = '<i class="fa-solid fa-eye"></i><span>答えをすべて表示する</span>';
+          btn.className = 'btn-game px-4 py-2.5 rounded-xl bg-rose-500 text-white font-black text-sm flex items-center gap-2';
+          boxes.forEach(b => {
+            b.classList.remove('revealed');
+            b.classList.add('bg-rose-500', 'border-rose-600', 'text-transparent');
+            b.classList.remove('bg-emerald-100', 'border-emerald-300', 'text-emerald-900');
+          });
+        } else {
+          btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i><span>赤シートモード（答えをかくす）</span>';
+          btn.className = 'btn-game px-4 py-2.5 rounded-xl bg-amber-500 text-white font-black text-sm flex items-center gap-2';
+          boxes.forEach(b => {
+            b.classList.remove('bg-rose-500', 'border-rose-600', 'text-transparent');
+            b.classList.add('bg-emerald-100', 'border-emerald-300', 'text-emerald-900');
+          });
+        }
+      }
+    }
+
+    // Add CSS rule dynamically for individual tap-reveal in Red Sheet Mode
+    const style = document.createElement('style');
+    style.textContent = `
+      .study-answer-box.bg-rose-500.revealed {
+        background-color: #d1fae5 !important;
+        border-color: #6ee7b7 !important;
+        color: #064e3b !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Initialize Application on Load
+    let app;
+    window.onload = function () {
+      app = new SocialStudiesApp();
+    };
+  </script>
+</body>
+</html>
