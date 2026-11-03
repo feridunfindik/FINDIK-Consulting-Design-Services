@@ -97,8 +97,9 @@
 
         <!-- Global Unique Visitor Counter -->
         <div class="global-counter">
-            🌍 これまでに挑戦した延べ人数: <span id="global-count-display">読み込み中...</span> 人
-        </div>
+    🌍 累計挑戦者数: <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdesign.feridun.info%2Fataquizdaily.html&countColor=%232563eb" alt="Visitor Count" />
+</div>
+
 
         <!-- Stats & Average Score Box -->
         <div class="stats-box">
@@ -204,30 +205,6 @@
         return { totalQuizzes, averageScore };
     }
 
-    async function updateGlobalParticipantCount() {
-        try {
-            // Using a reliable public counter API namespace for your site
-            // We check if this device already counted this session to prevent spamming count on refresh
-            const hasCounted = sessionStorage.getItem("quiz_counted");
-            let url = "https://api.counterapi.dev/v1/feridun-quiz/participants/";
-            
-            if (!hasCounted) {
-                // Increment counter only once per browser session
-                url += "up";
-                sessionStorage.setItem("quiz_counted", "true");
-            } else {
-                // Just get current count without incrementing
-                url = "https://api.counterapi.dev/v1/feridun-quiz/participants";
-            }
-
-            const res = await fetch(url);
-            const data = await res.json();
-            document.getElementById("global-count-display").innerText = data.count || data.value || "-";
-        } catch (e) {
-            document.getElementById("global-count-display").innerText = "集計中";
-        }
-    }
-
     function showResults() {
         document.getElementById("quiz-screen").style.display = "none";
         document.getElementById("results-screen").style.display = "block";
@@ -238,9 +215,6 @@
         const stats = saveAndCalculateStats(score);
         document.getElementById("stat-total").innerText = `${stats.totalQuizzes}回`;
         document.getElementById("stat-average").innerText = `${stats.averageScore}点`;
-
-        // Fetch and display global participant counter
-        updateGlobalParticipantCount();
 
         const reviewList = document.getElementById("review-list");
         reviewList.innerHTML = "";
