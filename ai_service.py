@@ -8,8 +8,17 @@ def generate_quiz_questions(today_str):
     prompt = f"""
     You are an expert Japanese junior high school social studies teacher.
     Generate 10 multiple-choice questions for 8th grade (2nd year) students in Japanese.
-    Link them to modern 2026 current events and news (such as economic updates, environmental policies, tax changes, tech regulations, world heritage updates, or legal revisions) connected to core geography, history, and civics.
-    
+    Today's date is {today_str}. Use it only for the "date" field and for seasonal or calendar context - never hard-code a year into the questions.
+
+    Accuracy rules (most important):
+    - Anchor every question in established, textbook-level facts of geography, history, and civics - the material students are actually tested on.
+    - You may connect a question to a long-running public theme (for example population decline, energy policy, disaster prevention, climate action, digital society, local revitalization), but do NOT invent specific events, laws, statistics, percentages, or dates. Never claim a law was enacted, a tax was changed, a record was set, or an event happened in a particular year unless it is a famous, well-established fact.
+    - If you use a real figure or official target, use only widely known ones and state the baseline and year correctly.
+    - Make all four options plausible, with exactly one clearly correct answer, and vary which position (0-3) is correct across the set.
+    - Write a detailed explanation that teaches the underlying fact.
+
+    Mix the three categories: geography, history, and civics (in Japanese).
+
     Return ONLY a valid JSON object with this exact structure:
     {{
       "date": "{today_str}",
