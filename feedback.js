@@ -19,7 +19,7 @@ options: ["毎日見たい", "週に数回", "たまに", "あまり見ない"]}
 { text: "ニュースの本数（5本）はどうですか？", options: ["少ない", "ちょうどよい", "多い"]},
 { text: "要約の分かりやすさはどうですか？", required: true,
 options: ["とても分かりやすい", "分かりやすい", "ふつう", "分かりにくい"]},
-{ text: "もっと読みたい分野はどれですか？",
+{ text: "もっと読みたい分野はどれですか？（最大3つまで）", multi: true, max: 3,
 options: ["政治・国際", "経済", "天気・防災", "テクノロジー", "スポーツ", "エンタメ", "くらし・健康"]},
 { text: "ニュースから作るクイズがあったら、やってみたいですか？",
 options: ["やってみたい", "どちらでもよい", "いらない"]},
@@ -38,10 +38,20 @@ QUESTIONS.map((q, i) => `
 ${q.comment
 ? `<textarea name="q${i}" placeholder="自由に書いてください（任意）"></textarea>`
 : q.options.map(o => `
-<label class="opt"><input type="radio" name="q${i}" value="${o}">${o}</label>`).join("")}
+<label class="opt"><input type="${q.multi ? "checkbox" : "radio"}" name="q${i}" value="${o}">${o}</label>`).join("")}
 </div>`).join("") +
 `<button type="submit" class="submit-btn">送信する</button>
 <p class="error" id="err"></p>`;
+
+// 複数選択（multi）の上限チェック： max 個選んだら、残りの未選択肢を押せなくする
+QUESTIONS.forEach((q, i) => {
+if (!q.multi) return;
+const boxes = form.querySelectorAll(`input[name="q${i}"]`);
+boxes.forEach(b => b.addEventListener("change", () => {
+const checked = form.querySelectorAll(`input[name="q${i}"]:checked`);
+boxes.forEach(x => { if (!x.checked) x.disabled = checked.length >= q.max; });
+}));
+});
 
 form.addEventListener("submit", async (e) => {
 e.preventDefault();
@@ -58,10 +68,16 @@ return;
 // Google フォームの形式に合わせて送る
 const body = new FormData();
 QUESTIONS.forEach((q, i) => {
-const v = q.comment
-? form.querySelector(`textarea[name="q${i}"]`).value
-: (form.querySelector(`input[name="q${i}"]:checked`) || {}).value || "";
-if (ENTRY_IDS[i]) body.append(ENTRY_IDS[i], v);
+if (!ENTRY_IDS[i]) return;
+if (q.comment) {
+body.append(ENTRY_IDS[i], form.querySelector(`textarea[name="q${i}"]`).value);
+} else if (q.multi) {
+// 複数選択は、同じ entry ID を選んだ数だけ繰り返して送る（Google のチェックボックス形式）
+form.querySelectorAll(`input[name="q${i}"]:checked`)
+.forEach(b => body.append(ENTRY_IDS[i], b.value));
+} else {
+body.append(ENTRY_IDS[i], (form.querySelector(`input[name="q${i}"]:checked`) || {}).value || "");
+}
 });
 
 const btn = form.querySelector(".submit-btn");

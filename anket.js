@@ -18,7 +18,7 @@ const QUESTIONS = [
   { text: "Haber sayısı (5 haber) nasıl?", options: ["Az", "Tam kararında", "Çok"] },
   { text: "Özetlerin anlaşılırlığı nasıl?", required: true,
     options: ["Çok anlaşılır", "Anlaşılır", "Normal", "Anlaşılması zor"] },
-  { text: "Hangi alanda daha çok haber istersiniz?",
+  { text: "Hangi alanda daha çok haber istersiniz? (En fazla 3 tanesini seçebilirsiniz)", multi: true, max: 3,
     options: ["Siyaset ve Dünya", "Ekonomi", "Hava durumu ve Afet", "Teknoloji", "Spor", "Eğlence", "Yaşam ve Sağlık"] },
   { text: "Haberlerden hazırlanan bir bilgi yarışması olsa dener miydiniz?",
     options: ["Denerdim", "Fark etmez", "İstemezdim"] },
@@ -37,10 +37,20 @@ form.innerHTML =
       ${q.comment
         ? `<textarea name="q${i}" placeholder="Serbestçe yazabilirsiniz (isteğe bağlı)"></textarea>`
         : q.options.map(o => `
-          <label class="opt"><input type="radio" name="q${i}" value="${o}">${o}</label>`).join("")}
+          <label class="opt"><input type="${q.multi ? "checkbox" : "radio"}" name="q${i}" value="${o}">${o}</label>`).join("")}
     </div>`).join("") +
   `<button type="submit" class="submit-btn">Gönder</button>
    <p class="error" id="err"></p>`;
+
+// Çoklu seçim (multi) üst sınırı: max adet seçilince, seçili olmayan diğer kutular kilitlenir
+QUESTIONS.forEach((q, i) => {
+  if (!q.multi) return;
+  const boxes = form.querySelectorAll(`input[name="q${i}"]`);
+  boxes.forEach(b => b.addEventListener("change", () => {
+    const checked = form.querySelectorAll(`input[name="q${i}"]:checked`);
+    boxes.forEach(x => { if (!x.checked) x.disabled = checked.length >= q.max; });
+  }));
+});
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -55,10 +65,16 @@ form.addEventListener("submit", async (e) => {
 
   const body = new FormData();
   QUESTIONS.forEach((q, i) => {
-    const v = q.comment
-      ? form.querySelector(`textarea[name="q${i}"]`).value
-      : (form.querySelector(`input[name="q${i}"]:checked`) || {}).value || "";
-    if (ENTRY_IDS[i]) body.append(ENTRY_IDS[i], v);
+    if (!ENTRY_IDS[i]) return;
+    if (q.comment) {
+      body.append(ENTRY_IDS[i], form.querySelector(`textarea[name="q${i}"]`).value);
+    } else if (q.multi) {
+      // Çoklu seçimde aynı entry ID, seçilen her seçenek için bir kez gönderilir (Google onay kutusu biçimi)
+      form.querySelectorAll(`input[name="q${i}"]:checked`)
+        .forEach(b => body.append(ENTRY_IDS[i], b.value));
+    } else {
+      body.append(ENTRY_IDS[i], (form.querySelector(`input[name="q${i}"]:checked`) || {}).value || "");
+    }
   });
 
   const btn = form.querySelector(".submit-btn");
