@@ -1,0 +1,248 @@
+{
+  "comment": "出典レジストリ。feed がある出典は fetch_news.py が自動収集する。feed が null の出典は「web-only」＝自動実行時にAIが検索で確認する対象。feed_status は 2026-11-04 に実地確認した結果。",
+  "sources": [
+    {
+      "covers": [
+        "総合",
+        "政治",
+        "社会",
+        "天気・防災"
+      ],
+      "feed": null,
+      "feed_status": "RSS feed is stale (newest item Aug 2026) — web-only. Articles are still linked directly, as in the 2026-11-04 edition",
+      "lang": "ja",
+      "name": "NHKニュース",
+      "trust": "highest"
+    },
+    {
+      "covers": [
+        "総合",
+        "主要トピックス"
+      ],
+      "feed": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+      "feed_status": "verified 2026-11-04",
+      "lang": "ja",
+      "name": "Yahoo!ニュース トピックス",
+      "trust": "high — 配信元（共同・時事など）を記事ごとに確認する"
+    },
+    {
+      "covers": [
+        "総合",
+        "政治",
+        "社会",
+        "国際"
+      ],
+      "feed": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+      "feed_status": "verified 2026-11-04",
+      "lang": "ja",
+      "name": "朝日新聞",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "経済",
+        "ビジネス",
+        "マーケット"
+      ],
+      "feed": "https://assets.wor.jp/rss/rdf/nikkei/news.rdf",
+      "feed_status": "verified 2026-11-04",
+      "lang": "ja",
+      "name": "日本経済新聞",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "テクノロジー",
+        "AI",
+        "セキュリティ"
+      ],
+      "feed": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+      "feed_status": "verified 2026-11-04",
+      "lang": "ja",
+      "name": "ITmedia NEWS",
+      "trust": "medium-high"
+    },
+    {
+      "covers": [
+        "Japan news in English",
+        "国際の視点"
+      ],
+      "feed": "https://www.japantimes.co.jp/feed/",
+      "feed_status": "verified 2026-11-04",
+      "lang": "en",
+      "name": "The Japan Times",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "社会",
+        "事故・事件",
+        "天気"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "FNNプライムオンライン",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "社会",
+        "政治",
+        "天気"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "TBS NEWS DIG",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "総合",
+        "国際"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "日テレNEWS NNN",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "社会",
+        "国際",
+        "経済"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "テレビ朝日 news",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "政治",
+        "経済",
+        "国際"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "時事通信",
+      "trust": "highest"
+    },
+    {
+      "covers": [
+        "総合",
+        "速報"
+      ],
+      "feed": null,
+      "feed_status": "web-only（主にYahoo!ニュース経由）",
+      "lang": "ja",
+      "name": "共同通信",
+      "trust": "highest"
+    },
+    {
+      "covers": [
+        "総合",
+        "政治",
+        "スポーツ"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "読売新聞",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "総合",
+        "政治",
+        "社会"
+      ],
+      "feed": null,
+      "feed_status": "feed blocked (403) 2026-11-04 — web-only",
+      "lang": "ja",
+      "name": "毎日新聞",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "政治",
+        "社会",
+        "国際"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "産経新聞",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "経済",
+        "国際",
+        "マーケット"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "ロイター（日本語）",
+      "trust": "highest"
+    },
+    {
+      "covers": [
+        "スポーツ",
+        "芸能"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "スポニチ / 日刊スポーツ",
+      "trust": "medium"
+    },
+    {
+      "covers": [
+        "エンタメ"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "ja",
+      "name": "オリコン / 音楽ナタリー",
+      "trust": "medium"
+    },
+    {
+      "covers": [
+        "天気・防災",
+        "地震"
+      ],
+      "feed": null,
+      "feed_status": "web-only（公式発表）",
+      "lang": "ja",
+      "name": "気象庁",
+      "trust": "highest — 天気・災害は一次情報として最優先"
+    },
+    {
+      "covers": [
+        "Japan news in English"
+      ],
+      "feed": null,
+      "feed_status": "web-only",
+      "lang": "en",
+      "name": "NHK WORLD",
+      "trust": "high"
+    },
+    {
+      "covers": [
+        "総合アグリゲーション"
+      ],
+      "enabled": true,
+      "feed": null,
+      "feed_status": "RSS returned 503 on 2026-11-04 — disabled until rechecked",
+      "lang": "ja",
+      "name": "Google News（日本）",
+      "trust": "medium"
+    }
+  ]
+}
