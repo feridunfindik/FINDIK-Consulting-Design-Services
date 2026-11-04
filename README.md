@@ -38,6 +38,16 @@ quiz.html ──► quiz.css / quiz.js ◄────────────�
 | `validate_quiz.py` | クイズ検査係。形式・選択肢の重複・解説の数字を検査し、選択肢をシャッフルして正解位置の偏りを消す。5問未満なら公開しない | 検査ルールを変えたいとき |
 | `quiz-raw.json` | 検査前の生クイズ。自動生成 | 触らない（デバッグ時に見る） |
 
+## アクセス計測（Google Analytics）
+
+- GA4 プロパティ「NewsQuest」（測定ID: G-JNGTF5K7F8）。対象は design.feridun.info 全体。
+- タグは news.html / quiz.html / haberler.html / test.html の4ページに入っている（アンケートページには入れていない）。
+- クイズのカスタムイベント（quiz.js / test.js の track() 経由）：
+  `quiz_start`（開始時。quiz_date と問題数つき）、`quiz_complete`（結果画面。score と total つき）。
+- 「何人が来て、何人が最後まで解いたか」は GA のレポートで見る。リアルタイムで動作確認もできる。
+- 検証済み（2026-11-04）：page_view / quiz_start / quiz_complete の3つともリアルタイムで受信を確認。
+  ※ GA はイベントをまとめて送るため、ページを一瞬で閉じると quiz_start が届かないことがある（人間ペースでは正常）。
+
 ## 手動で動かす（学習用）
 
 ```bash
