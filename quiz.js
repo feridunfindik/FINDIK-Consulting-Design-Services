@@ -1,0 +1,145 @@
+// quiz.js — 今日のニュースクイズの動き
+// データ元: quiz-latest.json（毎朝、ニュースと一緒に更新される）
+// 連続記録（ストリーク）はブラウザの localStorage にだけ保存する。
+// アカウントもサーバー送信もありません。
+
+const $ = (id) => document.getElementById(id);
+const STORE_KEY = "newsquest_quiz_jp";
+
+let quiz = null;      // { date, questions: [...] }
+let current = 0;      // 今の問題番号
+let score = 0;        // 正解数
+
+// ---------- ストリーク（連続プレイ記録） ----------
+function loadStore() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
+  catch (e) { return {}; }
+}
+function streakText(store) {
+  if (store.streak) return `🔥 ${store.streak}日連続でプレイ中！`;
+  return "毎日続けて、連続記録を作ろう！";
+}
+// クイズを最後まで解いたときに1回だけ呼ぶ
+function recordPlay(dateStr) {
+  const store = loadStore();
+  if (store.last !== dateStr) {
+    // 昨日（クイズの日付の前日）も遊んでいたら連続、それ以外は1から
+    const d = new Date(dateStr + "T00:00:00");
+    d.setDate(d.getDate() - 1);
+    const yesterday = d.toISOString().slice(0, 10);
+    store.streak = (store.last === yesterday) ? (store.streak || 0) + 1 : 1;
+    store.last = dateStr;
+  }
+  store.best = Math.max(store.best || 0, score);
+  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  return store;
+}
+
+// ---------- 画面の切り替え ----------
+function show(id) {
+  ["start-screen", "quiz-screen", "result-screen", "empty-screen"]
+    .forEach((s) => $(s).classList.toggle("hidden", s !== id));
+}
+
+// ---------- クイズ本体 ----------
+function renderQuestion() {
+  const q = quiz.questions[current];
+  const total = quiz.questions.length;
+  $("progress-text").textContent = `${current + 1} / ${total} 問`;
+  $("progress-fill").style.width = `${(current / total) * 100}%`;
+  $("score-text").textContent = `⭐ ${score}`;
+  $("q-source").textContent = `出典：${q.source}`;
+  $("q-text").textContent = q.question;
+  $("feedback").classList.add("hidden");
+
+  const box = $("options");
+  box.innerHTML = "";
+  q.options.forEach((text, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt-btn";
+    btn.textContent = text;
+    btn.addEventListener("click", () => answer(i));
+    box.appendChild(btn);
+  });
+}
+
+function answer(chosen) {
+  const q = quiz.questions[current];
+  const buttons = $("options").querySelectorAll(".opt-btn");
+  buttons.forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.answer) b.classList.add("correct");
+    else if (i === chosen) b.classList.add("wrong");
+    else b.classList.add("dim");
+  });
+  const ok = chosen === q.answer;
+  if (ok) score++;
+  $("score-text").textContent = `⭐ ${score}`;
+
+  const mark = $("feedback-mark");
+  mark.textContent = ok ? "⭕ 正解！" : `❌ ざんねん… 正解は「${q.options[q.answer]}」`;
+  mark.className = ok ? "ok" : "ng";
+  $("feedback-exp").textContent = q.explanation;
+  $("article-link").href = q.url;
+  $("next-btn").textContent =
+    current + 1 < quiz.questions.length ? "次の問題へ" : "結果を見る";
+  $("feedback").classList.remove("hidden");
+}
+
+function showResult() {
+  const total = quiz.questions.length;
+  const store = recordPlay(quiz.date);
+  $("progress-fill").style.width = "100%";
+  $("result-score").textContent = `${total}問中 ${score}問 正解！`;
+  const ratio = score / total;
+  $("result-emoji").textContent = ratio === 1 ? "🏆" : ratio >= 0.7 ? "🎉" : ratio >= 0.4 ? "😊" : "💪";
+  $("result-msg").textContent =
+    ratio === 1 ? "全問正解！今日のニュースを完璧に覚えましたね。" :
+    ratio >= 0.7 ? "すごい！ニュースをよく読めています。" :
+    ratio >= 0.4 ? "いい調子！気になったニュースをもう一度読んでみよう。" :
+                   "おつかれさま！ニュースを読み返すと、もっと点が取れるよ。";
+  $("result-streak").textContent =
+    `🔥 連続プレイ ${store.streak}日目（最高スコア：${store.best}問）`;
+  show("result-screen");
+}
+
+// ---------- 起動 ----------
+async function init() {
+  try {
+    const res = await fetch("quiz-latest.json?t=" + Date.now());
+    if (!res.ok) throw new Error(res.status);
+    quiz = await res.json();
+  } catch (e) {
+    quiz = null;
+  }
+  if (!quiz || !quiz.questions || quiz.questions.length === 0) {
+    $("date-line").textContent = "";
+    show("empty-screen");
+    return;
+  }
+  const d = new Date(quiz.date + "T00:00:00");
+  const week = ["日", "月", "火", "水", "木", "金", "土"][d.getDay()];
+  $("date-line").textContent =
+    `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日（${week}）のニュースから`;
+  $("q-count").textContent = quiz.questions.length;
+  $("streak-line").textContent = streakText(loadStore());
+  show("start-screen");
+}
+
+$("start-btn").addEventListener("click", () => {
+  current = 0; score = 0;
+  show("quiz-screen");
+  renderQuestion();
+});
+$("next-btn").addEventListener("click", () => {
+  current++;
+  if (current < quiz.questions.length) renderQuestion();
+  else showResult();
+});
+$("retry-btn").addEventListener("click", () => {
+  current = 0; score = 0;
+  show("quiz-screen");
+  renderQuestion();
+});
+
+init();

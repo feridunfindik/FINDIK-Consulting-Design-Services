@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-04",
+  "generated": "2026-11-04 22:05 JST",
+  "questions": [
+    {
+      "question": "アメリカの中間選挙で、有権者が特に意識したと報じられたのは何の価格ですか。",
+      "options": [
+        "燃料の価格",
+        "電気の価格",
+        "食料品の価格",
+        "住宅の価格"
+      ],
+      "answer": 0,
+      "explanation": "有権者は燃料価格の高さなどを意識して1票を投じたと報じられています。",
+      "source": "日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOGN30CTH0Q6A031C2000000/"
+    },
+    {
+      "question": "今回の中間選挙の期日前投票は、どうだったと報じられましたか。",
+      "options": [
+        "中止された",
+        "過去最高となった",
+        "前回より少なかった",
+        "初めて行われた"
+      ],
+      "answer": 1,
+      "explanation": "投票に先立つ期日前投票は過去最高となりました。",
+      "source": "日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOGN30CTH0Q6A031C2000000/"
+    },
+    {
+      "question": "台風31号の影響で、5日に大雨のおそれがあるのはどこですか。",
+      "options": [
+        "北海道と東北",
+        "関東と伊豆諸島",
+        "九州と四国",
+        "近畿と中国地方"
+      ],
+      "answer": 1,
+      "explanation": "関東と伊豆諸島では5日、大雨のおそれがあると報じられています。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261104de70119"
+    },
+    {
+      "question": "気象庁が特に注意するよう呼びかけたのは、何による被害ですか。",
+      "options": [
+        "土砂災害や低い土地の浸水",
+        "落雷による停電",
+        "強風による飛行機の欠航",
+        "高波による船の事故"
+      ],
+      "answer": 0,
+      "explanation": "気象庁は、土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261104de70119"
+    },
+    {
+      "question": "4日の東京株式市場で、日経平均株価は一時どうなりましたか。",
+      "options": [
+        "取引が停止した",
+        "過去最高値を更新した",
+        "2000円を超えて上昇した",
+        "2000円を超えて下落した"
+      ],
+      "answer": 3,
+      "explanation": "日経平均株価は、2日の終値と比べて一時2000円を超えて下落し、6万1000円台まで下がりました。",
+      "source": "Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/pickup/6601272?source=rss"
+    },
+    {
+      "question": "この日、売りが広がったと伝えられたのは、どんな分野に関連する株ですか。",
+      "options": [
+        "銀行に関連する株",
+        "AIや半導体に関連する株",
+        "鉄道に関連する株",
+        "食品に関連する株"
+      ],
+      "answer": 1,
+      "explanation": "AI（人工知能）や半導体に関連する株を中心に、売りが広がったと伝えられています。",
+      "source": "Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/pickup/6601272?source=rss"
+    },
+    {
+      "question": "北朝鮮から飛翔体が発射されたと発表したのは、どの組織ですか。",
+      "options": [
+        "アメリカ軍",
+        "韓国軍の合同参謀本部",
+        "日本の気象庁",
+        "国連"
+      ],
+      "answer": 1,
+      "explanation": "韓国軍の合同参謀本部が4日、飛翔体が発射されたと発表しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC40FWYVC4UHBI00VM.html?ref=rss"
+    },
+    {
+      "question": "飛翔体は、どこに向けて発射されましたか。",
+      "options": [
+        "東シナ海",
+        "黄海",
+        "太平洋",
+        "日本海"
+      ],
+      "answer": 3,
+      "explanation": "飛翔体は、北朝鮮から日本海に向けて発射されたと発表されています。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC40FWYVC4UHBI00VM.html?ref=rss"
+    },
+    {
+      "question": "宅配サービス「7NOW」で漏えいした利用者情報は、およそ何件ですか。",
+      "options": [
+        "約800件",
+        "160万件を超える数",
+        "16万件を超える数",
+        "1万6千件を超える数"
+      ],
+      "answer": 2,
+      "explanation": "7NOWの利用者情報は16万件超が漏えいしました。約800件は出前館の件数です。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002852/"
+    },
+    {
+      "question": "情報漏えいのきっかけとして報じられたのは何ですか。",
+      "options": [
+        "利用者がパスワードを忘れたこと",
+        "従業員が情報を売ったこと",
+        "大雨でサーバーが故障したこと",
+        "配達を委託する先のサービスが不正アクセスを受けたこと"
+      ],
+      "answer": 3,
+      "explanation": "配達を委託する先のサービスが不正アクセスを受けたため、情報が漏えいしました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002852/"
+    }
+  ]
+}

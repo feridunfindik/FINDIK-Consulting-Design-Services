@@ -1,0 +1,89 @@
+/* quiz.css — 日々のニュースクイズ（NewsQuest）のスタイル
+   news.css と同じ配色・角丸・フォントで、サイト全体の見た目をそろえる */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+  background: #FFF7ED;
+  color: #33312E;
+  line-height: 1.6;
+}
+
+.wrap { max-width: 640px; margin: 0 auto; padding: 16px 14px 32px; }
+
+header { text-align: center; padding: 18px 0 6px; }
+header h1 { font-size: 1.45rem; font-weight: 800; color: #C2410C; }
+header p { color: #8A7B68; font-size: 0.9rem; margin-top: 2px; }
+
+.card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 22px 20px;
+  margin-top: 16px;
+  box-shadow: 0 2px 10px rgba(194, 65, 12, 0.08);
+}
+.hidden { display: none; }
+
+.lead { font-size: 1.05rem; text-align: center; }
+.streak { text-align: center; color: #C2410C; font-weight: 700; margin-top: 10px; }
+.note { text-align: center; margin-top: 14px; font-size: 0.95rem; }
+.note a, #article-link { color: #E4572E; font-weight: 700; text-decoration: none; }
+
+.big-btn {
+  display: block;
+  margin: 18px auto 0;
+  background: #E4572E;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 42px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(228, 87, 46, 0.35);
+}
+.big-btn:active { transform: scale(0.97); }
+
+.progress-wrap {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.85rem; color: #8A7B68; font-weight: 700;
+}
+.progress-bar { flex: 1; height: 10px; background: #FDEBD7; border-radius: 999px; overflow: hidden; }
+#progress-fill { height: 100%; width: 0; background: #E4572E; border-radius: 999px; transition: width 0.3s; }
+
+.q-source { margin-top: 14px; font-size: 0.8rem; color: #B09A7D; font-weight: 700; }
+#q-text { font-size: 1.15rem; font-weight: 700; margin: 6px 0 16px; line-height: 1.55; }
+
+#options { display: flex; flex-direction: column; gap: 10px; }
+.opt-btn {
+  text-align: left;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #FFF7ED;
+  border: 2px solid #F3D9BE;
+  border-radius: 16px;
+  padding: 13px 16px;
+  cursor: pointer;
+  color: #33312E;
+}
+.opt-btn:active { transform: scale(0.99); }
+.opt-btn.correct { background: #E7F8E9; border-color: #43A047; color: #256029; font-weight: 700; }
+.opt-btn.wrong { background: #FDECEA; border-color: #E53935; color: #8E2320; font-weight: 700; }
+.opt-btn.dim { opacity: 0.55; }
+.opt-btn:disabled { cursor: default; }
+
+#feedback { margin-top: 16px; border-top: 2px dashed #F3D9BE; padding-top: 14px; }
+#feedback-mark { font-size: 1.2rem; font-weight: 800; }
+#feedback-mark.ok { color: #2E7D32; }
+#feedback-mark.ng { color: #C62828; }
+#feedback-exp { margin-top: 6px; }
+#feedback p { margin-top: 8px; }
+
+.result-emoji { text-align: center; font-size: 3rem; }
+#result-score { text-align: center; font-size: 1.6rem; font-weight: 800; color: #C2410C; margin-top: 4px; }
+#result-msg { text-align: center; margin-top: 8px; }
+
+footer { text-align: center; color: #B09A7D; font-size: 0.78rem; margin-top: 22px; }
