@@ -1,0 +1,16 @@
+/* feedback.css — アンケート専用の見た目（共通部分は news.css） */
+.q { margin-bottom:22px; }
+.q h3 { font-size:16.5px; margin-bottom:10px; }
+.q h3 .req { color:#E4572E; font-size:12.5px; margin-left:6px; }
+.opt { display:block; background:#FFF9F2; border:2px solid #F0E6DA; border-radius:14px; padding:10px 14px; margin-bottom:8px; cursor:pointer; font-size:15.5px; }
+.opt:hover { border-color:#E8B48F; }
+.opt input { margin-right:9px; accent-color:#E4572E; }
+.opt:has(input:checked) { border-color:#E4572E; background:#FFF1E8; font-weight:700; }
+textarea { width:100%; min-height:96px; border:2px solid #F0E6DA; border-radius:14px; padding:12px 14px; font-family:inherit; font-size:15.5px; resize:vertical; }
+textarea:focus { outline:none; border-color:#E4572E; }
+.submit-btn { width:100%; background:#E4572E; color:#fff; border:0; border-radius:999px; padding:15px; font-family:inherit; font-size:17px; font-weight:800; cursor:pointer; }
+.submit-btn:hover { opacity:.88; }
+.submit-btn:disabled { opacity:.45; cursor:default; }
+.error { color:#C22F2F; font-size:14px; margin-top:10px; text-align:center; }
+.thanks-card { text-align:center; }
+.thanks-card a { color:#E4572E; font-weight:700; text-decoration:none; }
