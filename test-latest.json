@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-04",
-  "generated": "2026-11-04 22:29 JST",
+  "date": "2026-11-05",
+  "generated": "2026-11-05 08:44 JST",
   "questions": [
     {
-      "question": "ABD'de seçmenler, neyi belirlemek için sandığa gitti?",
+      "question": "Fenerbahçe, Liverpool'u kaç kaç yendi?",
       "options": [
-        "Eyalet valilerinin kim olacağını",
-        "Yeni başkanın kim olacağını",
-        "Kongre'nin hangi partinin kontrolünde olacağını",
-        "Anayasa değişikliği yapılıp yapılmayacağını"
-      ],
-      "answer": 2,
-      "explanation": "Seçmenler, Kongre'nin hangi partinin kontrolünde olacağını belirlemek için sandığa gitti.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "İlk sonuçlar, hangi bölgelerdeki eyaletlerden gelmeye başladı?",
-      "options": [
-        "Doğu ve orta kesimdeki eyaletlerden",
-        "Kuzeydeki eyaletlerden",
-        "Batı kıyısındaki eyaletlerden",
-        "Güneydeki eyaletlerden"
-      ],
-      "answer": 0,
-      "explanation": "Sandıkların kapanmaya başladığı doğu ve orta kesimdeki eyaletlerin bazılarından ilk sonuçlar gelmeye başladı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Türkiye'nin ekim ayı ihracatı ne kadar oldu?",
-      "options": [
-        "29,5 milyar dolar",
-        "25,9 milyar dolar",
-        "23,9 milyar dolar",
-        "15,9 milyar dolar"
-      ],
-      "answer": 1,
-      "explanation": "Ekim ayı ihracatı, 25,9 milyar dolarla ekim ayları için tarihi bir rekora ulaştı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117"
-    },
-    {
-      "question": "İhracat rekoruna ilişkin açıklamayı kim yaptı?",
-      "options": [
-        "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz",
-        "Ticaret Bakanı",
-        "Cumhurbaşkanı",
-        "Merkez Bankası Başkanı"
-      ],
-      "answer": 0,
-      "explanation": "Açıklamayı, Cumhurbaşkanı Yardımcısı Cevdet Yılmaz İstanbul'daki bir programda yaptı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117"
-    },
-    {
-      "question": "Türkiye ile Güney Kore arasında kaç anlaşma imzalandı?",
-      "options": [
-        "İki",
-        "Üç",
-        "Beş",
-        "Dört"
-      ],
-      "answer": 3,
-      "explanation": "Türkiye ile Güney Kore arasında pek çok alanı kapsayan dört ayrı anlaşma imzalandı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Cumhurbaşkanı Erdoğan, Güney Koreliler ile Türkler için ne söyledi?",
-      "options": [
-        "Komşu ve kardeş iki millet olduklarını",
-        "Tarih boyunca rakip iki millet olduklarını",
-        "Birbirine uzak ama kalben yakın iki millet olduklarını",
-        "Aynı kıtada yaşayan iki millet olduklarını"
-      ],
-      "answer": 2,
-      "explanation": "Erdoğan, Güney Koreliler ile Türklerin 'birbirine uzak ama kalben yakın iki millet' olduğunu söyledi.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Gök gürültülü sağanak İstanbul'da ne zaman başladı?",
-      "options": [
-        "Öğle saatlerinde",
-        "Akşam saatlerinde",
-        "Gece yarısından sonra",
-        "Sabah erken saatlerde"
-      ],
-      "answer": 1,
-      "explanation": "İstanbul'da akşam saatlerinde başlayan gök gürültülü sağanak, ulaşımı olumsuz etkiledi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302"
-    },
-    {
-      "question": "Sağanak, İstanbul'da neye yol açtı?",
-      "options": [
-        "Okulların tatil edilmesine",
-        "Bazı ilçelerde hasarlı kazalara",
-        "Elektrik kesintilerine",
-        "Köprülerin trafiğe kapatılmasına"
-      ],
-      "answer": 1,
-      "explanation": "Sağanak nedeniyle bazı ilçelerde hasarlı kazalar meydana geldi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302"
-    },
-    {
-      "question": "Galatasaray, Stuttgart'ı kaç kaç yendi?",
-      "options": [
-        "2-1",
+        "2-2",
         "1-0",
-        "3-0",
-        "2-0"
+        "2-1",
+        "3-2"
       ],
       "answer": 3,
-      "explanation": "Galatasaray, konuk ettiği Stuttgart'ı 2-0 yenerek puanını 6'ya çıkardı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html"
+      "explanation": "Fenerbahçe, sahadan 3-2 galip ayrıldı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
     },
     {
-      "question": "Bu galibiyetle Galatasaray, puanını kaça çıkardı?",
+      "question": "Fenerbahçe, Liverpool ile Şampiyonlar Ligi'nin kaçıncı haftasında karşılaştı?",
       "options": [
-        "6'ya",
-        "5'e",
-        "4'e",
-        "7'ye"
+        "3. haftasında",
+        "5. haftasında",
+        "4. haftasında",
+        "2. haftasında"
+      ],
+      "answer": 2,
+      "explanation": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında Liverpool ile karşılaştı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
+    },
+    {
+      "question": "Hatay'da sağanak hangi ilçede etkili oldu?",
+      "options": [
+        "Samandağ",
+        "Antakya",
+        "Dörtyol",
+        "İskenderun"
+      ],
+      "answer": 2,
+      "explanation": "Sağanak, Hatay'ın Dörtyol ilçesinde etkili oldu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
+    },
+    {
+      "question": "Hatay'daki sağanak nedeniyle ne oldu?",
+      "options": [
+        "Yollar tamamen kapandı",
+        "Bazı ev ve iş yerlerini su bastı",
+        "Tarım arazileri kurudu",
+        "Araçlar garajda kaldı"
+      ],
+      "answer": 1,
+      "explanation": "Sağanak nedeniyle bazı ev ve iş yerlerini su bastı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
+    },
+    {
+      "question": "Olağanüstü tasfiye kapsamında kaç yatırımcıya ödeme yapıldı?",
+      "options": [
+        "390 bin 219",
+        "390 bin 129",
+        "290 bin 219",
+        "380 bin 219"
       ],
       "answer": 0,
-      "explanation": "Galatasaray, UEFA Şampiyonlar Ligi'nin 4. haftasında aldığı bu galibiyetle puanını 6'ya çıkardı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html"
+      "explanation": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya ödeme yapıldı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
+    },
+    {
+      "question": "Fonların tasfiye sürecinde yapılan toplam ödeme tutarı ne kadardır?",
+      "options": [
+        "52,2 milyar lira",
+        "62,2 milyar lira",
+        "72,2 milyar lira",
+        "62,2 milyon lira"
+      ],
+      "answer": 1,
+      "explanation": "Yapılan toplam ödeme tutarı 62,2 milyar lira olarak açıklandı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
+    },
+    {
+      "question": "Dışişleri Bakanlığı, AB raporunu nasıl niteledi?",
+      "options": [
+        "Tarafsız ve dengeli",
+        "Yetersiz ama tarafsız",
+        "Ön yargılı ve hakkaniyetten uzak",
+        "Eksiksiz ve adil"
+      ],
+      "answer": 2,
+      "explanation": "Dışişleri Bakanlığı, AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Brüksel'e göre Türkiye ile ilgili ne daha da genişledi?",
+      "options": [
+        "Kültürel değişim",
+        "Katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum",
+        "Ekonomik iş birliği",
+        "Ticaret hacmi"
+      ],
+      "answer": 1,
+      "explanation": "Brüksel'e göre, katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum daha da genişledi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "JD Vance, Cumhuriyetçilerin ara seçim yenilgisini neye bağladı?",
+      "options": [
+        "Göç politikası",
+        "Sağlık sistemi",
+        "İran savaşı",
+        "Eğitim politikası"
+      ],
+      "answer": 2,
+      "explanation": "Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Vance, 'Ben demiştim' demek isteyenlere ne dedi?",
+      "options": [
+        "Haksızsınız",
+        "Haklısınız",
+        "Bekleyin",
+        "Yanılıyorsunuz"
+      ],
+      "answer": 1,
+      "explanation": "Vance, 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }

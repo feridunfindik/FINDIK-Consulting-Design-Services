@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-04",
-  "updated": "2026-11-04 06:02 TSİ",
+  "date": "2026-11-05",
+  "updated": "2026-11-05 02:42 TSİ",
   "articles": [
     {
-      "cat": "🌍 Dünya",
-      "time": "4 Kasım 05:37",
-      "title": "ABD'de ara seçimler: İlk sonuçlar gelmeye başladı",
-      "summary": "ABD'de seçmenler, Kongre'nin hangi partinin kontrolünde olacağını belirlemek için sandığa gitti. Sandıkların kapanmaya başladığı doğu ve orta kesimdeki eyaletlerin bazılarından ilk sonuçlar gelmeye başladı.",
-      "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/news/1200/branded_turkce/294e/live/34a98000-d821-11f1-a9b6-0f4245e849b7.jpg"
-    },
-    {
-      "cat": "💹 Ekonomi",
-      "time": "3 Kasım 22:47",
-      "title": "Türkiye'nin ekim ayı ihracatı rekor kırdı",
-      "summary": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, Türkiye'nin ekim ayı ihracatının 25,9 milyar dolarla ekim ayları için tarihi bir rekora ulaştığını açıkladı. Yılmaz, açıklamayı İstanbul'da düzenlenen 19'uncu Milli İrade Buluşması programında yaptı.",
-      "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117",
+      "cat": "⚽ Spor",
+      "time": "5 Kasım 00:43",
+      "title": "Fenerbahçe, Liverpool'u 3-2 yendi; maçın oyuncusu İsmail Yüksek seçildi",
+      "summary": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında sahasında İngiltere'nin Liverpool takımıyla karşılaştı. İki kez geriye düşmesine rağmen maçı bırakmayan sarı-lacivertliler, sahadan 3-2 galip ayrıldı. Karşılaşmanın ardından Fenerbahçe'de İsmail Yüksek, maçın oyuncusu seçildi.",
+      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363",
       "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/0x0/6aea3a43aa7d7bef19765a1f.jpg"
-    },
-    {
-      "cat": "🏛️ Siyaset",
-      "time": "3 Kasım 18:26",
-      "title": "Erdoğan ile Güney Kore Devlet Başkanı Lee görüştü: Dört anlaşma imzalandı",
-      "summary": "Türkiye ile Güney Kore arasında pek çok alanı kapsayan dört ayrı anlaşma imzalandı. Cumhurbaşkanı Erdoğan, görüşmede Güney Koreliler ile Türklerin 'birbirine uzak ama kalben yakın iki millet' olduğunu söyledi.",
-      "url": "https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aeba70d242372ca50174d58.jpg"
     },
     {
       "cat": "🌧️ Hava Durumu",
-      "time": "3 Kasım 18:58",
-      "title": "İstanbul'da gök gürültülü sağanak etkili oldu",
-      "summary": "İstanbul'da akşam saatlerinde başlayan gök gürültülü sağanak, ulaşımı olumsuz etkiledi; bazı ilçelerde hasarlı kazalar meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302",
-      "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/03/thumbs_b_c_d737dd7d7d21f043d7129e049205523d.jpg"
+      "time": "5 Kasım 01:17",
+      "title": "Hatay'da sağanak: Bazı ev ve iş yerlerini su bastı",
+      "summary": "Hatay'ın Dörtyol ilçesinde etkili olan sağanak, günlük hayatı olumsuz etkiledi. Sağanak nedeniyle bazı ev ve iş yerlerini su bastı, tarım arazileri su altında kaldı. Park halindeki bazı araçlar ise sel sularına kapılarak sürüklendi. Dörtyol'da etkili olan sağanak, su baskınlarına yol açtı.",
+      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2500000/hatay-saganakaa-2501208.jpg"
     },
     {
-      "cat": "⚽ Spor",
-      "time": "3 Kasım 22:41",
-      "title": "Galatasaray, Stuttgart'ı iki golle geçti",
-      "summary": "Galatasaray, UEFA Şampiyonlar Ligi'nin 4. haftasında konuk ettiği Almanya'nın Stuttgart takımını 2-0 yenerek puanını 6'ya çıkardı.",
-      "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2500000/gs-sevinc-aa-2500883.jpg"
+      "cat": "💹 Ekonomi",
+      "time": "4 Kasım 23:10",
+      "title": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı",
+      "summary": "Fonların tasfiye sürecinde olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı. Yapılan ödeme, tasfiye sürecindeki yatırımcıları kapsıyor ve toplam tutar 62,2 milyar lira olarak açıklandı. Böylece olağanüstü tasfiye kapsamında çok sayıda yatırımcıya ödeme ulaşmış oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038",
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/04/thumbs_b_c_85665bcfaa6a8135f94056e6b879ce2d.jpg"
+    },
+    {
+      "cat": "🏛️ Siyaset",
+      "time": "4 Kasım 19:55",
+      "title": "AB'den Türkiye'ye 'uçurum' uyarısı: AB'nin Türkiye raporunda neler var?",
+      "summary": "Brüksel'e göre Türkiye'nin AB'ye katılma hedefine ilişkin beyanlarıyla katılım için gerekli siyasi kriterlerdeki durum arasındaki 'uçurum' daha da genişledi. Avrupa Birliği tarafından yayımlanan Türkiye raporu, bu farkın büyüdüğüne dikkat çekiyor. Dışişleri Bakanlığı ise AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
+      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f79/live/adadc240-d85d-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "time": "4 Kasım 21:31",
+      "title": "ABD Başkan Yardımcısı JD Vance: Seçimleri İran savaşı nedeniyle kaybettik",
+      "summary": "ABD Başkan Yardımcısı JD Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi. Vance, öfkelenen ve 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi. Böylece Vance, seçim yenilgisinin nedenini açıkça İran savaşına bağlamış oldu.",
+      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     }
   ]
 }
