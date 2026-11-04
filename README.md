@@ -25,6 +25,7 @@ news.html ──► news.css（見た目）                                     
 | `fetch_news.py` | RSSを集めて24時間以内の候補にする | 収集の仕組みを変えたいとき |
 | `candidates.json` | AIへの入力（候補リスト）。自動生成 | 触らない（デバッグ時に見る） |
 | `PROMPT.md` | AIへの指示書（選定・要約ルール） | 選ばせ方を変えたいとき |
+| `feedback.html` / `feedback.css` / `feedback.js` | 読者アンケート。送信すると Google フォームに記録される | 質問を変えたいとき |
 
 ## 手動で動かす（学習用）
 
