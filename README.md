@@ -46,6 +46,27 @@ python3 -m http.server 8000  # ローカルでページ確認（ブラウザで 
 - 記事が古い/少ない → `candidates.json` を見る。収集（fetch）段階の問題。
 - 変な要約・作り話っぽい → PROMPT.md のルールと、出典記事そのものを照合する。
 
+## トルコ版（Günün Haberleri TOP5）
+
+日本版とまったく同じ仕組みで、トルコの読者向けに同じファイルを一式用意した。
+
+```
+sources-tr.json ──► fetch_news.py ──► candidates-tr.json ──► AI（PROMPT-TR.md） ──► haberler-latest.json
+haberler.html ──► haberler.css / haberler.js ──► haberler-latest.json を表示
+anket.html ──► anket.css / anket.js ──► Google フォーム「Günün Haberleri TOP5 Anketi」へ送信
+```
+
+| ファイル | 役割 |
+|---|---|
+| `haberler.html` / `.css` / `.js` | トルコ版ページ（骨組み・見た目・表示） |
+| `haberler-latest.json` | 今日の5本（トルコ語・時刻は TSİ 表示） |
+| `sources-tr.json` | トルコの出典リスト（Anadolu Ajansı、TRT Haber、BBC Türkçe、DW Türkçe など） |
+| `PROMPT-TR.md` | トルコ版の選定・要約ルール（Hürriyet の公式公告は除外など） |
+| `anket.html` / `.css` / `.js` | トルコ版アンケート。質問は日本版と同じ8問 |
+
+収集は引数で切り替える： `python3 fetch_news.py sources-tr.json candidates-tr.json`
+（引数なしだと日本版 `sources.json` → `candidates.json` がデフォルト）。
+
 ## 拡張アイデア
 
 - 出典を増やす → `sources.json` に1件足すだけ（feed があれば自動で候補に入る）

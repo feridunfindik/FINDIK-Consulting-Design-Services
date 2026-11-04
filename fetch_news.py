@@ -15,6 +15,10 @@ if the page looks wrong, first check candidates.json (collection bug?)
 then check news-latest.json (selection bug?).
 
 Run:  python3 fetch_news.py
+      python3 fetch_news.py sources-tr.json candidates-tr.json   (Turkish edition)
+
+The SAME collector serves both editions: it takes an optional sources
+file and output file as arguments. Defaults are the Japanese edition.
 Only Python's standard library is used — nothing to install.
 """
 
@@ -87,7 +91,10 @@ def items_from_feed(xml_bytes):
 
 
 def main():
-    with open(f"{HERE}/sources.json", encoding="utf-8") as f:
+    import sys
+    sources_file = sys.argv[1] if len(sys.argv) > 1 else "sources.json"
+    out_file = sys.argv[2] if len(sys.argv) > 2 else "candidates.json"
+    with open(f"{HERE}/{sources_file}", encoding="utf-8") as f:
         sources = json.load(f)["sources"]
 
     now = datetime.now(JST)
@@ -125,11 +132,11 @@ def main():
 
     candidates.sort(key=lambda c: c["published"], reverse=True)
     out = {"generated": now.strftime("%Y-%m-%d %H:%M JST"), "candidates": candidates}
-    with open(f"{HERE}/candidates.json", "w", encoding="utf-8") as f:
+    with open(f"{HERE}/{out_file}", "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
     print("\n".join(report))
-    print(f"\nTotal candidates: {len(candidates)} -> candidates.json")
+    print(f"\nTotal candidates: {len(candidates)} -> {out_file}")
 
 
 if __name__ == "__main__":
