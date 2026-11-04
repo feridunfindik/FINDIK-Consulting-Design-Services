@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Günün Haber Testi | NewsQuest</title>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🎮 Günün Haber Testi</h1>
+    <p id="date-line">Yükleniyor…</p>
+  </header>
+
+  <!-- Başlangıç ekranı -->
+  <section id="start-screen" class="card hidden">
+    <p class="lead">Günün TOP5 haberinden <strong id="q-count">10</strong> soruluk bir test.<br>Haberleri okuduktan sonra kendini dene!</p>
+    <p id="streak-line" class="streak"></p>
+    <button id="start-btn" class="big-btn">Başla</button>
+    <p class="note"><a href="haberler.html">← Haberleri oku</a></p>
+  </section>
+
+  <!-- Test ekranı -->
+  <section id="quiz-screen" class="card hidden">
+    <div class="progress-wrap">
+      <span id="progress-text"></span>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <span id="score-text"></span>
+    </div>
+    <p id="q-source" class="q-source"></p>
+    <h2 id="q-text"></h2>
+    <div id="options"></div>
+    <div id="feedback" class="hidden">
+      <p id="feedback-mark"></p>
+      <p id="feedback-exp"></p>
+      <p><a id="article-link" href="#" target="_blank" rel="noopener">📰 Haberi oku</a></p>
+      <button id="next-btn" class="big-btn">Sonraki soru</button>
+    </div>
+  </section>
+
+  <!-- Sonuç ekranı -->
+  <section id="result-screen" class="card hidden">
+    <p id="result-emoji" class="result-emoji"></p>
+    <h2 id="result-score"></h2>
+    <p id="result-msg"></p>
+    <p id="result-streak" class="streak"></p>
+    <button id="retry-btn" class="big-btn">Tekrar dene</button>
+    <p class="note"><a href="haberler.html">📰 Günün Haberleri TOP5'e dön</a></p>
+  </section>
+
+  <!-- Hazır değil ekranı -->
+  <section id="empty-screen" class="card hidden">
+    <p class="lead">🙇 Bugünün testi henüz hazır değil.<br>Haberler her gün güncelleniyor.</p>
+    <p class="note"><a href="haberler.html">📰 Günün Haberleri TOP5'e dön</a></p>
+  </section>
+
+  <footer>Test, yapay zekâ tarafından haber özetlerinden hazırlanır ve otomatik kontrolden geçer.</footer>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>

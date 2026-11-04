@@ -74,6 +74,10 @@ anket.html ──► anket.css / anket.js ──► Google フォーム「Günü
 | `sources-tr.json` | トルコの出典リスト（Anadolu Ajansı、TRT Haber、BBC Türkçe、DW Türkçe など） |
 | `PROMPT-TR.md` | トルコ版の選定・要約ルール（Hürriyet の公式公告は除外など） |
 | `anket.html` / `.css` / `.js` | トルコ版アンケート。質問は日本版と同じ8問 |
+| `test.html` / `.css` / `.js` | トルコ版クイズ（Günün Haber Testi）。仕組みは日本版と同じ。連続記録は localStorage（キー newsquest_quiz_tr） |
+| `test-latest.json` | 今日のトルコ版クイズ（10問）。検証は日本版と共通： `validate_quiz.py test-raw.json haberler-latest.json test-latest.json` |
+| `PROMPT-QUIZ-TR.md` | トルコ版クイズ作成AIへの指示書（PROMPT-QUIZ.md のトルコ語版） |
+| `test-raw.json` | 検査前の生クイズ（トルコ版）。自動生成 |
 
 収集は引数で切り替える： `python3 fetch_news.py sources-tr.json candidates-tr.json`
 （引数なしだと日本版 `sources.json` → `candidates.json` がデフォルト）。
@@ -82,6 +86,6 @@ anket.html ──► anket.css / anket.js ──► Google フォーム「Günü
 
 - 出典を増やす → `sources.json` に1件足すだけ（feed があれば自動で候補に入る）
 - カテゴリ別ページ（スポーツだけ等） → `news-latest.json` を分けるか、catで絞る表示を追加
-- ~~クイズ化 → 5本からクイズを作る = NewsQuest の原型（ataquiz と同じ発想）~~ → **実装済み（2026-11-04）**：quiz.html。トルコ版（test.html）は第2段階
+- ~~クイズ化 → 5本からクイズを作る = NewsQuest の原型（ataquiz と同じ発想）~~ → **実装済み（2026-11-04）**：日本版 quiz.html ＋ トルコ版 test.html（同日フェーズ2で追加）
 - クイズの本格ゲーム化 → スコア・連続記録の先に、XP・バッジ・ランキング（NewsQuest 本体）
 - 自動化 → 毎朝の定期実行が fetch → AI選定 → JSON保存 → GitHubへ push を担当

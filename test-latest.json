@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-04",
+  "generated": "2026-11-04 22:29 JST",
+  "questions": [
+    {
+      "question": "ABD'de seçmenler, neyi belirlemek için sandığa gitti?",
+      "options": [
+        "Eyalet valilerinin kim olacağını",
+        "Yeni başkanın kim olacağını",
+        "Kongre'nin hangi partinin kontrolünde olacağını",
+        "Anayasa değişikliği yapılıp yapılmayacağını"
+      ],
+      "answer": 2,
+      "explanation": "Seçmenler, Kongre'nin hangi partinin kontrolünde olacağını belirlemek için sandığa gitti.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "İlk sonuçlar, hangi bölgelerdeki eyaletlerden gelmeye başladı?",
+      "options": [
+        "Doğu ve orta kesimdeki eyaletlerden",
+        "Kuzeydeki eyaletlerden",
+        "Batı kıyısındaki eyaletlerden",
+        "Güneydeki eyaletlerden"
+      ],
+      "answer": 0,
+      "explanation": "Sandıkların kapanmaya başladığı doğu ve orta kesimdeki eyaletlerin bazılarından ilk sonuçlar gelmeye başladı.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Türkiye'nin ekim ayı ihracatı ne kadar oldu?",
+      "options": [
+        "29,5 milyar dolar",
+        "25,9 milyar dolar",
+        "23,9 milyar dolar",
+        "15,9 milyar dolar"
+      ],
+      "answer": 1,
+      "explanation": "Ekim ayı ihracatı, 25,9 milyar dolarla ekim ayları için tarihi bir rekora ulaştı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117"
+    },
+    {
+      "question": "İhracat rekoruna ilişkin açıklamayı kim yaptı?",
+      "options": [
+        "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz",
+        "Ticaret Bakanı",
+        "Cumhurbaşkanı",
+        "Merkez Bankası Başkanı"
+      ],
+      "answer": 0,
+      "explanation": "Açıklamayı, Cumhurbaşkanı Yardımcısı Cevdet Yılmaz İstanbul'daki bir programda yaptı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117"
+    },
+    {
+      "question": "Türkiye ile Güney Kore arasında kaç anlaşma imzalandı?",
+      "options": [
+        "İki",
+        "Üç",
+        "Beş",
+        "Dört"
+      ],
+      "answer": 3,
+      "explanation": "Türkiye ile Güney Kore arasında pek çok alanı kapsayan dört ayrı anlaşma imzalandı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Cumhurbaşkanı Erdoğan, Güney Koreliler ile Türkler için ne söyledi?",
+      "options": [
+        "Komşu ve kardeş iki millet olduklarını",
+        "Tarih boyunca rakip iki millet olduklarını",
+        "Birbirine uzak ama kalben yakın iki millet olduklarını",
+        "Aynı kıtada yaşayan iki millet olduklarını"
+      ],
+      "answer": 2,
+      "explanation": "Erdoğan, Güney Koreliler ile Türklerin 'birbirine uzak ama kalben yakın iki millet' olduğunu söyledi.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Gök gürültülü sağanak İstanbul'da ne zaman başladı?",
+      "options": [
+        "Öğle saatlerinde",
+        "Akşam saatlerinde",
+        "Gece yarısından sonra",
+        "Sabah erken saatlerde"
+      ],
+      "answer": 1,
+      "explanation": "İstanbul'da akşam saatlerinde başlayan gök gürültülü sağanak, ulaşımı olumsuz etkiledi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302"
+    },
+    {
+      "question": "Sağanak, İstanbul'da neye yol açtı?",
+      "options": [
+        "Okulların tatil edilmesine",
+        "Bazı ilçelerde hasarlı kazalara",
+        "Elektrik kesintilerine",
+        "Köprülerin trafiğe kapatılmasına"
+      ],
+      "answer": 1,
+      "explanation": "Sağanak nedeniyle bazı ilçelerde hasarlı kazalar meydana geldi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302"
+    },
+    {
+      "question": "Galatasaray, Stuttgart'ı kaç kaç yendi?",
+      "options": [
+        "2-1",
+        "1-0",
+        "3-0",
+        "2-0"
+      ],
+      "answer": 3,
+      "explanation": "Galatasaray, konuk ettiği Stuttgart'ı 2-0 yenerek puanını 6'ya çıkardı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html"
+    },
+    {
+      "question": "Bu galibiyetle Galatasaray, puanını kaça çıkardı?",
+      "options": [
+        "6'ya",
+        "5'e",
+        "4'e",
+        "7'ye"
+      ],
+      "answer": 0,
+      "explanation": "Galatasaray, UEFA Şampiyonlar Ligi'nin 4. haftasında aldığı bu galibiyetle puanını 6'ya çıkardı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html"
+    }
+  ]
+}
