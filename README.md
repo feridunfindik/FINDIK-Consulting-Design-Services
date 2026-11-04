@@ -11,6 +11,11 @@ sources.json ──► fetch_news.py ──► candidates.json ──► AI（PR
                                                                                   │
 news.html ──► news.css（見た目）                                                    ▼
     └──────► news.js（読み込み＋表示） ◄──────────────────────────── news-latest.json
+                                                                                  │
+                                          news-latest.json の要約だけを材料に        ▼
+                                          AI（PROMPT-QUIZ.md） ──► quiz-raw.json ──► validate_quiz.py（検査＋シャッフル） ──► quiz-latest.json
+                                                                                                                              │
+quiz.html ──► quiz.css / quiz.js ◄────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## ファイルの役割
@@ -27,6 +32,11 @@ news.html ──► news.css（見た目）                                     
 | `candidates.json` | AIへの入力（候補リスト）。自動生成 | 触らない（デバッグ時に見る） |
 | `PROMPT.md` | AIへの指示書（選定・要約ルール） | 選ばせ方を変えたいとき |
 | `feedback.html` / `feedback.css` / `feedback.js` | 読者アンケート。送信すると Google フォームに記録される | 質問を変えたいとき |
+| `quiz.html` / `quiz.css` / `quiz.js` | 今日のニュースクイズ。1問ずつ出題し、その場で正解表示。連続記録はブラウザの localStorage に保存 | クイズの見た目・動きを変えたいとき |
+| `quiz-latest.json` | 今日のクイズ（10問）。検証を通ったものだけが入る | AI＋検査が毎日書き換える |
+| `PROMPT-QUIZ.md` | クイズ作成AIへの指示書（材料は要約だけ・2問/記事・やさしい日本語） | 問題の作り方を変えたいとき |
+| `validate_quiz.py` | クイズ検査係。形式・選択肢の重複・解説の数字を検査し、選択肢をシャッフルして正解位置の偏りを消す。5問未満なら公開しない | 検査ルールを変えたいとき |
+| `quiz-raw.json` | 検査前の生クイズ。自動生成 | 触らない（デバッグ時に見る） |
 
 ## 手動で動かす（学習用）
 
@@ -72,5 +82,6 @@ anket.html ──► anket.css / anket.js ──► Google フォーム「Günü
 
 - 出典を増やす → `sources.json` に1件足すだけ（feed があれば自動で候補に入る）
 - カテゴリ別ページ（スポーツだけ等） → `news-latest.json` を分けるか、catで絞る表示を追加
-- クイズ化 → 5本からクイズを作る = NewsQuest の原型（ataquiz と同じ発想）
+- ~~クイズ化 → 5本からクイズを作る = NewsQuest の原型（ataquiz と同じ発想）~~ → **実装済み（2026-11-04）**：quiz.html。トルコ版（test.html）は第2段階
+- クイズの本格ゲーム化 → スコア・連続記録の先に、XP・バッジ・ランキング（NewsQuest 本体）
 - 自動化 → 毎朝の定期実行が fetch → AI選定 → JSON保存 → GitHubへ push を担当
