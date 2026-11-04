@@ -28,6 +28,10 @@ Bugünün tarihi (Türkiye saati): {{TARIH}}
 4. **Aynı olaydan tek haber:** Birden çok kaynak aynı olayı veriyorsa en
    güvenilir ve ayrıntılı olanı seç (öncelik: Anadolu Ajansı / TRT gibi resmi
    ve köklü kaynaklar > BBC Türkçe / DW Türkçe > gazeteler > diğer).
+   Ayrıca **her kaynaktan en fazla 1 haber** al ve 5 haberin 5 farklı kaynaktan
+   olmasına çalış. Böylece liste tek bir yayıncının bakışına sıkışmaz. Yeterli
+   sayıda nitelikli haber bulunamazsa aynı kaynaktan 2. habere istisna olarak
+   izin verilir.
 5. 5 dolmazsa **3-4 haberle yetin.** Zayıf haberle listeyi doldurma.
    Resmî ilanlar, mahkeme duyuruları ve reklam içerikleri haber değildir, alma.
 
