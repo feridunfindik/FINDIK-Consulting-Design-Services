@@ -35,6 +35,12 @@ function recordPlay(dateStr) {
   return store;
 }
 
+// ---------- Ziyaret ölçümü (Google Analytics) ----------
+// gtag yüklü değilse (reklam engelleyici vb.) hiçbir şey yapma.
+function track(event, params) {
+  if (typeof gtag === "function") gtag("event", event, params || {});
+}
+
 // ---------- Ekran geçişleri ----------
 function show(id) {
   ["start-screen", "quiz-screen", "result-screen", "empty-screen"]
@@ -88,6 +94,7 @@ function answer(chosen) {
 
 function showResult() {
   const total = quiz.questions.length;
+  track("quiz_complete", { quiz_date: quiz.date, score: score, total: total });
   const store = recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total} soruda ${score} doğru!`;
@@ -128,6 +135,7 @@ async function init() {
 
 $("start-btn").addEventListener("click", () => {
   current = 0; score = 0;
+  track("quiz_start", { quiz_date: quiz.date, questions: quiz.questions.length });
   show("quiz-screen");
   renderQuestion();
 });

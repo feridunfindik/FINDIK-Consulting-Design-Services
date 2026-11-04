@@ -35,6 +35,12 @@ function recordPlay(dateStr) {
   return store;
 }
 
+// ---------- アクセス計測（Google Analytics） ----------
+// gtag が読み込まれていない環境（広告ブロッカー等）では何もしない。
+function track(event, params) {
+  if (typeof gtag === "function") gtag("event", event, params || {});
+}
+
 // ---------- 画面の切り替え ----------
 function show(id) {
   ["start-screen", "quiz-screen", "result-screen", "empty-screen"]
@@ -88,6 +94,7 @@ function answer(chosen) {
 
 function showResult() {
   const total = quiz.questions.length;
+  track("quiz_complete", { quiz_date: quiz.date, score: score, total: total });
   const store = recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total}問中 ${score}問 正解！`;
@@ -128,6 +135,7 @@ async function init() {
 
 $("start-btn").addEventListener("click", () => {
   current = 0; score = 0;
+  track("quiz_start", { quiz_date: quiz.date, questions: quiz.questions.length });
   show("quiz-screen");
   renderQuestion();
 });
