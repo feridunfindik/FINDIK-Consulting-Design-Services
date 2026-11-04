@@ -1,1 +1,46 @@
-{"articles":[{"cat":"🌍 Dünya","source":"BBC Türkçe","summary":"ABD'de seçmenler, Kongre'nin hangi partinin kontrolünde olacağını belirlemek için sandığa gitti. Doğu ve orta kesimdeki eyaletlerin çoğunda sandıklar kapanmaya başladı. Sonuçlar, Başkan Trump'ın görev süresinin kalan iki yılında politikalarını ne ölçüde hayata geçirebileceğini de belirleyecek.","time":"4 Kasım 04:58","title":"ABD'de ara seçimler: Kongre'nin kontrolü oylanıyor","url":"https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss"},{"cat":"💹 Ekonomi","source":"Hürriyet","summary":"Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, Türkiye'nin ekim ayı ihracatının 25,9 milyar dolara ulaşarak ekim ayları için tarihi bir rekor kırdığını açıkladı. Yılmaz, yıllıklandırılmış ihracatın da yükselişini sürdürdüğünü söyledi.","time":"3 Kasım 22:47","title":"Türkiye'nin ekim ayı ihracatı rekor kırdı","url":"https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117"},{"cat":"🌧️ Hava Durumu","source":"TRT Haber","summary":"İstanbul'da akşam saatlerinde başlayan şiddetli sağanak, Anadolu Yakası'nda birçok noktayı kısa sürede göle çevirdi. Özellikle Pendik ve Tuzla'da yollar suyla kaplandı, bazı araçlar suya gömüldü. Kent genelinde hasarlı trafik kazaları meydana geldi.","time":"3 Kasım 20:23","title":"İstanbul'u sağanak vurdu: Yollar göle döndü","url":"https://www.trthaber.com/haber/turkiye/istanbulu-saganak-vurdu-yollar-gole-dondu-araclar-suya-gomuldu-962128.html"},{"cat":"⚽ Spor","source":"BBC Türkçe","summary":"Galatasaray, UEFA Şampiyonlar Ligi'nin dördüncü hafta maçında Almanya temsilcisi Stuttgart'ı 2-0 yendi. Sarı-kırmızılı ekibin iki golünü de Aleksey Batrakov attı.","time":"3 Kasım 22:47","title":"Galatasaray, Şampiyonlar Ligi'nde Stuttgart'ı 2-0 yendi","url":"https://www.bbc.com/turkce/articles/cr62yxwp5jdyo?at_medium=RSS&at_campaign=rss"},{"cat":"🏛️ Siyaset","source":"DW Türkçe","summary":"Cumhurbaşkanı Recep Tayyip Erdoğan, Güney Kore Devlet Başkanı Lee ile görüştü. Görüşmenin ardından Türkiye ile Güney Kore arasında birçok alanı kapsayan dört ayrı anlaşma imzalandı. Erdoğan, iki milleti \"birbirine uzak ama kalben yakın\" sözleriyle tanımladı.","time":"3 Kasım 18:26","title":"Erdoğan ile Güney Kore Devlet Başkanı Lee görüştü: Dört anlaşma imzalandı","url":"https://www.dw.com/tr/erdoğan-ile-güney-kore-devlet-başkanı-lee-görüştü-dört-anlaşma-imzalandı/a-79844341?maca=tur-rss-tur-all-1495-rdf"}],"date":"2026-11-04","updated":"2026-11-04 05:05 TSİ"}
+{
+  "date": "2026-11-04",
+  "updated": "2026-11-04 05:27 TSİ",
+  "articles": [
+    {
+      "cat": "🌍 Dünya",
+      "time": "4 Kasım 02:53",
+      "title": "Trump: İran'ı derhal vurma planımız yok",
+      "summary": "ABD Başkanı Donald Trump, İngiliz basınına verdiği demeçte Tahran'la ilişkilerinin 'mükemmel' olduğunu belirterek, ABD'nin İran'a saldırmak için acil bir planı olmadığını söyledi. Gerekirse harekete geçmeye hazır olduklarını vurgulayan Trump, bunun için bir neden olmayabileceğini de ekledi. Trump ayrıca Hürmüz Boğazı'ndan geçen petrol miktarının savaş öncesine kıyasla arttığını savundu.",
+      "url": "https://www.trthaber.com/haber/dunya/trump-irani-derhal-vurma-planimiz-yok-962151.html",
+      "source": "TRT Haber"
+    },
+    {
+      "cat": "💹 Ekonomi",
+      "time": "4 Kasım 00:15",
+      "title": "Cevdet Yılmaz: 455 bin yatırımcının önemli bir kısmının anaparası ödenecek",
+      "summary": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, fon tasfiye sürecinde küçük yatırımcıların haklarının geri ödenmesi için yoğun mesai yürütüldüğünü söyledi. İlk ödemelerin önceki cuma günü başladığını belirten Yılmaz, kasım ayının ortalarına kadar süreçte büyük ölçüde mesafe alınmasını beklediklerini açıkladı. 455 bin küsur yatırımcının önemli bir kısmının anaparasını alacağını söyleyen Yılmaz, ödemelerin net yatırım tutarı üzerinden hesaplandığını kaydetti.",
+      "url": "https://www.trthaber.com/haber/gundem/cevdet-yilmaz-455-bin-yatirimcinin-onemli-bir-kisminin-anaparasi-odenecek-962146.html",
+      "source": "TRT Haber"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "time": "4 Kasım 01:08",
+      "title": "İspanya Ulaştırma Bakanı, 69 kişinin öldüğü tren kazasının ardından istifa etti",
+      "summary": "İspanya Ulaştırma Bakanı Oscar Puente, 28 Ekim'de Madrid'in güneyindeki Urda yakınlarında en az 69 kişinin hayatını kaybettiği hızlı tren kazasından yaklaşık bir hafta sonra istifasını açıkladı. Puente, bir yıldan kısa sürede yaşanan iki ciddi kazanın ardından görevde kalamayacağını söyledi. Kazada Renfe'ye ait hızlı tren, duran bir Iryo trenine arkadan çarpmış; ocak ayında Endülüs'te yaşanan kazada da 46 kişi ölmüştü.",
+      "url": "https://www.bbc.com/turkce/articles/cmx23v6nx3n2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe"
+    },
+    {
+      "cat": "🌧️ Hava Durumu",
+      "time": "3 Kasım 23:29",
+      "title": "Fethiye'de sağanak taşkına neden oldu: Evler ve tarım arazileri sular altında",
+      "summary": "Muğla'nın Fethiye ilçesinde şiddetli yağışın ardından Karagedik ve Çiftlik mahallelerinde sulama kanalları taştı; bazı evler, seralar ve tarım arazileri su altında kaldı. Can kaybı yaşanmadığını belirten Kaymakam Fatih Akkaya, Devlet Su İşleri ile büyükşehir ve belediye ekiplerinin çalışmalara başladığını söyledi. Çenger Mahallesi'ne giden yoldaki toprak kayması nedeniyle ulaşım alternatif yoldan sağlanıyor.",
+      "url": "https://www.trthaber.com/haber/turkiye/fethiyede-saganak-taskina-neden-oldu-evler-ve-tarim-arazileri-sular-altinda-962141.html",
+      "source": "TRT Haber"
+    },
+    {
+      "cat": "⚽ Spor",
+      "time": "3 Kasım 23:28",
+      "title": "Fenerbahçe'nin yeni teknik direktörü Emre Belözoğlu oldu",
+      "summary": "Fenerbahçe, Futbol A Takımı teknik direktörlüğü için Emre Belözoğlu ile anlaşmaya varıldığını Borsa İstanbul ve Kamuyu Aydınlatma Platformu'na bildirdi. Kulübün açıklamasında, futbolcu ve teknik direktör olarak camianın parçası olan 46 yaşındaki Belözoğlu'nun 'Çubuklu'nun başarısı için görev başında' olduğu belirtildi. Belözoğlu, Fenerbahçe'deki ilk teknik direktörlük döneminde 10 maçta 7 galibiyet, 2 beraberlik ve 1 yenilgi yaşamıştı.",
+      "url": "https://www.trthaber.com/haber/gundem/fenerbahcenin-yeni-teknik-direktoru-emre-belozoglu-oldu-962140.html",
+      "source": "TRT Haber"
+    }
+  ]
+}
