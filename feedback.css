@@ -14,3 +14,6 @@ textarea:focus { outline:none; border-color:#E4572E; }
 .error { color:#C22F2F; font-size:14px; margin-top:10px; text-align:center; }
 .thanks-card { text-align:center; }
 .thanks-card a { color:#E4572E; font-weight:700; text-decoration:none; }
+.proto-box { background:#FFF1E8; border:2px solid #E4572E; border-radius:16px; padding:16px; margin:18px 0; }
+.proto-btn { display:inline-block; background:#E4572E; color:#fff !important; border-radius:999px; padding:11px 22px; font-weight:800; }
+.proto-btn:hover { opacity:.88; }
