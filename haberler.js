@@ -12,6 +12,7 @@ async function loadNews() {
 
   document.getElementById("list").innerHTML = data.articles.map(a => `
     <article class="card">
+      ${a.img ? `<img class="thumb" src="${a.img}" alt="" loading="lazy" onerror="this.remove()">` : ""}
       <div class="meta">${a.cat} | ${a.source} | ${a.time}</div>
       <h2>${a.title}</h2>
       <p>${a.summary}</p>

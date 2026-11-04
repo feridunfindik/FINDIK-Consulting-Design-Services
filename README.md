@@ -6,7 +6,7 @@ AIが毎朝、日本のニュースから5本を選んで要約するページ�
 ## 全体の流れ（パイプライン）
 
 ```
-sources.json ──► fetch_news.py ──► candidates.json ──► AI（PROMPT.md） ──► news-latest.json
+sources.json ──► fetch_news.py ──► candidates.json ──► AI（PROMPT.md） ──► news-latest.json ──► fetch_images.py（写真を付ける）
  （出典リスト）    （収集係）        （候補リスト）      （選定＋要約）        （今日の5本）
                                                                                   │
 news.html ──► news.css（見た目）                                                    ▼
@@ -23,6 +23,7 @@ news.html ──► news.css（見た目）                                     
 | `news-latest.json` | 今日の5本（データ） | AIが毎日書き換える |
 | `sources.json` | 出典の登録リスト（名前・RSS・分野・言語） | 出典を足す/消すとき |
 | `fetch_news.py` | RSSを集めて24時間以内の候補にする | 収集の仕組みを変えたいとき |
+| `fetch_images.py` | 各記事の写真を集める係。記事ページの og:image を読み、実際に読み込めるか検証して `img` を付ける | 画像の仕組みを変えたいとき |
 | `candidates.json` | AIへの入力（候補リスト）。自動生成 | 触らない（デバッグ時に見る） |
 | `PROMPT.md` | AIへの指示書（選定・要約ルール） | 選ばせ方を変えたいとき |
 | `feedback.html` / `feedback.css` / `feedback.js` | 読者アンケート。送信すると Google フォームに記録される | 質問を変えたいとき |

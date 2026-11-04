@@ -43,6 +43,8 @@ Bugünün tarihi (Türkiye saati): {{TARIH}}
 9. `url` alanını aday listedeki adresten **bire bir kopyala.** Adres uydurma,
    kısaltma veya tahmin etme.
 10. `time` alanını Türkiye saatiyle "4 Kasım 04:58" biçiminde yaz.
+11. Adayda `image` varsa, çıktıda `img` alanına aynen kopyala. Yoksa `img`
+    ekleme (görselin doğrulanması ve tamamlanması fetch_images.py adımınındır).
 
 ### Çıktı Biçimi (bu JSON dışında hiçbir şey yazma)
 ```json

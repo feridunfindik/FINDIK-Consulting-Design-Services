@@ -8,7 +8,8 @@
       "title": "ABD'de ara seçimler: İlk sonuçlar gelmeye başladı",
       "summary": "ABD'de seçmenler, Kongre'nin hangi partinin kontrolünde olacağını belirlemek için sandığa gitti. Sandıkların kapanmaya başladığı doğu ve orta kesimdeki eyaletlerin bazılarından ilk sonuçlar gelmeye başladı.",
       "url": "https://www.bbc.com/turkce/articles/ck62yep62nyjo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe"
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/news/1200/branded_turkce/294e/live/34a98000-d821-11f1-a9b6-0f4245e849b7.jpg"
     },
     {
       "cat": "💹 Ekonomi",
@@ -16,7 +17,8 @@
       "title": "Türkiye'nin ekim ayı ihracatı rekor kırdı",
       "summary": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, Türkiye'nin ekim ayı ihracatının 25,9 milyar dolarla ekim ayları için tarihi bir rekora ulaştığını açıkladı. Yılmaz, açıklamayı İstanbul'da düzenlenen 19'uncu Milli İrade Buluşması programında yaptı.",
       "url": "https://www.hurriyet.com.tr/gundem/cumhurbaskani-yardimcisi-yilmaz-turkiyenin-ekim-ayi-ihracati-rekor-kirdi-43365117",
-      "source": "Hürriyet"
+      "source": "Hürriyet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/0x0/6aea3a43aa7d7bef19765a1f.jpg"
     },
     {
       "cat": "🏛️ Siyaset",
@@ -32,7 +34,8 @@
       "title": "İstanbul'da gök gürültülü sağanak etkili oldu",
       "summary": "İstanbul'da akşam saatlerinde başlayan gök gürültülü sağanak, ulaşımı olumsuz etkiledi; bazı ilçelerde hasarlı kazalar meydana geldi.",
       "url": "https://www.aa.com.tr/tr/gundem/istanbulda-gok-gurultulu-saganak-etkili-oldu/4110302",
-      "source": "Anadolu Ajansı"
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/03/thumbs_b_c_d737dd7d7d21f043d7129e049205523d.jpg"
     },
     {
       "cat": "⚽ Spor",
@@ -40,7 +43,8 @@
       "title": "Galatasaray, Stuttgart'ı iki golle geçti",
       "summary": "Galatasaray, UEFA Şampiyonlar Ligi'nin 4. haftasında konuk ettiği Almanya'nın Stuttgart takımını 2-0 yenerek puanını 6'ya çıkardı.",
       "url": "https://www.trthaber.com/haber/gundem/galatasaray-stuttgarti-iki-golle-gecti-962137.html",
-      "source": "TRT Haber"
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2500000/gs-sevinc-aa-2500883.jpg"
     }
   ]
 }

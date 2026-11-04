@@ -12,3 +12,6 @@ header p { color:#8A8496; font-size:14px; margin-top:4px; }
 .card a { display:inline-block; margin-top:12px; color:#E4572E; font-weight:700; text-decoration:none; }
 .card a:hover { text-decoration:underline; }
 footer { text-align:center; color:#B9B3C2; font-size:12.5px; margin-top:28px; }
+
+/* 記事の写真（img がある記事だけ表示。読み込めなければ JS が要素ごと消す） */
+.thumb { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; display:block; margin-bottom:12px; }

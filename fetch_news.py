@@ -23,6 +23,7 @@ Only Python's standard library is used — nothing to install.
 """
 
 import json
+import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -65,28 +66,51 @@ def child_text(el, names):
     return ""
 
 
+def item_image(el, desc):
+    """Best picture attached to a feed item, or "" if the feed has none.
+    Feeds hide images in different places: an <enclosure>, a
+    <media:content> / <media:thumbnail> tag, or an <img> embedded in the
+    description HTML. This is only a hint for the curator — the final
+    image check happens later in fetch_images.py."""
+    for ch in el:
+        name = local(ch.tag)
+        url = ch.get("url", "")
+        if name == "enclosure" and url and (
+                ch.get("type", "").startswith("image/")
+                or url.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp"))):
+            return url
+        if name in ("content", "thumbnail") and url:
+            return url
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc or "", re.I)
+    return m.group(1) if m else ""
+
+
 def items_from_feed(xml_bytes):
-    """Yield (title, link, date_text, description) from RSS or Atom XML."""
+    """Yield (title, link, date_text, description, image) from RSS/Atom."""
     root = ET.fromstring(xml_bytes)
     for el in root.iter():
         kind = local(el.tag)
         if kind == "item":  # RSS 2.0 and RSS 1.0/RDF
+            desc = child_text(el, {"description"})
             yield (
                 child_text(el, {"title"}),
                 child_text(el, {"link"}),
                 child_text(el, {"pubDate", "date"}),
-                child_text(el, {"description"}),
+                desc,
+                item_image(el, desc),
             )
         elif kind == "entry":  # Atom
             link = ""
             for ch in el:
                 if local(ch.tag) == "link" and ch.get("rel") in (None, "alternate"):
                     link = ch.get("href", "")
+            desc = child_text(el, {"summary"})
             yield (
                 child_text(el, {"title"}),
                 link,
                 child_text(el, {"published", "updated"}),
-                child_text(el, {"summary"}),
+                desc,
+                item_image(el, desc),
             )
 
 
@@ -111,7 +135,7 @@ def main():
             with urllib.request.urlopen(req, timeout=20) as r:
                 xml = r.read()
             kept = 0
-            for title, link, date_text, desc in items_from_feed(xml):
+            for title, link, date_text, desc, image in items_from_feed(xml):
                 dt = parse_date(date_text)
                 if not title or not link or dt is None:
                     continue
@@ -124,6 +148,7 @@ def main():
                     "url": link,
                     "published": dt.astimezone(JST).strftime("%Y-%m-%d %H:%M JST"),
                     "description": desc[:300],
+                    "image": image,
                 })
                 kept += 1
             report.append(f"OK    {src['name']}: {kept} items in last 24h")
