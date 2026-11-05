@@ -37,6 +37,13 @@ function recordPlay(dateStr) {
     store.last = dateStr;
   }
   store.best = Math.max(store.best || 0, score);
+  // Skor geçmişi: O günün en iyi skorunu tarih bazında sakla
+  // (arşiv takvimindeki ✓ işaretleri ve ilerideki "İlerleme" ekranı için)
+  store.history = store.history || {};
+  const prev = store.history[dateStr];
+  if (!prev || score > prev.score) {
+    store.history[dateStr] = { score: score, total: quiz.questions.length };
+  }
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
   return store;
 }
@@ -104,6 +111,11 @@ function showResult() {
   const store = IS_ARCHIVE ? null : recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total} soruda ${score} doğru!`;
+  const shareText = IS_ARCHIVE
+    ? `NewsQuest arşiv testi (${quiz.date}): ${total} soruda ${score} doğru!`
+    : `NewsQuest günün haber testi: ${total} soruda ${score} doğru! 🔥`;
+  $("share-btn").href = "https://twitter.com/intent/tweet?text=" +
+    encodeURIComponent(shareText) + "&url=" + encodeURIComponent("https://design.feridun.info/test.html");
   const ratio = score / total;
   $("result-emoji").textContent = ratio === 1 ? "🏆" : ratio >= 0.7 ? "🎉" : ratio >= 0.4 ? "😊" : "💪";
   $("result-msg").textContent =

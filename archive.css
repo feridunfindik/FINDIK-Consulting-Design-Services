@@ -29,3 +29,18 @@ header p { color:#8A8496; font-size:14px; margin-top:4px; }
 .back { margin-bottom:14px; }
 .back a { color:#E4572E; font-weight:700; text-decoration:none; }
 footer { text-align:center; color:#B9B3C2; font-size:12.5px; margin-top:28px; }
+
+/* カレンダー */
+.cal-card { background:#fff; border-radius:20px; padding:18px; margin-bottom:18px; box-shadow:0 6px 20px rgba(80,60,20,.06); }
+.cal-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.cal-head h2 { font-size:19px; font-weight:800; }
+.cal-nav { font-family:inherit; font-size:16px; font-weight:800; color:#E4572E; background:#FFF3E8; border:none; border-radius:999px; width:38px; height:38px; cursor:pointer; }
+.cal-nav:disabled { opacity:.3; cursor:default; }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.cal-dows { text-align:center; font-size:12px; font-weight:700; color:#8A8496; margin-bottom:2px; }
+.cal-day { position:relative; font-family:inherit; font-size:14.5px; text-align:center; padding:8px 0; border:none; border-radius:10px; background:transparent; color:#B9B3C2; }
+.cal-day.has { background:#FFF3E8; color:#2B2B33; font-weight:700; cursor:pointer; }
+.cal-day.has:active { transform:scale(.96); }
+.cal-day.today { outline:2px solid #E4572E; outline-offset:-2px; }
+.cal-day .check { position:absolute; top:1px; right:5px; font-size:10px; color:#43A047; font-weight:800; }
+.cal-note { text-align:center; font-size:12px; color:#8A8496; margin-top:10px; }

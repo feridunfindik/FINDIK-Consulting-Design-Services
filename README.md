@@ -113,3 +113,10 @@ anket.html ──► anket.css / anket.js ──► Google フォーム「Günü
 - ~~クイズ化 → 5本からクイズを作る = NewsQuest の原型（ataquiz と同じ発想）~~ → **実装済み（2026-11-04）**：日本版 quiz.html ＋ トルコ版 test.html（同日フェーズ2で追加）
 - クイズの本格ゲーム化 → スコア・連続記録の先に、XP・バッジ・ランキング（NewsQuest 本体）
 - 自動化 → 毎朝の定期実行が fetch → AI選定 → JSON保存 → GitHubへ push を担当
+
+## スコア共有・履歴・カレンダー（2026-11-05 追加）
+
+- 結果画面の「X でスコアをシェア」ボタン：スコア入りの投稿文＋クイズURLを X の投稿画面で開く（twitter.com/intent/tweet）。トルコ語版は test.html 側。
+- スコア履歴：クイズ完走時に、その日のベストスコアを localStorage の `history`（日付→{score,total}）に保存する（quiz.js / test.js の recordPlay）。連続記録とは別データ。
+- アーカイブのカレンダー：archive.html / arsiv.html の上部に月カレンダー。アーカイブがある日はタップで開け、
+  `history` にある日には✓が付く。日本語版は日曜始まり、トルコ語版は月曜始まり（言語ごとに別実装）。

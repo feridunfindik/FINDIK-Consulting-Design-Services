@@ -22,6 +22,18 @@
     <p id="date-line">Yükleniyor…</p>
   </header>
 
+  <!-- Takvim (testi çözülen günlerde ✓ görünür) -->
+  <section id="calendar" class="cal-card">
+    <div class="cal-head">
+      <button id="cal-prev" class="cal-nav" aria-label="Önceki ay">←</button>
+      <h2 id="cal-title">…</h2>
+      <button id="cal-next" class="cal-nav" aria-label="Sonraki ay">→</button>
+    </div>
+    <div class="cal-grid cal-dows"><span>Pzt</span><span>Sal</span><span>Çar</span><span>Per</span><span>Cum</span><span>Cmt</span><span>Paz</span></div>
+    <div class="cal-grid" id="cal-days"></div>
+    <p class="cal-note">✓ işareti, testini çözdüğünüz günleri gösterir (bu cihazın kaydı)</p>
+  </section>
+
   <!-- Tarih listesi (archive/index.json'dan üretilir) -->
   <section id="days"></section>
 

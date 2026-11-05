@@ -37,6 +37,13 @@ function recordPlay(dateStr) {
     store.last = dateStr;
   }
   store.best = Math.max(store.best || 0, score);
+  // スコア履歴：その日のベストスコアを日付ごとに残す
+  // （アーカイブのカレンダーの✓印と、将来の「進み具合」画面の材料）
+  store.history = store.history || {};
+  const prev = store.history[dateStr];
+  if (!prev || score > prev.score) {
+    store.history[dateStr] = { score: score, total: quiz.questions.length };
+  }
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
   return store;
 }
@@ -104,6 +111,11 @@ function showResult() {
   const store = IS_ARCHIVE ? null : recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total}問中 ${score}問 正解！`;
+  const shareText = IS_ARCHIVE
+    ? `NewsQuest ${quiz.date}のニュースクイズ：${total}問中${score}問正解！`
+    : `NewsQuest 今日のニュースクイズ：${total}問中${score}問正解！🔥`;
+  $("share-btn").href = "https://twitter.com/intent/tweet?text=" +
+    encodeURIComponent(shareText) + "&url=" + encodeURIComponent("https://design.feridun.info/quiz.html");
   const ratio = score / total;
   $("result-emoji").textContent = ratio === 1 ? "🏆" : ratio >= 0.7 ? "🎉" : ratio >= 0.4 ? "😊" : "💪";
   $("result-msg").textContent =

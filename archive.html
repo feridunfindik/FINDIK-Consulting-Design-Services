@@ -22,6 +22,18 @@
     <p id="date-line">読み込み中…</p>
   </header>
 
+  <!-- カレンダー（クイズを解いた日に✓が付く） -->
+  <section id="calendar" class="cal-card">
+    <div class="cal-head">
+      <button id="cal-prev" class="cal-nav" aria-label="前の月">←</button>
+      <h2 id="cal-title">…</h2>
+      <button id="cal-next" class="cal-nav" aria-label="次の月">→</button>
+    </div>
+    <div class="cal-grid cal-dows"><span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span></div>
+    <div class="cal-grid" id="cal-days"></div>
+    <p class="cal-note">✓ はクイズを解いた日です（この端末の記録）</p>
+  </section>
+
   <!-- 日付の一覧（archive/index.json から作る） -->
   <section id="days"></section>
 
