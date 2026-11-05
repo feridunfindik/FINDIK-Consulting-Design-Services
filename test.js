@@ -112,8 +112,8 @@ function showResult() {
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total} soruda ${score} doğru!`;
   const shareText = IS_ARCHIVE
-    ? `NewsQuest arşiv testi (${quiz.date}): ${total} soruda ${score} doğru!`
-    : `NewsQuest günün haber testi: ${total} soruda ${score} doğru! 🔥`;
+    ? `NewsQuest arşiv testinde (${quiz.date}) ${total} soruda ${score} doğru yaptım! 🔥 Sen kaç doğru yapabilirsin? #NewsQuest`
+    : `NewsQuest günün haber testinde ${total} soruda ${score} doğru yaptım! 🔥 Sen kaç doğru yapabilirsin? #NewsQuest #GününHaberleri`;
   $("share-btn").href = "https://twitter.com/intent/tweet?text=" +
     encodeURIComponent(shareText) + "&url=" + encodeURIComponent("https://design.feridun.info/test.html");
   const ratio = score / total;

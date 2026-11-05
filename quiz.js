@@ -112,8 +112,8 @@ function showResult() {
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total}問中 ${score}問 正解！`;
   const shareText = IS_ARCHIVE
-    ? `NewsQuest ${quiz.date}のニュースクイズ：${total}問中${score}問正解！`
-    : `NewsQuest 今日のニュースクイズ：${total}問中${score}問正解！🔥`;
+    ? `NewsQuest ${quiz.date}のニュースクイズで${total}問中${score}問正解！🔥 君は何問正解できる？ #NewsQuest #クイズ`
+    : `NewsQuest 今日のニュースクイズで${total}問中${score}問正解！🔥 君は何問正解できる？ #NewsQuest #今日のニュース #クイズ`;
   $("share-btn").href = "https://twitter.com/intent/tweet?text=" +
     encodeURIComponent(shareText) + "&url=" + encodeURIComponent("https://design.feridun.info/quiz.html");
   const ratio = score / total;
