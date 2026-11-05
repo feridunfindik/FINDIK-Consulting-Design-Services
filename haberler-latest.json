@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-05",
-  "updated": "2026-11-05 02:42 TSİ",
+  "date": "2026-11-06",
+  "updated": "2026-11-06 02:46 TSİ",
   "articles": [
     {
-      "cat": "⚽ Spor",
-      "time": "5 Kasım 00:43",
-      "title": "Fenerbahçe, Liverpool'u 3-2 yendi; maçın oyuncusu İsmail Yüksek seçildi",
-      "summary": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında sahasında İngiltere'nin Liverpool takımıyla karşılaştı. İki kez geriye düşmesine rağmen maçı bırakmayan sarı-lacivertliler, sahadan 3-2 galip ayrıldı. Karşılaşmanın ardından Fenerbahçe'de İsmail Yüksek, maçın oyuncusu seçildi.",
-      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aeba70d242372ca50174d58.jpg"
-    },
-    {
-      "cat": "🌧️ Hava Durumu",
-      "time": "5 Kasım 01:17",
-      "title": "Hatay'da sağanak: Bazı ev ve iş yerlerini su bastı",
-      "summary": "Hatay'ın Dörtyol ilçesinde etkili olan sağanak, günlük hayatı olumsuz etkiledi. Sağanak nedeniyle bazı ev ve iş yerlerini su bastı, tarım arazileri su altında kaldı. Park halindeki bazı araçlar ise sel sularına kapılarak sürüklendi. Dörtyol'da etkili olan sağanak, su baskınlarına yol açtı.",
-      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2500000/hatay-saganakaa-2501208.jpg"
+      "cat": "🏛️ Siyaset",
+      "time": "6 Kasım 00:21",
+      "title": "Mekke Anlaşması TBMM'de kabul edildi",
+      "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalanan Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi. Anlaşma, üç ülke arasında ortak savunma iş birliğini öngörüyor. Teklifin kabul edilmesiyle, Mekke Anlaşması'nın onay süreci Meclis aşamasını tamamlamış oldu.",
+      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/news/1200/branded_turkce/7f98/live/93599450-d8f3-11f1-a701-fddedf244c16.jpg"
     },
     {
       "cat": "💹 Ekonomi",
-      "time": "4 Kasım 23:10",
-      "title": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı",
-      "summary": "Fonların tasfiye sürecinde olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı. Yapılan ödeme, tasfiye sürecindeki yatırımcıları kapsıyor ve toplam tutar 62,2 milyar lira olarak açıklandı. Böylece olağanüstü tasfiye kapsamında çok sayıda yatırımcıya ödeme ulaşmış oldu.",
-      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038",
+      "time": "5 Kasım 22:48",
+      "title": "Eski bakan Fatma Betül Sayan Kaya fon soruşturması kapsamında tutuklandı",
+      "summary": "Eski bakan Fatma Betül Sayan Kaya, sermaye piyasalarında gerçekleştirilen işlemlere ilişkin yürütülen fon soruşturması kapsamında hakimliğe sevk edildi ve tutuklandı. Soruşturma, sermaye piyasalarındaki işlemleri kapsıyor. Sayan Kaya, fon soruşturması kapsamında hakim karşısına çıkarıldıktan sonra tutuklama kararıyla karşılaştı.",
+      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/04/thumbs_b_c_85665bcfaa6a8135f94056e6b879ce2d.jpg"
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/05/thumbs_b_c_1a979c831747fd168a74f402ba86d8fa.jpg"
     },
     {
-      "cat": "🏛️ Siyaset",
-      "time": "4 Kasım 19:55",
-      "title": "AB'den Türkiye'ye 'uçurum' uyarısı: AB'nin Türkiye raporunda neler var?",
-      "summary": "Brüksel'e göre Türkiye'nin AB'ye katılma hedefine ilişkin beyanlarıyla katılım için gerekli siyasi kriterlerdeki durum arasındaki 'uçurum' daha da genişledi. Avrupa Birliği tarafından yayımlanan Türkiye raporu, bu farkın büyüdüğüne dikkat çekiyor. Dışişleri Bakanlığı ise AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
-      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f79/live/adadc240-d85d-11f1-b441-2b33b063138f.jpg"
+      "cat": "🚨 Gündem",
+      "time": "5 Kasım 19:29",
+      "title": "Afyonkarahisar'da 2'si öğretmen 8 kişi silahla vurularak öldürüldü: Şüpheli Eskişehir'de yakalandı",
+      "summary": "Afyonkarahisar'ın İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti. Hayatını kaybedenlerden ikisinin köy öğretmeni olduğu bildirildi. Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı. İhsaniye'deki saldırıda 8 kişinin silahla vurularak öldürüldüğü ve şüphelinin Eskişehir'de yakalandığı bildirildi.",
+      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     },
     {
       "cat": "🌍 Dünya",
-      "time": "4 Kasım 21:31",
-      "title": "ABD Başkan Yardımcısı JD Vance: Seçimleri İran savaşı nedeniyle kaybettik",
-      "summary": "ABD Başkan Yardımcısı JD Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi. Vance, öfkelenen ve 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi. Böylece Vance, seçim yenilgisinin nedenini açıkça İran savaşına bağlamış oldu.",
-      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "time": "5 Kasım 13:11",
+      "title": "Avrupa'da bomba alarmı: Uçaklar acil iniş yaptı",
+      "summary": "Avrupa'da İtalya, Fransa, Belçika, Çekya ve Bulgaristan dahil birçok ülkede bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı. Aer Lingus'un Dublin-Roma seferini yapan uçağı Fransa'daki Evreux Fauville Hava Üssü'ne indi; uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi. İhbarların arkasında kimlerin bulunduğu araştırılıyor.",
+      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954",
+      "source": "Hürriyet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aec5664242372ca501751e1.jpg"
+    },
+    {
+      "cat": "⚽ Spor",
+      "time": "5 Kasım 14:06",
+      "title": "Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktığını resmen açıkladı",
+      "summary": "Cristiano Ronaldo, 41 yaşında Portekiz Milli Takımı'nı bıraktığını açıkladı. 234 milli maçta forma giyen yıldız futbolcu, bu karşılaşmalarda 146 gol ve 45 asiste imza attı. Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı; 2019 ve 2025'te ise UEFA Uluslar Ligi'ni kazandı.",
+      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157",
+      "source": "Habertürk",
+      "img": "https://im.haberturk.com/l/2026/11/05/ver1793876710/3925157/jpg/1200x628"
     }
   ]
 }

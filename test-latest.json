@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-05",
-  "generated": "2026-11-05 08:44 JST",
+  "date": "2026-11-06",
+  "generated": "2026-11-06 08:46 JST",
   "questions": [
     {
-      "question": "Fenerbahçe, Liverpool'u kaç kaç yendi?",
+      "question": "Mekke Anlaşması hangi ülkeler arasında imzalandı?",
       "options": [
-        "2-2",
-        "1-0",
-        "2-1",
-        "3-2"
+        "Türkiye, Katar ve Suudi Arabistan",
+        "Türkiye, Pakistan ve Mısır",
+        "Türkiye, İran ve Suudi Arabistan",
+        "Türkiye, Pakistan ve Suudi Arabistan"
       ],
       "answer": 3,
-      "explanation": "Fenerbahçe, sahadan 3-2 galip ayrıldı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
-    },
-    {
-      "question": "Fenerbahçe, Liverpool ile Şampiyonlar Ligi'nin kaçıncı haftasında karşılaştı?",
-      "options": [
-        "3. haftasında",
-        "5. haftasında",
-        "4. haftasında",
-        "2. haftasında"
-      ],
-      "answer": 2,
-      "explanation": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında Liverpool ile karşılaştı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
-    },
-    {
-      "question": "Hatay'da sağanak hangi ilçede etkili oldu?",
-      "options": [
-        "Samandağ",
-        "Antakya",
-        "Dörtyol",
-        "İskenderun"
-      ],
-      "answer": 2,
-      "explanation": "Sağanak, Hatay'ın Dörtyol ilçesinde etkili oldu.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
-    },
-    {
-      "question": "Hatay'daki sağanak nedeniyle ne oldu?",
-      "options": [
-        "Yollar tamamen kapandı",
-        "Bazı ev ve iş yerlerini su bastı",
-        "Tarım arazileri kurudu",
-        "Araçlar garajda kaldı"
-      ],
-      "answer": 1,
-      "explanation": "Sağanak nedeniyle bazı ev ve iş yerlerini su bastı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
-    },
-    {
-      "question": "Olağanüstü tasfiye kapsamında kaç yatırımcıya ödeme yapıldı?",
-      "options": [
-        "390 bin 219",
-        "390 bin 129",
-        "290 bin 219",
-        "380 bin 219"
-      ],
-      "answer": 0,
-      "explanation": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya ödeme yapıldı.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
-    },
-    {
-      "question": "Fonların tasfiye sürecinde yapılan toplam ödeme tutarı ne kadardır?",
-      "options": [
-        "52,2 milyar lira",
-        "62,2 milyar lira",
-        "72,2 milyar lira",
-        "62,2 milyon lira"
-      ],
-      "answer": 1,
-      "explanation": "Yapılan toplam ödeme tutarı 62,2 milyar lira olarak açıklandı.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
-    },
-    {
-      "question": "Dışişleri Bakanlığı, AB raporunu nasıl niteledi?",
-      "options": [
-        "Tarafsız ve dengeli",
-        "Yetersiz ama tarafsız",
-        "Ön yargılı ve hakkaniyetten uzak",
-        "Eksiksiz ve adil"
-      ],
-      "answer": 2,
-      "explanation": "Dışişleri Bakanlığı, AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
+      "explanation": "Mekke Anlaşması, Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalandı.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Brüksel'e göre Türkiye ile ilgili ne daha da genişledi?",
+      "question": "Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi nerede kabul edildi?",
       "options": [
-        "Kültürel değişim",
-        "Katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum",
-        "Ekonomik iş birliği",
-        "Ticaret hacmi"
-      ],
-      "answer": 1,
-      "explanation": "Brüksel'e göre, katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum daha da genişledi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "JD Vance, Cumhuriyetçilerin ara seçim yenilgisini neye bağladı?",
-      "options": [
-        "Göç politikası",
-        "Sağlık sistemi",
-        "İran savaşı",
-        "Eğitim politikası"
+        "Dışişleri Bakanlığı'nda",
+        "Cumhurbaşkanlığı Külliyesi'nde",
+        "TBMM Genel Kurulu'nda",
+        "Anayasa Mahkemesi'nde"
       ],
       "answer": 2,
-      "explanation": "Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Vance, 'Ben demiştim' demek isteyenlere ne dedi?",
+      "question": "Fatma Betül Sayan Kaya hangi soruşturma kapsamında tutuklandı?",
       "options": [
-        "Haksızsınız",
-        "Haklısınız",
-        "Bekleyin",
-        "Yanılıyorsunuz"
+        "Vergi soruşturması",
+        "Fon soruşturması",
+        "İmar soruşturması",
+        "Gümrük soruşturması"
       ],
       "answer": 1,
-      "explanation": "Vance, 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi.",
+      "explanation": "Sayan Kaya, sermaye piyasalarındaki işlemlere ilişkin yürütülen fon soruşturması kapsamında tutuklandı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
+    },
+    {
+      "question": "Fatma Betül Sayan Kaya tutuklanmadan önce ne oldu?",
+      "options": [
+        "Serbest bırakıldı",
+        "Görevinden istifa etti",
+        "Yurt dışına çıktı",
+        "Hakimliğe sevk edildi"
+      ],
+      "answer": 3,
+      "explanation": "Sayan Kaya, hakimliğe sevk edildikten sonra tutuklandı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
+    },
+    {
+      "question": "Afyonkarahisar'daki silahlı saldırıda kaç kişi hayatını kaybetti?",
+      "options": [
+        "5 kişi",
+        "3 kişi",
+        "10 kişi",
+        "8 kişi"
+      ],
+      "answer": 3,
+      "explanation": "İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Afyonkarahisar'daki saldırının şüphelisi nerede yakalandı?",
+      "options": [
+        "İzmir'de",
+        "Afyonkarahisar'da",
+        "Ankara'da",
+        "Eskişehir'de"
+      ],
+      "answer": 3,
+      "explanation": "Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Avrupa'da bomba ihbarları nedeniyle en az kaç yolcu uçağı acil iniş yaptı?",
+      "options": [
+        "En az 25",
+        "En az 10",
+        "En az 17",
+        "En az 5"
+      ],
+      "answer": 2,
+      "explanation": "Bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+    },
+    {
+      "question": "Dublin-Roma seferini yapan uçaktaki kaç yolcu ve mürettebat güvenli şekilde tahliye edildi?",
+      "options": [
+        "120 yolcu ve 5 kişilik mürettebat",
+        "184 yolcu ve 7 kişilik mürettebat",
+        "151 yolcu ve 6 kişilik mürettebat",
+        "200 yolcu ve 8 kişilik mürettebat"
+      ],
+      "answer": 2,
+      "explanation": "Uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+    },
+    {
+      "question": "Cristiano Ronaldo Portekiz Milli Takımı'nda kaç maça çıktı?",
+      "options": [
+        "200",
+        "180",
+        "250",
+        "234"
+      ],
+      "answer": 3,
+      "explanation": "Ronaldo, 234 milli maçta forma giydi.",
+      "source": "Habertürk",
+      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
+    },
+    {
+      "question": "Ronaldo, Portekiz Milli Takımı ile hangi yılda EURO zaferi yaşadı?",
+      "options": [
+        "2020",
+        "2024",
+        "2012",
+        "2016"
+      ],
+      "answer": 3,
+      "explanation": "Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı.",
+      "source": "Habertürk",
+      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
     }
   ]
 }

@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-06",
+  "news": {
+    "date": "2026-11-06",
+    "updated": "2026-11-06 02:46 TSİ",
+    "articles": [
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "6 Kasım 00:21",
+        "title": "Mekke Anlaşması TBMM'de kabul edildi",
+        "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalanan Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi. Anlaşma, üç ülke arasında ortak savunma iş birliğini öngörüyor. Teklifin kabul edilmesiyle, Mekke Anlaşması'nın onay süreci Meclis aşamasını tamamlamış oldu.",
+        "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/news/1200/branded_turkce/7f98/live/93599450-d8f3-11f1-a701-fddedf244c16.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "5 Kasım 22:48",
+        "title": "Eski bakan Fatma Betül Sayan Kaya fon soruşturması kapsamında tutuklandı",
+        "summary": "Eski bakan Fatma Betül Sayan Kaya, sermaye piyasalarında gerçekleştirilen işlemlere ilişkin yürütülen fon soruşturması kapsamında hakimliğe sevk edildi ve tutuklandı. Soruşturma, sermaye piyasalarındaki işlemleri kapsıyor. Sayan Kaya, fon soruşturması kapsamında hakim karşısına çıkarıldıktan sonra tutuklama kararıyla karşılaştı.",
+        "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/05/thumbs_b_c_1a979c831747fd168a74f402ba86d8fa.jpg"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "time": "5 Kasım 19:29",
+        "title": "Afyonkarahisar'da 2'si öğretmen 8 kişi silahla vurularak öldürüldü: Şüpheli Eskişehir'de yakalandı",
+        "summary": "Afyonkarahisar'ın İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti. Hayatını kaybedenlerden ikisinin köy öğretmeni olduğu bildirildi. Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı. İhsaniye'deki saldırıda 8 kişinin silahla vurularak öldürüldüğü ve şüphelinin Eskişehir'de yakalandığı bildirildi.",
+        "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "5 Kasım 13:11",
+        "title": "Avrupa'da bomba alarmı: Uçaklar acil iniş yaptı",
+        "summary": "Avrupa'da İtalya, Fransa, Belçika, Çekya ve Bulgaristan dahil birçok ülkede bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı. Aer Lingus'un Dublin-Roma seferini yapan uçağı Fransa'daki Evreux Fauville Hava Üssü'ne indi; uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi. İhbarların arkasında kimlerin bulunduğu araştırılıyor.",
+        "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aec5664242372ca501751e1.jpg"
+      },
+      {
+        "cat": "⚽ Spor",
+        "time": "5 Kasım 14:06",
+        "title": "Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktığını resmen açıkladı",
+        "summary": "Cristiano Ronaldo, 41 yaşında Portekiz Milli Takımı'nı bıraktığını açıkladı. 234 milli maçta forma giyen yıldız futbolcu, bu karşılaşmalarda 146 gol ve 45 asiste imza attı. Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı; 2019 ve 2025'te ise UEFA Uluslar Ligi'ni kazandı.",
+        "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157",
+        "source": "Habertürk",
+        "img": "https://im.haberturk.com/l/2026/11/05/ver1793876710/3925157/jpg/1200x628"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-06",
+    "generated": "2026-11-06 08:46 JST",
+    "questions": [
+      {
+        "question": "Mekke Anlaşması hangi ülkeler arasında imzalandı?",
+        "options": [
+          "Türkiye, Katar ve Suudi Arabistan",
+          "Türkiye, Pakistan ve Mısır",
+          "Türkiye, İran ve Suudi Arabistan",
+          "Türkiye, Pakistan ve Suudi Arabistan"
+        ],
+        "answer": 3,
+        "explanation": "Mekke Anlaşması, Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalandı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi nerede kabul edildi?",
+        "options": [
+          "Dışişleri Bakanlığı'nda",
+          "Cumhurbaşkanlığı Külliyesi'nde",
+          "TBMM Genel Kurulu'nda",
+          "Anayasa Mahkemesi'nde"
+        ],
+        "answer": 2,
+        "explanation": "Kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Fatma Betül Sayan Kaya hangi soruşturma kapsamında tutuklandı?",
+        "options": [
+          "Vergi soruşturması",
+          "Fon soruşturması",
+          "İmar soruşturması",
+          "Gümrük soruşturması"
+        ],
+        "answer": 1,
+        "explanation": "Sayan Kaya, sermaye piyasalarındaki işlemlere ilişkin yürütülen fon soruşturması kapsamında tutuklandı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
+      },
+      {
+        "question": "Fatma Betül Sayan Kaya tutuklanmadan önce ne oldu?",
+        "options": [
+          "Serbest bırakıldı",
+          "Görevinden istifa etti",
+          "Yurt dışına çıktı",
+          "Hakimliğe sevk edildi"
+        ],
+        "answer": 3,
+        "explanation": "Sayan Kaya, hakimliğe sevk edildikten sonra tutuklandı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
+      },
+      {
+        "question": "Afyonkarahisar'daki silahlı saldırıda kaç kişi hayatını kaybetti?",
+        "options": [
+          "5 kişi",
+          "3 kişi",
+          "10 kişi",
+          "8 kişi"
+        ],
+        "answer": 3,
+        "explanation": "İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Afyonkarahisar'daki saldırının şüphelisi nerede yakalandı?",
+        "options": [
+          "İzmir'de",
+          "Afyonkarahisar'da",
+          "Ankara'da",
+          "Eskişehir'de"
+        ],
+        "answer": 3,
+        "explanation": "Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Avrupa'da bomba ihbarları nedeniyle en az kaç yolcu uçağı acil iniş yaptı?",
+        "options": [
+          "En az 25",
+          "En az 10",
+          "En az 17",
+          "En az 5"
+        ],
+        "answer": 2,
+        "explanation": "Bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+      },
+      {
+        "question": "Dublin-Roma seferini yapan uçaktaki kaç yolcu ve mürettebat güvenli şekilde tahliye edildi?",
+        "options": [
+          "120 yolcu ve 5 kişilik mürettebat",
+          "184 yolcu ve 7 kişilik mürettebat",
+          "151 yolcu ve 6 kişilik mürettebat",
+          "200 yolcu ve 8 kişilik mürettebat"
+        ],
+        "answer": 2,
+        "explanation": "Uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+      },
+      {
+        "question": "Cristiano Ronaldo Portekiz Milli Takımı'nda kaç maça çıktı?",
+        "options": [
+          "200",
+          "180",
+          "250",
+          "234"
+        ],
+        "answer": 3,
+        "explanation": "Ronaldo, 234 milli maçta forma giydi.",
+        "source": "Habertürk",
+        "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
+      },
+      {
+        "question": "Ronaldo, Portekiz Milli Takımı ile hangi yılda EURO zaferi yaşadı?",
+        "options": [
+          "2020",
+          "2024",
+          "2012",
+          "2016"
+        ],
+        "answer": 3,
+        "explanation": "Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı.",
+        "source": "Habertürk",
+        "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
+      }
+    ]
+  }
+}
