@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-05",
+  "news": {
+    "date": "2026-11-05",
+    "updated": "2026-11-05 02:42 TSİ",
+    "articles": [
+      {
+        "cat": "⚽ Spor",
+        "time": "5 Kasım 00:43",
+        "title": "Fenerbahçe, Liverpool'u 3-2 yendi; maçın oyuncusu İsmail Yüksek seçildi",
+        "summary": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında sahasında İngiltere'nin Liverpool takımıyla karşılaştı. İki kez geriye düşmesine rağmen maçı bırakmayan sarı-lacivertliler, sahadan 3-2 galip ayrıldı. Karşılaşmanın ardından Fenerbahçe'de İsmail Yüksek, maçın oyuncusu seçildi.",
+        "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aeba70d242372ca50174d58.jpg"
+      },
+      {
+        "cat": "🌧️ Hava Durumu",
+        "time": "5 Kasım 01:17",
+        "title": "Hatay'da sağanak: Bazı ev ve iş yerlerini su bastı",
+        "summary": "Hatay'ın Dörtyol ilçesinde etkili olan sağanak, günlük hayatı olumsuz etkiledi. Sağanak nedeniyle bazı ev ve iş yerlerini su bastı, tarım arazileri su altında kaldı. Park halindeki bazı araçlar ise sel sularına kapılarak sürüklendi. Dörtyol'da etkili olan sağanak, su baskınlarına yol açtı.",
+        "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2500000/hatay-saganakaa-2501208.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "4 Kasım 23:10",
+        "title": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı",
+        "summary": "Fonların tasfiye sürecinde olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya 62,2 milyar lira ödeme yapıldı. Yapılan ödeme, tasfiye sürecindeki yatırımcıları kapsıyor ve toplam tutar 62,2 milyar lira olarak açıklandı. Böylece olağanüstü tasfiye kapsamında çok sayıda yatırımcıya ödeme ulaşmış oldu.",
+        "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/04/thumbs_b_c_85665bcfaa6a8135f94056e6b879ce2d.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "4 Kasım 19:55",
+        "title": "AB'den Türkiye'ye 'uçurum' uyarısı: AB'nin Türkiye raporunda neler var?",
+        "summary": "Brüksel'e göre Türkiye'nin AB'ye katılma hedefine ilişkin beyanlarıyla katılım için gerekli siyasi kriterlerdeki durum arasındaki 'uçurum' daha da genişledi. Avrupa Birliği tarafından yayımlanan Türkiye raporu, bu farkın büyüdüğüne dikkat çekiyor. Dışişleri Bakanlığı ise AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
+        "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f79/live/adadc240-d85d-11f1-b441-2b33b063138f.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "4 Kasım 21:31",
+        "title": "ABD Başkan Yardımcısı JD Vance: Seçimleri İran savaşı nedeniyle kaybettik",
+        "summary": "ABD Başkan Yardımcısı JD Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi. Vance, öfkelenen ve 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi. Böylece Vance, seçim yenilgisinin nedenini açıkça İran savaşına bağlamış oldu.",
+        "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-05",
+    "generated": "2026-11-05 08:44 JST",
+    "questions": [
+      {
+        "question": "Fenerbahçe, Liverpool'u kaç kaç yendi?",
+        "options": [
+          "2-2",
+          "1-0",
+          "2-1",
+          "3-2"
+        ],
+        "answer": 3,
+        "explanation": "Fenerbahçe, sahadan 3-2 galip ayrıldı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
+      },
+      {
+        "question": "Fenerbahçe, Liverpool ile Şampiyonlar Ligi'nin kaçıncı haftasında karşılaştı?",
+        "options": [
+          "3. haftasında",
+          "5. haftasında",
+          "4. haftasında",
+          "2. haftasında"
+        ],
+        "answer": 2,
+        "explanation": "Fenerbahçe, UEFA Şampiyonlar Ligi'nin 4. haftasında Liverpool ile karşılaştı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-oyuncusu-ismail-yuksek-secildi-43366363"
+      },
+      {
+        "question": "Hatay'da sağanak hangi ilçede etkili oldu?",
+        "options": [
+          "Samandağ",
+          "Antakya",
+          "Dörtyol",
+          "İskenderun"
+        ],
+        "answer": 2,
+        "explanation": "Sağanak, Hatay'ın Dörtyol ilçesinde etkili oldu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
+      },
+      {
+        "question": "Hatay'daki sağanak nedeniyle ne oldu?",
+        "options": [
+          "Yollar tamamen kapandı",
+          "Bazı ev ve iş yerlerini su bastı",
+          "Tarım arazileri kurudu",
+          "Araçlar garajda kaldı"
+        ],
+        "answer": 1,
+        "explanation": "Sağanak nedeniyle bazı ev ve iş yerlerini su bastı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/turkiye/hatayda-saganak-bazi-ev-ve-is-yerlerini-su-basti-962274.html"
+      },
+      {
+        "question": "Olağanüstü tasfiye kapsamında kaç yatırımcıya ödeme yapıldı?",
+        "options": [
+          "390 bin 219",
+          "390 bin 129",
+          "290 bin 219",
+          "380 bin 219"
+        ],
+        "answer": 0,
+        "explanation": "Olağanüstü tasfiye kapsamında 390 bin 219 yatırımcıya ödeme yapıldı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
+      },
+      {
+        "question": "Fonların tasfiye sürecinde yapılan toplam ödeme tutarı ne kadardır?",
+        "options": [
+          "52,2 milyar lira",
+          "62,2 milyar lira",
+          "72,2 milyar lira",
+          "62,2 milyon lira"
+        ],
+        "answer": 1,
+        "explanation": "Yapılan toplam ödeme tutarı 62,2 milyar lira olarak açıklandı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/olaganustu-tasfiye-kapsaminda-390-bin-219-yatirimciya-62-2-milyar-lira-odeme-yapildi/4112038"
+      },
+      {
+        "question": "Dışişleri Bakanlığı, AB raporunu nasıl niteledi?",
+        "options": [
+          "Tarafsız ve dengeli",
+          "Yetersiz ama tarafsız",
+          "Ön yargılı ve hakkaniyetten uzak",
+          "Eksiksiz ve adil"
+        ],
+        "answer": 2,
+        "explanation": "Dışişleri Bakanlığı, AB raporunu 'ön yargılı ve hakkaniyetten uzak' olarak niteledi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Brüksel'e göre Türkiye ile ilgili ne daha da genişledi?",
+        "options": [
+          "Kültürel değişim",
+          "Katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum",
+          "Ekonomik iş birliği",
+          "Ticaret hacmi"
+        ],
+        "answer": 1,
+        "explanation": "Brüksel'e göre, katılma hedefine ilişkin beyanlar ile siyasi kriterlerdeki durum arasındaki uçurum daha da genişledi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c98rz6e7z6exo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "JD Vance, Cumhuriyetçilerin ara seçim yenilgisini neye bağladı?",
+        "options": [
+          "Göç politikası",
+          "Sağlık sistemi",
+          "İran savaşı",
+          "Eğitim politikası"
+        ],
+        "answer": 2,
+        "explanation": "Vance, Cumhuriyetçilerin ara seçimleri İran savaşı nedeniyle kaybettiğini söyledi.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Vance, 'Ben demiştim' demek isteyenlere ne dedi?",
+        "options": [
+          "Haksızsınız",
+          "Haklısınız",
+          "Bekleyin",
+          "Yanılıyorsunuz"
+        ],
+        "answer": 1,
+        "explanation": "Vance, 'Ben demiştim' demek isteyenlere seslenerek 'Haklısınız' dedi.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-başkan-yardımcısı-jd-vance-seçimleri-i̇ran-savaşı-nedeniyle-kaybettik/a-79858399?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

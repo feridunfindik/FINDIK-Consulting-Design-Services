@@ -10,6 +10,12 @@ let quiz = null;      // { date, questions: [...] }
 let current = 0;      // Şu anki soru numarası
 let score = 0;        // Doğru sayısı
 
+// ---------- Arşivden oynama ----------
+// Adreste ?date=YYYY-MM-DD varsa, o günün testi (archive/tr/<tarih>.json) yüklenir.
+// Arşiv testleri seriye (üst üste oynama) sayılmaz.
+const ARCHIVE_DATE = new URLSearchParams(location.search).get("date");
+const IS_ARCHIVE = !!ARCHIVE_DATE;
+
 // ---------- Seri (üst üste oynama) kaydı ----------
 function loadStore() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
@@ -95,7 +101,7 @@ function answer(chosen) {
 function showResult() {
   const total = quiz.questions.length;
   track("quiz_complete", { quiz_date: quiz.date, score: score, total: total });
-  const store = recordPlay(quiz.date);
+  const store = IS_ARCHIVE ? null : recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total} soruda ${score} doğru!`;
   const ratio = score / total;
@@ -105,17 +111,24 @@ function showResult() {
     ratio >= 0.7 ? "Harika! Haberleri dikkatli okumuşsun." :
     ratio >= 0.4 ? "İyi gidiyorsun! Merak ettiğin haberleri bir kez daha oku." :
                    "Sorun değil! Haberleri tekrar okursan puanını artırırsın.";
-  $("result-streak").textContent =
-    `🔥 Üst üste oynama: ${store.streak}. gün (en iyi skor: ${store.best} soru)`;
+  $("result-streak").textContent = IS_ARCHIVE
+    ? "📚 Geçmiş gün testleri seriye sayılmaz"
+    : `🔥 Üst üste oynama: ${store.streak}. gün (en iyi skor: ${store.best} soru)`;
   show("result-screen");
 }
 
 // ---------- Başlatma ----------
 async function init() {
   try {
-    const res = await fetch("test-latest.json?t=" + Date.now());
-    if (!res.ok) throw new Error(res.status);
-    quiz = await res.json();
+    if (IS_ARCHIVE) {
+      const res = await fetch(`archive/tr/${ARCHIVE_DATE}.json?t=` + Date.now());
+      if (!res.ok) throw new Error(res.status);
+      quiz = (await res.json()).quiz;   // Günün arşiv dosyasından test bölümünü al
+    } else {
+      const res = await fetch("test-latest.json?t=" + Date.now());
+      if (!res.ok) throw new Error(res.status);
+      quiz = await res.json();
+    }
   } catch (e) {
     quiz = null;
   }
@@ -129,7 +142,14 @@ async function init() {
     d.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric", weekday: "long" }) +
     " haberlerinden";
   $("q-count").textContent = quiz.questions.length;
-  $("streak-line").textContent = streakText(loadStore());
+  $("streak-line").textContent = IS_ARCHIVE
+    ? "📚 Geçmiş günün testini çözüyorsun (seriye sayılmaz)"
+    : streakText(loadStore());
+  if (IS_ARCHIVE) {
+    const link = $("result-home-link");
+    link.href = `arsiv.html?date=${quiz.date}`;
+    link.textContent = "📚 Bu günün haberlerine dön";
+  }
   show("start-screen");
 }
 

@@ -37,11 +37,25 @@ quiz.html ──► quiz.css / quiz.js ◄────────────�
 | `PROMPT-QUIZ.md` | クイズ作成AIへの指示書（材料は要約だけ・2問/記事・やさしい日本語） | 問題の作り方を変えたいとき |
 | `validate_quiz.py` | クイズ検査係。形式・選択肢の重複・解説の数字を検査し、選択肢をシャッフルして正解位置の偏りを消す。5問未満なら公開しない | 検査ルールを変えたいとき |
 | `quiz-raw.json` | 検査前の生クイズ。自動生成 | 触らない（デバッグ時に見る） |
+| `archive.html` / `archive.css` / `archive.js` | 過去のニュースとクイズ（日本語アーカイブ）。日付一覧から、その日のニュース表示とクイズへ | アーカイブの見た目・動きを変えたいとき |
+| `arsiv.html` / `arsiv.css` / `arsiv.js` | トルコ語アーカイブ（Geçmiş Günler）。役割は archive と同じ | 同上 |
+| `archive_day.py` | 1日分を梱包する係。その日のニュース＋クイズを `archive/<言語>/<日付>.json` に保存し、`archive/index.json` の日付一覧を更新する。毎朝の自動更新の中で呼ばれる | 梱包の仕方を変えたいとき |
+| `archive/index.json` | アーカイブの日付一覧（言語別・新しい順）。アーカイブページがこれだけ読んで一覧を作る | 自動生成（触らない） |
+| `archive/jp/*.json` / `archive/tr/*.json` | 1日分のまとめファイル（`{date, news, quiz}`）。クイズページは `?date=YYYY-MM-DD` でこのファイルのクイズを読む | 自動生成（触らない） |
+
+## アーカイブ（過去の日々）
+
+- 仕組み：毎朝の更新で、その日の `news-latest.json`＋`quiz-latest.json`（トルコ語版は haberler/test）を
+  `archive_day.py` が1ファイルにまとめ、`archive/jp/<日付>.json` に残す。最新ファイルの「上書き」で消えない。
+- 読者側：archive.html（トルコ語は arsiv.html）が `archive/index.json` から日付ボタンを作り、
+  選んだ日のファイルを読み込んでニュースカードを表示。クイズは `quiz.html?date=<日付>`（test.html も同様）で再挑戦できる。
+- ルール：過去のクイズのプレイは連続記録（ストリーク）に数えない（quiz.js / test.js の IS_ARCHIVE 分岐）。
+- 2026-11-04 分はリポジトリのコミット履歴から復元して収録済み（ニュース側 227142be、クイズ側 2497b41e / 0fde7739）。
 
 ## アクセス計測（Google Analytics）
 
 - GA4 プロパティ「NewsQuest」（測定ID: G-JNGTF5K7F8）。対象は design.feridun.info 全体。
-- タグは news.html / quiz.html / haberler.html / test.html の4ページに入っている（アンケートページには入れていない）。
+- タグは news.html / quiz.html / haberler.html / test.html / archive.html / arsiv.html の6ページに入っている（アンケートページには入れていない）。
 - クイズのカスタムイベント（quiz.js / test.js の track() 経由）：
   `quiz_start`（開始時。quiz_date と問題数つき）、`quiz_complete`（結果画面。score と total つき）。
 - 「何人が来て、何人が最後まで解いたか」は GA のレポートで見る。リアルタイムで動作確認もできる。

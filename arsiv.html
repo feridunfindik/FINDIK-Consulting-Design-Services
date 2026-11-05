@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geçmiş Günler | NewsQuest</title>
+<!-- Google tag (gtag.js) — NewsQuest ölçümü -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JNGTF5K7F8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JNGTF5K7F8');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="arsiv.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📚 Geçmiş Günler</h1>
+    <p id="date-line">Yükleniyor…</p>
+  </header>
+
+  <!-- Tarih listesi (archive/index.json'dan üretilir) -->
+  <section id="days"></section>
+
+  <!-- Seçilen günün haberleri -->
+  <section id="day-view" class="hidden">
+    <p class="back"><a href="#" id="back-link">← Tarih listesine dön</a></p>
+    <main id="list"></main>
+    <div style="text-align:center;margin-top:18px">
+      <a id="quiz-link" href="#" style="display:inline-block;background:#E4572E;color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:13px 34px;box-shadow:0 3px 8px rgba(228,87,46,.35)">🎮 Bu günün testine katıl</a>
+      <p id="no-quiz" class="hidden" style="color:#8A8496;margin-top:6px">Bu günün testi yok.</p>
+    </div>
+  </section>
+
+  <footer>Özetler yapay zeka tarafından hazırlanmıştır. Ayrıntılar için haber bağlantılarına bakınız.<br>
+  <a href="haberler.html" style="color:#E4572E;font-weight:700;text-decoration:none">🇹🇷 Günün Haberleri TOP5'e dön</a></footer>
+</div>
+
+<script src="arsiv.js"></script>
+</body>
+</html>

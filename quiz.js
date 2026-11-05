@@ -10,6 +10,12 @@ let quiz = null;      // { date, questions: [...] }
 let current = 0;      // 今の問題番号
 let score = 0;        // 正解数
 
+// ---------- アーカイブ再生 ----------
+// アドレスに ?date=YYYY-MM-DD があれば、その日のクイズ（archive/jp/<日付>.json）を読み込む。
+// アーカイブのプレイは連続記録（ストリーク）に数えない。
+const ARCHIVE_DATE = new URLSearchParams(location.search).get("date");
+const IS_ARCHIVE = !!ARCHIVE_DATE;
+
 // ---------- ストリーク（連続プレイ記録） ----------
 function loadStore() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
@@ -95,7 +101,7 @@ function answer(chosen) {
 function showResult() {
   const total = quiz.questions.length;
   track("quiz_complete", { quiz_date: quiz.date, score: score, total: total });
-  const store = recordPlay(quiz.date);
+  const store = IS_ARCHIVE ? null : recordPlay(quiz.date);
   $("progress-fill").style.width = "100%";
   $("result-score").textContent = `${total}問中 ${score}問 正解！`;
   const ratio = score / total;
@@ -105,17 +111,24 @@ function showResult() {
     ratio >= 0.7 ? "すごい！ニュースをよく読めています。" :
     ratio >= 0.4 ? "いい調子！気になったニュースをもう一度読んでみよう。" :
                    "おつかれさま！ニュースを読み返すと、もっと点が取れるよ。";
-  $("result-streak").textContent =
-    `🔥 連続プレイ ${store.streak}日目（最高スコア：${store.best}問）`;
+  $("result-streak").textContent = IS_ARCHIVE
+    ? "📚 過去のクイズは連続記録に含まれません"
+    : `🔥 連続プレイ ${store.streak}日目（最高スコア：${store.best}問）`;
   show("result-screen");
 }
 
 // ---------- 起動 ----------
 async function init() {
   try {
-    const res = await fetch("quiz-latest.json?t=" + Date.now());
-    if (!res.ok) throw new Error(res.status);
-    quiz = await res.json();
+    if (IS_ARCHIVE) {
+      const res = await fetch(`archive/jp/${ARCHIVE_DATE}.json?t=` + Date.now());
+      if (!res.ok) throw new Error(res.status);
+      quiz = (await res.json()).quiz;   // その日のまとめファイルからクイズ部分を取り出す
+    } else {
+      const res = await fetch("quiz-latest.json?t=" + Date.now());
+      if (!res.ok) throw new Error(res.status);
+      quiz = await res.json();
+    }
   } catch (e) {
     quiz = null;
   }
@@ -129,7 +142,14 @@ async function init() {
   $("date-line").textContent =
     `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日（${week}）のニュースから`;
   $("q-count").textContent = quiz.questions.length;
-  $("streak-line").textContent = streakText(loadStore());
+  $("streak-line").textContent = IS_ARCHIVE
+    ? "📚 過去のクイズに挑戦中（連続記録には含まれません）"
+    : streakText(loadStore());
+  if (IS_ARCHIVE) {
+    const link = $("result-home-link");
+    link.href = `archive.html?date=${quiz.date}`;
+    link.textContent = "📚 この日のニュースへ戻る";
+  }
   show("start-screen");
 }
 
