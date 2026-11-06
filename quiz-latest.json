@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-06",
-  "generated": "2026-11-06 08:15 JST",
+  "date": "2026-11-07",
+  "generated": "2026-11-07 07:46 JST",
   "questions": [
     {
-      "question": "ドコモの通信障害は、いつからいつまで続きましたか。",
+      "question": "この地震の震源はどこでしたか？",
       "options": [
-        "5日午前11時18分から5日午後1時20分まで",
-        "5日午前1時20分から6日午前11時18分まで",
-        "5日午前11時18分ごろから6日午前1時20分まで",
-        "6日午前11時18分から6日午前1時20分まで"
+        "宮城県沖",
+        "東京湾",
+        "千葉県内",
+        "関東東方沖"
+      ],
+      "answer": 3,
+      "explanation": "震源は関東東方沖でした。",
+      "source": "千葉日報オンライン",
+      "url": "https://news.yahoo.co.jp/articles/0ad210cff7410911d2c5da50816c84867d17a440"
+    },
+    {
+      "question": "この地震で最大震度3を観測した県はどれですか？",
+      "options": [
+        "神奈川県",
+        "千葉県",
+        "東京都",
+        "宮城県"
+      ],
+      "answer": 3,
+      "explanation": "宮城、福島、茨城で最大震度3を観測しました。",
+      "source": "千葉日報オンライン",
+      "url": "https://news.yahoo.co.jp/articles/0ad210cff7410911d2c5da50816c84867d17a440"
+    },
+    {
+      "question": "食料品の消費税率は、何％から何％に引き下げられますか？",
+      "options": [
+        "8％から5％",
+        "5％から1％",
+        "8％から1％",
+        "10％から8％"
       ],
       "answer": 2,
-      "explanation": "要約によると、障害は5日午前11時18分ごろから6日午前1時20分まで続きました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601482?source=rss"
+      "explanation": "食料品の税率を8％から1％に引き下げます。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC63GHVVC6UTFK00LM.html?ref=rss"
     },
     {
-      "question": "通信障害の原因として、正しいものはどれですか。",
+      "question": "採決の直前に退席したのは誰ですか？",
       "options": [
-        "不正アクセスがあったため",
-        "5G SAの契約者を収容する交換機で通信が集中し、処理しきれなくなったため",
-        "4Gの設備が故障したため",
-        "サイバー攻撃を受けたため"
+        "石破茂前首相ら自民党の5人",
+        "石破茂前首相ら自民党の2人",
+        "石破茂前首相ら自民党の4人",
+        "石破茂前首相ら自民党の3人"
+      ],
+      "answer": 2,
+      "explanation": "石破茂前首相ら自民党の4人が退席しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC63GHVVC6UTFK00LM.html?ref=rss"
+    },
+    {
+      "question": "10月に農業以外の仕事に就く人は、前の月より何人増えましたか？",
+      "options": [
+        "6万5000人",
+        "16万5000人",
+        "6万人",
+        "2万9000人"
       ],
       "answer": 1,
-      "explanation": "要約によると、原因は5G SAの契約者を収容する交換機で通信が集中し、処理しきれなくなったためで、不正アクセスやサイバー攻撃の形跡は確認されていません。",
+      "explanation": "前の月より16万5000人増えました。",
       "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601482?source=rss"
+      "url": "https://news.yahoo.co.jp/pickup/6601587?source=rss"
     },
     {
-      "question": "5日のニューヨーク株式市場で、ダウ平均株価は一時どうなりましたか。",
+      "question": "10月の失業率は何％でしたか？",
       "options": [
-        "ほとんど変わらなかった",
-        "前日より1700ドル以上急落した",
-        "前日より1700ドル以上上がった",
-        "前日より170ドルほど下がった"
-      ],
-      "answer": 1,
-      "explanation": "要約によると、ダウ平均株価は一時、前日より1700ドル以上急落しました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://news.yahoo.co.jp/articles/3396b18a85e1c6ea32b949e0aec374f4ac85fd32"
-    },
-    {
-      "question": "半導体やAI関連の株が大きく売られた理由はどれですか。",
-      "options": [
-        "データセンターの規制強化を訴える候補が中間選挙で当選し、AI投資への逆風が心配されたため",
-        "半導体の工場で事故があったため",
-        "アメリカの金利が下がったため",
-        "原油の値段が下がったため"
+        "4.1％",
+        "4.5％",
+        "4.2％",
+        "4.0％"
       ],
       "answer": 0,
-      "explanation": "要約によると、中間選挙でデータセンターの規制強化を訴える候補が各地で当選し、AI関連への投資に逆風になるとの警戒から売られました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://news.yahoo.co.jp/articles/3396b18a85e1c6ea32b949e0aec374f4ac85fd32"
+      "explanation": "失業率は4.1％で、9月の4.2％から下がりました。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6601587?source=rss"
     },
     {
-      "question": "高市首相は、トルコで開かれるCOP31の首脳級会合にどうする方針ですか。",
+      "question": "個人情報が漏れたのは、およそ何人分ですか？",
       "options": [
-        "出席を見送る",
-        "出席する",
-        "会合を延期する",
-        "オンラインで出席する"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、高市首相はCOP31の首脳級会合への出席を見送ります。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026110500895&g=pol"
-    },
-    {
-      "question": "日本の首相がこの気候会議の首脳級会合を欠席するのは、何年連続ですか。",
-      "options": [
-        "2年連続",
-        "5年連続",
-        "3年連続",
-        "初めて"
+        "9715人分",
+        "500万人分",
+        "279万7545人分",
+        "100万人分"
       ],
       "answer": 2,
-      "explanation": "要約によると、日本の首相の欠席は3年連続です。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026110500895&g=pol"
-    },
-    {
-      "question": "「ペーパー車検」とは、要約によると何ですか。",
-      "options": [
-        "車検の書類をなくすこと",
-        "車を整備せずに車検を通すこと",
-        "車を工場に持ち込んで点検すること",
-        "車検を紙だけで申し込むこと"
-      ],
-      "answer": 1,
-      "explanation": "要約によると、「ペーパー車検」とは車を整備せずに車検を通すことです。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1146576?obtp_src=FNNjp_AR_2&obOrigUrl=true"
-    },
-    {
-      "question": "2人は15年間で、およそ何台の不正車検を請け負ったとみられていますか。",
-      "options": [
-        "およそ400台",
-        "およそ24000台",
-        "およそ2400台",
-        "およそ1500台"
-      ],
-      "answer": 2,
-      "explanation": "要約によると、15年間でおよそ2400台の不正車検を請け負い、1億1000万円を売り上げていたとみられています。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1146576?obtp_src=FNNjp_AR_2&obOrigUrl=true"
-    },
-    {
-      "question": "OpenAIが発表した約束に含まれているのはどれですか。",
-      "options": [
-        "公職者との契約をすべてやめること",
-        "データセンターの建設をやめること",
-        "電気や関連する設備にかかる費用を全額負担すること",
-        "電気の使用を半分にすること"
-      ],
-      "answer": 2,
-      "explanation": "要約によると、OpenAIは電気や関連する設備にかかる費用を全額負担することを約束に盛り込みました。",
+      "explanation": "顧客およそ279万7545人分の個人情報が漏れました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002928/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
     },
     {
-      "question": "OpenAIが政府に求めているのは何ですか。",
+      "question": "9715人分について、個人情報のほかに何の情報も不正に取られましたか？",
       "options": [
-        "AIの開発を止めること",
-        "秘密保持契約を義務にすること",
-        "電気を多く使う利用者に新たな負担を求めないよう、業界共通のルール作り",
-        "データセンターへの税金を上げること"
+        "クレジットカードの情報だけ",
+        "個人情報だけ",
+        "通話の音声データだけ",
+        "通話の音声データとクレジットカードの情報"
+      ],
+      "answer": 3,
+      "explanation": "通話の音声データとクレジットカードの情報も不正に取られました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
+    },
+    {
+      "question": "西川貴教さんの紅白出場は、何年ぶりですか？",
+      "options": [
+        "6年ぶり",
+        "30年ぶり",
+        "12年ぶり",
+        "3年ぶり"
       ],
       "answer": 2,
-      "explanation": "要約によると、OpenAIは電気を多く使う利用者に新たな負担を求めないよう、業界共通のルール作りを政府に求めています。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002928/"
+      "explanation": "2014年以来12年ぶり6度目の出場です。",
+      "source": "スポニチアネックス",
+      "url": "https://news.infoseek.co.jp/article/sponichin_20261107_0039/"
+    },
+    {
+      "question": "西川さんが紅白で歌う「HOT LIMIT」は、いつ発売された曲ですか？",
+      "options": [
+        "2024年",
+        "1997年",
+        "2014年",
+        "1998年"
+      ],
+      "answer": 3,
+      "explanation": "1998年に発売した代表曲「HOT LIMIT」を紅白で初めて歌います。",
+      "source": "スポニチアネックス",
+      "url": "https://news.infoseek.co.jp/article/sponichin_20261107_0039/"
     }
   ]
 }
