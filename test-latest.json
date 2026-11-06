@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-06",
-  "generated": "2026-11-06 08:46 JST",
+  "date": "2026-11-07",
+  "generated": "2026-11-07 08:45 JST",
   "questions": [
     {
-      "question": "Mekke Anlaşması hangi ülkeler arasında imzalandı?",
+      "question": "Fon soruşturmasında bugüne kadar kaç şüpheliden kaçı tutuklandı?",
       "options": [
-        "Türkiye, Katar ve Suudi Arabistan",
-        "Türkiye, Pakistan ve Mısır",
-        "Türkiye, İran ve Suudi Arabistan",
-        "Türkiye, Pakistan ve Suudi Arabistan"
+        "359 şüpheliden 112'si",
+        "112 şüpheliden 433'ü",
+        "433 şüpheliden 359'u",
+        "433 şüpheliden 112'si"
       ],
       "answer": 3,
-      "explanation": "Mekke Anlaşması, Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalandı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
+      "explanation": "İçişleri Bakanı Çiftçi, fon soruşturmasında 433 şüpheliden 112'sinin tutuklandığını açıkladı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807"
     },
     {
-      "question": "Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi nerede kabul edildi?",
+      "question": "Soruşturma kapsamında kaç gerçek ve tüzel kişinin mal varlığına blokaj konuldu?",
       "options": [
-        "Dışişleri Bakanlığı'nda",
-        "Cumhurbaşkanlığı Külliyesi'nde",
-        "TBMM Genel Kurulu'nda",
-        "Anayasa Mahkemesi'nde"
+        "359 gerçek kişi ile 111 tüzel kişi",
+        "112 gerçek kişi ile 359 tüzel kişi",
+        "433 gerçek kişi ile 112 tüzel kişi",
+        "111 gerçek kişi ile 359 tüzel kişi"
       ],
-      "answer": 2,
-      "explanation": "Kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss"
+      "answer": 0,
+      "explanation": "Soruşturma kapsamında 359 gerçek kişi ile 111 tüzel kişinin mal varlıklarına blokaj konuldu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807"
     },
     {
-      "question": "Fatma Betül Sayan Kaya hangi soruşturma kapsamında tutuklandı?",
+      "question": "İran basınına göre Keşm Adası'na kaç füze isabet etti?",
       "options": [
-        "Vergi soruşturması",
-        "Fon soruşturması",
-        "İmar soruşturması",
-        "Gümrük soruşturması"
+        "Üç füze",
+        "Beş füze",
+        "Bir füze",
+        "İki füze"
+      ],
+      "answer": 3,
+      "explanation": "İran basını, Keşm Adası'na iki füzenin isabet ettiğini bildirdi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html"
+    },
+    {
+      "question": "İran ordusu, Keşm Adası üzerinde hangi ülkeye ait insansız hava aracını düşürdüğünü açıkladı?",
+      "options": [
+        "Fransa",
+        "ABD",
+        "İsrail",
+        "İngiltere"
       ],
       "answer": 1,
-      "explanation": "Sayan Kaya, sermaye piyasalarındaki işlemlere ilişkin yürütülen fon soruşturması kapsamında tutuklandı.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
+      "explanation": "İran ordusu, ada üzerinde ABD'ye ait bir insansız hava aracını düşürdüğünü açıkladı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html"
     },
     {
-      "question": "Fatma Betül Sayan Kaya tutuklanmadan önce ne oldu?",
+      "question": "Fenerbahçe otobüsüne düzenlenen silahlı saldırı hangi tarihte gerçekleşti?",
       "options": [
-        "Serbest bırakıldı",
-        "Görevinden istifa etti",
-        "Yurt dışına çıktı",
-        "Hakimliğe sevk edildi"
-      ],
-      "answer": 3,
-      "explanation": "Sayan Kaya, hakimliğe sevk edildikten sonra tutuklandı.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433"
-    },
-    {
-      "question": "Afyonkarahisar'daki silahlı saldırıda kaç kişi hayatını kaybetti?",
-      "options": [
-        "5 kişi",
-        "3 kişi",
-        "10 kişi",
-        "8 kişi"
-      ],
-      "answer": 3,
-      "explanation": "İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Afyonkarahisar'daki saldırının şüphelisi nerede yakalandı?",
-      "options": [
-        "İzmir'de",
-        "Afyonkarahisar'da",
-        "Ankara'da",
-        "Eskişehir'de"
-      ],
-      "answer": 3,
-      "explanation": "Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Avrupa'da bomba ihbarları nedeniyle en az kaç yolcu uçağı acil iniş yaptı?",
-      "options": [
-        "En az 25",
-        "En az 10",
-        "En az 17",
-        "En az 5"
+        "4 Nisan 2014",
+        "4 Nisan 2016",
+        "4 Nisan 2015",
+        "4 Mayıs 2015"
       ],
       "answer": 2,
-      "explanation": "Bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+      "explanation": "Fenerbahçe takım otobüsüne düzenlenen silahlı saldırı 4 Nisan 2015'te gerçekleşti.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Dublin-Roma seferini yapan uçaktaki kaç yolcu ve mürettebat güvenli şekilde tahliye edildi?",
+      "question": "Hazırlanan iddianamede kaç şüpheli hakkında ceza isteniyor?",
       "options": [
-        "120 yolcu ve 5 kişilik mürettebat",
-        "184 yolcu ve 7 kişilik mürettebat",
-        "151 yolcu ve 6 kişilik mürettebat",
-        "200 yolcu ve 8 kişilik mürettebat"
+        "6 şüpheli",
+        "3 şüpheli",
+        "5 şüpheli",
+        "4 şüpheli"
       ],
       "answer": 2,
-      "explanation": "Uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi.",
+      "explanation": "Hazırlanan iddianamede 5 şüpheli hakkında ceza isteniyor.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Bolu'da beklenen yağışların ne kadar kar örtüsü oluşturabileceği belirtildi?",
+      "options": [
+        "20 ila 30 santimetre",
+        "1 ila 3 santimetre",
+        "5 ila 20 santimetre",
+        "2 ila 5 santimetre"
+      ],
+      "answer": 2,
+      "explanation": "Yağışların yer yer 5 ila 20 santimetre kar örtüsü oluşturabileceği belirtildi.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954"
+      "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
     },
     {
-      "question": "Cristiano Ronaldo Portekiz Milli Takımı'nda kaç maça çıktı?",
+      "question": "Bolu'da kuvvetli yağışların ne zaman başlaması bekleniyor?",
       "options": [
-        "200",
-        "180",
-        "250",
-        "234"
+        "7 Kasım Cumartesi günü saat 03.00",
+        "8 Kasım Pazar günü saat 03.00",
+        "6 Kasım Cuma günü saat 03.00",
+        "7 Kasım Cumartesi günü saat 15.00"
       ],
-      "answer": 3,
-      "explanation": "Ronaldo, 234 milli maçta forma giydi.",
-      "source": "Habertürk",
-      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
+      "answer": 0,
+      "explanation": "Yağışların 7 Kasım Cumartesi günü saat 03.00'ten itibaren başlaması bekleniyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
     },
     {
-      "question": "Ronaldo, Portekiz Milli Takımı ile hangi yılda EURO zaferi yaşadı?",
+      "question": "Hakan Bahçetepe rüşvet davasında kaç yıl hapis cezasına çarptırıldı?",
       "options": [
-        "2020",
-        "2024",
-        "2012",
-        "2016"
+        "17 ay",
+        "3 yıl 6 ay",
+        "5 yıl 10 ay",
+        "6 yıl 3 ay"
       ],
       "answer": 3,
-      "explanation": "Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı.",
-      "source": "Habertürk",
-      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157"
+      "explanation": "Bahçetepe, rüşvet suçlamasıyla yargılandığı davada 6 yıl 3 ay hapis cezasına çarptırıldı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Hakan Bahçetepe hangi suçlardan beraat etti?",
+      "options": [
+        "Haksız mal edinme ve suç gelirlerini aklama",
+        "Rüşvet ve suç gelirlerini aklama",
+        "Rüşvet ve haksız mal edinme",
+        "Rüşvet ve görevi kötüye kullanma"
+      ],
+      "answer": 0,
+      "explanation": "Bahçetepe, haksız mal edinme ve suç gelirlerini aklama suçlarından beraat etti.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }

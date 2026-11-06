@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-07",
+  "news": {
+    "articles": [
+      {
+        "cat": "🏛️ Siyaset",
+        "source": "Anadolu Ajansı",
+        "summary": "İçişleri Bakanı Mustafa Çiftçi, fon soruşturmasında bugüne kadar 433 şüpheliden 112'sinin tutuklandığını açıkladı. Soruşturma kapsamında 359 gerçek kişi ile 111 tüzel kişinin mal varlıklarına blokaj konuldu. Çiftçi, soruşturmada sorumluların hesabını vereceğini söyledi.",
+        "time": "7 Kasım 00:44",
+        "title": "Fon soruşturmasında 433 şüpheliden 112'si tutuklandı",
+        "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/07/thumbs_b_c_687545c62f28e6b44cc1c36ddf95619f.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "TRT Haber",
+        "summary": "İran basını, Hürmüz Boğazı'ndaki Keşm Adası'nda patlama sesleri duyulduğunu ve adaya iki füzenin isabet ettiğini bildirdi. İran ordusu, ada üzerinde ABD'ye ait bir insansız hava aracını düşürdüğünü açıkladı. ABD ile İran hattında tansiyon yüksek seyrediyor.",
+        "time": "7 Kasım 02:12",
+        "title": "İran basını: Keşm Adası'nda patlama sesleri duyuldu",
+        "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2442000/hurmuz-a-2443244.jpg"
+      },
+      {
+        "cat": "⚽ Spor",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/eb73/live/bd8e0cd0-59b2-11f1-a4b7-619c279792a3.jpg",
+        "source": "BBC Türkçe",
+        "summary": "Trabzon Cumhuriyet Başsavcılığı, Fenerbahçe futbol takımını taşıyan otobüse 4 Nisan 2015'te düzenlenen silahlı saldırıya ilişkin soruşturmanın tamamlandığını açıkladı. Hazırlanan iddianamede 5 şüpheli hakkında ceza isteniyor. Soruşturma, saldırının üzerinden geçen yılların ardından tamamlanmış oldu.",
+        "time": "7 Kasım 02:00",
+        "title": "Fenerbahçe otobüsüne saldırı iddianamesi: 5 şüpheliye ceza isteniyor",
+        "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌧️ Hava Durumu",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aee0e1c33682fc5418a820a.jpg",
+        "source": "Hürriyet",
+        "summary": "Bolu Valiliği, 7 Kasım Cumartesi günü saat 03.00'ten itibaren başlayarak pazar gününe kadar kent genelinde etkili olması beklenen kuvvetli karla karışık yağmur ve kar yağışına karşı vatandaşları uyardı. Yağışların yer yer 5 ila 20 santimetre kar örtüsü oluşturabileceği belirtildi. Ulaşımda aksama, buzlanma ve don ile sel ve su baskını riskine dikkat çekildi.",
+        "time": "6 Kasım 20:29",
+        "title": "Bolu'da kar yağışı uyarısı: Kar kalınlığı 20 santimetreyi bulabilir",
+        "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "source": "DW Türkçe",
+        "summary": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe, rüşvet suçlamasıyla yargılandığı davada 6 yıl 3 ay hapis cezasına çarptırıldı. Bahçetepe, haksız mal edinme ve suç gelirlerini aklama suçlarından beraat etti. Yaklaşık 17 ay tutuklu kalan Bahçetepe, ev hapsi şeklinde adli kontrol tedbiriyle tahliye edildi.",
+        "time": "6 Kasım 21:10",
+        "title": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe tahliye edildi",
+        "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ],
+    "date": "2026-11-07",
+    "updated": "2026-11-07 02:44 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-07",
+    "generated": "2026-11-07 08:45 JST",
+    "questions": [
+      {
+        "question": "Fon soruşturmasında bugüne kadar kaç şüpheliden kaçı tutuklandı?",
+        "options": [
+          "359 şüpheliden 112'si",
+          "112 şüpheliden 433'ü",
+          "433 şüpheliden 359'u",
+          "433 şüpheliden 112'si"
+        ],
+        "answer": 3,
+        "explanation": "İçişleri Bakanı Çiftçi, fon soruşturmasında 433 şüpheliden 112'sinin tutuklandığını açıkladı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807"
+      },
+      {
+        "question": "Soruşturma kapsamında kaç gerçek ve tüzel kişinin mal varlığına blokaj konuldu?",
+        "options": [
+          "359 gerçek kişi ile 111 tüzel kişi",
+          "112 gerçek kişi ile 359 tüzel kişi",
+          "433 gerçek kişi ile 112 tüzel kişi",
+          "111 gerçek kişi ile 359 tüzel kişi"
+        ],
+        "answer": 0,
+        "explanation": "Soruşturma kapsamında 359 gerçek kişi ile 111 tüzel kişinin mal varlıklarına blokaj konuldu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807"
+      },
+      {
+        "question": "İran basınına göre Keşm Adası'na kaç füze isabet etti?",
+        "options": [
+          "Üç füze",
+          "Beş füze",
+          "Bir füze",
+          "İki füze"
+        ],
+        "answer": 3,
+        "explanation": "İran basını, Keşm Adası'na iki füzenin isabet ettiğini bildirdi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html"
+      },
+      {
+        "question": "İran ordusu, Keşm Adası üzerinde hangi ülkeye ait insansız hava aracını düşürdüğünü açıkladı?",
+        "options": [
+          "Fransa",
+          "ABD",
+          "İsrail",
+          "İngiltere"
+        ],
+        "answer": 1,
+        "explanation": "İran ordusu, ada üzerinde ABD'ye ait bir insansız hava aracını düşürdüğünü açıkladı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html"
+      },
+      {
+        "question": "Fenerbahçe otobüsüne düzenlenen silahlı saldırı hangi tarihte gerçekleşti?",
+        "options": [
+          "4 Nisan 2014",
+          "4 Nisan 2016",
+          "4 Nisan 2015",
+          "4 Mayıs 2015"
+        ],
+        "answer": 2,
+        "explanation": "Fenerbahçe takım otobüsüne düzenlenen silahlı saldırı 4 Nisan 2015'te gerçekleşti.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Hazırlanan iddianamede kaç şüpheli hakkında ceza isteniyor?",
+        "options": [
+          "6 şüpheli",
+          "3 şüpheli",
+          "5 şüpheli",
+          "4 şüpheli"
+        ],
+        "answer": 2,
+        "explanation": "Hazırlanan iddianamede 5 şüpheli hakkında ceza isteniyor.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Bolu'da beklenen yağışların ne kadar kar örtüsü oluşturabileceği belirtildi?",
+        "options": [
+          "20 ila 30 santimetre",
+          "1 ila 3 santimetre",
+          "5 ila 20 santimetre",
+          "2 ila 5 santimetre"
+        ],
+        "answer": 2,
+        "explanation": "Yağışların yer yer 5 ila 20 santimetre kar örtüsü oluşturabileceği belirtildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
+      },
+      {
+        "question": "Bolu'da kuvvetli yağışların ne zaman başlaması bekleniyor?",
+        "options": [
+          "7 Kasım Cumartesi günü saat 03.00",
+          "8 Kasım Pazar günü saat 03.00",
+          "6 Kasım Cuma günü saat 03.00",
+          "7 Kasım Cumartesi günü saat 15.00"
+        ],
+        "answer": 0,
+        "explanation": "Yağışların 7 Kasım Cumartesi günü saat 03.00'ten itibaren başlaması bekleniyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
+      },
+      {
+        "question": "Hakan Bahçetepe rüşvet davasında kaç yıl hapis cezasına çarptırıldı?",
+        "options": [
+          "17 ay",
+          "3 yıl 6 ay",
+          "5 yıl 10 ay",
+          "6 yıl 3 ay"
+        ],
+        "answer": 3,
+        "explanation": "Bahçetepe, rüşvet suçlamasıyla yargılandığı davada 6 yıl 3 ay hapis cezasına çarptırıldı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Hakan Bahçetepe hangi suçlardan beraat etti?",
+        "options": [
+          "Haksız mal edinme ve suç gelirlerini aklama",
+          "Rüşvet ve suç gelirlerini aklama",
+          "Rüşvet ve haksız mal edinme",
+          "Rüşvet ve görevi kötüye kullanma"
+        ],
+        "answer": 0,
+        "explanation": "Bahçetepe, haksız mal edinme ve suç gelirlerini aklama suçlarından beraat etti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

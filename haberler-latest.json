@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-06",
-  "updated": "2026-11-06 02:46 TSİ",
   "articles": [
     {
       "cat": "🏛️ Siyaset",
-      "time": "6 Kasım 00:21",
-      "title": "Mekke Anlaşması TBMM'de kabul edildi",
-      "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında ortak savunma için imzalanan Mekke Anlaşması'nın onaylanmasına ilişkin kanun teklifi, TBMM Genel Kurulu'nda oylanarak kabul edildi. Anlaşma, üç ülke arasında ortak savunma iş birliğini öngörüyor. Teklifin kabul edilmesiyle, Mekke Anlaşması'nın onay süreci Meclis aşamasını tamamlamış oldu.",
-      "url": "https://www.bbc.com/turkce/articles/cm3elqk438e2o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/news/1200/branded_turkce/7f98/live/93599450-d8f3-11f1-a701-fddedf244c16.jpg"
-    },
-    {
-      "cat": "💹 Ekonomi",
-      "time": "5 Kasım 22:48",
-      "title": "Eski bakan Fatma Betül Sayan Kaya fon soruşturması kapsamında tutuklandı",
-      "summary": "Eski bakan Fatma Betül Sayan Kaya, sermaye piyasalarında gerçekleştirilen işlemlere ilişkin yürütülen fon soruşturması kapsamında hakimliğe sevk edildi ve tutuklandı. Soruşturma, sermaye piyasalarındaki işlemleri kapsıyor. Sayan Kaya, fon soruşturması kapsamında hakim karşısına çıkarıldıktan sonra tutuklama kararıyla karşılaştı.",
-      "url": "https://www.aa.com.tr/tr/gundem/eski-bakan-fatma-betul-sayan-kaya-fon-sorusturmasi-kapsaminda-tutuklandi/4113433",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/05/thumbs_b_c_1a979c831747fd168a74f402ba86d8fa.jpg"
-    },
-    {
-      "cat": "🚨 Gündem",
-      "time": "5 Kasım 19:29",
-      "title": "Afyonkarahisar'da 2'si öğretmen 8 kişi silahla vurularak öldürüldü: Şüpheli Eskişehir'de yakalandı",
-      "summary": "Afyonkarahisar'ın İhsaniye ilçesinde düzenlenen silahlı saldırıda 8 kişi hayatını kaybetti. Hayatını kaybedenlerden ikisinin köy öğretmeni olduğu bildirildi. Saldırının ardından kaçan şüpheli, Eskişehir'de yakalandı. İhsaniye'deki saldırıda 8 kişinin silahla vurularak öldürüldüğü ve şüphelinin Eskişehir'de yakalandığı bildirildi.",
-      "url": "https://www.dw.com/tr/afyonkarahisar-da-2-si-öğretmen-8-kişi-silahla-vurularak-öldürüldü-şüpheli-eskişehir-de-yakalandı/a-79869258?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "summary": "İçişleri Bakanı Mustafa Çiftçi, fon soruşturmasında bugüne kadar 433 şüpheliden 112'sinin tutuklandığını açıkladı. Soruşturma kapsamında 359 gerçek kişi ile 111 tüzel kişinin mal varlıklarına blokaj konuldu. Çiftçi, soruşturmada sorumluların hesabını vereceğini söyledi.",
+      "time": "7 Kasım 00:44",
+      "title": "Fon soruşturmasında 433 şüpheliden 112'si tutuklandı",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/07/thumbs_b_c_687545c62f28e6b44cc1c36ddf95619f.jpg"
     },
     {
       "cat": "🌍 Dünya",
-      "time": "5 Kasım 13:11",
-      "title": "Avrupa'da bomba alarmı: Uçaklar acil iniş yaptı",
-      "summary": "Avrupa'da İtalya, Fransa, Belçika, Çekya ve Bulgaristan dahil birçok ülkede bomba ihbarları nedeniyle en az 17 yolcu uçağı acil iniş yaptı. Aer Lingus'un Dublin-Roma seferini yapan uçağı Fransa'daki Evreux Fauville Hava Üssü'ne indi; uçaktaki 151 yolcu ve 6 kişilik mürettebat güvenli şekilde tahliye edildi. İhbarların arkasında kimlerin bulunduğu araştırılıyor.",
-      "url": "https://www.hurriyet.com.tr/dunya/havada-bomba-panigi-fransiz-jetleri-havalandi-43366954",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aec5664242372ca501751e1.jpg"
+      "source": "TRT Haber",
+      "summary": "İran basını, Hürmüz Boğazı'ndaki Keşm Adası'nda patlama sesleri duyulduğunu ve adaya iki füzenin isabet ettiğini bildirdi. İran ordusu, ada üzerinde ABD'ye ait bir insansız hava aracını düşürdüğünü açıkladı. ABD ile İran hattında tansiyon yüksek seyrediyor.",
+      "time": "7 Kasım 02:12",
+      "title": "İran basını: Keşm Adası'nda patlama sesleri duyuldu",
+      "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2442000/hurmuz-a-2443244.jpg"
     },
     {
       "cat": "⚽ Spor",
-      "time": "5 Kasım 14:06",
-      "title": "Cristiano Ronaldo Portekiz Milli Takımı'nı bıraktığını resmen açıkladı",
-      "summary": "Cristiano Ronaldo, 41 yaşında Portekiz Milli Takımı'nı bıraktığını açıkladı. 234 milli maçta forma giyen yıldız futbolcu, bu karşılaşmalarda 146 gol ve 45 asiste imza attı. Ronaldo, Portekiz Milli Takımı ile EURO 2016'da zafere ulaştı; 2019 ve 2025'te ise UEFA Uluslar Ligi'ni kazandı.",
-      "url": "https://www.haberturk.com/spor/cristiano-ronaldo-portekiz-milli-takimi-ni-biraktigini-resmen-acikladi-3925157",
-      "source": "Habertürk",
-      "img": "https://im.haberturk.com/l/2026/11/05/ver1793876710/3925157/jpg/1200x628"
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/eb73/live/bd8e0cd0-59b2-11f1-a4b7-619c279792a3.jpg",
+      "source": "BBC Türkçe",
+      "summary": "Trabzon Cumhuriyet Başsavcılığı, Fenerbahçe futbol takımını taşıyan otobüse 4 Nisan 2015'te düzenlenen silahlı saldırıya ilişkin soruşturmanın tamamlandığını açıkladı. Hazırlanan iddianamede 5 şüpheli hakkında ceza isteniyor. Soruşturma, saldırının üzerinden geçen yılların ardından tamamlanmış oldu.",
+      "time": "7 Kasım 02:00",
+      "title": "Fenerbahçe otobüsüne saldırı iddianamesi: 5 şüpheliye ceza isteniyor",
+      "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "cat": "🌧️ Hava Durumu",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aee0e1c33682fc5418a820a.jpg",
+      "source": "Hürriyet",
+      "summary": "Bolu Valiliği, 7 Kasım Cumartesi günü saat 03.00'ten itibaren başlayarak pazar gününe kadar kent genelinde etkili olması beklenen kuvvetli karla karışık yağmur ve kar yağışına karşı vatandaşları uyardı. Yağışların yer yer 5 ila 20 santimetre kar örtüsü oluşturabileceği belirtildi. Ulaşımda aksama, buzlanma ve don ile sel ve su baskını riskine dikkat çekildi.",
+      "time": "6 Kasım 20:29",
+      "title": "Bolu'da kar yağışı uyarısı: Kar kalınlığı 20 santimetreyi bulabilir",
+      "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
+    },
+    {
+      "cat": "🚨 Gündem",
+      "source": "DW Türkçe",
+      "summary": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe, rüşvet suçlamasıyla yargılandığı davada 6 yıl 3 ay hapis cezasına çarptırıldı. Bahçetepe, haksız mal edinme ve suç gelirlerini aklama suçlarından beraat etti. Yaklaşık 17 ay tutuklu kalan Bahçetepe, ev hapsi şeklinde adli kontrol tedbiriyle tahliye edildi.",
+      "time": "6 Kasım 21:10",
+      "title": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe tahliye edildi",
+      "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
     }
-  ]
+  ],
+  "date": "2026-11-07",
+  "updated": "2026-11-07 02:44 TSİ"
 }
