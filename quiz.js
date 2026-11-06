@@ -28,14 +28,6 @@ function streakText(store) {
 // クイズを最後まで解いたときに1回だけ呼ぶ
 function recordPlay(dateStr) {
   const store = loadStore();
-  if (store.last !== dateStr) {
-    // 昨日（クイズの日付の前日）も遊んでいたら連続、それ以外は1から
-    const d = new Date(dateStr + "T00:00:00");
-    d.setDate(d.getDate() - 1);
-    const yesterday = d.toISOString().slice(0, 10);
-    store.streak = (store.last === yesterday) ? (store.streak || 0) + 1 : 1;
-    store.last = dateStr;
-  }
   store.best = Math.max(store.best || 0, score);
   // スコア履歴：その日のベストスコアを日付ごとに残す
   // （アーカイブのカレンダーの✓印と、将来の「進み具合」画面の材料）
@@ -44,6 +36,20 @@ function recordPlay(dateStr) {
   if (!prev || score > prev.score) {
     store.history[dateStr] = { score: score, total: quiz.questions.length };
   }
+  // 連続記録：今日からさかのぼって、遊んだ日を数えて求める。
+  // 日付キーはローカル時刻で作る。以前は toISOString() を使っていたが、
+  // UTCに変換されるため UTC+の地域（日本など）では「昨日」が1日ずれて
+  // 連続記録が永遠に伸びないバグがあった。
+  const pad = (n) => String(n).padStart(2, "0");
+  const keyOf = (dt) => `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}`;
+  const d = new Date(dateStr + "T00:00:00");
+  let streak = 0;
+  while (store.history[keyOf(d)]) {
+    streak++;
+    d.setDate(d.getDate() - 1);
+  }
+  store.streak = streak;
+  store.last = dateStr;
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
   return store;
 }

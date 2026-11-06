@@ -28,14 +28,6 @@ function streakText(store) {
 // Test sonuna kadar çözüldüğünde bir kez çağrılır
 function recordPlay(dateStr) {
   const store = loadStore();
-  if (store.last !== dateStr) {
-    // Dün (test tarihinin bir gün öncesi) de oynandıysa seri sürer, yoksa 1'den başlar
-    const d = new Date(dateStr + "T00:00:00");
-    d.setDate(d.getDate() - 1);
-    const yesterday = d.toISOString().slice(0, 10);
-    store.streak = (store.last === yesterday) ? (store.streak || 0) + 1 : 1;
-    store.last = dateStr;
-  }
   store.best = Math.max(store.best || 0, score);
   // Skor geçmişi: O günün en iyi skorunu tarih bazında sakla
   // (arşiv takvimindeki ✓ işaretleri ve ilerideki "İlerleme" ekranı için)
@@ -44,6 +36,21 @@ function recordPlay(dateStr) {
   if (!prev || score > prev.score) {
     store.history[dateStr] = { score: score, total: quiz.questions.length };
   }
+  // Seri: Bugünden geriye doğru, oynanmış günleri sayarak hesapla.
+  // Tarih anahtarları yerel saatle üretilir. Eskiden toISOString()
+  // kullanılıyordu; o, tarihi UTC'ye çevirdiği için UTC+ saat dilimlerinde
+  // (Türkiye +3, Japonya +9) "dün"ü bir gün eksik hesaplıyor ve seri
+  // hiç uzamıyordu — hata buydu.
+  const pad = (n) => String(n).padStart(2, "0");
+  const keyOf = (dt) => `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}`;
+  const d = new Date(dateStr + "T00:00:00");
+  let streak = 0;
+  while (store.history[keyOf(d)]) {
+    streak++;
+    d.setDate(d.getDate() - 1);
+  }
+  store.streak = streak;
+  store.last = dateStr;
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
   return store;
 }
