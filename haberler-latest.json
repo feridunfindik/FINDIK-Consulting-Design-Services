@@ -1,50 +1,50 @@
 {
+  "date": "2026-11-08",
+  "updated": "2026-11-08 02:46 TSİ",
   "articles": [
     {
-      "cat": "🏛️ Siyaset",
-      "source": "Anadolu Ajansı",
-      "summary": "İçişleri Bakanı Mustafa Çiftçi, fon soruşturmasında bugüne kadar 433 şüpheliden 112'sinin tutuklandığını açıkladı. Soruşturma kapsamında 359 gerçek kişi ile 111 tüzel kişinin mal varlıklarına blokaj konuldu. Çiftçi, soruşturmada sorumluların hesabını vereceğini söyledi.",
-      "time": "7 Kasım 00:44",
-      "title": "Fon soruşturmasında 433 şüpheliden 112'si tutuklandı",
-      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-sorusturmasinda-su-ana-kadar-toplamda-433-supheli-sahistan-112si-tutuklanmis-durumda/4114807",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/07/thumbs_b_c_687545c62f28e6b44cc1c36ddf95619f.jpg"
+      "cat": "🚨 Gündem",
+      "time": "7 Kasım 22:55",
+      "title": "Van'da tır ile minibüs çarpıştı: 9 kişi öldü, 5 kişi yaralandı",
+      "summary": "Van'ın Özalp ilçesinde, Özalp-Saray kara yolunda tır ile yolcu minibüsü çarpıştı. Kazada 5'i kadın, 4'ü erkek 9 kişi hayatını kaybetti, 3'ü kadın, 2'si erkek 5 kişi yaralandı. Vali Ozan Balcı, yağış nedeniyle kayganlaşan yolda çarpışmanın meydana geldiğini söyledi. Olay yerine jandarma, polis, AFAD, UMKE ve sağlık ekipleri sevk edildi; yaralılar hastanede tedavi altına alındı.",
+      "url": "https://www.trthaber.com/haber/turkiye/vanda-tir-ile-minibus-carpisti-9-kisi-oldu-5-kisi-yaralandi-962563.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/van-kaza-aa-2502031.jpg"
     },
     {
       "cat": "🌍 Dünya",
-      "source": "TRT Haber",
-      "summary": "İran basını, Hürmüz Boğazı'ndaki Keşm Adası'nda patlama sesleri duyulduğunu ve adaya iki füzenin isabet ettiğini bildirdi. İran ordusu, ada üzerinde ABD'ye ait bir insansız hava aracını düşürdüğünü açıkladı. ABD ile İran hattında tansiyon yüksek seyrediyor.",
-      "time": "7 Kasım 02:12",
-      "title": "İran basını: Keşm Adası'nda patlama sesleri duyuldu",
-      "url": "https://www.trthaber.com/haber/dunya/iran-basini-kesm-adasinda-patlama-sesleri-duyuldu-962483.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2442000/hurmuz-a-2443244.jpg"
+      "time": "7 Kasım 20:33",
+      "title": "Polonya'nın Krakow kentinde silahlı saldırı: Altı ölü, en az 10 yaralı",
+      "summary": "Polonya'nın Krakov kentinin ana meydanında silahlı saldırı düzenlendi. Saldırgan, aracıyla meydana girerek rastgele ateş açtı; saldırıda 6 kişi hayatını kaybetti, aralarında iki polisin de bulunduğu en az 10 kişi yaralandı. Hayatını kaybedenlerin dördü kadındı. Polonya vatandaşı olduğu belirtilen saldırgan, polis tarafından vurularak yakalandı ve hastaneye kaldırıldı. Saldırının nedeni henüz bilinmiyor.",
+      "url": "https://www.bbc.com/turkce/articles/c83vqgrnr6ego?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d087/live/ec1421a0-dac9-11f1-b441-2b33b063138f.jpg"
     },
     {
-      "cat": "⚽ Spor",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/eb73/live/bd8e0cd0-59b2-11f1-a4b7-619c279792a3.jpg",
-      "source": "BBC Türkçe",
-      "summary": "Trabzon Cumhuriyet Başsavcılığı, Fenerbahçe futbol takımını taşıyan otobüse 4 Nisan 2015'te düzenlenen silahlı saldırıya ilişkin soruşturmanın tamamlandığını açıkladı. Hazırlanan iddianamede 5 şüpheli hakkında ceza isteniyor. Soruşturma, saldırının üzerinden geçen yılların ardından tamamlanmış oldu.",
-      "time": "7 Kasım 02:00",
-      "title": "Fenerbahçe otobüsüne saldırı iddianamesi: 5 şüpheliye ceza isteniyor",
-      "url": "https://www.bbc.com/turkce/articles/cn5p9xwe9glo?at_medium=RSS&at_campaign=rss"
+      "cat": "🏛️ Siyaset",
+      "time": "7 Kasım 20:37",
+      "title": "Cumhurbaşkanı Erdoğan, ABD Başkanı Trump ile telefonda görüştü",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, ABD Başkanı Donald Trump ile telefonda görüştü. Erdoğan, İran ile ABD arasındaki gerilimin sona ermesi ve sorunların diplomasi yoluyla çözülmesi gerektiğini söyledi. Ukrayna-Rusya savaşının bitmesi için artan diplomatik çabaların olumlu sonuç vermesini umduğunu belirten Erdoğan, Trump'a Türk Devletleri Teşkilatı Zirvesi'ne verdiği destek için teşekkür etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-abd-baskani-trump-ile-telefonda-gorustu/4115395",
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/07/thumbs_b_c_d4713770f660a77509bb5a4d2f7f5ea7.jpg"
     },
     {
       "cat": "🌧️ Hava Durumu",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aee0e1c33682fc5418a820a.jpg",
+      "time": "8 Kasım 02:01",
+      "title": "Ankara'da gece saatlerinde kar yağışı etkili oldu",
+      "summary": "Başkent Ankara'da gece saatlerinde kar yağışı başladı. Yağış kentin bazı noktalarında etkili oldu; park halindeki bazı otomobillerin üzeri karla kaplandı, sürücüler ıslak yollarda ilerledi. Kar yağışı, kentin simge yapılarından Atakule çevresinde de görüntülendi.",
+      "url": "https://www.hurriyet.com.tr/gundem/ankarada-gece-saatlerinde-kar-yagisi-etkili-oldu-43370055",
       "source": "Hürriyet",
-      "summary": "Bolu Valiliği, 7 Kasım Cumartesi günü saat 03.00'ten itibaren başlayarak pazar gününe kadar kent genelinde etkili olması beklenen kuvvetli karla karışık yağmur ve kar yağışına karşı vatandaşları uyardı. Yağışların yer yer 5 ila 20 santimetre kar örtüsü oluşturabileceği belirtildi. Ulaşımda aksama, buzlanma ve don ile sel ve su baskını riskine dikkat çekildi.",
-      "time": "6 Kasım 20:29",
-      "title": "Bolu'da kar yağışı uyarısı: Kar kalınlığı 20 santimetreyi bulabilir",
-      "url": "https://www.hurriyet.com.tr/gundem/istanbulun-yani-basi-valilik-saat-vererek-uyardi-kar-kalinligi-20-santimetreyi-bulacak-43368863"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6aefadb1242372ca5017636e.jpg"
     },
     {
-      "cat": "🚨 Gündem",
-      "source": "DW Türkçe",
-      "summary": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe, rüşvet suçlamasıyla yargılandığı davada 6 yıl 3 ay hapis cezasına çarptırıldı. Bahçetepe, haksız mal edinme ve suç gelirlerini aklama suçlarından beraat etti. Yaklaşık 17 ay tutuklu kalan Bahçetepe, ev hapsi şeklinde adli kontrol tedbiriyle tahliye edildi.",
-      "time": "6 Kasım 21:10",
-      "title": "Gaziosmanpaşa Belediye Başkanı Hakan Bahçetepe tahliye edildi",
-      "url": "https://www.dw.com/tr/gaziosmanpaşa-belediye-başkanı-hakan-bahçetepe-tahliye-edildi/a-79881251?maca=tur-rss-tur-all-1495-rdf"
+      "cat": "🌍 Dünya",
+      "time": "7 Kasım 17:39",
+      "title": "Paraguay'da bankacılık skandalı: Devlet Başkanı Pena görevden alındı",
+      "summary": "Paraguay'da bankacılık skandalı, Devlet Başkanı Santiago Pena'nın görevden alınmasına yol açtı. Ueno Bank'ın yaklaşık 3 milyon müşterisi, bankaya kayyum atanmasından bu yana paralarına ulaşamıyor. Senato, Pena'yı oy birliğiyle görevden aldı; Pena ev hapsine konuldu. Yerine yardımcısı Pedro Alliana başkan oldu. Pena hakkında, bankanın denetimi ve bankaya yatırılan kamu fonlarıyla ilgili soruşturma sürüyor.",
+      "url": "https://www.dw.com/tr/paraguay-da-bankacılık-skandalı-devlet-başkanı-pena-görevden-alındı/a-79885427?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     }
-  ],
-  "date": "2026-11-07",
-  "updated": "2026-11-07 02:44 TSİ"
+  ]
 }
