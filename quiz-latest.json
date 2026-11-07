@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-07",
-  "generated": "2026-11-07 07:46 JST",
+  "date": "2026-11-08",
+  "generated": "2026-11-08 07:50 JST",
   "questions": [
     {
-      "question": "この地震の震源はどこでしたか？",
+      "question": "この地震で震度5強を観測したのはどこですか。",
       "options": [
-        "宮城県沖",
-        "東京湾",
-        "千葉県内",
-        "関東東方沖"
-      ],
-      "answer": 3,
-      "explanation": "震源は関東東方沖でした。",
-      "source": "千葉日報オンライン",
-      "url": "https://news.yahoo.co.jp/articles/0ad210cff7410911d2c5da50816c84867d17a440"
-    },
-    {
-      "question": "この地震で最大震度3を観測した県はどれですか？",
-      "options": [
-        "神奈川県",
-        "千葉県",
         "東京都",
-        "宮城県"
-      ],
-      "answer": 3,
-      "explanation": "宮城、福島、茨城で最大震度3を観測しました。",
-      "source": "千葉日報オンライン",
-      "url": "https://news.yahoo.co.jp/articles/0ad210cff7410911d2c5da50816c84867d17a440"
-    },
-    {
-      "question": "食料品の消費税率は、何％から何％に引き下げられますか？",
-      "options": [
-        "8％から5％",
-        "5％から1％",
-        "8％から1％",
-        "10％から8％"
-      ],
-      "answer": 2,
-      "explanation": "食料品の税率を8％から1％に引き下げます。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC63GHVVC6UTFK00LM.html?ref=rss"
-    },
-    {
-      "question": "採決の直前に退席したのは誰ですか？",
-      "options": [
-        "石破茂前首相ら自民党の5人",
-        "石破茂前首相ら自民党の2人",
-        "石破茂前首相ら自民党の4人",
-        "石破茂前首相ら自民党の3人"
-      ],
-      "answer": 2,
-      "explanation": "石破茂前首相ら自民党の4人が退席しました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC63GHVVC6UTFK00LM.html?ref=rss"
-    },
-    {
-      "question": "10月に農業以外の仕事に就く人は、前の月より何人増えましたか？",
-      "options": [
-        "6万5000人",
-        "16万5000人",
-        "6万人",
-        "2万9000人"
+        "愛知県知多市",
+        "愛知県名古屋市",
+        "静岡県西部"
       ],
       "answer": 1,
-      "explanation": "前の月より16万5000人増えました。",
+      "explanation": "愛知県知多市で震度5強を観測しました。",
       "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601587?source=rss"
+      "url": "https://news.yahoo.co.jp/pickup/6601724?source=rss"
     },
     {
-      "question": "10月の失業率は何％でしたか？",
+      "question": "この地震について、正しいのはどれですか。",
       "options": [
-        "4.1％",
-        "4.5％",
-        "4.2％",
-        "4.0％"
+        "けが人は出なかった",
+        "震源の深さは約10キロだった",
+        "マグニチュードは6.7だった",
+        "津波の心配はない"
+      ],
+      "answer": 3,
+      "explanation": "この地震による津波の心配はありません。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6601724?source=rss"
+    },
+    {
+      "question": "U-17女子ワールドカップの決勝で、日本が対戦した相手はどこですか。",
+      "options": [
+        "フランス",
+        "北朝鮮",
+        "モロッコ",
+        "ナイジェリア"
+      ],
+      "answer": 3,
+      "explanation": "日本は決勝でナイジェリアに1対2で敗れました。",
+      "source": "サッカーダイジェストWeb",
+      "url": "https://news.jp/i/1491897604314677580"
+    },
+    {
+      "question": "日本が1点を返したのは、試合の何分ですか。",
+      "options": [
+        "90分",
+        "40分",
+        "60分",
+        "80分"
+      ],
+      "answer": 3,
+      "explanation": "日本は80分に伊藤風葵選手が1点を返しました。",
+      "source": "サッカーダイジェストWeb",
+      "url": "https://news.jp/i/1491897604314677580"
+    },
+    {
+      "question": "銃撃事件が起きたのはどこですか。",
+      "options": [
+        "ポーランド北部の港",
+        "ポーランドの首都ワルシャワ",
+        "ドイツのベルリン",
+        "ポーランド南部のクラクフの中央広場"
+      ],
+      "answer": 3,
+      "explanation": "クラクフの中心部にある中央広場で事件が起きました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC75HBQVC7UHBI017M.html?ref=rss"
+    },
+    {
+      "question": "この事件で亡くなった人は何人ですか。",
+      "options": [
+        "6人",
+        "15人",
+        "24人",
+        "2人"
       ],
       "answer": 0,
-      "explanation": "失業率は4.1％で、9月の4.2％から下がりました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601587?source=rss"
+      "explanation": "6人が死亡し、15人がけがをしました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC75HBQVC7UHBI017M.html?ref=rss"
     },
     {
-      "question": "個人情報が漏れたのは、およそ何人分ですか？",
+      "question": "中間選挙で上院と下院の両方で過半数を獲得したのはどの党ですか。",
       "options": [
-        "9715人分",
-        "500万人分",
-        "279万7545人分",
-        "100万人分"
-      ],
-      "answer": 2,
-      "explanation": "顧客およそ279万7545人分の個人情報が漏れました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
-    },
-    {
-      "question": "9715人分について、個人情報のほかに何の情報も不正に取られましたか？",
-      "options": [
-        "クレジットカードの情報だけ",
-        "個人情報だけ",
-        "通話の音声データだけ",
-        "通話の音声データとクレジットカードの情報"
+        "緑の党",
+        "無所属",
+        "共和党",
+        "民主党"
       ],
       "answer": 3,
-      "explanation": "通話の音声データとクレジットカードの情報も不正に取られました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
+      "explanation": "民主党が上院と下院の両方で過半数を獲得しました。",
+      "source": "TBS NEWS DIG",
+      "url": "https://news.mixi.jp/view_news.pl?id=9019278&media_id=266"
     },
     {
-      "question": "西川貴教さんの紅白出場は、何年ぶりですか？",
+      "question": "テキサス州で民主党が上院の議席を取るのは何年ぶりですか。",
       "options": [
-        "6年ぶり",
-        "30年ぶり",
         "12年ぶり",
-        "3年ぶり"
+        "20年ぶり",
+        "38年ぶり",
+        "94年ぶり"
       ],
       "answer": 2,
-      "explanation": "2014年以来12年ぶり6度目の出場です。",
-      "source": "スポニチアネックス",
-      "url": "https://news.infoseek.co.jp/article/sponichin_20261107_0039/"
+      "explanation": "テキサス州では38年ぶりに民主党が上院の議席を取りました。",
+      "source": "TBS NEWS DIG",
+      "url": "https://news.mixi.jp/view_news.pl?id=9019278&media_id=266"
     },
     {
-      "question": "西川さんが紅白で歌う「HOT LIMIT」は、いつ発売された曲ですか？",
+      "question": "吉村洋文代表の3選はどのように決まりましたか。",
       "options": [
-        "2024年",
-        "1997年",
-        "2014年",
-        "1998年"
+        "投票で選ばれた",
+        "無投票で承認された",
+        "くじ引きで決まった",
+        "国会で承認された"
       ],
-      "answer": 3,
-      "explanation": "1998年に発売した代表曲「HOT LIMIT」を紅白で初めて歌います。",
-      "source": "スポニチアネックス",
-      "url": "https://news.infoseek.co.jp/article/sponichin_20261107_0039/"
+      "answer": 1,
+      "explanation": "吉村氏の3選は無投票で正式に承認されました。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261107-GZ5RL7SI6NILHABS4KRB5RND6Y/?outputType=asynd"
+    },
+    {
+      "question": "吉村氏の新しい任期はいつまでですか。",
+      "options": [
+        "2030年11月まで",
+        "2027年11月まで",
+        "2028年11月まで",
+        "2026年11月まで"
+      ],
+      "answer": 2,
+      "explanation": "新しい任期は2028年11月までです。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261107-GZ5RL7SI6NILHABS4KRB5RND6Y/?outputType=asynd"
     }
   ]
 }
