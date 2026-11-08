@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-09",
+  "news": {
+    "date": "2026-11-09",
+    "updated": "2026-11-09 02:46 TSİ",
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "time": "9 Kasım 00:04",
+        "title": "Türkiye'nin ev sahipliğindeki COP31 bugün başlıyor",
+        "summary": "Türkiye, iklim değişikliğiyle mücadelede dünyanın en önemli organizasyonu olan Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi'nin 31. Taraflar Konferansı'na (COP31) ilk kez ev sahipliği yapıyor. Konferans bugün Antalya COP31 Alanı'nda başlıyor.",
+        "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/cop31-antalya-aa-2502050.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "8 Kasım 18:42",
+        "title": "Türkiye ve Irak'tan ortak açıklama: TSK'nın Başika üssünden çekilme süreci başlayacak",
+        "summary": "Türkiye Cumhuriyeti ve Irak Cumhuriyeti, ortak bir açıklama yayımlayarak eylül sonunda alınan karar doğrultusunda Başika üssünün Irak güçlerine devredilmesi sürecinin başlatılacağını duyurdu. Açıklamayla, üssün devri için sürecin resmen başladığı ilan edilmiş oldu.",
+        "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f48/live/154e2670-b800-11f1-97e1-83bf52ec4acd.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "8 Kasım 21:52",
+        "title": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
+        "summary": "Mısır'ın Giza vilayetine bağlı Ayat kentinde, Kahire-Asvan demir yolu hattında meydana gelen tren kazasında 7 kişi hayatını kaybetti, 112 kişi yaralandı. Giza'dan Feyyum'a giden trenin, Kahire'den Asvan'a giden yolcu treninin arka vagonuna çarptığı açıklandı. Yaralılar için 72 ambulans görevlendirildi; tedavisi tamamlanan 45 yaralı taburcu edildi. Hattaki seferler iki yönde de durduruldu.",
+        "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af0c4c5aa7d7bef197669a6.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "8 Kasım 17:44",
+        "title": "Bitlis'te karda mahsur kalan vatandaş UMKE ve 112 Acil Sağlık ekipleri tarafından kurtarıldı",
+        "summary": "Bitlis'te Nemrut Krater Gölü yolunda kar nedeniyle mahsur kalan bir vatandaş, bölgeye ulaşan Ulusal Medikal Kurtarma Ekibi (UMKE) ve 112 Acil Sağlık ekipleri tarafından kurtarıldı. Sağlık Bakanı Kemal Memişoğlu, kurtarma çalışmasını duyurarak ekiplerin vatandaşa ulaştığını bildirdi.",
+        "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/08/thumbs_b_c_67363a9890a599f90f8026e46d356604.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "8 Kasım 11:04",
+        "title": "Fon soruşturması: BDDK daire başkanı tutuklandı, tutuklu sayısı 118'e yükseldi",
+        "summary": "İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü 'Fon Soruşturması' kapsamında Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) 3. Daire Başkanı Bilal Soysal tutuklandı. Böylece soruşturmada tutuklananların sayısı 118'e yükseldi. Daha önce gözaltına alınıp serbest bırakılan Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya ile Takasbank Genel Müdürü Yunus Arıncı yeniden gözaltına alındı.",
+        "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-09",
+    "generated": "2026-11-09 08:47 JST",
+    "questions": [
+      {
+        "question": "COP31'e ilk kez ev sahipliği yapan ülke hangisidir?",
+        "options": [
+          "İtalya",
+          "Brezilya",
+          "Mısır",
+          "Türkiye"
+        ],
+        "answer": 3,
+        "explanation": "Özette, Türkiye'nin COP31'e ilk kez ev sahipliği yaptığı belirtiliyor.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
+      },
+      {
+        "question": "COP31 bugün nerede başlıyor?",
+        "options": [
+          "Ankara ATO Congresium",
+          "İstanbul Kongre Merkezi",
+          "İzmir Fuar Alanı",
+          "Antalya COP31 Alanı"
+        ],
+        "answer": 3,
+        "explanation": "Konferansın bugün Antalya COP31 Alanı'nda başladığı özette yer alıyor.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
+      },
+      {
+        "question": "Başika üssünün Irak güçlerine devredilmesi süreci hangi karara dayanıyor?",
+        "options": [
+          "Eylül sonunda alınan karar",
+          "Ocak başında alınan karar",
+          "Bu hafta alınan karar",
+          "Geçen yıl alınan karar"
+        ],
+        "answer": 0,
+        "explanation": "Özette, sürecin eylül sonunda alınan karar doğrultusunda başlatılacağı belirtiliyor.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Başika üssünün devredileceği güçler hangileridir?",
+        "options": [
+          "Koalisyon güçleri",
+          "Irak güçleri",
+          "Birleşmiş Milletler güçleri",
+          "NATO güçleri"
+        ],
+        "answer": 1,
+        "explanation": "Ortak açıklamada, Başika üssünün Irak güçlerine devredileceği duyuruldu.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Mısır'daki tren kazasında kaç kişi hayatını kaybetti?",
+        "options": [
+          "7 kişi",
+          "12 kişi",
+          "5 kişi",
+          "9 kişi"
+        ],
+        "answer": 0,
+        "explanation": "Özette kazada 7 kişinin hayatını kaybettiği, 112 kişinin yaralandığı belirtiliyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
+      },
+      {
+        "question": "Kazanın ardından yaralılar için kaç ambulans görevlendirildi?",
+        "options": [
+          "60 ambulans",
+          "72 ambulans",
+          "90 ambulans",
+          "45 ambulans"
+        ],
+        "answer": 1,
+        "explanation": "Özette, yaralılar için 72 ambulansın görevlendirildiği ve tedavisi tamamlanan 45 yaralının taburcu edildiği yazıyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
+      },
+      {
+        "question": "Bitlis'te karda mahsur kalan vatandaşı hangi ekipler kurtardı?",
+        "options": [
+          "İtfaiye ve polis ekipleri",
+          "Karayolları ekipleri",
+          "AFAD ve jandarma ekipleri",
+          "UMKE ve 112 Acil Sağlık ekipleri"
+        ],
+        "answer": 3,
+        "explanation": "Özette, vatandaşı Ulusal Medikal Kurtarma Ekibi (UMKE) ve 112 Acil Sağlık ekiplerinin kurtardığı belirtiliyor.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
+      },
+      {
+        "question": "Vatandaş nerede mahsur kalmıştı?",
+        "options": [
+          "Bitlis Havalimanı yolunda",
+          "Nemrut Krater Gölü yolunda",
+          "Tatvan sahil yolunda",
+          "Bitlis şehir merkezinde"
+        ],
+        "answer": 1,
+        "explanation": "Özette, vatandaşın Nemrut Krater Gölü yolunda kar nedeniyle mahsur kaldığı yazıyor.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
+      },
+      {
+        "question": "Fon Soruşturması'nı hangi kurum yürütüyor?",
+        "options": [
+          "İzmir Cumhuriyet Başsavcılığı",
+          "Ankara Cumhuriyet Başsavcılığı",
+          "İstanbul Cumhuriyet Başsavcılığı",
+          "Bursa Cumhuriyet Başsavcılığı"
+        ],
+        "answer": 2,
+        "explanation": "Özette, soruşturmanın İstanbul Cumhuriyet Başsavcılığı tarafından yürütüldüğü belirtiliyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Soruşturma kapsamında tutuklananların sayısı kaça yükseldi?",
+        "options": [
+          "118'e",
+          "115'e",
+          "112'ye",
+          "117'ye"
+        ],
+        "answer": 0,
+        "explanation": "Özette, Soysal'ın tutuklanmasıyla soruşturmada tutuklananların sayısının 118'e yükseldiği belirtiliyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

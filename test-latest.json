@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-08",
-  "generated": "2026-11-08 08:47 JST",
+  "date": "2026-11-09",
+  "generated": "2026-11-09 08:47 JST",
   "questions": [
     {
-      "question": "Van'daki kaza nerede meydana geldi?",
+      "question": "COP31'e ilk kez ev sahipliği yapan ülke hangisidir?",
       "options": [
-        "Özalp-Saray kara yolunda",
-        "Saray-Özalp köy yolunda",
-        "Özalp ilçe merkezinde",
-        "Van şehir merkezinde"
-      ],
-      "answer": 0,
-      "explanation": "Kaza, Van'ın Özalp ilçesinde Özalp-Saray kara yolunda meydana geldi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/vanda-tir-ile-minibus-carpisti-9-kisi-oldu-5-kisi-yaralandi-962563.html"
-    },
-    {
-      "question": "Kazada kaç kişi hayatını kaybetti?",
-      "options": [
-        "5 kişi",
-        "14 kişi",
-        "9 kişi",
-        "4 kişi"
-      ],
-      "answer": 2,
-      "explanation": "Kazada 9 kişi hayatını kaybetti, 5 kişi yaralandı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/vanda-tir-ile-minibus-carpisti-9-kisi-oldu-5-kisi-yaralandi-962563.html"
-    },
-    {
-      "question": "Krakov'daki saldırı nerede gerçekleşti?",
-      "options": [
-        "Polonya parlamentosunun önünde",
-        "Varşova'nın ana meydanında",
-        "Krakov tren garında",
-        "Krakov'un ana meydanında"
+        "İtalya",
+        "Brezilya",
+        "Mısır",
+        "Türkiye"
       ],
       "answer": 3,
-      "explanation": "Saldırı, Polonya'nın Krakov kentinin ana meydanında düzenlendi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c83vqgrnr6ego?at_medium=RSS&at_campaign=rss"
+      "explanation": "Özette, Türkiye'nin COP31'e ilk kez ev sahipliği yaptığı belirtiliyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
     },
     {
-      "question": "Saldırgan hakkında hangisi doğrudur?",
+      "question": "COP31 bugün nerede başlıyor?",
       "options": [
-        "Kimliği henüz belirlenemedi",
-        "Polis tarafından vurularak yakalandı ve hastaneye kaldırıldı",
-        "Teslim olduktan sonra serbest bırakıldı",
-        "Olay yerinden kaçmayı başardı"
+        "Ankara ATO Congresium",
+        "İstanbul Kongre Merkezi",
+        "İzmir Fuar Alanı",
+        "Antalya COP31 Alanı"
+      ],
+      "answer": 3,
+      "explanation": "Konferansın bugün Antalya COP31 Alanı'nda başladığı özette yer alıyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
+    },
+    {
+      "question": "Başika üssünün Irak güçlerine devredilmesi süreci hangi karara dayanıyor?",
+      "options": [
+        "Eylül sonunda alınan karar",
+        "Ocak başında alınan karar",
+        "Bu hafta alınan karar",
+        "Geçen yıl alınan karar"
+      ],
+      "answer": 0,
+      "explanation": "Özette, sürecin eylül sonunda alınan karar doğrultusunda başlatılacağı belirtiliyor.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Başika üssünün devredileceği güçler hangileridir?",
+      "options": [
+        "Koalisyon güçleri",
+        "Irak güçleri",
+        "Birleşmiş Milletler güçleri",
+        "NATO güçleri"
       ],
       "answer": 1,
-      "explanation": "Polonya vatandaşı olduğu belirtilen saldırgan, polis tarafından vurularak yakalandı ve hastaneye kaldırıldı.",
+      "explanation": "Ortak açıklamada, Başika üssünün Irak güçlerine devredileceği duyuruldu.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c83vqgrnr6ego?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Erdoğan, Trump ile görüşmesinde hangi konuda diplomasi vurgusu yaptı?",
+      "question": "Mısır'daki tren kazasında kaç kişi hayatını kaybetti?",
       "options": [
-        "İran ile ABD arasındaki gerilimin diplomasi yoluyla çözülmesi",
-        "İran ile ABD arasındaki gerilimin askeri yollarla çözülmesi",
-        "Türkiye ile ABD arasındaki ticaretin artırılması",
-        "Ukrayna-Rusya savaşının diplomasi dışında çözülmesi"
+        "7 kişi",
+        "12 kişi",
+        "5 kişi",
+        "9 kişi"
       ],
       "answer": 0,
-      "explanation": "Erdoğan, İran ile ABD arasındaki gerilimin sona ermesi ve sorunların diplomasi yoluyla çözülmesi gerektiğini söyledi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-abd-baskani-trump-ile-telefonda-gorustu/4115395"
+      "explanation": "Özette kazada 7 kişinin hayatını kaybettiği, 112 kişinin yaralandığı belirtiliyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
     },
     {
-      "question": "Erdoğan, Trump'a ne için teşekkür etti?",
+      "question": "Kazanın ardından yaralılar için kaç ambulans görevlendirildi?",
       "options": [
-        "Türk Devletleri Teşkilatı Zirvesi'ne verdiği destek için",
-        "Ukrayna-Rusya savaşına verdiği destek için",
-        "İran ile yapılan görüşmelere verdiği destek için",
-        "Türkiye'ye yaptığı ziyaret için"
+        "60 ambulans",
+        "72 ambulans",
+        "90 ambulans",
+        "45 ambulans"
       ],
-      "answer": 0,
-      "explanation": "Erdoğan, Trump'a Türk Devletleri Teşkilatı Zirvesi'ne verdiği destek için teşekkür etti.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-abd-baskani-trump-ile-telefonda-gorustu/4115395"
+      "answer": 1,
+      "explanation": "Özette, yaralılar için 72 ambulansın görevlendirildiği ve tedavisi tamamlanan 45 yaralının taburcu edildiği yazıyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
     },
     {
-      "question": "Ankara'da kar yağışı ne zaman başladı?",
+      "question": "Bitlis'te karda mahsur kalan vatandaşı hangi ekipler kurtardı?",
       "options": [
-        "Akşam saatlerinde",
-        "Sabah saatlerinde",
-        "Gece saatlerinde",
-        "Öğle saatlerinde"
+        "İtfaiye ve polis ekipleri",
+        "Karayolları ekipleri",
+        "AFAD ve jandarma ekipleri",
+        "UMKE ve 112 Acil Sağlık ekipleri"
+      ],
+      "answer": 3,
+      "explanation": "Özette, vatandaşı Ulusal Medikal Kurtarma Ekibi (UMKE) ve 112 Acil Sağlık ekiplerinin kurtardığı belirtiliyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
+    },
+    {
+      "question": "Vatandaş nerede mahsur kalmıştı?",
+      "options": [
+        "Bitlis Havalimanı yolunda",
+        "Nemrut Krater Gölü yolunda",
+        "Tatvan sahil yolunda",
+        "Bitlis şehir merkezinde"
+      ],
+      "answer": 1,
+      "explanation": "Özette, vatandaşın Nemrut Krater Gölü yolunda kar nedeniyle mahsur kaldığı yazıyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
+    },
+    {
+      "question": "Fon Soruşturması'nı hangi kurum yürütüyor?",
+      "options": [
+        "İzmir Cumhuriyet Başsavcılığı",
+        "Ankara Cumhuriyet Başsavcılığı",
+        "İstanbul Cumhuriyet Başsavcılığı",
+        "Bursa Cumhuriyet Başsavcılığı"
       ],
       "answer": 2,
-      "explanation": "Başkent Ankara'da gece saatlerinde kar yağışı başladı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/ankarada-gece-saatlerinde-kar-yagisi-etkili-oldu-43370055"
+      "explanation": "Özette, soruşturmanın İstanbul Cumhuriyet Başsavcılığı tarafından yürütüldüğü belirtiliyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
     },
     {
-      "question": "Kar yağışı, Ankara'nın hangi simge yapısı çevresinde görüntülendi?",
+      "question": "Soruşturma kapsamında tutuklananların sayısı kaça yükseldi?",
       "options": [
-        "Atakule",
-        "Ankara Kalesi",
-        "Anıtkabir",
-        "Kızılay Meydanı"
+        "118'e",
+        "115'e",
+        "112'ye",
+        "117'ye"
       ],
       "answer": 0,
-      "explanation": "Kar yağışı, kentin simge yapılarından Atakule çevresinde de görüntülendi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/ankarada-gece-saatlerinde-kar-yagisi-etkili-oldu-43370055"
-    },
-    {
-      "question": "Ueno Bank'ın yaklaşık kaç müşterisi paralarına ulaşamıyor?",
-      "options": [
-        "Yaklaşık 2 milyon",
-        "Yaklaşık 3 milyon",
-        "Yaklaşık 300 bin",
-        "Yaklaşık 5 milyon"
-      ],
-      "answer": 1,
-      "explanation": "Ueno Bank'ın yaklaşık 3 milyon müşterisi, bankaya kayyum atanmasından bu yana paralarına ulaşamıyor.",
+      "explanation": "Özette, Soysal'ın tutuklanmasıyla soruşturmada tutuklananların sayısının 118'e yükseldiği belirtiliyor.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/paraguay-da-bankacılık-skandalı-devlet-başkanı-pena-görevden-alındı/a-79885427?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Pena'nın yerine kim başkan oldu?",
-      "options": [
-        "Yardımcısı Pedro Alliana",
-        "Senato tarafından atanan bir general",
-        "Pena görevde kaldı",
-        "Ueno Bank'ın kayyumu"
-      ],
-      "answer": 0,
-      "explanation": "Yerine yardımcısı Pedro Alliana başkan oldu.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/paraguay-da-bankacılık-skandalı-devlet-başkanı-pena-görevden-alındı/a-79885427?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }
