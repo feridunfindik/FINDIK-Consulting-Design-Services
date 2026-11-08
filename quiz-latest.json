@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-08",
-  "generated": "2026-11-08 07:50 JST",
+  "date": "2026-11-09",
+  "generated": "2026-11-09 07:47 JST",
   "questions": [
     {
-      "question": "この地震で震度5強を観測したのはどこですか。",
+      "question": "9日の東京都心の最高気温は何℃の予想ですか？",
       "options": [
-        "東京都",
-        "愛知県知多市",
-        "愛知県名古屋市",
-        "静岡県西部"
-      ],
-      "answer": 1,
-      "explanation": "愛知県知多市で震度5強を観測しました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601724?source=rss"
-    },
-    {
-      "question": "この地震について、正しいのはどれですか。",
-      "options": [
-        "けが人は出なかった",
-        "震源の深さは約10キロだった",
-        "マグニチュードは6.7だった",
-        "津波の心配はない"
-      ],
-      "answer": 3,
-      "explanation": "この地震による津波の心配はありません。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6601724?source=rss"
-    },
-    {
-      "question": "U-17女子ワールドカップの決勝で、日本が対戦した相手はどこですか。",
-      "options": [
-        "フランス",
-        "北朝鮮",
-        "モロッコ",
-        "ナイジェリア"
-      ],
-      "answer": 3,
-      "explanation": "日本は決勝でナイジェリアに1対2で敗れました。",
-      "source": "サッカーダイジェストWeb",
-      "url": "https://news.jp/i/1491897604314677580"
-    },
-    {
-      "question": "日本が1点を返したのは、試合の何分ですか。",
-      "options": [
-        "90分",
-        "40分",
-        "60分",
-        "80分"
-      ],
-      "answer": 3,
-      "explanation": "日本は80分に伊藤風葵選手が1点を返しました。",
-      "source": "サッカーダイジェストWeb",
-      "url": "https://news.jp/i/1491897604314677580"
-    },
-    {
-      "question": "銃撃事件が起きたのはどこですか。",
-      "options": [
-        "ポーランド北部の港",
-        "ポーランドの首都ワルシャワ",
-        "ドイツのベルリン",
-        "ポーランド南部のクラクフの中央広場"
-      ],
-      "answer": 3,
-      "explanation": "クラクフの中心部にある中央広場で事件が起きました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC75HBQVC7UHBI017M.html?ref=rss"
-    },
-    {
-      "question": "この事件で亡くなった人は何人ですか。",
-      "options": [
-        "6人",
-        "15人",
-        "24人",
-        "2人"
+        "10℃",
+        "9℃",
+        "15℃",
+        "8℃"
       ],
       "answer": 0,
-      "explanation": "6人が死亡し、15人がけがをしました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC75HBQVC7UHBI017M.html?ref=rss"
+      "explanation": "東京都心の最高気温は10℃で、前の日より8℃低く、1月上旬並みの寒さです。",
+      "source": "日本気象協会 tenki.jp",
+      "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
     },
     {
-      "question": "中間選挙で上院と下院の両方で過半数を獲得したのはどの党ですか。",
+      "question": "9日に雪や吹雪となる見込みの地域はどこですか？",
       "options": [
-        "緑の党",
-        "無所属",
-        "共和党",
-        "民主党"
-      ],
-      "answer": 3,
-      "explanation": "民主党が上院と下院の両方で過半数を獲得しました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://news.mixi.jp/view_news.pl?id=9019278&media_id=266"
-    },
-    {
-      "question": "テキサス州で民主党が上院の議席を取るのは何年ぶりですか。",
-      "options": [
-        "12年ぶり",
-        "20年ぶり",
-        "38年ぶり",
-        "94年ぶり"
-      ],
-      "answer": 2,
-      "explanation": "テキサス州では38年ぶりに民主党が上院の議席を取りました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://news.mixi.jp/view_news.pl?id=9019278&media_id=266"
-    },
-    {
-      "question": "吉村洋文代表の3選はどのように決まりましたか。",
-      "options": [
-        "投票で選ばれた",
-        "無投票で承認された",
-        "くじ引きで決まった",
-        "国会で承認された"
+        "福岡",
+        "北海道の日本海側",
+        "東北から九州",
+        "関東"
       ],
       "answer": 1,
-      "explanation": "吉村氏の3選は無投票で正式に承認されました。",
-      "source": "産経新聞",
-      "url": "https://www.sankei.com/article/20261107-GZ5RL7SI6NILHABS4KRB5RND6Y/?outputType=asynd"
+      "explanation": "北海道は日本海側を中心に雪や吹雪となる見込みです。",
+      "source": "日本気象協会 tenki.jp",
+      "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
     },
     {
-      "question": "吉村氏の新しい任期はいつまでですか。",
+      "question": "「レベル2++」の車は、いつ発売される予定ですか？",
       "options": [
-        "2030年11月まで",
-        "2027年11月まで",
-        "2028年11月まで",
-        "2026年11月まで"
+        "27年度内",
+        "26年度内",
+        "25年度内",
+        "28年度内"
       ],
-      "answer": 2,
-      "explanation": "新しい任期は2028年11月までです。",
-      "source": "産経新聞",
-      "url": "https://www.sankei.com/article/20261107-GZ5RL7SI6NILHABS4KRB5RND6Y/?outputType=asynd"
+      "answer": 0,
+      "explanation": "「レベル2++」の車として27年度内に発売される予定です。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
+    },
+    {
+      "question": "ウェイブの技術を採用することが決まっているのは、どこの自動車メーカーですか？",
+      "options": [
+        "レベル2++",
+        "日産",
+        "ミニバン「エルグランド」",
+        "ウェイブ・テクノロジーズ"
+      ],
+      "answer": 1,
+      "explanation": "日産のミニバン「エルグランド」への搭載が決まっています。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
+    },
+    {
+      "question": "COP31が開幕するのはどこですか？",
+      "options": [
+        "トルコ",
+        "国連",
+        "世界各地",
+        "各国"
+      ],
+      "answer": 0,
+      "explanation": "COP31が、9日にトルコで開幕します。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
+    },
+    {
+      "question": "COP31が開幕するのはいつですか？",
+      "options": [
+        "9日",
+        "8日",
+        "7日",
+        "10日"
+      ],
+      "answer": 0,
+      "explanation": "COP31が、9日にトルコで開幕します。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
+    },
+    {
+      "question": "千葉地裁は、女性の「逸失利益」を日本の賃金水準をもとに何歳まで算定する判決を出しましたか？",
+      "options": [
+        "65歳",
+        "67歳",
+        "70歳",
+        "60歳"
+      ],
+      "answer": 1,
+      "explanation": "逸失利益を、日本の賃金水準をもとに67歳まで算定する判決を出しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
+    },
+    {
+      "question": "女性が事故後に取得した日本語能力試験の級はどれですか？",
+      "options": [
+        "N5",
+        "N2",
+        "N3",
+        "N1"
+      ],
+      "answer": 1,
+      "explanation": "日本語能力試験のN2も取得しており、日本で働き続ける可能性が高いと判断されました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
+    },
+    {
+      "question": "映画「VIVANT」は、いつ劇場公開されますか？",
+      "options": [
+        "11月4日",
+        "12月3日",
+        "12月5日",
+        "12月4日"
+      ],
+      "answer": 3,
+      "explanation": "12月4日の劇場公開が決まりました。",
+      "source": "ライブドアニュース",
+      "url": "https://news.livedoor.com/article/detail/32765014/"
+    },
+    {
+      "question": "映画「VIVANT」の公開初日の上映チケットの先行販売は、いつ始まりますか？",
+      "options": [
+        "9日午前0時",
+        "12月4日午前0時",
+        "10日午前0時",
+        "8日午前0時"
+      ],
+      "answer": 0,
+      "explanation": "9日午前0時からは、公開初日の上映チケットの先行販売も始まります。",
+      "source": "ライブドアニュース",
+      "url": "https://news.livedoor.com/article/detail/32765014/"
     }
   ]
 }

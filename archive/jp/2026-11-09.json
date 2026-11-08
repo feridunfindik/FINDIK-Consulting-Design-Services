@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-09",
+  "news": {
+    "articles": [
+      {
+        "cat": "🌦️ 天気・防災",
+        "source": "日本気象協会 tenki.jp",
+        "summary": "9日は低気圧の影響で、北海道は日本海側を中心に雪や吹雪、東北から九州は冷たい雨となる見込みです。関東は断続的に雨で、昼ごろは本降りの雨となる見込みです。東京都心の最高気温は10℃で、前の日より8℃低く、1月上旬並みの寒さです。仙台は9℃、福岡は15℃の予想で、万全の寒さ対策が必要です。",
+        "time": "11月8日 17:06",
+        "title": "9日は東京の予想最高気温10℃と冬の寒さ 北海道で雪",
+        "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2",
+        "img": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261108-00037044-tenki-000-1-view.jpg?exp=10800"
+      },
+      {
+        "cat": "🔬 テクノロジー・科学",
+        "source": "朝日新聞",
+        "summary": "イギリスの新興企業ウェイブ・テクノロジーズは、車載カメラの映像から状況判断と運転操作をAIが一体で担う自動運転技術を手がけています。日産のミニバン「エルグランド」への搭載が決まっており、運転手は残しつつ、ほとんど操作がいらない高度な運転支援「レベル2++」の車として27年度内に発売される予定です。日産以外への採用拡大も目指しています。",
+        "time": "11月9日 7:00",
+        "title": "自動運転AI「日産以外にも」 英ウェイブ、日本勢の採用拡大に意欲",
+        "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss",
+        "img": "https://imgopt.asahi.com/ogp/AS20261105003231_comm.jpg"
+      },
+      {
+        "cat": "🌏 世界・政治",
+        "source": "NHKニュース",
+        "summary": "気候変動対策を話し合う国連の会議「COP31」が、9日にトルコで開幕します。世界各地では、気候変動の影響とみられる災害が相次いでいます。温室効果ガスの排出を減らすなど、具体的な対策を実際に進めるために、各国が足並みをそろえられるかが焦点です。",
+        "time": "11月8日 19:37",
+        "title": "COP31 きょう開幕 対策実行へ足並みそろえられるか焦点",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408",
+        "img": "https://imgu.web.nhk/news/u/news/nd/kiji/20261108de72408/20261108de72408_E0000153095_1_l.jpg"
+      },
+      {
+        "cat": "🚨 社会",
+        "source": "朝日新聞",
+        "summary": "技能実習生として働いていた中国籍の40代女性の労災事故をめぐる訴訟で、千葉地裁は、事故がなければ得られたはずの「逸失利益」を、日本の賃金水準をもとに67歳まで算定する判決を出しました。女性は事故後も日本で介護の仕事を続け、日本語能力試験のN2も取得しており、日本で働き続ける可能性が高いと判断されました。専門家は画期的な判決だと話しています。",
+        "time": "11月9日 6:00",
+        "title": "技能実習生の逸失利益「67歳まで日本水準」判決 専門家「画期的」",
+        "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss",
+        "img": "https://imgopt.asahi.com/ogp/AS20261106001397_comm.jpg"
+      },
+      {
+        "cat": "🎬 エンタメ",
+        "source": "ライブドアニュース",
+        "summary": "TBSの日曜劇場「VIVANT」の映画化が、8日の最終話の放送の最後に発表されました。主演の堺雅人が「新たな冒険はスクリーンで」と報告し、12月4日の劇場公開が決まりました。9日午前0時からは、公開初日の上映チケットの先行販売も始まります。ドラマの最終回から1か月足らずという異例の速さでの公開です。",
+        "time": "11月8日 22:01",
+        "title": "「VIVANT」映画化発表「新たな冒険はスクリーンで」 12月4日公開",
+        "url": "https://news.livedoor.com/article/detail/32765014/",
+        "img": "https://image.news.livedoor.com/newsimage/stf/4/0/4056c_60_b8f6e759_43f8b2da.jpg"
+      }
+    ],
+    "date": "2026-11-09",
+    "updated": "2026-11-09 07:47 JST"
+  },
+  "quiz": {
+    "date": "2026-11-09",
+    "generated": "2026-11-09 07:47 JST",
+    "questions": [
+      {
+        "question": "9日の東京都心の最高気温は何℃の予想ですか？",
+        "options": [
+          "10℃",
+          "9℃",
+          "15℃",
+          "8℃"
+        ],
+        "answer": 0,
+        "explanation": "東京都心の最高気温は10℃で、前の日より8℃低く、1月上旬並みの寒さです。",
+        "source": "日本気象協会 tenki.jp",
+        "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
+      },
+      {
+        "question": "9日に雪や吹雪となる見込みの地域はどこですか？",
+        "options": [
+          "福岡",
+          "北海道の日本海側",
+          "東北から九州",
+          "関東"
+        ],
+        "answer": 1,
+        "explanation": "北海道は日本海側を中心に雪や吹雪となる見込みです。",
+        "source": "日本気象協会 tenki.jp",
+        "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
+      },
+      {
+        "question": "「レベル2++」の車は、いつ発売される予定ですか？",
+        "options": [
+          "27年度内",
+          "26年度内",
+          "25年度内",
+          "28年度内"
+        ],
+        "answer": 0,
+        "explanation": "「レベル2++」の車として27年度内に発売される予定です。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
+      },
+      {
+        "question": "ウェイブの技術を採用することが決まっているのは、どこの自動車メーカーですか？",
+        "options": [
+          "レベル2++",
+          "日産",
+          "ミニバン「エルグランド」",
+          "ウェイブ・テクノロジーズ"
+        ],
+        "answer": 1,
+        "explanation": "日産のミニバン「エルグランド」への搭載が決まっています。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
+      },
+      {
+        "question": "COP31が開幕するのはどこですか？",
+        "options": [
+          "トルコ",
+          "国連",
+          "世界各地",
+          "各国"
+        ],
+        "answer": 0,
+        "explanation": "COP31が、9日にトルコで開幕します。",
+        "source": "NHKニュース",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
+      },
+      {
+        "question": "COP31が開幕するのはいつですか？",
+        "options": [
+          "9日",
+          "8日",
+          "7日",
+          "10日"
+        ],
+        "answer": 0,
+        "explanation": "COP31が、9日にトルコで開幕します。",
+        "source": "NHKニュース",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
+      },
+      {
+        "question": "千葉地裁は、女性の「逸失利益」を日本の賃金水準をもとに何歳まで算定する判決を出しましたか？",
+        "options": [
+          "65歳",
+          "67歳",
+          "70歳",
+          "60歳"
+        ],
+        "answer": 1,
+        "explanation": "逸失利益を、日本の賃金水準をもとに67歳まで算定する判決を出しました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
+      },
+      {
+        "question": "女性が事故後に取得した日本語能力試験の級はどれですか？",
+        "options": [
+          "N5",
+          "N2",
+          "N3",
+          "N1"
+        ],
+        "answer": 1,
+        "explanation": "日本語能力試験のN2も取得しており、日本で働き続ける可能性が高いと判断されました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
+      },
+      {
+        "question": "映画「VIVANT」は、いつ劇場公開されますか？",
+        "options": [
+          "11月4日",
+          "12月3日",
+          "12月5日",
+          "12月4日"
+        ],
+        "answer": 3,
+        "explanation": "12月4日の劇場公開が決まりました。",
+        "source": "ライブドアニュース",
+        "url": "https://news.livedoor.com/article/detail/32765014/"
+      },
+      {
+        "question": "映画「VIVANT」の公開初日の上映チケットの先行販売は、いつ始まりますか？",
+        "options": [
+          "9日午前0時",
+          "12月4日午前0時",
+          "10日午前0時",
+          "8日午前0時"
+        ],
+        "answer": 0,
+        "explanation": "9日午前0時からは、公開初日の上映チケットの先行販売も始まります。",
+        "source": "ライブドアニュース",
+        "url": "https://news.livedoor.com/article/detail/32765014/"
+      }
+    ]
+  }
+}
