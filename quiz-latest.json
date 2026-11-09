@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-09",
-  "generated": "2026-11-09 07:47 JST",
+  "date": "2026-11-10",
+  "generated": "2026-11-10 07:48 JST",
   "questions": [
     {
-      "question": "9日の東京都心の最高気温は何℃の予想ですか？",
+      "question": "石破茂前総理ら4人が戒告処分になったのは、なぜですか。",
       "options": [
-        "10℃",
-        "9℃",
-        "15℃",
-        "8℃"
+        "消費減税関連法案の採決を前に衆議院本会議を退席したから",
+        "消費減税関連法案の採決に賛成したから",
+        "自民党の総裁選挙に出たから",
+        "参議院での審議を欠席したから"
       ],
       "answer": 0,
-      "explanation": "東京都心の最高気温は10℃で、前の日より8℃低く、1月上旬並みの寒さです。",
-      "source": "日本気象協会 tenki.jp",
-      "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
+      "explanation": "4人は消費減税関連法案の採決を前に本会議を退席したため、自民党から戒告処分を受けました。",
+      "source": "テレビ朝日",
+      "url": "https://news.tv-asahi.co.jp/news_politics/articles/900203842.html"
     },
     {
-      "question": "9日に雪や吹雪となる見込みの地域はどこですか？",
+      "question": "今回の戒告処分について、正しいものはどれですか。",
       "options": [
-        "福岡",
-        "北海道の日本海側",
-        "東北から九州",
-        "関東"
+        "戒告は党の処分の中でいちばん重いものだ",
+        "戒告は党の処分の中でいちばん軽いものだ",
+        "総裁経験者が処分されるのは結党以来初めてのことだ",
+        "総裁経験者の処分はこれまでにも何度もあった"
       ],
-      "answer": 1,
-      "explanation": "北海道は日本海側を中心に雪や吹雪となる見込みです。",
-      "source": "日本気象協会 tenki.jp",
-      "url": "https://news.yahoo.co.jp/articles/8accd1d19ba227cad713b048e0e65dc62b1a56c2"
+      "answer": 2,
+      "explanation": "総裁経験者が処分されるのは結党以来初めてで、戒告は党の処分の中で2番目に軽いものです。",
+      "source": "テレビ朝日",
+      "url": "https://news.tv-asahi.co.jp/news_politics/articles/900203842.html"
     },
     {
-      "question": "「レベル2++」の車は、いつ発売される予定ですか？",
+      "question": "ニトリで外に流れたおそれがある個人情報は、最大で何件ですか。",
       "options": [
-        "27年度内",
-        "26年度内",
-        "25年度内",
-        "28年度内"
-      ],
-      "answer": 0,
-      "explanation": "「レベル2++」の車として27年度内に発売される予定です。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
-    },
-    {
-      "question": "ウェイブの技術を採用することが決まっているのは、どこの自動車メーカーですか？",
-      "options": [
-        "レベル2++",
-        "日産",
-        "ミニバン「エルグランド」",
-        "ウェイブ・テクノロジーズ"
-      ],
-      "answer": 1,
-      "explanation": "日産のミニバン「エルグランド」への搭載が決まっています。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC52V82VC5ULFA009M.html?ref=rss"
-    },
-    {
-      "question": "COP31が開幕するのはどこですか？",
-      "options": [
-        "トルコ",
-        "国連",
-        "世界各地",
-        "各国"
-      ],
-      "answer": 0,
-      "explanation": "COP31が、9日にトルコで開幕します。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
-    },
-    {
-      "question": "COP31が開幕するのはいつですか？",
-      "options": [
-        "9日",
-        "8日",
-        "7日",
-        "10日"
-      ],
-      "answer": 0,
-      "explanation": "COP31が、9日にトルコで開幕します。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261108de72408"
-    },
-    {
-      "question": "千葉地裁は、女性の「逸失利益」を日本の賃金水準をもとに何歳まで算定する判決を出しましたか？",
-      "options": [
-        "65歳",
-        "67歳",
-        "70歳",
-        "60歳"
-      ],
-      "answer": 1,
-      "explanation": "逸失利益を、日本の賃金水準をもとに67歳まで算定する判決を出しました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
-    },
-    {
-      "question": "女性が事故後に取得した日本語能力試験の級はどれですか？",
-      "options": [
-        "N5",
-        "N2",
-        "N3",
-        "N1"
-      ],
-      "answer": 1,
-      "explanation": "日本語能力試験のN2も取得しており、日本で働き続ける可能性が高いと判断されました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC60P3YVC6UDCB00TM.html?ref=rss"
-    },
-    {
-      "question": "映画「VIVANT」は、いつ劇場公開されますか？",
-      "options": [
-        "11月4日",
-        "12月3日",
-        "12月5日",
-        "12月4日"
+        "3762件",
+        "3億7620万件",
+        "376万件",
+        "3762万件"
       ],
       "answer": 3,
-      "explanation": "12月4日の劇場公開が決まりました。",
-      "source": "ライブドアニュース",
-      "url": "https://news.livedoor.com/article/detail/32765014/"
+      "explanation": "ニトリホールディングスは、最大で3762万件の個人情報が流れたおそれがあると発表しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003039/"
     },
     {
-      "question": "映画「VIVANT」の公開初日の上映チケットの先行販売は、いつ始まりますか？",
+      "question": "流れたおそれがある情報に、含まれていないものはどれですか。",
       "options": [
-        "9日午前0時",
-        "12月4日午前0時",
-        "10日午前0時",
-        "8日午前0時"
+        "氏名",
+        "住所",
+        "パスワード",
+        "メールアドレス"
+      ],
+      "answer": 2,
+      "explanation": "会員番号や氏名、住所、メールアドレスなどが流れたおそれがありますが、パスワードやクレジットカード情報は含まれていません。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003039/"
+    },
+    {
+      "question": "東日本大震災の震源域で、広い範囲で再開したものは何ですか。",
+      "options": [
+        "プレートの動きが止まること",
+        "プレートどうしがくっつく「固着」",
+        "プレートどうしが離れること",
+        "プレートが消えること"
+      ],
+      "answer": 1,
+      "explanation": "日本海溝沿いの震源域で、プレートどうしがくっつく「固着」が広い範囲で再開し、ひずみがたまり始めています。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261109de73183"
+    },
+    {
+      "question": "この研究結果を発表したのは、どこですか。",
+      "options": [
+        "京都大学などの研究グループ",
+        "大阪大学などの研究グループ",
+        "東北大学などの研究グループ",
+        "東京大学などの研究グループ"
+      ],
+      "answer": 2,
+      "explanation": "東北大学などの研究グループが、震源域でひずみがたまり始めているという解析結果を発表しました。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261109de73183"
+    },
+    {
+      "question": "9日のニューヨーク株式市場で、ダウ平均株価は前の週末よりどれくらい上がりましたか。",
+      "options": [
+        "1104ドルあまり",
+        "1万104ドルあまり",
+        "110ドルあまり",
+        "11ドルあまり"
       ],
       "answer": 0,
-      "explanation": "9日午前0時からは、公開初日の上映チケットの先行販売も始まります。",
-      "source": "ライブドアニュース",
-      "url": "https://news.livedoor.com/article/detail/32765014/"
+      "explanation": "ダウ平均株価は前の週末より1104ドルあまり上がり、5万2389ドルとなりました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC977LHVC9UHBI001M.html?ref=rss"
+    },
+    {
+      "question": "ダウ平均株価が上がった理由として、要約に書かれているのはどれですか。",
+      "options": [
+        "原油の値段が上がったこと",
+        "中間選挙のあとに株が売られたこと",
+        "エヌビディアの株が上がったこと",
+        "原油の値段が下がって安心感が広がったこと"
+      ],
+      "answer": 3,
+      "explanation": "原油の値段が下がって安心感が広がったことや、売られていた株が買い戻されたことが、上がった理由です。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVC977LHVC9UHBI001M.html?ref=rss"
+    },
+    {
+      "question": "新しいAIモデルの出力の速さは、前のモデルより最大でどれくらい上がりましたか。",
+      "options": [
+        "300％",
+        "3％",
+        "30％",
+        "13％"
+      ],
+      "answer": 2,
+      "explanation": "新しいモデルの出力の速さは、前のモデルより最大で30％上がりました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003042/"
+    },
+    {
+      "question": "「Claude Mythos 5.2」を使えるのは、だれですか。",
+      "options": [
+        "だれでも無料で",
+        "有料プランの人ならだれでも",
+        "学生だけ",
+        "審査を通った組織だけ"
+      ],
+      "answer": 3,
+      "explanation": "Mythos 5.2は審査を通った組織だけが使え、Fable 5.2は有料プランや主要なクラウドで使えます。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003042/"
     }
   ]
 }
