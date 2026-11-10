@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-10",
+  "news": {
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/816d/live/a905bdb0-dc31-11f1-a701-fddedf244c16.png",
+        "source": "BBC Türkçe",
+        "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı 17'ye yükseldi. Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini duyurdu. Patlamayla ilgili adli ve idari soruşturma başlatılırken, yaralıların tedavisi sürüyor.",
+        "time": "9 Kasım 22:21",
+        "title": "İzmir'deki demir çelik fabrikasındaki patlamada can kaybı 17'ye çıktı",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af247cb33682fc5418a94c8.jpg",
+        "source": "Hürriyet",
+        "summary": "ABD Başkanı Donald Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirterek, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi. Trump, Amerika'nın çıkarlarının her zaman korunmasını sağlayacağını da sözlerine ekledi.",
+        "time": "10 Kasım 01:23",
+        "title": "Trump: İran'la çatışmanın sona ermesine yönelik olumlu ivme görüyoruz",
+        "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "source": "Anadolu Ajansı",
+        "summary": "Cumhurbaşkanı Erdoğan, Şırnak Gabar'da Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu. Bu sahalarda ekim ayı itibarıyla üretim başladı ve 135 milyon varil yerinde petrol potansiyeli bulunuyor. Bölgede günlük üretimin 2027'nin ikinci yarısında 100 bin varil barajını aşması bekleniyor.",
+        "time": "9 Kasım 16:14",
+        "title": "Cumhurbaşkanı Erdoğan: Gabar'da iki yeni sahada daha petrol keşfettik",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/09/thumbs_b_c_d537900673ff8337191d1b856cacc280.jpg"
+      },
+      {
+        "cat": "🛡️ Teknoloji",
+        "source": "TRT Haber",
+        "summary": "ABD'li teknoloji şirketi Apple, Türkiye'de beş yeni Apple Developer Academy, bir Apple Developer Center ve bir Apple Manufacturing Academy açacağını duyurdu. Gelecek üç yılda hayata geçirilecek yatırımlarda ilk akademi 2027'de İstanbul'da, üretim akademisi ise 2028'de Ankara'da hizmete girecek. Üretim akademisi, ABD dışında açılan ilk üretim akademisi olacak.",
+        "time": "9 Kasım 22:40",
+        "title": "Apple'dan Türkiye'ye uzun vadeli yatırım: 5 yeni akademi ve 1 merkez açılacak",
+        "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1474000/apple-1475165.jpg"
+      },
+      {
+        "cat": "🛡️ Teknoloji",
+        "source": "DW Türkçe",
+        "summary": "ABD'li çip devi Nvidia'nın CEO'su Jensen Huang, Çin istihbaratı için çalıştığı iddia edilen Çinli bir iş kadınıyla ilişkisi olduğunu kabul etti ve çalışanlarına gönderdiği mesajda özür diledi. Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı. Huang soruşturmayla tam iş birliği yapacağını söylerken, ABD Başkanı Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
+        "time": "9 Kasım 15:08",
+        "title": "ABD-Çin yapay zeka rekabeti: Nvidia'yı sarsan casusluk iddiası",
+        "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ],
+    "date": "2026-11-10",
+    "updated": "2026-11-10 02:46 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-10",
+    "generated": "2026-11-10 08:48 JST",
+    "questions": [
+      {
+        "question": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı kaça yükseldi?",
+        "options": [
+          "18'e",
+          "15'e",
+          "17'ye",
+          "16'ya"
+        ],
+        "answer": 2,
+        "explanation": "Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini ve can kaybının 17'ye yükseldiğini duyurdu.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Patlamayla ilgili olarak ne başlatıldı?",
+        "options": [
+          "Tahliye operasyonu",
+          "Grev",
+          "Adli ve idari soruşturma",
+          "Yeni bir fabrika inşaatı"
+        ],
+        "answer": 2,
+        "explanation": "Özete göre patlamayla ilgili adli ve idari soruşturma başlatıldı ve yaralıların tedavisi sürüyor.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "ABD Başkanı Trump, İsrail ve Orta Doğu'nun neye karşı korunduğunu söyledi?",
+        "options": [
+          "Siber saldırılara",
+          "İran'dan gelebileceği söylenen tehditlere",
+          "Ekonomik krize",
+          "Doğal afetlere"
+        ],
+        "answer": 1,
+        "explanation": "Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirtti.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
+      },
+      {
+        "question": "Trump, çatışmanın sona ermesi konusunda ne gördüğünü söyledi?",
+        "options": [
+          "Kalıcı bir barış",
+          "Yakın bir anlaşma",
+          "Yeni bir başlangıç",
+          "Olumlu bir ivme"
+        ],
+        "answer": 3,
+        "explanation": "Trump, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
+      },
+      {
+        "question": "Gabar'da petrol keşfedilen iki yeni sahanın adı nedir?",
+        "options": [
+          "Gabar ve Çardaklı",
+          "Şırnak ve Gabar",
+          "Gaziler ve Şırnak",
+          "Gaziler ve Çardaklı"
+        ],
+        "answer": 3,
+        "explanation": "Erdoğan, Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
+      },
+      {
+        "question": "İki yeni sahada ne kadar yerinde petrol potansiyeli bulunuyor?",
+        "options": [
+          "100 milyon varil",
+          "75 milyon varil",
+          "200 milyon varil",
+          "135 milyon varil"
+        ],
+        "answer": 3,
+        "explanation": "İki yeni sahada 135 milyon varil yerinde petrol potansiyeli bulunuyor.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
+      },
+      {
+        "question": "Apple Türkiye'de kaç yeni Apple Developer Academy açacağını duyurdu?",
+        "options": [
+          "Üç",
+          "Altı",
+          "Beş",
+          "Dört"
+        ],
+        "answer": 2,
+        "explanation": "Apple, Türkiye'de beş yeni Apple Developer Academy açacağını duyurdu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
+      },
+      {
+        "question": "Apple'ın üretim akademisi ne zaman ve nerede hizmete girecek?",
+        "options": [
+          "2027'de Ankara'da",
+          "2027'de İstanbul'da",
+          "2028'de İstanbul'da",
+          "2028'de Ankara'da"
+        ],
+        "answer": 3,
+        "explanation": "Üretim akademisi 2028'de Ankara'da hizmete girecek ve ABD dışında açılan ilk üretim akademisi olacak.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
+      },
+      {
+        "question": "Nvidia Yönetim Kurulu, Jensen Huang hakkında ne başlattı?",
+        "options": [
+          "Görevden alma süreci",
+          "Yeni bir ürün lansmanı",
+          "Maaş artışı",
+          "Bağımsız soruşturma"
+        ],
+        "answer": 3,
+        "explanation": "Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "ABD Başkanı Trump, Huang hakkında ne söyledi?",
+        "options": [
+          "Hiçbir açıklama yapmadı",
+          "İyi ve onurlu bir insan olduğunu belirtti",
+          "Soruşturmayı eleştirdi",
+          "Görevden alınması gerektiğini söyledi"
+        ],
+        "answer": 1,
+        "explanation": "Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-09",
-  "updated": "2026-11-09 02:46 TSİ",
   "articles": [
     {
       "cat": "🚨 Gündem",
-      "time": "9 Kasım 00:04",
-      "title": "Türkiye'nin ev sahipliğindeki COP31 bugün başlıyor",
-      "summary": "Türkiye, iklim değişikliğiyle mücadelede dünyanın en önemli organizasyonu olan Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi'nin 31. Taraflar Konferansı'na (COP31) ilk kez ev sahipliği yapıyor. Konferans bugün Antalya COP31 Alanı'nda başlıyor.",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/cop31-antalya-aa-2502050.jpg"
-    },
-    {
-      "cat": "🏛️ Siyaset",
-      "time": "8 Kasım 18:42",
-      "title": "Türkiye ve Irak'tan ortak açıklama: TSK'nın Başika üssünden çekilme süreci başlayacak",
-      "summary": "Türkiye Cumhuriyeti ve Irak Cumhuriyeti, ortak bir açıklama yayımlayarak eylül sonunda alınan karar doğrultusunda Başika üssünün Irak güçlerine devredilmesi sürecinin başlatılacağını duyurdu. Açıklamayla, üssün devri için sürecin resmen başladığı ilan edilmiş oldu.",
-      "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/816d/live/a905bdb0-dc31-11f1-a701-fddedf244c16.png",
       "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1f48/live/154e2670-b800-11f1-97e1-83bf52ec4acd.jpg"
+      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı 17'ye yükseldi. Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini duyurdu. Patlamayla ilgili adli ve idari soruşturma başlatılırken, yaralıların tedavisi sürüyor.",
+      "time": "9 Kasım 22:21",
+      "title": "İzmir'deki demir çelik fabrikasındaki patlamada can kaybı 17'ye çıktı",
+      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
     },
     {
       "cat": "🌍 Dünya",
-      "time": "8 Kasım 21:52",
-      "title": "Mısır'da tren kazası: 7 ölü, 112 yaralı",
-      "summary": "Mısır'ın Giza vilayetine bağlı Ayat kentinde, Kahire-Asvan demir yolu hattında meydana gelen tren kazasında 7 kişi hayatını kaybetti, 112 kişi yaralandı. Giza'dan Feyyum'a giden trenin, Kahire'den Asvan'a giden yolcu treninin arka vagonuna çarptığı açıklandı. Yaralılar için 72 ambulans görevlendirildi; tedavisi tamamlanan 45 yaralı taburcu edildi. Hattaki seferler iki yönde de durduruldu.",
-      "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af247cb33682fc5418a94c8.jpg",
       "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af0c4c5aa7d7bef197669a6.jpg"
-    },
-    {
-      "cat": "🌧️ Hava/Afet",
-      "time": "8 Kasım 17:44",
-      "title": "Bitlis'te karda mahsur kalan vatandaş UMKE ve 112 Acil Sağlık ekipleri tarafından kurtarıldı",
-      "summary": "Bitlis'te Nemrut Krater Gölü yolunda kar nedeniyle mahsur kalan bir vatandaş, bölgeye ulaşan Ulusal Medikal Kurtarma Ekibi (UMKE) ve 112 Acil Sağlık ekipleri tarafından kurtarıldı. Sağlık Bakanı Kemal Memişoğlu, kurtarma çalışmasını duyurarak ekiplerin vatandaşa ulaştığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103",
-      "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/08/thumbs_b_c_67363a9890a599f90f8026e46d356604.jpg"
+      "summary": "ABD Başkanı Donald Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirterek, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi. Trump, Amerika'nın çıkarlarının her zaman korunmasını sağlayacağını da sözlerine ekledi.",
+      "time": "10 Kasım 01:23",
+      "title": "Trump: İran'la çatışmanın sona ermesine yönelik olumlu ivme görüyoruz",
+      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
     },
     {
       "cat": "💹 Ekonomi",
-      "time": "8 Kasım 11:04",
-      "title": "Fon soruşturması: BDDK daire başkanı tutuklandı, tutuklu sayısı 118'e yükseldi",
-      "summary": "İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü 'Fon Soruşturması' kapsamında Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) 3. Daire Başkanı Bilal Soysal tutuklandı. Böylece soruşturmada tutuklananların sayısı 118'e yükseldi. Daha önce gözaltına alınıp serbest bırakılan Bulls Yatırım Yönetim Kurulu Başkanı Kemal Akkaya ile Takasbank Genel Müdürü Yunus Arıncı yeniden gözaltına alındı.",
-      "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "source": "Anadolu Ajansı",
+      "summary": "Cumhurbaşkanı Erdoğan, Şırnak Gabar'da Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu. Bu sahalarda ekim ayı itibarıyla üretim başladı ve 135 milyon varil yerinde petrol potansiyeli bulunuyor. Bölgede günlük üretimin 2027'nin ikinci yarısında 100 bin varil barajını aşması bekleniyor.",
+      "time": "9 Kasım 16:14",
+      "title": "Cumhurbaşkanı Erdoğan: Gabar'da iki yeni sahada daha petrol keşfettik",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/09/thumbs_b_c_d537900673ff8337191d1b856cacc280.jpg"
+    },
+    {
+      "cat": "🛡️ Teknoloji",
+      "source": "TRT Haber",
+      "summary": "ABD'li teknoloji şirketi Apple, Türkiye'de beş yeni Apple Developer Academy, bir Apple Developer Center ve bir Apple Manufacturing Academy açacağını duyurdu. Gelecek üç yılda hayata geçirilecek yatırımlarda ilk akademi 2027'de İstanbul'da, üretim akademisi ise 2028'de Ankara'da hizmete girecek. Üretim akademisi, ABD dışında açılan ilk üretim akademisi olacak.",
+      "time": "9 Kasım 22:40",
+      "title": "Apple'dan Türkiye'ye uzun vadeli yatırım: 5 yeni akademi ve 1 merkez açılacak",
+      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1474000/apple-1475165.jpg"
+    },
+    {
+      "cat": "🛡️ Teknoloji",
+      "source": "DW Türkçe",
+      "summary": "ABD'li çip devi Nvidia'nın CEO'su Jensen Huang, Çin istihbaratı için çalıştığı iddia edilen Çinli bir iş kadınıyla ilişkisi olduğunu kabul etti ve çalışanlarına gönderdiği mesajda özür diledi. Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı. Huang soruşturmayla tam iş birliği yapacağını söylerken, ABD Başkanı Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
+      "time": "9 Kasım 15:08",
+      "title": "ABD-Çin yapay zeka rekabeti: Nvidia'yı sarsan casusluk iddiası",
+      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
     }
-  ]
+  ],
+  "date": "2026-11-10",
+  "updated": "2026-11-10 02:46 TSİ"
 }

@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-09",
-  "generated": "2026-11-09 08:47 JST",
+  "date": "2026-11-10",
+  "generated": "2026-11-10 08:48 JST",
   "questions": [
     {
-      "question": "COP31'e ilk kez ev sahipliği yapan ülke hangisidir?",
+      "question": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı kaça yükseldi?",
       "options": [
-        "İtalya",
-        "Brezilya",
-        "Mısır",
-        "Türkiye"
-      ],
-      "answer": 3,
-      "explanation": "Özette, Türkiye'nin COP31'e ilk kez ev sahipliği yaptığı belirtiliyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
-    },
-    {
-      "question": "COP31 bugün nerede başlıyor?",
-      "options": [
-        "Ankara ATO Congresium",
-        "İstanbul Kongre Merkezi",
-        "İzmir Fuar Alanı",
-        "Antalya COP31 Alanı"
-      ],
-      "answer": 3,
-      "explanation": "Konferansın bugün Antalya COP31 Alanı'nda başladığı özette yer alıyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ev-sahipligindeki-cop31-bugun-basliyor-962621.html"
-    },
-    {
-      "question": "Başika üssünün Irak güçlerine devredilmesi süreci hangi karara dayanıyor?",
-      "options": [
-        "Eylül sonunda alınan karar",
-        "Ocak başında alınan karar",
-        "Bu hafta alınan karar",
-        "Geçen yıl alınan karar"
-      ],
-      "answer": 0,
-      "explanation": "Özette, sürecin eylül sonunda alınan karar doğrultusunda başlatılacağı belirtiliyor.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Başika üssünün devredileceği güçler hangileridir?",
-      "options": [
-        "Koalisyon güçleri",
-        "Irak güçleri",
-        "Birleşmiş Milletler güçleri",
-        "NATO güçleri"
-      ],
-      "answer": 1,
-      "explanation": "Ortak açıklamada, Başika üssünün Irak güçlerine devredileceği duyuruldu.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cxnv04p1dvgpo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Mısır'daki tren kazasında kaç kişi hayatını kaybetti?",
-      "options": [
-        "7 kişi",
-        "12 kişi",
-        "5 kişi",
-        "9 kişi"
-      ],
-      "answer": 0,
-      "explanation": "Özette kazada 7 kişinin hayatını kaybettiği, 112 kişinin yaralandığı belirtiliyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
-    },
-    {
-      "question": "Kazanın ardından yaralılar için kaç ambulans görevlendirildi?",
-      "options": [
-        "60 ambulans",
-        "72 ambulans",
-        "90 ambulans",
-        "45 ambulans"
-      ],
-      "answer": 1,
-      "explanation": "Özette, yaralılar için 72 ambulansın görevlendirildiği ve tedavisi tamamlanan 45 yaralının taburcu edildiği yazıyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/misirda-tren-kazasi-7-olu-112-yarali-43370817"
-    },
-    {
-      "question": "Bitlis'te karda mahsur kalan vatandaşı hangi ekipler kurtardı?",
-      "options": [
-        "İtfaiye ve polis ekipleri",
-        "Karayolları ekipleri",
-        "AFAD ve jandarma ekipleri",
-        "UMKE ve 112 Acil Sağlık ekipleri"
-      ],
-      "answer": 3,
-      "explanation": "Özette, vatandaşı Ulusal Medikal Kurtarma Ekibi (UMKE) ve 112 Acil Sağlık ekiplerinin kurtardığı belirtiliyor.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
-    },
-    {
-      "question": "Vatandaş nerede mahsur kalmıştı?",
-      "options": [
-        "Bitlis Havalimanı yolunda",
-        "Nemrut Krater Gölü yolunda",
-        "Tatvan sahil yolunda",
-        "Bitlis şehir merkezinde"
-      ],
-      "answer": 1,
-      "explanation": "Özette, vatandaşın Nemrut Krater Gölü yolunda kar nedeniyle mahsur kaldığı yazıyor.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/bitliste-karda-mahsur-kalan-vatandas-umke-ve-112-acil-saglik-ekipleri-tarafindan-kurtarildi/4116103"
-    },
-    {
-      "question": "Fon Soruşturması'nı hangi kurum yürütüyor?",
-      "options": [
-        "İzmir Cumhuriyet Başsavcılığı",
-        "Ankara Cumhuriyet Başsavcılığı",
-        "İstanbul Cumhuriyet Başsavcılığı",
-        "Bursa Cumhuriyet Başsavcılığı"
+        "18'e",
+        "15'e",
+        "17'ye",
+        "16'ya"
       ],
       "answer": 2,
-      "explanation": "Özette, soruşturmanın İstanbul Cumhuriyet Başsavcılığı tarafından yürütüldüğü belirtiliyor.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini ve can kaybının 17'ye yükseldiğini duyurdu.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Soruşturma kapsamında tutuklananların sayısı kaça yükseldi?",
+      "question": "Patlamayla ilgili olarak ne başlatıldı?",
       "options": [
-        "118'e",
-        "115'e",
-        "112'ye",
-        "117'ye"
+        "Tahliye operasyonu",
+        "Grev",
+        "Adli ve idari soruşturma",
+        "Yeni bir fabrika inşaatı"
       ],
-      "answer": 0,
-      "explanation": "Özette, Soysal'ın tutuklanmasıyla soruşturmada tutuklananların sayısının 118'e yükseldiği belirtiliyor.",
+      "answer": 2,
+      "explanation": "Özete göre patlamayla ilgili adli ve idari soruşturma başlatıldı ve yaralıların tedavisi sürüyor.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "ABD Başkanı Trump, İsrail ve Orta Doğu'nun neye karşı korunduğunu söyledi?",
+      "options": [
+        "Siber saldırılara",
+        "İran'dan gelebileceği söylenen tehditlere",
+        "Ekonomik krize",
+        "Doğal afetlere"
+      ],
+      "answer": 1,
+      "explanation": "Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirtti.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
+    },
+    {
+      "question": "Trump, çatışmanın sona ermesi konusunda ne gördüğünü söyledi?",
+      "options": [
+        "Kalıcı bir barış",
+        "Yakın bir anlaşma",
+        "Yeni bir başlangıç",
+        "Olumlu bir ivme"
+      ],
+      "answer": 3,
+      "explanation": "Trump, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
+    },
+    {
+      "question": "Gabar'da petrol keşfedilen iki yeni sahanın adı nedir?",
+      "options": [
+        "Gabar ve Çardaklı",
+        "Şırnak ve Gabar",
+        "Gaziler ve Şırnak",
+        "Gaziler ve Çardaklı"
+      ],
+      "answer": 3,
+      "explanation": "Erdoğan, Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
+    },
+    {
+      "question": "İki yeni sahada ne kadar yerinde petrol potansiyeli bulunuyor?",
+      "options": [
+        "100 milyon varil",
+        "75 milyon varil",
+        "200 milyon varil",
+        "135 milyon varil"
+      ],
+      "answer": 3,
+      "explanation": "İki yeni sahada 135 milyon varil yerinde petrol potansiyeli bulunuyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
+    },
+    {
+      "question": "Apple Türkiye'de kaç yeni Apple Developer Academy açacağını duyurdu?",
+      "options": [
+        "Üç",
+        "Altı",
+        "Beş",
+        "Dört"
+      ],
+      "answer": 2,
+      "explanation": "Apple, Türkiye'de beş yeni Apple Developer Academy açacağını duyurdu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
+    },
+    {
+      "question": "Apple'ın üretim akademisi ne zaman ve nerede hizmete girecek?",
+      "options": [
+        "2027'de Ankara'da",
+        "2027'de İstanbul'da",
+        "2028'de İstanbul'da",
+        "2028'de Ankara'da"
+      ],
+      "answer": 3,
+      "explanation": "Üretim akademisi 2028'de Ankara'da hizmete girecek ve ABD dışında açılan ilk üretim akademisi olacak.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
+    },
+    {
+      "question": "Nvidia Yönetim Kurulu, Jensen Huang hakkında ne başlattı?",
+      "options": [
+        "Görevden alma süreci",
+        "Yeni bir ürün lansmanı",
+        "Maaş artışı",
+        "Bağımsız soruşturma"
+      ],
+      "answer": 3,
+      "explanation": "Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/fon-soruşturması-bddk-daire-başkanı-tutuklandı-tutuklu-sayısı-118-e-yükseldi/a-79889218?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "ABD Başkanı Trump, Huang hakkında ne söyledi?",
+      "options": [
+        "Hiçbir açıklama yapmadı",
+        "İyi ve onurlu bir insan olduğunu belirtti",
+        "Soruşturmayı eleştirdi",
+        "Görevden alınması gerektiğini söyledi"
+      ],
+      "answer": 1,
+      "explanation": "Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }
