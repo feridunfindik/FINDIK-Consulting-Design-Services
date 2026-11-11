@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-11",
+  "news": {
+    "date": "2026-11-11",
+    "updated": "2026-11-11 02:44 TSİ",
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "time": "10 Kasım 19:03",
+        "title": "İzmir'de 18 işçinin öldüğü patlama: 11 gözaltı kararı",
+        "summary": "İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında meydana gelen patlamada 18 işçi hayatını kaybetti. Patlamayla ilgili soruşturma kapsamında 11 kişi hakkında yakalama kararı çıkarıldı. Şirketin yönetim kurulu başkanı İstanbul'da gözaltına alındı.",
+        "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "10 Kasım 21:19",
+        "title": "Hürmüz Boğazı'nda bugün üçüncü petrol tankeri deniz mayınına çarparak patladı",
+        "summary": "İran Devrim Muhafızları Ordusu, Hürmüz Boğazı'nda bugün öğleden sonra izin verilmeyen güzergâhı kullanan üçüncü petrol tankerinin deniz mayınına çarparak patladığını duyurdu. İran, Boğaz'ın yedi şart yerine getirilene kadar açılmayacağını da açıkladı.",
+        "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1626000/hurmuz-bogazi-arap-denizi-gemi-reuters-1626712.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "10 Kasım 18:13",
+        "title": "Cumhurbaşkanı Erdoğan, COP31 kapsamında ikili görüşmeler gerçekleştirdi",
+        "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Antalya'da düzenlenen COP31 kapsamında ikili görüşmeler gerçekleştirdi. Erdoğan, Etiyopya Başbakanı Abiy Ahmed, Suudi Arabistan Enerji Bakanı Al Saud, Brezilya Devlet Başkanı Luiz Inacio Lula da Silva ve Bangladeş Başbakanı Rahman ile görüştü.",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/10/thumbs_b_c_c07797d64d682aa6e02e1fc8486ca04f.jpg"
+      },
+      {
+        "cat": "🔬 Teknoloji",
+        "time": "10 Kasım 15:01",
+        "title": "Apple, Türkiye'de yedi yeni tesis açacağını duyurdu",
+        "summary": "Apple, Türkiye'de uzun vadeli bir yatırımla toplam yedi yeni tesis açacağını duyurdu. Önümüzdeki üç yılda Türkiye genelinde beş Geliştirici Akademisi kurulacak; ilki 2027'de İstanbul'da açılacak ve dokuz aylık ücretsiz programlar sunacak. Ayrıca İstanbul'da bir Geliştirici Merkezi ve Ankara'da ABD dışındaki ilk Üretim Akademisi açılacak.",
+        "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/184e/live/972fd540-dd07-11f1-b441-2b33b063138f.png"
+      },
+      {
+        "cat": "⚽ Spor",
+        "time": "11 Kasım 01:54",
+        "title": "Türkiye maçı öncesi Fransa'da 3 eksik",
+        "summary": "UEFA Uluslar Ligi'nde Türkiye'nin rakiplerinden Fransa'da peş peşe sakatlık haberleri geldi. Marcus Thuram ve Aurelien Tchouameni sakatlıkları nedeniyle aday kadrodan çıkarıldı; Juventuslu Pierre Kalulu da önceki gün kadrodan çıkarılmıştı. Üç oyuncu da pazar günü Bordeaux'da Türkiye'ye karşı oynanacak maçta forma giyemeyecek.",
+        "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af3a083aa7d7bef197679ca.jpg"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-11",
+    "generated": "2026-11-11 08:45 JST",
+    "questions": [
+      {
+        "question": "İzmir'deki patlama nerede meydana geldi?",
+        "options": [
+          "İzmir'in Bornova ilçesindeki bir tekstil fabrikasında",
+          "Aliağa'daki bir liman deposunda",
+          "İstanbul'daki bir demir çelik fabrikasında",
+          "İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında"
+        ],
+        "answer": 3,
+        "explanation": "Patlama, İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında meydana geldi.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Patlamayla ilgili soruşturma kapsamında kaç kişi hakkında yakalama kararı çıkarıldı?",
+        "options": [
+          "8",
+          "5",
+          "18",
+          "11"
+        ],
+        "answer": 3,
+        "explanation": "Patlamayla ilgili soruşturma kapsamında 11 kişi hakkında yakalama kararı çıkarıldı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Hürmüz Boğazı'nda patlayan tanker kaçıncı petrol tankeriydi?",
+        "options": [
+          "İkinci",
+          "Dördüncü",
+          "Birinci",
+          "Üçüncü"
+        ],
+        "answer": 3,
+        "explanation": "İran Devrim Muhafızları, Hürmüz Boğazı'nda bugün patlayan tankerin üçüncü petrol tankeri olduğunu duyurdu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html"
+      },
+      {
+        "question": "Petrol tankeri neden patladı?",
+        "options": [
+          "Motor arızası nedeniyle",
+          "Deniz mayınına çarptığı için",
+          "Fırtınaya yakalandığı için",
+          "Başka bir gemiyle çarpıştığı için"
+        ],
+        "answer": 1,
+        "explanation": "Tanker, izin verilmeyen güzergâhı kullanırken deniz mayınına çarparak patladı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html"
+      },
+      {
+        "question": "Cumhurbaşkanı Erdoğan'ın COP31 kapsamındaki ikili görüşmeleri nerede gerçekleşti?",
+        "options": [
+          "Ankara",
+          "Antalya",
+          "İzmir",
+          "İstanbul"
+        ],
+        "answer": 1,
+        "explanation": "Erdoğan, Antalya'da düzenlenen COP31 kapsamında ikili görüşmeler gerçekleştirdi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171"
+      },
+      {
+        "question": "Erdoğan'ın COP31'de görüştüğü Brezilya Devlet Başkanı kimdir?",
+        "options": [
+          "Rahman",
+          "Abiy Ahmed",
+          "Al Saud",
+          "Luiz Inacio Lula da Silva"
+        ],
+        "answer": 3,
+        "explanation": "Erdoğan, COP31 kapsamında Brezilya Devlet Başkanı Luiz Inacio Lula da Silva ile görüştü.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171"
+      },
+      {
+        "question": "Apple, Türkiye'de toplam kaç yeni tesis açacağını duyurdu?",
+        "options": [
+          "Dokuz",
+          "On",
+          "Yedi",
+          "Beş"
+        ],
+        "answer": 2,
+        "explanation": "Apple, Türkiye'de toplam yedi yeni tesis açacağını duyurdu.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Apple'ın Ankara'da açacağı Üretim Akademisi'nin özelliği nedir?",
+        "options": [
+          "Dünyadaki ilk Üretim Akademisi olması",
+          "Avrupa'daki ilk Geliştirici Merkezi olması",
+          "ABD dışındaki ilk Üretim Akademisi olması",
+          "Türkiye'deki ilk Geliştirici Akademisi olması"
+        ],
+        "answer": 2,
+        "explanation": "Ankara'da açılacak Üretim Akademisi, ABD dışındaki ilk Üretim Akademisi olacak.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Fransa'da sakatlık nedeniyle kadrodan çıkarılan üç futbolcu kimlerdir?",
+        "options": [
+          "Marcus Thuram, Aurelien Tchouameni ve Pierre Kalulu",
+          "Pierre Kalulu ve Marcus Thuram",
+          "Aurelien Tchouameni ve Pierre Kalulu",
+          "Marcus Thuram ve Aurelien Tchouameni"
+        ],
+        "answer": 0,
+        "explanation": "Marcus Thuram, Aurelien Tchouameni ve Pierre Kalulu sakatlıkları nedeniyle kadrodan çıkarıldı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614"
+      },
+      {
+        "question": "Fransa, Türkiye maçını hangi şehirde oynayacak?",
+        "options": [
+          "Marsilya",
+          "Bordeaux",
+          "Paris",
+          "Lyon"
+        ],
+        "answer": 1,
+        "explanation": "Üç oyuncu, pazar günü Bordeaux'da Türkiye'ye karşı oynanacak maçta forma giyemeyecek.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614"
+      }
+    ]
+  }
+}

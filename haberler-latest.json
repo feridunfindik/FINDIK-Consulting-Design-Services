@@ -1,50 +1,50 @@
 {
+  "date": "2026-11-11",
+  "updated": "2026-11-11 02:44 TSİ",
   "articles": [
     {
       "cat": "🚨 Gündem",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/816d/live/a905bdb0-dc31-11f1-a701-fddedf244c16.png",
-      "source": "BBC Türkçe",
-      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı 17'ye yükseldi. Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini duyurdu. Patlamayla ilgili adli ve idari soruşturma başlatılırken, yaralıların tedavisi sürüyor.",
-      "time": "9 Kasım 22:21",
-      "title": "İzmir'deki demir çelik fabrikasındaki patlamada can kaybı 17'ye çıktı",
-      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      "time": "10 Kasım 19:03",
+      "title": "İzmir'de 18 işçinin öldüğü patlama: 11 gözaltı kararı",
+      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında meydana gelen patlamada 18 işçi hayatını kaybetti. Patlamayla ilgili soruşturma kapsamında 11 kişi hakkında yakalama kararı çıkarıldı. Şirketin yönetim kurulu başkanı İstanbul'da gözaltına alındı.",
+      "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     },
     {
       "cat": "🌍 Dünya",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af247cb33682fc5418a94c8.jpg",
-      "source": "Hürriyet",
-      "summary": "ABD Başkanı Donald Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirterek, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi. Trump, Amerika'nın çıkarlarının her zaman korunmasını sağlayacağını da sözlerine ekledi.",
-      "time": "10 Kasım 01:23",
-      "title": "Trump: İran'la çatışmanın sona ermesine yönelik olumlu ivme görüyoruz",
-      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
-    },
-    {
-      "cat": "💹 Ekonomi",
-      "source": "Anadolu Ajansı",
-      "summary": "Cumhurbaşkanı Erdoğan, Şırnak Gabar'da Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu. Bu sahalarda ekim ayı itibarıyla üretim başladı ve 135 milyon varil yerinde petrol potansiyeli bulunuyor. Bölgede günlük üretimin 2027'nin ikinci yarısında 100 bin varil barajını aşması bekleniyor.",
-      "time": "9 Kasım 16:14",
-      "title": "Cumhurbaşkanı Erdoğan: Gabar'da iki yeni sahada daha petrol keşfettik",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/09/thumbs_b_c_d537900673ff8337191d1b856cacc280.jpg"
-    },
-    {
-      "cat": "🛡️ Teknoloji",
+      "time": "10 Kasım 21:19",
+      "title": "Hürmüz Boğazı'nda bugün üçüncü petrol tankeri deniz mayınına çarparak patladı",
+      "summary": "İran Devrim Muhafızları Ordusu, Hürmüz Boğazı'nda bugün öğleden sonra izin verilmeyen güzergâhı kullanan üçüncü petrol tankerinin deniz mayınına çarparak patladığını duyurdu. İran, Boğaz'ın yedi şart yerine getirilene kadar açılmayacağını da açıkladı.",
+      "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html",
       "source": "TRT Haber",
-      "summary": "ABD'li teknoloji şirketi Apple, Türkiye'de beş yeni Apple Developer Academy, bir Apple Developer Center ve bir Apple Manufacturing Academy açacağını duyurdu. Gelecek üç yılda hayata geçirilecek yatırımlarda ilk akademi 2027'de İstanbul'da, üretim akademisi ise 2028'de Ankara'da hizmete girecek. Üretim akademisi, ABD dışında açılan ilk üretim akademisi olacak.",
-      "time": "9 Kasım 22:40",
-      "title": "Apple'dan Türkiye'ye uzun vadeli yatırım: 5 yeni akademi ve 1 merkez açılacak",
-      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1474000/apple-1475165.jpg"
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1626000/hurmuz-bogazi-arap-denizi-gemi-reuters-1626712.jpg"
     },
     {
-      "cat": "🛡️ Teknoloji",
-      "source": "DW Türkçe",
-      "summary": "ABD'li çip devi Nvidia'nın CEO'su Jensen Huang, Çin istihbaratı için çalıştığı iddia edilen Çinli bir iş kadınıyla ilişkisi olduğunu kabul etti ve çalışanlarına gönderdiği mesajda özür diledi. Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı. Huang soruşturmayla tam iş birliği yapacağını söylerken, ABD Başkanı Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
-      "time": "9 Kasım 15:08",
-      "title": "ABD-Çin yapay zeka rekabeti: Nvidia'yı sarsan casusluk iddiası",
-      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+      "cat": "🏛️ Siyaset",
+      "time": "10 Kasım 18:13",
+      "title": "Cumhurbaşkanı Erdoğan, COP31 kapsamında ikili görüşmeler gerçekleştirdi",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Antalya'da düzenlenen COP31 kapsamında ikili görüşmeler gerçekleştirdi. Erdoğan, Etiyopya Başbakanı Abiy Ahmed, Suudi Arabistan Enerji Bakanı Al Saud, Brezilya Devlet Başkanı Luiz Inacio Lula da Silva ve Bangladeş Başbakanı Rahman ile görüştü.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171",
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/10/thumbs_b_c_c07797d64d682aa6e02e1fc8486ca04f.jpg"
+    },
+    {
+      "cat": "🔬 Teknoloji",
+      "time": "10 Kasım 15:01",
+      "title": "Apple, Türkiye'de yedi yeni tesis açacağını duyurdu",
+      "summary": "Apple, Türkiye'de uzun vadeli bir yatırımla toplam yedi yeni tesis açacağını duyurdu. Önümüzdeki üç yılda Türkiye genelinde beş Geliştirici Akademisi kurulacak; ilki 2027'de İstanbul'da açılacak ve dokuz aylık ücretsiz programlar sunacak. Ayrıca İstanbul'da bir Geliştirici Merkezi ve Ankara'da ABD dışındaki ilk Üretim Akademisi açılacak.",
+      "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/184e/live/972fd540-dd07-11f1-b441-2b33b063138f.png"
+    },
+    {
+      "cat": "⚽ Spor",
+      "time": "11 Kasım 01:54",
+      "title": "Türkiye maçı öncesi Fransa'da 3 eksik",
+      "summary": "UEFA Uluslar Ligi'nde Türkiye'nin rakiplerinden Fransa'da peş peşe sakatlık haberleri geldi. Marcus Thuram ve Aurelien Tchouameni sakatlıkları nedeniyle aday kadrodan çıkarıldı; Juventuslu Pierre Kalulu da önceki gün kadrodan çıkarılmıştı. Üç oyuncu da pazar günü Bordeaux'da Türkiye'ye karşı oynanacak maçta forma giyemeyecek.",
+      "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614",
+      "source": "Hürriyet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af3a083aa7d7bef197679ca.jpg"
     }
-  ],
-  "date": "2026-11-10",
-  "updated": "2026-11-10 02:46 TSİ"
+  ]
 }

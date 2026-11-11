@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-10",
-  "generated": "2026-11-10 08:48 JST",
+  "date": "2026-11-11",
+  "generated": "2026-11-11 08:45 JST",
   "questions": [
     {
-      "question": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı kaça yükseldi?",
+      "question": "İzmir'deki patlama nerede meydana geldi?",
       "options": [
-        "18'e",
-        "15'e",
-        "17'ye",
-        "16'ya"
+        "İzmir'in Bornova ilçesindeki bir tekstil fabrikasında",
+        "Aliağa'daki bir liman deposunda",
+        "İstanbul'daki bir demir çelik fabrikasında",
+        "İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında"
       ],
-      "answer": 2,
-      "explanation": "Sağlık Bakanı Kemal Memişoğlu, ağır yaralı bir kişinin daha yaşamını yitirdiğini ve can kaybının 17'ye yükseldiğini duyurdu.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      "answer": 3,
+      "explanation": "Patlama, İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında meydana geldi.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf"
     },
     {
-      "question": "Patlamayla ilgili olarak ne başlatıldı?",
+      "question": "Patlamayla ilgili soruşturma kapsamında kaç kişi hakkında yakalama kararı çıkarıldı?",
       "options": [
-        "Tahliye operasyonu",
-        "Grev",
-        "Adli ve idari soruşturma",
-        "Yeni bir fabrika inşaatı"
+        "8",
+        "5",
+        "18",
+        "11"
       ],
-      "answer": 2,
-      "explanation": "Özete göre patlamayla ilgili adli ve idari soruşturma başlatıldı ve yaralıların tedavisi sürüyor.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      "answer": 3,
+      "explanation": "Patlamayla ilgili soruşturma kapsamında 11 kişi hakkında yakalama kararı çıkarıldı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf"
     },
     {
-      "question": "ABD Başkanı Trump, İsrail ve Orta Doğu'nun neye karşı korunduğunu söyledi?",
+      "question": "Hürmüz Boğazı'nda patlayan tanker kaçıncı petrol tankeriydi?",
       "options": [
-        "Siber saldırılara",
-        "İran'dan gelebileceği söylenen tehditlere",
-        "Ekonomik krize",
-        "Doğal afetlere"
+        "İkinci",
+        "Dördüncü",
+        "Birinci",
+        "Üçüncü"
+      ],
+      "answer": 3,
+      "explanation": "İran Devrim Muhafızları, Hürmüz Boğazı'nda bugün patlayan tankerin üçüncü petrol tankeri olduğunu duyurdu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html"
+    },
+    {
+      "question": "Petrol tankeri neden patladı?",
+      "options": [
+        "Motor arızası nedeniyle",
+        "Deniz mayınına çarptığı için",
+        "Fırtınaya yakalandığı için",
+        "Başka bir gemiyle çarpıştığı için"
       ],
       "answer": 1,
-      "explanation": "Trump, İsrail ve Orta Doğu'nun İran'dan gelebileceğini söylediği tehditlere karşı korunduğunu belirtti.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
-    },
-    {
-      "question": "Trump, çatışmanın sona ermesi konusunda ne gördüğünü söyledi?",
-      "options": [
-        "Kalıcı bir barış",
-        "Yakın bir anlaşma",
-        "Yeni bir başlangıç",
-        "Olumlu bir ivme"
-      ],
-      "answer": 3,
-      "explanation": "Trump, çatışmanın sona ermesine yönelik olumlu bir ivme gördüğünü söyledi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/iranla-catismalar-sona-mi-eriyor-trumptan-kritik-aciklama-43372193"
-    },
-    {
-      "question": "Gabar'da petrol keşfedilen iki yeni sahanın adı nedir?",
-      "options": [
-        "Gabar ve Çardaklı",
-        "Şırnak ve Gabar",
-        "Gaziler ve Şırnak",
-        "Gaziler ve Çardaklı"
-      ],
-      "answer": 3,
-      "explanation": "Erdoğan, Gaziler ve Çardaklı adını verilen iki yeni sahada petrol keşfedildiğini duyurdu.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
-    },
-    {
-      "question": "İki yeni sahada ne kadar yerinde petrol potansiyeli bulunuyor?",
-      "options": [
-        "100 milyon varil",
-        "75 milyon varil",
-        "200 milyon varil",
-        "135 milyon varil"
-      ],
-      "answer": 3,
-      "explanation": "İki yeni sahada 135 milyon varil yerinde petrol potansiyeli bulunuyor.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gabarda-iki-yeni-sahada-daha-petrol-kesfettik/4117359"
-    },
-    {
-      "question": "Apple Türkiye'de kaç yeni Apple Developer Academy açacağını duyurdu?",
-      "options": [
-        "Üç",
-        "Altı",
-        "Beş",
-        "Dört"
-      ],
-      "answer": 2,
-      "explanation": "Apple, Türkiye'de beş yeni Apple Developer Academy açacağını duyurdu.",
+      "explanation": "Tanker, izin verilmeyen güzergâhı kullanırken deniz mayınına çarparak patladı.",
       "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
+      "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html"
     },
     {
-      "question": "Apple'ın üretim akademisi ne zaman ve nerede hizmete girecek?",
+      "question": "Cumhurbaşkanı Erdoğan'ın COP31 kapsamındaki ikili görüşmeleri nerede gerçekleşti?",
       "options": [
-        "2027'de Ankara'da",
-        "2027'de İstanbul'da",
-        "2028'de İstanbul'da",
-        "2028'de Ankara'da"
-      ],
-      "answer": 3,
-      "explanation": "Üretim akademisi 2028'de Ankara'da hizmete girecek ve ABD dışında açılan ilk üretim akademisi olacak.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/bilim-teknoloji/appledan-turkiyeye-uzun-vadeli-yatirim-5-yeni-akademi-ve-1-merkez-acilacak-962722.html"
-    },
-    {
-      "question": "Nvidia Yönetim Kurulu, Jensen Huang hakkında ne başlattı?",
-      "options": [
-        "Görevden alma süreci",
-        "Yeni bir ürün lansmanı",
-        "Maaş artışı",
-        "Bağımsız soruşturma"
-      ],
-      "answer": 3,
-      "explanation": "Nvidia Yönetim Kurulu, Huang hakkında bağımsız soruşturma başlattı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "ABD Başkanı Trump, Huang hakkında ne söyledi?",
-      "options": [
-        "Hiçbir açıklama yapmadı",
-        "İyi ve onurlu bir insan olduğunu belirtti",
-        "Soruşturmayı eleştirdi",
-        "Görevden alınması gerektiğini söyledi"
+        "Ankara",
+        "Antalya",
+        "İzmir",
+        "İstanbul"
       ],
       "answer": 1,
-      "explanation": "Trump, Huang'ın iyi ve onurlu bir insan olduğunu belirtti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-çin-yapay-zeka-rekabeti-amerikan-teknoloji-devi-nvidia-yı-sarsan-casusluk-iddiası/a-79899338?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Erdoğan, Antalya'da düzenlenen COP31 kapsamında ikili görüşmeler gerçekleştirdi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171"
+    },
+    {
+      "question": "Erdoğan'ın COP31'de görüştüğü Brezilya Devlet Başkanı kimdir?",
+      "options": [
+        "Rahman",
+        "Abiy Ahmed",
+        "Al Saud",
+        "Luiz Inacio Lula da Silva"
+      ],
+      "answer": 3,
+      "explanation": "Erdoğan, COP31 kapsamında Brezilya Devlet Başkanı Luiz Inacio Lula da Silva ile görüştü.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171"
+    },
+    {
+      "question": "Apple, Türkiye'de toplam kaç yeni tesis açacağını duyurdu?",
+      "options": [
+        "Dokuz",
+        "On",
+        "Yedi",
+        "Beş"
+      ],
+      "answer": 2,
+      "explanation": "Apple, Türkiye'de toplam yedi yeni tesis açacağını duyurdu.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Apple'ın Ankara'da açacağı Üretim Akademisi'nin özelliği nedir?",
+      "options": [
+        "Dünyadaki ilk Üretim Akademisi olması",
+        "Avrupa'daki ilk Geliştirici Merkezi olması",
+        "ABD dışındaki ilk Üretim Akademisi olması",
+        "Türkiye'deki ilk Geliştirici Akademisi olması"
+      ],
+      "answer": 2,
+      "explanation": "Ankara'da açılacak Üretim Akademisi, ABD dışındaki ilk Üretim Akademisi olacak.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Fransa'da sakatlık nedeniyle kadrodan çıkarılan üç futbolcu kimlerdir?",
+      "options": [
+        "Marcus Thuram, Aurelien Tchouameni ve Pierre Kalulu",
+        "Pierre Kalulu ve Marcus Thuram",
+        "Aurelien Tchouameni ve Pierre Kalulu",
+        "Marcus Thuram ve Aurelien Tchouameni"
+      ],
+      "answer": 0,
+      "explanation": "Marcus Thuram, Aurelien Tchouameni ve Pierre Kalulu sakatlıkları nedeniyle kadrodan çıkarıldı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614"
+    },
+    {
+      "question": "Fransa, Türkiye maçını hangi şehirde oynayacak?",
+      "options": [
+        "Marsilya",
+        "Bordeaux",
+        "Paris",
+        "Lyon"
+      ],
+      "answer": 1,
+      "explanation": "Üç oyuncu, pazar günü Bordeaux'da Türkiye'ye karşı oynanacak maçta forma giyemeyecek.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614"
     }
   ]
 }
