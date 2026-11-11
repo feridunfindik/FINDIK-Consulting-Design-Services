@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-11",
-  "updated": "2026-11-11 02:44 TSİ",
+  "date": "2026-11-12",
+  "updated": "2026-11-12 02:44 TSİ",
   "articles": [
     {
       "cat": "🚨 Gündem",
-      "time": "10 Kasım 19:03",
-      "title": "İzmir'de 18 işçinin öldüğü patlama: 11 gözaltı kararı",
-      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ demir çelik fabrikasında meydana gelen patlamada 18 işçi hayatını kaybetti. Patlamayla ilgili soruşturma kapsamında 11 kişi hakkında yakalama kararı çıkarıldı. Şirketin yönetim kurulu başkanı İstanbul'da gözaltına alındı.",
-      "url": "https://www.dw.com/tr/i̇zmir-de-18-işçinin-öldüğü-patlama-11-gözaltı-kararı/a-79911414?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "time": "10 Kasım 21:19",
-      "title": "Hürmüz Boğazı'nda bugün üçüncü petrol tankeri deniz mayınına çarparak patladı",
-      "summary": "İran Devrim Muhafızları Ordusu, Hürmüz Boğazı'nda bugün öğleden sonra izin verilmeyen güzergâhı kullanan üçüncü petrol tankerinin deniz mayınına çarparak patladığını duyurdu. İran, Boğaz'ın yedi şart yerine getirilene kadar açılmayacağını da açıkladı.",
-      "url": "https://www.trthaber.com/haber/dunya/iran-devrim-muhafizlari-hurmuz-bogazinda-bugun-ucuncu-petrol-tankeri-deniz-mayinina-carparak-patladi-962853.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1626000/hurmuz-bogazi-arap-denizi-gemi-reuters-1626712.jpg"
+      "time": "11 Kasım 22:52",
+      "title": "HABAŞ demir çelikteki patlamada can kaybı 19'a çıktı, 11 gözaltı",
+      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı 19'a yükseldi. Patlamanın ardından başlatılan soruşturmada, şirketin yönetim kurulu başkanı dahil 11 kişi hakkında gözaltı kararı verildi.",
+      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/816d/live/a905bdb0-dc31-11f1-a701-fddedf244c16.png"
     },
     {
       "cat": "🏛️ Siyaset",
-      "time": "10 Kasım 18:13",
-      "title": "Cumhurbaşkanı Erdoğan, COP31 kapsamında ikili görüşmeler gerçekleştirdi",
-      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Antalya'da düzenlenen COP31 kapsamında ikili görüşmeler gerçekleştirdi. Erdoğan, Etiyopya Başbakanı Abiy Ahmed, Suudi Arabistan Enerji Bakanı Al Saud, Brezilya Devlet Başkanı Luiz Inacio Lula da Silva ve Bangladeş Başbakanı Rahman ile görüştü.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-cop31-kapsaminda-ikili-gorusmeler-gerceklestirdi/4119171",
+      "time": "11 Kasım 12:18",
+      "title": "BDDK Başkanı Şahap Kavcıoğlu, fon soruşturması ve iddialar sonrası istifa etti",
+      "summary": "Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) Başkanı Şahap Kavcıoğlu görevinden istifa etti. İstifa kararı, fon soruşturması kapsamında hakkında gündeme gelen iddiaların ardından geldi. Kavcıoğlu, BDDK başkanlığı görevini bu iddialar üzerine bıraktığını duyurdu.",
+      "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
+    },
+    {
+      "cat": "💹 Ekonomi",
+      "time": "11 Kasım 23:02",
+      "title": "Merkez Bankası kredi büyüme sınırlarını yükseltti",
+      "summary": "Türkiye Cumhuriyet Merkez Bankası, kredi büyüme sınırlarını yükseltti. Düzenlemeyle ihtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde 3'ten yüzde 3,5'e çıkarıldı. KOBİ'lere kullandırılan Türk lirası kredilerde sınır yüzde 5'ten yüzde 5,5'e, KOBİ dışındaki işletmelere kullandırılan Türk lirası kredilerde ise yüzde 2'den yüzde 2,5'e yükseltildi.",
+      "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1698000/merkez-bankasi-faiz-ekonomi-1699988.jpg"
+    },
+    {
+      "cat": "🌧️ Hava/Afet",
+      "time": "11 Kasım 18:06",
+      "title": "İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarı",
+      "summary": "Meteoroloji Genel Müdürlüğü, bugün beklenen kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarıda bulundu. Uyarı verilen iller İstanbul, Balıkesir, Bursa, Edirne, Kırklareli, Sakarya, Yalova, Bilecik, Tekirdağ, Kocaeli ve Çanakkale oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/10/thumbs_b_c_c07797d64d682aa6e02e1fc8486ca04f.jpg"
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/11/thumbs_b_c_52e86703ccaa2bab234efc712e454978.jpg"
     },
     {
-      "cat": "🔬 Teknoloji",
-      "time": "10 Kasım 15:01",
-      "title": "Apple, Türkiye'de yedi yeni tesis açacağını duyurdu",
-      "summary": "Apple, Türkiye'de uzun vadeli bir yatırımla toplam yedi yeni tesis açacağını duyurdu. Önümüzdeki üç yılda Türkiye genelinde beş Geliştirici Akademisi kurulacak; ilki 2027'de İstanbul'da açılacak ve dokuz aylık ücretsiz programlar sunacak. Ayrıca İstanbul'da bir Geliştirici Merkezi ve Ankara'da ABD dışındaki ilk Üretim Akademisi açılacak.",
-      "url": "https://www.bbc.com/turkce/articles/cm4g1gy1p18eo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/184e/live/972fd540-dd07-11f1-b441-2b33b063138f.png"
-    },
-    {
-      "cat": "⚽ Spor",
-      "time": "11 Kasım 01:54",
-      "title": "Türkiye maçı öncesi Fransa'da 3 eksik",
-      "summary": "UEFA Uluslar Ligi'nde Türkiye'nin rakiplerinden Fransa'da peş peşe sakatlık haberleri geldi. Marcus Thuram ve Aurelien Tchouameni sakatlıkları nedeniyle aday kadrodan çıkarıldı; Juventuslu Pierre Kalulu da önceki gün kadrodan çıkarılmıştı. Üç oyuncu da pazar günü Bordeaux'da Türkiye'ye karşı oynanacak maçta forma giyemeyecek.",
-      "url": "https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614",
+      "cat": "🌍 Dünya",
+      "time": "11 Kasım 22:32",
+      "title": "Charles Fırtınası Portekiz ve İspanya'da hayatı felç etti: 200'den fazla uçuş iptal edildi, eğitime ara verildi",
+      "summary": "Charles Fırtınası, Portekiz ve İspanya'da hayatı olumsuz etkiledi. Portekiz'de fırtına nedeniyle 200'den fazla uçuş iptal edildi ve eğitim öğretime bir günlüğüne ara verildi. Fırtınanın ulaşması beklenen İspanya'nın Piedralaves bölgesinde ise yerel bir barajın taşma riski nedeniyle 3 bin kişi tahliye edildi.",
+      "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938",
       "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af3a083aa7d7bef197679ca.jpg"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af4c2d7c813a6f07cce70c1.jpg"
     }
   ]
 }

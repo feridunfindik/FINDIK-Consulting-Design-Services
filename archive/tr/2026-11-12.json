@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-12",
+  "news": {
+    "date": "2026-11-12",
+    "updated": "2026-11-12 02:44 TSİ",
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "time": "11 Kasım 22:52",
+        "title": "HABAŞ demir çelikteki patlamada can kaybı 19'a çıktı, 11 gözaltı",
+        "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda meydana gelen patlamada hayatını kaybedenlerin sayısı 19'a yükseldi. Patlamanın ardından başlatılan soruşturmada, şirketin yönetim kurulu başkanı dahil 11 kişi hakkında gözaltı kararı verildi.",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/816d/live/a905bdb0-dc31-11f1-a701-fddedf244c16.png"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "11 Kasım 12:18",
+        "title": "BDDK Başkanı Şahap Kavcıoğlu, fon soruşturması ve iddialar sonrası istifa etti",
+        "summary": "Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) Başkanı Şahap Kavcıoğlu görevinden istifa etti. İstifa kararı, fon soruşturması kapsamında hakkında gündeme gelen iddiaların ardından geldi. Kavcıoğlu, BDDK başkanlığı görevini bu iddialar üzerine bıraktığını duyurdu.",
+        "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "11 Kasım 23:02",
+        "title": "Merkez Bankası kredi büyüme sınırlarını yükseltti",
+        "summary": "Türkiye Cumhuriyet Merkez Bankası, kredi büyüme sınırlarını yükseltti. Düzenlemeyle ihtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde 3'ten yüzde 3,5'e çıkarıldı. KOBİ'lere kullandırılan Türk lirası kredilerde sınır yüzde 5'ten yüzde 5,5'e, KOBİ dışındaki işletmelere kullandırılan Türk lirası kredilerde ise yüzde 2'den yüzde 2,5'e yükseltildi.",
+        "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1698000/merkez-bankasi-faiz-ekonomi-1699988.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "11 Kasım 18:06",
+        "title": "İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarı",
+        "summary": "Meteoroloji Genel Müdürlüğü, bugün beklenen kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarıda bulundu. Uyarı verilen iller İstanbul, Balıkesir, Bursa, Edirne, Kırklareli, Sakarya, Yalova, Bilecik, Tekirdağ, Kocaeli ve Çanakkale oldu.",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/11/thumbs_b_c_52e86703ccaa2bab234efc712e454978.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "11 Kasım 22:32",
+        "title": "Charles Fırtınası Portekiz ve İspanya'da hayatı felç etti: 200'den fazla uçuş iptal edildi, eğitime ara verildi",
+        "summary": "Charles Fırtınası, Portekiz ve İspanya'da hayatı olumsuz etkiledi. Portekiz'de fırtına nedeniyle 200'den fazla uçuş iptal edildi ve eğitim öğretime bir günlüğüne ara verildi. Fırtınanın ulaşması beklenen İspanya'nın Piedralaves bölgesinde ise yerel bir barajın taşma riski nedeniyle 3 bin kişi tahliye edildi.",
+        "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af4c2d7c813a6f07cce70c1.jpg"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-12",
+    "generated": "2026-11-12 08:46 JST",
+    "questions": [
+      {
+        "question": "HABAŞ Demir Çelik Fabrikası'ndaki patlamada hayatını kaybedenlerin sayısı kaça yükseldi?",
+        "options": [
+          "19",
+          "11",
+          "18",
+          "21"
+        ],
+        "answer": 0,
+        "explanation": "Özete göre patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Patlamanın ardından başlatılan soruşturmada kaç kişi hakkında gözaltı kararı verildi?",
+        "options": [
+          "7",
+          "19",
+          "11",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "Soruşturmada şirketin yönetim kurulu başkanı dahil 11 kişi hakkında gözaltı kararı verildi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Görevinden istifa eden BDDK Başkanı kimdir?",
+        "options": [
+          "Hafize Gaye Erkan",
+          "Şahap Kavcıoğlu",
+          "Mehmet Şimşek",
+          "Nureddin Nebati"
+        ],
+        "answer": 1,
+        "explanation": "Bankacılık Düzenleme ve Denetleme Kurumu Başkanı Şahap Kavcıoğlu görevinden istifa etti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Şahap Kavcıoğlu'nun istifa kararının ardından ne geldiği belirtildi?",
+        "options": [
+          "Fon soruşturması kapsamında hakkında gündeme gelen iddialar",
+          "Emeklilik yaşı",
+          "Sağlık sorunları",
+          "Yeni bir göreve atanması"
+        ],
+        "answer": 0,
+        "explanation": "İstifa kararı, fon soruşturması kapsamında hakkında gündeme gelen iddiaların ardından geldi.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "İhtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde kaçtan yüzde kaça çıkarıldı?",
+        "options": [
+          "Yüzde 5'ten yüzde 5,5'e",
+          "Yüzde 3'ten yüzde 3,5'e",
+          "Yüzde 3,5'ten yüzde 4'e",
+          "Yüzde 2'den yüzde 2,5'e"
+        ],
+        "answer": 1,
+        "explanation": "Düzenlemeyle ihtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde 3'ten yüzde 3,5'e çıkarıldı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html"
+      },
+      {
+        "question": "KOBİ'lere kullandırılan Türk lirası kredilerde büyüme sınırı yüzde kaç oldu?",
+        "options": [
+          "Yüzde 5",
+          "Yüzde 5,5",
+          "Yüzde 2,5",
+          "Yüzde 3,5"
+        ],
+        "answer": 1,
+        "explanation": "KOBİ'lere kullandırılan Türk lirası kredilerde sınır yüzde 5'ten yüzde 5,5'e yükseltildi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html"
+      },
+      {
+        "question": "Meteoroloji Genel Müdürlüğü kaç il için sarı kodlu uyarıda bulundu?",
+        "options": [
+          "7",
+          "12",
+          "9",
+          "11"
+        ],
+        "answer": 3,
+        "explanation": "Meteoroloji Genel Müdürlüğü, İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarıda bulundu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970"
+      },
+      {
+        "question": "Sarı kodlu uyarı verilen iller arasında aşağıdakilerden hangisi yer almaz?",
+        "options": [
+          "İstanbul",
+          "Bursa",
+          "Ankara",
+          "Kocaeli"
+        ],
+        "answer": 2,
+        "explanation": "Uyarı verilen iller İstanbul, Balıkesir, Bursa, Edirne, Kırklareli, Sakarya, Yalova, Bilecik, Tekirdağ, Kocaeli ve Çanakkale oldu; Ankara listede yok.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970"
+      },
+      {
+        "question": "Portekiz'de Charles Fırtınası nedeniyle kaçtan fazla uçuş iptal edildi?",
+        "options": [
+          "300'den fazla",
+          "200'den fazla",
+          "100'den fazla",
+          "50'den fazla"
+        ],
+        "answer": 1,
+        "explanation": "Portekiz'de fırtına nedeniyle 200'den fazla uçuş iptal edildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938"
+      },
+      {
+        "question": "İspanya'nın Piedralaves bölgesinde 3 bin kişi neden tahliye edildi?",
+        "options": [
+          "Yerel bir barajın taşma riski nedeniyle",
+          "Orman yangını nedeniyle",
+          "Deprem nedeniyle",
+          "Sel nedeniyle"
+        ],
+        "answer": 0,
+        "explanation": "Piedralaves bölgesinde yerel bir barajın taşma riski nedeniyle 3 bin kişi tahliye edildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938"
+      }
+    ]
+  }
+}
