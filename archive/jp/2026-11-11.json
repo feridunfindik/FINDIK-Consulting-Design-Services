@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-11",
+  "news": {
+    "date": "2026-11-11",
+    "updated": "2026-11-11 07:47 JST",
+    "articles": [
+      {
+        "cat": "🌏 世界・政治",
+        "time": "11月10日 23:03",
+        "title": "G7でウクライナ支援確認と茂木外相",
+        "summary": "9日にフランスのパリで2日間の日程で開幕したG7＝主要7か国の外相会合で、茂木外務大臣は10日、記者団の取材に応じ、冬の間の支援もふくめ、ウクライナへの支援に取り組むことと、完全な停戦を実現することの大切さを各国と確認したと明らかにしました。",
+        "url": "https://news.infoseek.co.jp/article/kyodo_1492887902780539849/",
+        "source": "共同通信"
+      },
+      {
+        "cat": "💹 経済",
+        "time": "11月10日 20:01",
+        "title": "ソフトバンクG、マスク氏の「債務不履行」投稿に「全くの事実無根」　7～9月期決算は1兆円超の赤字",
+        "summary": "ソフトバンクグループの7～9月期の決算は、1兆円を超える赤字になりました。10日の決算説明会で後藤CFOは、マスク氏がXに投稿した「債務不履行」という指摘を「全くの事実無根」と強く否定しました。米中間選挙で民主党が勝ったことで、データセンター事業が遅れる可能性も「シナリオの一つ」と話しました。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003079/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/10/2000003079/10011785/2048"
+      },
+      {
+        "cat": "🚨 社会",
+        "time": "11月10日 18:50",
+        "title": "スキマバイト「シェアフル」に不正アクセス　最大750万アカウント漏えいか　給与振込用の口座情報なども",
+        "summary": "スキマバイトのアプリ「シェアフル」を運営する会社（東京都港区）は9日、社内の管理システムへの不正アクセスにより、最大でおよそ750万件のアカウントの個人情報が外に流れたおそれがあると発表しました。給与の振込先の口座情報などもふくまれているということです。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003072/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/10/2000003072/10011763/2048"
+      },
+      {
+        "cat": "🔬 テクノロジー・科学",
+        "time": "11月11日 7:03",
+        "title": "Google、「Gemini 4 Carbon」一般提供開始　Geminiアプリでは最上位「AI Ultra」限定",
+        "summary": "グーグルは、最も高性能なAIモデル「Gemini 4 Carbon」の提供を始めました。一般の人は月額1万4500円の「Google AI Ultra」に入ると使え、むずかしい推論や高度なプログラミングに特化しています。開発者向けのAPIや、新機能「/swarm」の試し版の提供も始まりました。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/11/2000003083/10011800/2048"
+      },
+      {
+        "cat": "🏠 くらし・健康",
+        "time": "11月10日 20:15",
+        "title": "子どものネット利用、年齢ごとの保護者の関わり方をこども家庭庁公表",
+        "summary": "こども家庭庁は、子どもの年齢や成長の段階に合わせて、ネットの使い方で保護者や周りの大人がどう関わればよいかの目安を公表しました。0歳から18歳を乳幼児期、児童期、思春期に分け、6つの段階ごとに気をつける点を示しました。0～2歳は大人がいっしょに関わり、13～15歳は管理を少しずつ減らして助言や相談を中心にします。",
+        "url": "http://www.asahi.com/articles/ASVCB3HZNVCBUTFL01DM.html?ref=rss",
+        "source": "朝日新聞",
+        "img": "https://imgopt.asahi.com/ogp/AS20261110003749_comm.jpg"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-11",
+    "generated": "2026-11-11 07:47 JST",
+    "questions": [
+      {
+        "question": "G7外相会合はどこで開かれましたか。",
+        "options": [
+          "ロンドン",
+          "東京",
+          "ベルリン",
+          "パリ"
+        ],
+        "answer": 3,
+        "explanation": "G7外相会合は9日にフランスのパリで開幕しました。",
+        "source": "共同通信",
+        "url": "https://news.infoseek.co.jp/article/kyodo_1492887902780539849/"
+      },
+      {
+        "question": "茂木外務大臣が各国と確認したことは何ですか。",
+        "options": [
+          "完全な停戦を実現することの大切さ",
+          "関税をなくすこと",
+          "宇宙開発を進めること",
+          "新しい通貨を作ること"
+        ],
+        "answer": 0,
+        "explanation": "茂木外務大臣は、完全な停戦を実現することの大切さを各国と確認したと明らかにしました。",
+        "source": "共同通信",
+        "url": "https://news.infoseek.co.jp/article/kyodo_1492887902780539849/"
+      },
+      {
+        "question": "ソフトバンクグループの7～9月期の決算はどうなりましたか。",
+        "options": [
+          "5000億円の黒字",
+          "1兆円を超える黒字",
+          "1兆円を超える赤字",
+          "収支はちょうどゼロ"
+        ],
+        "answer": 2,
+        "explanation": "ソフトバンクグループの7～9月期の決算は、1兆円を超える赤字になりました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003079/"
+      },
+      {
+        "question": "後藤CFOは、マスク氏の投稿について何と言いましたか。",
+        "options": [
+          "「コメントできない」",
+          "「そのとおりだ」",
+          "「全くの事実無根」",
+          "「検討中だ」"
+        ],
+        "answer": 2,
+        "explanation": "後藤CFOは、マスク氏が投稿した「債務不履行」という指摘を「全くの事実無根」と強く否定しました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003079/"
+      },
+      {
+        "question": "「シェアフル」で流れたおそれがある個人情報は、最大で何件ですか。",
+        "options": [
+          "およそ7500万件",
+          "およそ75万件",
+          "およそ750万件",
+          "およそ7万5000件"
+        ],
+        "answer": 2,
+        "explanation": "最大でおよそ750万件のアカウントの個人情報が外に流れたおそれがあると発表されました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003072/"
+      },
+      {
+        "question": "流れたおそれがある情報にふくまれているものは何ですか。",
+        "options": [
+          "顔写真",
+          "給与の振込先の口座情報",
+          "パスワード",
+          "指紋のデータ"
+        ],
+        "answer": 1,
+        "explanation": "給与の振込先の口座情報などもふくまれているということです。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003072/"
+      },
+      {
+        "question": "「Gemini 4 Carbon」はどんなAIモデルですか。",
+        "options": [
+          "無料の検索サービス",
+          "グーグルの最も高性能なAIモデル",
+          "スマホの新製品",
+          "グーグルの最も古いAIモデル"
+        ],
+        "answer": 1,
+        "explanation": "「Gemini 4 Carbon」は、グーグルの最も高性能なAIモデルです。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
+      },
+      {
+        "question": "一般の人が「Gemini 4 Carbon」を使うにはどうすればよいですか。",
+        "options": [
+          "月額1000円のプランに入る",
+          "店でカードを買う",
+          "申し込みはいらない",
+          "月額1万4500円の「Google AI Ultra」に入る"
+        ],
+        "answer": 3,
+        "explanation": "一般の人は月額1万4500円の「Google AI Ultra」に入ると使えます。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
+      },
+      {
+        "question": "こども家庭庁が公表したのは、何の目安ですか。",
+        "options": [
+          "学校の給食の献立",
+          "ネットの使い方で保護者や周りの大人がどう関わればよいか",
+          "習い事の選び方",
+          "子どもの宿題の量"
+        ],
+        "answer": 1,
+        "explanation": "こども家庭庁は、ネットの使い方で保護者や周りの大人がどう関わればよいかの目安を公表しました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCB3HZNVCBUTFL01DM.html?ref=rss"
+      },
+      {
+        "question": "13～15歳の子どもへの関わり方として示されたのはどれですか。",
+        "options": [
+          "管理をどんどん強くする",
+          "大人がすべて決める",
+          "ネットを完全に禁止する",
+          "管理を少しずつ減らして助言や相談を中心にする"
+        ],
+        "answer": 3,
+        "explanation": "13～15歳は、管理を少しずつ減らして助言や相談を中心にするとしています。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCB3HZNVCBUTFL01DM.html?ref=rss"
+      }
+    ]
+  }
+}

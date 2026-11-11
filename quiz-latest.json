@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-10",
-  "generated": "2026-11-10 07:48 JST",
+  "date": "2026-11-11",
+  "generated": "2026-11-11 07:47 JST",
   "questions": [
     {
-      "question": "石破茂前総理ら4人が戒告処分になったのは、なぜですか。",
+      "question": "G7外相会合はどこで開かれましたか。",
       "options": [
-        "消費減税関連法案の採決を前に衆議院本会議を退席したから",
-        "消費減税関連法案の採決に賛成したから",
-        "自民党の総裁選挙に出たから",
-        "参議院での審議を欠席したから"
-      ],
-      "answer": 0,
-      "explanation": "4人は消費減税関連法案の採決を前に本会議を退席したため、自民党から戒告処分を受けました。",
-      "source": "テレビ朝日",
-      "url": "https://news.tv-asahi.co.jp/news_politics/articles/900203842.html"
-    },
-    {
-      "question": "今回の戒告処分について、正しいものはどれですか。",
-      "options": [
-        "戒告は党の処分の中でいちばん重いものだ",
-        "戒告は党の処分の中でいちばん軽いものだ",
-        "総裁経験者が処分されるのは結党以来初めてのことだ",
-        "総裁経験者の処分はこれまでにも何度もあった"
-      ],
-      "answer": 2,
-      "explanation": "総裁経験者が処分されるのは結党以来初めてで、戒告は党の処分の中で2番目に軽いものです。",
-      "source": "テレビ朝日",
-      "url": "https://news.tv-asahi.co.jp/news_politics/articles/900203842.html"
-    },
-    {
-      "question": "ニトリで外に流れたおそれがある個人情報は、最大で何件ですか。",
-      "options": [
-        "3762件",
-        "3億7620万件",
-        "376万件",
-        "3762万件"
+        "ロンドン",
+        "東京",
+        "ベルリン",
+        "パリ"
       ],
       "answer": 3,
-      "explanation": "ニトリホールディングスは、最大で3762万件の個人情報が流れたおそれがあると発表しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003039/"
+      "explanation": "G7外相会合は9日にフランスのパリで開幕しました。",
+      "source": "共同通信",
+      "url": "https://news.infoseek.co.jp/article/kyodo_1492887902780539849/"
     },
     {
-      "question": "流れたおそれがある情報に、含まれていないものはどれですか。",
+      "question": "茂木外務大臣が各国と確認したことは何ですか。",
       "options": [
-        "氏名",
-        "住所",
-        "パスワード",
-        "メールアドレス"
+        "完全な停戦を実現することの大切さ",
+        "関税をなくすこと",
+        "宇宙開発を進めること",
+        "新しい通貨を作ること"
+      ],
+      "answer": 0,
+      "explanation": "茂木外務大臣は、完全な停戦を実現することの大切さを各国と確認したと明らかにしました。",
+      "source": "共同通信",
+      "url": "https://news.infoseek.co.jp/article/kyodo_1492887902780539849/"
+    },
+    {
+      "question": "ソフトバンクグループの7～9月期の決算はどうなりましたか。",
+      "options": [
+        "5000億円の黒字",
+        "1兆円を超える黒字",
+        "1兆円を超える赤字",
+        "収支はちょうどゼロ"
       ],
       "answer": 2,
-      "explanation": "会員番号や氏名、住所、メールアドレスなどが流れたおそれがありますが、パスワードやクレジットカード情報は含まれていません。",
+      "explanation": "ソフトバンクグループの7～9月期の決算は、1兆円を超える赤字になりました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003039/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003079/"
     },
     {
-      "question": "東日本大震災の震源域で、広い範囲で再開したものは何ですか。",
+      "question": "後藤CFOは、マスク氏の投稿について何と言いましたか。",
       "options": [
-        "プレートの動きが止まること",
-        "プレートどうしがくっつく「固着」",
-        "プレートどうしが離れること",
-        "プレートが消えること"
+        "「コメントできない」",
+        "「そのとおりだ」",
+        "「全くの事実無根」",
+        "「検討中だ」"
+      ],
+      "answer": 2,
+      "explanation": "後藤CFOは、マスク氏が投稿した「債務不履行」という指摘を「全くの事実無根」と強く否定しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003079/"
+    },
+    {
+      "question": "「シェアフル」で流れたおそれがある個人情報は、最大で何件ですか。",
+      "options": [
+        "およそ7500万件",
+        "およそ75万件",
+        "およそ750万件",
+        "およそ7万5000件"
+      ],
+      "answer": 2,
+      "explanation": "最大でおよそ750万件のアカウントの個人情報が外に流れたおそれがあると発表されました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003072/"
+    },
+    {
+      "question": "流れたおそれがある情報にふくまれているものは何ですか。",
+      "options": [
+        "顔写真",
+        "給与の振込先の口座情報",
+        "パスワード",
+        "指紋のデータ"
       ],
       "answer": 1,
-      "explanation": "日本海溝沿いの震源域で、プレートどうしがくっつく「固着」が広い範囲で再開し、ひずみがたまり始めています。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261109de73183"
+      "explanation": "給与の振込先の口座情報などもふくまれているということです。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003072/"
     },
     {
-      "question": "この研究結果を発表したのは、どこですか。",
+      "question": "「Gemini 4 Carbon」はどんなAIモデルですか。",
       "options": [
-        "京都大学などの研究グループ",
-        "大阪大学などの研究グループ",
-        "東北大学などの研究グループ",
-        "東京大学などの研究グループ"
+        "無料の検索サービス",
+        "グーグルの最も高性能なAIモデル",
+        "スマホの新製品",
+        "グーグルの最も古いAIモデル"
       ],
-      "answer": 2,
-      "explanation": "東北大学などの研究グループが、震源域でひずみがたまり始めているという解析結果を発表しました。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261109de73183"
+      "answer": 1,
+      "explanation": "「Gemini 4 Carbon」は、グーグルの最も高性能なAIモデルです。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
     },
     {
-      "question": "9日のニューヨーク株式市場で、ダウ平均株価は前の週末よりどれくらい上がりましたか。",
+      "question": "一般の人が「Gemini 4 Carbon」を使うにはどうすればよいですか。",
       "options": [
-        "1104ドルあまり",
-        "1万104ドルあまり",
-        "110ドルあまり",
-        "11ドルあまり"
-      ],
-      "answer": 0,
-      "explanation": "ダウ平均株価は前の週末より1104ドルあまり上がり、5万2389ドルとなりました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC977LHVC9UHBI001M.html?ref=rss"
-    },
-    {
-      "question": "ダウ平均株価が上がった理由として、要約に書かれているのはどれですか。",
-      "options": [
-        "原油の値段が上がったこと",
-        "中間選挙のあとに株が売られたこと",
-        "エヌビディアの株が上がったこと",
-        "原油の値段が下がって安心感が広がったこと"
+        "月額1000円のプランに入る",
+        "店でカードを買う",
+        "申し込みはいらない",
+        "月額1万4500円の「Google AI Ultra」に入る"
       ],
       "answer": 3,
-      "explanation": "原油の値段が下がって安心感が広がったことや、売られていた株が買い戻されたことが、上がった理由です。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVC977LHVC9UHBI001M.html?ref=rss"
-    },
-    {
-      "question": "新しいAIモデルの出力の速さは、前のモデルより最大でどれくらい上がりましたか。",
-      "options": [
-        "300％",
-        "3％",
-        "30％",
-        "13％"
-      ],
-      "answer": 2,
-      "explanation": "新しいモデルの出力の速さは、前のモデルより最大で30％上がりました。",
+      "explanation": "一般の人は月額1万4500円の「Google AI Ultra」に入ると使えます。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003042/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
     },
     {
-      "question": "「Claude Mythos 5.2」を使えるのは、だれですか。",
+      "question": "こども家庭庁が公表したのは、何の目安ですか。",
       "options": [
-        "だれでも無料で",
-        "有料プランの人ならだれでも",
-        "学生だけ",
-        "審査を通った組織だけ"
+        "学校の給食の献立",
+        "ネットの使い方で保護者や周りの大人がどう関わればよいか",
+        "習い事の選び方",
+        "子どもの宿題の量"
+      ],
+      "answer": 1,
+      "explanation": "こども家庭庁は、ネットの使い方で保護者や周りの大人がどう関わればよいかの目安を公表しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCB3HZNVCBUTFL01DM.html?ref=rss"
+    },
+    {
+      "question": "13～15歳の子どもへの関わり方として示されたのはどれですか。",
+      "options": [
+        "管理をどんどん強くする",
+        "大人がすべて決める",
+        "ネットを完全に禁止する",
+        "管理を少しずつ減らして助言や相談を中心にする"
       ],
       "answer": 3,
-      "explanation": "Mythos 5.2は審査を通った組織だけが使え、Fable 5.2は有料プランや主要なクラウドで使えます。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003042/"
+      "explanation": "13～15歳は、管理を少しずつ減らして助言や相談を中心にするとしています。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCB3HZNVCBUTFL01DM.html?ref=rss"
     }
   ]
 }
