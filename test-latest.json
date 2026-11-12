@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-12",
-  "generated": "2026-11-12 08:46 JST",
+  "date": "2026-11-13",
+  "generated": "2026-11-13 08:49 JST",
   "questions": [
     {
-      "question": "HABAŞ Demir Çelik Fabrikası'ndaki patlamada hayatını kaybedenlerin sayısı kaça yükseldi?",
+      "question": "Malatya'da düşen askeri helikopter hangi tipteydi?",
       "options": [
-        "19",
-        "11",
-        "18",
-        "21"
+        "S-90",
+        "S-70",
+        "S-60",
+        "S-80"
       ],
-      "answer": 0,
-      "explanation": "Özete göre patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
+      "answer": 1,
+      "explanation": "Özette helikopterin S-70 tipi olduğu yazıyor.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cj4gn99v0693o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Patlamanın ardından başlatılan soruşturmada kaç kişi hakkında gözaltı kararı verildi?",
+      "question": "Helikopter Malatya'nın hangi ilçesinde düştü?",
       "options": [
-        "7",
-        "19",
-        "11",
-        "3"
+        "Doğanşehir",
+        "Yeşilyurt",
+        "Akçadağ",
+        "Battalgazi"
       ],
-      "answer": 2,
-      "explanation": "Soruşturmada şirketin yönetim kurulu başkanı dahil 11 kişi hakkında gözaltı kararı verildi.",
+      "answer": 1,
+      "explanation": "Özette helikopterin Malatya'nın Yeşilyurt ilçesinde düştüğü yazıyor.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/crx2d2p8yjjvo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cj4gn99v0693o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Görevinden istifa eden BDDK Başkanı kimdir?",
+      "question": "Türkiye-Belçika maçı kaç kaç bitti?",
       "options": [
-        "Hafize Gaye Erkan",
-        "Şahap Kavcıoğlu",
-        "Mehmet Şimşek",
-        "Nureddin Nebati"
-      ],
-      "answer": 1,
-      "explanation": "Bankacılık Düzenleme ve Denetleme Kurumu Başkanı Şahap Kavcıoğlu görevinden istifa etti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Şahap Kavcıoğlu'nun istifa kararının ardından ne geldiği belirtildi?",
-      "options": [
-        "Fon soruşturması kapsamında hakkında gündeme gelen iddialar",
-        "Emeklilik yaşı",
-        "Sağlık sorunları",
-        "Yeni bir göreve atanması"
-      ],
-      "answer": 0,
-      "explanation": "İstifa kararı, fon soruşturması kapsamında hakkında gündeme gelen iddiaların ardından geldi.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/bddk-başkanı-şahap-kavcıoğlu-fon-soruşturması-ve-iddialar-sonrası-istifa-etti/a-79915939?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "İhtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde kaçtan yüzde kaça çıkarıldı?",
-      "options": [
-        "Yüzde 5'ten yüzde 5,5'e",
-        "Yüzde 3'ten yüzde 3,5'e",
-        "Yüzde 3,5'ten yüzde 4'e",
-        "Yüzde 2'den yüzde 2,5'e"
-      ],
-      "answer": 1,
-      "explanation": "Düzenlemeyle ihtiyaç ve taşıt kredilerinde 8 haftalık büyüme sınırı yüzde 3'ten yüzde 3,5'e çıkarıldı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html"
-    },
-    {
-      "question": "KOBİ'lere kullandırılan Türk lirası kredilerde büyüme sınırı yüzde kaç oldu?",
-      "options": [
-        "Yüzde 5",
-        "Yüzde 5,5",
-        "Yüzde 2,5",
-        "Yüzde 3,5"
-      ],
-      "answer": 1,
-      "explanation": "KOBİ'lere kullandırılan Türk lirası kredilerde sınır yüzde 5'ten yüzde 5,5'e yükseltildi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/ekonomi/merkez-bankasi-kredi-buyume-sinirlarini-yukseltti-962975.html"
-    },
-    {
-      "question": "Meteoroloji Genel Müdürlüğü kaç il için sarı kodlu uyarıda bulundu?",
-      "options": [
-        "7",
-        "12",
-        "9",
-        "11"
+        "2-0",
+        "3-1",
+        "1-0",
+        "2-1"
       ],
       "answer": 3,
-      "explanation": "Meteoroloji Genel Müdürlüğü, İstanbul'un da aralarında bulunduğu 11 il için sarı kodlu uyarıda bulundu.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970"
+      "explanation": "Özette Türkiye'nin Belçika'ya 2-1 yenildiği yazıyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/milli-takim-belcikaya-kaybetti-963110.html"
     },
     {
-      "question": "Sarı kodlu uyarı verilen iller arasında aşağıdakilerden hangisi yer almaz?",
+      "question": "Milli Takım, gruptaki son maçını ne zaman oynayacak?",
       "options": [
-        "İstanbul",
-        "Bursa",
-        "Ankara",
-        "Kocaeli"
-      ],
-      "answer": 2,
-      "explanation": "Uyarı verilen iller İstanbul, Balıkesir, Bursa, Edirne, Kırklareli, Sakarya, Yalova, Bilecik, Tekirdağ, Kocaeli ve Çanakkale oldu; Ankara listede yok.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-da-aralarinda-bulundugu-11-il-icin-sari-kodlu-uyari/4120970"
-    },
-    {
-      "question": "Portekiz'de Charles Fırtınası nedeniyle kaçtan fazla uçuş iptal edildi?",
-      "options": [
-        "300'den fazla",
-        "200'den fazla",
-        "100'den fazla",
-        "50'den fazla"
+        "18 Kasım'da",
+        "15 Kasım'da",
+        "16 Kasım'da",
+        "14 Kasım'da"
       ],
       "answer": 1,
-      "explanation": "Portekiz'de fırtına nedeniyle 200'den fazla uçuş iptal edildi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938"
+      "explanation": "Özette Milli Takım'ın gruptaki son maçını 15 Kasım'da deplasmanda Fransa ile oynayacağı yazıyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/milli-takim-belcikaya-kaybetti-963110.html"
     },
     {
-      "question": "İspanya'nın Piedralaves bölgesinde 3 bin kişi neden tahliye edildi?",
+      "question": "Davanın 109. duruşmasında kaç sanığın tahliyesine karar verildi?",
       "options": [
-        "Yerel bir barajın taşma riski nedeniyle",
-        "Orman yangını nedeniyle",
-        "Deprem nedeniyle",
-        "Sel nedeniyle"
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "Özette 109. duruşmada 8 sanığın tahliyesine karar verildiği yazıyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/imamoglu-cikar-amacli-suc-orgutu-davasinda-8-saniga-tahliye-43376409"
+    },
+    {
+      "question": "Duruşma hangi tarihe ertelendi?",
+      "options": [
+        "4 Aralık 2026'ya",
+        "4 Ocak 2026'ya",
+        "4 Ocak 2027'ye",
+        "4 Şubat 2027'ye"
+      ],
+      "answer": 2,
+      "explanation": "Özette duruşmanın 4 Ocak 2027'ye ertelendiği yazıyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/imamoglu-cikar-amacli-suc-orgutu-davasinda-8-saniga-tahliye-43376409"
+    },
+    {
+      "question": "Merkez Bankası 2026 yıl sonu enflasyon tahminini kaça yükseltti?",
+      "options": [
+        "Yüzde 29,5'e",
+        "Yüzde 30'a",
+        "Yüzde 28'e",
+        "Yüzde 27'ye"
       ],
       "answer": 0,
-      "explanation": "Piedralaves bölgesinde yerel bir barajın taşma riski nedeniyle 3 bin kişi tahliye edildi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/charles-firtinasi-portekiz-ve-ispanyada-hayati-felc-etti-200den-fazla-ucus-iptal-edildi-egitime-ara-verildi-43374938"
+      "explanation": "Özette tahminin yüzde 28'den yüzde 29,5'e yükseltildiği yazıyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇ran-savaşı-hesapları-bozdu-tcmb-enflasyon-tahminini-yükseltti/a-79928231?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Karahan'a göre enflasyon tahmininin yükselmesinin esas nedeni nedir?",
+      "options": [
+        "İran savaşı da dahil jeopolitik gelişmelerin enerji fiyatları üzerindeki etkisi",
+        "Turizm gelirlerinin artması",
+        "Döviz kurunun sabit kalması",
+        "Gıda fiyatlarının düşmesi"
+      ],
+      "answer": 0,
+      "explanation": "Özette esas nedenin İran savaşı da dahil jeopolitik gelişmelerin enerji fiyatları üzerindeki etkisi olduğu yazıyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇ran-savaşı-hesapları-bozdu-tcmb-enflasyon-tahminini-yükseltti/a-79928231?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Dışişleri Bakanlığı hangi hastaneye düzenlenen saldırıyı kınadı?",
+      "options": [
+        "Şifa Hastanesi",
+        "Kudüs Hastanesi",
+        "Nasır Hastanesi",
+        "El-Ehli Hastanesi"
+      ],
+      "answer": 2,
+      "explanation": "Özette saldırının Han Yunus'taki Nasır Hastanesi'ne düzenlendiği yazıyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakanligi-israilin-gazzedeki-hastaneye-saldirisini-kinadi/4123537"
+    },
+    {
+      "question": "Saldırıda kaç Filistinli hayatını kaybetti?",
+      "options": [
+        "6",
+        "10",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Özette saldırıda 6 Filistinlinin hayatını kaybettiği yazıyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakanligi-israilin-gazzedeki-hastaneye-saldirisini-kinadi/4123537"
     }
   ]
 }
