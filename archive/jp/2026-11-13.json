@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-13",
+  "news": {
+    "articles": [
+      {
+        "cat": "🔬 テクノロジー",
+        "source": "ITmedia NEWS",
+        "summary": "マイクロソフトの「Microsoft 365」で11月12日（米国時間）、メールや会議などのサービスにつながりにくくなる大規模な障害が起きました。OutlookやTeamsなどに影響が出ています。多くのサーバーが自動の健康チェックに失敗して応答しなくなったのが原因で、直近の設定変更が関係している可能性があります。一部は復旧し、会社は対応を進めています。",
+        "time": "11月13日 6:41",
+        "title": "Microsoft 365で大規模障害　「Outlook」でメールにアクセスできず、「Teams」など複数サービスに影響",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/13/2000003161/10012045/2048"
+      },
+      {
+        "cat": "🌏 世界・政治",
+        "source": "産経新聞",
+        "summary": "アメリカの半導体大手エヌビディアは12日、ジェンスン・フアン最高経営責任者（CEO）が辞任し、コレット・クレス最高財務責任者（CFO）が暫定的にCEOに就くと発表しました。フアン氏をめぐっては、中国のスパイ疑惑がある女性との不倫関係が発覚し、11日に取締役会が進退を協議していました。その女性は、輸出規制の対象となる半導体を中国が手に入れられるよう画策した疑いがあるとされています。",
+        "time": "11月12日 23:10",
+        "title": "エヌビディアのフアン氏辞任　CFOクレス氏が暫定CEOに　「中国スパイ」と不倫で引責",
+        "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
+      },
+      {
+        "cat": "💹 経済",
+        "source": "朝日新聞",
+        "summary": "12日のニューヨーク外国為替市場で円が下がり、一時1ドル＝160円台をつけました。9月以来、約2カ月半ぶりの円安水準です。アメリカの10月の物価指数（CPI）が予想より高かったため、中央銀行（FRB）が利上げを進めるとの見方が強まり、ドルを買う動きが広がりました。",
+        "time": "11月13日 3:31",
+        "title": "円下落、約2カ月半ぶりに一時160円台　米国の利上げ観測強まりで",
+        "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss",
+        "img": "https://imgopt.asahi.com/ogp/AS20261113000342_comm.jpg"
+      },
+      {
+        "cat": "🎬 エンタメ",
+        "source": "日テレNEWS NNN",
+        "summary": "落語家の三遊亭鳳楽さんが10日、老衰のため79歳で亡くなりました。所属する五代目圓楽一門会が12日に発表しました。鳳楽さんは本名・内田啓次さんで、1947年3月1日に埼玉県川越市で生まれました。通夜と葬儀は本人の意向で、近親者のみで執り行われたということです。",
+        "time": "11月12日 19:36",
+        "title": "落語家・三遊亭鳳楽さん死去　79歳 老衰のため　五代目圓楽さんの総領弟子",
+        "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e",
+        "img": "https://news.ntv.co.jp/gimage/n24/articles/7bb253441cc248c390aea5ce188add10/324af2e5-35ca-4615-92c2-0274ccf191eb.jpg?w=1200"
+      },
+      {
+        "cat": "🚨 社会",
+        "source": "FNNプライムオンライン",
+        "summary": "勤務先の会社の口座から、インターネットバンキングを使って約21億8800万円を自分の口座に送金し、着服した疑いで、元経理担当の鈴木真一容疑者（43）がさいたま地検に逮捕されました。2019年12月から2026年1月までの間に254回に分けて送金した疑いです。所得税約5億3900万円を免れたとして、国税局が脱税の疑いでも告発しています。",
+        "time": "11月12日 22:18",
+        "title": "インターネットバンキングで会社から21億円余り送金、横領か　元経理担当の43歳男を逮捕　さいたま地検",
+        "url": "https://www.fnn.jp/articles/-/1151501",
+        "img": "https://fnn.ismcdn.jp/mwimgs/5/7/600/img_5721e1dc4431539329e23b5a75b7e7e6321650.jpg"
+      }
+    ],
+    "date": "2026-11-13",
+    "updated": "2026-11-13 08:01 JST"
+  },
+  "quiz": {
+    "date": "2026-11-13",
+    "generated": "2026-11-13 08:14 JST",
+    "questions": [
+      {
+        "question": "「Microsoft 365」の大規模な障害が起きたのは、いつのことでしょう。",
+        "options": [
+          "11月10日（米国時間）",
+          "11月13日（米国時間）",
+          "11月11日（米国時間）",
+          "11月12日（米国時間）"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、障害は11月12日（米国時間）に起きました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
+      },
+      {
+        "question": "障害の原因として、要約では何があげられていますか。",
+        "options": [
+          "サイバー攻撃でパスワードが盗まれたこと",
+          "地震でデータセンターが壊れたこと",
+          "台風で通信回線が切れたこと",
+          "多くのサーバーが自動の健康チェックに失敗して応答しなくなったこと"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、多くのサーバーが自動の健康チェックに失敗して応答しなくなったのが原因です。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
+      },
+      {
+        "question": "フアン氏の後任として、暫定的にCEOに就くのは誰でしょう。",
+        "options": [
+          "コレット・クレス最高財務責任者（CFO）",
+          "取締役会の会長",
+          "ジェンスン・フアン氏",
+          "中国の女性"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、コレット・クレス最高財務責任者（CFO）が暫定的にCEOに就きます。",
+        "source": "産経新聞",
+        "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
+      },
+      {
+        "question": "フアン氏の進退を取締役会が協議したのは、いつでしょう。",
+        "options": [
+          "11日",
+          "12日",
+          "13日",
+          "10日"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、取締役会は11日にフアン氏の進退を協議していました。",
+        "source": "産経新聞",
+        "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
+      },
+      {
+        "question": "円が一時1ドル＝何円台をつけましたか。",
+        "options": [
+          "170円台",
+          "150円台",
+          "160円台",
+          "140円台"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、円は一時1ドル＝160円台をつけました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
+      },
+      {
+        "question": "円安が進んだ理由として、要約では何があげられていますか。",
+        "options": [
+          "アメリカの10月の物価指数（CPI）が予想より高かったこと",
+          "日本の金利が上がったこと",
+          "日本の物価指数が予想より低かったこと",
+          "アメリカの失業率が下がったこと"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、アメリカの10月の物価指数（CPI）が予想より高く、FRBの利上げ観測が強まったためです。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
+      },
+      {
+        "question": "三遊亭鳳楽さんが亡くなったのは、何歳のときでしょう。",
+        "options": [
+          "79歳",
+          "69歳",
+          "89歳",
+          "99歳"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、鳳楽さんは79歳で亡くなりました。",
+        "source": "日テレNEWS NNN",
+        "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
+      },
+      {
+        "question": "鳳楽さんの通夜と葬儀は、どのように執り行われたでしょう。",
+        "options": [
+          "本人の意向で、近親者のみで執り行われた",
+          "大勢のファンを集めて公開で行われた",
+          "海外で行われた",
+          "まだ行われていない"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、通夜と葬儀は本人の意向で近親者のみで執り行われました。",
+        "source": "日テレNEWS NNN",
+        "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
+      },
+      {
+        "question": "鈴木容疑者が送金したとされる金額は、およそいくらでしょう。",
+        "options": [
+          "約5億3900万円",
+          "約21億880万円",
+          "約21億8800万円",
+          "約2億1800万円"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、約21億8800万円を送金した疑いです。",
+        "source": "FNNプライムオンライン",
+        "url": "https://www.fnn.jp/articles/-/1151501"
+      },
+      {
+        "question": "鈴木容疑者が送金を繰り返した回数は、何回でしょう。",
+        "options": [
+          "25回",
+          "524回",
+          "245回",
+          "254回"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、254回に分けて送金した疑いです。",
+        "source": "FNNプライムオンライン",
+        "url": "https://www.fnn.jp/articles/-/1151501"
+      }
+    ]
+  }
+}

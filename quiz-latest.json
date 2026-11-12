@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-12",
-  "generated": "2026-11-12 07:48 JST",
+  "date": "2026-11-13",
+  "generated": "2026-11-13 08:14 JST",
   "questions": [
     {
-      "question": "去年7月の参議院選挙で、1票の重さの格差は最大で何倍になりましたか。",
+      "question": "「Microsoft 365」の大規模な障害が起きたのは、いつのことでしょう。",
       "options": [
-        "2.13倍",
-        "1.13倍",
-        "3.31倍",
-        "3.13倍"
+        "11月10日（米国時間）",
+        "11月13日（米国時間）",
+        "11月11日（米国時間）",
+        "11月12日（米国時間）"
       ],
       "answer": 3,
-      "explanation": "要約によると、去年7月の参議院選挙で1票の重さの格差は最大で3.13倍になりました。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261111de74142"
+      "explanation": "要約によると、障害は11月12日（米国時間）に起きました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
     },
     {
-      "question": "最高裁判所の大法廷は、去年7月の参議院選挙について、どのように判断しましたか。",
+      "question": "障害の原因として、要約では何があげられていますか。",
       "options": [
-        "「違憲状態」だと判断した",
-        "判断を先送りにした",
-        "「合憲」だと判断した",
-        "選挙を無効にすると判断した"
+        "サイバー攻撃でパスワードが盗まれたこと",
+        "地震でデータセンターが壊れたこと",
+        "台風で通信回線が切れたこと",
+        "多くのサーバーが自動の健康チェックに失敗して応答しなくなったこと"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、多くのサーバーが自動の健康チェックに失敗して応答しなくなったのが原因です。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
+    },
+    {
+      "question": "フアン氏の後任として、暫定的にCEOに就くのは誰でしょう。",
+      "options": [
+        "コレット・クレス最高財務責任者（CFO）",
+        "取締役会の会長",
+        "ジェンスン・フアン氏",
+        "中国の女性"
       ],
       "answer": 0,
-      "explanation": "最高裁判所の大法廷は「違憲状態」だと判断しましたが、選挙を無効にする訴えは退けました。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261111de74142"
+      "explanation": "要約によると、コレット・クレス最高財務責任者（CFO）が暫定的にCEOに就きます。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
     },
     {
-      "question": "火事があったのはどこですか。",
+      "question": "フアン氏の進退を取締役会が協議したのは、いつでしょう。",
       "options": [
-        "静岡県小山町",
-        "広島県福山市",
-        "静岡県浜松市",
-        "宮城県亘理町"
+        "11日",
+        "12日",
+        "13日",
+        "10日"
       ],
       "answer": 0,
-      "explanation": "火事があったのは、静岡県小山町の住宅です。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1150193"
+      "explanation": "要約によると、取締役会は11日にフアン氏の進退を協議していました。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
     },
     {
-      "question": "火が消し止められるまで、およそどのくらいかかりましたか。",
+      "question": "円が一時1ドル＝何円台をつけましたか。",
       "options": [
-        "およそ1時間",
-        "およそ6時間",
-        "およそ4時間",
-        "およそ2時間"
+        "170円台",
+        "150円台",
+        "160円台",
+        "140円台"
       ],
       "answer": 2,
-      "explanation": "火はおよそ4時間後に消し止められました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1150193"
+      "explanation": "要約によると、円は一時1ドル＝160円台をつけました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
     },
     {
-      "question": "通信障害が起きたのは、どこの会社のサービスですか。",
+      "question": "円安が進んだ理由として、要約では何があげられていますか。",
       "options": [
-        "KDDI",
-        "NTTドコモ",
-        "ソフトバンク",
-        "楽天モバイル"
-      ],
-      "answer": 1,
-      "explanation": "NTTドコモの5G SAの契約者向けの通信障害について、発表がありました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003116/"
-    },
-    {
-      "question": "午後4時30分の時点で、通信障害はどうなっていましたか。",
-      "options": [
-        "まったく復旧していなかった",
-        "完全に復旧していた",
-        "原因が分かっていた",
-        "一部を除いて復旧したが、完全な復旧には至っていなかった"
-      ],
-      "answer": 3,
-      "explanation": "午後4時30分の時点では、一部を除いて復旧しましたが、完全な復旧には至っていませんでした。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/11/2000003116/"
-    },
-    {
-      "question": "販売を一時休止するのは、いつからですか。",
-      "options": [
-        "11月13日",
-        "11月12日",
-        "11月21日",
-        "11月11日"
+        "アメリカの10月の物価指数（CPI）が予想より高かったこと",
+        "日本の金利が上がったこと",
+        "日本の物価指数が予想より低かったこと",
+        "アメリカの失業率が下がったこと"
       ],
       "answer": 0,
-      "explanation": "11月13日から販売を一時休止します。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602238?source=rss"
-    },
-    {
-      "question": "新しいチキンの開発には、およそ何年かかりましたか。",
-      "options": [
-        "およそ1年",
-        "およそ3年",
-        "およそ10年",
-        "およそ5年"
-      ],
-      "answer": 3,
-      "explanation": "開発にはおよそ5年かかりました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602238?source=rss"
-    },
-    {
-      "question": "亡くなったダルチエフ氏は、何歳でしたか。",
-      "options": [
-        "60歳",
-        "76歳",
-        "70歳",
-        "66歳"
-      ],
-      "answer": 3,
-      "explanation": "ダルチエフ氏は66歳で死亡したと発表されました。",
+      "explanation": "要約によると、アメリカの10月の物価指数（CPI）が予想より高く、FRBの利上げ観測が強まったためです。",
       "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCC63HJVCCUHBI04JM.html?ref=rss"
+      "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
     },
     {
-      "question": "ダルチエフ氏が駐米大使を務め始めたのは、いつからですか。",
+      "question": "三遊亭鳳楽さんが亡くなったのは、何歳のときでしょう。",
       "options": [
-        "2024年3月",
-        "2025年11月",
-        "2026年3月",
-        "2025年3月"
+        "79歳",
+        "69歳",
+        "89歳",
+        "99歳"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、鳳楽さんは79歳で亡くなりました。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
+    },
+    {
+      "question": "鳳楽さんの通夜と葬儀は、どのように執り行われたでしょう。",
+      "options": [
+        "本人の意向で、近親者のみで執り行われた",
+        "大勢のファンを集めて公開で行われた",
+        "海外で行われた",
+        "まだ行われていない"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、通夜と葬儀は本人の意向で近親者のみで執り行われました。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
+    },
+    {
+      "question": "鈴木容疑者が送金したとされる金額は、およそいくらでしょう。",
+      "options": [
+        "約5億3900万円",
+        "約21億880万円",
+        "約21億8800万円",
+        "約2億1800万円"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、約21億8800万円を送金した疑いです。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1151501"
+    },
+    {
+      "question": "鈴木容疑者が送金を繰り返した回数は、何回でしょう。",
+      "options": [
+        "25回",
+        "524回",
+        "245回",
+        "254回"
       ],
       "answer": 3,
-      "explanation": "ダルチエフ氏は2025年3月から駐米大使を務めていました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCC63HJVCCUHBI04JM.html?ref=rss"
+      "explanation": "要約によると、254回に分けて送金した疑いです。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1151501"
     }
   ]
 }
