@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-13",
-  "generated": "2026-11-13 08:14 JST",
+  "date": "2026-11-14",
+  "generated": "2026-11-14 07:46 JST",
   "questions": [
     {
-      "question": "「Microsoft 365」の大規模な障害が起きたのは、いつのことでしょう。",
+      "question": "全米の空港で、全ての出発便に出された命令は何でしょう。",
       "options": [
-        "11月10日（米国時間）",
-        "11月13日（米国時間）",
-        "11月11日（米国時間）",
-        "11月12日（米国時間）"
+        "入国禁止命令",
+        "離陸促進命令",
+        "空港閉鎖命令",
+        "地上待機命令"
       ],
       "answer": 3,
-      "explanation": "要約によると、障害は11月12日（米国時間）に起きました。",
+      "explanation": "航空管制の通信に問題が起き、全ての出発便に地上待機命令が出ました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+    },
+    {
+      "question": "全便への地上待機命令は、2001年の同時多発テロ以来、何度目でしょう。",
+      "options": [
+        "3度目",
+        "2度目",
+        "初めて",
+        "5度目"
+      ],
+      "answer": 1,
+      "explanation": "全便への命令は、2001年の同時多発テロ以来2度目です。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+    },
+    {
+      "question": "13日未明から障害が起きたのは、何でしょう。",
+      "options": [
+        "Outlookだけ",
+        "Microsoft 365",
+        "携帯電話の回線",
+        "日本の全てのインターネット"
+      ],
+      "answer": 1,
+      "explanation": "「Microsoft 365」で13日未明から障害が起きました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
     },
     {
-      "question": "障害の原因として、要約では何があげられていますか。",
+      "question": "政府は障害の間、どうやって業務を続けることにしましたか。",
       "options": [
-        "サイバー攻撃でパスワードが盗まれたこと",
-        "地震でデータセンターが壊れたこと",
-        "台風で通信回線が切れたこと",
-        "多くのサーバーが自動の健康チェックに失敗して応答しなくなったこと"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、多くのサーバーが自動の健康チェックに失敗して応答しなくなったのが原因です。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003161/"
-    },
-    {
-      "question": "フアン氏の後任として、暫定的にCEOに就くのは誰でしょう。",
-      "options": [
-        "コレット・クレス最高財務責任者（CFO）",
-        "取締役会の会長",
-        "ジェンスン・フアン氏",
-        "中国の女性"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、コレット・クレス最高財務責任者（CFO）が暫定的にCEOに就きます。",
-      "source": "産経新聞",
-      "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
-    },
-    {
-      "question": "フアン氏の進退を取締役会が協議したのは、いつでしょう。",
-      "options": [
-        "11日",
-        "12日",
-        "13日",
-        "10日"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、取締役会は11日にフアン氏の進退を協議していました。",
-      "source": "産経新聞",
-      "url": "https://www.sankei.com/article/20261112-ETB4YJVMPJMJPDISK7I75WY2GU/?outputType=asynd"
-    },
-    {
-      "question": "円が一時1ドル＝何円台をつけましたか。",
-      "options": [
-        "170円台",
-        "150円台",
-        "160円台",
-        "140円台"
+        "全ての業務を止める",
+        "紙の書類だけで業務をする",
+        "電話やチャットなど別の連絡手段を使う",
+        "障害が直るまで待つ"
       ],
       "answer": 2,
-      "explanation": "要約によると、円は一時1ドル＝160円台をつけました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
+      "explanation": "電話やチャットなど別の連絡手段で業務を続け、主要な業務に支障が出ないようにすると説明しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
     },
     {
-      "question": "円安が進んだ理由として、要約では何があげられていますか。",
+      "question": "FX口座の損失の補償申請は、何口座に上りましたか。",
       "options": [
-        "アメリカの10月の物価指数（CPI）が予想より高かったこと",
-        "日本の金利が上がったこと",
-        "日本の物価指数が予想より低かったこと",
-        "アメリカの失業率が下がったこと"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、アメリカの10月の物価指数（CPI）が予想より高く、FRBの利上げ観測が強まったためです。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCD62W2VCDUHBI04NM.html?ref=rss"
-    },
-    {
-      "question": "三遊亭鳳楽さんが亡くなったのは、何歳のときでしょう。",
-      "options": [
-        "79歳",
-        "69歳",
-        "89歳",
-        "99歳"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、鳳楽さんは79歳で亡くなりました。",
-      "source": "日テレNEWS NNN",
-      "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
-    },
-    {
-      "question": "鳳楽さんの通夜と葬儀は、どのように執り行われたでしょう。",
-      "options": [
-        "本人の意向で、近親者のみで執り行われた",
-        "大勢のファンを集めて公開で行われた",
-        "海外で行われた",
-        "まだ行われていない"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、通夜と葬儀は本人の意向で近親者のみで執り行われました。",
-      "source": "日テレNEWS NNN",
-      "url": "https://news.ntv.co.jp/category/culture/da6a235a56f743f789647668b8d6ae6e"
-    },
-    {
-      "question": "鈴木容疑者が送金したとされる金額は、およそいくらでしょう。",
-      "options": [
-        "約5億3900万円",
-        "約21億880万円",
-        "約21億8800万円",
-        "約2億1800万円"
-      ],
-      "answer": 2,
-      "explanation": "要約によると、約21億8800万円を送金した疑いです。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1151501"
-    },
-    {
-      "question": "鈴木容疑者が送金を繰り返した回数は、何回でしょう。",
-      "options": [
-        "25回",
-        "524回",
-        "245回",
-        "254回"
+        "2934口座",
+        "2493口座",
+        "3942口座",
+        "2943口座"
       ],
       "answer": 3,
-      "explanation": "要約によると、254回に分けて送金した疑いです。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1151501"
+      "explanation": "補償申請は2943口座、約29億9800万円に上りました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
+    },
+    {
+      "question": "見舞金など直接の費用は、合わせてどれくらいを見込んでいますか。",
+      "options": [
+        "計30億5000万円",
+        "計300億5000万円",
+        "計30億5000円",
+        "計3億500万円"
+      ],
+      "answer": 0,
+      "explanation": "見舞金など直接の費用は計30億5000万円を見込みます。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
+    },
+    {
+      "question": "事故が起きたのは、どこでしょう。",
+      "options": [
+        "東京都内の交差点",
+        "神奈川県横浜市の交差点",
+        "神奈川県海老名市の交差点",
+        "大阪府内の交差点"
+      ],
+      "answer": 2,
+      "explanation": "神奈川県海老名市の交差点で、横断歩道を渡っていた女性2人が大型トラックにはねられました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
+    },
+    {
+      "question": "逮捕された男は、何歳ですか。",
+      "options": [
+        "49歳",
+        "29歳",
+        "39歳",
+        "59歳"
+      ],
+      "answer": 0,
+      "explanation": "県警は14日、運転していたとみられる49歳の会社員の男を逮捕しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
+    },
+    {
+      "question": "U-21日本代表はスペイン代表に、何対何で敗れましたか。",
+      "options": [
+        "2対0",
+        "0対1",
+        "0対2",
+        "1対1"
+      ],
+      "answer": 2,
+      "explanation": "U-21日本代表はU-21スペイン代表に0対2で敗れました。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
+    },
+    {
+      "question": "この試合は、どんな目的の試合でしたか。",
+      "options": [
+        "2028年のロサンゼルス五輪を見すえた強化",
+        "国内リーグの試合",
+        "アジア大会の決勝",
+        "ワールドカップの予選"
+      ],
+      "answer": 0,
+      "explanation": "2028年のロサンゼルス五輪を見すえた強化の試合でした。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
     }
   ]
 }

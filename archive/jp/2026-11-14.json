@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-14",
+  "news": {
+    "date": "2026-11-14",
+    "updated": "2026-11-14 07:45 JST",
+    "articles": [
+      {
+        "cat": "🌏 世界・政治",
+        "time": "11月14日 7:06",
+        "title": "全米の空港で「異常事態」地上待機命令　運輸長官は「通信障害」説明",
+        "summary": "米連邦航空局は13日、航空管制の通信に深刻な問題が起きたとして、全米の空港で全ての出発便に地上待機命令を出しました。航空機は離陸できない状況になっています。運輸長官は管制センターに影響する通信障害が理由だと説明しています。全便への命令は、2001年の同時多発テロ以来2度目です。",
+        "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss",
+        "source": "朝日新聞",
+        "img": "https://imgopt.asahi.com/ogp/AS20261114000801_comm.jpg"
+      },
+      {
+        "cat": "🛡️ テクノロジー",
+        "time": "11月13日 12:48",
+        "title": "MS障害、政府共通システムにも影響　デジタル相「朝、なんで使えないんだろうと思ったら」",
+        "summary": "米マイクロソフトの「Microsoft 365」で13日未明から障害が起き、政府共通の業務環境にも支障が出て、省庁などでOutlookのメールが送受信できなくなりました。古川デジタル相は、電話やチャットなど別の連絡手段で業務を続け、主要な業務に支障が出ないようにしていると説明しました。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/13/2000003183/10012095/2048"
+      },
+      {
+        "cat": "💹 経済",
+        "time": "11月13日 18:17",
+        "title": "「お名前.com」不正アクセス、補償申請約30億円に　GMOインターネットが決算説明会で謝罪",
+        "summary": "GMOインターネットは13日、「お名前.com」のサービスへの不正アクセスについて謝罪しました。利用者のFX口座の損失の補償申請は2943口座、約29億9800万円に上り、見舞金など直接の費用は計30億5000万円を見込みます。社長ら役員3人の報酬を減らすことも発表しました。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/13/2000003197/10012138/2048"
+      },
+      {
+        "cat": "🚨 社会・事故",
+        "time": "11月14日 5:21",
+        "title": "神奈川の2人死亡ひき逃げ事故、49歳の会社員の男を逮捕　容疑否認",
+        "summary": "神奈川県海老名市の交差点で13日午後、横断歩道を渡っていた女性2人が大型トラックにはねられ、2人とも現場で死亡が確認されました。トラックはそのまま逃走しましたが、県警は14日、運転していたとみられる49歳の会社員の男を逮捕しました。男は容疑を否認しています。",
+        "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss",
+        "source": "朝日新聞",
+        "img": "https://imgopt.asahi.com/ogp/AS20261114000460_comm.jpg"
+      },
+      {
+        "cat": "⚽ スポーツ",
+        "time": "11月14日 7:24",
+        "title": "U-21大岩J スペインに0-2で敗戦",
+        "summary": "サッカーのU-21日本代表は13日、スペインのアルメンドラレホで行われた国際親善試合で、U-21スペイン代表に0対2で敗れました。決定機を多く作りましたが、相手の堅い守備を破れませんでした。2028年のロサンゼルス五輪を見すえた強化の試合でした。",
+        "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss",
+        "source": "Yahoo!ニュース トピックス",
+        "img": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/14/053eb8cf575f14019c0e36af95d3c1110b3511d568176fd968bc7eb80199c26d.jpg"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-14",
+    "generated": "2026-11-14 07:46 JST",
+    "questions": [
+      {
+        "question": "全米の空港で、全ての出発便に出された命令は何でしょう。",
+        "options": [
+          "入国禁止命令",
+          "離陸促進命令",
+          "空港閉鎖命令",
+          "地上待機命令"
+        ],
+        "answer": 3,
+        "explanation": "航空管制の通信に問題が起き、全ての出発便に地上待機命令が出ました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+      },
+      {
+        "question": "全便への地上待機命令は、2001年の同時多発テロ以来、何度目でしょう。",
+        "options": [
+          "3度目",
+          "2度目",
+          "初めて",
+          "5度目"
+        ],
+        "answer": 1,
+        "explanation": "全便への命令は、2001年の同時多発テロ以来2度目です。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+      },
+      {
+        "question": "13日未明から障害が起きたのは、何でしょう。",
+        "options": [
+          "Outlookだけ",
+          "Microsoft 365",
+          "携帯電話の回線",
+          "日本の全てのインターネット"
+        ],
+        "answer": 1,
+        "explanation": "「Microsoft 365」で13日未明から障害が起きました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
+      },
+      {
+        "question": "政府は障害の間、どうやって業務を続けることにしましたか。",
+        "options": [
+          "全ての業務を止める",
+          "紙の書類だけで業務をする",
+          "電話やチャットなど別の連絡手段を使う",
+          "障害が直るまで待つ"
+        ],
+        "answer": 2,
+        "explanation": "電話やチャットなど別の連絡手段で業務を続け、主要な業務に支障が出ないようにすると説明しました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
+      },
+      {
+        "question": "FX口座の損失の補償申請は、何口座に上りましたか。",
+        "options": [
+          "2934口座",
+          "2493口座",
+          "3942口座",
+          "2943口座"
+        ],
+        "answer": 3,
+        "explanation": "補償申請は2943口座、約29億9800万円に上りました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
+      },
+      {
+        "question": "見舞金など直接の費用は、合わせてどれくらいを見込んでいますか。",
+        "options": [
+          "計30億5000万円",
+          "計300億5000万円",
+          "計30億5000円",
+          "計3億500万円"
+        ],
+        "answer": 0,
+        "explanation": "見舞金など直接の費用は計30億5000万円を見込みます。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
+      },
+      {
+        "question": "事故が起きたのは、どこでしょう。",
+        "options": [
+          "東京都内の交差点",
+          "神奈川県横浜市の交差点",
+          "神奈川県海老名市の交差点",
+          "大阪府内の交差点"
+        ],
+        "answer": 2,
+        "explanation": "神奈川県海老名市の交差点で、横断歩道を渡っていた女性2人が大型トラックにはねられました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
+      },
+      {
+        "question": "逮捕された男は、何歳ですか。",
+        "options": [
+          "49歳",
+          "29歳",
+          "39歳",
+          "59歳"
+        ],
+        "answer": 0,
+        "explanation": "県警は14日、運転していたとみられる49歳の会社員の男を逮捕しました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
+      },
+      {
+        "question": "U-21日本代表はスペイン代表に、何対何で敗れましたか。",
+        "options": [
+          "2対0",
+          "0対1",
+          "0対2",
+          "1対1"
+        ],
+        "answer": 2,
+        "explanation": "U-21日本代表はU-21スペイン代表に0対2で敗れました。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
+      },
+      {
+        "question": "この試合は、どんな目的の試合でしたか。",
+        "options": [
+          "2028年のロサンゼルス五輪を見すえた強化",
+          "国内リーグの試合",
+          "アジア大会の決勝",
+          "ワールドカップの予選"
+        ],
+        "answer": 0,
+        "explanation": "2028年のロサンゼルス五輪を見すえた強化の試合でした。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
+      }
+    ]
+  }
+}
