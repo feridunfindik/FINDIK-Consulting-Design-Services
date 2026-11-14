@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-13",
-  "updated": "2026-11-13 02:47 TSİ",
   "articles": [
     {
-      "cat": "🚨 Gündem",
-      "time": "12 Kasım 19:34",
-      "title": "Malatya'da düşen helikopterde dört asker hayatını kaybetti",
-      "summary": "Milli Savunma Bakanlığı, Malatya'nın Yeşilyurt ilçesinde S-70 tipi askeri helikopterin henüz bilinmeyen bir nedenle kaza kırıma uğradığını ve dört askerin hayatını kaybettiğini duyurdu. Şehit olan askerler Kara Pilot Binbaşı Erdem Çimen, Kara Pilot Binbaşı Orhun Pınar, Astsubay Hüseyin Zehir ve Astsubay Kıdemli Çavuş Serkan Önder. Helikopterin düştüğü yerde çıkan yangın yakındaki bir eve sıçradı; ekipler yangını söndürdü.",
-      "url": "https://www.bbc.com/turkce/articles/cj4gn99v0693o?at_medium=RSS&at_campaign=rss",
+      "cat": "🌍 Dünya",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6e32/live/525bb5e0-dfb6-11f1-93e1-3b657b665bcf.jpg",
       "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9905/live/79fbdf40-deb6-11f1-8fb5-a771a656a227.jpg"
-    },
-    {
-      "cat": "⚽ Spor",
-      "time": "12 Kasım 21:48",
-      "title": "Milli Takım Belçika'ya kaybetti",
-      "summary": "A Milli Futbol Takımı, UEFA Uluslar A Ligi 1. Grup'taki beşinci maçında İzmir'de Belçika'ya 2-1 yenildi. Arda Güler'in 20. dakikada frikikten attığı golle öne geçen ay-yıldızlı ekip, ilk yarıyı da 2-1 geride kapattı. Grupta oynadığı 5. maçı da kaybeden Türkiye, puansız son sırada kaldı. Üçüncü galibiyetini alan Belçika ise puanını 9'a yükseltti. Milli Takım, gruptaki son maçını 15 Kasım'da deplasmanda Fransa ile oynayacak.",
-      "url": "https://www.trthaber.com/haber/gundem/milli-takim-belcikaya-kaybetti-963110.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/milli-takim-aa-2503298.jpg"
+      "summary": "ABD Federal Havacılık İdaresi, hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorununun ardından ABD genelindeki tüm havalimanlarında uçuşların durdurulması kararı aldı. İç Güvenlik Bakanı Markwayne Mullin, karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi.",
+      "time": "14 Kasım 02:36",
+      "title": "ABD'de tüm uçuşlar durduruldu: 'Bu yeni bir 11 Eylül değil'",
+      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
     },
     {
       "cat": "🏛️ Siyaset",
-      "time": "13 Kasım 00:53",
-      "title": "İmamoğlu çıkar amaçlı suç örgütü davasında 8 sanığa tahliye",
-      "summary": "İmamoğlu çıkar amaçlı suç örgütüne ilişkin davanın 109. duruşmasında, 46'sı tutuklu 436 sanığın yargılandığı dosyada 8 sanığın tahliyesine karar verildi. İstanbul 33. Ağır Ceza Mahkemesi, avukat Mehmet Pehlivan'ın da aralarında bulunduğu 8 sanığı tahliye etti. Mahkeme, dosyanın mütalaa için savcılığa gönderilmesine karar vererek duruşmayı 4 Ocak 2027'ye erteledi.",
-      "url": "https://www.hurriyet.com.tr/gundem/imamoglu-cikar-amacli-suc-orgutu-davasinda-8-saniga-tahliye-43376409",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af6353dc813a6f07cce7a4a.jpg"
+      "source": "TRT Haber",
+      "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos'ta Mekke'de imzalanan ortak savunma anlaşmasının onaylanmasının uygun bulunduğuna dair kanun, Resmi Gazete'de yayımlanarak yürürlüğe girdi. Anlaşmayla üç ülke arasında savunma ve güvenlik iş birliğinin yanı sıra savunma sanayiinde ortak projeler geliştirilecek, teknoloji paylaşımı ve ortak üretim desteklenecek.",
+      "time": "14 Kasım 00:18",
+      "title": "Mekke Anlaşması yürürlüğe girdi",
+      "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2486000/mekke-anlasmasi-2486731.jpg"
     },
     {
-      "cat": "💹 Ekonomi",
-      "time": "12 Kasım 13:45",
-      "title": "İran savaşı hesapları bozdu: TCMB enflasyon tahminini yükseltti",
-      "summary": "Merkez Bankası, yılın son enflasyon raporunda 2026 yıl sonu enflasyon tahminini yüzde 28'den yüzde 29,5'e yükseltti. Merkez Bankası Başkanı Fatih Karahan, enflasyonun düşmeye devam ettiğini ancak ivme kaybettiğini, bunun esas nedeninin İran savaşı da dahil jeopolitik gelişmelerin enerji fiyatları üzerindeki etkisi olduğunu söyledi. Karahan, 2027 sonu için yüzde 21, 2028 sonu için yüzde 13,5 ve 2029 sonu için yüzde 9 ara hedeflerini açıkladı.",
-      "url": "https://www.dw.com/tr/i̇ran-savaşı-hesapları-bozdu-tcmb-enflasyon-tahminini-yükseltti/a-79928231?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "time": "13 Kasım 01:20",
-      "title": "Dışişleri Bakanlığı, İsrail'in Gazze'deki hastaneye saldırısını kınadı",
-      "summary": "Dışişleri Bakanlığı, İsrail'in Gazze'nin güneyindeki Han Yunus kentinde bulunan Nasır Hastanesi'ne düzenlediği saldırıyı kınadı. Bakanlık, aralarında sağlık personelinin de bulunduğu çok sayıda Filistinlinin şehit edildiği saldırının uluslararası hukukun vahim bir ihlali olduğunu bildirdi. Saldırıda, aralarında bir çocuk ve bir doktorun da bulunduğu 6 Filistinli hayatını kaybetti, en az 30 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakanligi-israilin-gazzedeki-hastaneye-saldirisini-kinadi/4123537",
+      "cat": "🚨 Gündem",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/13/thumbs_b_c_01bb6578500200d1fc686968d1a258cf.jpg"
+      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda 9 Kasım'da meydana gelen patlamanın ardından aranan işçi Barış Güney'in cenazesine ulaşıldı. Böylece patlamada hayatını kaybedenlerin sayısı 19'a yükseldi. Arama kurtarma çalışmaları sona erdirilirken yaralı 2 işçinin hastanedeki tedavileri sürüyor.",
+      "time": "13 Kasım 18:27",
+      "title": "İzmir'de fabrikadaki patlamada hayatını kaybedenlerin sayısı 19'a yükseldi",
+      "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/13/thumbs_b_c_93e6b3ba9d097945f034df863d88e947.jpg"
+    },
+    {
+      "cat": "🌧️ Hava/Afet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af6c28fc813a6f07cce7dbe.jpg",
+      "source": "Hürriyet",
+      "summary": "Meteoroloji Genel Müdürlüğü'nün peş peşe yaptığı fırtına ve gök gürültülü sağanak uyarılarının ardından İstanbul dahil 11 il için sarı kodlu alarm verildi. Türkiye'nin kuzey ve doğu bölgelerinde sıcaklıklar artışa geçerken batı kesimler hafta sonuyla birlikte şiddetli yağışların etkisi altına giriyor.",
+      "time": "13 Kasım 07:40",
+      "title": "Aralarında İstanbul da var: 11 ilde alarm | Lodos birçok kenti vurdu: Çatılar uçtu, ağaçlar devrildi, balıkçı tekneleri battı",
+      "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
+    },
+    {
+      "cat": "🛡️ Teknoloji",
+      "source": "DW Türkçe",
+      "summary": "Microsoft'un Outlook, Teams ve Copilot hizmetlerinde yaşanan küresel erişim sorunu büyük ölçüde giderilmeye başlandı. Yaklaşık 20 saat boyunca milyonlarca kullanıcıyı etkileyen kesintinin ardından şirket, özellikle Kuzey Amerika ve Avrupa'da hizmetlerin yeniden normale dönmeye başladığını açıkladı. Kesinti takip platformu Downdetector'a göre Microsoft ürünleri 74 ülke ve bölgede devre dışı kaldı.",
+      "time": "13 Kasım 20:27",
+      "title": "Microsoft normale dönüyor: Erişim önemli ölçüde iyileşti",
+      "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
     }
-  ]
+  ],
+  "date": "2026-11-14",
+  "updated": "2026-11-14 02:52 TSİ"
 }

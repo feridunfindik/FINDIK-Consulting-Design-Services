@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-14",
+  "news": {
+    "articles": [
+      {
+        "cat": "🌍 Dünya",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6e32/live/525bb5e0-dfb6-11f1-93e1-3b657b665bcf.jpg",
+        "source": "BBC Türkçe",
+        "summary": "ABD Federal Havacılık İdaresi, hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorununun ardından ABD genelindeki tüm havalimanlarında uçuşların durdurulması kararı aldı. İç Güvenlik Bakanı Markwayne Mullin, karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi.",
+        "time": "14 Kasım 02:36",
+        "title": "ABD'de tüm uçuşlar durduruldu: 'Bu yeni bir 11 Eylül değil'",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "source": "TRT Haber",
+        "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos'ta Mekke'de imzalanan ortak savunma anlaşmasının onaylanmasının uygun bulunduğuna dair kanun, Resmi Gazete'de yayımlanarak yürürlüğe girdi. Anlaşmayla üç ülke arasında savunma ve güvenlik iş birliğinin yanı sıra savunma sanayiinde ortak projeler geliştirilecek, teknoloji paylaşımı ve ortak üretim desteklenecek.",
+        "time": "14 Kasım 00:18",
+        "title": "Mekke Anlaşması yürürlüğe girdi",
+        "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2486000/mekke-anlasmasi-2486731.jpg"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "source": "Anadolu Ajansı",
+        "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda 9 Kasım'da meydana gelen patlamanın ardından aranan işçi Barış Güney'in cenazesine ulaşıldı. Böylece patlamada hayatını kaybedenlerin sayısı 19'a yükseldi. Arama kurtarma çalışmaları sona erdirilirken yaralı 2 işçinin hastanedeki tedavileri sürüyor.",
+        "time": "13 Kasım 18:27",
+        "title": "İzmir'de fabrikadaki patlamada hayatını kaybedenlerin sayısı 19'a yükseldi",
+        "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/13/thumbs_b_c_93e6b3ba9d097945f034df863d88e947.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af6c28fc813a6f07cce7dbe.jpg",
+        "source": "Hürriyet",
+        "summary": "Meteoroloji Genel Müdürlüğü'nün peş peşe yaptığı fırtına ve gök gürültülü sağanak uyarılarının ardından İstanbul dahil 11 il için sarı kodlu alarm verildi. Türkiye'nin kuzey ve doğu bölgelerinde sıcaklıklar artışa geçerken batı kesimler hafta sonuyla birlikte şiddetli yağışların etkisi altına giriyor.",
+        "time": "13 Kasım 07:40",
+        "title": "Aralarında İstanbul da var: 11 ilde alarm | Lodos birçok kenti vurdu: Çatılar uçtu, ağaçlar devrildi, balıkçı tekneleri battı",
+        "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
+      },
+      {
+        "cat": "🛡️ Teknoloji",
+        "source": "DW Türkçe",
+        "summary": "Microsoft'un Outlook, Teams ve Copilot hizmetlerinde yaşanan küresel erişim sorunu büyük ölçüde giderilmeye başlandı. Yaklaşık 20 saat boyunca milyonlarca kullanıcıyı etkileyen kesintinin ardından şirket, özellikle Kuzey Amerika ve Avrupa'da hizmetlerin yeniden normale dönmeye başladığını açıkladı. Kesinti takip platformu Downdetector'a göre Microsoft ürünleri 74 ülke ve bölgede devre dışı kaldı.",
+        "time": "13 Kasım 20:27",
+        "title": "Microsoft normale dönüyor: Erişim önemli ölçüde iyileşti",
+        "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ],
+    "date": "2026-11-14",
+    "updated": "2026-11-14 02:52 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-14",
+    "generated": "2026-11-14 08:46 JST",
+    "questions": [
+      {
+        "question": "ABD'de tüm havalimanlarında uçuşların durdurulmasına ne yol açtı?",
+        "options": [
+          "Havalimanlarındaki grev",
+          "Yakıt sıkıntısı",
+          "Kötü hava koşulları",
+          "Hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorunu"
+        ],
+        "answer": 3,
+        "explanation": "ABD Federal Havacılık İdaresi, hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorununun ardından uçuşların durdurulması kararı aldı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "İç Güvenlik Bakanı Markwayne Mullin, uçuşların durdurulması hakkında ne söyledi?",
+        "options": [
+          "Tüm havalimanlarının kapatıldığını söyledi",
+          "Karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi",
+          "Sorunun bir siber saldırıdan kaynaklandığını söyledi",
+          "Uçuşların haftalarca duracağını söyledi"
+        ],
+        "answer": 1,
+        "explanation": "Mullin, karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Mekke Anlaşması hangi ülkeler arasında imzalandı?",
+        "options": [
+          "Türkiye, İran ve Suudi Arabistan",
+          "Türkiye, Katar ve Pakistan",
+          "Türkiye, Mısır ve Pakistan",
+          "Türkiye, Pakistan ve Suudi Arabistan"
+        ],
+        "answer": 3,
+        "explanation": "Anlaşma, Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos'ta Mekke'de imzalandı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html"
+      },
+      {
+        "question": "Mekke Anlaşması nasıl yürürlüğe girdi?",
+        "options": [
+          "Onaylanmasının uygun bulunduğuna dair kanunun Resmi Gazete'de yayımlanmasıyla yürürlüğe girdi",
+          "İmzalandığı gün yürürlüğe girdi",
+          "Cumhurbaşkanı imzaladığı gün yürürlüğe girdi",
+          "TBMM'de görüşülmeye başlandığı gün yürürlüğe girdi"
+        ],
+        "answer": 0,
+        "explanation": "Anlaşmanın onaylanmasının uygun bulunduğuna dair kanun, Resmi Gazete'de yayımlanarak yürürlüğe girdi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html"
+      },
+      {
+        "question": "İzmir'deki fabrika patlamasında hayatını kaybedenlerin sayısı kaça yükseldi?",
+        "options": [
+          "11'e",
+          "19'a",
+          "9'a",
+          "14'e"
+        ],
+        "answer": 1,
+        "explanation": "Aranan işçi Barış Güney'in cenazesine ulaşılmasıyla patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450"
+      },
+      {
+        "question": "Patlamanın ardından aranan işçinin adı nedir?",
+        "options": [
+          "Barış Güney",
+          "Barış Demir",
+          "Barış Yılmaz",
+          "Barış Kaya"
+        ],
+        "answer": 0,
+        "explanation": "Aranan işçi Barış Güney'in cenazesine ulaşıldı ve böylece patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450"
+      },
+      {
+        "question": "Meteoroloji Genel Müdürlüğü'nün uyarısının ardından kaç il için sarı kodlu alarm verildi?",
+        "options": [
+          "11 il",
+          "8 il",
+          "5 il",
+          "21 il"
+        ],
+        "answer": 0,
+        "explanation": "İstanbul dahil 11 il için sarı kodlu alarm verildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
+      },
+      {
+        "question": "Hafta sonuyla birlikte hangi kesimler şiddetli yağışların etkisi altına giriyor?",
+        "options": [
+          "Doğu kesimler",
+          "İç kesimler",
+          "Batı kesimler",
+          "Kuzey kesimler"
+        ],
+        "answer": 2,
+        "explanation": "Türkiye'nin kuzey ve doğu bölgelerinde sıcaklıklar artışa geçerken batı kesimler hafta sonuyla birlikte şiddetli yağışların etkisi altına giriyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
+      },
+      {
+        "question": "Microsoft'ta yaşanan küresel erişim sorunundan hangi hizmetler etkilendi?",
+        "options": [
+          "Bing, Edge ve Skype",
+          "Azure, OneDrive ve Xbox",
+          "Outlook, Teams ve Copilot",
+          "Word, Excel ve PowerPoint"
+        ],
+        "answer": 2,
+        "explanation": "Microsoft'un Outlook, Teams ve Copilot hizmetlerinde yaşanan küresel erişim sorunu büyük ölçüde giderilmeye başlandı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Microsoft'taki kesinti yaklaşık ne kadar sürdü?",
+        "options": [
+          "Yaklaşık 20 saat",
+          "Yaklaşık 2 saat",
+          "Yaklaşık 40 saat",
+          "Yaklaşık 5 saat"
+        ],
+        "answer": 0,
+        "explanation": "Yaklaşık 20 saat boyunca milyonlarca kullanıcıyı etkileyen kesintinin ardından şirket, hizmetlerin yeniden normale dönmeye başladığını açıkladı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}
