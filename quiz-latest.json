@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-14",
-  "generated": "2026-11-14 07:46 JST",
+  "date": "2026-11-15",
+  "generated": "2026-11-15 07:49 JST",
   "questions": [
     {
-      "question": "全米の空港で、全ての出発便に出された命令は何でしょう。",
+      "question": "高市首相が創設を提唱する方向で調整しているのは何ですか。",
       "options": [
-        "入国禁止命令",
-        "離陸促進命令",
-        "空港閉鎖命令",
-        "地上待機命令"
+        "アジア版WTO",
+        "アジア版NATO",
+        "アジア版IEA",
+        "アジア版APEC"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、高市首相は東南アジアなどの国々とともに「アジア版IEA」の創設を提唱する方向で調整している。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602615?source=rss"
+    },
+    {
+      "question": "IEAとは何の略ですか。",
+      "options": [
+        "国際教育機関",
+        "国際経済機関",
+        "国際エネルギー機関",
+        "国際環境機関"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、IEAは国際エネルギー機関のことだ。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602615?source=rss"
+    },
+    {
+      "question": "14日の欠航は約何便でしたか。",
+      "options": [
+        "約1100便",
+        "約5400便",
+        "約1500便",
+        "約5100便"
       ],
       "answer": 3,
-      "explanation": "航空管制の通信に問題が起き、全ての出発便に地上待機命令が出ました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+      "explanation": "要約によると、欠航は約5100便、遅延は約5400便だった。",
+      "source": "NEWSjp",
+      "url": "https://news.jp/i/1494442805783511433"
     },
     {
-      "question": "全便への地上待機命令は、2001年の同時多発テロ以来、何度目でしょう。",
+      "question": "通信障害の原因として運輸長官が説明したのは何ですか。",
       "options": [
-        "3度目",
-        "2度目",
-        "初めて",
-        "5度目"
+        "通信回線を銅線から光ファイバーに切り替える作業で起きた問題",
+        "嵐によるケーブルの切断",
+        "サイバー攻撃",
+        "衛星の故障"
+      ],
+      "answer": 0,
+      "explanation": "運輸長官によると、原因は航空管制の通信回線を銅線から光ファイバーに切り替える作業で起きた問題だという。",
+      "source": "NEWSjp",
+      "url": "https://news.jp/i/1494442805783511433"
+    },
+    {
+      "question": "フアン前CEOの復帰を求める署名者は、15日午前（日本時間）の時点で何人でしたか。",
+      "options": [
+        "16万6256人",
+        "11万6256人",
+        "11万256人",
+        "11万6526人"
       ],
       "answer": 1,
-      "explanation": "全便への命令は、2001年の同時多発テロ以来2度目です。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCF771GVCFUHBI008M.html?ref=rss"
+      "explanation": "要約によると、署名サイトの発表では15日午前（日本時間）の時点で署名者は11万6256人だった。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/15/2000003207/"
     },
     {
-      "question": "13日未明から障害が起きたのは、何でしょう。",
+      "question": "フアン氏が退任したのはいつですか。",
       "options": [
-        "Outlookだけ",
-        "Microsoft 365",
-        "携帯電話の回線",
-        "日本の全てのインターネット"
+        "11月12日",
+        "12月1日",
+        "11月2日",
+        "11月15日"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、フアン氏は11月12日に退任した。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/15/2000003207/"
+    },
+    {
+      "question": "日本代表がイングランドに奪われたトライは何個でしたか。",
+      "options": [
+        "13個",
+        "12個",
+        "78個",
+        "15個"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、日本は13個のトライを奪われて15対78で大敗した。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976"
+    },
+    {
+      "question": "日本代表が対戦したイングランドの世界ランキングは何位でしたか。",
+      "options": [
+        "15位",
+        "5位",
+        "12位",
+        "1位"
       ],
       "answer": 1,
-      "explanation": "「Microsoft 365」で13日未明から障害が起きました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
+      "explanation": "要約によると、イングランドは世界5位、日本は世界12位だった。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261114de75976"
     },
     {
-      "question": "政府は障害の間、どうやって業務を続けることにしましたか。",
+      "question": "地震の規模（マグニチュード）はいくつと推定されますか。",
       "options": [
-        "全ての業務を止める",
-        "紙の書類だけで業務をする",
-        "電話やチャットなど別の連絡手段を使う",
-        "障害が直るまで待つ"
+        "10",
+        "5.9",
+        "3.9",
+        "3.0"
       ],
       "answer": 2,
-      "explanation": "電話やチャットなど別の連絡手段で業務を続け、主要な業務に支障が出ないようにすると説明しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003183/"
+      "explanation": "要約によると、地震の規模はマグニチュード3.9と推定される。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/disaster/earthquake/20261115000504-20261114150500000/"
     },
     {
-      "question": "FX口座の損失の補償申請は、何口座に上りましたか。",
+      "question": "この地震による津波の心配はありますか。",
       "options": [
-        "2934口座",
-        "2493口座",
-        "3942口座",
-        "2943口座"
-      ],
-      "answer": 3,
-      "explanation": "補償申請は2943口座、約29億9800万円に上りました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
-    },
-    {
-      "question": "見舞金など直接の費用は、合わせてどれくらいを見込んでいますか。",
-      "options": [
-        "計30億5000万円",
-        "計300億5000万円",
-        "計30億5000円",
-        "計3億500万円"
-      ],
-      "answer": 0,
-      "explanation": "見舞金など直接の費用は計30億5000万円を見込みます。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003197/"
-    },
-    {
-      "question": "事故が起きたのは、どこでしょう。",
-      "options": [
-        "東京都内の交差点",
-        "神奈川県横浜市の交差点",
-        "神奈川県海老名市の交差点",
-        "大阪府内の交差点"
+        "まだ分からない",
+        "津波警報が出ている",
+        "ない",
+        "ある"
       ],
       "answer": 2,
-      "explanation": "神奈川県海老名市の交差点で、横断歩道を渡っていた女性2人が大型トラックにはねられました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
-    },
-    {
-      "question": "逮捕された男は、何歳ですか。",
-      "options": [
-        "49歳",
-        "29歳",
-        "39歳",
-        "59歳"
-      ],
-      "answer": 0,
-      "explanation": "県警は14日、運転していたとみられる49歳の会社員の男を逮捕しました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCF6RX8VCFULOB00PM.html?ref=rss"
-    },
-    {
-      "question": "U-21日本代表はスペイン代表に、何対何で敗れましたか。",
-      "options": [
-        "2対0",
-        "0対1",
-        "0対2",
-        "1対1"
-      ],
-      "answer": 2,
-      "explanation": "U-21日本代表はU-21スペイン代表に0対2で敗れました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
-    },
-    {
-      "question": "この試合は、どんな目的の試合でしたか。",
-      "options": [
-        "2028年のロサンゼルス五輪を見すえた強化",
-        "国内リーグの試合",
-        "アジア大会の決勝",
-        "ワールドカップの予選"
-      ],
-      "answer": 0,
-      "explanation": "2028年のロサンゼルス五輪を見すえた強化の試合でした。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602484?source=rss"
+      "explanation": "要約によると、この地震による津波の心配はない。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/disaster/earthquake/20261115000504-20261114150500000/"
     }
   ]
 }
