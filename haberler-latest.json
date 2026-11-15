@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-15",
-  "updated": "2026-11-15 02:45 TSİ",
   "articles": [
     {
       "cat": "🌍 Dünya",
-      "time": "14 Kasım 18:31",
-      "title": "Kremlin: Putin, Şi ve Trump 19 Kasım'da üçlü zirve yapacak",
-      "summary": "Kremlin Sözcüsü Dmitriy Peskov, Rusya Devlet Başkanı Vladimir Putin, Çin Devlet Başkanı Şi Cinping ve ABD Başkanı Donald Trump'ın 19 Kasım'da üçlü görüşme yapacağını bildirdi. Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi. Üç lider arasında görüşme yapılması konusunda mutabık kalındığını aktardı.",
-      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2336000/trump-putin-2337633.jpg"
-    },
-    {
-      "cat": "🏛️ Siyaset",
-      "time": "14 Kasım 18:12",
-      "title": "Yeni Parti'nin ilk kurultayında Özel yeniden genel başkan: 'Seçimi kazanacak cesarete sahibiz'",
-      "summary": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi. Tek aday olarak kurultaya giren Özgür Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi. Özel, konuşmasında \"Seçimi kazanacak cesarete sahibiz\" dedi. Parti Meclisi, tüzük değişikliğiyle 80 üyeden 150 üyeye çıkarıldı.",
-      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8ba6/live/580c5210-e01a-11f1-ad34-45f8f10f7c55.jpg",
       "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0089/live/b2ed94e0-e00c-11f1-9fd4-8b3c9f9dfc89.jpg"
+      "summary": "ABD'de hava trafik kontrolündeki \"iletişim sorunu\" nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu. FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi. Aksaklık üçüncü gününde de sürüyor; ABD Ulaştırma Bakanı Sean Duffy, uçuşların pazartesi gününe kadar normale dönmesini bekliyor.",
+      "time": "16 Kasım 00:47",
+      "title": "ABD'de binlerce iç hat uçuşunun iptali ve rötarı devam ediyor",
+      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
     },
     {
       "cat": "🚨 Gündem",
-      "time": "15 Kasım 01:23",
-      "title": "Ankara'da silahlı bıçaklı kavga! 1'i ağır, 11 yaralı",
-      "summary": "Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde iki aile arasında çıkan tartışma, silahlı ve bıçaklı kavgaya dönüştü. Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır. Yaralanan 11 kişiden 6'sı bir aileden, 5'i diğer aileden.",
-      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af8df52c813a6f07cce874f.jpg"
+      "source": "Sabah",
+      "summary": "Malatya'nın Yeşilyurt ilçesinde düşen askeri helikopterde şehit olan Kara Pilot Binbaşı Erdem Çimen, Kara Pilot Binbaşı Orhun Pınar, Astsubay Kıdemli Üstçavuş Hüseyin Zehir ve Astsubay Kıdemli Çavuş Serkan Önder, memleketlerinde düzenlenen törenlerle son yolculuklarına uğurlandı. Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
+      "time": "15 Kasım 07:01",
+      "title": "Şehitleri millet uğurladı",
+      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi",
+      "img": "https://iasbh.tmgrup.com.tr/212828/1200/675/0/86/2048/1238?u=https://isbh.tmgrup.com.tr/sbh/2026/11/14/sehitleri-millet-ugurladi-1794687734910.jpeg"
     },
     {
-      "cat": "💊 Yaşam/Sağlık",
-      "time": "15 Kasım 00:17",
-      "title": "Sinsi ilerleyen diyabete karşı erken tanı ve düzenli kan şekeri kontrolü uyarısı",
-      "summary": "Erzurum Şehir Hastanesinden Doç. Dr. Emine Kartal Baykan, 14 Kasım Dünya Diyabet Günü dolayısıyla yaptığı açıklamada, belirti vermeden ilerleyebilen diyabetin kalp, böbrek, göz ve sinir sisteminde ciddi hasarlara yol açabileceğini söyledi. Baykan, erken tanı ve düzenli kan şekeri kontrolünün önemine dikkat çekti; aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441",
+      "cat": "🚨 Gündem",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_8753e3c3a83d43edf58562048b8346b0.jpg"
+      "summary": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla başkent Lefkoşa'da törenler düzenlendi. Dr. Fazıl Küçük Bulvarı'nda resmi geçit töreni yapılırken, Atatürk Anıtı'nda da tören düzenlendi. Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, \"Türkiye Cumhuriyeti, Kıbrıs Türk halkının sonsuza dek yanında duracaktır\" dedi.",
+      "time": "15 Kasım 14:52",
+      "title": "KKTC'nin kuruluşunun 43. yıl dönümü dolayısıyla resmi geçit töreni düzenlendi",
+      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_d33116b6e1b5057aea1ab98fef9a16c5.jpg"
     },
     {
-      "cat": "🌍 Dünya",
-      "time": "14 Kasım 17:25",
-      "title": "ABD'den Ukrayna'ya kritik teklif: Donbas'a karşılık NATO üyeliği",
-      "summary": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı. Zelenskiy, Amerikalıların \"Ukrayna NATO'ya üye olursa ne olur? Ukrayna Donbas'tan çekilir mi?\" sorusunu ilk kez sorduğunu söyledi. Zelenskiy, savaşın sona ermesi karşılığında NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
-      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "cat": "🏛️ Siyaset",
+      "source": "NTV",
+      "summary": "Meclis'te bütçe mesaisi yeni haftada devam edecek. Plan ve Bütçe Komisyonunda Sağlık, İçişleri, Milli Savunma ve Dışişleri bakanlıklarının 2027 yılı bütçeleri görüşülecek. Torba kanun teklifiyle 1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek; 2 milyon 199 bin 860 kişinin toplam 5 milyar 627 milyon 666 bin 896 liralık borcu silinmiş olacak.",
+      "time": "15 Kasım 14:31",
+      "title": "Meclis'te yeni haftada yoğun gündem: Genel Sağlık Sigortası borcuna af",
+      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+    },
+    {
+      "cat": "⚽ Spor",
+      "source": "TRT Haber",
+      "summary": "A Milli Futbol Takımı, UEFA Uluslar A Ligi 1. Grup'taki 6. ve son maçında Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı. Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu. Teknik direktör Sergen Yalçın, \"Umut ediyorum ilerisi daha güzel olacak\" dedi.",
+      "time": "16 Kasım 00:40",
+      "title": "Türkiye UEFA Uluslar A Ligi'ni puansız tamamladı",
+      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/turkiye-fransa-a-milli-futbol-aa-2503765.jpg"
     }
-  ]
+  ],
+  "date": "2026-11-16",
+  "updated": "2026-11-16 02:44 TSİ"
 }

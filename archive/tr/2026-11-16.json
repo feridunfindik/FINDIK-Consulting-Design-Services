@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-16",
+  "news": {
+    "articles": [
+      {
+        "cat": "🌍 Dünya",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8ba6/live/580c5210-e01a-11f1-ad34-45f8f10f7c55.jpg",
+        "source": "BBC Türkçe",
+        "summary": "ABD'de hava trafik kontrolündeki \"iletişim sorunu\" nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu. FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi. Aksaklık üçüncü gününde de sürüyor; ABD Ulaştırma Bakanı Sean Duffy, uçuşların pazartesi gününe kadar normale dönmesini bekliyor.",
+        "time": "16 Kasım 00:47",
+        "title": "ABD'de binlerce iç hat uçuşunun iptali ve rötarı devam ediyor",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "source": "Sabah",
+        "summary": "Malatya'nın Yeşilyurt ilçesinde düşen askeri helikopterde şehit olan Kara Pilot Binbaşı Erdem Çimen, Kara Pilot Binbaşı Orhun Pınar, Astsubay Kıdemli Üstçavuş Hüseyin Zehir ve Astsubay Kıdemli Çavuş Serkan Önder, memleketlerinde düzenlenen törenlerle son yolculuklarına uğurlandı. Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
+        "time": "15 Kasım 07:01",
+        "title": "Şehitleri millet uğurladı",
+        "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi",
+        "img": "https://iasbh.tmgrup.com.tr/212828/1200/675/0/86/2048/1238?u=https://isbh.tmgrup.com.tr/sbh/2026/11/14/sehitleri-millet-ugurladi-1794687734910.jpeg"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "source": "Anadolu Ajansı",
+        "summary": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla başkent Lefkoşa'da törenler düzenlendi. Dr. Fazıl Küçük Bulvarı'nda resmi geçit töreni yapılırken, Atatürk Anıtı'nda da tören düzenlendi. Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, \"Türkiye Cumhuriyeti, Kıbrıs Türk halkının sonsuza dek yanında duracaktır\" dedi.",
+        "time": "15 Kasım 14:52",
+        "title": "KKTC'nin kuruluşunun 43. yıl dönümü dolayısıyla resmi geçit töreni düzenlendi",
+        "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_d33116b6e1b5057aea1ab98fef9a16c5.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "source": "NTV",
+        "summary": "Meclis'te bütçe mesaisi yeni haftada devam edecek. Plan ve Bütçe Komisyonunda Sağlık, İçişleri, Milli Savunma ve Dışişleri bakanlıklarının 2027 yılı bütçeleri görüşülecek. Torba kanun teklifiyle 1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek; 2 milyon 199 bin 860 kişinin toplam 5 milyar 627 milyon 666 bin 896 liralık borcu silinmiş olacak.",
+        "time": "15 Kasım 14:31",
+        "title": "Meclis'te yeni haftada yoğun gündem: Genel Sağlık Sigortası borcuna af",
+        "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+      },
+      {
+        "cat": "⚽ Spor",
+        "source": "TRT Haber",
+        "summary": "A Milli Futbol Takımı, UEFA Uluslar A Ligi 1. Grup'taki 6. ve son maçında Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı. Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu. Teknik direktör Sergen Yalçın, \"Umut ediyorum ilerisi daha güzel olacak\" dedi.",
+        "time": "16 Kasım 00:40",
+        "title": "Türkiye UEFA Uluslar A Ligi'ni puansız tamamladı",
+        "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/turkiye-fransa-a-milli-futbol-aa-2503765.jpg"
+      }
+    ],
+    "date": "2026-11-16",
+    "updated": "2026-11-16 02:44 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-16",
+    "generated": "2026-11-16 08:46 JST",
+    "questions": [
+      {
+        "question": "ABD'de hava trafiğinin yaklaşık dört saat durdurulmasına ne neden oldu?",
+        "options": [
+          "Hava trafik kontrolündeki iletişim sorunu",
+          "Havaalanı çalışanlarının grevi",
+          "Şiddetli fırtına",
+          "Uçak yakıtı sıkıntısı"
+        ],
+        "answer": 0,
+        "explanation": "Hava trafik kontrolündeki 'iletişim sorunu' nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "FlightAware verilerine göre ABD'deki aksaklık sürecinde yaklaşık kaç uçuş iptal edildi?",
+        "options": [
+          "Yaklaşık 8 bin",
+          "Yaklaşık 800",
+          "Yaklaşık 80 bin",
+          "Yaklaşık 18 bin"
+        ],
+        "answer": 0,
+        "explanation": "FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Şehit olan askerlerin bulunduğu askeri helikopter hangi ilde düştü?",
+        "options": [
+          "Kayseri",
+          "Hatay",
+          "İzmir",
+          "Malatya"
+        ],
+        "answer": 3,
+        "explanation": "Helikopter, Malatya'nın Yeşilyurt ilçesinde düştü.",
+        "source": "Sabah",
+        "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+      },
+      {
+        "question": "Şehitlerin ailelerine kim taziye mesajı gönderdi?",
+        "options": [
+          "Cumhurbaşkanı Erdoğan",
+          "Genelkurmay Başkanı",
+          "İçişleri Bakanı",
+          "TBMM Başkanı"
+        ],
+        "answer": 0,
+        "explanation": "Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
+        "source": "Sabah",
+        "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+      },
+      {
+        "question": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun kaçıncı yıl dönümü kutlandı?",
+        "options": [
+          "40.",
+          "45.",
+          "43.",
+          "42."
+        ],
+        "answer": 2,
+        "explanation": "KKTC'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla Lefkoşa'da törenler düzenlendi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
+      },
+      {
+        "question": "Resmi geçit töreni Lefkoşa'da hangi bulvarda düzenlendi?",
+        "options": [
+          "Girne Bulvarı",
+          "Atatürk Bulvarı",
+          "Dr. Fazıl Küçük Bulvarı",
+          "Cumhuriyet Bulvarı"
+        ],
+        "answer": 2,
+        "explanation": "Resmi geçit töreni, Lefkoşa'daki Dr. Fazıl Küçük Bulvarı'nda düzenlendi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
+      },
+      {
+        "question": "Torba kanun teklifiyle hangi tarihten önceye ait ödenmemiş GSS prim borçları silinecek?",
+        "options": [
+          "1 Ocak 2016",
+          "1 Ocak 2018",
+          "1 Ocak 2020",
+          "1 Ocak 2017"
+        ],
+        "answer": 3,
+        "explanation": "1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek.",
+        "source": "NTV",
+        "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+      },
+      {
+        "question": "Torba kanun teklifiyle borcu silinecek kişi sayısı kaçtır?",
+        "options": [
+          "1 milyon 199 bin 860",
+          "3 milyon 199 bin 860",
+          "2 milyon 999 bin 860",
+          "2 milyon 199 bin 860"
+        ],
+        "answer": 3,
+        "explanation": "Toplam 2 milyon 199 bin 860 kişinin borcu silinmiş olacak.",
+        "source": "NTV",
+        "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+      },
+      {
+        "question": "A Milli Futbol Takımı, Fransa'ya kaç kaç yenildi?",
+        "options": [
+          "2-1",
+          "1-0",
+          "2-0",
+          "3-1"
+        ],
+        "answer": 0,
+        "explanation": "A Milli Futbol Takımı, Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
+      },
+      {
+        "question": "Berke Özer, Fransa maçı ile kaç gün sonra formasına kavuştu?",
+        "options": [
+          "522",
+          "622",
+          "252",
+          "52"
+        ],
+        "answer": 0,
+        "explanation": "Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
+      }
+    ]
+  }
+}

@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-15",
-  "generated": "2026-11-15 08:46 JST",
+  "date": "2026-11-16",
+  "generated": "2026-11-16 08:46 JST",
   "questions": [
     {
-      "question": "Putin, Şi ve Trump arasındaki üçlü görüşme ne zaman yapılacak?",
+      "question": "ABD'de hava trafiğinin yaklaşık dört saat durdurulmasına ne neden oldu?",
       "options": [
-        "14 Kasım'da",
-        "8 Şubat'ta",
-        "21 Kasım'da",
-        "19 Kasım'da"
+        "Hava trafik kontrolündeki iletişim sorunu",
+        "Havaalanı çalışanlarının grevi",
+        "Şiddetli fırtına",
+        "Uçak yakıtı sıkıntısı"
       ],
-      "answer": 3,
-      "explanation": "Kremlin Sözcüsü Peskov, üç liderin 19 Kasım'da üçlü görüşme yapacağını bildirdi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
+      "answer": 0,
+      "explanation": "Hava trafik kontrolündeki 'iletişim sorunu' nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Üçlü görüşme hangi zirve kapsamında gerçekleşecek?",
+      "question": "FlightAware verilerine göre ABD'deki aksaklık sürecinde yaklaşık kaç uçuş iptal edildi?",
       "options": [
-        "G20 Zirvesi",
-        "NATO Zirvesi",
-        "COP31 Zirvesi",
-        "APEC Zirvesi"
+        "Yaklaşık 8 bin",
+        "Yaklaşık 800",
+        "Yaklaşık 80 bin",
+        "Yaklaşık 18 bin"
       ],
-      "answer": 3,
-      "explanation": "Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
+      "answer": 0,
+      "explanation": "FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Özgür Özel kurultayda kaç geçerli oy aldı?",
+      "question": "Şehit olan askerlerin bulunduğu askeri helikopter hangi ilde düştü?",
       "options": [
-        "1.054",
-        "1.514",
-        "1.154",
-        "1.045"
+        "Kayseri",
+        "Hatay",
+        "İzmir",
+        "Malatya"
+      ],
+      "answer": 3,
+      "explanation": "Helikopter, Malatya'nın Yeşilyurt ilçesinde düştü.",
+      "source": "Sabah",
+      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+    },
+    {
+      "question": "Şehitlerin ailelerine kim taziye mesajı gönderdi?",
+      "options": [
+        "Cumhurbaşkanı Erdoğan",
+        "Genelkurmay Başkanı",
+        "İçişleri Bakanı",
+        "TBMM Başkanı"
+      ],
+      "answer": 0,
+      "explanation": "Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
+      "source": "Sabah",
+      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+    },
+    {
+      "question": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun kaçıncı yıl dönümü kutlandı?",
+      "options": [
+        "40.",
+        "45.",
+        "43.",
+        "42."
       ],
       "answer": 2,
-      "explanation": "Tek aday olarak kurultaya giren Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Yeni Parti'nin ilk olağan kurultayı nerede gerçekleştirildi?",
-      "options": [
-        "Ankara Spor Salonu'nda",
-        "Bursa Atatürk Spor Salonu'nda",
-        "İzmir Fuar Alanı'nda",
-        "İstanbul Kongre Merkezi'nde"
-      ],
-      "answer": 0,
-      "explanation": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Mamak'taki kavgada kaç kişi yaralandı?",
-      "options": [
-        "10",
-        "12",
-        "9",
-        "11"
-      ],
-      "answer": 3,
-      "explanation": "Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
-    },
-    {
-      "question": "Kavga Ankara'nın hangi ilçesinde yaşandı?",
-      "options": [
-        "Mamak",
-        "Altındağ",
-        "Keçiören",
-        "Çankaya"
-      ],
-      "answer": 0,
-      "explanation": "Kavga, Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde yaşandı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
-    },
-    {
-      "question": "Doç. Dr. Emine Kartal Baykan hangi hastanede görev yapıyor?",
-      "options": [
-        "İzmir Şehir Hastanesi",
-        "Ankara Şehir Hastanesi",
-        "İstanbul Şehir Hastanesi",
-        "Erzurum Şehir Hastanesi"
-      ],
-      "answer": 3,
-      "explanation": "Baykan, Erzurum Şehir Hastanesinden yaptığı açıklamada erken tanı uyarısında bulundu.",
+      "explanation": "KKTC'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla Lefkoşa'da törenler düzenlendi.",
       "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
     },
     {
-      "question": "Baykan'a göre aşağıdakilerden hangisi diyabetin habercileri arasındadır?",
+      "question": "Resmi geçit töreni Lefkoşa'da hangi bulvarda düzenlendi?",
       "options": [
-        "Ciltte kaşıntı",
-        "Sürekli baş ağrısı",
-        "Aşırı susama",
-        "Sık hapşırma"
+        "Girne Bulvarı",
+        "Atatürk Bulvarı",
+        "Dr. Fazıl Küçük Bulvarı",
+        "Cumhuriyet Bulvarı"
       ],
       "answer": 2,
-      "explanation": "Baykan, aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
+      "explanation": "Resmi geçit töreni, Lefkoşa'daki Dr. Fazıl Küçük Bulvarı'nda düzenlendi.",
       "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
     },
     {
-      "question": "Zelenskiy'e göre ABD, NATO üyeliği karşılığında Ukrayna'dan ne istedi?",
+      "question": "Torba kanun teklifiyle hangi tarihten önceye ait ödenmemiş GSS prim borçları silinecek?",
       "options": [
-        "Donbas'tan çekilmesi",
-        "NATO'dan ayrılması",
-        "Karadeniz'den çekilmesi",
-        "Kiev'den çekilmesi"
+        "1 Ocak 2016",
+        "1 Ocak 2018",
+        "1 Ocak 2020",
+        "1 Ocak 2017"
+      ],
+      "answer": 3,
+      "explanation": "1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek.",
+      "source": "NTV",
+      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+    },
+    {
+      "question": "Torba kanun teklifiyle borcu silinecek kişi sayısı kaçtır?",
+      "options": [
+        "1 milyon 199 bin 860",
+        "3 milyon 199 bin 860",
+        "2 milyon 999 bin 860",
+        "2 milyon 199 bin 860"
+      ],
+      "answer": 3,
+      "explanation": "Toplam 2 milyon 199 bin 860 kişinin borcu silinmiş olacak.",
+      "source": "NTV",
+      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+    },
+    {
+      "question": "A Milli Futbol Takımı, Fransa'ya kaç kaç yenildi?",
+      "options": [
+        "2-1",
+        "1-0",
+        "2-0",
+        "3-1"
       ],
       "answer": 0,
-      "explanation": "Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "A Milli Futbol Takımı, Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
     },
     {
-      "question": "Zelenskiy, güvenlik garantileri konusunda anlaşılırsa kararı nasıl alacağını söyledi?",
+      "question": "Berke Özer, Fransa maçı ile kaç gün sonra formasına kavuştu?",
       "options": [
-        "Parlamentoya bırakacağını",
-        "Halk oylamasına sunacağını",
-        "AB liderlerine soracağını",
-        "Tek başına karar vereceğini"
+        "522",
+        "622",
+        "252",
+        "52"
       ],
-      "answer": 1,
-      "explanation": "Zelenskiy, NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
+      "answer": 0,
+      "explanation": "Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
     }
   ]
 }
