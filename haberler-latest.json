@@ -1,50 +1,50 @@
 {
+  "date": "2026-11-15",
+  "updated": "2026-11-15 02:45 TSİ",
   "articles": [
     {
       "cat": "🌍 Dünya",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6e32/live/525bb5e0-dfb6-11f1-93e1-3b657b665bcf.jpg",
-      "source": "BBC Türkçe",
-      "summary": "ABD Federal Havacılık İdaresi, hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorununun ardından ABD genelindeki tüm havalimanlarında uçuşların durdurulması kararı aldı. İç Güvenlik Bakanı Markwayne Mullin, karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi.",
-      "time": "14 Kasım 02:36",
-      "title": "ABD'de tüm uçuşlar durduruldu: 'Bu yeni bir 11 Eylül değil'",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      "time": "14 Kasım 18:31",
+      "title": "Kremlin: Putin, Şi ve Trump 19 Kasım'da üçlü zirve yapacak",
+      "summary": "Kremlin Sözcüsü Dmitriy Peskov, Rusya Devlet Başkanı Vladimir Putin, Çin Devlet Başkanı Şi Cinping ve ABD Başkanı Donald Trump'ın 19 Kasım'da üçlü görüşme yapacağını bildirdi. Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi. Üç lider arasında görüşme yapılması konusunda mutabık kalındığını aktardı.",
+      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2336000/trump-putin-2337633.jpg"
     },
     {
       "cat": "🏛️ Siyaset",
-      "source": "TRT Haber",
-      "summary": "Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos'ta Mekke'de imzalanan ortak savunma anlaşmasının onaylanmasının uygun bulunduğuna dair kanun, Resmi Gazete'de yayımlanarak yürürlüğe girdi. Anlaşmayla üç ülke arasında savunma ve güvenlik iş birliğinin yanı sıra savunma sanayiinde ortak projeler geliştirilecek, teknoloji paylaşımı ve ortak üretim desteklenecek.",
-      "time": "14 Kasım 00:18",
-      "title": "Mekke Anlaşması yürürlüğe girdi",
-      "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2486000/mekke-anlasmasi-2486731.jpg"
+      "time": "14 Kasım 18:12",
+      "title": "Yeni Parti'nin ilk kurultayında Özel yeniden genel başkan: 'Seçimi kazanacak cesarete sahibiz'",
+      "summary": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi. Tek aday olarak kurultaya giren Özgür Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi. Özel, konuşmasında \"Seçimi kazanacak cesarete sahibiz\" dedi. Parti Meclisi, tüzük değişikliğiyle 80 üyeden 150 üyeye çıkarıldı.",
+      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0089/live/b2ed94e0-e00c-11f1-9fd4-8b3c9f9dfc89.jpg"
     },
     {
       "cat": "🚨 Gündem",
-      "source": "Anadolu Ajansı",
-      "summary": "İzmir'in Aliağa ilçesindeki HABAŞ Demir Çelik Fabrikası'nda 9 Kasım'da meydana gelen patlamanın ardından aranan işçi Barış Güney'in cenazesine ulaşıldı. Böylece patlamada hayatını kaybedenlerin sayısı 19'a yükseldi. Arama kurtarma çalışmaları sona erdirilirken yaralı 2 işçinin hastanedeki tedavileri sürüyor.",
-      "time": "13 Kasım 18:27",
-      "title": "İzmir'de fabrikadaki patlamada hayatını kaybedenlerin sayısı 19'a yükseldi",
-      "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/13/thumbs_b_c_93e6b3ba9d097945f034df863d88e947.jpg"
-    },
-    {
-      "cat": "🌧️ Hava/Afet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af6c28fc813a6f07cce7dbe.jpg",
+      "time": "15 Kasım 01:23",
+      "title": "Ankara'da silahlı bıçaklı kavga! 1'i ağır, 11 yaralı",
+      "summary": "Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde iki aile arasında çıkan tartışma, silahlı ve bıçaklı kavgaya dönüştü. Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır. Yaralanan 11 kişiden 6'sı bir aileden, 5'i diğer aileden.",
+      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726",
       "source": "Hürriyet",
-      "summary": "Meteoroloji Genel Müdürlüğü'nün peş peşe yaptığı fırtına ve gök gürültülü sağanak uyarılarının ardından İstanbul dahil 11 il için sarı kodlu alarm verildi. Türkiye'nin kuzey ve doğu bölgelerinde sıcaklıklar artışa geçerken batı kesimler hafta sonuyla birlikte şiddetli yağışların etkisi altına giriyor.",
-      "time": "13 Kasım 07:40",
-      "title": "Aralarında İstanbul da var: 11 ilde alarm | Lodos birçok kenti vurdu: Çatılar uçtu, ağaçlar devrildi, balıkçı tekneleri battı",
-      "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af8df52c813a6f07cce874f.jpg"
     },
     {
-      "cat": "🛡️ Teknoloji",
-      "source": "DW Türkçe",
-      "summary": "Microsoft'un Outlook, Teams ve Copilot hizmetlerinde yaşanan küresel erişim sorunu büyük ölçüde giderilmeye başlandı. Yaklaşık 20 saat boyunca milyonlarca kullanıcıyı etkileyen kesintinin ardından şirket, özellikle Kuzey Amerika ve Avrupa'da hizmetlerin yeniden normale dönmeye başladığını açıkladı. Kesinti takip platformu Downdetector'a göre Microsoft ürünleri 74 ülke ve bölgede devre dışı kaldı.",
-      "time": "13 Kasım 20:27",
-      "title": "Microsoft normale dönüyor: Erişim önemli ölçüde iyileşti",
-      "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
+      "cat": "💊 Yaşam/Sağlık",
+      "time": "15 Kasım 00:17",
+      "title": "Sinsi ilerleyen diyabete karşı erken tanı ve düzenli kan şekeri kontrolü uyarısı",
+      "summary": "Erzurum Şehir Hastanesinden Doç. Dr. Emine Kartal Baykan, 14 Kasım Dünya Diyabet Günü dolayısıyla yaptığı açıklamada, belirti vermeden ilerleyebilen diyabetin kalp, böbrek, göz ve sinir sisteminde ciddi hasarlara yol açabileceğini söyledi. Baykan, erken tanı ve düzenli kan şekeri kontrolünün önemine dikkat çekti; aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441",
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_8753e3c3a83d43edf58562048b8346b0.jpg"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "time": "14 Kasım 17:25",
+      "title": "ABD'den Ukrayna'ya kritik teklif: Donbas'a karşılık NATO üyeliği",
+      "summary": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı. Zelenskiy, Amerikalıların \"Ukrayna NATO'ya üye olursa ne olur? Ukrayna Donbas'tan çekilir mi?\" sorusunu ilk kez sorduğunu söyledi. Zelenskiy, savaşın sona ermesi karşılığında NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
+      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     }
-  ],
-  "date": "2026-11-14",
-  "updated": "2026-11-14 02:52 TSİ"
+  ]
 }

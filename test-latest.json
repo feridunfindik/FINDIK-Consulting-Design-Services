@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-14",
-  "generated": "2026-11-14 08:46 JST",
+  "date": "2026-11-15",
+  "generated": "2026-11-15 08:46 JST",
   "questions": [
     {
-      "question": "ABD'de tüm havalimanlarında uçuşların durdurulmasına ne yol açtı?",
+      "question": "Putin, Şi ve Trump arasındaki üçlü görüşme ne zaman yapılacak?",
       "options": [
-        "Havalimanlarındaki grev",
-        "Yakıt sıkıntısı",
-        "Kötü hava koşulları",
-        "Hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorunu"
+        "14 Kasım'da",
+        "8 Şubat'ta",
+        "21 Kasım'da",
+        "19 Kasım'da"
       ],
       "answer": 3,
-      "explanation": "ABD Federal Havacılık İdaresi, hava yolu trafik kontrol merkezlerini etkileyen bir iletişim sorununun ardından uçuşların durdurulması kararı aldı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
+      "explanation": "Kremlin Sözcüsü Peskov, üç liderin 19 Kasım'da üçlü görüşme yapacağını bildirdi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
     },
     {
-      "question": "İç Güvenlik Bakanı Markwayne Mullin, uçuşların durdurulması hakkında ne söyledi?",
+      "question": "Üçlü görüşme hangi zirve kapsamında gerçekleşecek?",
       "options": [
-        "Tüm havalimanlarının kapatıldığını söyledi",
-        "Karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi",
-        "Sorunun bir siber saldırıdan kaynaklandığını söyledi",
-        "Uçuşların haftalarca duracağını söyledi"
-      ],
-      "answer": 1,
-      "explanation": "Mullin, karara bir telekomünikasyon kesintisinin yol açtığını söyledi ve 'Bu yeni bir 11 Eylül değil' dedi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Mekke Anlaşması hangi ülkeler arasında imzalandı?",
-      "options": [
-        "Türkiye, İran ve Suudi Arabistan",
-        "Türkiye, Katar ve Pakistan",
-        "Türkiye, Mısır ve Pakistan",
-        "Türkiye, Pakistan ve Suudi Arabistan"
+        "G20 Zirvesi",
+        "NATO Zirvesi",
+        "COP31 Zirvesi",
+        "APEC Zirvesi"
       ],
       "answer": 3,
-      "explanation": "Anlaşma, Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos'ta Mekke'de imzalandı.",
+      "explanation": "Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi.",
       "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html"
+      "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
     },
     {
-      "question": "Mekke Anlaşması nasıl yürürlüğe girdi?",
+      "question": "Özgür Özel kurultayda kaç geçerli oy aldı?",
       "options": [
-        "Onaylanmasının uygun bulunduğuna dair kanunun Resmi Gazete'de yayımlanmasıyla yürürlüğe girdi",
-        "İmzalandığı gün yürürlüğe girdi",
-        "Cumhurbaşkanı imzaladığı gün yürürlüğe girdi",
-        "TBMM'de görüşülmeye başlandığı gün yürürlüğe girdi"
+        "1.054",
+        "1.514",
+        "1.154",
+        "1.045"
+      ],
+      "answer": 2,
+      "explanation": "Tek aday olarak kurultaya giren Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Yeni Parti'nin ilk olağan kurultayı nerede gerçekleştirildi?",
+      "options": [
+        "Ankara Spor Salonu'nda",
+        "Bursa Atatürk Spor Salonu'nda",
+        "İzmir Fuar Alanı'nda",
+        "İstanbul Kongre Merkezi'nde"
       ],
       "answer": 0,
-      "explanation": "Anlaşmanın onaylanmasının uygun bulunduğuna dair kanun, Resmi Gazete'de yayımlanarak yürürlüğe girdi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/mekke-anlasmasi-yururluge-girdi-963230.html"
+      "explanation": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "İzmir'deki fabrika patlamasında hayatını kaybedenlerin sayısı kaça yükseldi?",
+      "question": "Mamak'taki kavgada kaç kişi yaralandı?",
       "options": [
-        "11'e",
-        "19'a",
-        "9'a",
-        "14'e"
+        "10",
+        "12",
+        "9",
+        "11"
+      ],
+      "answer": 3,
+      "explanation": "Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
+    },
+    {
+      "question": "Kavga Ankara'nın hangi ilçesinde yaşandı?",
+      "options": [
+        "Mamak",
+        "Altındağ",
+        "Keçiören",
+        "Çankaya"
+      ],
+      "answer": 0,
+      "explanation": "Kavga, Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde yaşandı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
+    },
+    {
+      "question": "Doç. Dr. Emine Kartal Baykan hangi hastanede görev yapıyor?",
+      "options": [
+        "İzmir Şehir Hastanesi",
+        "Ankara Şehir Hastanesi",
+        "İstanbul Şehir Hastanesi",
+        "Erzurum Şehir Hastanesi"
+      ],
+      "answer": 3,
+      "explanation": "Baykan, Erzurum Şehir Hastanesinden yaptığı açıklamada erken tanı uyarısında bulundu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+    },
+    {
+      "question": "Baykan'a göre aşağıdakilerden hangisi diyabetin habercileri arasındadır?",
+      "options": [
+        "Ciltte kaşıntı",
+        "Sürekli baş ağrısı",
+        "Aşırı susama",
+        "Sık hapşırma"
+      ],
+      "answer": 2,
+      "explanation": "Baykan, aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+    },
+    {
+      "question": "Zelenskiy'e göre ABD, NATO üyeliği karşılığında Ukrayna'dan ne istedi?",
+      "options": [
+        "Donbas'tan çekilmesi",
+        "NATO'dan ayrılması",
+        "Karadeniz'den çekilmesi",
+        "Kiev'den çekilmesi"
+      ],
+      "answer": 0,
+      "explanation": "Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Zelenskiy, güvenlik garantileri konusunda anlaşılırsa kararı nasıl alacağını söyledi?",
+      "options": [
+        "Parlamentoya bırakacağını",
+        "Halk oylamasına sunacağını",
+        "AB liderlerine soracağını",
+        "Tek başına karar vereceğini"
       ],
       "answer": 1,
-      "explanation": "Aranan işçi Barış Güney'in cenazesine ulaşılmasıyla patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450"
-    },
-    {
-      "question": "Patlamanın ardından aranan işçinin adı nedir?",
-      "options": [
-        "Barış Güney",
-        "Barış Demir",
-        "Barış Yılmaz",
-        "Barış Kaya"
-      ],
-      "answer": 0,
-      "explanation": "Aranan işçi Barış Güney'in cenazesine ulaşıldı ve böylece patlamada hayatını kaybedenlerin sayısı 19'a yükseldi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/izmirde-fabrikadaki-patlamada-hayatini-kaybedenlerin-sayisi-19a-yukseldi/4124450"
-    },
-    {
-      "question": "Meteoroloji Genel Müdürlüğü'nün uyarısının ardından kaç il için sarı kodlu alarm verildi?",
-      "options": [
-        "11 il",
-        "8 il",
-        "5 il",
-        "21 il"
-      ],
-      "answer": 0,
-      "explanation": "İstanbul dahil 11 il için sarı kodlu alarm verildi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
-    },
-    {
-      "question": "Hafta sonuyla birlikte hangi kesimler şiddetli yağışların etkisi altına giriyor?",
-      "options": [
-        "Doğu kesimler",
-        "İç kesimler",
-        "Batı kesimler",
-        "Kuzey kesimler"
-      ],
-      "answer": 2,
-      "explanation": "Türkiye'nin kuzey ve doğu bölgelerinde sıcaklıklar artışa geçerken batı kesimler hafta sonuyla birlikte şiddetli yağışların etkisi altına giriyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/firtina-ve-saganak-kapida-aralarinda-istanbul-da-var-11-ilde-alarm-yagisli-hava-tum-yurda-yayiliyor-hava-bir-anda-degisecek-43376454"
-    },
-    {
-      "question": "Microsoft'ta yaşanan küresel erişim sorunundan hangi hizmetler etkilendi?",
-      "options": [
-        "Bing, Edge ve Skype",
-        "Azure, OneDrive ve Xbox",
-        "Outlook, Teams ve Copilot",
-        "Word, Excel ve PowerPoint"
-      ],
-      "answer": 2,
-      "explanation": "Microsoft'un Outlook, Teams ve Copilot hizmetlerinde yaşanan küresel erişim sorunu büyük ölçüde giderilmeye başlandı.",
+      "explanation": "Zelenskiy, NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Microsoft'taki kesinti yaklaşık ne kadar sürdü?",
-      "options": [
-        "Yaklaşık 20 saat",
-        "Yaklaşık 2 saat",
-        "Yaklaşık 40 saat",
-        "Yaklaşık 5 saat"
-      ],
-      "answer": 0,
-      "explanation": "Yaklaşık 20 saat boyunca milyonlarca kullanıcıyı etkileyen kesintinin ardından şirket, hizmetlerin yeniden normale dönmeye başladığını açıkladı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/microsoft-normale-dönüyor-erişim-önemli-ölçüde-iyileşti/a-79936765?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }

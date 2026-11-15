@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-15",
+  "news": {
+    "date": "2026-11-15",
+    "updated": "2026-11-15 02:45 TSİ",
+    "articles": [
+      {
+        "cat": "🌍 Dünya",
+        "time": "14 Kasım 18:31",
+        "title": "Kremlin: Putin, Şi ve Trump 19 Kasım'da üçlü zirve yapacak",
+        "summary": "Kremlin Sözcüsü Dmitriy Peskov, Rusya Devlet Başkanı Vladimir Putin, Çin Devlet Başkanı Şi Cinping ve ABD Başkanı Donald Trump'ın 19 Kasım'da üçlü görüşme yapacağını bildirdi. Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi. Üç lider arasında görüşme yapılması konusunda mutabık kalındığını aktardı.",
+        "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2336000/trump-putin-2337633.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "14 Kasım 18:12",
+        "title": "Yeni Parti'nin ilk kurultayında Özel yeniden genel başkan: 'Seçimi kazanacak cesarete sahibiz'",
+        "summary": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi. Tek aday olarak kurultaya giren Özgür Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi. Özel, konuşmasında \"Seçimi kazanacak cesarete sahibiz\" dedi. Parti Meclisi, tüzük değişikliğiyle 80 üyeden 150 üyeye çıkarıldı.",
+        "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0089/live/b2ed94e0-e00c-11f1-9fd4-8b3c9f9dfc89.jpg"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "time": "15 Kasım 01:23",
+        "title": "Ankara'da silahlı bıçaklı kavga! 1'i ağır, 11 yaralı",
+        "summary": "Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde iki aile arasında çıkan tartışma, silahlı ve bıçaklı kavgaya dönüştü. Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır. Yaralanan 11 kişiden 6'sı bir aileden, 5'i diğer aileden.",
+        "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6af8df52c813a6f07cce874f.jpg"
+      },
+      {
+        "cat": "💊 Yaşam/Sağlık",
+        "time": "15 Kasım 00:17",
+        "title": "Sinsi ilerleyen diyabete karşı erken tanı ve düzenli kan şekeri kontrolü uyarısı",
+        "summary": "Erzurum Şehir Hastanesinden Doç. Dr. Emine Kartal Baykan, 14 Kasım Dünya Diyabet Günü dolayısıyla yaptığı açıklamada, belirti vermeden ilerleyebilen diyabetin kalp, böbrek, göz ve sinir sisteminde ciddi hasarlara yol açabileceğini söyledi. Baykan, erken tanı ve düzenli kan şekeri kontrolünün önemine dikkat çekti; aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
+        "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_8753e3c3a83d43edf58562048b8346b0.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "14 Kasım 17:25",
+        "title": "ABD'den Ukrayna'ya kritik teklif: Donbas'a karşılık NATO üyeliği",
+        "summary": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı. Zelenskiy, Amerikalıların \"Ukrayna NATO'ya üye olursa ne olur? Ukrayna Donbas'tan çekilir mi?\" sorusunu ilk kez sorduğunu söyledi. Zelenskiy, savaşın sona ermesi karşılığında NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
+        "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-15",
+    "generated": "2026-11-15 08:46 JST",
+    "questions": [
+      {
+        "question": "Putin, Şi ve Trump arasındaki üçlü görüşme ne zaman yapılacak?",
+        "options": [
+          "14 Kasım'da",
+          "8 Şubat'ta",
+          "21 Kasım'da",
+          "19 Kasım'da"
+        ],
+        "answer": 3,
+        "explanation": "Kremlin Sözcüsü Peskov, üç liderin 19 Kasım'da üçlü görüşme yapacağını bildirdi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
+      },
+      {
+        "question": "Üçlü görüşme hangi zirve kapsamında gerçekleşecek?",
+        "options": [
+          "G20 Zirvesi",
+          "NATO Zirvesi",
+          "COP31 Zirvesi",
+          "APEC Zirvesi"
+        ],
+        "answer": 3,
+        "explanation": "Peskov, görüşmenin APEC Zirvesi kapsamında Çin'in Şıncın kentinde gerçekleşeceğini söyledi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/kremlin-putin-si-ve-trump-19-kasimda-uclu-zirve-yapacak-963298.html"
+      },
+      {
+        "question": "Özgür Özel kurultayda kaç geçerli oy aldı?",
+        "options": [
+          "1.054",
+          "1.514",
+          "1.154",
+          "1.045"
+        ],
+        "answer": 2,
+        "explanation": "Tek aday olarak kurultaya giren Özel, 1.154 geçerli oyun tamamını alarak yeniden genel başkan seçildi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Yeni Parti'nin ilk olağan kurultayı nerede gerçekleştirildi?",
+        "options": [
+          "Ankara Spor Salonu'nda",
+          "Bursa Atatürk Spor Salonu'nda",
+          "İzmir Fuar Alanı'nda",
+          "İstanbul Kongre Merkezi'nde"
+        ],
+        "answer": 0,
+        "explanation": "Yeni Parti, ilk olağan kurultayını 14 Kasım'da Ankara Spor Salonu'nda gerçekleştirdi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cq1k9n3d3vrvo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Mamak'taki kavgada kaç kişi yaralandı?",
+        "options": [
+          "10",
+          "12",
+          "9",
+          "11"
+        ],
+        "answer": 3,
+        "explanation": "Kavgada 11 kişi yaralandı; yaralılardan birinin durumu ağır.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
+      },
+      {
+        "question": "Kavga Ankara'nın hangi ilçesinde yaşandı?",
+        "options": [
+          "Mamak",
+          "Altındağ",
+          "Keçiören",
+          "Çankaya"
+        ],
+        "answer": 0,
+        "explanation": "Kavga, Ankara'nın Mamak ilçesi Altınevler Mahallesi'ndeki Meydancık Caddesi'nde yaşandı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/ankarada-silahli-bicakli-kavga-1i-agir-11-yarali-43378726"
+      },
+      {
+        "question": "Doç. Dr. Emine Kartal Baykan hangi hastanede görev yapıyor?",
+        "options": [
+          "İzmir Şehir Hastanesi",
+          "Ankara Şehir Hastanesi",
+          "İstanbul Şehir Hastanesi",
+          "Erzurum Şehir Hastanesi"
+        ],
+        "answer": 3,
+        "explanation": "Baykan, Erzurum Şehir Hastanesinden yaptığı açıklamada erken tanı uyarısında bulundu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+      },
+      {
+        "question": "Baykan'a göre aşağıdakilerden hangisi diyabetin habercileri arasındadır?",
+        "options": [
+          "Ciltte kaşıntı",
+          "Sürekli baş ağrısı",
+          "Aşırı susama",
+          "Sık hapşırma"
+        ],
+        "answer": 2,
+        "explanation": "Baykan, aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybının hastalığın habercileri arasında olduğunu belirtti.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/sinsi-ilerleyen-diyabete-karsi-erken-tani-ve-duzenli-kan-sekeri-kontrolu-uyarisi/4125441"
+      },
+      {
+        "question": "Zelenskiy'e göre ABD, NATO üyeliği karşılığında Ukrayna'dan ne istedi?",
+        "options": [
+          "Donbas'tan çekilmesi",
+          "NATO'dan ayrılması",
+          "Karadeniz'den çekilmesi",
+          "Kiev'den çekilmesi"
+        ],
+        "answer": 0,
+        "explanation": "Zelenskiy, ABD'nin Donbas'tan çekilme karşılığında NATO üyeliğini gündeme getirdiğini açıkladı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Zelenskiy, güvenlik garantileri konusunda anlaşılırsa kararı nasıl alacağını söyledi?",
+        "options": [
+          "Parlamentoya bırakacağını",
+          "Halk oylamasına sunacağını",
+          "AB liderlerine soracağını",
+          "Tek başına karar vereceğini"
+        ],
+        "answer": 1,
+        "explanation": "Zelenskiy, NATO ve AB'den somut güvenlik garantileri üzerinde anlaşılırsa kararı halk oylamasına sunacağını belirtti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/abd-den-ukrayna-ya-kritik-teklif-donbas-a-karşılık-nato-üyeliği/a-79948459?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}
