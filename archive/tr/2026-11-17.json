@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-17",
+  "news": {
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "source": "Habertürk",
+        "summary": "İstanbul Cumhuriyet Başsavcılığının sermaye piyasasındaki işlemlere ilişkin yürüttüğü fon soruşturmasında 26 kişi gözaltına alındı. Emniyetteki işlemleri tamamlanan şüpheliler adliyeye sevk edildi; 7'si tutuklama talebiyle, 19'u adli kontrol istemiyle Sulh Ceza Hâkimliğine gönderildi.",
+        "time": "16 Kasım 22:53",
+        "title": "Fon soruşturmasında 7 tutuklama",
+        "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815",
+        "img": "https://im.haberturk.com/l/2026/11/16/ver1794860632/3927815/jpg/1200x628"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "TRT Haber",
+        "summary": "Endonezya'nın Tual kentinin 148 kilometre güneybatısında, yerin 68 kilometre derinliğinde 6,6 büyüklüğünde deprem meydana geldi. ABD Jeolojik Araştırma Merkezinin açıklamasına göre ilk aşamada tsunami uyarısı yapılmadı; henüz can ve mal kaybı bildirilmedi.",
+        "time": "17 Kasım 02:14",
+        "title": "Endonezya'da 6,6 büyüklüğünde deprem",
+        "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2480000/deprem-2480656.jpg"
+      },
+      {
+        "cat": "💊 Sağlık",
+        "source": "Anadolu Ajansı",
+        "summary": "Sağlık Bakanı Kemal Memişoğlu, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi. Kısa sürede sözleşmelerin yapılacağını belirten Memişoğlu, Türkiye'nin kendi aşısını üreten ve dünyaya ulaştıran bir ülke olacağını ifade etti.",
+        "time": "16 Kasım 23:01",
+        "title": "Sağlık Bakanı Memişoğlu: Aşı reddini engellemek için 8 aşımızı yerli üreteceğiz",
+        "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/16/thumbs_b_c_ba88047530a6d048f07ca671a804e152.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f4ce/live/59eafa00-e1c3-11f1-8a52-0b287ff76f43.jpg",
+        "source": "BBC Türkçe",
+        "summary": "Adli tıp uzmanı Profesör Michael Freeman, BBC Newsnight'a verdiği demeçte, cinsel suçtan hüküm giymiş Epstein'in otopsi fotoğraflarındaki izlerin cinayetle tutarlı olduğuna inandığını söyledi. Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
+        "time": "17 Kasım 00:30",
+        "title": "Adli tıp uzmanı: Otopsi fotoğrafları Epstein'in öldürüldüğünü gösteriyor",
+        "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌧️ Hava Durumu",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afab4e5c757abf656936cab.jpg",
+        "source": "Hürriyet",
+        "summary": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı; Balıkesir, Çanakkale, Hatay, İzmir, Kocaeli, Tekirdağ, Osmaniye, Bursa, Edirne, İstanbul, Kırklareli, Kahramanmaraş ve Yalova için sarı kodlu uyarı verildi. AKOM da İstanbul'da fırtınaya karşı dikkatli olunmasını istedi.",
+        "time": "16 Kasım 12:39",
+        "title": "Meteoroloji tarih verdi: Kuvvetli sağanak ve fırtına geri geliyor",
+        "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      }
+    ],
+    "date": "2026-11-17",
+    "updated": "2026-11-17 02:44 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-17",
+    "generated": "2026-11-17 08:46 JST",
+    "questions": [
+      {
+        "question": "Fon soruşturması kapsamında kaç kişi gözaltına alındı?",
+        "options": [
+          "7",
+          "19",
+          "13",
+          "26"
+        ],
+        "answer": 3,
+        "explanation": "Özete göre soruşturma kapsamında 26 kişi gözaltına alındı.",
+        "source": "Habertürk",
+        "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
+      },
+      {
+        "question": "Tutuklama talebiyle Sulh Ceza Hâkimliğine sevk edilen şüpheli sayısı kaçtır?",
+        "options": [
+          "7",
+          "19",
+          "13",
+          "26"
+        ],
+        "answer": 0,
+        "explanation": "7 şüpheli tutuklama talebiyle, 19 şüpheli ise adli kontrol istemiyle hâkimliğe gönderildi.",
+        "source": "Habertürk",
+        "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
+      },
+      {
+        "question": "Deprem, Endonezya'nın hangi kentinin güneybatısında meydana geldi?",
+        "options": [
+          "Tual",
+          "Sumatra",
+          "Bali",
+          "Cakarta"
+        ],
+        "answer": 0,
+        "explanation": "Deprem, Tual kentinin 148 kilometre güneybatısında meydana geldi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
+      },
+      {
+        "question": "Depremin büyüklüğü kaç olarak kaydedildi?",
+        "options": [
+          "6,3",
+          "7,1",
+          "6,6",
+          "5,9"
+        ],
+        "answer": 2,
+        "explanation": "Depremin büyüklüğü 6,6 olarak kayıtlara geçti.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
+      },
+      {
+        "question": "Sağlık Bakanı'na göre kaç aşı yerli üretilecek?",
+        "options": [
+          "8",
+          "10",
+          "5",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "Sağlık Bakanı Memişoğlu, 8 aşının yerli üretileceğini söyledi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
+      },
+      {
+        "question": "Yerli aşı üretiminin amacı nedir?",
+        "options": [
+          "Aşı reddini engellemek ve azaltmak",
+          "Aşı ihracatını artırmak",
+          "Aşı ithalatını durdurmak",
+          "Aşı fiyatlarını düşürmek"
+        ],
+        "answer": 0,
+        "explanation": "Bakan, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
+      },
+      {
+        "question": "Epstein'in otopsi fotoğraflarını inceleyen adli tıp uzmanı kimdir?",
+        "options": [
+          "Profesör Michael Freeman",
+          "Profesör James Wilson",
+          "Doktor David Cohen",
+          "Profesör John Smith"
+        ],
+        "answer": 0,
+        "explanation": "Adli tıp uzmanı Profesör Michael Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Freeman, Epstein'in vücudundaki izlerin neyle tutarlı olduğuna inandığını söyledi?",
+        "options": [
+          "Doğal ölümle",
+          "Kazayla",
+          "Cinayetle",
+          "İntiharla"
+        ],
+        "answer": 2,
+        "explanation": "Freeman, Epstein'in vücudundaki izlerin cinayetle tutarlı olduğuna inandığını söyledi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Meteoroloji hangi bölge için gece yarısından itibaren kuvvetli yağış uyarısı yaptı?",
+        "options": [
+          "Karadeniz",
+          "Akdeniz",
+          "Ege",
+          "Marmara"
+        ],
+        "answer": 3,
+        "explanation": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      },
+      {
+        "question": "Sarı kodlu uyarı verilen illerden biri hangisidir?",
+        "options": [
+          "Antalya",
+          "Konya",
+          "Ankara",
+          "İstanbul"
+        ],
+        "answer": 3,
+        "explanation": "Sarı kodlu uyarı verilen iller arasında İstanbul da bulunuyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      }
+    ]
+  }
+}

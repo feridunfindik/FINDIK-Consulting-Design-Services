@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-16",
-  "generated": "2026-11-16 08:46 JST",
+  "date": "2026-11-17",
+  "generated": "2026-11-17 08:46 JST",
   "questions": [
     {
-      "question": "ABD'de hava trafiğinin yaklaşık dört saat durdurulmasına ne neden oldu?",
+      "question": "Fon soruşturması kapsamında kaç kişi gözaltına alındı?",
       "options": [
-        "Hava trafik kontrolündeki iletişim sorunu",
-        "Havaalanı çalışanlarının grevi",
-        "Şiddetli fırtına",
-        "Uçak yakıtı sıkıntısı"
-      ],
-      "answer": 0,
-      "explanation": "Hava trafik kontrolündeki 'iletişim sorunu' nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "FlightAware verilerine göre ABD'deki aksaklık sürecinde yaklaşık kaç uçuş iptal edildi?",
-      "options": [
-        "Yaklaşık 8 bin",
-        "Yaklaşık 800",
-        "Yaklaşık 80 bin",
-        "Yaklaşık 18 bin"
-      ],
-      "answer": 0,
-      "explanation": "FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Şehit olan askerlerin bulunduğu askeri helikopter hangi ilde düştü?",
-      "options": [
-        "Kayseri",
-        "Hatay",
-        "İzmir",
-        "Malatya"
+        "7",
+        "19",
+        "13",
+        "26"
       ],
       "answer": 3,
-      "explanation": "Helikopter, Malatya'nın Yeşilyurt ilçesinde düştü.",
-      "source": "Sabah",
-      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+      "explanation": "Özete göre soruşturma kapsamında 26 kişi gözaltına alındı.",
+      "source": "Habertürk",
+      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
     },
     {
-      "question": "Şehitlerin ailelerine kim taziye mesajı gönderdi?",
+      "question": "Tutuklama talebiyle Sulh Ceza Hâkimliğine sevk edilen şüpheli sayısı kaçtır?",
       "options": [
-        "Cumhurbaşkanı Erdoğan",
-        "Genelkurmay Başkanı",
-        "İçişleri Bakanı",
-        "TBMM Başkanı"
+        "7",
+        "19",
+        "13",
+        "26"
       ],
       "answer": 0,
-      "explanation": "Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
-      "source": "Sabah",
-      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi"
+      "explanation": "7 şüpheli tutuklama talebiyle, 19 şüpheli ise adli kontrol istemiyle hâkimliğe gönderildi.",
+      "source": "Habertürk",
+      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
     },
     {
-      "question": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun kaçıncı yıl dönümü kutlandı?",
+      "question": "Deprem, Endonezya'nın hangi kentinin güneybatısında meydana geldi?",
       "options": [
-        "40.",
-        "45.",
-        "43.",
-        "42."
+        "Tual",
+        "Sumatra",
+        "Bali",
+        "Cakarta"
+      ],
+      "answer": 0,
+      "explanation": "Deprem, Tual kentinin 148 kilometre güneybatısında meydana geldi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
+    },
+    {
+      "question": "Depremin büyüklüğü kaç olarak kaydedildi?",
+      "options": [
+        "6,3",
+        "7,1",
+        "6,6",
+        "5,9"
       ],
       "answer": 2,
-      "explanation": "KKTC'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla Lefkoşa'da törenler düzenlendi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
+      "explanation": "Depremin büyüklüğü 6,6 olarak kayıtlara geçti.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
     },
     {
-      "question": "Resmi geçit töreni Lefkoşa'da hangi bulvarda düzenlendi?",
+      "question": "Sağlık Bakanı'na göre kaç aşı yerli üretilecek?",
       "options": [
-        "Girne Bulvarı",
-        "Atatürk Bulvarı",
-        "Dr. Fazıl Küçük Bulvarı",
-        "Cumhuriyet Bulvarı"
+        "8",
+        "10",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "Sağlık Bakanı Memişoğlu, 8 aşının yerli üretileceğini söyledi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
+    },
+    {
+      "question": "Yerli aşı üretiminin amacı nedir?",
+      "options": [
+        "Aşı reddini engellemek ve azaltmak",
+        "Aşı ihracatını artırmak",
+        "Aşı ithalatını durdurmak",
+        "Aşı fiyatlarını düşürmek"
+      ],
+      "answer": 0,
+      "explanation": "Bakan, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
+    },
+    {
+      "question": "Epstein'in otopsi fotoğraflarını inceleyen adli tıp uzmanı kimdir?",
+      "options": [
+        "Profesör Michael Freeman",
+        "Profesör James Wilson",
+        "Doktor David Cohen",
+        "Profesör John Smith"
+      ],
+      "answer": 0,
+      "explanation": "Adli tıp uzmanı Profesör Michael Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Freeman, Epstein'in vücudundaki izlerin neyle tutarlı olduğuna inandığını söyledi?",
+      "options": [
+        "Doğal ölümle",
+        "Kazayla",
+        "Cinayetle",
+        "İntiharla"
       ],
       "answer": 2,
-      "explanation": "Resmi geçit töreni, Lefkoşa'daki Dr. Fazıl Küçük Bulvarı'nda düzenlendi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761"
+      "explanation": "Freeman, Epstein'in vücudundaki izlerin cinayetle tutarlı olduğuna inandığını söyledi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Torba kanun teklifiyle hangi tarihten önceye ait ödenmemiş GSS prim borçları silinecek?",
+      "question": "Meteoroloji hangi bölge için gece yarısından itibaren kuvvetli yağış uyarısı yaptı?",
       "options": [
-        "1 Ocak 2016",
-        "1 Ocak 2018",
-        "1 Ocak 2020",
-        "1 Ocak 2017"
+        "Karadeniz",
+        "Akdeniz",
+        "Ege",
+        "Marmara"
       ],
       "answer": 3,
-      "explanation": "1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek.",
-      "source": "NTV",
-      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
+      "explanation": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
     },
     {
-      "question": "Torba kanun teklifiyle borcu silinecek kişi sayısı kaçtır?",
+      "question": "Sarı kodlu uyarı verilen illerden biri hangisidir?",
       "options": [
-        "1 milyon 199 bin 860",
-        "3 milyon 199 bin 860",
-        "2 milyon 999 bin 860",
-        "2 milyon 199 bin 860"
+        "Antalya",
+        "Konya",
+        "Ankara",
+        "İstanbul"
       ],
       "answer": 3,
-      "explanation": "Toplam 2 milyon 199 bin 860 kişinin borcu silinmiş olacak.",
-      "source": "NTV",
-      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
-    },
-    {
-      "question": "A Milli Futbol Takımı, Fransa'ya kaç kaç yenildi?",
-      "options": [
-        "2-1",
-        "1-0",
-        "2-0",
-        "3-1"
-      ],
-      "answer": 0,
-      "explanation": "A Milli Futbol Takımı, Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
-    },
-    {
-      "question": "Berke Özer, Fransa maçı ile kaç gün sonra formasına kavuştu?",
-      "options": [
-        "522",
-        "622",
-        "252",
-        "52"
-      ],
-      "answer": 0,
-      "explanation": "Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html"
+      "explanation": "Sarı kodlu uyarı verilen iller arasında İstanbul da bulunuyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
     }
   ]
 }

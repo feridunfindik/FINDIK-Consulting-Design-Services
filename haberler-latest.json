@@ -1,50 +1,51 @@
 {
   "articles": [
     {
+      "cat": "🚨 Gündem",
+      "source": "Habertürk",
+      "summary": "İstanbul Cumhuriyet Başsavcılığının sermaye piyasasındaki işlemlere ilişkin yürüttüğü fon soruşturmasında 26 kişi gözaltına alındı. Emniyetteki işlemleri tamamlanan şüpheliler adliyeye sevk edildi; 7'si tutuklama talebiyle, 19'u adli kontrol istemiyle Sulh Ceza Hâkimliğine gönderildi.",
+      "time": "16 Kasım 22:53",
+      "title": "Fon soruşturmasında 7 tutuklama",
+      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815",
+      "img": "https://im.haberturk.com/l/2026/11/16/ver1794860632/3927815/jpg/1200x628"
+    },
+    {
       "cat": "🌍 Dünya",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8ba6/live/580c5210-e01a-11f1-ad34-45f8f10f7c55.jpg",
-      "source": "BBC Türkçe",
-      "summary": "ABD'de hava trafik kontrolündeki \"iletişim sorunu\" nedeniyle yaklaşık dört saat boyunca ülkede tüm hava trafiği durduruldu. FlightAware verilerine göre süreçte 8 bin 500'den fazla uçuş ertelendi, yaklaşık 8 bin uçuş iptal edildi. Aksaklık üçüncü gününde de sürüyor; ABD Ulaştırma Bakanı Sean Duffy, uçuşların pazartesi gününe kadar normale dönmesini bekliyor.",
-      "time": "16 Kasım 00:47",
-      "title": "ABD'de binlerce iç hat uçuşunun iptali ve rötarı devam ediyor",
-      "url": "https://www.bbc.com/turkce/articles/cqx2wyd99w13o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "cat": "🚨 Gündem",
-      "source": "Sabah",
-      "summary": "Malatya'nın Yeşilyurt ilçesinde düşen askeri helikopterde şehit olan Kara Pilot Binbaşı Erdem Çimen, Kara Pilot Binbaşı Orhun Pınar, Astsubay Kıdemli Üstçavuş Hüseyin Zehir ve Astsubay Kıdemli Çavuş Serkan Önder, memleketlerinde düzenlenen törenlerle son yolculuklarına uğurlandı. Cumhurbaşkanı Erdoğan, şehitlerin ailelerine taziye mesajı gönderdi.",
-      "time": "15 Kasım 07:01",
-      "title": "Şehitleri millet uğurladı",
-      "url": "https://www.sabah.com.tr/gundem/2026/11/15/sehitleri-millet-ugurladi",
-      "img": "https://iasbh.tmgrup.com.tr/212828/1200/675/0/86/2048/1238?u=https://isbh.tmgrup.com.tr/sbh/2026/11/14/sehitleri-millet-ugurladi-1794687734910.jpeg"
-    },
-    {
-      "cat": "🚨 Gündem",
-      "source": "Anadolu Ajansı",
-      "summary": "Kuzey Kıbrıs Türk Cumhuriyeti'nin kuruluşunun 43. yıl dönümü ve Cumhuriyet Bayramı dolayısıyla başkent Lefkoşa'da törenler düzenlendi. Dr. Fazıl Küçük Bulvarı'nda resmi geçit töreni yapılırken, Atatürk Anıtı'nda da tören düzenlendi. Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, \"Türkiye Cumhuriyeti, Kıbrıs Türk halkının sonsuza dek yanında duracaktır\" dedi.",
-      "time": "15 Kasım 14:52",
-      "title": "KKTC'nin kuruluşunun 43. yıl dönümü dolayısıyla resmi geçit töreni düzenlendi",
-      "url": "https://www.aa.com.tr/tr/gundem/kktcnin-kurulusunun-43-yil-donumu-dolayisiyla-resmi-gecit-toreni-duzenlendi/4125761",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/15/thumbs_b_c_d33116b6e1b5057aea1ab98fef9a16c5.jpg"
-    },
-    {
-      "cat": "🏛️ Siyaset",
-      "source": "NTV",
-      "summary": "Meclis'te bütçe mesaisi yeni haftada devam edecek. Plan ve Bütçe Komisyonunda Sağlık, İçişleri, Milli Savunma ve Dışişleri bakanlıklarının 2027 yılı bütçeleri görüşülecek. Torba kanun teklifiyle 1 Ocak 2017'den önceye ait ödenmemiş Genel Sağlık Sigortası prim borçları ve gecikme zammı silinecek; 2 milyon 199 bin 860 kişinin toplam 5 milyar 627 milyon 666 bin 896 liralık borcu silinmiş olacak.",
-      "time": "15 Kasım 14:31",
-      "title": "Meclis'te yeni haftada yoğun gündem: Genel Sağlık Sigortası borcuna af",
-      "url": "https://www.ntv.com.tr/amp/turkiye/mecliste-yeni-haftada-yogun-gundem-genel-saglik-sigortasi-borcuna-af-booking-teklifi-1750992"
-    },
-    {
-      "cat": "⚽ Spor",
       "source": "TRT Haber",
-      "summary": "A Milli Futbol Takımı, UEFA Uluslar A Ligi 1. Grup'taki 6. ve son maçında Fransa'ya 2-1 yenilerek grup aşamasını puansız tamamladı. Fransa karşısında kaleye geçen Berke Özer, 522 gün sonra formasına kavuştu. Teknik direktör Sergen Yalçın, \"Umut ediyorum ilerisi daha güzel olacak\" dedi.",
-      "time": "16 Kasım 00:40",
-      "title": "Türkiye UEFA Uluslar A Ligi'ni puansız tamamladı",
-      "url": "https://www.trthaber.com/haber/gundem/turkiye-uefa-uluslar-a-ligini-puansiz-tamamladi-963366.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2502000/turkiye-fransa-a-milli-futbol-aa-2503765.jpg"
+      "summary": "Endonezya'nın Tual kentinin 148 kilometre güneybatısında, yerin 68 kilometre derinliğinde 6,6 büyüklüğünde deprem meydana geldi. ABD Jeolojik Araştırma Merkezinin açıklamasına göre ilk aşamada tsunami uyarısı yapılmadı; henüz can ve mal kaybı bildirilmedi.",
+      "time": "17 Kasım 02:14",
+      "title": "Endonezya'da 6,6 büyüklüğünde deprem",
+      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2480000/deprem-2480656.jpg"
+    },
+    {
+      "cat": "💊 Sağlık",
+      "source": "Anadolu Ajansı",
+      "summary": "Sağlık Bakanı Kemal Memişoğlu, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi. Kısa sürede sözleşmelerin yapılacağını belirten Memişoğlu, Türkiye'nin kendi aşısını üreten ve dünyaya ulaştıran bir ülke olacağını ifade etti.",
+      "time": "16 Kasım 23:01",
+      "title": "Sağlık Bakanı Memişoğlu: Aşı reddini engellemek için 8 aşımızı yerli üreteceğiz",
+      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/16/thumbs_b_c_ba88047530a6d048f07ca671a804e152.jpg"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f4ce/live/59eafa00-e1c3-11f1-8a52-0b287ff76f43.jpg",
+      "source": "BBC Türkçe",
+      "summary": "Adli tıp uzmanı Profesör Michael Freeman, BBC Newsnight'a verdiği demeçte, cinsel suçtan hüküm giymiş Epstein'in otopsi fotoğraflarındaki izlerin cinayetle tutarlı olduğuna inandığını söyledi. Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
+      "time": "17 Kasım 00:30",
+      "title": "Adli tıp uzmanı: Otopsi fotoğrafları Epstein'in öldürüldüğünü gösteriyor",
+      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "cat": "🌧️ Hava Durumu",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afab4e5c757abf656936cab.jpg",
+      "source": "Hürriyet",
+      "summary": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı; Balıkesir, Çanakkale, Hatay, İzmir, Kocaeli, Tekirdağ, Osmaniye, Bursa, Edirne, İstanbul, Kırklareli, Kahramanmaraş ve Yalova için sarı kodlu uyarı verildi. AKOM da İstanbul'da fırtınaya karşı dikkatli olunmasını istedi.",
+      "time": "16 Kasım 12:39",
+      "title": "Meteoroloji tarih verdi: Kuvvetli sağanak ve fırtına geri geliyor",
+      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
     }
   ],
-  "date": "2026-11-16",
-  "updated": "2026-11-16 02:44 TSİ"
+  "date": "2026-11-17",
+  "updated": "2026-11-17 02:44 TSİ"
 }
