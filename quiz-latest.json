@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-16",
-  "generated": "2026-11-16 07:47 JST",
+  "date": "2026-11-17",
+  "generated": "2026-11-17 07:46 JST",
   "questions": [
     {
-      "question": "エストニアがロシアとの国境の検問所を閉鎖するのはいつからですか。",
+      "question": "女性が刃物で刺されたのはどこですか？",
       "options": [
-        "1月1日から",
-        "12月1日から",
-        "12月15日から",
-        "11月15日から"
+        "大阪・難波の商店街",
+        "東京・中野区の路上",
+        "東京・渋谷区の駅前",
+        "名古屋・栄の公園"
       ],
       "answer": 1,
-      "explanation": "エストニアは12月1日から、ロシアとの国境にあるすべての検問所を閉鎖すると表明した。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602742?source=rss"
-    },
-    {
-      "question": "エストニアが国境を閉鎖するきっかけとなった出来事は何ですか。",
-      "options": [
-        "検問所が3カ所に増えたこと",
-        "ドローンを作る会社への放火未遂で8人が拘束されたこと",
-        "ロシア軍の情報機関が閉鎖を求めたこと",
-        "国境の検問所が壊れたこと"
-      ],
-      "answer": 1,
-      "explanation": "ドローンを作る会社への放火未遂で8人が拘束され、ロシア軍の情報機関の指示があったと判断したためだ。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602742?source=rss"
-    },
-    {
-      "question": "事故が起きたのはどこですか。",
-      "options": [
-        "島根県出雲市の踏切",
-        "東京都内の踏切",
-        "福岡県内の踏切",
-        "大阪府内の踏切"
-      ],
-      "answer": 0,
-      "explanation": "島根県出雲市の踏切で、特急「スーパーおき6号」と軽乗用車が衝突した。",
-      "source": "KSB瀬戸内海放送",
-      "url": "https://news.ksb.co.jp/ann/article/17052445"
-    },
-    {
-      "question": "列車の乗客と乗員について、正しいのはどれですか。",
-      "options": [
-        "52人にけがはなかった",
-        "1人が遺体で見つかった",
-        "乗客と乗員は全員いなかった",
-        "52人全員がけがをした"
-      ],
-      "answer": 0,
-      "explanation": "列車の乗客と乗員52人にけがはなかった。",
-      "source": "KSB瀬戸内海放送",
-      "url": "https://news.ksb.co.jp/ann/article/17052445"
-    },
-    {
-      "question": "福岡市長選で誰も当選しなかったのはなぜですか。",
-      "options": [
-        "投票率が低すぎたから",
-        "立候補者が1人もいなかったから",
-        "投票がまだ行われていないから",
-        "13人が立候補し票が分かれ、誰も有効投票数の4分の1に届かなかったから"
-      ],
-      "answer": 3,
-      "explanation": "過去最多の13人が立候補し票が分かれたため、誰も当選しなかった。",
-      "source": "NEWSjp",
-      "url": "https://news.jp/i/1494735557966430324"
-    },
-    {
-      "question": "最も多い票を集めた稲富修二さんの得票数はどれですか。",
-      "options": [
-        "13万7667票",
-        "60万票",
-        "45万票",
-        "13万票"
-      ],
-      "answer": 0,
-      "explanation": "最も多い票を集めた稲富修二さんの13万7667票も、有効投票数の4分の1に届かなかった。",
-      "source": "NEWSjp",
-      "url": "https://news.jp/i/1494735557966430324"
-    },
-    {
-      "question": "政府が3文書の改定で示す方向の認識はどれですか。",
-      "options": [
-        "「AIの技術は進歩していない」",
-        "「国際社会は歴史的かつ根本的な変革期を迎えている」",
-        "「日本は安全保障の問題を抱えていない」",
-        "「国際社会は安定している」"
-      ],
-      "answer": 1,
-      "explanation": "政府は「国際社会は歴史的かつ根本的な変革期を迎えている」という認識を示す方向で調整している。",
+      "explanation": "要約によると、事件が起きたのは東京・中野区の路上です。",
       "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76058"
+      "url": "https://news.web.nhk/newsweb/na/nd-20261116de76817"
     },
     {
-      "question": "政府がその認識を示すにあたって踏まえたものは何ですか。",
+      "question": "警視庁は男を何の疑いで逮捕しましたか？",
       "options": [
-        "国際秩序の安定とAI技術の後退",
-        "天気の変化だけ",
-        "国内の人口減少だけ",
-        "国際秩序の揺らぎやAIなどの技術の進歩"
-      ],
-      "answer": 3,
-      "explanation": "国際秩序の揺らぎやAIなどの技術の進歩を踏まえたものだ。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261115de76058"
-    },
-    {
-      "question": "侍ジャパンは決勝でどこに勝ちましたか。",
-      "options": [
-        "韓国",
-        "台湾",
-        "アメリカ",
-        "オーストラリア"
-      ],
-      "answer": 0,
-      "explanation": "侍ジャパンは決勝で韓国に勝ち、大会3連覇を決めた。",
-      "source": "Full-Count",
-      "url": "https://news.yahoo.co.jp/articles/e7779789d04949b8654e04fbb9c9b1939413b5df"
-    },
-    {
-      "question": "大会MVPに選ばれた宗山塁選手の活躍として正しいのはどれですか。",
-      "options": [
-        "打率.526、4本塁打、5打点",
-        "打率.526、5本塁打、11打点",
-        "打率.526、4本塁打、11打点",
-        "打率.462、4本塁打、11打点"
+        "窃盗の疑い",
+        "詐欺の疑い",
+        "強盗殺人未遂の疑い",
+        "傷害の疑い"
       ],
       "answer": 2,
-      "explanation": "宗山選手は打率.526、4本塁打、11打点の活躍だった。",
-      "source": "Full-Count",
-      "url": "https://news.yahoo.co.jp/articles/e7779789d04949b8654e04fbb9c9b1939413b5df"
+      "explanation": "要約によると、男は強盗殺人未遂の疑いで逮捕されました。",
+      "source": "NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261116de76817"
+    },
+    {
+      "question": "ナスダック総合指数はどれくらい下がりましたか？",
+      "options": [
+        "0.5％安",
+        "5.3％安",
+        "2.5％安",
+        "10％安"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、ナスダック総合指数は2.5％安でした。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602852?source=rss"
+    },
+    {
+      "question": "17日に何が注目されますか？",
+      "options": [
+        "日本銀行の利上げ",
+        "エヌビディアの決算",
+        "アメリカ大統領選挙",
+        "円相場の発表"
+      ],
+      "answer": 1,
+      "explanation": "要約によると、17日のエヌビディア決算が注目されます。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6602852?source=rss"
+    },
+    {
+      "question": "「Microsoft 365」の大規模障害が起きたのはいつですか？",
+      "options": [
+        "7日",
+        "12日",
+        "16日",
+        "17日"
+      ],
+      "answer": 1,
+      "explanation": "要約によると、障害は12日に起きました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003245/"
+    },
+    {
+      "question": "障害の原因として挙げられたのは何ですか？",
+      "options": [
+        "7月の更新プログラムに入った不具合",
+        "地震による停電",
+        "サイバー攻撃",
+        "海底ケーブルの切断"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、7月の更新プログラムに入った不具合が原因とされています。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003245/"
+    },
+    {
+      "question": "17日に北日本で何が予想されていますか？",
+      "options": [
+        "台風が上陸する",
+        "地震が起きる",
+        "猛烈な暑さになる",
+        "低気圧が発達し大気が不安定になる"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、前線を伴った低気圧が急速に発達し、北日本を中心に大気が不安定になります。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/bsn/2292043?display=1"
+    },
+    {
+      "question": "日本海北部では何に警戒が必要ですか？",
+      "options": [
+        "昼過ぎの雷",
+        "未明から明け方の暴風",
+        "朝の霜",
+        "夜の濃霧"
+      ],
+      "answer": 1,
+      "explanation": "要約によると、日本海北部では未明から明け方に暴風への警戒が必要です。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/bsn/2292043?display=1"
+    },
+    {
+      "question": "BABYMETALとLiSAがノミネートされたのは何の部門ですか？",
+      "options": [
+        "最優秀新人賞部門",
+        "最優秀ロック部門",
+        "最優秀アジア・ポップ・ミュージック・パフォーマンス部門",
+        "最優秀アルバム部門"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、新しくできた「最優秀アジア・ポップ・ミュージック・パフォーマンス」部門です。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.yahoo.co.jp/articles/13f203b4942f9eb288f8a997090acb647f930e05"
+    },
+    {
+      "question": "グラミー賞の授賞式はいつ行われますか？",
+      "options": [
+        "2026年11月16日",
+        "2027年1月1日",
+        "2027年2月7日",
+        "2026年12月25日"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、授賞式は2027年2月7日です。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.yahoo.co.jp/articles/13f203b4942f9eb288f8a997090acb647f930e05"
     }
   ]
 }

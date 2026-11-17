@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-17",
+  "news": {
+    "date": "2026-11-17",
+    "updated": "2026-11-17 07:45 JST",
+    "articles": [
+      {
+        "cat": "🚨 社会・事故",
+        "time": "11月16日 20:28",
+        "title": "東京・中野で女性が刺され死亡　強盗殺人未遂容疑で男を逮捕",
+        "summary": "16日夜、東京・中野区の路上で、20代くらいの女性が刃物で刺される事件がありました。女性は搬送先の病院で死亡が確認されました。警視庁は、30代から40代くらいの男の容疑者を強盗殺人未遂の疑いで逮捕し、現在、事件のくわしいいきさつを調べています。",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261116de76817",
+        "source": "NHKニュース",
+        "img": "https://imgu.web.nhk/news/u/news/nd/kiji/20261116de76817/20261116de76817_E0000181540_1_l.jpg"
+      },
+      {
+        "cat": "💹 経済",
+        "time": "11月17日 6:54",
+        "title": "NY株大幅反落　ハイテク株に売り",
+        "summary": "16日のニューヨーク株式市場は大幅に下落しました。ナスダック総合指数は2.5％安、ダウ平均は1.4％超安、S&P500も2％近く下げました。エヌビディアの前CEO辞任の余波でAI関連株が売られ、半導体株指数は5.3％下落。ナスダックは10月の最高値から10％超下がり、調整局面に入りました。17日のエヌビディア決算が注目されます。",
+        "url": "https://news.yahoo.co.jp/pickup/6602852?source=rss",
+        "source": "Yahoo!ニュース トピックス",
+        "img": "https://news-pctr.c.yimg.jp/t/news-topics/images/tpc/2026/11/17/e39dee7b1cc583a937cf6c77d1978a469cdcd4ab06bc95f805af2617e0829f13.jpg"
+      },
+      {
+        "cat": "🔬 テクノロジー・科学",
+        "time": "11月17日 7:05",
+        "title": "「Microsoft 365」大規模障害、7月の修正で混入した不具合が原因　負荷増と容量減が重なり世界に波及",
+        "summary": "マイクロソフトの「Microsoft 365」で12日に起きた大規模障害について、同社が原因を公表しました。7月の更新プログラムに入った不具合が、通信の移行による負荷の増加と容量の低下と重なり、世界中でサーバーのトラブルが連鎖したということです。",
+        "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003245/",
+        "source": "ITmedia NEWS",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/17/2000003245/10012275/2048"
+      },
+      {
+        "cat": "🌦️ 天気・防災",
+        "time": "11月16日 21:00",
+        "title": "あす17日は北日本で大荒れの天気か　その後は19日にかけて日本海側で大雨や大雪に？",
+        "summary": "きょう17日は、前線を伴った低気圧が急速に発達し、北日本を中心に大気が不安定になります。北海道では雷を伴う激しい雨のおそれがあり、日本海北部では未明から明け方に暴風への警戒が必要です。19日にかけて日本海側では大雨や大雪の所もあり、気象庁が注意を呼びかけています。",
+        "url": "https://newsdig.tbs.co.jp/articles/bsn/2292043?display=1",
+        "source": "TBS NEWS DIG"
+      },
+      {
+        "cat": "🎬 エンタメ",
+        "time": "11月16日 23:28",
+        "title": "BABYMETAL、LiSA　米国・第69回グラミー賞の新たなアジアポップ部門にノミネート",
+        "summary": "アメリカの音楽賞、第69回グラミー賞のノミネートが日本時間16日に発表され、新しくできた「最優秀アジア・ポップ・ミュージック・パフォーマンス」部門にBABYMETALとLiSAが選ばれました。BABYMETALは「Sunset Kiss」、LiSAは「YES」が対象で、授賞式は2027年2月7日です。",
+        "url": "https://news.yahoo.co.jp/articles/13f203b4942f9eb288f8a997090acb647f930e05",
+        "source": "日テレNEWS NNN",
+        "img": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261116-05951766-nnn-000-1-view.jpg?exp=10800"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-17",
+    "generated": "2026-11-17 07:46 JST",
+    "questions": [
+      {
+        "question": "女性が刃物で刺されたのはどこですか？",
+        "options": [
+          "大阪・難波の商店街",
+          "東京・中野区の路上",
+          "東京・渋谷区の駅前",
+          "名古屋・栄の公園"
+        ],
+        "answer": 1,
+        "explanation": "要約によると、事件が起きたのは東京・中野区の路上です。",
+        "source": "NHKニュース",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261116de76817"
+      },
+      {
+        "question": "警視庁は男を何の疑いで逮捕しましたか？",
+        "options": [
+          "窃盗の疑い",
+          "詐欺の疑い",
+          "強盗殺人未遂の疑い",
+          "傷害の疑い"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、男は強盗殺人未遂の疑いで逮捕されました。",
+        "source": "NHKニュース",
+        "url": "https://news.web.nhk/newsweb/na/nd-20261116de76817"
+      },
+      {
+        "question": "ナスダック総合指数はどれくらい下がりましたか？",
+        "options": [
+          "0.5％安",
+          "5.3％安",
+          "2.5％安",
+          "10％安"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、ナスダック総合指数は2.5％安でした。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6602852?source=rss"
+      },
+      {
+        "question": "17日に何が注目されますか？",
+        "options": [
+          "日本銀行の利上げ",
+          "エヌビディアの決算",
+          "アメリカ大統領選挙",
+          "円相場の発表"
+        ],
+        "answer": 1,
+        "explanation": "要約によると、17日のエヌビディア決算が注目されます。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6602852?source=rss"
+      },
+      {
+        "question": "「Microsoft 365」の大規模障害が起きたのはいつですか？",
+        "options": [
+          "7日",
+          "12日",
+          "16日",
+          "17日"
+        ],
+        "answer": 1,
+        "explanation": "要約によると、障害は12日に起きました。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003245/"
+      },
+      {
+        "question": "障害の原因として挙げられたのは何ですか？",
+        "options": [
+          "7月の更新プログラムに入った不具合",
+          "地震による停電",
+          "サイバー攻撃",
+          "海底ケーブルの切断"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、7月の更新プログラムに入った不具合が原因とされています。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003245/"
+      },
+      {
+        "question": "17日に北日本で何が予想されていますか？",
+        "options": [
+          "台風が上陸する",
+          "地震が起きる",
+          "猛烈な暑さになる",
+          "低気圧が発達し大気が不安定になる"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、前線を伴った低気圧が急速に発達し、北日本を中心に大気が不安定になります。",
+        "source": "TBS NEWS DIG",
+        "url": "https://newsdig.tbs.co.jp/articles/bsn/2292043?display=1"
+      },
+      {
+        "question": "日本海北部では何に警戒が必要ですか？",
+        "options": [
+          "昼過ぎの雷",
+          "未明から明け方の暴風",
+          "朝の霜",
+          "夜の濃霧"
+        ],
+        "answer": 1,
+        "explanation": "要約によると、日本海北部では未明から明け方に暴風への警戒が必要です。",
+        "source": "TBS NEWS DIG",
+        "url": "https://newsdig.tbs.co.jp/articles/bsn/2292043?display=1"
+      },
+      {
+        "question": "BABYMETALとLiSAがノミネートされたのは何の部門ですか？",
+        "options": [
+          "最優秀新人賞部門",
+          "最優秀ロック部門",
+          "最優秀アジア・ポップ・ミュージック・パフォーマンス部門",
+          "最優秀アルバム部門"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、新しくできた「最優秀アジア・ポップ・ミュージック・パフォーマンス」部門です。",
+        "source": "日テレNEWS NNN",
+        "url": "https://news.yahoo.co.jp/articles/13f203b4942f9eb288f8a997090acb647f930e05"
+      },
+      {
+        "question": "グラミー賞の授賞式はいつ行われますか？",
+        "options": [
+          "2026年11月16日",
+          "2027年1月1日",
+          "2027年2月7日",
+          "2026年12月25日"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、授賞式は2027年2月7日です。",
+        "source": "日テレNEWS NNN",
+        "url": "https://news.yahoo.co.jp/articles/13f203b4942f9eb288f8a997090acb647f930e05"
+      }
+    ]
+  }
+}
