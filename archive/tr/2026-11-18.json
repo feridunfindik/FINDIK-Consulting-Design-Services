@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-18",
+  "news": {
+    "articles": [
+      {
+        "cat": "🏛️ Siyaset",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3465/live/c09eaa30-e254-11f1-8199-439bbe0918ee.jpg",
+        "source": "BBC Türkçe",
+        "summary": "İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında Sözcü Medya Grubu'na operasyon düzenlendi. Sözcü TV ve sozcu.com.tr'nin bağlı bulunduğu Mega Ajans ve Reklamcılık Ticaret AŞ'ye TMSF kayyum olarak atandı. Aralarında Sözcü Medya Grubu yöneticilerinin de bulunduğu 4 kişi gözaltına alındı.",
+        "time": "17 Kasım 14:52",
+        "title": "Sözcü'ye operasyon: TV ve internet sitesine kayyum atandı, 4 kişi gözaltında",
+        "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌧️ Hava Durumu",
+        "source": "Anadolu Ajansı",
+        "summary": "Van'ın Gevaş ilçesinde saat 18.57'de 4,3 büyüklüğünde deprem meydana geldi. AFAD'ın internet sitesinde yer alan bilgiye göre sarsıntının merkez üssü Van Gölü oldu. Depremin 13,61 kilometre derinlikte meydana geldiği belirlendi. Haberde hasar ya da can kaybına ilişkin bilgi yer almadı.",
+        "time": "17 Kasım 19:13",
+        "title": "Van'da 4,3 büyüklüğünde deprem",
+        "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/17/thumbs_b_c_da76d1d2d2ce8f228c441db652968241.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "source": "TRT Haber",
+        "summary": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, KOSGEB tarafından yürütülen Yeşil Sanayi Destek Programı kapsamında Sanayide Temiz ve Döngüsel Ekonomi Teklif Çağrısı ile KOBİ'lere 3 milyar liralık destek verileceğini açıkladı. Proje başına 7 milyon liraya kadar destek sağlanacak; destek oranı yüzde 70, proje süresi 12 ay olacak. Son başvuru tarihi 31 Ocak 2027.",
+        "time": "17 Kasım 22:42",
+        "title": "Yeşil dönüşüm için verilecek 3 milyar liralık destek paketinde son başvuru tarihi belli oldu",
+        "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1800000/turk-lirasi-para-1800470.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "DW Türkçe",
+        "summary": "Ukrayna, Rusya'yı ilhak edilen Kırım Yarımadası'na bağlayan Kerç Köprüsü'nü gece saatlerinde vurdu. Köprüyü taşıyan kemerlerden biri Kerç Boğazı'na yıkıldı ve deniz trafiği engellendi. Ukrayna Devlet Başkanı Volodimir Zelenskiy saldırıyı doğrulayarak ordusunu kutladı. Rusya'nın atadığı Kırım lideri Sergey Aksyonov, saldırıda 2 kişinin öldüğünü söyledi. Kremlin ise hasarın sınırlı olduğunu ve tek şeritten trafiğin yeniden açıldığını duyurdu.",
+        "time": "17 Kasım 15:10",
+        "title": "Ukrayna, Putin'in prestij projesi olan Kerç Köprüsü'nü vurdu",
+        "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "cat": "⚽ Spor",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afca0e8925c456bddefa84b.jpg",
+        "source": "Hürriyet",
+        "summary": "Rusya'nın Venezuela'yı 2-0 mağlup ettiği hazırlık maçında Galatasaray'ın genç yıldızı Aleksey Batrakov sakatlandı. Karşılaşmaya ilk 11'de başlayan 21 yaşındaki futbolcu, rakibiyle girdiği ikili mücadelenin ardından yerde kaldı ve 70. dakikada yerini Matvey Kislyak'a bıraktı. Oyundan çıkarken durumu iyi görünen Batrakov'un Samsunspor maçında oynayıp oynayamayacağı yapılacak değerlendirmelerin ardından belli olacak.",
+        "time": "17 Kasım 21:46",
+        "title": "Galatasaray'da Batrakov endişesi! Maça devam edemedi",
+        "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
+      }
+    ],
+    "date": "2026-11-18",
+    "updated": "2026-11-18 02:46 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-18",
+    "generated": "2026-11-18 08:49 JST",
+    "questions": [
+      {
+        "question": "Sözcü Medya Grubu'na düzenlenen operasyon hangi kurumun yürüttüğü soruşturma kapsamında gerçekleşti?",
+        "options": [
+          "Ankara Cumhuriyet Başsavcılığı",
+          "İstanbul Emniyet Müdürlüğü",
+          "İstanbul Cumhuriyet Başsavcılığı",
+          "TMSF"
+        ],
+        "answer": 2,
+        "explanation": "Özette, operasyonun İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında düzenlendiği belirtiliyor.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Sözcü TV ve sozcu.com.tr'nin bağlı bulunduğu şirkete hangi kurum kayyum olarak atandı?",
+        "options": [
+          "TMSF",
+          "SPK",
+          "RTÜK",
+          "BDDK"
+        ],
+        "answer": 0,
+        "explanation": "Özette, Mega Ajans ve Reklamcılık Ticaret AŞ'ye TMSF'nin kayyum olarak atandığı yazıyor.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Van'da meydana gelen depremin büyüklüğü kaç olarak ölçüldü?",
+        "options": [
+          "4,8",
+          "4,3",
+          "3,9",
+          "5,1"
+        ],
+        "answer": 1,
+        "explanation": "Özette depremin 4,3 büyüklüğünde olduğu belirtiliyor.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
+      },
+      {
+        "question": "Depremin merkez üssü neresi olarak açıklandı?",
+        "options": [
+          "Gevaş ilçe merkezi",
+          "Van Gölü",
+          "Erciş",
+          "Van şehir merkezi"
+        ],
+        "answer": 1,
+        "explanation": "AFAD'ın bilgisine göre sarsıntının merkez üssü Van Gölü oldu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
+      },
+      {
+        "question": "Yeşil dönüşüm desteği için son başvuru tarihi ne olarak açıklandı?",
+        "options": [
+          "31 Ocak 2027",
+          "31 Ocak 2026",
+          "31 Aralık 2026",
+          "15 Şubat 2027"
+        ],
+        "answer": 0,
+        "explanation": "Özette son başvuru tarihinin 31 Ocak 2027 olduğu belirtiliyor.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
+      },
+      {
+        "question": "Destek kapsamında proje başına en fazla ne kadar destek sağlanacak?",
+        "options": [
+          "70 milyon lira",
+          "12 milyon lira",
+          "7 milyon lira",
+          "3 milyon lira"
+        ],
+        "answer": 2,
+        "explanation": "Özette proje başına 7 milyon liraya kadar destek sağlanacağı belirtiliyor.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
+      },
+      {
+        "question": "Kerç Köprüsü'nü vuran ülke hangisidir?",
+        "options": [
+          "Ukrayna",
+          "Rusya",
+          "Belarus",
+          "Polonya"
+        ],
+        "answer": 0,
+        "explanation": "Özette köprüyü Ukrayna'nın vurduğu belirtiliyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Kırım lideri Sergey Aksyonov, saldırıda kaç kişinin öldüğünü söyledi?",
+        "options": [
+          "1",
+          "12",
+          "2",
+          "5"
+        ],
+        "answer": 2,
+        "explanation": "Özette, Aksyonov'un saldırıda 2 kişinin öldüğünü söylediği yazıyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Aleksey Batrakov maçın kaçıncı dakikasında oyundan çıktı?",
+        "options": [
+          "70",
+          "45",
+          "80",
+          "60"
+        ],
+        "answer": 0,
+        "explanation": "Özette Batrakov'un 70. dakikada oyundan çıktığı yazıyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
+      },
+      {
+        "question": "Rusya, Venezuela'yı hazırlık maçında kaç kaç yendi?",
+        "options": [
+          "3-0",
+          "1-0",
+          "1-1",
+          "2-0"
+        ],
+        "answer": 3,
+        "explanation": "Özette Rusya'nın Venezuela'yı 2-0 mağlup ettiği yazıyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
+      }
+    ]
+  }
+}

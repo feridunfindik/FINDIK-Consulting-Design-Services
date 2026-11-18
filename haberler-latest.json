@@ -1,51 +1,50 @@
 {
   "articles": [
     {
-      "cat": "🚨 Gündem",
-      "source": "Habertürk",
-      "summary": "İstanbul Cumhuriyet Başsavcılığının sermaye piyasasındaki işlemlere ilişkin yürüttüğü fon soruşturmasında 26 kişi gözaltına alındı. Emniyetteki işlemleri tamamlanan şüpheliler adliyeye sevk edildi; 7'si tutuklama talebiyle, 19'u adli kontrol istemiyle Sulh Ceza Hâkimliğine gönderildi.",
-      "time": "16 Kasım 22:53",
-      "title": "Fon soruşturmasında 7 tutuklama",
-      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815",
-      "img": "https://im.haberturk.com/l/2026/11/16/ver1794860632/3927815/jpg/1200x628"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "source": "TRT Haber",
-      "summary": "Endonezya'nın Tual kentinin 148 kilometre güneybatısında, yerin 68 kilometre derinliğinde 6,6 büyüklüğünde deprem meydana geldi. ABD Jeolojik Araştırma Merkezinin açıklamasına göre ilk aşamada tsunami uyarısı yapılmadı; henüz can ve mal kaybı bildirilmedi.",
-      "time": "17 Kasım 02:14",
-      "title": "Endonezya'da 6,6 büyüklüğünde deprem",
-      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2480000/deprem-2480656.jpg"
-    },
-    {
-      "cat": "💊 Sağlık",
-      "source": "Anadolu Ajansı",
-      "summary": "Sağlık Bakanı Kemal Memişoğlu, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi. Kısa sürede sözleşmelerin yapılacağını belirten Memişoğlu, Türkiye'nin kendi aşısını üreten ve dünyaya ulaştıran bir ülke olacağını ifade etti.",
-      "time": "16 Kasım 23:01",
-      "title": "Sağlık Bakanı Memişoğlu: Aşı reddini engellemek için 8 aşımızı yerli üreteceğiz",
-      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/16/thumbs_b_c_ba88047530a6d048f07ca671a804e152.jpg"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f4ce/live/59eafa00-e1c3-11f1-8a52-0b287ff76f43.jpg",
+      "cat": "🏛️ Siyaset",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3465/live/c09eaa30-e254-11f1-8199-439bbe0918ee.jpg",
       "source": "BBC Türkçe",
-      "summary": "Adli tıp uzmanı Profesör Michael Freeman, BBC Newsnight'a verdiği demeçte, cinsel suçtan hüküm giymiş Epstein'in otopsi fotoğraflarındaki izlerin cinayetle tutarlı olduğuna inandığını söyledi. Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
-      "time": "17 Kasım 00:30",
-      "title": "Adli tıp uzmanı: Otopsi fotoğrafları Epstein'in öldürüldüğünü gösteriyor",
-      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      "summary": "İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında Sözcü Medya Grubu'na operasyon düzenlendi. Sözcü TV ve sozcu.com.tr'nin bağlı bulunduğu Mega Ajans ve Reklamcılık Ticaret AŞ'ye TMSF kayyum olarak atandı. Aralarında Sözcü Medya Grubu yöneticilerinin de bulunduğu 4 kişi gözaltına alındı.",
+      "time": "17 Kasım 14:52",
+      "title": "Sözcü'ye operasyon: TV ve internet sitesine kayyum atandı, 4 kişi gözaltında",
+      "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
     },
     {
       "cat": "🌧️ Hava Durumu",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afab4e5c757abf656936cab.jpg",
+      "source": "Anadolu Ajansı",
+      "summary": "Van'ın Gevaş ilçesinde saat 18.57'de 4,3 büyüklüğünde deprem meydana geldi. AFAD'ın internet sitesinde yer alan bilgiye göre sarsıntının merkez üssü Van Gölü oldu. Depremin 13,61 kilometre derinlikte meydana geldiği belirlendi. Haberde hasar ya da can kaybına ilişkin bilgi yer almadı.",
+      "time": "17 Kasım 19:13",
+      "title": "Van'da 4,3 büyüklüğünde deprem",
+      "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/17/thumbs_b_c_da76d1d2d2ce8f228c441db652968241.jpg"
+    },
+    {
+      "cat": "💹 Ekonomi",
+      "source": "TRT Haber",
+      "summary": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, KOSGEB tarafından yürütülen Yeşil Sanayi Destek Programı kapsamında Sanayide Temiz ve Döngüsel Ekonomi Teklif Çağrısı ile KOBİ'lere 3 milyar liralık destek verileceğini açıkladı. Proje başına 7 milyon liraya kadar destek sağlanacak; destek oranı yüzde 70, proje süresi 12 ay olacak. Son başvuru tarihi 31 Ocak 2027.",
+      "time": "17 Kasım 22:42",
+      "title": "Yeşil dönüşüm için verilecek 3 milyar liralık destek paketinde son başvuru tarihi belli oldu",
+      "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1800000/turk-lirasi-para-1800470.jpg"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "source": "DW Türkçe",
+      "summary": "Ukrayna, Rusya'yı ilhak edilen Kırım Yarımadası'na bağlayan Kerç Köprüsü'nü gece saatlerinde vurdu. Köprüyü taşıyan kemerlerden biri Kerç Boğazı'na yıkıldı ve deniz trafiği engellendi. Ukrayna Devlet Başkanı Volodimir Zelenskiy saldırıyı doğrulayarak ordusunu kutladı. Rusya'nın atadığı Kırım lideri Sergey Aksyonov, saldırıda 2 kişinin öldüğünü söyledi. Kremlin ise hasarın sınırlı olduğunu ve tek şeritten trafiğin yeniden açıldığını duyurdu.",
+      "time": "17 Kasım 15:10",
+      "title": "Ukrayna, Putin'in prestij projesi olan Kerç Köprüsü'nü vurdu",
+      "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "cat": "⚽ Spor",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afca0e8925c456bddefa84b.jpg",
       "source": "Hürriyet",
-      "summary": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı; Balıkesir, Çanakkale, Hatay, İzmir, Kocaeli, Tekirdağ, Osmaniye, Bursa, Edirne, İstanbul, Kırklareli, Kahramanmaraş ve Yalova için sarı kodlu uyarı verildi. AKOM da İstanbul'da fırtınaya karşı dikkatli olunmasını istedi.",
-      "time": "16 Kasım 12:39",
-      "title": "Meteoroloji tarih verdi: Kuvvetli sağanak ve fırtına geri geliyor",
-      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      "summary": "Rusya'nın Venezuela'yı 2-0 mağlup ettiği hazırlık maçında Galatasaray'ın genç yıldızı Aleksey Batrakov sakatlandı. Karşılaşmaya ilk 11'de başlayan 21 yaşındaki futbolcu, rakibiyle girdiği ikili mücadelenin ardından yerde kaldı ve 70. dakikada yerini Matvey Kislyak'a bıraktı. Oyundan çıkarken durumu iyi görünen Batrakov'un Samsunspor maçında oynayıp oynayamayacağı yapılacak değerlendirmelerin ardından belli olacak.",
+      "time": "17 Kasım 21:46",
+      "title": "Galatasaray'da Batrakov endişesi! Maça devam edemedi",
+      "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
     }
   ],
-  "date": "2026-11-17",
-  "updated": "2026-11-17 02:44 TSİ"
+  "date": "2026-11-18",
+  "updated": "2026-11-18 02:46 TSİ"
 }

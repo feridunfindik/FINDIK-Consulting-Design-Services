@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-17",
-  "generated": "2026-11-17 08:46 JST",
+  "date": "2026-11-18",
+  "generated": "2026-11-18 08:49 JST",
   "questions": [
     {
-      "question": "Fon soruşturması kapsamında kaç kişi gözaltına alındı?",
+      "question": "Sözcü Medya Grubu'na düzenlenen operasyon hangi kurumun yürüttüğü soruşturma kapsamında gerçekleşti?",
       "options": [
-        "7",
-        "19",
-        "13",
-        "26"
-      ],
-      "answer": 3,
-      "explanation": "Özete göre soruşturma kapsamında 26 kişi gözaltına alındı.",
-      "source": "Habertürk",
-      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
-    },
-    {
-      "question": "Tutuklama talebiyle Sulh Ceza Hâkimliğine sevk edilen şüpheli sayısı kaçtır?",
-      "options": [
-        "7",
-        "19",
-        "13",
-        "26"
-      ],
-      "answer": 0,
-      "explanation": "7 şüpheli tutuklama talebiyle, 19 şüpheli ise adli kontrol istemiyle hâkimliğe gönderildi.",
-      "source": "Habertürk",
-      "url": "https://www.haberturk.com/gundem/son-dakika-fon-sorusturmasinda-7-tutuklama-3927815"
-    },
-    {
-      "question": "Deprem, Endonezya'nın hangi kentinin güneybatısında meydana geldi?",
-      "options": [
-        "Tual",
-        "Sumatra",
-        "Bali",
-        "Cakarta"
-      ],
-      "answer": 0,
-      "explanation": "Deprem, Tual kentinin 148 kilometre güneybatısında meydana geldi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
-    },
-    {
-      "question": "Depremin büyüklüğü kaç olarak kaydedildi?",
-      "options": [
-        "6,3",
-        "7,1",
-        "6,6",
-        "5,9"
+        "Ankara Cumhuriyet Başsavcılığı",
+        "İstanbul Emniyet Müdürlüğü",
+        "İstanbul Cumhuriyet Başsavcılığı",
+        "TMSF"
       ],
       "answer": 2,
-      "explanation": "Depremin büyüklüğü 6,6 olarak kayıtlara geçti.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/endonezyada-66-buyuklugunde-deprem-963470.html"
-    },
-    {
-      "question": "Sağlık Bakanı'na göre kaç aşı yerli üretilecek?",
-      "options": [
-        "8",
-        "10",
-        "5",
-        "6"
-      ],
-      "answer": 0,
-      "explanation": "Sağlık Bakanı Memişoğlu, 8 aşının yerli üretileceğini söyledi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
-    },
-    {
-      "question": "Yerli aşı üretiminin amacı nedir?",
-      "options": [
-        "Aşı reddini engellemek ve azaltmak",
-        "Aşı ihracatını artırmak",
-        "Aşı ithalatını durdurmak",
-        "Aşı fiyatlarını düşürmek"
-      ],
-      "answer": 0,
-      "explanation": "Bakan, aşı reddini engellemek ve azaltmak için 8 aşının yerli üretileceğini söyledi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-asi-reddini-engellemek-icin-8-asimizi-yerli-uretecegiz/4127100"
-    },
-    {
-      "question": "Epstein'in otopsi fotoğraflarını inceleyen adli tıp uzmanı kimdir?",
-      "options": [
-        "Profesör Michael Freeman",
-        "Profesör James Wilson",
-        "Doktor David Cohen",
-        "Profesör John Smith"
-      ],
-      "answer": 0,
-      "explanation": "Adli tıp uzmanı Profesör Michael Freeman, bulguların Epstein'in öldürüldüğünü gösterdiğini savundu.",
+      "explanation": "Özette, operasyonun İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında düzenlendiği belirtiliyor.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Freeman, Epstein'in vücudundaki izlerin neyle tutarlı olduğuna inandığını söyledi?",
+      "question": "Sözcü TV ve sozcu.com.tr'nin bağlı bulunduğu şirkete hangi kurum kayyum olarak atandı?",
       "options": [
-        "Doğal ölümle",
-        "Kazayla",
-        "Cinayetle",
-        "İntiharla"
+        "TMSF",
+        "SPK",
+        "RTÜK",
+        "BDDK"
+      ],
+      "answer": 0,
+      "explanation": "Özette, Mega Ajans ve Reklamcılık Ticaret AŞ'ye TMSF'nin kayyum olarak atandığı yazıyor.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Van'da meydana gelen depremin büyüklüğü kaç olarak ölçüldü?",
+      "options": [
+        "4,8",
+        "4,3",
+        "3,9",
+        "5,1"
+      ],
+      "answer": 1,
+      "explanation": "Özette depremin 4,3 büyüklüğünde olduğu belirtiliyor.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
+    },
+    {
+      "question": "Depremin merkez üssü neresi olarak açıklandı?",
+      "options": [
+        "Gevaş ilçe merkezi",
+        "Van Gölü",
+        "Erciş",
+        "Van şehir merkezi"
+      ],
+      "answer": 1,
+      "explanation": "AFAD'ın bilgisine göre sarsıntının merkez üssü Van Gölü oldu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
+    },
+    {
+      "question": "Yeşil dönüşüm desteği için son başvuru tarihi ne olarak açıklandı?",
+      "options": [
+        "31 Ocak 2027",
+        "31 Ocak 2026",
+        "31 Aralık 2026",
+        "15 Şubat 2027"
+      ],
+      "answer": 0,
+      "explanation": "Özette son başvuru tarihinin 31 Ocak 2027 olduğu belirtiliyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
+    },
+    {
+      "question": "Destek kapsamında proje başına en fazla ne kadar destek sağlanacak?",
+      "options": [
+        "70 milyon lira",
+        "12 milyon lira",
+        "7 milyon lira",
+        "3 milyon lira"
       ],
       "answer": 2,
-      "explanation": "Freeman, Epstein'in vücudundaki izlerin cinayetle tutarlı olduğuna inandığını söyledi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cjy5x3q1er9xo?at_medium=RSS&at_campaign=rss"
+      "explanation": "Özette proje başına 7 milyon liraya kadar destek sağlanacağı belirtiliyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
     },
     {
-      "question": "Meteoroloji hangi bölge için gece yarısından itibaren kuvvetli yağış uyarısı yaptı?",
+      "question": "Kerç Köprüsü'nü vuran ülke hangisidir?",
       "options": [
-        "Karadeniz",
-        "Akdeniz",
-        "Ege",
-        "Marmara"
+        "Ukrayna",
+        "Rusya",
+        "Belarus",
+        "Polonya"
       ],
-      "answer": 3,
-      "explanation": "Meteoroloji Genel Müdürlüğü, Marmara Bölgesi için gece yarısından itibaren kuvvetli yağış uyarısı yaptı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      "answer": 0,
+      "explanation": "Özette köprüyü Ukrayna'nın vurduğu belirtiliyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
     },
     {
-      "question": "Sarı kodlu uyarı verilen illerden biri hangisidir?",
+      "question": "Kırım lideri Sergey Aksyonov, saldırıda kaç kişinin öldüğünü söyledi?",
       "options": [
-        "Antalya",
-        "Konya",
-        "Ankara",
-        "İstanbul"
+        "1",
+        "12",
+        "2",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "Özette, Aksyonov'un saldırıda 2 kişinin öldüğünü söylediği yazıyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Aleksey Batrakov maçın kaçıncı dakikasında oyundan çıktı?",
+      "options": [
+        "70",
+        "45",
+        "80",
+        "60"
+      ],
+      "answer": 0,
+      "explanation": "Özette Batrakov'un 70. dakikada oyundan çıktığı yazıyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
+    },
+    {
+      "question": "Rusya, Venezuela'yı hazırlık maçında kaç kaç yendi?",
+      "options": [
+        "3-0",
+        "1-0",
+        "1-1",
+        "2-0"
       ],
       "answer": 3,
-      "explanation": "Sarı kodlu uyarı verilen iller arasında İstanbul da bulunuyor.",
+      "explanation": "Özette Rusya'nın Venezuela'yı 2-0 mağlup ettiği yazıyor.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/meteoroloji-tarih-verdi-kuvvetli-saganak-ve-firtina-geri-geliyor-gunlerce-surecek-istanbul-ve-ankara-dahil-bircok-ilde-alarm-43379786"
+      "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
     }
   ]
 }
