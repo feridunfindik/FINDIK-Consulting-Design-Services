@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-18",
-  "generated": "2026-11-18 07:46 JST",
+  "date": "2026-11-19",
+  "generated": "2026-11-19 07:47 JST",
   "questions": [
     {
-      "question": "クアッドの首脳会議が17日に開かれた都市はどこですか。",
+      "question": "この地震のマグニチュードはどれですか。",
       "options": [
-        "東京",
-        "マニラ",
-        "シドニー",
-        "北京"
+        "6.0",
+        "5.5",
+        "4.7",
+        "5.7"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、地震のマグニチュードは5.7でした。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6603094?source=rss"
+    },
+    {
+      "question": "震度5弱を観測した市町村はいくつですか。",
+      "options": [
+        "5つ",
+        "4つ",
+        "7つ",
+        "3つ"
+      ],
+      "answer": 0,
+      "explanation": "要約によると、水俣市や芦北町など5つの市町村で震度5弱を観測しました。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6603094?source=rss"
+    },
+    {
+      "question": "高市首相はプーチン大統領とどれくらい意見交換しましたか。",
+      "options": [
+        "約10分",
+        "約1時間",
+        "約3時間",
+        "約30分"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、約30分間、意見交換しました。",
+      "source": "読売新聞",
+      "url": "https://news.livedoor.com/article/detail/32849226/"
+    },
+    {
+      "question": "この対話が「初めて」なのは、どんな点ですか。",
+      "options": [
+        "APECの歓迎夕食会の後、両国の首脳が直接対話するのは初めて",
+        "18日夜に、両国の首脳が直接対話するのは初めて",
+        "中国・深センで、両国の首脳が直接対話するのは初めて",
+        "ロシアによるウクライナ侵略の後、両国の首脳が直接対話するのは初めて"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、ロシアによるウクライナ侵略の後、両国の首脳が直接対話するのは初めてです。",
+      "source": "読売新聞",
+      "url": "https://news.livedoor.com/article/detail/32849226/"
+    },
+    {
+      "question": "政府案の5年間の防衛費はどれくらいですか。",
+      "options": [
+        "60兆円から70兆円台",
+        "50兆円から60兆円台",
+        "40兆円から50兆円台",
+        "70兆円から80兆円台"
       ],
       "answer": 1,
-      "explanation": "首脳会議は17日、フィリピンのマニラで開かれました。",
-      "source": "毎日新聞",
-      "url": "https://news.yahoo.co.jp/articles/71338196bd4a0b72a7c0d806f4f2290c15c75783"
+      "explanation": "要約によると、政府案は5年間で50兆円から60兆円台です。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/fcad0d69883dd764dbef1fdaa6cc3c23222a0d21"
     },
     {
-      "question": "共同文書で深刻な懸念が示されたのは何ですか。",
+      "question": "防衛省がはじめに必要だと試算したのはどれくらいですか。",
       "options": [
-        "輸出規制などによる経済的な圧力",
-        "首脳会議の開催の延期",
-        "重要な鉱物の価格の上昇",
-        "供給網の強化"
+        "80兆円から90兆円規模",
+        "60兆円から70兆円規模",
+        "50兆円から60兆円台",
+        "70兆円から80兆円規模"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、防衛省がはじめに必要だと試算したのは70兆円から80兆円規模でした。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/fcad0d69883dd764dbef1fdaa6cc3c23222a0d21"
+    },
+    {
+      "question": "情報が漏れたのは何件ですか。",
+      "options": [
+        "238万3073件",
+        "238万3072件",
+        "138万3073件",
+        "338万3073件"
       ],
       "answer": 0,
-      "explanation": "輸出規制などによる経済的な圧力に深刻な懸念を示す共同文書が発表されました。",
-      "source": "毎日新聞",
-      "url": "https://news.yahoo.co.jp/articles/71338196bd4a0b72a7c0d806f4f2290c15c75783"
+      "explanation": "要約によると、238万3073件の利用者の情報が漏れました。",
+      "source": "Ｊリーグ",
+      "url": "https://www.jleague.jp/news/article/35384/"
     },
     {
-      "question": "10月の誤った緊急地震速報では、地震のマグニチュードはいくつと伝えられましたか。",
+      "question": "漏れた情報に含まれていないものはどれですか。",
       "options": [
-        "5.9",
-        "6.9",
-        "7.9",
-        "9.9"
+        "住んでいる都道府県",
+        "性別",
+        "生年月日",
+        "パスワードやクレジットカードの情報"
       ],
       "answer": 3,
-      "explanation": "10月の速報では、千島列島でマグニチュード9.9の地震が起きたと伝えられました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1154226?obtp_src=FNNjp_AR_1&obOrigUrl=true"
+      "explanation": "要約によると、パスワードやクレジットカードの情報は漏れた情報に含まれていません。",
+      "source": "Ｊリーグ",
+      "url": "https://www.jleague.jp/news/article/35384/"
     },
     {
-      "question": "実際に起きた地震の震源はどこ付近でしたか。",
+      "question": "新しいキャラクターに選ばれたのはどれですか。",
       "options": [
-        "東海地方",
-        "北海道付近",
-        "千島列島",
-        "カムチャツカ半島付近"
+        "紫色のウサギの「A案」",
+        "紫色のペンギンの「B案」",
+        "緑色のウサギの「B案」",
+        "紫色のウサギの「B案」"
       ],
       "answer": 3,
-      "explanation": "実際はカムチャツカ半島付近のマグニチュード6.9の地震でした。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1154226?obtp_src=FNNjp_AR_1&obOrigUrl=true"
-    },
-    {
-      "question": "漏れた可能性がある顧客情報は、最大でおよそ何口座分ですか。",
-      "options": [
-        "100万口座分",
-        "1億口座分",
-        "447万口座分",
-        "1125万口座分"
-      ],
-      "answer": 3,
-      "explanation": "最大でおよそ1125万口座分の顧客情報が漏れた可能性があると発表しました。",
+      "explanation": "要約によると、3つの候補の中から、紫色のウサギの「B案」が選ばれました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003275/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003307/"
     },
     {
-      "question": "漏えいが確認されていないのはどれですか。",
+      "question": "「B案」は何票集めましたか。",
       "options": [
-        "顧客情報",
-        "金融資産の情報",
-        "氏名や住所",
-        "パスワードや暗証番号"
+        "166万4399票",
+        "66万4399票",
+        "86万151票",
+        "86万152票"
       ],
       "answer": 3,
-      "explanation": "パスワードや暗証番号の漏えいは確認していないとしています。",
+      "explanation": "要約によると、「B案」は86万152票を集めました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003275/"
-    },
-    {
-      "question": "過労死を防ぐための対策を伝える授業が開かれたのはどこですか。",
-      "options": [
-        "フィリピンのマニラ",
-        "京都市内の公園",
-        "大阪市の高校",
-        "東京・国分寺市の大学"
-      ],
-      "answer": 3,
-      "explanation": "17日、東京・国分寺市の大学で、過労死を防ぐための対策を伝える授業が開かれました。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261117de77271"
-    },
-    {
-      "question": "授業で登壇した遺族が訴えた言葉はどれですか。",
-      "options": [
-        "「仕事は命より大切だ」",
-        "「休むことはいけない」",
-        "「働くことは楽しい」",
-        "「命より大切な仕事はない」"
-      ],
-      "answer": 3,
-      "explanation": "遺族は「命より大切な仕事はない」と訴えました。",
-      "source": "NHKニュース",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261117de77271"
-    },
-    {
-      "question": "藤浪投手のNPB通算勝利数はいくつですか。",
-      "options": [
-        "100勝",
-        "32勝",
-        "58勝",
-        "17勝"
-      ],
-      "answer": 2,
-      "explanation": "藤浪投手はNPB通算58勝です。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602979?source=rss"
-    },
-    {
-      "question": "ひじの手術で離脱した投手に含まれないのはだれですか。",
-      "options": [
-        "森友哉捕手",
-        "曽谷投手",
-        "宮城投手",
-        "山下投手"
-      ],
-      "answer": 0,
-      "explanation": "宮城投手、山下投手、曽谷投手がそろってひじの手術で離脱しました。森友哉捕手は藤浪投手の高校時代の相棒です。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6602979?source=rss"
+      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003307/"
     }
   ]
 }
