@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-18",
-  "generated": "2026-11-18 08:49 JST",
+  "date": "2026-11-19",
+  "generated": "2026-11-19 08:48 JST",
   "questions": [
     {
-      "question": "Sözcü Medya Grubu'na düzenlenen operasyon hangi kurumun yürüttüğü soruşturma kapsamında gerçekleşti?",
+      "question": "CHP'nin 38. Olağan Kurultayı'na ilişkin davada kaç sanık hapis cezasına çarptırıldı?",
       "options": [
-        "Ankara Cumhuriyet Başsavcılığı",
-        "İstanbul Emniyet Müdürlüğü",
-        "İstanbul Cumhuriyet Başsavcılığı",
-        "TMSF"
+        "12 sanık",
+        "6 sanık",
+        "9 sanık",
+        "3 sanık"
       ],
       "answer": 2,
-      "explanation": "Özette, operasyonun İstanbul Cumhuriyet Başsavcılığı'nın yürüttüğü soruşturma kapsamında düzenlendiği belirtiliyor.",
+      "explanation": "Mahkeme, Ekrem İmamoğlu dahil 9 sanığa hapis cezası verdi.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Sözcü TV ve sozcu.com.tr'nin bağlı bulunduğu şirkete hangi kurum kayyum olarak atandı?",
+      "question": "Hapis cezası alan sanıklar ne kadar süreyle cezalandırıldı?",
       "options": [
-        "TMSF",
-        "SPK",
-        "RTÜK",
-        "BDDK"
+        "5 yıl",
+        "3 yıl",
+        "2 yıl 1 ay",
+        "1 yıl"
       ],
-      "answer": 0,
-      "explanation": "Özette, Mega Ajans ve Reklamcılık Ticaret AŞ'ye TMSF'nin kayyum olarak atandığı yazıyor.",
+      "answer": 2,
+      "explanation": "9 sanık 2 yıl 1'er ay hapis cezasına çarptırıldı.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cmqlq51yvq26o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Van'da meydana gelen depremin büyüklüğü kaç olarak ölçüldü?",
+      "question": "Olumsuz hava koşulları nedeniyle BUDO'nun bugünkü kaç seferi iptal edildi?",
       "options": [
-        "4,8",
-        "4,3",
-        "3,9",
-        "5,1"
-      ],
-      "answer": 1,
-      "explanation": "Özette depremin 4,3 büyüklüğünde olduğu belirtiliyor.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
-    },
-    {
-      "question": "Depremin merkez üssü neresi olarak açıklandı?",
-      "options": [
-        "Gevaş ilçe merkezi",
-        "Van Gölü",
-        "Erciş",
-        "Van şehir merkezi"
-      ],
-      "answer": 1,
-      "explanation": "AFAD'ın bilgisine göre sarsıntının merkez üssü Van Gölü oldu.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/vanda-4-3-buyuklugunde-deprem/4128156"
-    },
-    {
-      "question": "Yeşil dönüşüm desteği için son başvuru tarihi ne olarak açıklandı?",
-      "options": [
-        "31 Ocak 2027",
-        "31 Ocak 2026",
-        "31 Aralık 2026",
-        "15 Şubat 2027"
-      ],
-      "answer": 0,
-      "explanation": "Özette son başvuru tarihinin 31 Ocak 2027 olduğu belirtiliyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
-    },
-    {
-      "question": "Destek kapsamında proje başına en fazla ne kadar destek sağlanacak?",
-      "options": [
-        "70 milyon lira",
-        "12 milyon lira",
-        "7 milyon lira",
-        "3 milyon lira"
+        "16 sefer",
+        "10 sefer",
+        "12 sefer",
+        "8 sefer"
       ],
       "answer": 2,
-      "explanation": "Özette proje başına 7 milyon liraya kadar destek sağlanacağı belirtiliyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/ekonomi/yesil-donusum-icin-verilecek-3-milyar-liralik-destek-paketinde-son-basvuru-tarihi-belli-oldu-963605.html"
+      "explanation": "BUDO, olumsuz hava koşulları nedeniyle bugünkü 12 seferini iptal etti.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855"
     },
     {
-      "question": "Kerç Köprüsü'nü vuran ülke hangisidir?",
+      "question": "Bursa (Mudanya)-İstanbul (Kabataş) hattında iptal edilen sefer saatlerinden biri hangisidir?",
       "options": [
-        "Ukrayna",
-        "Rusya",
-        "Belarus",
-        "Polonya"
-      ],
-      "answer": 0,
-      "explanation": "Özette köprüyü Ukrayna'nın vurduğu belirtiliyor.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Kırım lideri Sergey Aksyonov, saldırıda kaç kişinin öldüğünü söyledi?",
-      "options": [
-        "1",
-        "12",
-        "2",
-        "5"
-      ],
-      "answer": 2,
-      "explanation": "Özette, Aksyonov'un saldırıda 2 kişinin öldüğünü söylediği yazıyor.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/ukrayna-putin-in-prestij-projesi-olan-kerç-köprüsü-nü-vurdu/a-79969665?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Aleksey Batrakov maçın kaçıncı dakikasında oyundan çıktı?",
-      "options": [
-        "70",
-        "45",
-        "80",
-        "60"
-      ],
-      "answer": 0,
-      "explanation": "Özette Batrakov'un 70. dakikada oyundan çıktığı yazıyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
-    },
-    {
-      "question": "Rusya, Venezuela'yı hazırlık maçında kaç kaç yendi?",
-      "options": [
-        "3-0",
-        "1-0",
-        "1-1",
-        "2-0"
+        "20.00",
+        "14.00",
+        "12.00",
+        "07.00"
       ],
       "answer": 3,
-      "explanation": "Özette Rusya'nın Venezuela'yı 2-0 mağlup ettiği yazıyor.",
+      "explanation": "Mudanya-İstanbul hattında 07.00, 09.30, 16.00 ve 19.00 seferleri iptal edildi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855"
+    },
+    {
+      "question": "Trump, Putin ve Şi Cinping'in üçlü zirvesi hangi şehirde yapılıyor?",
+      "options": [
+        "Şanghay",
+        "Pekin",
+        "Moskova",
+        "Shenzhen"
+      ],
+      "answer": 3,
+      "explanation": "Üç lider bugün Çin'in Shenzhen kentinde bir araya geliyor.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Zirvede ele alınacak konulardan biri hangisidir?",
+      "options": [
+        "Olimpiyat hazırlıkları",
+        "Avrupa Birliği üyeliği",
+        "Nükleer silahların azaltılması",
+        "Uzay programı"
+      ],
+      "answer": 2,
+      "explanation": "Görüşmede nükleer silahların azaltılması ve İran konusu ele alınacak.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Bayern Münih, Kim Min-Jae için ne kadar bonservis bedeli talep ediyor?",
+      "options": [
+        "30 milyon euro",
+        "50 milyon euro",
+        "20 milyon euro",
+        "9 milyon euro"
+      ],
+      "answer": 2,
+      "explanation": "Bayern Münih, Kim Min-Jae için 20 milyon euro bonservis bedeli talep ediyor.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/galatasarayda-batrakov-endisesi-maca-devam-edemedi-43381767"
+      "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
+    },
+    {
+      "question": "Kim Min-Jae, 2023 yazında Bayern Münih'e kaç euroya transfer edildi?",
+      "options": [
+        "20 milyon euro",
+        "30 milyon euro",
+        "50 milyon euro",
+        "40 milyon euro"
+      ],
+      "answer": 2,
+      "explanation": "Alman ekibi, 2023 yazında 50 milyon euroya transfer ettiği oyuncuyu kadro rotasyonunda üçüncü stoper olarak görüyor.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
+    },
+    {
+      "question": "BIST 100 endeksi günü yüzde kaç değer kaybederek kapattı?",
+      "options": [
+        "Yüzde 2,54",
+        "Yüzde 1,57",
+        "Yüzde 4,06",
+        "Yüzde 2,64"
+      ],
+      "answer": 1,
+      "explanation": "BIST 100 endeksi günü yüzde 1,57 değer kaybederek 11.477,41 puandan tamamladı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html"
+    },
+    {
+      "question": "Borsada toplam işlem hacmi ne kadar oldu?",
+      "options": [
+        "107,7 milyar lira",
+        "87,7 milyar lira",
+        "97,7 milyar lira",
+        "77,7 milyar lira"
+      ],
+      "answer": 2,
+      "explanation": "Endeks önceki kapanışa göre 183,5 puan azalırken toplam işlem hacmi 97,7 milyar lira oldu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html"
     }
   ]
 }

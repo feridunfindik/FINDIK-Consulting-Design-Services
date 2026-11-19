@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-19",
+  "news": {
+    "articles": [
+      {
+        "cat": "🏛️ Siyaset",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/481c/live/77477590-4018-11f0-b6e6-4ddb91039da1.jpg",
+        "source": "BBC Türkçe",
+        "summary": "Ankara 26. Asliye Ceza Mahkemesi, CHP'nin 38. Olağan Kurultayı'ndaki usulsüzlük iddialarına ilişkin davada kararını verdi. Ekrem İmamoğlu dahil 9 sanık, oylamaya hile karıştırma suçundan 2 yıl 1'er ay hapis cezasına çarptırıldı ve haklarında siyasi yasak kararı verildi. İzmir Büyükşehir Belediye Başkanı Cemil Tugay'ın da aralarında olduğu 3 sanık ise beraat etti.",
+        "time": "18 Kasım 22:27",
+        "title": "CHP kurultay davasında karar: Ekrem İmamoğlu dahil 9 kişiye hapis cezası ve siyaset yasağı",
+        "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌧️ Hava Durumu",
+        "source": "Anadolu Ajansı",
+        "summary": "Bursa Deniz Otobüsleri (BUDO), olumsuz hava koşulları nedeniyle bugünkü 12 seferini iptal etti. Bursa (Mudanya)-İstanbul (Kabataş) hattında 07.00, 09.30, 16.00 ve 19.00 seferleri ile İstanbul-Bursa hattında 08.00, 11.30, 16.30 ve 19.30 seferleri yapılamayacak. Armutlu hattındaki 4 sefer de aynı gerekçeyle iptal edildi.",
+        "time": "19 Kasım 00:17",
+        "title": "BUDO'nun bugünkü 12 seferi iptal edildi",
+        "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/19/thumbs_b_c_0c999d63939dbabc00d97e3e763a5740.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "DW Türkçe",
+        "summary": "ABD Başkanı Donald Trump, Rusya Devlet Başkanı Vladimir Putin ve Çin Devlet Başkanı Şi Cinping bugün Çin'in Shenzhen kentinde ilk kez üçlü zirvede bir araya geliyor. Görüşmede nükleer silahların azaltılması ve İran konusu ele alınacak; Trump, Ukrayna savaşının bitirilmesini de konuşmayı planladığını söyledi. Analistler, tarihi buluşmaya rağmen somut ilerleme beklemiyor.",
+        "time": "18 Kasım 12:10",
+        "title": "Yeni Yalta Konferansı mı? Şi, Putin ve Trump'tan ilk 3'lü zirve",
+        "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "cat": "⚽ Spor",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afe18d02356f0a3a15a3315.jpg",
+        "source": "Hürriyet",
+        "summary": "Bayern Münih, Beşiktaş, Fenerbahçe ve Galatasaray'ın istediği Güney Koreli stoper Kim Min-Jae için 20 milyon euro bonservis bedeli talep ediyor. Alman ekibi, 2023 yazında 50 milyon euroya transfer ettiği 30 yaşındaki oyuncuyu kadro rotasyonunda üçüncü stoper olarak görüyor; tatmin edici bir teklif gelmezse ayrılığa izin vermeyecek. Min-Jae'nin Bayern'de net 9 milyon euro maaşı bulunuyor.",
+        "time": "19 Kasım 00:31",
+        "title": "Beşiktaş, Fenerbahçe ve Galatasaray'ın istediği Kim Min-Jae'nin bonservis bedeli belli oldu!",
+        "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "source": "TRT Haber",
+        "summary": "Borsa İstanbul'da BIST 100 endeksi günü yüzde 1,57 değer kaybederek 11.477,41 puandan tamamladı. Endeks önceki kapanışa göre 183,5 puan azalırken toplam işlem hacmi 97,7 milyar lira oldu. Bankacılık endeksi yüzde 2,54, holding endeksi yüzde 2,64 değer kaybetti; en fazla kaybettiren sektör yüzde 4,06 ile madencilik oldu.",
+        "time": "18 Kasım 18:23",
+        "title": "Borsa günü düşüşle kapattı",
+        "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2392000/borsa-istanbul-aa-2392319.jpg"
+      }
+    ],
+    "date": "2026-11-19",
+    "updated": "2026-11-19 02:46 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-19",
+    "generated": "2026-11-19 08:48 JST",
+    "questions": [
+      {
+        "question": "CHP'nin 38. Olağan Kurultayı'na ilişkin davada kaç sanık hapis cezasına çarptırıldı?",
+        "options": [
+          "12 sanık",
+          "6 sanık",
+          "9 sanık",
+          "3 sanık"
+        ],
+        "answer": 2,
+        "explanation": "Mahkeme, Ekrem İmamoğlu dahil 9 sanığa hapis cezası verdi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Hapis cezası alan sanıklar ne kadar süreyle cezalandırıldı?",
+        "options": [
+          "5 yıl",
+          "3 yıl",
+          "2 yıl 1 ay",
+          "1 yıl"
+        ],
+        "answer": 2,
+        "explanation": "9 sanık 2 yıl 1'er ay hapis cezasına çarptırıldı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Olumsuz hava koşulları nedeniyle BUDO'nun bugünkü kaç seferi iptal edildi?",
+        "options": [
+          "16 sefer",
+          "10 sefer",
+          "12 sefer",
+          "8 sefer"
+        ],
+        "answer": 2,
+        "explanation": "BUDO, olumsuz hava koşulları nedeniyle bugünkü 12 seferini iptal etti.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855"
+      },
+      {
+        "question": "Bursa (Mudanya)-İstanbul (Kabataş) hattında iptal edilen sefer saatlerinden biri hangisidir?",
+        "options": [
+          "20.00",
+          "14.00",
+          "12.00",
+          "07.00"
+        ],
+        "answer": 3,
+        "explanation": "Mudanya-İstanbul hattında 07.00, 09.30, 16.00 ve 19.00 seferleri iptal edildi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855"
+      },
+      {
+        "question": "Trump, Putin ve Şi Cinping'in üçlü zirvesi hangi şehirde yapılıyor?",
+        "options": [
+          "Şanghay",
+          "Pekin",
+          "Moskova",
+          "Shenzhen"
+        ],
+        "answer": 3,
+        "explanation": "Üç lider bugün Çin'in Shenzhen kentinde bir araya geliyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Zirvede ele alınacak konulardan biri hangisidir?",
+        "options": [
+          "Olimpiyat hazırlıkları",
+          "Avrupa Birliği üyeliği",
+          "Nükleer silahların azaltılması",
+          "Uzay programı"
+        ],
+        "answer": 2,
+        "explanation": "Görüşmede nükleer silahların azaltılması ve İran konusu ele alınacak.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Bayern Münih, Kim Min-Jae için ne kadar bonservis bedeli talep ediyor?",
+        "options": [
+          "30 milyon euro",
+          "50 milyon euro",
+          "20 milyon euro",
+          "9 milyon euro"
+        ],
+        "answer": 2,
+        "explanation": "Bayern Münih, Kim Min-Jae için 20 milyon euro bonservis bedeli talep ediyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
+      },
+      {
+        "question": "Kim Min-Jae, 2023 yazında Bayern Münih'e kaç euroya transfer edildi?",
+        "options": [
+          "20 milyon euro",
+          "30 milyon euro",
+          "50 milyon euro",
+          "40 milyon euro"
+        ],
+        "answer": 2,
+        "explanation": "Alman ekibi, 2023 yazında 50 milyon euroya transfer ettiği oyuncuyu kadro rotasyonunda üçüncü stoper olarak görüyor.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
+      },
+      {
+        "question": "BIST 100 endeksi günü yüzde kaç değer kaybederek kapattı?",
+        "options": [
+          "Yüzde 2,54",
+          "Yüzde 1,57",
+          "Yüzde 4,06",
+          "Yüzde 2,64"
+        ],
+        "answer": 1,
+        "explanation": "BIST 100 endeksi günü yüzde 1,57 değer kaybederek 11.477,41 puandan tamamladı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html"
+      },
+      {
+        "question": "Borsada toplam işlem hacmi ne kadar oldu?",
+        "options": [
+          "107,7 milyar lira",
+          "87,7 milyar lira",
+          "97,7 milyar lira",
+          "77,7 milyar lira"
+        ],
+        "answer": 2,
+        "explanation": "Endeks önceki kapanışa göre 183,5 puan azalırken toplam işlem hacmi 97,7 milyar lira oldu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html"
+      }
+    ]
+  }
+}
