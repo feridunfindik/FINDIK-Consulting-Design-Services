@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eiken Grade 2 Writing Coach | Nov 28 Prep</title>
+  <!-- Load Inter Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Smooth scrolling and subtle custom polish */
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .card-shadow {
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    }
+    .badge-pulse {
+      animation: pulse-soft 2.5s infinite;
+    }
+    @keyframes pulse-soft {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.72; }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-100 selection:text-brand-900 pb-16">
+
+  <!-- Toast Notification Banner (No alert() used) -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-slate-900 text-white px-4 py-3 rounded-xl shadow-lg flex items-center gap-2.5 text-sm font-medium border border-slate-700">
+      <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+      </svg>
+      <span id="toast-message">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-brand-600 text-white flex items-center justify-center font-extrabold text-lg shadow-sm">
+          E2
+        </div>
+        <div>
+          <span class="font-bold text-slate-900 tracking-tight block leading-none">Eiken Grade 2 Coach</span>
+          <span class="text-xs text-slate-500 font-medium">80–100 Word Opinion Essay Guide</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#template" class="hover:text-brand-600 transition-colors">1. Formula</a>
+        <a href="#makeover" class="hover:text-brand-600 transition-colors">2. Before & After</a>
+        <a href="#sandbox" class="hover:text-brand-600 transition-colors">3. Practice Coach</a>
+        <a href="#checklist" class="hover:text-brand-600 transition-colors">4. Trap Points</a>
+      </div>
+
+      <a href="#sandbox" class="bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-xl transition shadow-sm">
+        Start Writing
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section & Live Exam Countdown -->
+  <header class="bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 text-white py-10 sm:py-14 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+      <div class="max-w-xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-brand-200 text-xs font-semibold mb-4">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 badge-pulse"></span>
+          Target Exam Date: November 28, 2026
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-3">
+          Master Eiken Grade 2 Writing in 4 Simple Steps.
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          You don't need fancy vocabulary to pass Grade 2. You just need a clear opinion, two solid reasons with examples, and <strong>80–100 words</strong>. Follow the template below and practice daily.
+        </p>
+      </div>
+
+      <!-- Countdown Widget -->
+      <div class="w-full lg:w-auto bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-5 sm:p-6 shrink-0">
+        <div class="text-xs font-semibold uppercase tracking-wider text-brand-200 mb-3 text-center">
+          Countdown to Nov 28, 2026
+        </div>
+        <div class="grid grid-cols-4 gap-2.5 sm:gap-3 text-center" id="countdown-grid">
+          <div class="bg-slate-900/60 rounded-xl px-3 py-2.5 border border-white/10">
+            <div id="cd-days" class="text-2xl sm:text-3xl font-extrabold text-white tabular-nums">--</div>
+            <div class="text-[11px] uppercase tracking-wider text-slate-400 mt-0.5">Days</div>
+          </div>
+          <div class="bg-slate-900/60 rounded-xl px-3 py-2.5 border border-white/10">
+            <div id="cd-hours" class="text-2xl sm:text-3xl font-extrabold text-white tabular-nums">--</div>
+            <div class="text-[11px] uppercase tracking-wider text-slate-400 mt-0.5">Hours</div>
+          </div>
+          <div class="bg-slate-900/60 rounded-xl px-3 py-2.5 border border-white/10">
+            <div id="cd-mins" class="text-2xl sm:text-3xl font-extrabold text-white tabular-nums">--</div>
+            <div class="text-[11px] uppercase tracking-wider text-slate-400 mt-0.5">Mins</div>
+          </div>
+          <div class="bg-slate-900/60 rounded-xl px-3 py-2.5 border border-white/10">
+            <div id="cd-secs" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 tabular-nums">--</div>
+            <div class="text-[11px] uppercase tracking-wider text-slate-400 mt-0.5">Secs</div>
+          </div>
+        </div>
+        <p id="cd-status" class="text-xs text-center text-brand-200 mt-3 font-medium">
+          Every 20-minute practice essay builds confidence!
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 space-y-12 mt-10">
+
+    <!-- SECTION 1: THE GOLDEN 4-PARAGRAPH TEMPLATE -->
+    <section id="template" class="scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 1: The Winning Formula</span>
+          <h2 class="text-2xl font-bold text-slate-900">The Golden 4-Paragraph Template</h2>
+        </div>
+        <button onclick="copyText(fullSkeletonTemplate, 'Full 4-paragraph skeleton copied!')" class="self-start sm:self-auto inline-flex items-center gap-1.5 text-xs font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-3.5 py-2 rounded-xl shadow-sm transition">
+          <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          Copy Blank Skeleton
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Paragraph 1 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 text-xs font-bold">
+                Paragraph 1 · Introduction
+              </span>
+              <span class="text-xs font-medium text-slate-400">~18–22 words</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">
+              State your opinion clearly (do not copy the question word-for-word), then say you have two reasons.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-sm text-slate-800 space-y-1.5 font-medium">
+              <p><span class="text-blue-600 font-bold">I think that</span> [topic is good / bad].</p>
+              <p><span class="text-blue-600 font-bold">I have two reasons for this.</span></p>
+            </div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Or: <em>"I do not think that..."</em></span>
+            <button onclick="copyText('I do not think that [topic]. I have two reasons for this.', 'Intro starter copied!')" class="text-brand-600 hover:text-brand-700 font-semibold">Copy</button>
+          </div>
+        </div>
+
+        <!-- Paragraph 2 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">
+                Paragraph 2 · Reason 1 + Example
+              </span>
+              <span class="text-xs font-medium text-slate-400">~25–30 words</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">
+              Use <strong>POINT #1</strong> in your first sentence. Add a second sentence with an example or explanation.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-sm text-slate-800 space-y-1.5 font-medium">
+              <p><span class="text-emerald-600 font-bold">First,</span> [Reason 1 using Point #1].</p>
+              <p><span class="text-emerald-600 font-bold">For example,</span> [specific detail or result].</p>
+            </div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Detail starter: <em>"For example," / "This is because"</em></span>
+            <button onclick="copyText('First, [reason 1]. For example, [supporting detail].', 'Body 1 starter copied!')" class="text-brand-600 hover:text-brand-700 font-semibold">Copy</button>
+          </div>
+        </div>
+
+        <!-- Paragraph 3 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-purple-50 text-purple-700 text-xs font-bold">
+                Paragraph 3 · Reason 2 + Detail
+              </span>
+              <span class="text-xs font-medium text-slate-400">~25–30 words</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">
+              Use <strong>POINT #2</strong> in your first sentence. Follow up with why this matters.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-sm text-slate-800 space-y-1.5 font-medium">
+              <p><span class="text-purple-600 font-bold">Second,</span> [Reason 2 using Point #2].</p>
+              <p><span class="text-purple-600 font-bold">This is because</span> [explanation / result].</p>
+            </div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Or: <em>"In addition," / "As a result,"</em></span>
+            <button onclick="copyText('Second, [reason 2]. This is because [explanation].', 'Body 2 starter copied!')" class="text-brand-600 hover:text-brand-700 font-semibold">Copy</button>
+          </div>
+        </div>
+
+        <!-- Paragraph 4 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 text-xs font-bold">
+                Paragraph 4 · Conclusion
+              </span>
+              <span class="text-xs font-medium text-slate-400">~15–18 words</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">
+              Repeat your opinion using slightly different words (e.g., change <em>I think</em> to <em>I believe</em> or <em>I disagree</em>).
+            </p>
+            <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-sm text-slate-800 space-y-1.5 font-medium">
+              <p><span class="text-amber-700 font-bold">For these reasons,</span> I believe that [restate opinion].</p>
+            </div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Keep it 1 strong sentence!</span>
+            <button onclick="copyText('For these reasons, I disagree with the idea that [topic].', 'Conclusion starter copied!')" class="text-brand-600 hover:text-brand-700 font-semibold">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: BEFORE & AFTER ESSAY MAKEOVER -->
+    <section id="makeover" class="scroll-mt-20">
+      <div class="mb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 2: See the Difference</span>
+        <h2 class="text-2xl font-bold text-slate-900">Your Draft vs. Passing Model Essay</h2>
+        <p class="text-sm text-slate-600 mt-1">
+          Prompt: <em>"Some people say that online shopping is better than shopping at physical stores. Do you agree?"</em>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Before Card -->
+        <div class="bg-white rounded-2xl border border-rose-200/90 card-shadow overflow-hidden flex flex-col">
+          <div class="bg-rose-50 px-5 py-3.5 border-b border-rose-100 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+              <h3 class="font-bold text-rose-950 text-sm">First Draft (15 mins)</h3>
+            </div>
+            <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 text-xs font-bold">52 Words (Too Short)</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/70 text-sm leading-relaxed text-slate-700">
+              I don't agree. I have two <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Comma splice: Use a period instead of a comma">reasons, first</span> of all, <span class="bg-rose-100 text-rose-900 px-1 rounded line-through" title="Unfinished crossed-out word">I th</span> online shops don't have the fun of shopping. Second of all, when you shop in <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Use 'an' before vowel sound">a online</span> shop you lose track of what you <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Comma splice: Use a period before 'For these reasons'">bought, for</span> these reasons, <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Grammar: Say 'I disagree that' or 'I do not think that'">I don't agree to</span> online <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: shopping (double p)">shoping</span> is better than shopping at <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: physical (single l)">physicall</span> shops.
+            </div>
+
+            <div class="space-y-2 text-xs text-slate-600">
+              <div class="font-bold text-slate-800 uppercase tracking-wider">What we fixed:</div>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span><strong>Length:</strong> 52 words needs ~35 more words (add 1 detail sentence to each reason).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span><strong>Layout:</strong> Written as 1 big block with comma splices instead of 4 separated paragraphs.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span><strong>Spelling & Grammar:</strong> <em>a online</em> &rarr; <strong>an online</strong>; <em>shoping</em> &rarr; <strong>shopping</strong>; <em>physicall</em> &rarr; <strong>physical</strong>.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- After Card -->
+        <div class="bg-white rounded-2xl border border-emerald-200/90 card-shadow overflow-hidden flex flex-col">
+          <div class="bg-emerald-50 px-5 py-3.5 border-b border-emerald-100 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+              <h3 class="font-bold text-emerald-950 text-sm">Passing Model Revision</h3>
+            </div>
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">87 Words (Sweet Spot!)</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/70 text-sm leading-relaxed text-slate-800 space-y-3">
+              <p>
+                <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded mr-1">Intro</span>
+                I do not think that online shopping is better than shopping at physical stores. I have two reasons for this.
+              </p>
+              <p>
+                <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded mr-1">Reason 1</span>
+                First, online shops do not have the fun of shopping. <strong>At physical stores, people can walk around and see new items in person.</strong>
+              </p>
+              <p>
+                <span class="text-[10px] font-bold uppercase tracking-wider bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded mr-1">Reason 2</span>
+                Second, when you shop at an online store, it is easy to lose track of what you bought. <strong>You might order too many things without noticing.</strong>
+              </p>
+              <p>
+                <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded mr-1">Conclusion</span>
+                For these reasons, I disagree with the idea that online shopping is better than physical shopping.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-xs text-slate-600">
+              <div class="font-bold text-slate-800 uppercase tracking-wider">Why this gets a high score:</div>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Uses YOUR exact ideas</strong>, just expanded with bolded supporting examples.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>Clean 4-paragraph visual layout</strong> makes it effortless for the Eiken grader to read.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span><strong>87 words</strong> lands right in the middle of the 80–100 word target zone.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE PRACTICE SANDBOX & LIVE WORD COUNTER -->
+    <section id="sandbox" class="scroll-mt-20">
+      <div class="mb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 3: Daily 20-Minute Drill</span>
+        <h2 class="text-2xl font-bold text-slate-900">Interactive Practice Sandbox</h2>
+        <p class="text-sm text-slate-600 mt-1">
+          Pick a topic, start the 20-minute timer, write 80–100 words across 4 paragraphs, and copy your essay for instant AI grading.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+        <!-- Top Controls Bar: Topic Selector + 20-Min Exam Timer -->
+        <div class="bg-slate-50 p-4 sm:p-6 border-b border-slate-200 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <!-- Topic Dropdown -->
+          <div class="flex-1">
+            <label for="topic-select" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">
+              Select Practice Topic
+            </label>
+            <select id="topic-select" onchange="loadSelectedTopic()" class="w-full bg-white border border-slate-300 text-slate-900 text-sm font-medium rounded-xl px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+              <option value="0">Topic 1: Online Shopping vs. Physical Stores (Rewrite Practice)</option>
+              <option value="1">Topic 2: Smartphones for Junior High Students</option>
+              <option value="2">Topic 3: Studying Abroad for High Schoolers</option>
+              <option value="3">Topic 4: Working Part-Time Jobs in High School</option>
+              <option value="4">Topic 5: Using Reusable Bags & Reducing Plastic</option>
+            </select>
+          </div>
+
+          <!-- 20-Minute Exam Timer -->
+          <div class="bg-white border border-slate-200 rounded-xl px-4 py-2.5 flex items-center justify-between sm:justify-start gap-4 shrink-0">
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Exam Timer</div>
+              <div id="exam-timer-display" class="text-xl font-extrabold text-slate-900 tabular-nums">20:00</div>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button id="timer-start-btn" onclick="startExamTimer()" class="px-3 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold transition">
+                Start
+              </button>
+              <button id="timer-pause-btn" onclick="pauseExamTimer()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition hidden">
+                Pause
+              </button>
+              <button onclick="resetExamTimer()" class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-semibold transition" title="Reset Timer">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official-Style Prompt Card -->
+        <div class="p-4 sm:p-6 bg-brand-50/50 border-b border-slate-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Question</span>
+              <p id="prompt-question" class="text-base sm:text-lg font-bold text-slate-900 mt-0.5">
+                Some people say that online shopping is better than shopping at physical stores. Do you agree?
+              </p>
+            </div>
+            <div class="bg-white px-4 py-2.5 rounded-xl border border-brand-200 shrink-0">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">POINTS (Use 2)</div>
+              <div id="prompt-points" class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-0.5 rounded-md bg-brand-100 text-brand-800 text-xs font-bold">Cost</span>
+                <span class="px-2.5 py-0.5 rounded-md bg-brand-100 text-brand-800 text-xs font-bold">Convenience</span>
+                <span class="px-2.5 py-0.5 rounded-md bg-brand-100 text-brand-800 text-xs font-bold">Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Writing Area & Live Word Counter -->
+        <div class="p-4 sm:p-6 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <button onclick="insertStarterTemplate()" class="text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg transition">
+                + Insert 4-Paragraph Starters
+              </button>
+              <button onclick="clearEditor()" class="text-xs font-semibold text-slate-400 hover:text-rose-600 px-2 py-1.5 transition">
+                Clear
+              </button>
+            </div>
+
+            <!-- Live Word Counter Pill -->
+            <div class="flex items-center gap-3">
+              <div class="text-xs text-slate-500">
+                Paragraphs: <strong id="para-count" class="text-slate-800">0</strong> / 4
+              </div>
+              <div id="word-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold transition-colors">
+                <span id="word-count" class="text-sm tabular-nums">0</span> words
+                <span id="word-status" class="font-medium opacity-90">· Target: 80–100</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bar for 80-100 Word Zone -->
+          <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden relative">
+            <div id="word-progress-bar" class="h-full bg-amber-400 transition-all duration-200" style="width: 0%;"></div>
+          </div>
+
+          <textarea
+            id="essay-input"
+            rows="10"
+            oninput="updateStats()"
+            placeholder="Paragraph 1: State your opinion + 'I have two reasons for this.'&#10;&#10;Paragraph 2: First, [Reason 1 using a POINT]. For example, ...&#10;&#10;Paragraph 3: Second, [Reason 2 using a POINT]. This is because ...&#10;&#10;Paragraph 4: For these reasons, I believe/disagree that ..."
+            class="w-full rounded-xl border border-slate-300 p-4 text-base text-slate-900 leading-relaxed focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 placeholder:text-slate-400"
+          ></textarea>
+
+          <!-- Self-Check Mini Bar -->
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">
+              Quick Self-Check Before Grading
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 text-xs font-medium text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>4 separate paragraphs</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>80–100 words total</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>Used 2 POINTS from prompt</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>Added "For example" / "This is because"</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>Periods between sentences (no comma splices)</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input type="checkbox" class="rounded text-brand-600 focus:ring-brand-500 w-4 h-4" />
+                <span>Checked spelling (shopping, physical, a/an)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-2">
+            <button onclick="copyEssayOnly()" class="px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-semibold transition text-center">
+              Copy Essay Text Only
+            </button>
+            <button onclick="copyForGeminiGrading()" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow-sm transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+              </svg>
+              Copy Essay + Eiken Grading Prompt (Paste to Gemini)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TOP 5 COMMON TRAP POINTS & SPELLING WATCHLIST -->
+    <section id="checklist" class="scroll-mt-20">
+      <div class="mb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 4: Avoid Easy Point Losses</span>
+        <h2 class="text-2xl font-bold text-slate-900">Top 5 Trap Points & Spelling Watchlist</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Trap 1 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
+          <div class="w-8 h-8 rounded-lg bg-rose-100 text-rose-700 font-extrabold text-sm flex items-center justify-center mb-3">1</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Don't Say "I don't agree to..."</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            In English, you cannot say <em>"I don't agree to [sentence]"</em>. Use clean patterns instead:
+          </p>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
+            <div class="text-rose-600 line-through">I don't agree to online shopping is better.</div>
+            <div class="text-emerald-700 font-semibold">✓ I do not think that online shopping is better.</div>
+            <div class="text-emerald-700 font-semibold">✓ I disagree with this idea.</div>
+          </div>
+        </div>
+
+        <!-- Trap 2 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
+          <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 font-extrabold text-sm flex items-center justify-center mb-3">2</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Watch Your "a" vs. "an"</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            Before words starting with a vowel sound (a, e, i, o, u), always switch <strong>a</strong> to <strong>an</strong>—or use plural nouns!
+          </p>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
+            <div class="text-rose-600 line-through">in a online shop</div>
+            <div class="text-emerald-700 font-semibold">✓ in an online shop</div>
+            <div class="text-emerald-700 font-semibold">✓ at online shops (plural is super safe!)</div>
+          </div>
+        </div>
+
+        <!-- Trap 3 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
+          <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 font-extrabold text-sm flex items-center justify-center mb-3">3</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">High-Frequency Spelling Traps</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            Double letters and silent letters often appear on Eiken prompts. Check these before finishing:
+          </p>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1.5 border border-slate-200/70 font-medium text-slate-800">
+            <div class="flex justify-between"><span>sho<strong class="text-brand-600">pp</strong>ing</span><span class="text-slate-400">(double p)</span></div>
+            <div class="flex justify-between"><span>physica<strong class="text-brand-600">l</strong></span><span class="text-slate-400">(single l)</span></div>
+            <div class="flex justify-between"><span>env<strong class="text-brand-600">iron</strong>ment</span><span class="text-slate-400">(i-r-o-n)</span></div>
+            <div class="flex justify-between"><span>conven<strong class="text-brand-600">ie</strong>nt</span><span class="text-slate-400">(i before e)</span></div>
+          </div>
+        </div>
+
+        <!-- Trap 4 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
+          <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-3">4</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Never Skip the Support Sentence</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            Writing only 1 sentence per reason leaves your essay around 50 words. Always add a 2nd sentence:
+          </p>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70 text-slate-700">
+            <div><strong class="text-emerald-700">For example,</strong> students can learn...</div>
+            <div><strong class="text-emerald-700">This is because</strong> it takes too much time.</div>
+            <div><strong class="text-emerald-700">As a result,</strong> people can save money.</div>
+          </div>
+        </div>
+
+        <!-- Trap 5 -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow md:col-span-2 lg:col-span-2">
+          <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 font-extrabold text-sm flex items-center justify-center mb-3">5</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Use the Prompt's POINTS Keywords</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">
+            Eiken Grade 2 gives you 3 bulleted keywords (<strong>POINTS</strong>) below the question. You <strong>must</strong> pick 2 of them and connect your reasons to those ideas—otherwise your Content score drops significantly.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+              <span class="font-bold text-brand-700 block">If POINT is "Cost":</span>
+              Talk about saving money, expensive prices, or free services.
+            </div>
+            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+              <span class="font-bold text-brand-700 block">If POINT is "Health":</span>
+              Talk about exercise, stress, sleep, or eating habits.
+            </div>
+            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
+              <span class="font-bold text-brand-700 block">If POINT is "Time":</span>
+              Talk about busy schedules, saving time, or studying more.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-5xl mx-auto px-4 sm:px-6 mt-14 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+    <div>
+      Eiken Grade 2 Writing Study Guide · Built for November 28, 2026 Exam Prep
+    </div>
+    <div>
+      Goal: 4 Paragraphs · 2 Points · 80–100 Words · 20 Minutes
+    </div>
+  </footer>
+
+  <script>
+    // 1. Practice Topics Data (Realistic Eiken Grade 2 Prompts)
+    const practiceTopics = [
+      {
+        question: "Some people say that online shopping is better than shopping at physical stores. Do you agree?",
+        points: ["Cost", "Convenience", "Experience"]
+      },
+      {
+        question: "Today, many junior high school students have their own smartphones. Do you think this is a good idea?",
+        points: ["Communication", "Safety", "Study habits"]
+      },
+      {
+        question: "Some people think that high school students should study abroad for a year. What is your opinion?",
+        points: ["Language skills", "Cost", "Culture"]
+      },
+      {
+        question: "Do you think it is good for high school students to have part-time jobs?",
+        points: ["Money", "Experience", "Schoolwork"]
+      },
+      {
+        question: "Some people say that people should use fewer plastic products in their daily lives. Do you agree?",
+        points: ["Environment", "Convenience", "Cost"]
+      }
+    ];
+
+    const fullSkeletonTemplate = `I do not think that [state your opinion]. I have two reasons for this.\n\nFirst, [Reason 1 using Point 1]. For example, [give a specific detail or example].\n\nSecond, [Reason 2 using Point 2]. This is because [explain why this happens].\n\nFor these reasons, I disagree with the idea that [restate your opinion].`;
+
+    // 2. Live Countdown to November 28, 2026 (09:00 AM JST)
+    function updateExamCountdown() {
+      const targetDate = new Date("2026-11-28T09:00:00+09:00").getTime();
+      const now = Date.now();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById("cd-days").textContent = "0";
+        document.getElementById("cd-hours").textContent = "00";
+        document.getElementById("cd-mins").textContent = "00";
+        document.getElementById("cd-secs").textContent = "00";
+        document.getElementById("cd-status").textContent = "Exam day is here! You've got this!";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / 1000 / 60) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("cd-days").textContent = String(days);
+      document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("cd-mins").textContent = String(mins).padStart(2, "0");
+      document.getElementById("cd-secs").textContent = String(secs).padStart(2, "0");
+    }
+
+    setInterval(updateExamCountdown, 1000);
+    updateExamCountdown();
+
+    // 3. Topic Loader
+    function loadSelectedTopic() {
+      const idx = document.getElementById("topic-select").value;
+      const topic = practiceTopics[idx];
+      document.getElementById("prompt-question").textContent = topic.question;
+
+      const pointsContainer = document.getElementById("prompt-points");
+      pointsContainer.innerHTML = topic.points
+        .map(p => `<span class="px-2.5 py-0.5 rounded-md bg-brand-100 text-brand-800 text-xs font-bold">${p}</span>`)
+        .join("");
+    }
+
+    // 4. 20-Minute Exam Timer Logic
+    let examSecondsRemaining = 20 * 60;
+    let examTimerInterval = null;
+
+    function renderExamTimer() {
+      const mins = Math.floor(examSecondsRemaining / 60);
+      const secs = examSecondsRemaining % 60;
+      const display = document.getElementById("exam-timer-display");
+      display.textContent = `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+
+      if (examSecondsRemaining <= 180 && examSecondsRemaining > 0) {
+        display.className = "text-xl font-extrabold text-amber-600 tabular-nums";
+      } else if (examSecondsRemaining === 0) {
+        display.className = "text-xl font-extrabold text-rose-600 tabular-nums";
+      } else {
+        display.className = "text-xl font-extrabold text-slate-900 tabular-nums";
+      }
+    }
+
+    function startExamTimer() {
+      if (examTimerInterval) return;
+      document.getElementById("timer-start-btn").classList.add("hidden");
+      document.getElementById("timer-pause-btn").classList.remove("hidden");
+
+      examTimerInterval = setInterval(() => {
+        if (examSecondsRemaining > 0) {
+          examSecondsRemaining--;
+          renderExamTimer();
+        } else {
+          pauseExamTimer();
+          showToast("Time's up! 20 minutes finished. Check your word count and spelling.");
+        }
+      }, 1000);
+    }
+
+    function pauseExamTimer() {
+      clearInterval(examTimerInterval);
+      examTimerInterval = null;
+      document.getElementById("timer-pause-btn").classList.add("hidden");
+      document.getElementById("timer-start-btn").classList.remove("hidden");
+    }
+
+    function resetExamTimer() {
+      pauseExamTimer();
+      examSecondsRemaining = 20 * 60;
+      renderExamTimer();
+    }
+
+    // 5. Live Word & Paragraph Counter
+    function updateStats() {
+      const text = document.getElementById("essay-input").value.trim();
+      const words = text === "" ? [] : text.split(/\s+/).filter(Boolean);
+      const count = words.length;
+
+      // Count non-empty paragraphs
+      const paragraphs = text === ""
+        ? 0
+        : text.split(/\n+/).map(p => p.trim()).filter(p => p.length > 0).length;
+
+      document.getElementById("word-count").textContent = count;
+      document.getElementById("para-count").textContent = paragraphs;
+
+      const badge = document.getElementById("word-badge");
+      const status = document.getElementById("word-status");
+      const bar = document.getElementById("word-progress-bar");
+
+      const pct = Math.min((count / 100) * 100, 100);
+      bar.style.width = `${pct}%`;
+
+      if (count === 0) {
+        badge.className = "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold transition-colors";
+        status.textContent = "· Target: 80–100";
+        bar.className = "h-full bg-slate-300 transition-all duration-200";
+      } else if (count < 80) {
+        const needed = 80 - count;
+        badge.className = "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold transition-colors";
+        status.textContent = `· Add ~${needed} more words`;
+        bar.className = "h-full bg-amber-400 transition-all duration-200";
+      } else if (count <= 100) {
+        badge.className = "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold transition-colors";
+        status.textContent = "· Perfect Sweet Spot!";
+        bar.className = "h-full bg-emerald-500 transition-all duration-200";
+      } else {
+        const over = count - 100;
+        badge.className = "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-orange-900 text-xs font-bold transition-colors";
+        status.textContent = `· ${over} words over 100`;
+        bar.className = "h-full bg-orange-500 transition-all duration-200";
+      }
+    }
+
+    function insertStarterTemplate() {
+      const textarea = document.getElementById("essay-input");
+      if (textarea.value.trim().length > 0) {
+        textarea.value = textarea.value.trim() + "\n\n" + fullSkeletonTemplate;
+      } else {
+        textarea.value = fullSkeletonTemplate;
+      }
+      updateStats();
+      showToast("4-paragraph starters inserted!");
+    }
+
+    function clearEditor() {
+      document.getElementById("essay-input").value = "";
+      updateStats();
+    }
+
+    // 6. Clipboard Helpers (Using execCommand fallback for reliable iframe/mobile support)
+    function copyText(text, successMsg = "Copied to clipboard!") {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = text;
+      tempInput.style.position = "fixed";
+      tempInput.style.opacity = "0";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMsg);
+      } catch (err) {
+        showToast("Could not copy automatically. Please select and copy manually.");
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    function copyEssayOnly() {
+      const essay = document.getElementById("essay-input").value.trim();
+      if (!essay) {
+        showToast("Write your essay first before copying!");
+        return;
+      }
+      copyText(essay, "Essay copied to clipboard!");
+    }
+
+    function copyForGeminiGrading() {
+      const essay = document.getElementById("essay-input").value.trim();
+      if (!essay) {
+        showToast("Write your essay first before copying!");
+        return;
+      }
+
+      const idx = document.getElementById("topic-select").value;
+      const topic = practiceTopics[idx];
+      const wordCount = essay.split(/\s+/).filter(Boolean).length;
+
+      const formattedPrompt = `Please grade my Eiken Grade 2 writing practice essay based on the 4 official criteria: Content, Organization, Vocabulary, and Grammar (out of 16 total points). Point out any missing connectors, comma splices, spelling mistakes, or word count issues, and rewrite it into a clean 80-100 word model answer.
+
+Question: ${topic.question}
+POINTS: ${topic.points.join(", ")}
+My Word Count: ${wordCount} words
+
+My Essay:
+${essay}`;
+
+      copyText(formattedPrompt, "Essay + Grading Prompt copied! Paste it into Gemini.");
+    }
+
+    // Toast notification controller
+    let toastTimeout = null;
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      const toastMsg = document.getElementById("toast-message");
+      toastMsg.textContent = message;
+
+      toast.classList.remove("translate-y-20", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove("translate-y-0", "opacity-100");
+        toast.classList.add("translate-y-20", "opacity-0");
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
