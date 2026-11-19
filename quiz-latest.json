@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-19",
-  "generated": "2026-11-19 07:47 JST",
+  "date": "2026-11-20",
+  "generated": "2026-11-20 07:46 JST",
   "questions": [
     {
-      "question": "この地震のマグニチュードはどれですか。",
+      "question": "米中ロの首脳会談は、どこの都市で開かれましたか。",
       "options": [
-        "6.0",
-        "5.5",
-        "4.7",
-        "5.7"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、地震のマグニチュードは5.7でした。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6603094?source=rss"
-    },
-    {
-      "question": "震度5弱を観測した市町村はいくつですか。",
-      "options": [
-        "5つ",
-        "4つ",
-        "7つ",
-        "3つ"
+        "中国・深セン",
+        "日本・東京",
+        "中国・北京",
+        "アメリカ・ワシントン"
       ],
       "answer": 0,
-      "explanation": "要約によると、水俣市や芦北町など5つの市町村で震度5弱を観測しました。",
-      "source": "Yahoo!ニュース トピックス",
-      "url": "https://news.yahoo.co.jp/pickup/6603094?source=rss"
+      "explanation": "要約によると、会談は中国・深センで開かれました。",
+      "source": "共同通信",
+      "url": "https://news.jp/i/1496073523873416134"
     },
     {
-      "question": "高市首相はプーチン大統領とどれくらい意見交換しましたか。",
+      "question": "3か国の首脳が発表した「平和宣言」は、何項目からなりますか。",
       "options": [
-        "約10分",
-        "約1時間",
-        "約3時間",
-        "約30分"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、約30分間、意見交換しました。",
-      "source": "読売新聞",
-      "url": "https://news.livedoor.com/article/detail/32849226/"
-    },
-    {
-      "question": "この対話が「初めて」なのは、どんな点ですか。",
-      "options": [
-        "APECの歓迎夕食会の後、両国の首脳が直接対話するのは初めて",
-        "18日夜に、両国の首脳が直接対話するのは初めて",
-        "中国・深センで、両国の首脳が直接対話するのは初めて",
-        "ロシアによるウクライナ侵略の後、両国の首脳が直接対話するのは初めて"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、ロシアによるウクライナ侵略の後、両国の首脳が直接対話するのは初めてです。",
-      "source": "読売新聞",
-      "url": "https://news.livedoor.com/article/detail/32849226/"
-    },
-    {
-      "question": "政府案の5年間の防衛費はどれくらいですか。",
-      "options": [
-        "60兆円から70兆円台",
-        "50兆円から60兆円台",
-        "40兆円から50兆円台",
-        "70兆円から80兆円台"
+        "5項目",
+        "4項目",
+        "3項目",
+        "2項目"
       ],
       "answer": 1,
-      "explanation": "要約によると、政府案は5年間で50兆円から60兆円台です。",
+      "explanation": "宣言は、国連改革など4項目からなります。",
       "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/fcad0d69883dd764dbef1fdaa6cc3c23222a0d21"
+      "url": "https://news.jp/i/1496073523873416134"
     },
     {
-      "question": "防衛省がはじめに必要だと試算したのはどれくらいですか。",
+      "question": "アンソロピックが上場したのは、どこの市場ですか。",
       "options": [
-        "80兆円から90兆円規模",
-        "60兆円から70兆円規模",
-        "50兆円から60兆円台",
-        "70兆円から80兆円規模"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、防衛省がはじめに必要だと試算したのは70兆円から80兆円規模でした。",
-      "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/fcad0d69883dd764dbef1fdaa6cc3c23222a0d21"
-    },
-    {
-      "question": "情報が漏れたのは何件ですか。",
-      "options": [
-        "238万3073件",
-        "238万3072件",
-        "138万3073件",
-        "338万3073件"
+        "ナスダック市場",
+        "ロンドン証券取引所",
+        "香港証券取引所",
+        "東京証券取引所"
       ],
       "answer": 0,
-      "explanation": "要約によると、238万3073件の利用者の情報が漏れました。",
-      "source": "Ｊリーグ",
-      "url": "https://www.jleague.jp/news/article/35384/"
-    },
-    {
-      "question": "漏れた情報に含まれていないものはどれですか。",
-      "options": [
-        "住んでいる都道府県",
-        "性別",
-        "生年月日",
-        "パスワードやクレジットカードの情報"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、パスワードやクレジットカードの情報は漏れた情報に含まれていません。",
-      "source": "Ｊリーグ",
-      "url": "https://www.jleague.jp/news/article/35384/"
-    },
-    {
-      "question": "新しいキャラクターに選ばれたのはどれですか。",
-      "options": [
-        "紫色のウサギの「A案」",
-        "紫色のペンギンの「B案」",
-        "緑色のウサギの「B案」",
-        "紫色のウサギの「B案」"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、3つの候補の中から、紫色のウサギの「B案」が選ばれました。",
+      "explanation": "要約によると、アンソロピックはアメリカのナスダック市場に上場しました。",
       "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003307/"
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003354/"
     },
     {
-      "question": "「B案」は何票集めましたか。",
+      "question": "アンソロピックのIPOによる調達額は、約いくらでしたか。",
       "options": [
-        "166万4399票",
-        "66万4399票",
-        "86万151票",
-        "86万152票"
+        "約813億ドル",
+        "約83億ドル",
+        "約2億ドル",
+        "約34億ドル"
+      ],
+      "answer": 0,
+      "explanation": "調達額は約813億ドルで、史上最大の規模になりました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003354/"
+    },
+    {
+      "question": "予想される最大瞬間風速について、正しいのはどれですか。",
+      "options": [
+        "北海道と北陸で30メートル",
+        "北海道で30メートル",
+        "東北で35メートル",
+        "北海道と北陸で35メートル"
       ],
       "answer": 3,
-      "explanation": "要約によると、「B案」は86万152票を集めました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/18/2000003307/"
+      "explanation": "予想される最大瞬間風速は北海道と北陸で35メートル、東北で30メートルです。",
+      "source": "テレビ朝日",
+      "url": "https://news.tv-asahi.co.jp/news_society/articles/900204687.html"
+    },
+    {
+      "question": "平地でも雪が降るとされたのは、どこですか。",
+      "options": [
+        "沖縄",
+        "北海道や東北北部",
+        "東京23区",
+        "九州南部"
+      ],
+      "answer": 1,
+      "explanation": "北海道や東北北部では平地でも雪が降るとされています。",
+      "source": "テレビ朝日",
+      "url": "https://news.tv-asahi.co.jp/news_society/articles/900204687.html"
+    },
+    {
+      "question": "金融庁が楽天証券に出したのは、何ですか。",
+      "options": [
+        "業務停止命令",
+        "営業許可",
+        "罰金命令",
+        "報告徴求命令"
+      ],
+      "answer": 3,
+      "explanation": "金融庁は楽天証券に報告徴求命令を出しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCM3TB7VCMULFA029M.html?ref=rss"
+    },
+    {
+      "question": "流出した可能性があるログインIDは、最大で何件ですか。",
+      "options": [
+        "最大19万件",
+        "最大447万件",
+        "最大1125万件",
+        "最大17万件"
+      ],
+      "answer": 2,
+      "explanation": "ログインIDは最大1125万件流出した可能性があると発表されています。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCM3TB7VCMULFA029M.html?ref=rss"
+    },
+    {
+      "question": "大相撲九州場所で、1敗で単独トップを守っているのは誰ですか。",
+      "options": [
+        "大の里",
+        "若元春",
+        "熱海富士",
+        "金峰山"
+      ],
+      "answer": 1,
+      "explanation": "若元春が11勝1敗で、1敗の単独トップを守りました。",
+      "source": "日刊スポーツ",
+      "url": "https://www.nikkansports.com/battle/sumo/news/202611190001931.html"
+    },
+    {
+      "question": "13日目の結びの一番で、若元春と対戦するのは誰ですか。",
+      "options": [
+        "大の里",
+        "金峰山",
+        "熱海富士",
+        "義ノ富士"
+      ],
+      "answer": 0,
+      "explanation": "13日目の結びの一番では、若元春と大の里の直接対決が組まれました。",
+      "source": "日刊スポーツ",
+      "url": "https://www.nikkansports.com/battle/sumo/news/202611190001931.html"
     }
   ]
 }
