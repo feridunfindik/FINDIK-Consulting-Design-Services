@@ -1,50 +1,50 @@
 {
   "articles": [
     {
-      "cat": "🏛️ Siyaset",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/481c/live/77477590-4018-11f0-b6e6-4ddb91039da1.jpg",
-      "source": "BBC Türkçe",
-      "summary": "Ankara 26. Asliye Ceza Mahkemesi, CHP'nin 38. Olağan Kurultayı'ndaki usulsüzlük iddialarına ilişkin davada kararını verdi. Ekrem İmamoğlu dahil 9 sanık, oylamaya hile karıştırma suçundan 2 yıl 1'er ay hapis cezasına çarptırıldı ve haklarında siyasi yasak kararı verildi. İzmir Büyükşehir Belediye Başkanı Cemil Tugay'ın da aralarında olduğu 3 sanık ise beraat etti.",
-      "time": "18 Kasım 22:27",
-      "title": "CHP kurultay davasında karar: Ekrem İmamoğlu dahil 9 kişiye hapis cezası ve siyaset yasağı",
-      "url": "https://www.bbc.com/turkce/articles/cx2r30k4ddyo?at_medium=RSS&at_campaign=rss"
+      "cat": "🌍 Dünya",
+      "source": "Anadolu Ajansı",
+      "summary": "Türkiye, Uluslararası Adalet Divanı’nın Myanmar’ın 2017’de Arakan eyaletinin kuzeyinde Arakanlı Müslümanlara (Rohingya) karşı soykırım işlediğine ve soykırımı önleme ile cezalandırma yükümlülüklerini ihlal ettiğine hükmeden kararını memnuniyetle karşıladı.",
+      "time": "20 Kasım 01:15",
+      "title": "Türkiye, UAD'nin Myanmar kararını memnuniyetle karşıladı",
+      "url": "https://www.aa.com.tr/tr/gundem/turkiye-uadnin-myanmar-kararini-memnuniyetle-karsiladi/4131618",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/20/thumbs_b_c_5e4786e89befba880ef64048e64a6b8a.jpg"
     },
     {
-      "cat": "🌧️ Hava Durumu",
-      "source": "Anadolu Ajansı",
-      "summary": "Bursa Deniz Otobüsleri (BUDO), olumsuz hava koşulları nedeniyle bugünkü 12 seferini iptal etti. Bursa (Mudanya)-İstanbul (Kabataş) hattında 07.00, 09.30, 16.00 ve 19.00 seferleri ile İstanbul-Bursa hattında 08.00, 11.30, 16.30 ve 19.30 seferleri yapılamayacak. Armutlu hattındaki 4 sefer de aynı gerekçeyle iptal edildi.",
-      "time": "19 Kasım 00:17",
-      "title": "BUDO'nun bugünkü 12 seferi iptal edildi",
-      "url": "https://www.aa.com.tr/tr/gundem/budonun-bugunku-12-seferi-iptal-edildi/4129855",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/19/thumbs_b_c_0c999d63939dbabc00d97e3e763a5740.jpg"
+      "cat": "🛡️ Teknoloji",
+      "source": "TRT Haber",
+      "summary": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA, kabul testlerini başarıyla tamamladıktan sonra güvenlik güçlerinin envanterine girdi. İlk 3 uçak güvenlik güçlerine teslim edildi ve aktif göreve başladı. Böylece Türkiye, dünya havacılık tarihinde insansız bir savaş uçağını envanterine katan ilk ülke oldu.",
+      "time": "19 Kasım 18:49",
+      "title": "Türkiyenin ilk insansız savaş uçağı KIZILELMA envantere girdi",
+      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ilk-insansiz-savas-ucagi-kizilelma-envantere-girdi-963857.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/kizilelma-envantere-girdi-2504927.jpg"
+    },
+    {
+      "cat": "🚨 Gündem",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afefb88925c456bddefae96.jpg",
+      "source": "Hürriyet",
+      "summary": "Dışişleri Bakanlığı ile Schengen ülkelerinin Türkiye temsilcilikleri, Türk vatandaşlarının Schengen vizesi başvuru süreçlerinin sadeleştirilmesine yönelik somut teknik öneriler çerçevesinde bir çalışma grubu kurdu. Bakan Fidan, AB nezdindeki girişimler sonucu hayata geçirilen Kademeli Vize Uygulaması’nın çok girişli vize alınmasının önünü açtığını söyledi.",
+      "time": "19 Kasım 16:37",
+      "title": "Türkiye ile Schengen ülkeleri arasında vize görüşmesi: Schengen çalışma grubu kuruldu",
+      "url": "https://www.hurriyet.com.tr/dunya/turkiye-ile-schengen-ulkeleri-arasinda-vize-gorusmesi-schengen-calisma-grubu-kuruldu-43384064"
     },
     {
       "cat": "🌍 Dünya",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4454/live/693bad00-e3f4-11f1-99b6-a35a62fa4264.png",
+      "source": "BBC Türkçe",
+      "summary": "Çin Devlet Başkanı Şi Cinping, ABD Başkanı Donald Trump ve Rusya Devlet Başkanı Vladimir Putin, Çin’in Shenzhen kentinde düzenlenen APEC Zirvesi kapsamında bir araya geldi. Üç lider görüşmenin ardından ortak bir barış bildirisi yayımladı. Rusya lideri Putin, üç ülkenin küresel barışı koruma sorumluluğu bulunduğunu vurguladı.",
+      "time": "19 Kasım 16:07",
+      "title": "Trump, Şi ve Putin'den üçlü zirve sonrası 'ortak barış bildirisi'",
+      "url": "https://www.bbc.com/turkce/articles/cr9d75xwg767o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "cat": "🏛️ Siyaset",
       "source": "DW Türkçe",
-      "summary": "ABD Başkanı Donald Trump, Rusya Devlet Başkanı Vladimir Putin ve Çin Devlet Başkanı Şi Cinping bugün Çin'in Shenzhen kentinde ilk kez üçlü zirvede bir araya geliyor. Görüşmede nükleer silahların azaltılması ve İran konusu ele alınacak; Trump, Ukrayna savaşının bitirilmesini de konuşmayı planladığını söyledi. Analistler, tarihi buluşmaya rağmen somut ilerleme beklemiyor.",
-      "time": "18 Kasım 12:10",
-      "title": "Yeni Yalta Konferansı mı? Şi, Putin ve Trump'tan ilk 3'lü zirve",
-      "url": "https://www.dw.com/tr/yeni-yalta-konferansı-mı-şi-putin-ve-trump-tan-ilk-3-lü-zirve/a-79952211?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "cat": "⚽ Spor",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afe18d02356f0a3a15a3315.jpg",
-      "source": "Hürriyet",
-      "summary": "Bayern Münih, Beşiktaş, Fenerbahçe ve Galatasaray'ın istediği Güney Koreli stoper Kim Min-Jae için 20 milyon euro bonservis bedeli talep ediyor. Alman ekibi, 2023 yazında 50 milyon euroya transfer ettiği 30 yaşındaki oyuncuyu kadro rotasyonunda üçüncü stoper olarak görüyor; tatmin edici bir teklif gelmezse ayrılığa izin vermeyecek. Min-Jae'nin Bayern'de net 9 milyon euro maaşı bulunuyor.",
-      "time": "19 Kasım 00:31",
-      "title": "Beşiktaş, Fenerbahçe ve Galatasaray'ın istediği Kim Min-Jae'nin bonservis bedeli belli oldu!",
-      "url": "https://www.hurriyet.com.tr/sporarena/besiktas-fenerbahce-ve-galatasarayin-istedigi-kim-min-jaenin-bonservis-bedeli-belli-oldu-43383142"
-    },
-    {
-      "cat": "💹 Ekonomi",
-      "source": "TRT Haber",
-      "summary": "Borsa İstanbul'da BIST 100 endeksi günü yüzde 1,57 değer kaybederek 11.477,41 puandan tamamladı. Endeks önceki kapanışa göre 183,5 puan azalırken toplam işlem hacmi 97,7 milyar lira oldu. Bankacılık endeksi yüzde 2,54, holding endeksi yüzde 2,64 değer kaybetti; en fazla kaybettiren sektör yüzde 4,06 ile madencilik oldu.",
-      "time": "18 Kasım 18:23",
-      "title": "Borsa günü düşüşle kapattı",
-      "url": "https://www.trthaber.com/haber/ekonomi/borsa-gunu-dususle-kapatti-963717.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2392000/borsa-istanbul-aa-2392319.jpg"
+      "summary": "AK Parti Genişletilmiş İl Başkanları Toplantısı’nda 9 belediyenin başkan ve başkanvekilleri AK Parti’ye katıldı. Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer ile Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir’in de aralarında olduğu isimlere rozetlerini Cumhurbaşkanı ve AK Parti Genel Başkanı Recep Tayyip Erdoğan taktı.",
+      "time": "19 Kasım 15:29",
+      "title": "Tekirdağ ve Antalya belediyeleri AKP'ye geçti",
+      "url": "https://www.dw.com/tr/tekirdağ-ve-antalya-belediyeleri-akp-ye-geçti/a-79991416?maca=tur-rss-tur-all-1495-rdf"
     }
   ],
-  "date": "2026-11-19",
-  "updated": "2026-11-19 02:46 TSİ"
+  "date": "2026-11-20",
+  "updated": "2026-11-20 02:50 TSİ"
 }
