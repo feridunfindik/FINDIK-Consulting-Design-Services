@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-20",
-  "generated": "2026-11-20 07:46 JST",
+  "date": "2026-11-21",
+  "generated": "2026-11-21 07:48 JST",
   "questions": [
     {
-      "question": "米中ロの首脳会談は、どこの都市で開かれましたか。",
+      "question": "今回のAPECで、高市首相は台湾の代表とどうしましたか。",
       "options": [
-        "中国・深セン",
-        "日本・東京",
-        "中国・北京",
-        "アメリカ・ワシントン"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、会談は中国・深センで開かれました。",
-      "source": "共同通信",
-      "url": "https://news.jp/i/1496073523873416134"
-    },
-    {
-      "question": "3か国の首脳が発表した「平和宣言」は、何項目からなりますか。",
-      "options": [
-        "5項目",
-        "4項目",
-        "3項目",
-        "2項目"
+        "会談して共同声明を出した",
+        "会談しなかった",
+        "写真を撮ってXに投稿した",
+        "会談して握手だけした"
       ],
       "answer": 1,
-      "explanation": "宣言は、国連改革など4項目からなります。",
-      "source": "共同通信",
-      "url": "https://news.jp/i/1496073523873416134"
-    },
-    {
-      "question": "アンソロピックが上場したのは、どこの市場ですか。",
-      "options": [
-        "ナスダック市場",
-        "ロンドン証券取引所",
-        "香港証券取引所",
-        "東京証券取引所"
-      ],
-      "answer": 0,
-      "explanation": "要約によると、アンソロピックはアメリカのナスダック市場に上場しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003354/"
-    },
-    {
-      "question": "アンソロピックのIPOによる調達額は、約いくらでしたか。",
-      "options": [
-        "約813億ドル",
-        "約83億ドル",
-        "約2億ドル",
-        "約34億ドル"
-      ],
-      "answer": 0,
-      "explanation": "調達額は約813億ドルで、史上最大の規模になりました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003354/"
-    },
-    {
-      "question": "予想される最大瞬間風速について、正しいのはどれですか。",
-      "options": [
-        "北海道と北陸で30メートル",
-        "北海道で30メートル",
-        "東北で35メートル",
-        "北海道と北陸で35メートル"
-      ],
-      "answer": 3,
-      "explanation": "予想される最大瞬間風速は北海道と北陸で35メートル、東北で30メートルです。",
-      "source": "テレビ朝日",
-      "url": "https://news.tv-asahi.co.jp/news_society/articles/900204687.html"
-    },
-    {
-      "question": "平地でも雪が降るとされたのは、どこですか。",
-      "options": [
-        "沖縄",
-        "北海道や東北北部",
-        "東京23区",
-        "九州南部"
-      ],
-      "answer": 1,
-      "explanation": "北海道や東北北部では平地でも雪が降るとされています。",
-      "source": "テレビ朝日",
-      "url": "https://news.tv-asahi.co.jp/news_society/articles/900204687.html"
-    },
-    {
-      "question": "金融庁が楽天証券に出したのは、何ですか。",
-      "options": [
-        "業務停止命令",
-        "営業許可",
-        "罰金命令",
-        "報告徴求命令"
-      ],
-      "answer": 3,
-      "explanation": "金融庁は楽天証券に報告徴求命令を出しました。",
+      "explanation": "高市首相は今回のAPECで、台湾の代表と会談しませんでした。",
       "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCM3TB7VCMULFA029M.html?ref=rss"
+      "url": "http://www.asahi.com/articles/ASVCN2551VCNUTFK00KM.html?ref=rss"
     },
     {
-      "question": "流出した可能性があるログインIDは、最大で何件ですか。",
+      "question": "去年、高市氏が台湾代表との写真をXに投稿したあと、中国はどうしましたか。",
       "options": [
-        "最大19万件",
-        "最大447万件",
-        "最大1125万件",
-        "最大17万件"
+        "歓迎した",
+        "会談を求めた",
+        "何も言わなかった",
+        "抗議した"
+      ],
+      "answer": 3,
+      "explanation": "去年、高市氏が台湾代表との写真をXに投稿したことに、中国が抗議していました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCN2551VCNUTFK00KM.html?ref=rss"
+    },
+    {
+      "question": "20日のアメリカの株式市場で、主要な3つの指数はどうなりましたか。",
+      "options": [
+        "大きく下がった",
+        "変わらなかった",
+        "大きく上がった",
+        "取引が止まった"
+      ],
+      "answer": 0,
+      "explanation": "20日のアメリカの株式市場で、主要な3つの指数が大きく下がりました。",
+      "source": "ロイター（日本語）",
+      "url": "https://www.reuters.com/jp/markets/world-indices/QXWJ3KPGUFNXXA6VL43BNEODKE-2026-11-20/"
+    },
+    {
+      "question": "ナスダック総合指数はどれだけ下がりましたか。",
+      "options": [
+        "5.28％",
+        "10％以上",
+        "1.93％",
+        "3.70％"
+      ],
+      "answer": 0,
+      "explanation": "ナスダック総合指数は5.28％安でした。",
+      "source": "ロイター（日本語）",
+      "url": "https://www.reuters.com/jp/markets/world-indices/QXWJ3KPGUFNXXA6VL43BNEODKE-2026-11-20/"
+    },
+    {
+      "question": "北陸では、これからの雨の総量が最大でどれくらいになると予想されていますか。",
+      "options": [
+        "6ミリ",
+        "10ミリ",
+        "30ミリ",
+        "280ミリ"
+      ],
+      "answer": 3,
+      "explanation": "北陸ではこれからの雨の総量が最大280ミリに達する予想です。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/tut/3099861"
+    },
+    {
+      "question": "近畿や北陸では、波の高さがどれくらいになる大しけが予想されていますか。",
+      "options": [
+        "280メートル",
+        "30メートル",
+        "6メートル",
+        "10メートル"
       ],
       "answer": 2,
-      "explanation": "ログインIDは最大1125万件流出した可能性があると発表されています。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCM3TB7VCMULFA029M.html?ref=rss"
+      "explanation": "近畿や北陸では波の高さが6メートルになる大しけが予想されています。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/tut/3099861"
     },
     {
-      "question": "大相撲九州場所で、1敗で単独トップを守っているのは誰ですか。",
+      "question": "本来の相手ではない人がファイルにアクセスしていたのは、いつからいつまでですか。",
       "options": [
-        "大の里",
-        "若元春",
-        "熱海富士",
-        "金峰山"
-      ],
-      "answer": 1,
-      "explanation": "若元春が11勝1敗で、1敗の単独トップを守りました。",
-      "source": "日刊スポーツ",
-      "url": "https://www.nikkansports.com/battle/sumo/news/202611190001931.html"
-    },
-    {
-      "question": "13日目の結びの一番で、若元春と対戦するのは誰ですか。",
-      "options": [
-        "大の里",
-        "金峰山",
-        "熱海富士",
-        "義ノ富士"
+        "7月30日から11月12日まで",
+        "11月12日から11月20日まで",
+        "11月20日だけ",
+        "7月30日から11月20日まで"
       ],
       "answer": 0,
-      "explanation": "13日目の結びの一番では、若元春と大の里の直接対決が組まれました。",
+      "explanation": "7月30日から11月12日の間に、本来の相手ではない人がファイルにアクセスしていました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003381/"
+    },
+    {
+      "question": "デジタル庁は、個人情報が含まれている可能性もあるとして、どこに報告しましたか。",
+      "options": [
+        "気象庁",
+        "警察庁",
+        "厚生労働省",
+        "個人情報保護委員会"
+      ],
+      "answer": 3,
+      "explanation": "個人情報が含まれている可能性もあり、個人情報保護委員会に報告しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003381/"
+    },
+    {
+      "question": "宗佑磨選手は、どの球団に入ることになりましたか。",
+      "options": [
+        "DeNA",
+        "巨人",
+        "オリックス",
+        "ソフトバンク"
+      ],
+      "answer": 0,
+      "explanation": "宗佑磨内野手が、DeNAに入ることが20日に分かりました。",
       "source": "日刊スポーツ",
-      "url": "https://www.nikkansports.com/battle/sumo/news/202611190001931.html"
+      "url": "https://news.yahoo.co.jp/articles/8f8651bfa6dd31f84e5542a194fa7b1d80e5c963"
+    },
+    {
+      "question": "DeNAからのオファーは、どのような内容でしたか。",
+      "options": [
+        "推定10年6億円に契約金と出来高払いを加えた大型のオファー",
+        "推定6年4億円に契約金と出来高払いを加えた大型のオファー",
+        "推定4年6億円に契約金と出来高払いを加えた大型のオファー",
+        "推定4年10億円に契約金と出来高払いを加えた大型のオファー"
+      ],
+      "answer": 2,
+      "explanation": "DeNAから推定4年6億円に契約金と出来高払いを加えた大型のオファーを受けました。",
+      "source": "日刊スポーツ",
+      "url": "https://news.yahoo.co.jp/articles/8f8651bfa6dd31f84e5542a194fa7b1d80e5c963"
     }
   ]
 }
