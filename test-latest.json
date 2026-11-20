@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-20",
-  "generated": "2026-11-20 08:52 JST",
+  "date": "2026-11-21",
+  "generated": "2026-11-21 08:45 JST",
   "questions": [
     {
-      "question": "Uluslararası Adalet Divanı'nın kararına göre Myanmar, Arakanlı Müslümanlara karşı soykırımı hangi yılda işledi?",
+      "question": "Serdar Altınbaş nerede yakalandı?",
       "options": [
-        "2016",
-        "2018",
-        "2015",
-        "2017"
+        "Fransa'da",
+        "Almanya'da",
+        "Hollanda'da",
+        "Çekya'da"
       ],
       "answer": 3,
-      "explanation": "Özet, kararın 2017'de Arakan eyaletinin kuzeyinde işlenen soykırımla ilgili olduğunu söylüyor.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/turkiye-uadnin-myanmar-kararini-memnuniyetle-karsiladi/4131618"
+      "explanation": "İçişleri Bakanlığı, uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
     },
     {
-      "question": "Türkiye, Uluslararası Adalet Divanı'nın Myanmar kararını nasıl karşıladı?",
+      "question": "Serdar Altınbaş hangi suçlardan uluslararası seviyede aranıyordu?",
       "options": [
-        "Memnuniyetle karşıladı",
-        "Konu hakkında sessiz kaldı",
-        "Kararı tanımadı",
-        "Karara itiraz etti"
+        "Rüşvet ve görevi kötüye kullanma",
+        "Kaçakçılık ve vergi kaçırma",
+        "Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama",
+        "Dolandırıcılık ve hırsızlık"
+      ],
+      "answer": 2,
+      "explanation": "Altınbaş, Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama suçlarından aranıyordu.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+    },
+    {
+      "question": "Filistin halkının bağımsızlık hakkına ilişkin tasarı BM Genel Kurulu'nda kaç oyla kabul edildi?",
+      "options": [
+        "200",
+        "100",
+        "162",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "Birleşmiş Milletler Genel Kurulu, tasarıyı 8'e karşı 162 oyla kabul etti.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
+    },
+    {
+      "question": "BM Genel Kurulu'nda kabul edilen tasarı hangi hakkı teyit ediyor?",
+      "options": [
+        "Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını",
+        "Filistin halkının vatandaşlık hakkını",
+        "Filistin halkının seyahat hakkını",
+        "Filistin halkının ticaret hakkını"
       ],
       "answer": 0,
-      "explanation": "Özet, Türkiye'nin kararı memnuniyetle karşıladığını belirtiyor.",
+      "explanation": "Tasarı, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit ediyor.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
+    },
+    {
+      "question": "Meteoroloji kaç il için sarı kodlu uyarıda bulundu?",
+      "options": [
+        "14",
+        "34",
+        "24",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "Meteoroloji Genel Müdürlüğü, İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu.",
       "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/turkiye-uadnin-myanmar-kararini-memnuniyetle-karsiladi/4131618"
+      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
     },
     {
-      "question": "KIZILELMA envantere girmeden önce neyi başarıyla tamamladı?",
+      "question": "Hangi iller için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı?",
       "options": [
-        "İlk uçuşunu",
-        "İhracat görüşmelerini",
-        "Pilot eğitimini",
-        "Kabul testlerini"
-      ],
-      "answer": 3,
-      "explanation": "Özet, KIZILELMA'nın kabul testlerini başarıyla tamamladıktan sonra envantere girdiğini söylüyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ilk-insansiz-savas-ucagi-kizilelma-envantere-girdi-963857.html"
-    },
-    {
-      "question": "Güvenlik güçlerine ilk etapta kaç KIZILELMA teslim edildi?",
-      "options": [
-        "2",
-        "1",
-        "3",
-        "5"
+        "Artvin, Diyarbakır, Erzurum ve Trabzon",
+        "Ankara, İzmir, Bursa ve Antalya",
+        "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli",
+        "Konya, Kayseri, Sivas ve Malatya"
       ],
       "answer": 2,
-      "explanation": "Özet, ilk 3 uçağın güvenlik güçlerine teslim edildiğini söylüyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ilk-insansiz-savas-ucagi-kizilelma-envantere-girdi-963857.html"
+      "explanation": "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
     },
     {
-      "question": "Schengen çalışma grubu hangi amaçla kuruldu?",
+      "question": "AKP, 2024 yerel seçimlerinde Türkiye genelinde kaçıncı sıraya düştü?",
       "options": [
-        "Yeni konsolosluklar açmak",
-        "Vize başvurularını durdurmak",
-        "Schengen vizesi başvuru süreçlerini sadeleştirmek",
-        "Vize ücretlerini artırmak"
+        "Birinci sıraya yükseldi",
+        "Dördüncü sıraya düştü",
+        "Üçüncü sıraya düştü",
+        "İkinci sıraya düştü"
+      ],
+      "answer": 3,
+      "explanation": "AKP, 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düştü.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "BBC Türkçe haberinde neyi mercek altına aldı?",
+      "options": [
+        "AKP'nin Meclis'teki sandalye sayısını",
+        "AKP'nin 2023 seçim kampanyasını",
+        "AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini",
+        "AKP'nin yeni seçim vaatlerini"
       ],
       "answer": 2,
-      "explanation": "Özet, grubun Schengen vizesi başvuru süreçlerinin sadeleştirilmesi için kurulduğunu söylüyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/turkiye-ile-schengen-ulkeleri-arasinda-vize-gorusmesi-schengen-calisma-grubu-kuruldu-43384064"
-    },
-    {
-      "question": "Bakan Fidan'a göre Kademeli Vize Uygulaması neyin önünü açtı?",
-      "options": [
-        "Pasaport yenilemenin",
-        "Çalışma izni almanın",
-        "Vizesiz seyahatin",
-        "Çok girişli vize alınmasının"
-      ],
-      "answer": 3,
-      "explanation": "Özet, uygulamanın çok girişli vize alınmasının önünü açtığını belirtiyor.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/turkiye-ile-schengen-ulkeleri-arasinda-vize-gorusmesi-schengen-calisma-grubu-kuruldu-43384064"
-    },
-    {
-      "question": "Üç lider hangi kentte bir araya geldi?",
-      "options": [
-        "Washington",
-        "Shenzhen",
-        "Pekin",
-        "Moskova"
-      ],
-      "answer": 1,
-      "explanation": "Özet, liderlerin Çin'in Shenzhen kentinde bir araya geldiğini söylüyor.",
+      "explanation": "BBC Türkçe, AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini mercek altına aldı.",
       "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cr9d75xwg767o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Görüşmenin ardından üç lider ne yayımladı?",
+      "question": "AİHM, Fransa'daki Covid-19 aşı zorunluluğu hakkında neye hükmetti?",
       "options": [
-        "Bir savunma paktı",
-        "Bir ticaret anlaşması",
-        "Bir yaptırım kararı",
-        "Ortak bir barış bildirisi"
+        "Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine",
+        "Avrupa İnsan Hakları Sözleşmesi'ni ihlal ettiğine",
+        "Sağlık çalışanlarının haklarını ihlal ettiğine",
+        "Fransa anayasasını ihlal ettiğine"
       ],
-      "answer": 3,
-      "explanation": "Özet, görüşmenin ardından ortak bir barış bildirisi yayımlandığını söylüyor.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cr9d75xwg767o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "AK Parti'ye kaç belediyenin başkan ve başkanvekilleri katıldı?",
-      "options": [
-        "5",
-        "9",
-        "7",
-        "12"
-      ],
-      "answer": 1,
-      "explanation": "Özet, 9 belediyenin başkan ve başkanvekillerinin AK Parti'ye katıldığını söylüyor.",
+      "answer": 0,
+      "explanation": "Avrupa İnsan Hakları Mahkemesi, aşı zorunluluğunun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/tekirdağ-ve-antalya-belediyeleri-akp-ye-geçti/a-79991416?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
     },
     {
-      "question": "Yeni katılan isimlere rozetlerini kim taktı?",
+      "question": "Covid-19 aşı zorunluluğu hangi ülkede ve kimlere getirilmişti?",
       "options": [
-        "Candan Yüceer",
-        "Büşra Özdemir",
-        "Hakan Fidan",
-        "Recep Tayyip Erdoğan"
+        "Fransa'da sağlık ve acil yardım çalışanlarına",
+        "İspanya'da kamu çalışanlarına",
+        "Almanya'da öğretmenlere",
+        "İtalya'da polis memurlarına"
       ],
-      "answer": 3,
-      "explanation": "Özet, rozetleri Cumhurbaşkanı ve AK Parti Genel Başkanı Recep Tayyip Erdoğan'ın taktığını söylüyor.",
+      "answer": 0,
+      "explanation": "Söz konusu aşı zorunluluğu, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/tekirdağ-ve-antalya-belediyeleri-akp-ye-geçti/a-79991416?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }

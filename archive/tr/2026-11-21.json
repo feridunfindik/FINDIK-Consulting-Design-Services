@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-21",
+  "news": {
+    "articles": [
+      {
+        "cat": "🚨 Gündem",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b009f1d3516f14679ccac7c.jpg",
+        "source": "Hürriyet",
+        "summary": "İçişleri Bakanlığı, \"Sermaye Piyasası Kanuna Muhalefet ve Suçtan Kaynaklanan Mal Varlığı Değerlerini Aklama\" suçlarından uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu. Altınbaş hakkında difüzyonla arama kararı bulunuyordu.",
+        "time": "20 Kasım 22:27",
+        "title": "Fon soruşturmasında önemli gelişme: Serdar Altınbaş Çekya’da yakalandı",
+        "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "TRT Haber",
+        "summary": "Birleşmiş Milletler Genel Kurulu, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit eden karar taslağını 8'e karşı 162 oyla kabul etti. Tasarı, Filistin halkının bağımsızlık hakkını bir kez daha uluslararası düzeyde teyit etti.",
+        "time": "20 Kasım 23:04",
+        "title": "BM Genel Kurulu, Filistin halkının bağımsızlık hakkına ilişkin tasarıyı 162 oyla kabul etti",
+        "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2446000/filistin-bayragi-aa-2447095.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "source": "Anadolu Ajansı",
+        "summary": "Meteoroloji Genel Müdürlüğü, beklenen gök gürültülü sağanak ve kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu. İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak; Artvin, Diyarbakır, Erzurum ve Trabzon'un da aralarında olduğu iller için kuvvetli yağış bekleniyor. Sel, su baskını, heyelan ve ulaşımda aksamalara karşı dikkatli olunması gerekiyor.",
+        "time": "20 Kasım 14:22",
+        "title": "Meteorolojiden İstanbul dahil 24 il için sarı kodlu uyarı",
+        "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/20/thumbs_b_c_c1cd51bc4649ae473b0f9e50ee504e41.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a3ae/live/e516f110-e501-11f1-a8e4-b1e12a49db15.jpg",
+        "source": "BBC Türkçe",
+        "summary": "2023'teki genel seçimde Meclis'te çoğunluk elde edemeyen ve 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düşen AKP, o tarihten bu yana çok sayıda belediye başkanını saflarına kattı. BBC Türkçe, katılan başkanların hangi partilerden geldiğini mercek altına aldı.",
+        "time": "20 Kasım 19:38",
+        "title": "AKP hangi partiden kaç belediye başkanı transfer etti?",
+        "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "source": "DW Türkçe",
+        "summary": "Avrupa İnsan Hakları Mahkemesi, Fransa'da Covid-19 salgını sırasında sağlık ve acil yardım çalışanlarına getirilen aşı zorunluluğunu hukuka uygun buldu. Söz konusu zorunluluk, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu. Mahkeme, zorunluluğun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
+        "time": "20 Kasım 18:02",
+        "title": "AİHM: Covid-19 aşı zorunluluğu hak ihlali değil",
+        "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ],
+    "date": "2026-11-21",
+    "updated": "2026-11-21 02:43 TSİ"
+  },
+  "quiz": {
+    "date": "2026-11-21",
+    "generated": "2026-11-21 08:45 JST",
+    "questions": [
+      {
+        "question": "Serdar Altınbaş nerede yakalandı?",
+        "options": [
+          "Fransa'da",
+          "Almanya'da",
+          "Hollanda'da",
+          "Çekya'da"
+        ],
+        "answer": 3,
+        "explanation": "İçişleri Bakanlığı, uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+      },
+      {
+        "question": "Serdar Altınbaş hangi suçlardan uluslararası seviyede aranıyordu?",
+        "options": [
+          "Rüşvet ve görevi kötüye kullanma",
+          "Kaçakçılık ve vergi kaçırma",
+          "Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama",
+          "Dolandırıcılık ve hırsızlık"
+        ],
+        "answer": 2,
+        "explanation": "Altınbaş, Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama suçlarından aranıyordu.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+      },
+      {
+        "question": "Filistin halkının bağımsızlık hakkına ilişkin tasarı BM Genel Kurulu'nda kaç oyla kabul edildi?",
+        "options": [
+          "200",
+          "100",
+          "162",
+          "8"
+        ],
+        "answer": 2,
+        "explanation": "Birleşmiş Milletler Genel Kurulu, tasarıyı 8'e karşı 162 oyla kabul etti.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
+      },
+      {
+        "question": "BM Genel Kurulu'nda kabul edilen tasarı hangi hakkı teyit ediyor?",
+        "options": [
+          "Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını",
+          "Filistin halkının vatandaşlık hakkını",
+          "Filistin halkının seyahat hakkını",
+          "Filistin halkının ticaret hakkını"
+        ],
+        "answer": 0,
+        "explanation": "Tasarı, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit ediyor.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
+      },
+      {
+        "question": "Meteoroloji kaç il için sarı kodlu uyarıda bulundu?",
+        "options": [
+          "14",
+          "34",
+          "24",
+          "10"
+        ],
+        "answer": 2,
+        "explanation": "Meteoroloji Genel Müdürlüğü, İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
+      },
+      {
+        "question": "Hangi iller için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı?",
+        "options": [
+          "Artvin, Diyarbakır, Erzurum ve Trabzon",
+          "Ankara, İzmir, Bursa ve Antalya",
+          "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli",
+          "Konya, Kayseri, Sivas ve Malatya"
+        ],
+        "answer": 2,
+        "explanation": "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
+      },
+      {
+        "question": "AKP, 2024 yerel seçimlerinde Türkiye genelinde kaçıncı sıraya düştü?",
+        "options": [
+          "Birinci sıraya yükseldi",
+          "Dördüncü sıraya düştü",
+          "Üçüncü sıraya düştü",
+          "İkinci sıraya düştü"
+        ],
+        "answer": 3,
+        "explanation": "AKP, 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düştü.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "BBC Türkçe haberinde neyi mercek altına aldı?",
+        "options": [
+          "AKP'nin Meclis'teki sandalye sayısını",
+          "AKP'nin 2023 seçim kampanyasını",
+          "AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini",
+          "AKP'nin yeni seçim vaatlerini"
+        ],
+        "answer": 2,
+        "explanation": "BBC Türkçe, AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini mercek altına aldı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "AİHM, Fransa'daki Covid-19 aşı zorunluluğu hakkında neye hükmetti?",
+        "options": [
+          "Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine",
+          "Avrupa İnsan Hakları Sözleşmesi'ni ihlal ettiğine",
+          "Sağlık çalışanlarının haklarını ihlal ettiğine",
+          "Fransa anayasasını ihlal ettiğine"
+        ],
+        "answer": 0,
+        "explanation": "Avrupa İnsan Hakları Mahkemesi, aşı zorunluluğunun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "Covid-19 aşı zorunluluğu hangi ülkede ve kimlere getirilmişti?",
+        "options": [
+          "Fransa'da sağlık ve acil yardım çalışanlarına",
+          "İspanya'da kamu çalışanlarına",
+          "Almanya'da öğretmenlere",
+          "İtalya'da polis memurlarına"
+        ],
+        "answer": 0,
+        "explanation": "Söz konusu aşı zorunluluğu, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

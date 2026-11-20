@@ -1,50 +1,50 @@
 {
   "articles": [
     {
-      "cat": "🌍 Dünya",
-      "source": "Anadolu Ajansı",
-      "summary": "Türkiye, Uluslararası Adalet Divanı’nın Myanmar’ın 2017’de Arakan eyaletinin kuzeyinde Arakanlı Müslümanlara (Rohingya) karşı soykırım işlediğine ve soykırımı önleme ile cezalandırma yükümlülüklerini ihlal ettiğine hükmeden kararını memnuniyetle karşıladı.",
-      "time": "20 Kasım 01:15",
-      "title": "Türkiye, UAD'nin Myanmar kararını memnuniyetle karşıladı",
-      "url": "https://www.aa.com.tr/tr/gundem/turkiye-uadnin-myanmar-kararini-memnuniyetle-karsiladi/4131618",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/20/thumbs_b_c_5e4786e89befba880ef64048e64a6b8a.jpg"
-    },
-    {
-      "cat": "🛡️ Teknoloji",
-      "source": "TRT Haber",
-      "summary": "Türkiye’nin ilk insansız savaş uçağı KIZILELMA, kabul testlerini başarıyla tamamladıktan sonra güvenlik güçlerinin envanterine girdi. İlk 3 uçak güvenlik güçlerine teslim edildi ve aktif göreve başladı. Böylece Türkiye, dünya havacılık tarihinde insansız bir savaş uçağını envanterine katan ilk ülke oldu.",
-      "time": "19 Kasım 18:49",
-      "title": "Türkiyenin ilk insansız savaş uçağı KIZILELMA envantere girdi",
-      "url": "https://www.trthaber.com/haber/gundem/turkiyenin-ilk-insansiz-savas-ucagi-kizilelma-envantere-girdi-963857.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/kizilelma-envantere-girdi-2504927.jpg"
-    },
-    {
       "cat": "🚨 Gündem",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6afefb88925c456bddefae96.jpg",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b009f1d3516f14679ccac7c.jpg",
       "source": "Hürriyet",
-      "summary": "Dışişleri Bakanlığı ile Schengen ülkelerinin Türkiye temsilcilikleri, Türk vatandaşlarının Schengen vizesi başvuru süreçlerinin sadeleştirilmesine yönelik somut teknik öneriler çerçevesinde bir çalışma grubu kurdu. Bakan Fidan, AB nezdindeki girişimler sonucu hayata geçirilen Kademeli Vize Uygulaması’nın çok girişli vize alınmasının önünü açtığını söyledi.",
-      "time": "19 Kasım 16:37",
-      "title": "Türkiye ile Schengen ülkeleri arasında vize görüşmesi: Schengen çalışma grubu kuruldu",
-      "url": "https://www.hurriyet.com.tr/dunya/turkiye-ile-schengen-ulkeleri-arasinda-vize-gorusmesi-schengen-calisma-grubu-kuruldu-43384064"
+      "summary": "İçişleri Bakanlığı, \"Sermaye Piyasası Kanuna Muhalefet ve Suçtan Kaynaklanan Mal Varlığı Değerlerini Aklama\" suçlarından uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu. Altınbaş hakkında difüzyonla arama kararı bulunuyordu.",
+      "time": "20 Kasım 22:27",
+      "title": "Fon soruşturmasında önemli gelişme: Serdar Altınbaş Çekya’da yakalandı",
+      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
     },
     {
       "cat": "🌍 Dünya",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4454/live/693bad00-e3f4-11f1-99b6-a35a62fa4264.png",
-      "source": "BBC Türkçe",
-      "summary": "Çin Devlet Başkanı Şi Cinping, ABD Başkanı Donald Trump ve Rusya Devlet Başkanı Vladimir Putin, Çin’in Shenzhen kentinde düzenlenen APEC Zirvesi kapsamında bir araya geldi. Üç lider görüşmenin ardından ortak bir barış bildirisi yayımladı. Rusya lideri Putin, üç ülkenin küresel barışı koruma sorumluluğu bulunduğunu vurguladı.",
-      "time": "19 Kasım 16:07",
-      "title": "Trump, Şi ve Putin'den üçlü zirve sonrası 'ortak barış bildirisi'",
-      "url": "https://www.bbc.com/turkce/articles/cr9d75xwg767o?at_medium=RSS&at_campaign=rss"
+      "source": "TRT Haber",
+      "summary": "Birleşmiş Milletler Genel Kurulu, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit eden karar taslağını 8'e karşı 162 oyla kabul etti. Tasarı, Filistin halkının bağımsızlık hakkını bir kez daha uluslararası düzeyde teyit etti.",
+      "time": "20 Kasım 23:04",
+      "title": "BM Genel Kurulu, Filistin halkının bağımsızlık hakkına ilişkin tasarıyı 162 oyla kabul etti",
+      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2446000/filistin-bayragi-aa-2447095.jpg"
+    },
+    {
+      "cat": "🌧️ Hava/Afet",
+      "source": "Anadolu Ajansı",
+      "summary": "Meteoroloji Genel Müdürlüğü, beklenen gök gürültülü sağanak ve kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu. İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak; Artvin, Diyarbakır, Erzurum ve Trabzon'un da aralarında olduğu iller için kuvvetli yağış bekleniyor. Sel, su baskını, heyelan ve ulaşımda aksamalara karşı dikkatli olunması gerekiyor.",
+      "time": "20 Kasım 14:22",
+      "title": "Meteorolojiden İstanbul dahil 24 il için sarı kodlu uyarı",
+      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/20/thumbs_b_c_c1cd51bc4649ae473b0f9e50ee504e41.jpg"
     },
     {
       "cat": "🏛️ Siyaset",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a3ae/live/e516f110-e501-11f1-a8e4-b1e12a49db15.jpg",
+      "source": "BBC Türkçe",
+      "summary": "2023'teki genel seçimde Meclis'te çoğunluk elde edemeyen ve 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düşen AKP, o tarihten bu yana çok sayıda belediye başkanını saflarına kattı. BBC Türkçe, katılan başkanların hangi partilerden geldiğini mercek altına aldı.",
+      "time": "20 Kasım 19:38",
+      "title": "AKP hangi partiden kaç belediye başkanı transfer etti?",
+      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "cat": "🌍 Dünya",
       "source": "DW Türkçe",
-      "summary": "AK Parti Genişletilmiş İl Başkanları Toplantısı’nda 9 belediyenin başkan ve başkanvekilleri AK Parti’ye katıldı. Tekirdağ Büyükşehir Belediye Başkanı Candan Yüceer ile Antalya Büyükşehir Belediye Başkanvekili Büşra Özdemir’in de aralarında olduğu isimlere rozetlerini Cumhurbaşkanı ve AK Parti Genel Başkanı Recep Tayyip Erdoğan taktı.",
-      "time": "19 Kasım 15:29",
-      "title": "Tekirdağ ve Antalya belediyeleri AKP'ye geçti",
-      "url": "https://www.dw.com/tr/tekirdağ-ve-antalya-belediyeleri-akp-ye-geçti/a-79991416?maca=tur-rss-tur-all-1495-rdf"
+      "summary": "Avrupa İnsan Hakları Mahkemesi, Fransa'da Covid-19 salgını sırasında sağlık ve acil yardım çalışanlarına getirilen aşı zorunluluğunu hukuka uygun buldu. Söz konusu zorunluluk, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu. Mahkeme, zorunluluğun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
+      "time": "20 Kasım 18:02",
+      "title": "AİHM: Covid-19 aşı zorunluluğu hak ihlali değil",
+      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
     }
   ],
-  "date": "2026-11-20",
-  "updated": "2026-11-20 02:50 TSİ"
+  "date": "2026-11-21",
+  "updated": "2026-11-21 02:43 TSİ"
 }
