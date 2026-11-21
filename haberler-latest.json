@@ -1,50 +1,50 @@
 {
+  "date": "2026-11-22",
+  "updated": "2026-11-22 02:44 TSİ",
   "articles": [
     {
-      "cat": "🚨 Gündem",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b009f1d3516f14679ccac7c.jpg",
+      "cat": "🌍 Dünya",
+      "time": "22 Kasım 01:00",
+      "title": "İran'dan Bahreyn'e peş peşe saldırı: İki ABD üssü hedef alındı, bir tesiste yangın çıktı",
+      "summary": "İran, ABD varlıklarına ev sahipliği yapan Bahreyn'e yönelik saldırılarda bulundu. İran Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi. Saldırıda sivil bir sanayi tesisi de hedef alındı; tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı. Bahreyn İçişleri Bakanlığı, vatandaşlara en yakın güvenli yere gitmeleri çağrısında bulundu.",
+      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586",
       "source": "Hürriyet",
-      "summary": "İçişleri Bakanlığı, \"Sermaye Piyasası Kanuna Muhalefet ve Suçtan Kaynaklanan Mal Varlığı Değerlerini Aklama\" suçlarından uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu. Altınbaş hakkında difüzyonla arama kararı bulunuyordu.",
-      "time": "20 Kasım 22:27",
-      "title": "Fon soruşturmasında önemli gelişme: Serdar Altınbaş Çekya’da yakalandı",
-      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b02145f8c01a1364d06afd3.jpg"
     },
     {
-      "cat": "🌍 Dünya",
+      "cat": "💹 Ekonomi",
+      "time": "22 Kasım 00:35",
+      "title": "Bitcoin, sert satış dalgasının ardından yeniden 60 bin doların üzerine çıktı",
+      "summary": "Bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirerek yeniden 60 bin doların üzerine çıktı; saat 23.00 itibarıyla 60 bin 279 dolardan işlem gördü. Düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı. Bitcoin, Ekim 2025'teki yaklaşık 126 bin dolarlık tarihi zirvesinin halen yaklaşık yüzde 52 altında bulunuyor.",
+      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html",
       "source": "TRT Haber",
-      "summary": "Birleşmiş Milletler Genel Kurulu, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit eden karar taslağını 8'e karşı 162 oyla kabul etti. Tasarı, Filistin halkının bağımsızlık hakkını bir kez daha uluslararası düzeyde teyit etti.",
-      "time": "20 Kasım 23:04",
-      "title": "BM Genel Kurulu, Filistin halkının bağımsızlık hakkına ilişkin tasarıyı 162 oyla kabul etti",
-      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2446000/filistin-bayragi-aa-2447095.jpg"
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2166000/bitcoin-aa-2167609.jpg"
     },
     {
       "cat": "🌧️ Hava/Afet",
+      "time": "21 Kasım 22:33",
+      "title": "Van Özalp'ta arka arkaya depremler: AFAD duyurdu",
+      "summary": "AFAD, Van'ın Özalp ilçesini etkileyen 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu. Depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı; sarsıntılar Van'da da hissedildi. Depremler yaklaşık iki saat arayla meydana geldi ve bölgeden olumsuz bir haber aktarılmadı.",
+      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751",
+      "source": "TGRT Haber",
+      "img": "https://i.tgrthaber.com/images/2026/11/21/van-ozalpta-deprem-afad-duyurdu-3372751.jpg"
+    },
+    {
+      "cat": "🌧️ Hava/Afet",
+      "time": "21 Kasım 18:54",
+      "title": "İstanbul'un bazı ilçelerinde dolu ve sağanak etkili oldu",
+      "summary": "İstanbul'un bazı ilçelerinde etkili olan sağanak ve dolu nedeniyle yollar ve kaldırımlar beyaza bürünürken bazı bölgelerde su birikintileri oluştu. Yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu; Silivri ve Çatalca'da dolu yağdı. İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081",
       "source": "Anadolu Ajansı",
-      "summary": "Meteoroloji Genel Müdürlüğü, beklenen gök gürültülü sağanak ve kuvvetli yağış nedeniyle İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu. İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak; Artvin, Diyarbakır, Erzurum ve Trabzon'un da aralarında olduğu iller için kuvvetli yağış bekleniyor. Sel, su baskını, heyelan ve ulaşımda aksamalara karşı dikkatli olunması gerekiyor.",
-      "time": "20 Kasım 14:22",
-      "title": "Meteorolojiden İstanbul dahil 24 il için sarı kodlu uyarı",
-      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/20/thumbs_b_c_c1cd51bc4649ae473b0f9e50ee504e41.jpg"
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/21/thumbs_b_c_4000831ea097effc5784a65255130119.jpg"
     },
     {
       "cat": "🏛️ Siyaset",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a3ae/live/e516f110-e501-11f1-a8e4-b1e12a49db15.jpg",
-      "source": "BBC Türkçe",
-      "summary": "2023'teki genel seçimde Meclis'te çoğunluk elde edemeyen ve 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düşen AKP, o tarihten bu yana çok sayıda belediye başkanını saflarına kattı. BBC Türkçe, katılan başkanların hangi partilerden geldiğini mercek altına aldı.",
-      "time": "20 Kasım 19:38",
-      "title": "AKP hangi partiden kaç belediye başkanı transfer etti?",
-      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "source": "DW Türkçe",
-      "summary": "Avrupa İnsan Hakları Mahkemesi, Fransa'da Covid-19 salgını sırasında sağlık ve acil yardım çalışanlarına getirilen aşı zorunluluğunu hukuka uygun buldu. Söz konusu zorunluluk, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu. Mahkeme, zorunluluğun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
-      "time": "20 Kasım 18:02",
-      "title": "AİHM: Covid-19 aşı zorunluluğu hak ihlali değil",
-      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      "time": "21 Kasım 11:45",
+      "title": "COP31 Antalya: Uzlaşma sağlanamadı, müzakereler uzadı",
+      "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, cuma günü sona ermesi planlanmasına rağmen ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı. Müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor. Delegeler, bir karar metninde uzlaşmak için görüşmelerini sürdürüyor.",
+      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
     }
-  ],
-  "date": "2026-11-21",
-  "updated": "2026-11-21 02:43 TSİ"
+  ]
 }

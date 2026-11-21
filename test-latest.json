@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-21",
-  "generated": "2026-11-21 08:45 JST",
+  "date": "2026-11-22",
+  "generated": "2026-11-22 08:45 JST",
   "questions": [
     {
-      "question": "Serdar Altınbaş nerede yakalandı?",
+      "question": "İran Devrim Muhafızları Ordusu, Bahreyn'deki hangi iki askeri üssü hedef aldığını bildirdi?",
       "options": [
-        "Fransa'da",
-        "Almanya'da",
-        "Hollanda'da",
-        "Çekya'da"
+        "El-Cufeyr ile İncirlik üsleri",
+        "Şeyh İsa ile El-Cufeyr askeri üsleri",
+        "El-Udeyd ile İncirlik üsleri",
+        "Şeyh İsa ile El-Udeyd üsleri"
+      ],
+      "answer": 1,
+      "explanation": "Özete göre Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
+    },
+    {
+      "question": "Bahreyn'deki saldırıda hedef alınan sivil sanayi tesisinde ne oldu?",
+      "options": [
+        "Tesis kapatıldı ve çevresi boşaltıldı",
+        "Tesiste küçük bir sızıntı oldu ve hemen onarıldı",
+        "Tesis tamamen yıkıldı ve çok sayıda kişi yaralandı",
+        "Tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı"
       ],
       "answer": 3,
-      "explanation": "İçişleri Bakanlığı, uluslararası seviyede aranan Serdar Altınbaş'ın Çekya'da yakalandığını duyurdu.",
+      "explanation": "Özete göre tesiste yangın çıktı ve maddi hasar oluştu; ilk verilere göre yaralanan olmadı.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
+      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
     },
     {
-      "question": "Serdar Altınbaş hangi suçlardan uluslararası seviyede aranıyordu?",
+      "question": "Bitcoin, cuma günü sert satışlarla kaça kadar geriledikten sonra yeniden 60 bin doların üzerine çıktı?",
       "options": [
-        "Rüşvet ve görevi kötüye kullanma",
-        "Kaçakçılık ve vergi kaçırma",
-        "Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama",
-        "Dolandırıcılık ve hırsızlık"
-      ],
-      "answer": 2,
-      "explanation": "Altınbaş, Sermaye Piyasası Kanununa muhalefet ve suçtan kaynaklanan mal varlığı değerlerini aklama suçlarından aranıyordu.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/bakanlik-duyurdu-fon-sorusturmasinda-onemli-gelisme-serdar-altinbas-cekyada-yakalandi-43385596"
-    },
-    {
-      "question": "Filistin halkının bağımsızlık hakkına ilişkin tasarı BM Genel Kurulu'nda kaç oyla kabul edildi?",
-      "options": [
-        "200",
-        "100",
-        "162",
-        "8"
-      ],
-      "answer": 2,
-      "explanation": "Birleşmiş Milletler Genel Kurulu, tasarıyı 8'e karşı 162 oyla kabul etti.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
-    },
-    {
-      "question": "BM Genel Kurulu'nda kabul edilen tasarı hangi hakkı teyit ediyor?",
-      "options": [
-        "Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını",
-        "Filistin halkının vatandaşlık hakkını",
-        "Filistin halkının seyahat hakkını",
-        "Filistin halkının ticaret hakkını"
+        "55 bin 130 dolara",
+        "126 bin dolara",
+        "60 bin 279 dolara",
+        "52 bin dolara"
       ],
       "answer": 0,
-      "explanation": "Tasarı, Filistin halkının kendi kaderini tayin etme ve bağımsızlık hakkını teyit ediyor.",
+      "explanation": "Özete göre bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirdi.",
       "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/bm-genel-kurulu-filistin-halkinin-bagimsizlik-hakkina-iliskin-tasariyi-162-oyla-kabul-etti-964009.html"
+      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
     },
     {
-      "question": "Meteoroloji kaç il için sarı kodlu uyarıda bulundu?",
+      "question": "Düşüş sırasında borsalarda 24 saatte ne kadarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı?",
       "options": [
-        "14",
-        "34",
-        "24",
-        "10"
+        "60 milyar dolarlık",
+        "1,2 milyar dolarlık",
+        "2,4 milyar dolarlık",
+        "126 milyar dolarlık"
       ],
       "answer": 2,
-      "explanation": "Meteoroloji Genel Müdürlüğü, İstanbul'un da aralarında bulunduğu 24 il için sarı kodlu uyarıda bulundu.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
+      "explanation": "Özete göre düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
     },
     {
-      "question": "Hangi iller için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı?",
+      "question": "AFAD'ın duyurduğu üç depremin büyüklükleri nelerdi?",
       "options": [
-        "Artvin, Diyarbakır, Erzurum ve Trabzon",
-        "Ankara, İzmir, Bursa ve Antalya",
-        "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli",
-        "Konya, Kayseri, Sivas ve Malatya"
+        "3,6, 4,5 ve 4",
+        "3,6 ve 4,5",
+        "3,6, 4,2 ve 4,8",
+        "3,9, 4,5 ve 4"
       ],
-      "answer": 2,
-      "explanation": "İstanbul, Kahramanmaraş, Sakarya, Hatay ve Kocaeli için gök gürültülü sağanak nedeniyle sarı kodlu uyarı yapıldı.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-istanbul-dahil-24-il-icin-sari-kodlu-uyari/4132063"
+      "answer": 0,
+      "explanation": "Özete göre AFAD, 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu.",
+      "source": "TGRT Haber",
+      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
     },
     {
-      "question": "AKP, 2024 yerel seçimlerinde Türkiye genelinde kaçıncı sıraya düştü?",
+      "question": "Depremlerin merkez üssü neresi olarak açıklandı?",
       "options": [
-        "Birinci sıraya yükseldi",
-        "Dördüncü sıraya düştü",
-        "Üçüncü sıraya düştü",
-        "İkinci sıraya düştü"
+        "Van'ın Özalp ilçesi",
+        "İran'ın Tahran kenti",
+        "Türkiye-İran sınırı ile Irak",
+        "İran'ın Hoy kenti ile Türkiye-İran sınırı"
       ],
       "answer": 3,
-      "explanation": "AKP, 2024 yerel seçimlerinde ilk defa Türkiye genelinde ikinci sıraya düştü.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
+      "explanation": "Özete göre depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı.",
+      "source": "TGRT Haber",
+      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
     },
     {
-      "question": "BBC Türkçe haberinde neyi mercek altına aldı?",
+      "question": "İstanbul'da yağış özellikle Avrupa Yakası'nda hangi ilçelerde etkili oldu?",
       "options": [
-        "AKP'nin Meclis'teki sandalye sayısını",
-        "AKP'nin 2023 seçim kampanyasını",
-        "AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini",
-        "AKP'nin yeni seçim vaatlerini"
-      ],
-      "answer": 2,
-      "explanation": "BBC Türkçe, AKP'ye katılan belediye başkanlarının hangi partilerden geldiğini mercek altına aldı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c20y9v012v2o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "AİHM, Fransa'daki Covid-19 aşı zorunluluğu hakkında neye hükmetti?",
-      "options": [
-        "Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine",
-        "Avrupa İnsan Hakları Sözleşmesi'ni ihlal ettiğine",
-        "Sağlık çalışanlarının haklarını ihlal ettiğine",
-        "Fransa anayasasını ihlal ettiğine"
+        "Fatih, Esenler, Bayrampaşa ve Bahçelievler",
+        "Ümraniye ve Kadıköy",
+        "Büyükçekmece ve Beylikdüzü",
+        "Silivri ve Çatalca"
       ],
       "answer": 0,
-      "explanation": "Avrupa İnsan Hakları Mahkemesi, aşı zorunluluğunun Avrupa İnsan Hakları Sözleşmesi'ni ihlal etmediğine hükmetti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Özete göre yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
     },
     {
-      "question": "Covid-19 aşı zorunluluğu hangi ülkede ve kimlere getirilmişti?",
+      "question": "İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde kaç olarak ölçüldü?",
       "options": [
-        "Fransa'da sağlık ve acil yardım çalışanlarına",
-        "İspanya'da kamu çalışanlarına",
-        "Almanya'da öğretmenlere",
-        "İtalya'da polis memurlarına"
+        "Yüzde 60",
+        "Yüzde 71",
+        "Yüzde 17",
+        "Yüzde 52"
+      ],
+      "answer": 1,
+      "explanation": "Özete göre İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
+    },
+    {
+      "question": "COP31 neden hafta sonuna sarktı?",
+      "options": [
+        "Konferans iptal edildiği için",
+        "Delegeler Antalya'dan ayrıldığı için",
+        "Fosil yakıtlar tamamen yasaklandığı için",
+        "Ülkeler ortak bir metinde anlaşamadığı için"
+      ],
+      "answer": 3,
+      "explanation": "Özete göre COP31, ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "COP31 müzakerelerinde tartışmanın odak noktasını ne oluşturuyor?",
+      "options": [
+        "Fosil yakıtlar",
+        "Yenilenebilir enerji yatırımları",
+        "Orman yangınları",
+        "Deniz seviyesinin yükselmesi"
       ],
       "answer": 0,
-      "explanation": "Söz konusu aşı zorunluluğu, salgın döneminde Fransa'da sağlık ve acil yardım çalışanlarını kapsıyordu.",
+      "explanation": "Özete göre müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/ai̇hm-covid-19-aşı-zorunluluğu-hak-ihlali-değil/a-80004975?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }

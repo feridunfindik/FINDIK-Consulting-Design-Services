@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-22",
+  "news": {
+    "date": "2026-11-22",
+    "updated": "2026-11-22 02:44 TSİ",
+    "articles": [
+      {
+        "cat": "🌍 Dünya",
+        "time": "22 Kasım 01:00",
+        "title": "İran'dan Bahreyn'e peş peşe saldırı: İki ABD üssü hedef alındı, bir tesiste yangın çıktı",
+        "summary": "İran, ABD varlıklarına ev sahipliği yapan Bahreyn'e yönelik saldırılarda bulundu. İran Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi. Saldırıda sivil bir sanayi tesisi de hedef alındı; tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı. Bahreyn İçişleri Bakanlığı, vatandaşlara en yakın güvenli yere gitmeleri çağrısında bulundu.",
+        "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b02145f8c01a1364d06afd3.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "22 Kasım 00:35",
+        "title": "Bitcoin, sert satış dalgasının ardından yeniden 60 bin doların üzerine çıktı",
+        "summary": "Bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirerek yeniden 60 bin doların üzerine çıktı; saat 23.00 itibarıyla 60 bin 279 dolardan işlem gördü. Düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı. Bitcoin, Ekim 2025'teki yaklaşık 126 bin dolarlık tarihi zirvesinin halen yaklaşık yüzde 52 altında bulunuyor.",
+        "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2166000/bitcoin-aa-2167609.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "21 Kasım 22:33",
+        "title": "Van Özalp'ta arka arkaya depremler: AFAD duyurdu",
+        "summary": "AFAD, Van'ın Özalp ilçesini etkileyen 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu. Depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı; sarsıntılar Van'da da hissedildi. Depremler yaklaşık iki saat arayla meydana geldi ve bölgeden olumsuz bir haber aktarılmadı.",
+        "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751",
+        "source": "TGRT Haber",
+        "img": "https://i.tgrthaber.com/images/2026/11/21/van-ozalpta-deprem-afad-duyurdu-3372751.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "21 Kasım 18:54",
+        "title": "İstanbul'un bazı ilçelerinde dolu ve sağanak etkili oldu",
+        "summary": "İstanbul'un bazı ilçelerinde etkili olan sağanak ve dolu nedeniyle yollar ve kaldırımlar beyaza bürünürken bazı bölgelerde su birikintileri oluştu. Yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu; Silivri ve Çatalca'da dolu yağdı. İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/21/thumbs_b_c_4000831ea097effc5784a65255130119.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "21 Kasım 11:45",
+        "title": "COP31 Antalya: Uzlaşma sağlanamadı, müzakereler uzadı",
+        "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, cuma günü sona ermesi planlanmasına rağmen ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı. Müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor. Delegeler, bir karar metninde uzlaşmak için görüşmelerini sürdürüyor.",
+        "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-22",
+    "generated": "2026-11-22 08:45 JST",
+    "questions": [
+      {
+        "question": "İran Devrim Muhafızları Ordusu, Bahreyn'deki hangi iki askeri üssü hedef aldığını bildirdi?",
+        "options": [
+          "El-Cufeyr ile İncirlik üsleri",
+          "Şeyh İsa ile El-Cufeyr askeri üsleri",
+          "El-Udeyd ile İncirlik üsleri",
+          "Şeyh İsa ile El-Udeyd üsleri"
+        ],
+        "answer": 1,
+        "explanation": "Özete göre Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
+      },
+      {
+        "question": "Bahreyn'deki saldırıda hedef alınan sivil sanayi tesisinde ne oldu?",
+        "options": [
+          "Tesis kapatıldı ve çevresi boşaltıldı",
+          "Tesiste küçük bir sızıntı oldu ve hemen onarıldı",
+          "Tesis tamamen yıkıldı ve çok sayıda kişi yaralandı",
+          "Tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı"
+        ],
+        "answer": 3,
+        "explanation": "Özete göre tesiste yangın çıktı ve maddi hasar oluştu; ilk verilere göre yaralanan olmadı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
+      },
+      {
+        "question": "Bitcoin, cuma günü sert satışlarla kaça kadar geriledikten sonra yeniden 60 bin doların üzerine çıktı?",
+        "options": [
+          "55 bin 130 dolara",
+          "126 bin dolara",
+          "60 bin 279 dolara",
+          "52 bin dolara"
+        ],
+        "answer": 0,
+        "explanation": "Özete göre bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirdi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
+      },
+      {
+        "question": "Düşüş sırasında borsalarda 24 saatte ne kadarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı?",
+        "options": [
+          "60 milyar dolarlık",
+          "1,2 milyar dolarlık",
+          "2,4 milyar dolarlık",
+          "126 milyar dolarlık"
+        ],
+        "answer": 2,
+        "explanation": "Özete göre düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
+      },
+      {
+        "question": "AFAD'ın duyurduğu üç depremin büyüklükleri nelerdi?",
+        "options": [
+          "3,6, 4,5 ve 4",
+          "3,6 ve 4,5",
+          "3,6, 4,2 ve 4,8",
+          "3,9, 4,5 ve 4"
+        ],
+        "answer": 0,
+        "explanation": "Özete göre AFAD, 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu.",
+        "source": "TGRT Haber",
+        "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
+      },
+      {
+        "question": "Depremlerin merkez üssü neresi olarak açıklandı?",
+        "options": [
+          "Van'ın Özalp ilçesi",
+          "İran'ın Tahran kenti",
+          "Türkiye-İran sınırı ile Irak",
+          "İran'ın Hoy kenti ile Türkiye-İran sınırı"
+        ],
+        "answer": 3,
+        "explanation": "Özete göre depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı.",
+        "source": "TGRT Haber",
+        "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
+      },
+      {
+        "question": "İstanbul'da yağış özellikle Avrupa Yakası'nda hangi ilçelerde etkili oldu?",
+        "options": [
+          "Fatih, Esenler, Bayrampaşa ve Bahçelievler",
+          "Ümraniye ve Kadıköy",
+          "Büyükçekmece ve Beylikdüzü",
+          "Silivri ve Çatalca"
+        ],
+        "answer": 0,
+        "explanation": "Özete göre yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
+      },
+      {
+        "question": "İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde kaç olarak ölçüldü?",
+        "options": [
+          "Yüzde 60",
+          "Yüzde 71",
+          "Yüzde 17",
+          "Yüzde 52"
+        ],
+        "answer": 1,
+        "explanation": "Özete göre İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
+      },
+      {
+        "question": "COP31 neden hafta sonuna sarktı?",
+        "options": [
+          "Konferans iptal edildiği için",
+          "Delegeler Antalya'dan ayrıldığı için",
+          "Fosil yakıtlar tamamen yasaklandığı için",
+          "Ülkeler ortak bir metinde anlaşamadığı için"
+        ],
+        "answer": 3,
+        "explanation": "Özete göre COP31, ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "COP31 müzakerelerinde tartışmanın odak noktasını ne oluşturuyor?",
+        "options": [
+          "Fosil yakıtlar",
+          "Yenilenebilir enerji yatırımları",
+          "Orman yangınları",
+          "Deniz seviyesinin yükselmesi"
+        ],
+        "answer": 0,
+        "explanation": "Özete göre müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}
