@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-21",
-  "generated": "2026-11-21 07:48 JST",
+  "date": "2026-11-22",
+  "generated": "2026-11-22 07:45 JST",
   "questions": [
     {
-      "question": "今回のAPECで、高市首相は台湾の代表とどうしましたか。",
+      "question": "関芳弘文科相をめぐる問題は、次のうちどれですか。",
       "options": [
-        "会談して共同声明を出した",
-        "会談しなかった",
-        "写真を撮ってXに投稿した",
-        "会談して握手だけした"
+        "政治資金パーティーに省庁の職員を招いていたこと",
+        "消費税の減税法案に反対したこと",
+        "国会の審議を無断で欠席したこと",
+        "政治資金パーティーのお金を私的に使ったこと"
+      ],
+      "answer": 0,
+      "explanation": "関芳弘文科相は、政治資金パーティーに省庁の職員を招いていたことが問題になっています。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/article/20261121-XTNIOF44LBINLDA2AIUXO5WFAQ/"
+    },
+    {
+      "question": "野党は、関文科相についてどうする方針ですか。",
+      "options": [
+        "関氏を刑事告発する",
+        "問責決議案の提出へ週明けに協議する",
+        "すぐに内閣不信任案を提出する",
+        "関氏への追及をやめる"
       ],
       "answer": 1,
-      "explanation": "高市首相は今回のAPECで、台湾の代表と会談しませんでした。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCN2551VCNUTFK00KM.html?ref=rss"
+      "explanation": "野党は、問責決議案の提出へ週明けに協議する方針です。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/article/20261121-XTNIOF44LBINLDA2AIUXO5WFAQ/"
     },
     {
-      "question": "去年、高市氏が台湾代表との写真をXに投稿したあと、中国はどうしましたか。",
+      "question": "降り始めからの雨の量が276ミリに達したのはどこですか。",
       "options": [
-        "歓迎した",
-        "会談を求めた",
-        "何も言わなかった",
-        "抗議した"
-      ],
-      "answer": 3,
-      "explanation": "去年、高市氏が台湾代表との写真をXに投稿したことに、中国が抗議していました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCN2551VCNUTFK00KM.html?ref=rss"
-    },
-    {
-      "question": "20日のアメリカの株式市場で、主要な3つの指数はどうなりましたか。",
-      "options": [
-        "大きく下がった",
-        "変わらなかった",
-        "大きく上がった",
-        "取引が止まった"
-      ],
-      "answer": 0,
-      "explanation": "20日のアメリカの株式市場で、主要な3つの指数が大きく下がりました。",
-      "source": "ロイター（日本語）",
-      "url": "https://www.reuters.com/jp/markets/world-indices/QXWJ3KPGUFNXXA6VL43BNEODKE-2026-11-20/"
-    },
-    {
-      "question": "ナスダック総合指数はどれだけ下がりましたか。",
-      "options": [
-        "5.28％",
-        "10％以上",
-        "1.93％",
-        "3.70％"
-      ],
-      "answer": 0,
-      "explanation": "ナスダック総合指数は5.28％安でした。",
-      "source": "ロイター（日本語）",
-      "url": "https://www.reuters.com/jp/markets/world-indices/QXWJ3KPGUFNXXA6VL43BNEODKE-2026-11-20/"
-    },
-    {
-      "question": "北陸では、これからの雨の総量が最大でどれくらいになると予想されていますか。",
-      "options": [
-        "6ミリ",
-        "10ミリ",
-        "30ミリ",
-        "280ミリ"
-      ],
-      "answer": 3,
-      "explanation": "北陸ではこれからの雨の総量が最大280ミリに達する予想です。",
-      "source": "TBS NEWS DIG",
-      "url": "https://newsdig.tbs.co.jp/articles/tut/3099861"
-    },
-    {
-      "question": "近畿や北陸では、波の高さがどれくらいになる大しけが予想されていますか。",
-      "options": [
-        "280メートル",
-        "30メートル",
-        "6メートル",
-        "10メートル"
+        "上越市",
+        "柏崎市",
+        "加茂市宮寄上",
+        "魚沼市守門"
       ],
       "answer": 2,
-      "explanation": "近畿や北陸では波の高さが6メートルになる大しけが予想されています。",
-      "source": "TBS NEWS DIG",
-      "url": "https://newsdig.tbs.co.jp/articles/tut/3099861"
+      "explanation": "降り始めからの雨の量は、加茂市宮寄上で276ミリ、柏崎市で256.5ミリに達しました。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1157066"
     },
     {
-      "question": "本来の相手ではない人がファイルにアクセスしていたのは、いつからいつまでですか。",
+      "question": "魚沼市守門では、どれだけの雪が積もりましたか。",
       "options": [
-        "7月30日から11月12日まで",
-        "11月12日から11月20日まで",
-        "11月20日だけ",
-        "7月30日から11月20日まで"
+        "18センチ",
+        "28センチ",
+        "38センチ",
+        "48センチ"
       ],
-      "answer": 0,
-      "explanation": "7月30日から11月12日の間に、本来の相手ではない人がファイルにアクセスしていました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003381/"
+      "answer": 1,
+      "explanation": "山沿いでは、魚沼市守門で28センチの雪が積もりました。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1157066"
     },
     {
-      "question": "デジタル庁は、個人情報が含まれている可能性もあるとして、どこに報告しましたか。",
+      "question": "アメリカのAI企業の数学者が発表したのは、何の証明ですか。",
       "options": [
-        "気象庁",
-        "警察庁",
-        "厚生労働省",
-        "個人情報保護委員会"
+        "ゴールドバッハ予想",
+        "ポアンカレ予想",
+        "フェルマーの最終定理",
+        "リーマン予想"
       ],
       "answer": 3,
-      "explanation": "個人情報が含まれている可能性もあり、個人情報保護委員会に報告しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003381/"
+      "explanation": "数学者は、167年間解けなかった数学の難問「リーマン予想」の証明を見つけたと発表しました。",
+      "source": "朝日新聞",
+      "url": "https://news.yahoo.co.jp/articles/c147d2e31e91f8dd4e13abc85138ce02b16b01e9"
     },
     {
-      "question": "宗佑磨選手は、どの球団に入ることになりましたか。",
+      "question": "「リーマン予想」の証明について、正しいのはどれですか。",
       "options": [
-        "DeNA",
-        "巨人",
-        "オリックス",
-        "ソフトバンク"
+        "コンピューターで正しいと検証されたと報告されたが、正式に認められたわけではない",
+        "論文としてすでに発表された",
+        "すでに数学界で正式に認められた",
+        "検証はまだ一度も行われていない"
       ],
       "answer": 0,
-      "explanation": "宗佑磨内野手が、DeNAに入ることが20日に分かりました。",
-      "source": "日刊スポーツ",
-      "url": "https://news.yahoo.co.jp/articles/8f8651bfa6dd31f84e5542a194fa7b1d80e5c963"
+      "explanation": "証明の手順がコンピューターで正しいと検証されたと報告されましたが、数学者が内容を理解するにはまだ時間がかかり、正式に認められたわけではありません。",
+      "source": "朝日新聞",
+      "url": "https://news.yahoo.co.jp/articles/c147d2e31e91f8dd4e13abc85138ce02b16b01e9"
     },
     {
-      "question": "DeNAからのオファーは、どのような内容でしたか。",
+      "question": "FC東京が達成した記録は、次のうちどれですか。",
       "options": [
-        "推定10年6億円に契約金と出来高払いを加えた大型のオファー",
-        "推定6年4億円に契約金と出来高払いを加えた大型のオファー",
-        "推定4年6億円に契約金と出来高払いを加えた大型のオファー",
-        "推定4年10億円に契約金と出来高払いを加えた大型のオファー"
+        "11試合連続無失点",
+        "9試合連続無失点",
+        "10試合連続無得点",
+        "10試合連続無失点のJ1新記録"
+      ],
+      "answer": 3,
+      "explanation": "FC東京は、10試合連続無失点のJ1新記録を達成しました。",
+      "source": "FOOTBALL ZONE",
+      "url": "https://news.yahoo.co.jp/articles/b0e60c9ca81d60bd66980ed811c2286af6abd36d"
+    },
+    {
+      "question": "前節の時点で、FC東京の無失点の時間は何分でしたか。",
+      "options": [
+        "823分",
+        "800分",
+        "900分",
+        "847分"
+      ],
+      "answer": 3,
+      "explanation": "前節には無失点の時間が847分となり、名古屋の823分も上回っていました。",
+      "source": "FOOTBALL ZONE",
+      "url": "https://news.yahoo.co.jp/articles/b0e60c9ca81d60bd66980ed811c2286af6abd36d"
+    },
+    {
+      "question": "LEDの信号機の弱点は、次のうちどれですか。",
+      "options": [
+        "電気を多く使いすぎること",
+        "すぐに壊れてしまうこと",
+        "発熱しないため雪がつきやすく、見えにくくなること",
+        "色が見えにくいこと"
       ],
       "answer": 2,
-      "explanation": "DeNAから推定4年6億円に契約金と出来高払いを加えた大型のオファーを受けました。",
-      "source": "日刊スポーツ",
-      "url": "https://news.yahoo.co.jp/articles/8f8651bfa6dd31f84e5542a194fa7b1d80e5c963"
+      "explanation": "LEDの信号機は発熱しないため、雪がつきやすく、吹雪のときに見えにくくなる弱点があります。",
+      "source": "集英社オンライン",
+      "url": "https://shueisha.online/articles/-/259320?disp=paging&page=2"
+    },
+    {
+      "question": "青森県では、信号機のおよそ何割がLED式ですか。",
+      "options": [
+        "およそ10割",
+        "およそ8割",
+        "およそ5割",
+        "およそ3割"
+      ],
+      "answer": 1,
+      "explanation": "青森県では、信号機のおよそ8割がLED式です。",
+      "source": "集英社オンライン",
+      "url": "https://shueisha.online/articles/-/259320?disp=paging&page=2"
     }
   ]
 }
