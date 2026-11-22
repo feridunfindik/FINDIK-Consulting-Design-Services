@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-22",
-  "generated": "2026-11-22 07:45 JST",
+  "date": "2026-11-23",
+  "generated": "2026-11-23 07:45 JST",
   "questions": [
     {
-      "question": "関芳弘文科相をめぐる問題は、次のうちどれですか。",
+      "question": "COP31はどこで開かれていましたか。",
       "options": [
-        "政治資金パーティーに省庁の職員を招いていたこと",
-        "消費税の減税法案に反対したこと",
-        "国会の審議を無断で欠席したこと",
-        "政治資金パーティーのお金を私的に使ったこと"
+        "アメリカ",
+        "日本",
+        "フランス",
+        "トルコ"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、COP31はトルコで開かれていました。",
+      "source": "ロイター",
+      "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
+    },
+    {
+      "question": "合意案がまとまらなかったのはいつ以来ですか。",
+      "options": [
+        "2009年のCOP15以来",
+        "2015年のパリ協定以来",
+        "去年以来",
+        "2020年以来"
       ],
       "answer": 0,
-      "explanation": "関芳弘文科相は、政治資金パーティーに省庁の職員を招いていたことが問題になっています。",
-      "source": "産経ニュース",
-      "url": "https://www.sankei.com/article/20261121-XTNIOF44LBINLDA2AIUXO5WFAQ/"
+      "explanation": "要約によると、合意案がまとまらなかったのは2009年のCOP15以来です。",
+      "source": "ロイター",
+      "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
     },
     {
-      "question": "野党は、関文科相についてどうする方針ですか。",
+      "question": "首里城正殿が焼けたのはいつですか。",
       "options": [
-        "関氏を刑事告発する",
-        "問責決議案の提出へ週明けに協議する",
-        "すぐに内閣不信任案を提出する",
-        "関氏への追及をやめる"
+        "2020年の火災",
+        "2022年の火災",
+        "2015年の火災",
+        "2019年の火災"
       ],
-      "answer": 1,
-      "explanation": "野党は、問責決議案の提出へ週明けに協議する方針です。",
-      "source": "産経ニュース",
-      "url": "https://www.sankei.com/article/20261121-XTNIOF44LBINLDA2AIUXO5WFAQ/"
+      "answer": 3,
+      "explanation": "要約によると、首里城正殿は2019年の火災で焼け落ちました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
     },
     {
-      "question": "降り始めからの雨の量が276ミリに達したのはどこですか。",
+      "question": "首里城正殿の一般公開はいつから始まりますか。",
       "options": [
-        "上越市",
-        "柏崎市",
-        "加茂市宮寄上",
-        "魚沼市守門"
+        "25日正午から",
+        "24日正午から",
+        "23日正午から",
+        "22日正午から"
       ],
       "answer": 2,
-      "explanation": "降り始めからの雨の量は、加茂市宮寄上で276ミリ、柏崎市で256.5ミリに達しました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1157066"
+      "explanation": "要約によると、一般公開は23日正午から始まります。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
     },
     {
-      "question": "魚沼市守門では、どれだけの雪が積もりましたか。",
+      "question": "流出した個人情報はおよそ何件ですか。",
       "options": [
-        "18センチ",
-        "28センチ",
-        "38センチ",
-        "48センチ"
+        "約1億1000万件",
+        "約1100万件",
+        "約1100件",
+        "約110万件"
       ],
       "answer": 1,
-      "explanation": "山沿いでは、魚沼市守門で28センチの雪が積もりました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1157066"
+      "explanation": "要約によると、約1100万件の個人情報が流出しました。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
     },
     {
-      "question": "アメリカのAI企業の数学者が発表したのは、何の証明ですか。",
+      "question": "流出した情報に含まれていないものはどれですか。",
       "options": [
-        "ゴールドバッハ予想",
-        "ポアンカレ予想",
-        "フェルマーの最終定理",
-        "リーマン予想"
-      ],
-      "answer": 3,
-      "explanation": "数学者は、167年間解けなかった数学の難問「リーマン予想」の証明を見つけたと発表しました。",
-      "source": "朝日新聞",
-      "url": "https://news.yahoo.co.jp/articles/c147d2e31e91f8dd4e13abc85138ce02b16b01e9"
-    },
-    {
-      "question": "「リーマン予想」の証明について、正しいのはどれですか。",
-      "options": [
-        "コンピューターで正しいと検証されたと報告されたが、正式に認められたわけではない",
-        "論文としてすでに発表された",
-        "すでに数学界で正式に認められた",
-        "検証はまだ一度も行われていない"
-      ],
-      "answer": 0,
-      "explanation": "証明の手順がコンピューターで正しいと検証されたと報告されましたが、数学者が内容を理解するにはまだ時間がかかり、正式に認められたわけではありません。",
-      "source": "朝日新聞",
-      "url": "https://news.yahoo.co.jp/articles/c147d2e31e91f8dd4e13abc85138ce02b16b01e9"
-    },
-    {
-      "question": "FC東京が達成した記録は、次のうちどれですか。",
-      "options": [
-        "11試合連続無失点",
-        "9試合連続無失点",
-        "10試合連続無得点",
-        "10試合連続無失点のJ1新記録"
-      ],
-      "answer": 3,
-      "explanation": "FC東京は、10試合連続無失点のJ1新記録を達成しました。",
-      "source": "FOOTBALL ZONE",
-      "url": "https://news.yahoo.co.jp/articles/b0e60c9ca81d60bd66980ed811c2286af6abd36d"
-    },
-    {
-      "question": "前節の時点で、FC東京の無失点の時間は何分でしたか。",
-      "options": [
-        "823分",
-        "800分",
-        "900分",
-        "847分"
-      ],
-      "answer": 3,
-      "explanation": "前節には無失点の時間が847分となり、名古屋の823分も上回っていました。",
-      "source": "FOOTBALL ZONE",
-      "url": "https://news.yahoo.co.jp/articles/b0e60c9ca81d60bd66980ed811c2286af6abd36d"
-    },
-    {
-      "question": "LEDの信号機の弱点は、次のうちどれですか。",
-      "options": [
-        "電気を多く使いすぎること",
-        "すぐに壊れてしまうこと",
-        "発熱しないため雪がつきやすく、見えにくくなること",
-        "色が見えにくいこと"
+        "氏名",
+        "メールアドレス",
+        "クレジットカードの情報",
+        "住所"
       ],
       "answer": 2,
-      "explanation": "LEDの信号機は発熱しないため、雪がつきやすく、吹雪のときに見えにくくなる弱点があります。",
-      "source": "集英社オンライン",
-      "url": "https://shueisha.online/articles/-/259320?disp=paging&page=2"
+      "explanation": "要約によると、クレジットカードの情報は含まれていませんでした。",
+      "source": "産経ニュース",
+      "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
     },
     {
-      "question": "青森県では、信号機のおよそ何割がLED式ですか。",
+      "question": "2024年に年収1億円を超えた人は何人でしたか。",
       "options": [
-        "およそ10割",
-        "およそ8割",
-        "およそ5割",
-        "およそ3割"
+        "38万人",
+        "3800人",
+        "3万8百人",
+        "3万8千人"
       ],
-      "answer": 1,
-      "explanation": "青森県では、信号機のおよそ8割がLED式です。",
-      "source": "集英社オンライン",
-      "url": "https://shueisha.online/articles/-/259320?disp=paging&page=2"
+      "answer": 3,
+      "explanation": "要約によると、2024年に年収1億円を超えた人は3万8千人でした。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
+    },
+    {
+      "question": "1億円を超えた人の6割が住んでいるのはどこですか。",
+      "options": [
+        "大阪や福岡など4府県",
+        "愛知や広島など4県",
+        "北海道や東北など4道県",
+        "東京や神奈川など4都県"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、6割にあたる2万2117人は東京や神奈川など4都県に住んでいます。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
+    },
+    {
+      "question": "藤浪投手を獲得するのはどの球団ですか。",
+      "options": [
+        "巨人",
+        "阪神",
+        "DeNA",
+        "オリックス"
+      ],
+      "answer": 3,
+      "explanation": "要約によると、オリックスが藤浪投手を獲得することが分かりました。",
+      "source": "時事通信",
+      "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
+    },
+    {
+      "question": "藤浪投手が阪神に入ったのはいつですか。",
+      "options": [
+        "2020年",
+        "2023年",
+        "2013年",
+        "2015年"
+      ],
+      "answer": 2,
+      "explanation": "要約によると、藤浪投手は2013年にドラフト1位で阪神に入りました。",
+      "source": "時事通信",
+      "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
     }
   ]
 }

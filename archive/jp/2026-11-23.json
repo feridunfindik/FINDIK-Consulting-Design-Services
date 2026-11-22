@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-23",
+  "news": {
+    "date": "2026-11-23",
+    "updated": "2026-11-23 07:44 JST",
+    "articles": [
+      {
+        "cat": "🌏 世界・政治",
+        "time": "11月22日 21:12",
+        "title": "COP31、合意文書採択できず閉幕",
+        "summary": "トルコで開かれていた気候変動の国際会議COP31は、会期を2日延ばした22日、最終の合意案をEUなどが拒否し、合意できないまま閉幕しました。合意案がまとまらなかったのは2009年のCOP15以来です。化石燃料からの脱却に直接触れなかったことが、反対の大きな理由でした。",
+        "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493",
+        "source": "ロイター",
+        "img": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261122-00000015-reut-000-3-view.jpg?exp=10800"
+      },
+      {
+        "cat": "🏠 くらし・文化",
+        "time": "11月22日 14:16",
+        "title": "首里城正殿で復元完成式　7年ぶりによみがえる鮮やかな琉球の象徴",
+        "summary": "2019年の火災で焼け落ちた沖縄・那覇市の首里城正殿の復元が終わり、22日に国主催の完成式が開かれました。琉球王国時代を思わせる鮮やかな姿が7年ぶりによみがえりました。一般公開は23日正午から始まります。工事費は約120億円で、防火のためスプリンクラーも新しく付けました。",
+        "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss",
+        "source": "朝日新聞",
+        "img": "https://imgopt.asahi.com/ogp/AS20261122002189_comm.jpg"
+      },
+      {
+        "cat": "🛡️ テクノロジー・科学",
+        "time": "11月22日 19:18",
+        "title": "タワレコ、顧客名やメルアドなど1100万件流出　通販サイトに不正アクセス",
+        "summary": "CDやDVDを売るタワーレコードは、通販サイトが不正アクセスを受け、会員のメールアドレスや氏名、住所など約1100万件の個人情報が流出したと発表しました。19日に不正アクセスを確認し、サイトを止めました。クレジットカードの情報は含まれず、21日の時点では悪用された被害は確認されていません。",
+        "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true",
+        "source": "産経ニュース",
+        "img": "https://www.sankei.com/common/images/ogp_default_image.jpg"
+      },
+      {
+        "cat": "💹 経済",
+        "time": "11月23日 5:00",
+        "title": "所得1億円超、10年で倍増　24年3万8千人、格差拡大",
+        "summary": "2024年に年収1億円を超えた人は3万8千人で、10年前の2.19倍に増えたことが国税庁のデータで分かりました。株高や地価の上昇、役員報酬の増加が理由です。6割にあたる2万2117人は東京や神奈川など4都県に住んでいます。一方、物価も賃金も10年で1割ほどしか上がらず、中間層の暮らしは大きく変わっていません。",
+        "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8",
+        "source": "共同通信",
+        "img": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261123-00000007-kyodonews-000-4-view.jpg?exp=10800"
+      },
+      {
+        "cat": "⚽ スポーツ",
+        "time": "11月22日 21:54",
+        "title": "オリックスが藤浪晋太郎獲得へ　DeNAを戦力外",
+        "summary": "プロ野球のオリックスが、DeNAを戦力外になった藤浪晋太郎投手（32）を獲得することが22日に分かりました。藤浪投手は2013年にドラフト1位で阪神に入り、1年目から3年連続で2桁勝利を挙げました。2023年からアメリカの大リーグに挑戦し、去年7月にDeNAで日本球界に戻っていました。",
+        "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb",
+        "source": "時事通信",
+        "img": "https://www.jiji.com/img/jijicom_og_image.png"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-23",
+    "generated": "2026-11-23 07:45 JST",
+    "questions": [
+      {
+        "question": "COP31はどこで開かれていましたか。",
+        "options": [
+          "アメリカ",
+          "日本",
+          "フランス",
+          "トルコ"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、COP31はトルコで開かれていました。",
+        "source": "ロイター",
+        "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
+      },
+      {
+        "question": "合意案がまとまらなかったのはいつ以来ですか。",
+        "options": [
+          "2009年のCOP15以来",
+          "2015年のパリ協定以来",
+          "去年以来",
+          "2020年以来"
+        ],
+        "answer": 0,
+        "explanation": "要約によると、合意案がまとまらなかったのは2009年のCOP15以来です。",
+        "source": "ロイター",
+        "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
+      },
+      {
+        "question": "首里城正殿が焼けたのはいつですか。",
+        "options": [
+          "2020年の火災",
+          "2022年の火災",
+          "2015年の火災",
+          "2019年の火災"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、首里城正殿は2019年の火災で焼け落ちました。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
+      },
+      {
+        "question": "首里城正殿の一般公開はいつから始まりますか。",
+        "options": [
+          "25日正午から",
+          "24日正午から",
+          "23日正午から",
+          "22日正午から"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、一般公開は23日正午から始まります。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
+      },
+      {
+        "question": "流出した個人情報はおよそ何件ですか。",
+        "options": [
+          "約1億1000万件",
+          "約1100万件",
+          "約1100件",
+          "約110万件"
+        ],
+        "answer": 1,
+        "explanation": "要約によると、約1100万件の個人情報が流出しました。",
+        "source": "産経ニュース",
+        "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
+      },
+      {
+        "question": "流出した情報に含まれていないものはどれですか。",
+        "options": [
+          "氏名",
+          "メールアドレス",
+          "クレジットカードの情報",
+          "住所"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、クレジットカードの情報は含まれていませんでした。",
+        "source": "産経ニュース",
+        "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
+      },
+      {
+        "question": "2024年に年収1億円を超えた人は何人でしたか。",
+        "options": [
+          "38万人",
+          "3800人",
+          "3万8百人",
+          "3万8千人"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、2024年に年収1億円を超えた人は3万8千人でした。",
+        "source": "共同通信",
+        "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
+      },
+      {
+        "question": "1億円を超えた人の6割が住んでいるのはどこですか。",
+        "options": [
+          "大阪や福岡など4府県",
+          "愛知や広島など4県",
+          "北海道や東北など4道県",
+          "東京や神奈川など4都県"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、6割にあたる2万2117人は東京や神奈川など4都県に住んでいます。",
+        "source": "共同通信",
+        "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
+      },
+      {
+        "question": "藤浪投手を獲得するのはどの球団ですか。",
+        "options": [
+          "巨人",
+          "阪神",
+          "DeNA",
+          "オリックス"
+        ],
+        "answer": 3,
+        "explanation": "要約によると、オリックスが藤浪投手を獲得することが分かりました。",
+        "source": "時事通信",
+        "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
+      },
+      {
+        "question": "藤浪投手が阪神に入ったのはいつですか。",
+        "options": [
+          "2020年",
+          "2023年",
+          "2013年",
+          "2015年"
+        ],
+        "answer": 2,
+        "explanation": "要約によると、藤浪投手は2013年にドラフト1位で阪神に入りました。",
+        "source": "時事通信",
+        "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
+      }
+    ]
+  }
+}
