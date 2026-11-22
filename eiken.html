@@ -131,12 +131,14 @@
           </div>
         </div>
         <!-- Progress Tracker Pill -->
-        <div class="mt-3.5 pt-3 border-t border-white/10 flex items-center justify-center gap-1.5 text-[11px] font-semibold">
+        <div class="mt-3.5 pt-3 border-t border-white/10 flex flex-wrap items-center justify-center gap-1.5 text-[11px] font-semibold">
           <span class="px-2 py-0.5 rounded bg-white/10 text-slate-300">Essay 1: 52w</span>
           <span class="text-slate-400">&rarr;</span>
-          <span class="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-400/30">Essay 2: 73w (+21!)</span>
+          <span class="px-2 py-0.5 rounded bg-white/10 text-slate-300">Essay 2: 73w</span>
           <span class="text-slate-400">&rarr;</span>
-          <span class="px-2 py-0.5 rounded bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">Goal: 80–100w</span>
+          <span class="px-2.5 py-0.5 rounded bg-emerald-400/25 text-emerald-300 border border-emerald-400/40 shadow-sm">
+            Rewrite #2: 82w · TARGET HIT (80–100w)!
+          </span>
         </div>
       </div>
     </div>
@@ -260,61 +262,177 @@
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 2: See Your Progress</span>
           <h2 class="text-2xl font-bold text-slate-900">Your Drafts vs. Passing Model Essays</h2>
           <p id="makeover-prompt-label" class="text-sm text-slate-600 mt-1">
-            Prompt: <em>"Today, many junior high school students have their own smartphones. Do you think this is a good idea?"</em>
+            Prompt: <em>"Some people say that online shopping is better than shopping at physical stores. Do you agree?"</em>
           </p>
         </div>
 
-        <!-- Essay #1 / Essay #2 Toggle Switch -->
+        <!-- Essay #1 (3-Step Evolution) / Essay #2 Toggle Switch -->
         <div class="inline-flex p-1 rounded-xl bg-slate-200/80 border border-slate-200 self-start md:self-auto shrink-0">
-          <button
-            id="btn-essay-2"
-            onclick="switchMakeoverEssay(2)"
-            class="px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-brand-700 shadow-sm transition flex items-center gap-1.5"
-          >
-            <span>Essay #2: Smartphones</span>
-            <span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px]">73w &rarr; 94w</span>
-          </button>
           <button
             id="btn-essay-1"
             onclick="switchMakeoverEssay(1)"
+            class="px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-brand-700 shadow-sm transition flex items-center gap-1.5"
+          >
+            <span>Online Shopping (3-Step)</span>
+            <span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px]">52w &rarr; 82w!</span>
+          </button>
+          <button
+            id="btn-essay-2"
+            onclick="switchMakeoverEssay(2)"
             class="px-3.5 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5"
           >
-            <span>Essay #1: Shopping</span>
-            <span class="px-1.5 py-0.5 rounded bg-slate-300/70 text-slate-700 text-[10px]">52w &rarr; 87w</span>
+            <span>Junior High Smartphones</span>
+            <span class="px-1.5 py-0.5 rounded bg-slate-300/70 text-slate-700 text-[10px]">73w &rarr; 94w</span>
           </button>
         </div>
       </div>
 
-      <!-- ESSAY #2 VIEW (DEFAULT ACTIVE - LATEST ESSAY) -->
-      <div id="makeover-panel-2" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- TAB 1: ONLINE SHOPPING 3-STEP EVOLUTION (DEFAULT ACTIVE) -->
+      <div id="makeover-panel-1" class="space-y-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <!-- Step 1: Draft 1 (52w) -->
+          <div class="bg-white rounded-2xl border border-rose-200/90 card-shadow overflow-hidden flex flex-col">
+            <div class="bg-rose-50 px-4 py-3 border-b border-rose-100 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                <h3 class="font-bold text-rose-950 text-xs sm:text-sm">1. Draft 1 (Nov 19 · 15m)</h3>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 text-[11px] font-bold">52 Words</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-xs sm:text-sm leading-relaxed text-slate-700">
+                I don't agree. I have two reasons, first of all, online shops don't have the fun of shopping. Second of all, when you shop in a online shop you lose track of what you bought, for these reasons, I don't agree to online shoping is better than shopping at physicall shops.
+              </div>
+              <div class="text-xs text-slate-500 pt-1">
+                <strong>Starting point:</strong> Good ideas, but 28 words short of 80w and written as 1 block with comma splices.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Rewrite #2 (82w - TARGET HIT!) -->
+          <div class="bg-white rounded-2xl border-2 border-brand-300 card-shadow overflow-hidden flex flex-col">
+            <div class="bg-brand-50 px-4 py-3 border-b border-brand-100 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span>
+                <h3 class="font-bold text-brand-950 text-xs sm:text-sm">2. Rewrite #2 (Nov 22 · 20m)</h3>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">82w · TARGET HIT!</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-xs sm:text-sm leading-relaxed text-slate-700">
+                I don't think that online shopping is better than <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Double p: shopping">shoping</span>, at physical stores. I have two reasons. First of all, online <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Plural 'shops' + 'don't' (or 'doesn't')">stopes dosen't</span> have the fun of <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Double p: shopping">shoping</span>. But in physical stores you can see the items by <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="One word: yourself">your self</span>. Also you can explore and find new <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Spelling: things">tings</span>. Second of all, in online <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Double p: shopping">shoping</span> you can lose track of what you bought and <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Parallel base verb after 'can': accidentally buy">acidentaly buying</span> <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Uncountable: so much stuff">so many stauff</span>. For those reasons, <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Use: I disagree with the idea that">I disagree to think</span> online <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Double p: shopping">shoping</span> is better than physical stores.
+              </div>
+              <div class="text-xs text-brand-800 font-medium pt-1">
+                <strong>Breakthrough:</strong> +30 words! Great examples added and clean sentence endings.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Polished Passing Model (88w) -->
+          <div class="bg-white rounded-2xl border border-emerald-200/90 card-shadow overflow-hidden flex flex-col">
+            <div class="bg-emerald-50 px-4 py-3 border-b border-emerald-100 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h3 class="font-bold text-emerald-950 text-xs sm:text-sm">3. Polished Passing Model</h3>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">88 Words</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+              <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 text-xs sm:text-sm leading-relaxed text-slate-800 space-y-2.5">
+                <p>
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded mr-1">Intro</span>
+                  I do not think that online <strong>shopping</strong> is better than <strong>shopping</strong> at physical stores. I have two reasons for this.
+                </p>
+                <p>
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded mr-1">Reason 1</span>
+                  First of all, online <strong>shops do not</strong> have the fun of <strong>shopping</strong>. At physical stores, you can see the items by <strong>yourself</strong>. Also, you can explore and find new <strong>things</strong>.
+                </p>
+                <p>
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded mr-1">Reason 2</span>
+                  Second of all, when you use online <strong>shopping</strong>, you can lose track of what you bought and <strong>accidentally buy too much stuff</strong>.
+                </p>
+                <p>
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded mr-1">Conclusion</span>
+                  For these reasons, <strong>I disagree with the idea that</strong> online <strong>shopping</strong> is better than physical stores.
+                </p>
+              </div>
+              <div class="text-xs text-emerald-800 font-medium pt-1">
+                <strong>Exam-ready:</strong> 4 clean paragraphs with zero spelling or verb-form deductions.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What Improved vs. Final Micro-Fixes Callout Card -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 card-shadow grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2 text-xs text-slate-600">
+            <div class="font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
+              <span>★</span> Huge Wins in Rewrite #2
+            </div>
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Hit the 80–100w Target Zone:</strong> Jumped from 52 words to <strong>82 words</strong> (+30 words!) in 20 minutes.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Specific Supporting Examples:</strong> Added <em>"see the items by yourself"</em> and <em>"explore and find new things"</em> to explain why physical stores are fun.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Fixed Opening & Punctuation:</strong> Opened cleanly with <em>"I don't think that..."</em> and separated sentences with periods instead of comma splices.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-600">
+            <div class="font-bold text-rose-800 uppercase tracking-wider flex items-center gap-1.5">
+              <span>✎</span> Final Micro-Fixes for Full Points
+            </div>
+            <ul class="space-y-1.5">
+              <li class="flex items-start gap-2">
+                <span class="text-rose-500 font-bold">•</span>
+                <span><strong>Double-p in <em>shopping</em>:</strong> <em>shoping</em> &rarr; <strong>shopping</strong> (always check every instance!).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-rose-500 font-bold">•</span>
+                <span><strong>Subject-Verb & Parallel Verbs:</strong> <em>online stopes dosen't</em> &rarr; <strong>online shops don't</strong>; <em>can lose track ... and acidentaly buying</em> &rarr; <strong>can lose track ... and accidentally buy</strong>.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-rose-500 font-bold">•</span>
+                <span><strong>Word Choice & Spelling:</strong> <em>so many stauff</em> &rarr; <strong>so much stuff</strong>; <em>tings</em> &rarr; <strong>things</strong>; <em>your self</em> &rarr; <strong>yourself</strong>; <em>I disagree to think</em> &rarr; <strong>I disagree with the idea that</strong>.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: JUNIOR HIGH SMARTPHONES (HIDDEN BY DEFAULT, TOGGLEABLE) -->
+      <div id="makeover-panel-2" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Before Card (Essay #2) -->
         <div class="bg-white rounded-2xl border border-amber-200/90 card-shadow overflow-hidden flex flex-col">
           <div class="bg-amber-50 px-5 py-3.5 border-b border-amber-100 flex items-center justify-between">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-              <h3 class="font-bold text-amber-950 text-sm">Essay #2 Draft (21 mins)</h3>
+              <h3 class="font-bold text-amber-950 text-sm">Smartphones Draft (21 mins)</h3>
             </div>
-            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">73 Words (So Close! +21w)</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">73 Words</span>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
             <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/70 text-sm leading-relaxed text-slate-700">
-              I <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Preposition: Use 'disagree with'">disagree to</span> this idea. I have <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Homophone: Use 'two' for number 2">to</span> reasons. <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Capitalize 'First' & start a new paragraph">first</span> of all, recently we have so many ways to use <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Japanese abbreviation: Write 'social media' in English">sns</span>, like <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Capitalize app names: Instagram and TikTok">instagram and tictok</span>. <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Avoid starting a sentence with 'but'; use 'However,'">but</span> these apps may be <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="One word: sometimes">some times</span> dangerous. <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Use 'because' + Subject + Verb (drop 'of')">because of</span> you might get into some <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: crimes">craims</span>. Second of all <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Drop 'by' when the -ing phrase is the subject">by using</span> <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="One word: smartphones">smart phones</span> too much might <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Lowercase: cause">Cause</span> neck <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: -y becomes -ies -> injuries">injurys</span> and lack of <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: Keep the 'y' -> studying">Studing</span> <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Start a new sentence & spell as one word: Therefore,">there for</span> I think that junior high school students using smartphones is not a good idea.
+              I <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Preposition: Use 'disagree with'">disagree to</span> this idea. I have <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Homophone: Use 'two' for number 2">to</span> reasons. <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Capitalize 'First' & start a new paragraph">first</span> of all, recently we have so many ways to use <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Japanese abbreviation: Write 'social media' in English">sns</span>, like <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Capitalize app names: Instagram and TikTok">instagram and tictok</span>. <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Avoid starting a sentence with 'but'; use 'However,'">but</span> these apps may be <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="One word: sometimes">some times</span> dangerous. <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Use 'because' + Subject + Verb (drop 'of')">because of</span> you might get into some <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: crimes">craims</span>. Second of all <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Drop 'by' when the -ing phrase is the subject">by rising</span> <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="One word: smartphones">smart phones</span> too much might <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Lowercase: cause">Cause</span> neck <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: -y becomes -ies -> injuries">injurys</span> and lack of <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: Keep the 'y' -> studying">Studing</span> <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Start a new sentence & spell as one word: Therefore,">there for</span> I think that junior high school students using smartphones is not a good idea.
             </div>
 
             <div class="space-y-2 text-xs text-slate-600">
-              <div class="font-bold text-slate-800 uppercase tracking-wider">Big Improvements & Fixes:</div>
+              <div class="font-bold text-slate-800 uppercase tracking-wider">Key Fixes in Smartphones Essay:</div>
               <ul class="space-y-1.5">
                 <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">★</span>
-                  <span><strong>Huge Jump:</strong> Grew from 52 words to <strong>73 words</strong> with concrete examples (Instagram, TikTok, neck injuries, studying)!</span>
+                  <span class="text-rose-500 font-bold">✕</span>
+                  <span><strong>Homophones & Spacing:</strong> <em>to reasons</em> &rarr; <strong>two reasons</strong>; <em>some times</em> &rarr; <strong>sometimes</strong>; <em>there for</em> &rarr; <strong>Therefore,</strong></span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-rose-500 font-bold">✕</span>
-                  <span><strong>Spacing & Homophones:</strong> <em>to reasons</em> &rarr; <strong>two reasons</strong>; <em>some times</em> &rarr; <strong>sometimes</strong>; <em>there for</em> &rarr; <strong>Therefore,</strong></span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-rose-500 font-bold">✕</span>
-                  <span><strong>Grammar & Spelling:</strong> <em>sns</em> &rarr; <strong>social media</strong>; <em>because of you might</em> &rarr; <strong>because you might</strong>; <em>by using... might cause</em> &rarr; <strong>using... might cause</strong>; <em>injurys / Studing / craims</em> &rarr; <strong>injuries / studying / crimes</strong>.</span>
+                  <span><strong>Grammar & Spelling:</strong> <em>disagree to</em> &rarr; <strong>disagree with</strong>; <em>sns</em> &rarr; <strong>social media</strong>; <em>because of you might</em> &rarr; <strong>because you might</strong>; <em>by rising... might cause</em> &rarr; <strong>Using... might cause</strong>; <em>injurys / Studing</em> &rarr; <strong>injuries / studying</strong>.</span>
                 </li>
               </ul>
             </div>
@@ -326,7 +444,7 @@
           <div class="bg-emerald-50 px-5 py-3.5 border-b border-emerald-100 flex items-center justify-between">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-              <h3 class="font-bold text-emerald-950 text-sm">Essay #2 Passing Model Revision</h3>
+              <h3 class="font-bold text-emerald-950 text-sm">Smartphones Passing Model Revision</h3>
             </div>
             <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">94 Words (Target Hit!)</span>
           </div>
@@ -359,97 +477,7 @@
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-emerald-600 font-bold">✓</span>
-                  <span><strong>94 words</strong> hits the exact Eiken Grade 2 target length without feeling rushed.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span>Uses strong connectors (<em>First of all, However, Second of all, For example, Therefore</em>).</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ESSAY #1 VIEW (HIDDEN BY DEFAULT, TOGGLEABLE) -->
-      <div id="makeover-panel-1" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Before Card (Essay #1) -->
-        <div class="bg-white rounded-2xl border border-rose-200/90 card-shadow overflow-hidden flex flex-col">
-          <div class="bg-rose-50 px-5 py-3.5 border-b border-rose-100 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
-              <h3 class="font-bold text-rose-950 text-sm">Essay #1 Draft (15 mins)</h3>
-            </div>
-            <span class="px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 text-xs font-bold">52 Words (Too Short)</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/70 text-sm leading-relaxed text-slate-700">
-              I don't agree. I have two <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Comma splice: Use a period instead of a comma">reasons, first</span> of all, <span class="bg-rose-100 text-rose-900 px-1 rounded line-through" title="Unfinished crossed-out word">I th</span> online shops don't have the fun of shopping. Second of all, when you shop in <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Use 'an' before vowel sound">a online</span> shop you lose track of what you <span class="bg-amber-100 text-amber-900 px-1 rounded underline decoration-amber-500" title="Comma splice: Use a period before 'For these reasons'">bought, for</span> these reasons, <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Grammar: Say 'I disagree that' or 'I do not think that'">I don't agree to</span> online <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: shopping (double p)">shoping</span> is better than shopping at <span class="bg-rose-100 text-rose-900 px-1 rounded font-semibold" title="Spelling: physical (single l)">physicall</span> shops.
-            </div>
-
-            <div class="space-y-2 text-xs text-slate-600">
-              <div class="font-bold text-slate-800 uppercase tracking-wider">What we fixed in Essay #1:</div>
-              <ul class="space-y-1.5">
-                <li class="flex items-start gap-2">
-                  <span class="text-rose-500 font-bold">✕</span>
-                  <span><strong>Length:</strong> 52 words needed ~35 more words (add 1 detail sentence to each reason).</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-rose-500 font-bold">✕</span>
-                  <span><strong>Layout:</strong> Written as 1 big block with comma splices instead of 4 separated paragraphs.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-rose-500 font-bold">✕</span>
-                  <span><strong>Spelling & Grammar:</strong> <em>a online</em> &rarr; <strong>an online</strong>; <em>shoping</em> &rarr; <strong>shopping</strong>; <em>physicall</em> &rarr; <strong>physical</strong>.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- After Card (Essay #1) -->
-        <div class="bg-white rounded-2xl border border-emerald-200/90 card-shadow overflow-hidden flex flex-col">
-          <div class="bg-emerald-50 px-5 py-3.5 border-b border-emerald-100 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-              <h3 class="font-bold text-emerald-950 text-sm">Essay #1 Passing Model Revision</h3>
-            </div>
-            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">87 Words (Sweet Spot!)</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/70 text-sm leading-relaxed text-slate-800 space-y-3">
-              <p>
-                <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded mr-1">Intro</span>
-                I do not think that online shopping is better than shopping at physical stores. I have two reasons for this.
-              </p>
-              <p>
-                <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded mr-1">Reason 1</span>
-                First, online shops do not have the fun of shopping. <strong>At physical stores, people can walk around and see new items in person.</strong>
-              </p>
-              <p>
-                <span class="text-[10px] font-bold uppercase tracking-wider bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded mr-1">Reason 2</span>
-                Second, when you shop at an online store, it is easy to lose track of what you bought. <strong>You might order too many things without noticing.</strong>
-              </p>
-              <p>
-                <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded mr-1">Conclusion</span>
-                For these reasons, I disagree with the idea that online shopping is better than physical shopping.
-              </p>
-            </div>
-
-            <div class="space-y-2 text-xs text-slate-600">
-              <div class="font-bold text-slate-800 uppercase tracking-wider">Why this gets a high score:</div>
-              <ul class="space-y-1.5">
-                <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span><strong>Uses YOUR exact ideas</strong>, just expanded with bolded supporting examples.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span><strong>Clean 4-paragraph visual layout</strong> makes it effortless for the Eiken grader to read.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span><strong>87 words</strong> lands right in the middle of the 80–100 word target zone.</span>
+                  <span><strong>94 words</strong> hits the exact Eiken Grade 2 target length with strong connectors (<em>First of all, However, Second of all, For example, Therefore</em>).</span>
                 </li>
               </ul>
             </div>
@@ -597,13 +625,32 @@
           </div>
 
           <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-2">
+            <button onclick="copyEssayOnly()" class="px-4 py-3 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+              Copy Essay Text Only
+            </button>
+
+            <button onclick="copyForGeminiGrading()" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow-md shadow-brand-600/20 transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-brand-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Copy Essay + Eiken Grading Prompt
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 4: TOP TRAP POINTS & PERSONAL SPELLING WATCHLIST -->
     <section id="checklist" class="scroll-mt-20">
       <div class="mb-5">
         <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Step 4: Your Personal Watchlist</span>
         <h2 class="text-2xl font-bold text-slate-900">Top 6 Trap Points & Personal Spelling Checklist</h2>
         <p class="text-sm text-slate-600 mt-1">
-          Every fix below comes directly from your Essay #1 and Essay #2 drafts. Review these 6 cards in the final 3 minutes of the exam!
+          Every habit below comes directly from your three practice drafts. Review these 6 cards in the final 2 minutes of the exam!
         </p>
       </div>
 
@@ -611,84 +658,82 @@
         <!-- Trap 1 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
           <div class="w-8 h-8 rounded-lg bg-rose-100 text-rose-700 font-extrabold text-sm flex items-center justify-center mb-3">1</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">Use "disagree with" (Not "to")</h3>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">"shopping" (Double p Every Time!)</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            Never write <em>"I disagree to..."</em>. Memorize these two safe opening & closing patterns:
+            You spelled <em>shopping</em> right in Sentence 1, then wrote <em>shoping</em> 4 times later. Always scan every <strong>sh-o-p-p-i-n-g</strong> in your final 2-minute check!
           </p>
           <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
-            <div class="text-rose-600 line-through">I disagree to this idea.</div>
-            <div class="text-emerald-700 font-semibold">✓ I disagree with this idea.</div>
-            <div class="text-emerald-700 font-semibold">✓ I do not think that [topic]...</div>
+            <div class="text-rose-600 line-through">online shoping / fun of shoping</div>
+            <div class="text-emerald-700 font-semibold">✓ online shopping / fun of shopping</div>
           </div>
         </div>
 
         <!-- Trap 2 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
           <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 font-extrabold text-sm flex items-center justify-center mb-3">2</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">Homophones & Word Spacing</h3>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Plural "shops don't" vs. "doesn't"</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            Watch out for words that sound identical or should be written as <strong>one single word</strong>:
+            Plural nouns (<em>online shops</em>) take <strong>don't</strong>. And when using singular, spell <strong>doesn't</strong> with <em>o-e</em> (never <em>dosen't</em>):
           </p>
-          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1.5 border border-slate-200/70 font-medium text-slate-800">
-            <div class="flex justify-between"><span><strong class="text-emerald-700">two</strong> reasons</span><span class="text-rose-500 line-through">to reasons</span></div>
-            <div class="flex justify-between"><span><strong class="text-emerald-700">sometimes</strong></span><span class="text-rose-500 line-through">some times</span></div>
-            <div class="flex justify-between"><span><strong class="text-emerald-700">Therefore,</strong></span><span class="text-rose-500 line-through">there for</span></div>
-            <div class="flex justify-between"><span><strong class="text-emerald-700">smartphones</strong></span><span class="text-rose-500 line-through">smart phones</span></div>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
+            <div class="text-rose-600 line-through">online stopes dosen't have...</div>
+            <div class="text-emerald-700 font-semibold">✓ online shops don't have...</div>
+            <div class="text-emerald-700 font-semibold">✓ an online shop doesn't have...</div>
           </div>
         </div>
 
         <!-- Trap 3 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
           <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 font-extrabold text-sm flex items-center justify-center mb-3">3</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">"because" vs. "because of"</h3>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Parallel Verbs After "can"</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            When a full clause (Subject + Verb) follows, always use <strong>because</strong> without <em>of</em>:
+            When two verbs share <strong>can</strong> (<em>can A and B</em>), <strong>both verbs</strong> stay in base form—never switch the second verb to <em>-ing</em>:
           </p>
           <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
-            <div class="text-rose-600 line-through">because of you might get into...</div>
-            <div class="text-emerald-700 font-semibold">✓ because you might get into...</div>
-            <div class="text-slate-500 pt-1"><em>("because of" only takes a noun: "because of the rain")</em></div>
+            <div class="text-rose-600 line-through">you can lose track ... and acidentaly buying</div>
+            <div class="text-emerald-700 font-semibold">✓ you can lose track ... and accidentally buy</div>
           </div>
         </div>
 
         <!-- Trap 4 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
           <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 font-extrabold text-sm flex items-center justify-center mb-3">4</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">Don't Put "By" Before a Subject</h3>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">"so much stuff" (Uncountable)</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            An <strong>-ing</strong> verb can act as the subject of a sentence on its own—drop the word <em>by</em>:
+            <strong>Stuff</strong> is spelled without an <em>a</em> and is uncountable—so pair it with <strong>much</strong> (not <em>many</em>):
           </p>
           <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
-            <div class="text-rose-600 line-through">By using smartphones might cause...</div>
-            <div class="text-emerald-700 font-semibold">✓ Using smartphones too much might cause...</div>
+            <div class="text-rose-600 line-through">buying so many stauff</div>
+            <div class="text-emerald-700 font-semibold">✓ buy so much stuff / too much stuff</div>
           </div>
         </div>
 
         <!-- Trap 5 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
-          <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-3">5</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">Your Personal Spelling Watchlist</h3>
+          <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 font-extrabold text-sm flex items-center justify-center mb-3">5</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">"I disagree with the idea that..."</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            Double-check <strong>-y</strong> endings (keep <em>y</em> before <em>-ing</em>; change <em>y</em> to <em>ies</em> for plurals):
+            Never write <em>"disagree to"</em> or <em>"disagree to think"</em>. Memorize this exact closing chunk:
           </p>
-          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1.5 border border-slate-200/70 font-medium text-slate-800">
-            <div class="flex justify-between"><span>stud<strong class="text-brand-600">y</strong>ing</span><span class="text-slate-400">(keep the y!)</span></div>
-            <div class="flex justify-between"><span>injur<strong class="text-brand-600">ies</strong></span><span class="text-slate-400">(not injurys)</span></div>
-            <div class="flex justify-between"><span>cr<strong class="text-brand-600">i</strong>mes</span><span class="text-slate-400">(not craims)</span></div>
-            <div class="flex justify-between"><span>sho<strong class="text-brand-600">pp</strong>ing / physica<strong class="text-brand-600">l</strong></span><span class="text-slate-400">(pp / single l)</span></div>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
+            <div class="text-rose-600 line-through">I disagree to think online shoping is...</div>
+            <div class="text-emerald-700 font-semibold">✓ I disagree with the idea that [topic]...</div>
           </div>
         </div>
 
         <!-- Trap 6 -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 card-shadow">
-          <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 font-extrabold text-sm flex items-center justify-center mb-3">6</div>
-          <h3 class="font-bold text-slate-900 text-base mb-1.5">Avoid Japanese-English ("SNS")</h3>
+          <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-3">6</div>
+          <h3 class="font-bold text-slate-900 text-base mb-1.5">Quick Spelling & Spacing Checks</h3>
           <p class="text-xs text-slate-600 leading-relaxed mb-3">
-            "SNS" is Japanese-English (Wasei-eigo) and isn't understood in Western English. Always write <strong>social media</strong> and capitalize app names:
+            Your top 6 high-frequency words to double-check before putting your pencil down:
           </p>
-          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 border border-slate-200/70">
-            <div class="text-rose-600 line-through">use sns, like instagram and tictok</div>
-            <div class="text-emerald-700 font-semibold">✓ use social media, like Instagram and TikTok</div>
+          <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1.5 border border-slate-200/70 font-medium text-slate-800">
+            <div class="flex justify-between"><span>t<strong class="text-brand-600">h</strong>ings</span><span class="text-slate-400">(with h, not tings)</span></div>
+            <div class="flex justify-between"><span><strong class="text-brand-600">yourself</strong></span><span class="text-slate-400">(1 word, not your self)</span></div>
+            <div class="flex justify-between"><span>a<strong class="text-brand-600">cc</strong>identa<strong class="text-brand-600">ll</strong>y</span><span class="text-slate-400">(double c, double l)</span></div>
+            <div class="flex justify-between"><span><strong class="text-brand-600">two</strong> reasons</span><span class="text-slate-400">(number 2, not to)</span></div>
+            <div class="flex justify-between"><span>injur<strong class="text-brand-600">ies</strong> / stud<strong class="text-brand-600">y</strong>ing</span><span class="text-slate-400">(-ies / keep y)</span></div>
           </div>
         </div>
       </div>
@@ -737,7 +782,7 @@
 
     const fullSkeletonTemplate = `I disagree with this idea. I have two reasons for this.\n\nFirst, [Reason 1 using Point 1]. For example, [give a specific detail or example].\n\nSecond, [Reason 2 using Point 2]. This is because [explain why this happens].\n\nTherefore, I think that [restate your opinion].`;
 
-    // Toggle between Essay #1 and Essay #2 in Before & After Makeover
+    // Toggle between Online Shopping (3-Step Evolution) and Junior High Smartphones in Before & After Makeover
     function switchMakeoverEssay(essayNum) {
       const panel1 = document.getElementById("makeover-panel-1");
       const panel2 = document.getElementById("makeover-panel-2");
@@ -745,18 +790,18 @@
       const btn2 = document.getElementById("btn-essay-2");
       const promptLabel = document.getElementById("makeover-prompt-label");
 
-      if (essayNum === 2) {
-        panel2.classList.remove("hidden");
-        panel1.classList.add("hidden");
-        btn2.className = "px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-brand-700 shadow-sm transition flex items-center gap-1.5";
-        btn1.className = "px-3.5 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5";
-        promptLabel.innerHTML = 'Prompt: <em>"Today, many junior high school students have their own smartphones. Do you think this is a good idea?"</em>';
-      } else {
+      if (essayNum === 1) {
         panel1.classList.remove("hidden");
         panel2.classList.add("hidden");
         btn1.className = "px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-brand-700 shadow-sm transition flex items-center gap-1.5";
         btn2.className = "px-3.5 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5";
         promptLabel.innerHTML = 'Prompt: <em>"Some people say that online shopping is better than shopping at physical stores. Do you agree?"</em>';
+      } else {
+        panel2.classList.remove("hidden");
+        panel1.classList.add("hidden");
+        btn2.className = "px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-brand-700 shadow-sm transition flex items-center gap-1.5";
+        btn1.className = "px-3.5 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-1.5";
+        promptLabel.innerHTML = 'Prompt: <em>"Today, many junior high school students have their own smartphones. Do you think this is a good idea?"</em>';
       }
     }
 
