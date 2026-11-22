@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-23",
+  "news": {
+    "date": "2026-11-23",
+    "updated": "2026-11-23 02:45 TSİ",
+    "articles": [
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "22 Kasım 20:33",
+        "title": "COP31 sona erdi, 'Antalya Paktı' kabul edilmedi",
+        "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, uzayan görüşmelerin ardından sona erdi. Konferansta 'Antalya Paktı' adı verilen bir karar taslağı yayımlandı ancak Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
+        "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8fcc/live/ccdf38a0-e696-11f1-936e-1fd1d31671db.jpg"
+      },
+      {
+        "cat": "🌍 Dünya",
+        "time": "22 Kasım 23:16",
+        "title": "Trump, İran'a saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu",
+        "summary": "ABD Başkanı Donald Trump, İran ile anlaşmaya varılamaması halinde 1 Ocak'tan sonra bu ülkeye yönelik askeri saldırı emri verebileceğini belirtti. ABD Başkanı Trump'ın uyarısına göre, İran'a yönelik askeri saldırılar yeni yıldan sonra yeniden başlayabilir.",
+        "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2440000/trump-iran-2440352.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "22 Kasım 18:22",
+        "title": "Adalet Bakanı Gürlek: Fon soruşturmalarında 85 kişiden toplam 44,58 milyar lira tahsil edildi",
+        "summary": "Adalet Bakanı Akın Gürlek, fon soruşturmalarında şimdiye kadar 632 şüphelinin bulunduğunu bildirdi. Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildiğini açıklayan Bakan Gürlek, fon soruşturmalarıyla ilgili son bilgileri paylaştı.",
+        "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/22/thumbs_b_c_77f8cc4e763db7a6a211959fe26b55bf.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "23 Kasım 00:06",
+        "title": "Van'ın 4 ilçesinde eğitime kar engeli",
+        "summary": "Van'ın Çaldıran, Muradiye, Saray ve Özalp ilçelerinde olumsuz hava koşulları nedeniyle tüm eğitim kurumlarında eğitime bir gün ara verildi. Yoğun kar yağışı, buzlanma ve sis nedeniyle alınan kararla bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
+        "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1518000/kar-tatili-1519573.jpg"
+      },
+      {
+        "cat": "🚨 Gündem",
+        "time": "22 Kasım 22:59",
+        "title": "Sarıyer'de 'aslan gördüm' ihbarı yapıldı; ekipler çalışma başlattı",
+        "summary": "İstanbul Sarıyer'de bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı. Güvenlik kamerası görüntülerinde dişi aslan olduğu değerlendirilen bir hayvan tespit edilirken, bölgede yaşayanlar jandarma ekipleri tarafından uyarıldı. Ekipler, ihbar üzerine bölgede aslanı yakalama çalışması başlattı.",
+        "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b034800c757abf6569392a5.jpg"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-23",
+    "generated": "2026-11-23 08:44 JST",
+    "questions": [
+      {
+        "question": "COP31 zirvesi nerede düzenlendi?",
+        "options": [
+          "İstanbul'da",
+          "Ankara'da",
+          "Antalya'da",
+          "İzmir'de"
+        ],
+        "answer": 2,
+        "explanation": "Konferans Antalya'da düzenlendi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "'Antalya Paktı' neden kabul edilmedi?",
+        "options": [
+          "Konferans ertelendi",
+          "Avrupa Birliği, Panama ve Norveç dahil ülkeler itiraz etti",
+          "Taslak hiç yayımlanmadı",
+          "Türkiye taslağı geri çekti"
+        ],
+        "answer": 1,
+        "explanation": "Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Trump, İran ile anlaşmaya varılamaması halinde ne yapabileceğini söyledi?",
+        "options": [
+          "Yaptırımları kaldıracağını",
+          "Ambargo uygulayacağını",
+          "Görüşmeleri tamamen bitireceğini",
+          "1 Ocak'tan sonra askeri saldırı emri verebileceğini"
+        ],
+        "answer": 3,
+        "explanation": "Trump, anlaşmaya varılamaması halinde 1 Ocak'tan sonra askeri saldırı emri verebileceğini belirtti.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
+      },
+      {
+        "question": "Trump'a göre İran'a yönelik saldırılar ne zaman yeniden başlayabilir?",
+        "options": [
+          "Yeni yıldan sonra",
+          "Yarın",
+          "Aralık ayında",
+          "Bu hafta"
+        ],
+        "answer": 0,
+        "explanation": "Trump, İran'a yönelik saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
+      },
+      {
+        "question": "Fon soruşturmalarında şimdiye kadar kaç şüpheli bulundu?",
+        "options": [
+          "85",
+          "44",
+          "58",
+          "632"
+        ],
+        "answer": 3,
+        "explanation": "Bakan Gürlek, soruşturmalarda şimdiye kadar 632 şüphelinin bulunduğunu bildirdi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
+      },
+      {
+        "question": "Gönüllü iade ve geri kazanım kapsamında kaç kişiden toplam ne kadar tahsil edildi?",
+        "options": [
+          "85 kişiden 632 milyar lira",
+          "632 kişiden 44,58 milyar lira",
+          "85 kişiden 44,58 milyar lira",
+          "44 kişiden 85 milyar lira"
+        ],
+        "answer": 2,
+        "explanation": "Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
+      },
+      {
+        "question": "Van'ın hangi ilçelerinde eğitime ara verildi?",
+        "options": [
+          "Merkez, Edremit ve İpekyolu",
+          "Çaldıran, Muradiye ve Saray",
+          "Çaldıran, Muradiye, Saray ve Özalp",
+          "Özalp ve Gevaş"
+        ],
+        "answer": 2,
+        "explanation": "Çaldıran, Muradiye, Saray ve Özalp ilçelerinde eğitime bir gün ara verildi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
+      },
+      {
+        "question": "Van'da okullar hangi gün tatil edildi?",
+        "options": [
+          "21 Kasım Cumartesi",
+          "23 Kasım Pazartesi",
+          "24 Kasım Salı",
+          "22 Kasım Pazar"
+        ],
+        "answer": 1,
+        "explanation": "Bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
+      },
+      {
+        "question": "Sarıyer'de ekipler neden çalışma başlattı?",
+        "options": [
+          "Hayvanat bahçesinden aslan kaçtığı için",
+          "Bir aslanın yaralanması üzerine",
+          "Bir kişinin aslan gördüğünü ihbar etmesi üzerine",
+          "Bir aslanın birine saldırması üzerine"
+        ],
+        "answer": 2,
+        "explanation": "Bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
+      },
+      {
+        "question": "Güvenlik kamerası görüntülerinde ne tespit edildi?",
+        "options": [
+          "Dişi aslan olduğu değerlendirilen bir hayvan",
+          "Bir kurt",
+          "Bir kaplan",
+          "Bir ayı"
+        ],
+        "answer": 0,
+        "explanation": "Görüntülerde dişi aslan olduğu değerlendirilen bir hayvan tespit edildi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
+      }
+    ]
+  }
+}

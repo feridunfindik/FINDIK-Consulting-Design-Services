@@ -1,50 +1,51 @@
 {
-  "date": "2026-11-22",
-  "updated": "2026-11-22 02:44 TSİ",
+  "date": "2026-11-23",
+  "updated": "2026-11-23 02:45 TSİ",
   "articles": [
     {
+      "cat": "🏛️ Siyaset",
+      "time": "22 Kasım 20:33",
+      "title": "COP31 sona erdi, 'Antalya Paktı' kabul edilmedi",
+      "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, uzayan görüşmelerin ardından sona erdi. Konferansta 'Antalya Paktı' adı verilen bir karar taslağı yayımlandı ancak Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
+      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8fcc/live/ccdf38a0-e696-11f1-936e-1fd1d31671db.jpg"
+    },
+    {
       "cat": "🌍 Dünya",
-      "time": "22 Kasım 01:00",
-      "title": "İran'dan Bahreyn'e peş peşe saldırı: İki ABD üssü hedef alındı, bir tesiste yangın çıktı",
-      "summary": "İran, ABD varlıklarına ev sahipliği yapan Bahreyn'e yönelik saldırılarda bulundu. İran Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi. Saldırıda sivil bir sanayi tesisi de hedef alındı; tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı. Bahreyn İçişleri Bakanlığı, vatandaşlara en yakın güvenli yere gitmeleri çağrısında bulundu.",
-      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b02145f8c01a1364d06afd3.jpg"
+      "time": "22 Kasım 23:16",
+      "title": "Trump, İran'a saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu",
+      "summary": "ABD Başkanı Donald Trump, İran ile anlaşmaya varılamaması halinde 1 Ocak'tan sonra bu ülkeye yönelik askeri saldırı emri verebileceğini belirtti. ABD Başkanı Trump'ın uyarısına göre, İran'a yönelik askeri saldırılar yeni yıldan sonra yeniden başlayabilir.",
+      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2440000/trump-iran-2440352.jpg"
     },
     {
       "cat": "💹 Ekonomi",
-      "time": "22 Kasım 00:35",
-      "title": "Bitcoin, sert satış dalgasının ardından yeniden 60 bin doların üzerine çıktı",
-      "summary": "Bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirerek yeniden 60 bin doların üzerine çıktı; saat 23.00 itibarıyla 60 bin 279 dolardan işlem gördü. Düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı. Bitcoin, Ekim 2025'teki yaklaşık 126 bin dolarlık tarihi zirvesinin halen yaklaşık yüzde 52 altında bulunuyor.",
-      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2166000/bitcoin-aa-2167609.jpg"
-    },
-    {
-      "cat": "🌧️ Hava/Afet",
-      "time": "21 Kasım 22:33",
-      "title": "Van Özalp'ta arka arkaya depremler: AFAD duyurdu",
-      "summary": "AFAD, Van'ın Özalp ilçesini etkileyen 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu. Depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı; sarsıntılar Van'da da hissedildi. Depremler yaklaşık iki saat arayla meydana geldi ve bölgeden olumsuz bir haber aktarılmadı.",
-      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751",
-      "source": "TGRT Haber",
-      "img": "https://i.tgrthaber.com/images/2026/11/21/van-ozalpta-deprem-afad-duyurdu-3372751.jpg"
-    },
-    {
-      "cat": "🌧️ Hava/Afet",
-      "time": "21 Kasım 18:54",
-      "title": "İstanbul'un bazı ilçelerinde dolu ve sağanak etkili oldu",
-      "summary": "İstanbul'un bazı ilçelerinde etkili olan sağanak ve dolu nedeniyle yollar ve kaldırımlar beyaza bürünürken bazı bölgelerde su birikintileri oluştu. Yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu; Silivri ve Çatalca'da dolu yağdı. İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081",
+      "time": "22 Kasım 18:22",
+      "title": "Adalet Bakanı Gürlek: Fon soruşturmalarında 85 kişiden toplam 44,58 milyar lira tahsil edildi",
+      "summary": "Adalet Bakanı Akın Gürlek, fon soruşturmalarında şimdiye kadar 632 şüphelinin bulunduğunu bildirdi. Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildiğini açıklayan Bakan Gürlek, fon soruşturmalarıyla ilgili son bilgileri paylaştı.",
+      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673",
       "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/21/thumbs_b_c_4000831ea097effc5784a65255130119.jpg"
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/22/thumbs_b_c_77f8cc4e763db7a6a211959fe26b55bf.jpg"
     },
     {
-      "cat": "🏛️ Siyaset",
-      "time": "21 Kasım 11:45",
-      "title": "COP31 Antalya: Uzlaşma sağlanamadı, müzakereler uzadı",
-      "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, cuma günü sona ermesi planlanmasına rağmen ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı. Müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor. Delegeler, bir karar metninde uzlaşmak için görüşmelerini sürdürüyor.",
-      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "cat": "🌧️ Hava/Afet",
+      "time": "23 Kasım 00:06",
+      "title": "Van'ın 4 ilçesinde eğitime kar engeli",
+      "summary": "Van'ın Çaldıran, Muradiye, Saray ve Özalp ilçelerinde olumsuz hava koşulları nedeniyle tüm eğitim kurumlarında eğitime bir gün ara verildi. Yoğun kar yağışı, buzlanma ve sis nedeniyle alınan kararla bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
+      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html",
+      "source": "TRT Haber",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1518000/kar-tatili-1519573.jpg"
+    },
+    {
+      "cat": "🚨 Gündem",
+      "time": "22 Kasım 22:59",
+      "title": "Sarıyer'de 'aslan gördüm' ihbarı yapıldı; ekipler çalışma başlattı",
+      "summary": "İstanbul Sarıyer'de bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı. Güvenlik kamerası görüntülerinde dişi aslan olduğu değerlendirilen bir hayvan tespit edilirken, bölgede yaşayanlar jandarma ekipleri tarafından uyarıldı. Ekipler, ihbar üzerine bölgede aslanı yakalama çalışması başlattı.",
+      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403",
+      "source": "Hürriyet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b034800c757abf6569392a5.jpg"
     }
   ]
 }

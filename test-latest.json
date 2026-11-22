@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-22",
-  "generated": "2026-11-22 08:45 JST",
+  "date": "2026-11-23",
+  "generated": "2026-11-23 08:44 JST",
   "questions": [
     {
-      "question": "İran Devrim Muhafızları Ordusu, Bahreyn'deki hangi iki askeri üssü hedef aldığını bildirdi?",
+      "question": "COP31 zirvesi nerede düzenlendi?",
       "options": [
-        "El-Cufeyr ile İncirlik üsleri",
-        "Şeyh İsa ile El-Cufeyr askeri üsleri",
-        "El-Udeyd ile İncirlik üsleri",
-        "Şeyh İsa ile El-Udeyd üsleri"
-      ],
-      "answer": 1,
-      "explanation": "Özete göre Devrim Muhafızları Ordusu, Bahreyn'deki Şeyh İsa ile El-Cufeyr askeri üslerini hedef aldığını bildirdi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
-    },
-    {
-      "question": "Bahreyn'deki saldırıda hedef alınan sivil sanayi tesisinde ne oldu?",
-      "options": [
-        "Tesis kapatıldı ve çevresi boşaltıldı",
-        "Tesiste küçük bir sızıntı oldu ve hemen onarıldı",
-        "Tesis tamamen yıkıldı ve çok sayıda kişi yaralandı",
-        "Tesiste yangın çıktı ve maddi hasar oluştu, ilk verilere göre yaralanan olmadı"
-      ],
-      "answer": 3,
-      "explanation": "Özete göre tesiste yangın çıktı ve maddi hasar oluştu; ilk verilere göre yaralanan olmadı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/irandan-bahreyne-pes-pese-saldiri-iki-abd-ussu-hedef-alindi-bir-tesiste-yangin-cikti-bahreynden-vatandaslarina-kritik-uyari-43386586"
-    },
-    {
-      "question": "Bitcoin, cuma günü sert satışlarla kaça kadar geriledikten sonra yeniden 60 bin doların üzerine çıktı?",
-      "options": [
-        "55 bin 130 dolara",
-        "126 bin dolara",
-        "60 bin 279 dolara",
-        "52 bin dolara"
-      ],
-      "answer": 0,
-      "explanation": "Özete göre bitcoin, cuma günü sert satışlarla 55 bin 130 dolara kadar geriledikten sonra yönünü yukarı çevirdi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
-    },
-    {
-      "question": "Düşüş sırasında borsalarda 24 saatte ne kadarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı?",
-      "options": [
-        "60 milyar dolarlık",
-        "1,2 milyar dolarlık",
-        "2,4 milyar dolarlık",
-        "126 milyar dolarlık"
+        "İstanbul'da",
+        "Ankara'da",
+        "Antalya'da",
+        "İzmir'de"
       ],
       "answer": 2,
-      "explanation": "Özete göre düşüş sırasında borsalarda 24 saatte 2,4 milyar dolarlık vadeli işlem pozisyonu zorunlu olarak kapatıldı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/bitcoin-sert-satis-dalgasinin-ardindan-yeniden-60-bin-dolarin-uzerine-cikti-964103.html"
+      "explanation": "Konferans Antalya'da düzenlendi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "AFAD'ın duyurduğu üç depremin büyüklükleri nelerdi?",
+      "question": "'Antalya Paktı' neden kabul edilmedi?",
       "options": [
-        "3,6, 4,5 ve 4",
-        "3,6 ve 4,5",
-        "3,6, 4,2 ve 4,8",
-        "3,9, 4,5 ve 4"
-      ],
-      "answer": 0,
-      "explanation": "Özete göre AFAD, 3,6, 4,5 ve 4 büyüklüğünde üç deprem kaydedildiğini duyurdu.",
-      "source": "TGRT Haber",
-      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
-    },
-    {
-      "question": "Depremlerin merkez üssü neresi olarak açıklandı?",
-      "options": [
-        "Van'ın Özalp ilçesi",
-        "İran'ın Tahran kenti",
-        "Türkiye-İran sınırı ile Irak",
-        "İran'ın Hoy kenti ile Türkiye-İran sınırı"
-      ],
-      "answer": 3,
-      "explanation": "Özete göre depremlerin merkez üssü İran'ın Hoy kenti ile Türkiye-İran sınırı olarak açıklandı.",
-      "source": "TGRT Haber",
-      "url": "https://www.tgrthaber.com/gundem/van-ozalpta-deprem-afad-duyurdu-3372751"
-    },
-    {
-      "question": "İstanbul'da yağış özellikle Avrupa Yakası'nda hangi ilçelerde etkili oldu?",
-      "options": [
-        "Fatih, Esenler, Bayrampaşa ve Bahçelievler",
-        "Ümraniye ve Kadıköy",
-        "Büyükçekmece ve Beylikdüzü",
-        "Silivri ve Çatalca"
-      ],
-      "answer": 0,
-      "explanation": "Özete göre yağış özellikle Avrupa Yakası'nda Fatih, Esenler, Bayrampaşa ve Bahçelievler çevresinde etkili oldu.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
-    },
-    {
-      "question": "İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde kaç olarak ölçüldü?",
-      "options": [
-        "Yüzde 60",
-        "Yüzde 71",
-        "Yüzde 17",
-        "Yüzde 52"
+        "Konferans ertelendi",
+        "Avrupa Birliği, Panama ve Norveç dahil ülkeler itiraz etti",
+        "Taslak hiç yayımlanmadı",
+        "Türkiye taslağı geri çekti"
       ],
       "answer": 1,
-      "explanation": "Özete göre İBB CepTrafik haritasına göre kentte trafik yoğunluğu yüzde 71 olarak ölçüldü.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-ilcelerinde-dolu-ve-saganak-etkili-oldu/4133081"
+      "explanation": "Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "COP31 neden hafta sonuna sarktı?",
+      "question": "Trump, İran ile anlaşmaya varılamaması halinde ne yapabileceğini söyledi?",
       "options": [
-        "Konferans iptal edildiği için",
-        "Delegeler Antalya'dan ayrıldığı için",
-        "Fosil yakıtlar tamamen yasaklandığı için",
-        "Ülkeler ortak bir metinde anlaşamadığı için"
+        "Yaptırımları kaldıracağını",
+        "Ambargo uygulayacağını",
+        "Görüşmeleri tamamen bitireceğini",
+        "1 Ocak'tan sonra askeri saldırı emri verebileceğini"
       ],
       "answer": 3,
-      "explanation": "Özete göre COP31, ülkelerin ortak bir metinde anlaşamaması nedeniyle hafta sonuna sarktı.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Trump, anlaşmaya varılamaması halinde 1 Ocak'tan sonra askeri saldırı emri verebileceğini belirtti.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
     },
     {
-      "question": "COP31 müzakerelerinde tartışmanın odak noktasını ne oluşturuyor?",
+      "question": "Trump'a göre İran'a yönelik saldırılar ne zaman yeniden başlayabilir?",
       "options": [
-        "Fosil yakıtlar",
-        "Yenilenebilir enerji yatırımları",
-        "Orman yangınları",
-        "Deniz seviyesinin yükselmesi"
+        "Yeni yıldan sonra",
+        "Yarın",
+        "Aralık ayında",
+        "Bu hafta"
       ],
       "answer": 0,
-      "explanation": "Özete göre müzakerelerde tartışmanın odak noktasını fosil yakıtlar oluşturuyor.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/cop31-antalya-uzlaşma-sağlanamadı-müzakereler-uzadı/a-80008437?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Trump, İran'a yönelik saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
+    },
+    {
+      "question": "Fon soruşturmalarında şimdiye kadar kaç şüpheli bulundu?",
+      "options": [
+        "85",
+        "44",
+        "58",
+        "632"
+      ],
+      "answer": 3,
+      "explanation": "Bakan Gürlek, soruşturmalarda şimdiye kadar 632 şüphelinin bulunduğunu bildirdi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
+    },
+    {
+      "question": "Gönüllü iade ve geri kazanım kapsamında kaç kişiden toplam ne kadar tahsil edildi?",
+      "options": [
+        "85 kişiden 632 milyar lira",
+        "632 kişiden 44,58 milyar lira",
+        "85 kişiden 44,58 milyar lira",
+        "44 kişiden 85 milyar lira"
+      ],
+      "answer": 2,
+      "explanation": "Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
+    },
+    {
+      "question": "Van'ın hangi ilçelerinde eğitime ara verildi?",
+      "options": [
+        "Merkez, Edremit ve İpekyolu",
+        "Çaldıran, Muradiye ve Saray",
+        "Çaldıran, Muradiye, Saray ve Özalp",
+        "Özalp ve Gevaş"
+      ],
+      "answer": 2,
+      "explanation": "Çaldıran, Muradiye, Saray ve Özalp ilçelerinde eğitime bir gün ara verildi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
+    },
+    {
+      "question": "Van'da okullar hangi gün tatil edildi?",
+      "options": [
+        "21 Kasım Cumartesi",
+        "23 Kasım Pazartesi",
+        "24 Kasım Salı",
+        "22 Kasım Pazar"
+      ],
+      "answer": 1,
+      "explanation": "Bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
+    },
+    {
+      "question": "Sarıyer'de ekipler neden çalışma başlattı?",
+      "options": [
+        "Hayvanat bahçesinden aslan kaçtığı için",
+        "Bir aslanın yaralanması üzerine",
+        "Bir kişinin aslan gördüğünü ihbar etmesi üzerine",
+        "Bir aslanın birine saldırması üzerine"
+      ],
+      "answer": 2,
+      "explanation": "Bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
+    },
+    {
+      "question": "Güvenlik kamerası görüntülerinde ne tespit edildi?",
+      "options": [
+        "Dişi aslan olduğu değerlendirilen bir hayvan",
+        "Bir kurt",
+        "Bir kaplan",
+        "Bir ayı"
+      ],
+      "answer": 0,
+      "explanation": "Görüntülerde dişi aslan olduğu değerlendirilen bir hayvan tespit edildi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
     }
   ]
 }
