@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-23",
-  "generated": "2026-11-23 07:45 JST",
+  "date": "2026-11-24",
+  "generated": "2026-11-24 07:47 JST",
   "questions": [
     {
-      "question": "COP31はどこで開かれていましたか。",
+      "question": "フアン氏が復帰した役職はどれですか。",
       "options": [
-        "アメリカ",
-        "日本",
-        "フランス",
-        "トルコ"
+        "取締役会長",
+        "最高財務責任者",
+        "CEO",
+        "会長"
       ],
-      "answer": 3,
-      "explanation": "要約によると、COP31はトルコで開かれていました。",
-      "source": "ロイター",
-      "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
+      "answer": 2,
+      "explanation": "エヌビディアは、辞任したフアン氏がCEOに復帰したと発表しました。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261123de80304"
     },
     {
-      "question": "合意案がまとまらなかったのはいつ以来ですか。",
+      "question": "発表を受けて、エヌビディアの株価はどうなりましたか。",
       "options": [
-        "2009年のCOP15以来",
-        "2015年のパリ協定以来",
-        "去年以来",
-        "2020年以来"
+        "一時36％以上下がった",
+        "取引が止まった",
+        "変わらなかった",
+        "一時36％以上上がった"
+      ],
+      "answer": 3,
+      "explanation": "発表を受けて、株価は一時36％以上上がりました。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261123de80304"
+    },
+    {
+      "question": "「Microsoft To Do」はいつ終わりますか。",
+      "options": [
+        "2027年6月30日",
+        "2027年12月31日",
+        "2028年6月30日",
+        "2026年6月30日"
       ],
       "answer": 0,
-      "explanation": "要約によると、合意案がまとまらなかったのは2009年のCOP15以来です。",
-      "source": "ロイター",
-      "url": "https://news.yahoo.co.jp/articles/e80d2bf4449a69e4a13ca4c6c1067a18708f9493"
+      "explanation": "マイクロソフトは「Microsoft To Do」を2027年6月30日に終えると発表しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/23/2000003395/"
     },
     {
-      "question": "首里城正殿が焼けたのはいつですか。",
+      "question": "個人のアカウントの人には、何が勧められていますか。",
       "options": [
-        "2020年の火災",
-        "2022年の火災",
-        "2015年の火災",
-        "2019年の火災"
+        "データの自動移行",
+        "To Doを使い続けること",
+        "Plannerへの移行",
+        "ほかのアプリへの移行"
       ],
       "answer": 3,
-      "explanation": "要約によると、首里城正殿は2019年の火災で焼け落ちました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
+      "explanation": "個人のアカウントではPlannerは使えないため、ほかのアプリへの移行を勧めています。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/23/2000003395/"
     },
     {
-      "question": "首里城正殿の一般公開はいつから始まりますか。",
+      "question": "大の里は何回目の優勝を果たしましたか。",
       "options": [
-        "25日正午から",
-        "24日正午から",
-        "23日正午から",
-        "22日正午から"
+        "7回目",
+        "6回目",
+        "5回目",
+        "8回目"
       ],
-      "answer": 2,
-      "explanation": "要約によると、一般公開は23日正午から始まります。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCQ1JL4VCQUTIL01CM.html?ref=rss"
+      "answer": 0,
+      "explanation": "大の里は2場所連続、7回目の優勝を果たしました。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1157561"
     },
     {
-      "question": "流出した個人情報はおよそ何件ですか。",
+      "question": "優勝決定戦の相手はだれでしたか。",
       "options": [
-        "約1億1000万件",
-        "約1100万件",
-        "約1100件",
-        "約110万件"
+        "若元春",
+        "豊昇龍",
+        "霧島",
+        "照ノ富士"
+      ],
+      "answer": 0,
+      "explanation": "13勝2敗で並んだ平幕の若元春との優勝決定戦を制しました。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1157561"
+    },
+    {
+      "question": "逮捕されたのは何人ですか。",
+      "options": [
+        "フィリピン人女性4人",
+        "日本人3人とフィリピン人女性1人",
+        "日本人1人とフィリピン人女性3人",
+        "日本人4人"
       ],
       "answer": 1,
-      "explanation": "要約によると、約1100万件の個人情報が流出しました。",
-      "source": "産経ニュース",
-      "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
+      "explanation": "フィリピン警察が日本人3人とフィリピン人女性1人を逮捕しました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCR45DDVCRUHBI00FM.html?ref=rss"
     },
     {
-      "question": "流出した情報に含まれていないものはどれですか。",
+      "question": "容疑者らは、女性たちに何を約束して勧誘した疑いがありますか。",
       "options": [
-        "氏名",
-        "メールアドレス",
-        "クレジットカードの情報",
-        "住所"
+        "日本での仕事の紹介",
+        "日本での学校への入学",
+        "日本での裕福な暮らし",
+        "日本での旅行"
       ],
       "answer": 2,
-      "explanation": "要約によると、クレジットカードの情報は含まれていませんでした。",
-      "source": "産経ニュース",
-      "url": "https://www.sankei.com/article/20261122-KPERAOO4LRPHNJDO7JVGTMAHFE/?obOrigUrl=true"
+      "explanation": "18～21歳の女性に日本での裕福な暮らしを約束して勧誘した疑いがあります。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCR45DDVCRUHBI00FM.html?ref=rss"
     },
     {
-      "question": "2024年に年収1億円を超えた人は何人でしたか。",
+      "question": "事故が起きたのはいつですか。",
       "options": [
-        "38万人",
-        "3800人",
-        "3万8百人",
-        "3万8千人"
+        "22日",
+        "23日",
+        "24日",
+        "21日"
       ],
-      "answer": 3,
-      "explanation": "要約によると、2024年に年収1億円を超えた人は3万8千人でした。",
-      "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
+      "answer": 0,
+      "explanation": "柏崎刈羽原発で22日、38歳の男性作業員がガラスの下敷きになり、死亡しました。",
+      "source": "BSN新潟放送",
+      "url": "https://news.yahoo.co.jp/articles/388f9674c3bcebd67ba3912b0127d460e4a3f028"
     },
     {
-      "question": "1億円を超えた人の6割が住んでいるのはどこですか。",
+      "question": "東電は何を発表しましたか。",
       "options": [
-        "大阪や福岡など4府県",
-        "愛知や広島など4県",
-        "北海道や東北など4道県",
-        "東京や神奈川など4都県"
+        "安全が確認できるまで、発電所内の工事をすべて中止する",
+        "原発の運転をすべて止める",
+        "作業員の数を増やす",
+        "工事をすぐに再開する"
       ],
-      "answer": 3,
-      "explanation": "要約によると、6割にあたる2万2117人は東京や神奈川など4都県に住んでいます。",
-      "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/3fc792a4c10b540885e7b0e278a383bd2e4cdbd8"
-    },
-    {
-      "question": "藤浪投手を獲得するのはどの球団ですか。",
-      "options": [
-        "巨人",
-        "阪神",
-        "DeNA",
-        "オリックス"
-      ],
-      "answer": 3,
-      "explanation": "要約によると、オリックスが藤浪投手を獲得することが分かりました。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
-    },
-    {
-      "question": "藤浪投手が阪神に入ったのはいつですか。",
-      "options": [
-        "2020年",
-        "2023年",
-        "2013年",
-        "2015年"
-      ],
-      "answer": 2,
-      "explanation": "要約によると、藤浪投手は2013年にドラフト1位で阪神に入りました。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026112200383&g=bsb"
+      "answer": 0,
+      "explanation": "東電は22日夜、「安全が確認できるまで、発電所内の工事をすべて中止する」と発表しました。",
+      "source": "BSN新潟放送",
+      "url": "https://news.yahoo.co.jp/articles/388f9674c3bcebd67ba3912b0127d460e4a3f028"
     }
   ]
 }
