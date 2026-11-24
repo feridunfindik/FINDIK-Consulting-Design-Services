@@ -1,51 +1,50 @@
 {
-  "date": "2026-11-23",
-  "updated": "2026-11-23 02:45 TSİ",
+  "date": "2026-11-24",
+  "updated": "2026-11-24 02:45 TSİ",
   "articles": [
     {
       "cat": "🏛️ Siyaset",
-      "time": "22 Kasım 20:33",
-      "title": "COP31 sona erdi, 'Antalya Paktı' kabul edilmedi",
-      "summary": "Antalya'da düzenlenen Birleşmiş Milletler iklim konferansı COP31, uzayan görüşmelerin ardından sona erdi. Konferansta 'Antalya Paktı' adı verilen bir karar taslağı yayımlandı ancak Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
-      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8fcc/live/ccdf38a0-e696-11f1-936e-1fd1d31671db.jpg"
-    },
-    {
-      "cat": "🌍 Dünya",
-      "time": "22 Kasım 23:16",
-      "title": "Trump, İran'a saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu",
-      "summary": "ABD Başkanı Donald Trump, İran ile anlaşmaya varılamaması halinde 1 Ocak'tan sonra bu ülkeye yönelik askeri saldırı emri verebileceğini belirtti. ABD Başkanı Trump'ın uyarısına göre, İran'a yönelik askeri saldırılar yeni yıldan sonra yeniden başlayabilir.",
-      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2440000/trump-iran-2440352.jpg"
+      "time": "23 Kasım 16:42",
+      "title": "Cumhurbaşkanı Erdoğan: 'Terörsüz Türkiye' sürecini geniş siyasi ve toplumsal mutabakatla ilerletmek niyetindeyiz",
+      "summary": "Cumhurbaşkanı Erdoğan, Kabine Toplantısı'nın ardından yaptığı açıklamada Terörsüz Türkiye sürecini olabilecek en geniş siyasi ve toplumsal mutabakatla ilerletmek niyetinde olduklarını söyledi. Erdoğan, sürecin siyasi şantaj aracı haline getirilmesine izin vermeyeceklerini belirtti.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-terorsuz-turkiye-surecini-genis-siyasi-ve-toplumsal-mutabakatla-ilerletmek-niyetindeyiz/4134700",
+      "source": "Anadolu Ajansı",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/23/thumbs_b_c_922fbe487d98586457caf3cda71e777f.jpg"
     },
     {
       "cat": "💹 Ekonomi",
-      "time": "22 Kasım 18:22",
-      "title": "Adalet Bakanı Gürlek: Fon soruşturmalarında 85 kişiden toplam 44,58 milyar lira tahsil edildi",
-      "summary": "Adalet Bakanı Akın Gürlek, fon soruşturmalarında şimdiye kadar 632 şüphelinin bulunduğunu bildirdi. Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildiğini açıklayan Bakan Gürlek, fon soruşturmalarıyla ilgili son bilgileri paylaştı.",
-      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673",
-      "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/22/thumbs_b_c_77f8cc4e763db7a6a211959fe26b55bf.jpg"
+      "time": "24 Kasım 01:33",
+      "title": "Yeniden değerleme oranı belirlendi",
+      "summary": "Vergi, harç ve çeşitli kamu alacaklarının hesaplanmasında kullanılan yeniden değerleme oranı 2026 yılı için yüzde 27,83 olarak belirlendi. Gelir İdaresi Başkanlığının tebliği Resmi Gazete'de yayımlandı. Oran; emlak vergisi, motorlu taşıtlar vergisi, trafik cezaları ile ehliyet ve pasaport harçları gibi birçok vergi, harç ve cezanın artışını belirliyor.",
+      "url": "https://www.bbc.com/turkce/articles/cvglre569j3po?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Türkçe",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/5ce5/live/2405acc0-e78e-11f1-99a1-253766e7ad8b.jpg"
     },
     {
       "cat": "🌧️ Hava/Afet",
-      "time": "23 Kasım 00:06",
-      "title": "Van'ın 4 ilçesinde eğitime kar engeli",
-      "summary": "Van'ın Çaldıran, Muradiye, Saray ve Özalp ilçelerinde olumsuz hava koşulları nedeniyle tüm eğitim kurumlarında eğitime bir gün ara verildi. Yoğun kar yağışı, buzlanma ve sis nedeniyle alınan kararla bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
-      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html",
+      "time": "23 Kasım 23:32",
+      "title": "Balıkesir'de sağanak sele dönüştü: Hastane, ev ve iş yerlerini su bastı",
+      "summary": "Balıkesir'de akşam saatlerinden itibaren etkili olan kuvvetli sağanak, cadde ve sokaklarda su birikintilerine yol açtı; bir özel hastanenin acil girişini, bazı ev ve iş yerlerini su bastı. BASKİ ekipleri vidanjörle suyu tahliye etti. Havran ilçesinde çöken asfalt zeminde park halindeki 3 kamyon ve 1 kamyonet çukura devrildi.",
+      "url": "https://www.trthaber.com/haber/turkiye/balikesirde-saganak-sele-donustu-hastane-ev-ve-is-yerlerini-su-basti-964237.html",
       "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1518000/kar-tatili-1519573.jpg"
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/balikesir-saganak-sel-aa-2505607.jpg"
     },
     {
-      "cat": "🚨 Gündem",
-      "time": "22 Kasım 22:59",
-      "title": "Sarıyer'de 'aslan gördüm' ihbarı yapıldı; ekipler çalışma başlattı",
-      "summary": "İstanbul Sarıyer'de bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı. Güvenlik kamerası görüntülerinde dişi aslan olduğu değerlendirilen bir hayvan tespit edilirken, bölgede yaşayanlar jandarma ekipleri tarafından uyarıldı. Ekipler, ihbar üzerine bölgede aslanı yakalama çalışması başlattı.",
-      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403",
+      "cat": "🌍 Dünya",
+      "time": "23 Kasım 19:30",
+      "title": "COP31 Antalya'da neden uzlaşısız bitti? Fosil yakıt ve iklim finansmanı tıkanıklığı",
+      "summary": "Antalya'da 9 Kasım'da başlayan Birleşmiş Milletler İklim Değişikliği Konferansı COP31, 22 Kasım akşamı Antalya Paktı üzerinde anlaşma sağlanamadan kapandı. Fosil yakıtlardan uzaklaşma ve iklim finansmanı konularında uzlaşma çıkmadı. Uyum hedefi, uyum fonu ve adil geçiş programı hakkında ise ayrı kararlar alındı.",
+      "url": "https://www.dw.com/tr/cop31-antalya-da-neden-uzlaşısız-bitti-fosil-yakıt-ve-iklim-finansmanı-tıkanıklığı/a-80022675?maca=tur-rss-tur-all-1495-rdf",
+      "source": "DW Türkçe"
+    },
+    {
+      "cat": "⚽ Spor",
+      "time": "23 Kasım 23:59",
+      "title": "Nuri Şahin maç sonu açıkladı: 'Sezonu kapattı'",
+      "summary": "Başakşehir, Trendyol Süper Lig'in 12. haftasında 2-0 geriye düştüğü maçta Çorum FK'yı 4-2 yendi. Teknik direktör Nuri Şahin, maçın ardından sakatlanan Emin Bayram'ın büyük ihtimalle sezonu kapattığını, 6-8 ay sahalardan uzak kalacağını ve ameliyat olacağını söyledi.",
+      "url": "https://www.hurriyet.com.tr/sporarena/nuri-sahin-mac-sonu-acikladi-sezonu-kapatti-43388606",
       "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b034800c757abf6569392a5.jpg"
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b04a9078c01a1364d06b5bd.jpg"
     }
   ]
 }

@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-23",
-  "generated": "2026-11-23 08:44 JST",
+  "date": "2026-11-24",
+  "generated": "2026-11-24 08:46 JST",
   "questions": [
     {
-      "question": "COP31 zirvesi nerede düzenlendi?",
+      "question": "Erdoğan, Terörsüz Türkiye sürecini nasıl ilerletmek niyetinde olduklarını söyledi?",
       "options": [
-        "İstanbul'da",
-        "Ankara'da",
-        "Antalya'da",
-        "İzmir'de"
+        "Yalnızca Meclis'teki partilerle",
+        "Uluslararası kuruluşların kararıyla",
+        "Olabilecek en geniş siyasi ve toplumsal mutabakatla",
+        "Sadece güvenlik güçleriyle"
       ],
       "answer": 2,
-      "explanation": "Konferans Antalya'da düzenlendi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
+      "explanation": "Erdoğan, sürecin olabilecek en geniş siyasi ve toplumsal mutabakatla ilerletilmesini istediklerini söyledi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-terorsuz-turkiye-surecini-genis-siyasi-ve-toplumsal-mutabakatla-ilerletmek-niyetindeyiz/4134700"
     },
     {
-      "question": "'Antalya Paktı' neden kabul edilmedi?",
+      "question": "Erdoğan, Terörsüz Türkiye sürecinin ne haline getirilmesine izin vermeyeceklerini belirtti?",
       "options": [
-        "Konferans ertelendi",
-        "Avrupa Birliği, Panama ve Norveç dahil ülkeler itiraz etti",
-        "Taslak hiç yayımlanmadı",
-        "Türkiye taslağı geri çekti"
-      ],
-      "answer": 1,
-      "explanation": "Avrupa Birliği, Panama ve Norveç dahil ülkelerin itiraz etmesi üzerine anlaşma sağlanamadı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/c5rmg31g88glo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Trump, İran ile anlaşmaya varılamaması halinde ne yapabileceğini söyledi?",
-      "options": [
-        "Yaptırımları kaldıracağını",
-        "Ambargo uygulayacağını",
-        "Görüşmeleri tamamen bitireceğini",
-        "1 Ocak'tan sonra askeri saldırı emri verebileceğini"
+        "Ekonomik bir pazarlık konusu",
+        "Uluslararası bir anlaşma",
+        "Bir seçim vaadi",
+        "Siyasi şantaj aracı"
       ],
       "answer": 3,
-      "explanation": "Trump, anlaşmaya varılamaması halinde 1 Ocak'tan sonra askeri saldırı emri verebileceğini belirtti.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
-    },
-    {
-      "question": "Trump'a göre İran'a yönelik saldırılar ne zaman yeniden başlayabilir?",
-      "options": [
-        "Yeni yıldan sonra",
-        "Yarın",
-        "Aralık ayında",
-        "Bu hafta"
-      ],
-      "answer": 0,
-      "explanation": "Trump, İran'a yönelik saldırıların yeni yıldan sonra yeniden başlayabileceği uyarısında bulundu.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/trump-irana-saldirilarin-yeni-yildan-sonra-yeniden-baslayabilecegi-uyarisinda-bulundu-964156.html"
-    },
-    {
-      "question": "Fon soruşturmalarında şimdiye kadar kaç şüpheli bulundu?",
-      "options": [
-        "85",
-        "44",
-        "58",
-        "632"
-      ],
-      "answer": 3,
-      "explanation": "Bakan Gürlek, soruşturmalarda şimdiye kadar 632 şüphelinin bulunduğunu bildirdi.",
+      "explanation": "Erdoğan, sürecin siyasi şantaj aracı haline getirilmesine izin vermeyeceklerini belirtti.",
       "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-terorsuz-turkiye-surecini-genis-siyasi-ve-toplumsal-mutabakatla-ilerletmek-niyetindeyiz/4134700"
     },
     {
-      "question": "Gönüllü iade ve geri kazanım kapsamında kaç kişiden toplam ne kadar tahsil edildi?",
+      "question": "2026 yılı için yeniden değerleme oranı yüzde kaç olarak belirlendi?",
       "options": [
-        "85 kişiden 632 milyar lira",
-        "632 kişiden 44,58 milyar lira",
-        "85 kişiden 44,58 milyar lira",
-        "44 kişiden 85 milyar lira"
-      ],
-      "answer": 2,
-      "explanation": "Gönüllü iade ve geri kazanım kapsamında 85 kişiden toplam 44,58 milyar lira tahsil edildi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlek-fon-sorusturmalarinda-85-kisiden-toplam-44-58-milyar-lira-tahsil-edildi/4133673"
-    },
-    {
-      "question": "Van'ın hangi ilçelerinde eğitime ara verildi?",
-      "options": [
-        "Merkez, Edremit ve İpekyolu",
-        "Çaldıran, Muradiye ve Saray",
-        "Çaldıran, Muradiye, Saray ve Özalp",
-        "Özalp ve Gevaş"
-      ],
-      "answer": 2,
-      "explanation": "Çaldıran, Muradiye, Saray ve Özalp ilçelerinde eğitime bir gün ara verildi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
-    },
-    {
-      "question": "Van'da okullar hangi gün tatil edildi?",
-      "options": [
-        "21 Kasım Cumartesi",
-        "23 Kasım Pazartesi",
-        "24 Kasım Salı",
-        "22 Kasım Pazar"
+        "Yüzde 28,73",
+        "Yüzde 27,83",
+        "Yüzde 27,38",
+        "Yüzde 72,83"
       ],
       "answer": 1,
-      "explanation": "Bu dört ilçede okullar 23 Kasım Pazartesi günü tatil edildi.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/turkiye/vanin-4-ilcesinde-egitime-kar-engeli-964157.html"
+      "explanation": "Yeniden değerleme oranı 2026 yılı için yüzde 27,83 olarak belirlendi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cvglre569j3po?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Sarıyer'de ekipler neden çalışma başlattı?",
+      "question": "Yeniden değerleme oranı hangi kalemlerin artışını belirliyor?",
       "options": [
-        "Hayvanat bahçesinden aslan kaçtığı için",
-        "Bir aslanın yaralanması üzerine",
-        "Bir kişinin aslan gördüğünü ihbar etmesi üzerine",
-        "Bir aslanın birine saldırması üzerine"
+        "Sadece konut kiraları",
+        "Emlak vergisi, motorlu taşıtlar vergisi, trafik cezaları ile ehliyet ve pasaport harçları",
+        "Sadece emekli maaşları",
+        "Sadece asgari ücret"
       ],
-      "answer": 2,
-      "explanation": "Bir kişinin aslan gördüğünü ihbar etmesi üzerine ekipler çalışma başlattı.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
+      "answer": 1,
+      "explanation": "Oran, emlak vergisi, motorlu taşıtlar vergisi, trafik cezaları ile ehliyet ve pasaport harçları gibi birçok vergi, harç ve cezanın artışını belirliyor.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cvglre569j3po?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Güvenlik kamerası görüntülerinde ne tespit edildi?",
+      "question": "Balıkesir'de su basan yerlerden biri hangisidir?",
       "options": [
-        "Dişi aslan olduğu değerlendirilen bir hayvan",
-        "Bir kurt",
-        "Bir kaplan",
-        "Bir ayı"
+        "Bir özel hastanenin acil girişi",
+        "Bir tren istasyonu",
+        "Bir havaalanı terminali",
+        "Bir okulun spor salonu"
       ],
       "answer": 0,
-      "explanation": "Görüntülerde dişi aslan olduğu değerlendirilen bir hayvan tespit edildi.",
+      "explanation": "Sağanak, bir özel hastanenin acil girişini, bazı ev ve iş yerlerini su bastı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/balikesirde-saganak-sele-donustu-hastane-ev-ve-is-yerlerini-su-basti-964237.html"
+    },
+    {
+      "question": "Havran ilçesinde çöken asfalt zeminde kaç kamyon ve kamyonet çukura devrildi?",
+      "options": [
+        "4 kamyon ve 1 kamyonet",
+        "1 kamyon ve 3 kamyonet",
+        "3 kamyon ve 1 kamyonet",
+        "2 kamyon ve 2 kamyonet"
+      ],
+      "answer": 2,
+      "explanation": "Havran ilçesinde çöken asfalt zeminde park halindeki 3 kamyon ve 1 kamyonet çukura devrildi.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/turkiye/balikesirde-saganak-sele-donustu-hastane-ev-ve-is-yerlerini-su-basti-964237.html"
+    },
+    {
+      "question": "COP31 hangi tarihte Antalya'da başladı?",
+      "options": [
+        "19 Kasım",
+        "9 Kasım",
+        "2 Kasım",
+        "22 Kasım"
+      ],
+      "answer": 1,
+      "explanation": "Konferans Antalya'da 9 Kasım'da başladı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/cop31-antalya-da-neden-uzlaşısız-bitti-fosil-yakıt-ve-iklim-finansmanı-tıkanıklığı/a-80022675?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "COP31'de hangi konularda uzlaşma çıkmadı?",
+      "options": [
+        "Adil geçiş programı",
+        "Konferansın kapanış tarihi",
+        "Fosil yakıtlardan uzaklaşma ve iklim finansmanı",
+        "Uyum hedefi ve uyum fonu"
+      ],
+      "answer": 2,
+      "explanation": "Fosil yakıtlardan uzaklaşma ve iklim finansmanı konularında uzlaşma çıkmadı; uyum hedefi, uyum fonu ve adil geçiş programı hakkında ayrı kararlar alındı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/cop31-antalya-da-neden-uzlaşısız-bitti-fosil-yakıt-ve-iklim-finansmanı-tıkanıklığı/a-80022675?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Başakşehir, Çorum FK maçını kaç kaç kazandı?",
+      "options": [
+        "2-4",
+        "3-1",
+        "2-0",
+        "4-2"
+      ],
+      "answer": 3,
+      "explanation": "Başakşehir, 2-0 geriye düştüğü maçta Çorum FK'yı 4-2 yendi.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/gundem/sariyerde-aslan-gordum-ihbari-yapildi-ekipler-calisma-baslatti-43387403"
+      "url": "https://www.hurriyet.com.tr/sporarena/nuri-sahin-mac-sonu-acikladi-sezonu-kapatti-43388606"
+    },
+    {
+      "question": "Nuri Şahin, Emin Bayram hakkında ne söyledi?",
+      "options": [
+        "Bir hafta sonra sahalara döneceğini",
+        "Büyük ihtimalle sezonu kapattığını, 6-8 ay sahalardan uzak kalacağını ve ameliyat olacağını",
+        "Milli takıma seçildiğini",
+        "Takımdan ayrılmak istediğini"
+      ],
+      "answer": 1,
+      "explanation": "Şahin, Emin Bayram'ın büyük ihtimalle sezonu kapattığını, 6-8 ay sahalardan uzak kalacağını ve ameliyat olacağını söyledi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/sporarena/nuri-sahin-mac-sonu-acikladi-sezonu-kapatti-43388606"
     }
   ]
 }
