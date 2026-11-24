@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-24",
-  "generated": "2026-11-24 07:47 JST",
+  "date": "2026-11-25",
+  "generated": "2026-11-25 07:46 JST",
   "questions": [
     {
-      "question": "フアン氏が復帰した役職はどれですか。",
+      "question": "EUが緊急輸入制限の対象にしたのは何ですか。",
       "options": [
-        "取締役会長",
-        "最高財務責任者",
-        "CEO",
-        "会長"
+        "バイクと自転車",
+        "ガソリン車だけ",
+        "ハイブリッド車とプラグインハイブリッド車",
+        "電気自動車だけ"
       ],
       "answer": 2,
-      "explanation": "エヌビディアは、辞任したフアン氏がCEOに復帰したと発表しました。",
-      "source": "NHK",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261123de80304"
+      "explanation": "EUは日本製を含むEU域外からのハイブリッド車とプラグインハイブリッド車を対象に、緊急輸入制限を発動しました。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/c7d0e3cb26aaaaced160adb7668eeadde257c596"
     },
     {
-      "question": "発表を受けて、エヌビディアの株価はどうなりましたか。",
+      "question": "緊急輸入制限はいつからいつまでですか。",
       "options": [
-        "一時36％以上下がった",
-        "取引が止まった",
-        "変わらなかった",
-        "一時36％以上上がった"
-      ],
-      "answer": 3,
-      "explanation": "発表を受けて、株価は一時36％以上上がりました。",
-      "source": "NHK",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261123de80304"
-    },
-    {
-      "question": "「Microsoft To Do」はいつ終わりますか。",
-      "options": [
-        "2027年6月30日",
-        "2027年12月31日",
-        "2028年6月30日",
-        "2026年6月30日"
-      ],
-      "answer": 0,
-      "explanation": "マイクロソフトは「Microsoft To Do」を2027年6月30日に終えると発表しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/23/2000003395/"
-    },
-    {
-      "question": "個人のアカウントの人には、何が勧められていますか。",
-      "options": [
-        "データの自動移行",
-        "To Doを使い続けること",
-        "Plannerへの移行",
-        "ほかのアプリへの移行"
-      ],
-      "answer": 3,
-      "explanation": "個人のアカウントではPlannerは使えないため、ほかのアプリへの移行を勧めています。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/23/2000003395/"
-    },
-    {
-      "question": "大の里は何回目の優勝を果たしましたか。",
-      "options": [
-        "7回目",
-        "6回目",
-        "5回目",
-        "8回目"
-      ],
-      "answer": 0,
-      "explanation": "大の里は2場所連続、7回目の優勝を果たしました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1157561"
-    },
-    {
-      "question": "優勝決定戦の相手はだれでしたか。",
-      "options": [
-        "若元春",
-        "豊昇龍",
-        "霧島",
-        "照ノ富士"
-      ],
-      "answer": 0,
-      "explanation": "13勝2敗で並んだ平幕の若元春との優勝決定戦を制しました。",
-      "source": "FNNプライムオンライン",
-      "url": "https://www.fnn.jp/articles/-/1157561"
-    },
-    {
-      "question": "逮捕されたのは何人ですか。",
-      "options": [
-        "フィリピン人女性4人",
-        "日本人3人とフィリピン人女性1人",
-        "日本人1人とフィリピン人女性3人",
-        "日本人4人"
+        "11月1日から来年3月まで",
+        "12月1日から来年6月まで",
+        "12月1日から来年12月まで",
+        "来年1月から来年12月まで"
       ],
       "answer": 1,
-      "explanation": "フィリピン警察が日本人3人とフィリピン人女性1人を逮捕しました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCR45DDVCRUHBI00FM.html?ref=rss"
+      "explanation": "緊急輸入制限は12月1日から来年6月までです。",
+      "source": "共同通信",
+      "url": "https://news.yahoo.co.jp/articles/c7d0e3cb26aaaaced160adb7668eeadde257c596"
     },
     {
-      "question": "容疑者らは、女性たちに何を約束して勧誘した疑いがありますか。",
+      "question": "個人情報が漏えいした可能性があるのは何万人分ですか。",
       "options": [
-        "日本での仕事の紹介",
-        "日本での学校への入学",
-        "日本での裕福な暮らし",
-        "日本での旅行"
+        "約100万人分",
+        "約500万人分",
+        "約1063万人分",
+        "約2000万人分"
       ],
       "answer": 2,
-      "explanation": "18～21歳の女性に日本での裕福な暮らしを約束して勧誘した疑いがあります。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCR45DDVCRUHBI00FM.html?ref=rss"
+      "explanation": "京王電鉄は約1063万人分の個人情報が漏えいした可能性があると発表しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/"
     },
     {
-      "question": "事故が起きたのはいつですか。",
+      "question": "漏えいした可能性があるものに含まれていたのは何ですか。",
       "options": [
-        "22日",
-        "23日",
-        "24日",
-        "21日"
+        "マイナンバーカードだけ",
+        "健康保険証だけ",
+        "運転免許証だけ",
+        "パスポートの写しやクレジットカード番号"
       ],
-      "answer": 0,
-      "explanation": "柏崎刈羽原発で22日、38歳の男性作業員がガラスの下敷きになり、死亡しました。",
-      "source": "BSN新潟放送",
-      "url": "https://news.yahoo.co.jp/articles/388f9674c3bcebd67ba3912b0127d460e4a3f028"
+      "answer": 3,
+      "explanation": "一部には海外からの宿泊客のパスポートの写しやクレジットカード番号も含まれます。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/"
     },
     {
-      "question": "東電は何を発表しましたか。",
+      "question": "野党側が24日に決めたのは何ですか。",
       "options": [
-        "安全が確認できるまで、発電所内の工事をすべて中止する",
-        "原発の運転をすべて止める",
-        "作業員の数を増やす",
-        "工事をすぐに再開する"
+        "内閣不信任決議案の提出",
+        "予算案の提出",
+        "消費税減税法案の提出",
+        "問責決議案の提出"
+      ],
+      "answer": 3,
+      "explanation": "野党側は24日、問責決議案の提出を決定しました。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/-/3108490"
+    },
+    {
+      "question": "関大臣は閣議後の会見で何を否定しましたか。",
+      "options": [
+        "政治資金パーティーの開催",
+        "辞任",
+        "問責決議案の提出",
+        "消費税の減税"
+      ],
+      "answer": 1,
+      "explanation": "関大臣は24日の閣議後の会見で辞任を否定しました。",
+      "source": "TBS NEWS DIG",
+      "url": "https://newsdig.tbs.co.jp/articles/-/3108490"
+    },
+    {
+      "question": "佐藤輝明選手が合意した球団はどこですか。",
+      "options": [
+        "ヤンキース",
+        "カブス",
+        "ジャイアンツ",
+        "ドジャース"
+      ],
+      "answer": 1,
+      "explanation": "佐藤輝明内野手がカブスと合意したことが分かりました。",
+      "source": "スポニチアネックス",
+      "url": "https://news.yahoo.co.jp/articles/a4cdf4e362fda21990e6eb2599d8fe17eb13383a"
+    },
+    {
+      "question": "佐藤輝選手の契約は何年で総額いくらですか。",
+      "options": [
+        "6年総額1億2000万ドル",
+        "7年総額1億2000万ドル",
+        "5年総額1億2000万ドル",
+        "6年総額1億ドル"
       ],
       "answer": 0,
-      "explanation": "東電は22日夜、「安全が確認できるまで、発電所内の工事をすべて中止する」と発表しました。",
-      "source": "BSN新潟放送",
-      "url": "https://news.yahoo.co.jp/articles/388f9674c3bcebd67ba3912b0127d460e4a3f028"
+      "explanation": "ESPNによると、6年総額1億2000万ドルで、日本円で約190億8000万円です。",
+      "source": "スポニチアネックス",
+      "url": "https://news.yahoo.co.jp/articles/a4cdf4e362fda21990e6eb2599d8fe17eb13383a"
+    },
+    {
+      "question": "逮捕された男は何歳の会社員ですか。",
+      "options": [
+        "65歳",
+        "45歳",
+        "55歳",
+        "35歳"
+      ],
+      "answer": 2,
+      "explanation": "東広島市に住む55歳の会社員の男が逮捕されました。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80881"
+    },
+    {
+      "question": "女性が殺害されているのが見つかったのはいつですか。",
+      "options": [
+        "今年6月",
+        "今年1月",
+        "去年12月",
+        "去年6月"
+      ],
+      "answer": 3,
+      "explanation": "去年6月、広島県庄原市の住宅で、1人暮らしの当時84歳の女性が殺害されているのが見つかりました。",
+      "source": "NHK",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80881"
     }
   ]
 }
