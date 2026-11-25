@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-25",
-  "generated": "2026-11-25 07:46 JST",
+  "date": "2026-11-26",
+  "generated": "2026-11-26 07:45 JST",
   "questions": [
     {
-      "question": "EUが緊急輸入制限の対象にしたのは何ですか。",
+      "question": "アメリカの通商代表部が発表した、日本などへの関税の上限は何％ですか。",
       "options": [
-        "バイクと自転車",
-        "ガソリン車だけ",
-        "ハイブリッド車とプラグインハイブリッド車",
-        "電気自動車だけ"
-      ],
-      "answer": 2,
-      "explanation": "EUは日本製を含むEU域外からのハイブリッド車とプラグインハイブリッド車を対象に、緊急輸入制限を発動しました。",
-      "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/c7d0e3cb26aaaaced160adb7668eeadde257c596"
-    },
-    {
-      "question": "緊急輸入制限はいつからいつまでですか。",
-      "options": [
-        "11月1日から来年3月まで",
-        "12月1日から来年6月まで",
-        "12月1日から来年12月まで",
-        "来年1月から来年12月まで"
+        "10％",
+        "15％",
+        "25％",
+        "20％"
       ],
       "answer": 1,
-      "explanation": "緊急輸入制限は12月1日から来年6月までです。",
-      "source": "共同通信",
-      "url": "https://news.yahoo.co.jp/articles/c7d0e3cb26aaaaced160adb7668eeadde257c596"
+      "explanation": "要約によると、日本などへの関税は上限15％です。",
+      "source": "時事通信",
+      "url": "https://www.jiji.com/jc/article?k=2026112501247&g=int"
     },
     {
-      "question": "個人情報が漏えいした可能性があるのは何万人分ですか。",
+      "question": "新しい関税が適用されるのはいつ以降の見通しですか。",
       "options": [
-        "約100万人分",
-        "約500万人分",
-        "約1063万人分",
-        "約2000万人分"
-      ],
-      "answer": 2,
-      "explanation": "京王電鉄は約1063万人分の個人情報が漏えいした可能性があると発表しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/"
-    },
-    {
-      "question": "漏えいした可能性があるものに含まれていたのは何ですか。",
-      "options": [
-        "マイナンバーカードだけ",
-        "健康保険証だけ",
-        "運転免許証だけ",
-        "パスポートの写しやクレジットカード番号"
-      ],
-      "answer": 3,
-      "explanation": "一部には海外からの宿泊客のパスポートの写しやクレジットカード番号も含まれます。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003429/"
-    },
-    {
-      "question": "野党側が24日に決めたのは何ですか。",
-      "options": [
-        "内閣不信任決議案の提出",
-        "予算案の提出",
-        "消費税減税法案の提出",
-        "問責決議案の提出"
-      ],
-      "answer": 3,
-      "explanation": "野党側は24日、問責決議案の提出を決定しました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://newsdig.tbs.co.jp/articles/-/3108490"
-    },
-    {
-      "question": "関大臣は閣議後の会見で何を否定しましたか。",
-      "options": [
-        "政治資金パーティーの開催",
-        "辞任",
-        "問責決議案の提出",
-        "消費税の減税"
-      ],
-      "answer": 1,
-      "explanation": "関大臣は24日の閣議後の会見で辞任を否定しました。",
-      "source": "TBS NEWS DIG",
-      "url": "https://newsdig.tbs.co.jp/articles/-/3108490"
-    },
-    {
-      "question": "佐藤輝明選手が合意した球団はどこですか。",
-      "options": [
-        "ヤンキース",
-        "カブス",
-        "ジャイアンツ",
-        "ドジャース"
-      ],
-      "answer": 1,
-      "explanation": "佐藤輝明内野手がカブスと合意したことが分かりました。",
-      "source": "スポニチアネックス",
-      "url": "https://news.yahoo.co.jp/articles/a4cdf4e362fda21990e6eb2599d8fe17eb13383a"
-    },
-    {
-      "question": "佐藤輝選手の契約は何年で総額いくらですか。",
-      "options": [
-        "6年総額1億2000万ドル",
-        "7年総額1億2000万ドル",
-        "5年総額1億2000万ドル",
-        "6年総額1億ドル"
+        "来年1月以降",
+        "再来年以降",
+        "来年4月以降",
+        "今年12月以降"
       ],
       "answer": 0,
-      "explanation": "ESPNによると、6年総額1億2000万ドルで、日本円で約190億8000万円です。",
-      "source": "スポニチアネックス",
-      "url": "https://news.yahoo.co.jp/articles/a4cdf4e362fda21990e6eb2599d8fe17eb13383a"
+      "explanation": "関税の適用は意見公募のあと、来年1月以降になる見通しです。",
+      "source": "時事通信",
+      "url": "https://www.jiji.com/jc/article?k=2026112501247&g=int"
     },
     {
-      "question": "逮捕された男は何歳の会社員ですか。",
+      "question": "逆走した車がUターンしたのはどこですか。",
       "options": [
-        "65歳",
-        "45歳",
-        "55歳",
-        "35歳"
+        "小田原料金所の手前",
+        "平塚料金所の手前",
+        "厚木料金所の手前",
+        "横浜料金所の手前"
       ],
-      "answer": 2,
-      "explanation": "東広島市に住む55歳の会社員の男が逮捕されました。",
-      "source": "NHK",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80881"
+      "answer": 1,
+      "explanation": "男性は平塚料金所の手前でUターンしました。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.ntv.co.jp/category/society/754e9db52a204bb2a0a749f5469489c4"
     },
     {
-      "question": "女性が殺害されているのが見つかったのはいつですか。",
+      "question": "逆走した車はおよそ何キロ逆走しましたか。",
       "options": [
-        "今年6月",
-        "今年1月",
-        "去年12月",
-        "去年6月"
+        "約3.7キロ",
+        "約0.7キロ",
+        "約2.7キロ",
+        "約1.7キロ"
       ],
       "answer": 3,
-      "explanation": "去年6月、広島県庄原市の住宅で、1人暮らしの当時84歳の女性が殺害されているのが見つかりました。",
-      "source": "NHK",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261124de80881"
+      "explanation": "約1.7キロ逆走したとみられます。",
+      "source": "日テレNEWS NNN",
+      "url": "https://news.ntv.co.jp/category/society/754e9db52a204bb2a0a749f5469489c4"
+    },
+    {
+      "question": "流れ出したのは何ですか。",
+      "options": [
+        "氏名やメールアドレスなど",
+        "パスワードそのもの",
+        "保管庫の中のデータ",
+        "暗号化の鍵"
+      ],
+      "answer": 0,
+      "explanation": "一部のお客さんの氏名やメールアドレスなどが流れ出しました。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003466/"
+    },
+    {
+      "question": "会社はパスワードの変更について何と言っていますか。",
+      "options": [
+        "変更できない",
+        "すぐに変更すべきだ",
+        "変更は不要だ",
+        "1週間以内に変更すべきだ"
+      ],
+      "answer": 2,
+      "explanation": "パスワードの変更は不要だということです。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003466/"
+    },
+    {
+      "question": "寿司皿のプレゼント企画はなぜ初日で終わりましたか。",
+      "options": [
+        "寿司皿が壊れたから",
+        "当選枠100万個がすべて埋まったから",
+        "ちいかわの人気がなくなったから",
+        "店が休みになったから"
+      ],
+      "answer": 1,
+      "explanation": "全店舗あわせて100万個の当選枠がすべて埋まりました。",
+      "source": "オリコン",
+      "url": "https://news.yahoo.co.jp/articles/187e48eed29a6a27cfef9009fa5db0a917770abe"
+    },
+    {
+      "question": "抽選はもともといつまで続く予定でしたか。",
+      "options": [
+        "11月30日まで",
+        "12月6日まで",
+        "12月25日まで",
+        "来年1月まで"
+      ],
+      "answer": 1,
+      "explanation": "抽選は12月6日まで続く予定でした。",
+      "source": "オリコン",
+      "url": "https://news.yahoo.co.jp/articles/187e48eed29a6a27cfef9009fa5db0a917770abe"
+    },
+    {
+      "question": "石川佳純さんは何で結婚を発表しましたか。",
+      "options": [
+        "インスタグラム",
+        "テレビ番組",
+        "新聞の広告",
+        "記者会見"
+      ],
+      "answer": 0,
+      "explanation": "自身のインスタグラムで結婚を報告しました。",
+      "source": "日刊スポーツ",
+      "url": "https://news.yahoo.co.jp/articles/3fbc2aa00780563a1bd1ff73d31f2a04c2794333"
+    },
+    {
+      "question": "石川佳純さんが現役を引退したのはいつですか。",
+      "options": [
+        "2021年5月",
+        "2022年5月",
+        "2024年5月",
+        "2023年5月"
+      ],
+      "answer": 3,
+      "explanation": "石川さんは2023年5月に現役を引退しました。",
+      "source": "日刊スポーツ",
+      "url": "https://news.yahoo.co.jp/articles/3fbc2aa00780563a1bd1ff73d31f2a04c2794333"
     }
   ]
 }
