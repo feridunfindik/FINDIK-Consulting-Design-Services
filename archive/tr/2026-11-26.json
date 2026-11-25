@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-26",
+  "news": {
+    "date": "2026-11-26",
+    "updated": "2026-11-26 02:45 TSİ",
+    "articles": [
+      {
+        "cat": "🌍 Dünya",
+        "time": "26 Kasım 02:22",
+        "title": "Ateşkese rağmen Gazze'ye saldırıda 3 kişi hayatını kaybetti",
+        "summary": "İsrail ordusu, ateşkese rağmen Gazze kentinin kuzeyindeki et-Tuffah Mahallesi'ni insansız hava aracıyla hedef aldı. Saldırıda 3 Filistinli hayatını kaybetti, 2 kişi yaralandı. Gazze'deki Sağlık Bakanlığına göre, 10 Ekim 2025'te yürürlüğe giren ateşkesten bu yana İsrail saldırılarında 1679 kişi öldü, 6 bin 100 kişi yaralandı.",
+        "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html",
+        "source": "TRT Haber",
+        "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/gazze-cenaze-aa-2505322.jpg"
+      },
+      {
+        "cat": "⚽ Spor",
+        "time": "26 Kasım 01:05",
+        "title": "Fenerbahçe Londra'da Shakhtar Donetsk'i tek golle geçti",
+        "summary": "Fenerbahçe, UEFA Şampiyonlar Ligi'nde beşinci hafta maçında Ukrayna ekibi Shakhtar Donetsk ile Londra'da karşılaştı. Teknik direktörlüğünü Arda Turan'ın yaptığı Shakhtar karşısında sarı-lacivertliler, 56. dakikada Vedat Muriqi'nin golüyle sahadan 1-0 galip ayrıldı.",
+        "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Türkçe",
+        "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6945/live/308ae0c0-e91c-11f1-a150-3b4eded49105.jpg"
+      },
+      {
+        "cat": "🌧️ Hava/Afet",
+        "time": "25 Kasım 23:39",
+        "title": "İstanbul Valisi Gül'den sokakta kalan vatandaşların 112'ye bildirilmesi çağrısı",
+        "summary": "İstanbul Valisi Davut Gül, kentte bu gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini bildirdi. Sokakta kalan ve barınmaya ihtiyaç duyan vatandaşların 112 Acil Çağrı Merkezi'ne bildirilmesini istedi. Gül, yıl boyunca 39 ilçede sokakta kalanların anlaşmalı otellerde misafir edildiğini, barınma, gıda, giyim ve sağlık ihtiyaçlarının karşılandığını belirtti.",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067",
+        "source": "Anadolu Ajansı",
+        "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/25/thumbs_b_c_d2012f986510255be6f9fbe9bcf07cdb.jpg"
+      },
+      {
+        "cat": "💹 Ekonomi",
+        "time": "25 Kasım 17:35",
+        "title": "ABD'den AB üyeleri ve Çin dahil 14 ülkeye ek vergi hamlesi",
+        "summary": "ABD hükümeti, üretim kapasitesi fazlası nedeniyle Çin ve Avrupa Birliği üyeleri dahil 14 ülkeye yüzde 15 ila yüzde 35 oranında gümrük vergisi uygulanmasını önerdi. ABD Ticaret Temsilcisi Jamieson Greer, ABD'ye satın aldığından daha fazla ürün satan ülkelere bu oranda ek vergi getirilmesini önerdi. Başkan Donald Trump yönetimi, vergileri getirmek için harekete geçti.",
+        "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011",
+        "source": "Hürriyet",
+        "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b06f23d9a30875a0457a547.jpg"
+      },
+      {
+        "cat": "🏛️ Siyaset",
+        "time": "25 Kasım 12:35",
+        "title": "İmamoğlu'nun diploma iptali kesinleşti: Danıştay'ın gerekçesi ne?",
+        "summary": "Ekrem İmamoğlu'nun üniversite diplomasının iptali kesinleşti. Danıştay 8'inci Dairesi, avukatların temyiz istemini reddetti ve karar oy birliğiyle kesinleşti. Danıştay, 1990'daki yatay geçişte ağır ve ciddi ihlaller olduğunu, bu nedenle diplomanın 35 yıl sonra bile iptal edilebileceğini belirtti. Avukatlar, konuyu Anayasa Mahkemesi'ne taşıyacaklarını açıkladı.",
+        "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf",
+        "source": "DW Türkçe"
+      }
+    ]
+  },
+  "quiz": {
+    "date": "2026-11-26",
+    "generated": "2026-11-26 08:46 JST",
+    "questions": [
+      {
+        "question": "İsrail ordusunun hedef aldığı Gazze mahallesi hangisidir?",
+        "options": [
+          "Refah Mahallesi",
+          "Cibaliye Mahallesi",
+          "Han Yunus Mahallesi",
+          "et-Tuffah Mahallesi"
+        ],
+        "answer": 3,
+        "explanation": "İsrail ordusu, Gazze kentinin kuzeyindeki et-Tuffah Mahallesi'ni insansız hava aracıyla hedef aldı.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
+      },
+      {
+        "question": "Ateşkesten bu yana İsrail saldırılarında kaç kişi hayatını kaybetti?",
+        "options": [
+          "1769 kişi",
+          "1697 kişi",
+          "1678 kişi",
+          "1679 kişi"
+        ],
+        "answer": 3,
+        "explanation": "Gazze'deki Sağlık Bakanlığına göre ateşkesten bu yana İsrail saldırılarında 1679 kişi öldü.",
+        "source": "TRT Haber",
+        "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
+      },
+      {
+        "question": "Fenerbahçe, Shakhtar Donetsk maçında golü hangi dakikada attı?",
+        "options": [
+          "15. dakikada",
+          "65. dakikada",
+          "46. dakikada",
+          "56. dakikada"
+        ],
+        "answer": 3,
+        "explanation": "Vedat Muriqi, 56. dakikada attığı golle Fenerbahçe'ye galibiyeti getirdi.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "Fenerbahçe ile Shakhtar Donetsk arasındaki maç hangi şehirde oynandı?",
+        "options": [
+          "Donetsk",
+          "Kiev",
+          "İstanbul",
+          "Londra"
+        ],
+        "answer": 3,
+        "explanation": "Fenerbahçe, Shakhtar Donetsk ile Londra'da karşılaştı.",
+        "source": "BBC Türkçe",
+        "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "question": "İstanbul'da bu gece hava sıcaklığının kaç dereceye kadar düşmesi bekleniyor?",
+        "options": [
+          "2 dereceye",
+          "0 dereceye",
+          "-2 dereceye",
+          "5 dereceye"
+        ],
+        "answer": 0,
+        "explanation": "Vali Gül, kentte bu gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini bildirdi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+      },
+      {
+        "question": "Vali Gül, sokakta kalan vatandaşların nereye bildirilmesini istedi?",
+        "options": [
+          "153 Belediye Hattı",
+          "112 Acil Çağrı Merkezi",
+          "155 Polis İmdat",
+          "110 İtfaiye"
+        ],
+        "answer": 1,
+        "explanation": "Vali Gül, sokakta kalan ve barınmaya ihtiyaç duyan vatandaşların 112 Acil Çağrı Merkezi'ne bildirilmesini istedi.",
+        "source": "Anadolu Ajansı",
+        "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+      },
+      {
+        "question": "ABD kaç ülkeye ek gümrük vergisi uygulanmasını önerdi?",
+        "options": [
+          "14 ülkeye",
+          "24 ülkeye",
+          "15 ülkeye",
+          "12 ülkeye"
+        ],
+        "answer": 0,
+        "explanation": "ABD hükümeti, Çin ve Avrupa Birliği üyeleri dahil 14 ülkeye ek gümrük vergisi uygulanmasını önerdi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
+      },
+      {
+        "question": "Önerilen ek gümrük vergisi oranı hangi aralıktadır?",
+        "options": [
+          "yüzde 15 ila yüzde 35",
+          "yüzde 10 ila yüzde 25",
+          "yüzde 5 ila yüzde 15",
+          "yüzde 20 ila yüzde 40"
+        ],
+        "answer": 0,
+        "explanation": "ABD, 14 ülkeye yüzde 15 ila yüzde 35 oranında gümrük vergisi uygulanmasını önerdi.",
+        "source": "Hürriyet",
+        "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
+      },
+      {
+        "question": "Danıştay'ın hangi dairesi İmamoğlu'nun temyiz istemini reddetti?",
+        "options": [
+          "7'nci Daire",
+          "8'inci Daire",
+          "10'uncu Daire",
+          "5'inci Daire"
+        ],
+        "answer": 1,
+        "explanation": "Danıştay 8'inci Dairesi, avukatların temyiz istemini reddetti.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
+      },
+      {
+        "question": "İmamoğlu'nun avukatları kararı nereye taşıyacaklarını açıkladı?",
+        "options": [
+          "Anayasa Mahkemesi",
+          "Yargıtay",
+          "Avrupa İnsan Hakları Mahkemesi",
+          "Danıştay"
+        ],
+        "answer": 0,
+        "explanation": "Avukatlar, konuyu Anayasa Mahkemesi'ne taşıyacaklarını açıkladı.",
+        "source": "DW Türkçe",
+        "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
+      }
+    ]
+  }
+}

@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-25",
-  "generated": "2026-11-25 08:46 JST",
+  "date": "2026-11-26",
+  "generated": "2026-11-26 08:46 JST",
   "questions": [
     {
-      "question": "Cumhurbaşkanlığı kararıyla kaç ilin valisi değişti?",
+      "question": "İsrail ordusunun hedef aldığı Gazze mahallesi hangisidir?",
       "options": [
-        "14 ilin",
-        "24 ilin",
-        "41 ilin",
-        "30 ilin"
-      ],
-      "answer": 2,
-      "explanation": "Özete göre Cumhurbaşkanlığı kararıyla 41 ilin valisi değişti, 14 ilin valisi merkeze alındı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cmge3q17n44xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Kararnameyle AFAD Başkanlığına kim atandı?",
-      "options": [
-        "Önder Bozkurt",
-        "Ali Hamza Pehlivan",
-        "MHP Genel Başkanı Bahçeli",
-        "Cumhurbaşkanı Erdoğan"
-      ],
-      "answer": 0,
-      "explanation": "Özete göre Ağrı Valisi Önder Bozkurt AFAD Başkanlığına atandı; Ali Hamza Pehlivan ise Hatay Valisi oldu.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cmge3q17n44xo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Eskişehir'de düşen helikopter hangi uçuşu yapıyordu?",
-      "options": [
-        "Nakliye uçuşu",
-        "Tatbikat uçuşu",
-        "Eğitim uçuşu",
-        "Arama kurtarma uçuşu"
-      ],
-      "answer": 2,
-      "explanation": "Özete göre helikopter eğitim uçuşu sırasında düştü.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/eskişehir-de-eğitim-uçuşundaki-hava-kuvvetleri-helikopteri-düştü-5-asker-yaşamını-yitirdi/a-80041666?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Helikopter kazasında kaç asker hayatını kaybetti?",
-      "options": [
-        "Altı asker",
-        "Beş asker",
-        "Dört asker",
-        "Üç asker"
-      ],
-      "answer": 1,
-      "explanation": "Özete göre kazada beş asker hayatını kaybetti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/eskişehir-de-eğitim-uçuşundaki-hava-kuvvetleri-helikopteri-düştü-5-asker-yaşamını-yitirdi/a-80041666?maca=tur-rss-tur-all-1495-rdf"
-    },
-    {
-      "question": "Gazze'de çadırlarda yaşayan kaç yerinden edilmiş Filistinlinin hayatı soğuk hava dalgası nedeniyle tehdit altında?",
-      "options": [
-        "1,76 milyon",
-        "2 milyon",
-        "1,5 milyon",
-        "900 bin"
-      ],
-      "answer": 0,
-      "explanation": "Özete göre soğuk hava dalgası, çadırlarda yaşayan 1,76 milyon yerinden edilmiş Filistinlinin hayatını tehdit ediyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/gazzede-cadirlarda-yasayan-filistinliler-yeni-soguk-hava-dalgasinin-tehdidi-altinda-964379.html"
-    },
-    {
-      "question": "Gazze'de önümüzdeki günlerde hangi hava olayları bekleniyor?",
-      "options": [
-        "Kar ve tipi",
-        "Fırtına ve dolu",
-        "Sağanak ve soğuk hava",
-        "Sıcak hava dalgası"
-      ],
-      "answer": 2,
-      "explanation": "Özete göre bölgede sağanak ve soğuk hava dalgası etkili olması bekleniyor.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/gazzede-cadirlarda-yasayan-filistinliler-yeni-soguk-hava-dalgasinin-tehdidi-altinda-964379.html"
-    },
-    {
-      "question": "Muğla'daki depremin büyüklüğü kaç olarak açıklandı?",
-      "options": [
-        "3,9",
-        "4,2",
-        "4,6",
-        "5,1"
-      ],
-      "answer": 2,
-      "explanation": "Özete göre Milas'ta 4,6 büyüklüğünde deprem meydana geldi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/muglada-4-6-buyuklugunde-deprem/4136118"
-    },
-    {
-      "question": "Deprem, Muğla'nın yanı sıra hangi illerde hissedildi?",
-      "options": [
-        "Adana, Mersin ve Hatay",
-        "Aydın, Denizli, İzmir ve Manisa",
-        "Balıkesir, Çanakkale ve Bursa",
-        "Antalya, Burdur ve Isparta"
-      ],
-      "answer": 1,
-      "explanation": "Özete göre sarsıntı Milas ve Bodrum'un yanı sıra Aydın, Denizli, İzmir ve Manisa'da da hissedildi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/muglada-4-6-buyuklugunde-deprem/4136118"
-    },
-    {
-      "question": "Galatasaray, Aston Villa'yı kaç kaç yendi?",
-      "options": [
-        "2-1",
-        "0-0",
-        "2-0",
-        "1-0"
+        "Refah Mahallesi",
+        "Cibaliye Mahallesi",
+        "Han Yunus Mahallesi",
+        "et-Tuffah Mahallesi"
       ],
       "answer": 3,
-      "explanation": "Özete göre Galatasaray sahasında Aston Villa'yı 1-0 mağlup etti.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/galatasaray-aston-villa-maci-sonrasi-emeryden-itiraf-durduramadik-43390007"
+      "explanation": "İsrail ordusu, Gazze kentinin kuzeyindeki et-Tuffah Mahallesi'ni insansız hava aracıyla hedef aldı.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
     },
     {
-      "question": "Galatasaray bu galibiyetle Şampiyonlar Ligi'nde üst üste kaçıncı galibiyetini elde etti?",
+      "question": "Ateşkesten bu yana İsrail saldırılarında kaç kişi hayatını kaybetti?",
       "options": [
-        "3. galibiyetini",
-        "4. galibiyetini",
-        "2. galibiyetini",
-        "5. galibiyetini"
+        "1769 kişi",
+        "1697 kişi",
+        "1678 kişi",
+        "1679 kişi"
+      ],
+      "answer": 3,
+      "explanation": "Gazze'deki Sağlık Bakanlığına göre ateşkesten bu yana İsrail saldırılarında 1679 kişi öldü.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
+    },
+    {
+      "question": "Fenerbahçe, Shakhtar Donetsk maçında golü hangi dakikada attı?",
+      "options": [
+        "15. dakikada",
+        "65. dakikada",
+        "46. dakikada",
+        "56. dakikada"
+      ],
+      "answer": 3,
+      "explanation": "Vedat Muriqi, 56. dakikada attığı golle Fenerbahçe'ye galibiyeti getirdi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "Fenerbahçe ile Shakhtar Donetsk arasındaki maç hangi şehirde oynandı?",
+      "options": [
+        "Donetsk",
+        "Kiev",
+        "İstanbul",
+        "Londra"
+      ],
+      "answer": 3,
+      "explanation": "Fenerbahçe, Shakhtar Donetsk ile Londra'da karşılaştı.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "İstanbul'da bu gece hava sıcaklığının kaç dereceye kadar düşmesi bekleniyor?",
+      "options": [
+        "2 dereceye",
+        "0 dereceye",
+        "-2 dereceye",
+        "5 dereceye"
       ],
       "answer": 0,
-      "explanation": "Özete göre Galatasaray, Devler Ligi'nde üst üste 3. galibiyetini elde ederek 9 puana yükseldi.",
+      "explanation": "Vali Gül, kentte bu gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini bildirdi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+    },
+    {
+      "question": "Vali Gül, sokakta kalan vatandaşların nereye bildirilmesini istedi?",
+      "options": [
+        "153 Belediye Hattı",
+        "112 Acil Çağrı Merkezi",
+        "155 Polis İmdat",
+        "110 İtfaiye"
+      ],
+      "answer": 1,
+      "explanation": "Vali Gül, sokakta kalan ve barınmaya ihtiyaç duyan vatandaşların 112 Acil Çağrı Merkezi'ne bildirilmesini istedi.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+    },
+    {
+      "question": "ABD kaç ülkeye ek gümrük vergisi uygulanmasını önerdi?",
+      "options": [
+        "14 ülkeye",
+        "24 ülkeye",
+        "15 ülkeye",
+        "12 ülkeye"
+      ],
+      "answer": 0,
+      "explanation": "ABD hükümeti, Çin ve Avrupa Birliği üyeleri dahil 14 ülkeye ek gümrük vergisi uygulanmasını önerdi.",
       "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/sporarena/galatasaray-aston-villa-maci-sonrasi-emeryden-itiraf-durduramadik-43390007"
+      "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
+    },
+    {
+      "question": "Önerilen ek gümrük vergisi oranı hangi aralıktadır?",
+      "options": [
+        "yüzde 15 ila yüzde 35",
+        "yüzde 10 ila yüzde 25",
+        "yüzde 5 ila yüzde 15",
+        "yüzde 20 ila yüzde 40"
+      ],
+      "answer": 0,
+      "explanation": "ABD, 14 ülkeye yüzde 15 ila yüzde 35 oranında gümrük vergisi uygulanmasını önerdi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
+    },
+    {
+      "question": "Danıştay'ın hangi dairesi İmamoğlu'nun temyiz istemini reddetti?",
+      "options": [
+        "7'nci Daire",
+        "8'inci Daire",
+        "10'uncu Daire",
+        "5'inci Daire"
+      ],
+      "answer": 1,
+      "explanation": "Danıştay 8'inci Dairesi, avukatların temyiz istemini reddetti.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "İmamoğlu'nun avukatları kararı nereye taşıyacaklarını açıkladı?",
+      "options": [
+        "Anayasa Mahkemesi",
+        "Yargıtay",
+        "Avrupa İnsan Hakları Mahkemesi",
+        "Danıştay"
+      ],
+      "answer": 0,
+      "explanation": "Avukatlar, konuyu Anayasa Mahkemesi'ne taşıyacaklarını açıkladı.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
     }
   ]
 }
