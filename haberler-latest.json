@@ -1,50 +1,50 @@
 {
-  "date": "2026-11-26",
-  "updated": "2026-11-26 02:45 TSİ",
   "articles": [
     {
-      "cat": "🌍 Dünya",
-      "time": "26 Kasım 02:22",
-      "title": "Ateşkese rağmen Gazze'ye saldırıda 3 kişi hayatını kaybetti",
-      "summary": "İsrail ordusu, ateşkese rağmen Gazze kentinin kuzeyindeki et-Tuffah Mahallesi'ni insansız hava aracıyla hedef aldı. Saldırıda 3 Filistinli hayatını kaybetti, 2 kişi yaralandı. Gazze'deki Sağlık Bakanlığına göre, 10 Ekim 2025'te yürürlüğe giren ateşkesten bu yana İsrail saldırılarında 1679 kişi öldü, 6 bin 100 kişi yaralandı.",
-      "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html",
-      "source": "TRT Haber",
-      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/gazze-cenaze-aa-2505322.jpg"
-    },
-    {
-      "cat": "⚽ Spor",
-      "time": "26 Kasım 01:05",
-      "title": "Fenerbahçe Londra'da Shakhtar Donetsk'i tek golle geçti",
-      "summary": "Fenerbahçe, UEFA Şampiyonlar Ligi'nde beşinci hafta maçında Ukrayna ekibi Shakhtar Donetsk ile Londra'da karşılaştı. Teknik direktörlüğünü Arda Turan'ın yaptığı Shakhtar karşısında sarı-lacivertliler, 56. dakikada Vedat Muriqi'nin golüyle sahadan 1-0 galip ayrıldı.",
-      "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss",
+      "cat": "🚨 Gündem",
+      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ab46/live/0d263ba0-e9c3-11f1-99a1-253766e7ad8b.png",
       "source": "BBC Türkçe",
-      "img": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/6945/live/308ae0c0-e91c-11f1-a150-3b4eded49105.jpg"
-    },
-    {
-      "cat": "🌧️ Hava/Afet",
-      "time": "25 Kasım 23:39",
-      "title": "İstanbul Valisi Gül'den sokakta kalan vatandaşların 112'ye bildirilmesi çağrısı",
-      "summary": "İstanbul Valisi Davut Gül, kentte bu gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini bildirdi. Sokakta kalan ve barınmaya ihtiyaç duyan vatandaşların 112 Acil Çağrı Merkezi'ne bildirilmesini istedi. Gül, yıl boyunca 39 ilçede sokakta kalanların anlaşmalı otellerde misafir edildiğini, barınma, gıda, giyim ve sağlık ihtiyaçlarının karşılandığını belirtti.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067",
-      "source": "Anadolu Ajansı",
-      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/25/thumbs_b_c_d2012f986510255be6f9fbe9bcf07cdb.jpg"
+      "summary": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, Adalet Bakanı Akın Gürlek ve Hazine ve Maliye Bakanı Mehmet Şimşek, fon soruşturmasına ilişkin ortak basın toplantısı düzenledi. Gürlek, soruşturmada 638 şüpheli ve 138 tutuklu olduğunu, 550 kişinin mal varlığına el konulduğunu söyledi. Yılmaz, yatırımcılara 199 milyar liradan fazla ödeme yapıldığını ve olağan tasfiye sürecinin bugün tamamlanacağını açıkladı.",
+      "time": "27 Kasım 00:00",
+      "title": "Fon krizinde ortak basın toplantısı: 'İddianame çıktığı zaman bütün isimleri kamuoyu duyacak'",
+      "url": "https://www.bbc.com/turkce/articles/ckedqgjqw1d4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "cat": "💹 Ekonomi",
-      "time": "25 Kasım 17:35",
-      "title": "ABD'den AB üyeleri ve Çin dahil 14 ülkeye ek vergi hamlesi",
-      "summary": "ABD hükümeti, üretim kapasitesi fazlası nedeniyle Çin ve Avrupa Birliği üyeleri dahil 14 ülkeye yüzde 15 ila yüzde 35 oranında gümrük vergisi uygulanmasını önerdi. ABD Ticaret Temsilcisi Jamieson Greer, ABD'ye satın aldığından daha fazla ürün satan ülkelere bu oranda ek vergi getirilmesini önerdi. Başkan Donald Trump yönetimi, vergileri getirmek için harekete geçti.",
-      "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011",
-      "source": "Hürriyet",
-      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b06f23d9a30875a0457a547.jpg"
+      "source": "Anadolu Ajansı",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın imzasıyla Resmi Gazete'de yayımlanan atama kararıyla Bankacılık Düzenleme ve Denetleme Kurulu Başkanlığına Yusuf Kenan Bağır getirildi. Mahmut Esfa Emek de BDDK üyeliğine atandı. Bağır, Haziran 2021'den bu yana Merkez Bankası Veri Yönetişimi ve İstatistik Genel Müdürü olarak görev yapıyordu.",
+      "time": "27 Kasım 02:34",
+      "title": "Bankacılık Düzenleme ve Denetleme Kurumunun Başkanlığına Yusuf Kenan Bağır atandı",
+      "url": "https://www.aa.com.tr/tr/gundem/bankacilik-duzenleme-ve-denetleme-kurumunun-baskanligina-yusuf-kenan-bagir-atandi/4139858",
+      "img": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/27/thumbs_b_c_1cb587005242cd23fcc509d28080c081.jpg"
     },
     {
-      "cat": "🏛️ Siyaset",
-      "time": "25 Kasım 12:35",
-      "title": "İmamoğlu'nun diploma iptali kesinleşti: Danıştay'ın gerekçesi ne?",
-      "summary": "Ekrem İmamoğlu'nun üniversite diplomasının iptali kesinleşti. Danıştay 8'inci Dairesi, avukatların temyiz istemini reddetti ve karar oy birliğiyle kesinleşti. Danıştay, 1990'daki yatay geçişte ağır ve ciddi ihlaller olduğunu, bu nedenle diplomanın 35 yıl sonra bile iptal edilebileceğini belirtti. Avukatlar, konuyu Anayasa Mahkemesi'ne taşıyacaklarını açıkladı.",
-      "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf",
-      "source": "DW Türkçe"
+      "cat": "⚽ Spor",
+      "source": "TRT Haber",
+      "summary": "Beşiktaş ile İsrail ekibi Hapoel Beer-Sheva arasında Batum'da oynanan UEFA Avrupa Ligi maçı, tribünlerde yaşanan olaylar nedeniyle 25. dakikada durdu. Gürcistan polisi, Filistin'e destek pankartları açan Beşiktaş taraftarlarına biber gazıyla müdahale etti. Olayların ardından maç kaldığı yerden devam etti ve Beşiktaş sahadan galibiyetle ayrıldı.",
+      "time": "26 Kasım 23:08",
+      "title": "Gürcistan'da Beşiktaş taraftarına polis müdahalesi",
+      "url": "https://www.trthaber.com/haber/gundem/gurcistanda-besiktas-taraftarina-polis-mudahalesi-964594.html",
+      "img": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2506000/besiktas-taraftar-aa-2506656.jpg"
+    },
+    {
+      "cat": "🌍 Dünya",
+      "source": "DW Türkçe",
+      "summary": "Avrupa Parlamentosu, Türkiye ile Libya arasındaki deniz yetki alanları mutabakatının uluslararası hukuka aykırı olduğunu belirterek mutabakatı 'geçersiz ve hükümsüz' sayan kararı kabul etti. Parlamento, mutabakatın ve ilgili hidrokarbon anlaşmalarının iptalini istedi. Dışişleri Bakanlığı ise kararı 'taraflı ve mesnetsiz' olduğu gerekçesiyle reddetti.",
+      "time": "26 Kasım 19:30",
+      "title": "AP, Türkiye-Libya Deniz Yetki Mutabakatını uluslararası hukuka aykırı buldu",
+      "url": "https://www.dw.com/tr/ap-türkiye-libya-deniz-yetki-mutabakatını-uluslararası-hukuka-aykırı-buldu/a-80066615?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "cat": "🌧️ Hava/Afet",
+      "img": "https://image.hurimg.com/i/hurriyet/90/620x350/6b06e7e4596435f32018f8a8.jpg",
+      "source": "Hürriyet",
+      "summary": "Meteoroloji Uzmanı Adil Tek, 30 Kasım-7 Aralık arasında soğuk hava dalgasının etkili olacağını ve sıcaklıkların mevsim normallerinin altına ineceğini söyledi. İstanbul'da havada kar görülebileceğini ancak örtü yapacak bir yağışın kısa vadede zayıf göründüğünü belirtti. Ankara'da ise 30 Kasım gecesinden sonra kar ihtimali belirginleşiyor.",
+      "time": "26 Kasım 06:46",
+      "title": "Aralık başında kar heyecanı: İstanbul'da ne zaman başlayacak?",
+      "url": "https://www.hurriyet.com.tr/gundem/aralik-ayinin-ilk-gunlerine-dikkat-kar-heyecani-istanbulda-ne-zaman-baslayacak-adil-tek-gun-gun-acikladi-43390858"
     }
-  ]
+  ],
+  "date": "2026-11-27",
+  "updated": "2026-11-27 02:46 TSİ"
 }

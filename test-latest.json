@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-26",
-  "generated": "2026-11-26 08:46 JST",
+  "date": "2026-11-27",
+  "generated": "2026-11-27 08:48 JST",
   "questions": [
     {
-      "question": "İsrail ordusunun hedef aldığı Gazze mahallesi hangisidir?",
+      "question": "Fon soruşturmasına ilişkin ortak basın toplantısını kimler düzenledi?",
       "options": [
-        "Refah Mahallesi",
-        "Cibaliye Mahallesi",
-        "Han Yunus Mahallesi",
-        "et-Tuffah Mahallesi"
-      ],
-      "answer": 3,
-      "explanation": "İsrail ordusu, Gazze kentinin kuzeyindeki et-Tuffah Mahallesi'ni insansız hava aracıyla hedef aldı.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
-    },
-    {
-      "question": "Ateşkesten bu yana İsrail saldırılarında kaç kişi hayatını kaybetti?",
-      "options": [
-        "1769 kişi",
-        "1697 kişi",
-        "1678 kişi",
-        "1679 kişi"
-      ],
-      "answer": 3,
-      "explanation": "Gazze'deki Sağlık Bakanlığına göre ateşkesten bu yana İsrail saldırılarında 1679 kişi öldü.",
-      "source": "TRT Haber",
-      "url": "https://www.trthaber.com/haber/dunya/isgalci-israilin-ateskese-ragmen-gazzede-duzenledigi-saldirida-3-filistinli-hayatini-kaybetti-964486.html"
-    },
-    {
-      "question": "Fenerbahçe, Shakhtar Donetsk maçında golü hangi dakikada attı?",
-      "options": [
-        "15. dakikada",
-        "65. dakikada",
-        "46. dakikada",
-        "56. dakikada"
-      ],
-      "answer": 3,
-      "explanation": "Vedat Muriqi, 56. dakikada attığı golle Fenerbahçe'ye galibiyeti getirdi.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "Fenerbahçe ile Shakhtar Donetsk arasındaki maç hangi şehirde oynandı?",
-      "options": [
-        "Donetsk",
-        "Kiev",
-        "İstanbul",
-        "Londra"
-      ],
-      "answer": 3,
-      "explanation": "Fenerbahçe, Shakhtar Donetsk ile Londra'da karşılaştı.",
-      "source": "BBC Türkçe",
-      "url": "https://www.bbc.com/turkce/articles/cw7vp739ee9do?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "question": "İstanbul'da bu gece hava sıcaklığının kaç dereceye kadar düşmesi bekleniyor?",
-      "options": [
-        "2 dereceye",
-        "0 dereceye",
-        "-2 dereceye",
-        "5 dereceye"
+        "Cevdet Yılmaz, Akın Gürlek ve Mehmet Şimşek",
+        "Mehmet Şimşek ve Akın Gürlek",
+        "Cevdet Yılmaz ve Mehmet Şimşek",
+        "Cevdet Yılmaz ve Akın Gürlek"
       ],
       "answer": 0,
-      "explanation": "Vali Gül, kentte bu gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini bildirdi.",
-      "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+      "explanation": "Basın toplantısını Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, Adalet Bakanı Akın Gürlek ve Hazine ve Maliye Bakanı Mehmet Şimşek birlikte düzenledi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/ckedqgjqw1d4o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "question": "Vali Gül, sokakta kalan vatandaşların nereye bildirilmesini istedi?",
+      "question": "Fon soruşturmasında kaç şüpheli ve kaç tutuklu olduğu açıklandı?",
       "options": [
-        "153 Belediye Hattı",
-        "112 Acil Çağrı Merkezi",
-        "155 Polis İmdat",
-        "110 İtfaiye"
+        "638 şüpheli, 550 tutuklu",
+        "138 şüpheli, 638 tutuklu",
+        "638 şüpheli, 138 tutuklu",
+        "550 şüpheli, 138 tutuklu"
+      ],
+      "answer": 2,
+      "explanation": "Adalet Bakanı Gürlek, soruşturmada 638 şüpheli ve 138 tutuklu olduğunu söyledi.",
+      "source": "BBC Türkçe",
+      "url": "https://www.bbc.com/turkce/articles/ckedqgjqw1d4o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "question": "BDDK Başkanlığına kim getirildi?",
+      "options": [
+        "Recep Tayyip Erdoğan",
+        "Yusuf Kenan Bağır",
+        "Akın Gürlek",
+        "Mahmut Esfa Emek"
       ],
       "answer": 1,
-      "explanation": "Vali Gül, sokakta kalan ve barınmaya ihtiyaç duyan vatandaşların 112 Acil Çağrı Merkezi'ne bildirilmesini istedi.",
+      "explanation": "Resmi Gazete'de yayımlanan atama kararıyla BDDK Başkanlığına Yusuf Kenan Bağır getirildi.",
       "source": "Anadolu Ajansı",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbul-valisi-gulden-sokakta-kalan-vatandaslarin-112ye-bildirilmesi-cagrisi/4138067"
+      "url": "https://www.aa.com.tr/tr/gundem/bankacilik-duzenleme-ve-denetleme-kurumunun-baskanligina-yusuf-kenan-bagir-atandi/4139858"
     },
     {
-      "question": "ABD kaç ülkeye ek gümrük vergisi uygulanmasını önerdi?",
+      "question": "Yusuf Kenan Bağır, atamadan önce Haziran 2021'den bu yana hangi görevdeydi?",
       "options": [
-        "14 ülkeye",
-        "24 ülkeye",
-        "15 ülkeye",
-        "12 ülkeye"
-      ],
-      "answer": 0,
-      "explanation": "ABD hükümeti, Çin ve Avrupa Birliği üyeleri dahil 14 ülkeye ek gümrük vergisi uygulanmasını önerdi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
-    },
-    {
-      "question": "Önerilen ek gümrük vergisi oranı hangi aralıktadır?",
-      "options": [
-        "yüzde 15 ila yüzde 35",
-        "yüzde 10 ila yüzde 25",
-        "yüzde 5 ila yüzde 15",
-        "yüzde 20 ila yüzde 40"
-      ],
-      "answer": 0,
-      "explanation": "ABD, 14 ülkeye yüzde 15 ila yüzde 35 oranında gümrük vergisi uygulanmasını önerdi.",
-      "source": "Hürriyet",
-      "url": "https://www.hurriyet.com.tr/dunya/abdden-ab-uyeleri-ve-cin-dahil-14-ulkeye-ek-vergi-hamlesi-43391011"
-    },
-    {
-      "question": "Danıştay'ın hangi dairesi İmamoğlu'nun temyiz istemini reddetti?",
-      "options": [
-        "7'nci Daire",
-        "8'inci Daire",
-        "10'uncu Daire",
-        "5'inci Daire"
+        "BDDK Başkan Yardımcısı",
+        "Merkez Bankası Veri Yönetişimi ve İstatistik Genel Müdürü",
+        "Hazine ve Maliye Bakanı",
+        "Merkez Bankası Başkanı"
       ],
       "answer": 1,
-      "explanation": "Danıştay 8'inci Dairesi, avukatların temyiz istemini reddetti.",
-      "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
+      "explanation": "Bağır, Haziran 2021'den bu yana Merkez Bankası Veri Yönetişimi ve İstatistik Genel Müdürü olarak görev yapıyordu.",
+      "source": "Anadolu Ajansı",
+      "url": "https://www.aa.com.tr/tr/gundem/bankacilik-duzenleme-ve-denetleme-kurumunun-baskanligina-yusuf-kenan-bagir-atandi/4139858"
     },
     {
-      "question": "İmamoğlu'nun avukatları kararı nereye taşıyacaklarını açıkladı?",
+      "question": "Beşiktaş ile Hapoel Beer-Sheva arasında Batum'da oynanan maç neden durdu?",
       "options": [
-        "Anayasa Mahkemesi",
-        "Yargıtay",
-        "Avrupa İnsan Hakları Mahkemesi",
-        "Danıştay"
+        "Elektrik kesintisi nedeniyle",
+        "Tribünlerde yaşanan olaylar nedeniyle",
+        "Saha zemini nedeniyle",
+        "Hava koşulları nedeniyle"
+      ],
+      "answer": 1,
+      "explanation": "Maç, tribünlerde yaşanan olaylar nedeniyle 25. dakikada durdu.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/gurcistanda-besiktas-taraftarina-polis-mudahalesi-964594.html"
+    },
+    {
+      "question": "Gürcistan polisi, Filistin'e destek pankartları açan Beşiktaş taraftarlarına nasıl müdahale etti?",
+      "options": [
+        "Biber gazıyla",
+        "Gözaltına alarak",
+        "Stadı boşaltarak",
+        "Tazyikli suyla"
       ],
       "answer": 0,
-      "explanation": "Avukatlar, konuyu Anayasa Mahkemesi'ne taşıyacaklarını açıkladı.",
+      "explanation": "Gürcistan polisi, Filistin'e destek pankartları açan Beşiktaş taraftarlarına biber gazıyla müdahale etti.",
+      "source": "TRT Haber",
+      "url": "https://www.trthaber.com/haber/gundem/gurcistanda-besiktas-taraftarina-polis-mudahalesi-964594.html"
+    },
+    {
+      "question": "Avrupa Parlamentosu, Türkiye ile Libya arasındaki deniz yetki alanları mutabakatı hakkında ne karar verdi?",
+      "options": [
+        "Mutabakatı 'geçersiz ve hükümsüz' saydı",
+        "Mutabakatı onayladı",
+        "Mutabakatı erteledi",
+        "Mutabakatı genişletti"
+      ],
+      "answer": 0,
+      "explanation": "Avrupa Parlamentosu, mutabakatın uluslararası hukuka aykırı olduğunu belirterek mutabakatı 'geçersiz ve hükümsüz' sayan kararı kabul etti.",
       "source": "DW Türkçe",
-      "url": "https://www.dw.com/tr/i̇mamoğlu-nun-diploma-iptali-kesinleşti-danıştay-ın-gerekçesi-ne/a-80043434?maca=tur-rss-tur-all-1495-rdf"
+      "url": "https://www.dw.com/tr/ap-türkiye-libya-deniz-yetki-mutabakatını-uluslararası-hukuka-aykırı-buldu/a-80066615?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Dışişleri Bakanlığı, Avrupa Parlamentosu'nun Türkiye-Libya kararına nasıl tepki verdi?",
+      "options": [
+        "Kararı uygulamaya koydu",
+        "Kararı memnuniyetle karşıladı",
+        "Kararı 'taraflı ve mesnetsiz' olduğu gerekçesiyle reddetti",
+        "Karara sessiz kaldı"
+      ],
+      "answer": 2,
+      "explanation": "Dışişleri Bakanlığı, kararı 'taraflı ve mesnetsiz' olduğu gerekçesiyle reddetti.",
+      "source": "DW Türkçe",
+      "url": "https://www.dw.com/tr/ap-türkiye-libya-deniz-yetki-mutabakatını-uluslararası-hukuka-aykırı-buldu/a-80066615?maca=tur-rss-tur-all-1495-rdf"
+    },
+    {
+      "question": "Meteoroloji Uzmanı Adil Tek'e göre soğuk hava dalgası hangi tarihler arasında etkili olacak?",
+      "options": [
+        "26-30 Kasım",
+        "30 Kasım-7 Aralık",
+        "7-14 Aralık",
+        "1-7 Aralık"
+      ],
+      "answer": 1,
+      "explanation": "Adil Tek, 30 Kasım-7 Aralık arasında soğuk hava dalgasının etkili olacağını söyledi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/aralik-ayinin-ilk-gunlerine-dikkat-kar-heyecani-istanbulda-ne-zaman-baslayacak-adil-tek-gun-gun-acikladi-43390858"
+    },
+    {
+      "question": "Adil Tek, Ankara'da kar ihtimalinin ne zaman belirginleştiğini söyledi?",
+      "options": [
+        "26 Kasım gecesinden sonra",
+        "Aralık ayının üçüncü haftasında",
+        "7 Aralık'tan sonra",
+        "30 Kasım gecesinden sonra"
+      ],
+      "answer": 3,
+      "explanation": "Adil Tek, Ankara'da 30 Kasım gecesinden sonra kar ihtimalinin belirginleştiğini söyledi.",
+      "source": "Hürriyet",
+      "url": "https://www.hurriyet.com.tr/gundem/aralik-ayinin-ilk-gunlerine-dikkat-kar-heyecani-istanbulda-ne-zaman-baslayacak-adil-tek-gun-gun-acikladi-43390858"
     }
   ]
 }
