@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-26",
-  "generated": "2026-11-26 07:45 JST",
+  "date": "2026-11-27",
+  "generated": "2026-11-27 07:44 JST",
   "questions": [
     {
-      "question": "アメリカの通商代表部が発表した、日本などへの関税の上限は何％ですか。",
+      "question": "関芳弘文部科学大臣への問責決議案は、何日の本会議で採決されますか。",
       "options": [
-        "10％",
-        "15％",
-        "25％",
-        "20％"
+        "28日",
+        "27日",
+        "26日",
+        "29日"
       ],
       "answer": 1,
-      "explanation": "要約によると、日本などへの関税は上限15％です。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026112501247&g=int"
+      "explanation": "27日の本会議で採決されます。",
+      "source": "FNNプライムオンライン",
+      "url": "https://news.yahoo.co.jp/articles/39e61f9ddd06b5dc013de698f7992b0be870457a"
     },
     {
-      "question": "新しい関税が適用されるのはいつ以降の見通しですか。",
+      "question": "問責決議案の採決で焦点となっているのは、誰の賛否ですか。",
       "options": [
-        "来年1月以降",
-        "再来年以降",
-        "来年4月以降",
-        "今年12月以降"
-      ],
-      "answer": 0,
-      "explanation": "関税の適用は意見公募のあと、来年1月以降になる見通しです。",
-      "source": "時事通信",
-      "url": "https://www.jiji.com/jc/article?k=2026112501247&g=int"
-    },
-    {
-      "question": "逆走した車がUターンしたのはどこですか。",
-      "options": [
-        "小田原料金所の手前",
-        "平塚料金所の手前",
-        "厚木料金所の手前",
-        "横浜料金所の手前"
-      ],
-      "answer": 1,
-      "explanation": "男性は平塚料金所の手前でUターンしました。",
-      "source": "日テレNEWS NNN",
-      "url": "https://news.ntv.co.jp/category/society/754e9db52a204bb2a0a749f5469489c4"
-    },
-    {
-      "question": "逆走した車はおよそ何キロ逆走しましたか。",
-      "options": [
-        "約3.7キロ",
-        "約0.7キロ",
-        "約2.7キロ",
-        "約1.7キロ"
-      ],
-      "answer": 3,
-      "explanation": "約1.7キロ逆走したとみられます。",
-      "source": "日テレNEWS NNN",
-      "url": "https://news.ntv.co.jp/category/society/754e9db52a204bb2a0a749f5469489c4"
-    },
-    {
-      "question": "流れ出したのは何ですか。",
-      "options": [
-        "氏名やメールアドレスなど",
-        "パスワードそのもの",
-        "保管庫の中のデータ",
-        "暗号化の鍵"
-      ],
-      "answer": 0,
-      "explanation": "一部のお客さんの氏名やメールアドレスなどが流れ出しました。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003466/"
-    },
-    {
-      "question": "会社はパスワードの変更について何と言っていますか。",
-      "options": [
-        "変更できない",
-        "すぐに変更すべきだ",
-        "変更は不要だ",
-        "1週間以内に変更すべきだ"
+        "公明党と共産党",
+        "立憲民主党と国民民主党",
+        "日本保守党の2人と無所属6人",
+        "自民党と日本維新の会"
       ],
       "answer": 2,
-      "explanation": "パスワードの変更は不要だということです。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003466/"
+      "explanation": "与党は4議席足りず、日本保守党の2人と無所属6人の賛否が焦点です。",
+      "source": "FNNプライムオンライン",
+      "url": "https://news.yahoo.co.jp/articles/39e61f9ddd06b5dc013de698f7992b0be870457a"
     },
     {
-      "question": "寿司皿のプレゼント企画はなぜ初日で終わりましたか。",
+      "question": "線状降水帯が発生したのは、どこですか。",
       "options": [
-        "寿司皿が壊れたから",
-        "当選枠100万個がすべて埋まったから",
-        "ちいかわの人気がなくなったから",
-        "店が休みになったから"
+        "宮崎県",
+        "沖縄県本島北部",
+        "鹿児島県",
+        "沖縄県本島南部"
       ],
       "answer": 1,
-      "explanation": "全店舗あわせて100万個の当選枠がすべて埋まりました。",
-      "source": "オリコン",
-      "url": "https://news.yahoo.co.jp/articles/187e48eed29a6a27cfef9009fa5db0a917770abe"
+      "explanation": "沖縄県本島北部に線状降水帯が発生しました。",
+      "source": "琉球新報",
+      "url": "https://ryukyushimpo.jp/national/entry-5617368.html"
     },
     {
-      "question": "抽選はもともといつまで続く予定でしたか。",
+      "question": "東村平良では、26日0時から27日4時までに何ミリの雨が降りましたか。",
       "options": [
-        "11月30日まで",
-        "12月6日まで",
-        "12月25日まで",
-        "来年1月まで"
+        "345ミリ",
+        "245ミリ",
+        "45ミリ",
+        "145ミリ"
       ],
       "answer": 1,
-      "explanation": "抽選は12月6日まで続く予定でした。",
-      "source": "オリコン",
-      "url": "https://news.yahoo.co.jp/articles/187e48eed29a6a27cfef9009fa5db0a917770abe"
+      "explanation": "東村平良では26日0時から27日4時までに245ミリの雨が降りました。",
+      "source": "琉球新報",
+      "url": "https://ryukyushimpo.jp/national/entry-5617368.html"
     },
     {
-      "question": "石川佳純さんは何で結婚を発表しましたか。",
+      "question": "居酒屋には、何日間の営業停止が命じられましたか。",
       "options": [
-        "インスタグラム",
-        "テレビ番組",
-        "新聞の広告",
-        "記者会見"
+        "30日間",
+        "21日間",
+        "7日間",
+        "14日間"
+      ],
+      "answer": 1,
+      "explanation": "27日から21日間の営業停止が命じられました。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCV10WGVCVUTIL016M.html?ref=rss"
+    },
+    {
+      "question": "この営業停止の処分は、全国で何例目ですか。",
+      "options": [
+        "2例目",
+        "5例目",
+        "3例目",
+        "1例目"
       ],
       "answer": 0,
-      "explanation": "自身のインスタグラムで結婚を報告しました。",
-      "source": "日刊スポーツ",
-      "url": "https://news.yahoo.co.jp/articles/3fbc2aa00780563a1bd1ff73d31f2a04c2794333"
+      "explanation": "全国で2例目の処分です。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCV10WGVCVUTIL016M.html?ref=rss"
     },
     {
-      "question": "石川佳純さんが現役を引退したのはいつですか。",
+      "question": "「ペアレンタルコントロール」は、何歳の利用者が対象ですか。",
       "options": [
-        "2021年5月",
-        "2022年5月",
-        "2024年5月",
-        "2023年5月"
+        "6歳から12歳",
+        "13歳から17歳",
+        "18歳から20歳",
+        "10歳から12歳"
+      ],
+      "answer": 1,
+      "explanation": "13歳から17歳の利用者が対象です。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003506/"
+    },
+    {
+      "question": "保護者が管理できるのは、次のうちどれですか。",
+      "options": [
+        "1日の利用時間の下限",
+        "子どもの閲覧履歴",
+        "1日の利用時間の上限",
+        "メッセージの中身"
+      ],
+      "answer": 2,
+      "explanation": "1日の利用時間の上限などを管理できます。保護者はメッセージの中身や閲覧履歴は見られません。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003506/"
+    },
+    {
+      "question": "日本はレバノンに何対何で勝ちましたか。",
+      "options": [
+        "96対82",
+        "86対72",
+        "82対86",
+        "86対82"
       ],
       "answer": 3,
-      "explanation": "石川さんは2023年5月に現役を引退しました。",
-      "source": "日刊スポーツ",
-      "url": "https://news.yahoo.co.jp/articles/3fbc2aa00780563a1bd1ff73d31f2a04c2794333"
+      "explanation": "86対82で逆転勝利しました。",
+      "source": "バスケットカウント",
+      "url": "https://basket-count.com/article/detail/280409?game_date=2025-10-04"
+    },
+    {
+      "question": "29日にカタールに勝てば、どうなりますか。",
+      "options": [
+        "本大会出場が決まる",
+        "ワールドカップが終わる",
+        "本大会出場が決まらない",
+        "アジア予選が始まる"
+      ],
+      "answer": 0,
+      "explanation": "29日にカタールに勝てば本大会出場が決まります。",
+      "source": "バスケットカウント",
+      "url": "https://basket-count.com/article/detail/280409?game_date=2025-10-04"
     }
   ]
 }
