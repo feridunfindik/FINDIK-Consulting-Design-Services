@@ -1,136 +1,136 @@
 {
-  "date": "2026-11-27",
-  "generated": "2026-11-27 07:44 JST",
+  "date": "2026-11-28",
+  "generated": "2026-11-28 07:46 JST",
   "questions": [
     {
-      "question": "関芳弘文部科学大臣への問責決議案は、何日の本会議で採決されますか。",
+      "question": "2人の遺体が見つかったのはどこですか。",
       "options": [
-        "28日",
-        "27日",
-        "26日",
-        "29日"
-      ],
-      "answer": 1,
-      "explanation": "27日の本会議で採決されます。",
-      "source": "FNNプライムオンライン",
-      "url": "https://news.yahoo.co.jp/articles/39e61f9ddd06b5dc013de698f7992b0be870457a"
-    },
-    {
-      "question": "問責決議案の採決で焦点となっているのは、誰の賛否ですか。",
-      "options": [
-        "公明党と共産党",
-        "立憲民主党と国民民主党",
-        "日本保守党の2人と無所属6人",
-        "自民党と日本維新の会"
-      ],
-      "answer": 2,
-      "explanation": "与党は4議席足りず、日本保守党の2人と無所属6人の賛否が焦点です。",
-      "source": "FNNプライムオンライン",
-      "url": "https://news.yahoo.co.jp/articles/39e61f9ddd06b5dc013de698f7992b0be870457a"
-    },
-    {
-      "question": "線状降水帯が発生したのは、どこですか。",
-      "options": [
-        "宮崎県",
-        "沖縄県本島北部",
-        "鹿児島県",
-        "沖縄県本島南部"
-      ],
-      "answer": 1,
-      "explanation": "沖縄県本島北部に線状降水帯が発生しました。",
-      "source": "琉球新報",
-      "url": "https://ryukyushimpo.jp/national/entry-5617368.html"
-    },
-    {
-      "question": "東村平良では、26日0時から27日4時までに何ミリの雨が降りましたか。",
-      "options": [
-        "345ミリ",
-        "245ミリ",
-        "45ミリ",
-        "145ミリ"
-      ],
-      "answer": 1,
-      "explanation": "東村平良では26日0時から27日4時までに245ミリの雨が降りました。",
-      "source": "琉球新報",
-      "url": "https://ryukyushimpo.jp/national/entry-5617368.html"
-    },
-    {
-      "question": "居酒屋には、何日間の営業停止が命じられましたか。",
-      "options": [
-        "30日間",
-        "21日間",
-        "7日間",
-        "14日間"
-      ],
-      "answer": 1,
-      "explanation": "27日から21日間の営業停止が命じられました。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCV10WGVCVUTIL016M.html?ref=rss"
-    },
-    {
-      "question": "この営業停止の処分は、全国で何例目ですか。",
-      "options": [
-        "2例目",
-        "5例目",
-        "3例目",
-        "1例目"
+        "宮城県七ヶ宿町の山中",
+        "神奈川県の山中",
+        "横浜市の山中",
+        "千葉県柏市の山中"
       ],
       "answer": 0,
-      "explanation": "全国で2例目の処分です。",
-      "source": "朝日新聞",
-      "url": "http://www.asahi.com/articles/ASVCV10WGVCVUTIL016M.html?ref=rss"
+      "explanation": "遺体は宮城県七ヶ宿町の山中で見つかりました。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6604246?source=rss"
     },
     {
-      "question": "「ペアレンタルコントロール」は、何歳の利用者が対象ですか。",
+      "question": "遺体の身元を確認するために、30日に何をしますか。",
       "options": [
-        "6歳から12歳",
-        "13歳から17歳",
-        "18歳から20歳",
-        "10歳から12歳"
-      ],
-      "answer": 1,
-      "explanation": "13歳から17歳の利用者が対象です。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003506/"
-    },
-    {
-      "question": "保護者が管理できるのは、次のうちどれですか。",
-      "options": [
-        "1日の利用時間の下限",
-        "子どもの閲覧履歴",
-        "1日の利用時間の上限",
-        "メッセージの中身"
+        "家族への聞き取り",
+        "防犯カメラの確認",
+        "司法解剖",
+        "山中の捜索"
       ],
       "answer": 2,
-      "explanation": "1日の利用時間の上限などを管理できます。保護者はメッセージの中身や閲覧履歴は見られません。",
-      "source": "ITmedia NEWS",
-      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003506/"
+      "explanation": "30日に司法解剖をして身元を確認します。",
+      "source": "Yahoo!ニュース トピックス",
+      "url": "https://news.yahoo.co.jp/pickup/6604246?source=rss"
     },
     {
-      "question": "日本はレバノンに何対何で勝ちましたか。",
+      "question": "28日に台湾で行われるのは何ですか。",
       "options": [
-        "96対82",
-        "86対72",
-        "82対86",
-        "86対82"
+        "国民投票",
+        "総統選挙の投票",
+        "統一地方選の投票",
+        "国会の選挙"
       ],
-      "answer": 3,
-      "explanation": "86対82で逆転勝利しました。",
-      "source": "バスケットカウント",
-      "url": "https://basket-count.com/article/detail/280409?game_date=2025-10-04"
+      "answer": 2,
+      "explanation": "28日に統一地方選の投票が行われます。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCW2J95VCWUHBI00FM.html?ref=rss"
     },
     {
-      "question": "29日にカタールに勝てば、どうなりますか。",
+      "question": "民進党の候補が追い上げているのはどこですか。",
       "options": [
-        "本大会出場が決まる",
-        "ワールドカップが終わる",
-        "本大会出場が決まらない",
-        "アジア予選が始まる"
+        "基隆市と新竹市",
+        "高雄市と台南市",
+        "台北市と新北市",
+        "台中市と桃園市"
+      ],
+      "answer": 2,
+      "explanation": "台北市と新北市で民進党の候補が追い上げています。",
+      "source": "朝日新聞",
+      "url": "http://www.asahi.com/articles/ASVCW2J95VCWUHBI00FM.html?ref=rss"
+    },
+    {
+      "question": "28日正午までの24時間に、関東南部で多い所で何ミリの雨が予想されていますか。",
+      "options": [
+        "80ミリ",
+        "50ミリ",
+        "100ミリ",
+        "40ミリ"
+      ],
+      "answer": 2,
+      "explanation": "関東南部では多い所で100ミリの雨が予想されています。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1160421"
+    },
+    {
+      "question": "気象庁が注意を呼びかけているのは何ですか。",
+      "options": [
+        "黄砂の飛来",
+        "低い土地の浸水や川の増水",
+        "大雪による交通の乱れ",
+        "地震による津波"
+      ],
+      "answer": 1,
+      "explanation": "低い土地の浸水や川の増水に注意するよう呼びかけています。",
+      "source": "FNNプライムオンライン",
+      "url": "https://www.fnn.jp/articles/-/1160421"
+    },
+    {
+      "question": "11月の東京都区部の消費者物価指数は、前の年の同じ月より何％上がりましたか。",
+      "options": [
+        "2.9％",
+        "3.1％",
+        "2.6％",
+        "2.0％"
       ],
       "answer": 0,
-      "explanation": "29日にカタールに勝てば本大会出場が決まります。",
-      "source": "バスケットカウント",
-      "url": "https://basket-count.com/article/detail/280409?game_date=2025-10-04"
+      "explanation": "前の年の同じ月より2.9％上がりました。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261127-C7E7N5CPAFKTNORUFDYUFDFJ4U/?obOrigUrl=true"
+    },
+    {
+      "question": "消費者物価指数を発表したのはどこですか。",
+      "options": [
+        "総務省",
+        "日銀",
+        "気象庁",
+        "文部科学省"
+      ],
+      "answer": 0,
+      "explanation": "総務省が発表しました。",
+      "source": "産経新聞",
+      "url": "https://www.sankei.com/article/20261127-C7E7N5CPAFKTNORUFDYUFDFJ4U/?obOrigUrl=true"
+    },
+    {
+      "question": "JAXAの宇宙飛行士候補者の募集は、何年ぶりですか。",
+      "options": [
+        "約1年ぶり",
+        "約5年ぶり",
+        "約3年ぶり",
+        "約10年ぶり"
+      ],
+      "answer": 1,
+      "explanation": "2021年12月以来、約5年ぶりの募集です。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003512/"
+    },
+    {
+      "question": "宇宙飛行士候補者の募集で、学歴や専門はどうなっていますか。",
+      "options": [
+        "博士号が必要です",
+        "理系だけです",
+        "問いません",
+        "大学卒業が必要です"
+      ],
+      "answer": 2,
+      "explanation": "学歴や専門は問いません。",
+      "source": "ITmedia NEWS",
+      "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003512/"
     }
   ]
 }

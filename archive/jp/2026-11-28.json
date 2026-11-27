@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-28",
+  "news": {
+    "articles": [
+      {
+        "cat": "🚨 社会",
+        "source": "Yahoo!ニュース トピックス",
+        "summary": "神奈川県警は27日、宮城県七ヶ宿町の山中で2人の遺体を発見しました。遺体は草木が生い茂った斜面で見つかりました。10月下旬から行方が分からなくなっている横浜市の高校1年の女子生徒の可能性があり、30日に司法解剖して身元を確認します。女子生徒を誘拐した疑いで男が逮捕されています。",
+        "time": "11月27日 23:27",
+        "title": "山中に2遺体 1人は不明の高校生か",
+        "url": "https://news.yahoo.co.jp/pickup/6604246?source=rss",
+        "img": "https://s.yimg.jp/images/news-web/versions/20261127-93b9b54/all/images/ogp_default.png"
+      },
+      {
+        "cat": "🌏 世界・政治",
+        "source": "朝日新聞",
+        "summary": "台湾で28日、県や市のトップなどを選ぶ統一地方選の投票が行われます。与党の民進党がどこまで勢力を伸ばすかが焦点で、結果は2028年の総統選挙にも影響するとみられています。台北市と新北市では民進党の候補が追い上げ、激しい戦いになっています。",
+        "time": "11月28日 6:00",
+        "title": "台湾の統一地方選、きょう投開票　「双北」に注目、総統選挙に影響も",
+        "url": "http://www.asahi.com/articles/ASVCW2J95VCWUHBI00FM.html?ref=rss",
+        "img": "https://imgopt.asahi.com/ogp/AS20261127003282_comm.jpg"
+      },
+      {
+        "cat": "🌦️ 天気・防災",
+        "source": "FNNプライムオンライン",
+        "summary": "気象庁によりますと、関東甲信地方では28日未明から朝にかけて、雷を伴った激しい雨が降り、大雨になるおそれがあります。28日正午までの24時間に降る雨の量は、多い所で関東南部で100ミリと予想されています。低い土地の浸水や川の増水に注意してください。",
+        "time": "11月27日 11:20",
+        "title": "関東甲信地方で「警報級の大雨」の可能性",
+        "url": "https://www.fnn.jp/articles/-/1160421",
+        "img": "https://fnn.ismcdn.jp/mwimgs/c/e/1200/img_ce4e93aae9637f1cd3c0c1412d6f4fc3193422.jpg"
+      },
+      {
+        "cat": "💹 経済",
+        "source": "産経新聞",
+        "summary": "総務省が27日に発表した11月の東京都区部の消費者物価指数は、生鮮食品を除いた総合が103.9で、前の年の同じ月より2.9％上がりました。伸び率は10月の2.6％から大きくなり、3カ月続けて2％台です。日銀は2％を物価の目標としています。",
+        "time": "11月27日 9:06",
+        "title": "11月東京物価2.9％上昇　3カ月連続で2％台",
+        "url": "https://www.sankei.com/article/20261127-C7E7N5CPAFKTNORUFDYUFDFJ4U/?obOrigUrl=true"
+      },
+      {
+        "cat": "🔬 テクノロジー・科学",
+        "source": "ITmedia NEWS",
+        "summary": "文部科学省は27日、JAXAが2027年4月をめどに、日本人の宇宙飛行士候補者を募集すると発表しました。募集は2021年12月以来、約5年ぶりです。将来の月面探査や地球のまわりを回る活動を担う人を育てるのが目的で、学歴や専門は問いません。",
+        "time": "11月27日 11:21",
+        "title": "JAXA宇宙飛行士、5年ぶり募集へ　月面探査を担う人材育成",
+        "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003512/",
+        "img": "https://www.itmedia.co.jp/news/article/ogp/2611/27/2000003512/10013125/2048"
+      }
+    ],
+    "date": "2026-11-28",
+    "updated": "2026-11-28 07:45 JST"
+  },
+  "quiz": {
+    "date": "2026-11-28",
+    "generated": "2026-11-28 07:46 JST",
+    "questions": [
+      {
+        "question": "2人の遺体が見つかったのはどこですか。",
+        "options": [
+          "宮城県七ヶ宿町の山中",
+          "神奈川県の山中",
+          "横浜市の山中",
+          "千葉県柏市の山中"
+        ],
+        "answer": 0,
+        "explanation": "遺体は宮城県七ヶ宿町の山中で見つかりました。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6604246?source=rss"
+      },
+      {
+        "question": "遺体の身元を確認するために、30日に何をしますか。",
+        "options": [
+          "家族への聞き取り",
+          "防犯カメラの確認",
+          "司法解剖",
+          "山中の捜索"
+        ],
+        "answer": 2,
+        "explanation": "30日に司法解剖をして身元を確認します。",
+        "source": "Yahoo!ニュース トピックス",
+        "url": "https://news.yahoo.co.jp/pickup/6604246?source=rss"
+      },
+      {
+        "question": "28日に台湾で行われるのは何ですか。",
+        "options": [
+          "国民投票",
+          "総統選挙の投票",
+          "統一地方選の投票",
+          "国会の選挙"
+        ],
+        "answer": 2,
+        "explanation": "28日に統一地方選の投票が行われます。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCW2J95VCWUHBI00FM.html?ref=rss"
+      },
+      {
+        "question": "民進党の候補が追い上げているのはどこですか。",
+        "options": [
+          "基隆市と新竹市",
+          "高雄市と台南市",
+          "台北市と新北市",
+          "台中市と桃園市"
+        ],
+        "answer": 2,
+        "explanation": "台北市と新北市で民進党の候補が追い上げています。",
+        "source": "朝日新聞",
+        "url": "http://www.asahi.com/articles/ASVCW2J95VCWUHBI00FM.html?ref=rss"
+      },
+      {
+        "question": "28日正午までの24時間に、関東南部で多い所で何ミリの雨が予想されていますか。",
+        "options": [
+          "80ミリ",
+          "50ミリ",
+          "100ミリ",
+          "40ミリ"
+        ],
+        "answer": 2,
+        "explanation": "関東南部では多い所で100ミリの雨が予想されています。",
+        "source": "FNNプライムオンライン",
+        "url": "https://www.fnn.jp/articles/-/1160421"
+      },
+      {
+        "question": "気象庁が注意を呼びかけているのは何ですか。",
+        "options": [
+          "黄砂の飛来",
+          "低い土地の浸水や川の増水",
+          "大雪による交通の乱れ",
+          "地震による津波"
+        ],
+        "answer": 1,
+        "explanation": "低い土地の浸水や川の増水に注意するよう呼びかけています。",
+        "source": "FNNプライムオンライン",
+        "url": "https://www.fnn.jp/articles/-/1160421"
+      },
+      {
+        "question": "11月の東京都区部の消費者物価指数は、前の年の同じ月より何％上がりましたか。",
+        "options": [
+          "2.9％",
+          "3.1％",
+          "2.6％",
+          "2.0％"
+        ],
+        "answer": 0,
+        "explanation": "前の年の同じ月より2.9％上がりました。",
+        "source": "産経新聞",
+        "url": "https://www.sankei.com/article/20261127-C7E7N5CPAFKTNORUFDYUFDFJ4U/?obOrigUrl=true"
+      },
+      {
+        "question": "消費者物価指数を発表したのはどこですか。",
+        "options": [
+          "総務省",
+          "日銀",
+          "気象庁",
+          "文部科学省"
+        ],
+        "answer": 0,
+        "explanation": "総務省が発表しました。",
+        "source": "産経新聞",
+        "url": "https://www.sankei.com/article/20261127-C7E7N5CPAFKTNORUFDYUFDFJ4U/?obOrigUrl=true"
+      },
+      {
+        "question": "JAXAの宇宙飛行士候補者の募集は、何年ぶりですか。",
+        "options": [
+          "約1年ぶり",
+          "約5年ぶり",
+          "約3年ぶり",
+          "約10年ぶり"
+        ],
+        "answer": 1,
+        "explanation": "2021年12月以来、約5年ぶりの募集です。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003512/"
+      },
+      {
+        "question": "宇宙飛行士候補者の募集で、学歴や専門はどうなっていますか。",
+        "options": [
+          "博士号が必要です",
+          "理系だけです",
+          "問いません",
+          "大学卒業が必要です"
+        ],
+        "answer": 2,
+        "explanation": "学歴や専門は問いません。",
+        "source": "ITmedia NEWS",
+        "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003512/"
+      }
+    ]
+  }
+}
